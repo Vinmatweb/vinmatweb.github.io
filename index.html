@@ -1,13 +1,215 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://vinmatweb.github.io/weekify/">
-    <title>Weekify Redirect</title>
-    <script>
-        window.location.replace("https://vinmatweb.github.io/weekify/");
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinmat.eu</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding: 20px;
+        }
+
+        /* Přepínač jazyků vpravo nahoře */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .lang-btn {
+            background: #1e293b;
+            color: #94a3b8;
+            border: 1px solid #334155;
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.2s ease;
+        }
+
+        .lang-btn:hover {
+            color: #f8fafc;
+            border-color: #475569;
+        }
+
+        .lang-btn.active {
+            background: #38bdf8;
+            color: #0f172a;
+            border-color: #38bdf8;
+        }
+
+        /* Obsah rozcestníku */
+        .container {
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            color: #94a3b8;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+
+        /* Karty s projekty */
+        .links-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .project-card {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 20px;
+            text-decoration: none;
+            color: #f8fafc;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-2px);
+            border-color: #38bdf8;
+        }
+
+        .project-info {
+            text-align: left;
+        }
+
+        .project-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .project-desc {
+            color: #94a3b8;
+            font-size: 0.95rem;
+        }
+
+        .arrow {
+            color: #38bdf8;
+            font-size: 1.5rem;
+            transition: transform 0.2s ease;
+        }
+
+        .project-card:hover .arrow {
+            transform: translateX(4px);
+        }
+
+        /* Styl pro připravované projekty */
+        .project-card.placeholder {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .project-card.placeholder:hover {
+            transform: none;
+            border-color: #334155;
+        }
+
+        .project-card.placeholder .arrow {
+            color: #64748b;
+        }
+    </style>
 </head>
-<body style="background: #000;">
+<body>
+
+    <div class="lang-switcher">
+        <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+        <button class="lang-btn" onclick="setLanguage('cs')">CZ</button>
+    </div>
+
+    <div class="container">
+        <h1 id="main-title">Welcome to Vinmat.eu</h1>
+        <p class="subtitle" id="main-subtitle">Select a project you want to visit:</p>
+        
+        <div class="links-grid">
+            <a href="/weekify/" class="project-card">
+                <div class="project-info">
+                    <div class="project-title">Weekify</div>
+                    <div class="project-desc" id="desc-weekify">Your web application for scheduling and productivity.</div>
+                </div>
+                <div class="arrow">➔</div>
+            </a>
+
+            <a href="#" class="project-card placeholder" onclick="return false;">
+                <div class="project-info">
+                    <div class="project-title">World for Kids</div>
+                    <div class="project-desc" id="desc-kids">Library of activities for children. (Coming soon)</div>
+                </div>
+                <div class="arrow">🔒</div>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Databáze překladů
+        const translations = {
+            en: {
+                title: "Welcome to Vinmat.eu",
+                subtitle: "Select a project you want to visit:",
+                weekify: "Your web application for scheduling and productivity.",
+                kids: "Library of activities for children. (Coming soon)"
+            },
+            cs: {
+                title: "Vítejte na Vinmat.eu",
+                subtitle: "Vyberte si projekt, který chcete navštívit:",
+                weekify: "Vaše webová aplikace pro plánování a produktivitu.",
+                kids: "Knihovna aktivit pro děti. (Připravujeme)"
+            }
+        };
+
+        // Funkce pro přepínání jazyků
+        function setLanguage(lang) {
+            // Aktualizace textů na stránce
+            document.getElementById('main-title').innerText = translations[lang].title;
+            document.getElementById('main-subtitle').innerText = translations[lang].subtitle;
+            document.getElementById('desc-weekify').innerText = translations[lang].weekify;
+            document.getElementById('desc-kids').innerText = translations[lang].kids;
+
+            // Správa aktivního vzhledu tlačítek
+            const buttons = document.querySelectorAll('.lang-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            if (lang === 'en') {
+                buttons[0].classList.add('active');
+                document.documentElement.lang = 'en';
+            } else {
+                buttons[1].classList.add('active');
+                document.documentElement.lang = 'cs';
+            }
+        }
+    </script>
 </body>
 </html>
