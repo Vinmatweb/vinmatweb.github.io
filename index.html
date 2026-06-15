@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinmat.eu</title>
+    <title>Vinmat.eu - Personal Projects Ecosystem</title>
     <style>
         * {
             box-sizing: border-box;
@@ -18,7 +18,7 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             position: relative;
             padding: 20px;
@@ -31,6 +31,7 @@
             right: 20px;
             display: flex;
             gap: 10px;
+            z-index: 20;
         }
 
         .lang-btn {
@@ -59,8 +60,10 @@
         /* Obsah rozcestníku */
         .container {
             text-align: center;
-            max-width: 600px;
+            max-width: 650px;
             width: 100%;
+            margin: auto;
+            padding: 40px 0;
         }
 
         h1 {
@@ -88,7 +91,7 @@
             background: #1e293b;
             border: 1px solid #334155;
             border-radius: 12px;
-            padding: 20px;
+            padding: 22px;
             text-decoration: none;
             color: #f8fafc;
             display: flex;
@@ -104,17 +107,19 @@
 
         .project-info {
             text-align: left;
+            padding-right: 15px;
         }
 
         .project-title {
             font-size: 1.25rem;
             font-weight: 600;
-            margin-bottom: 4px;
+            margin-bottom: 6px;
         }
 
         .project-desc {
             color: #94a3b8;
             font-size: 0.95rem;
+            line-height: 1.5;
         }
 
         .arrow {
@@ -127,27 +132,33 @@
             transform: translateX(4px);
         }
 
-        /* Styl pro připravované projekty */
-        .project-card.placeholder {
-            opacity: 0.6;
-            cursor: not-allowed;
+        /* Patička pro Google AdSense legal linky */
+        footer {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+            color: #475569;
+            border-t: 1px solid #1e293b;
         }
 
-        .project-card.placeholder:hover {
-            transform: none;
-            border-color: #334155;
-        }
-
-        .project-card.placeholder .arrow {
+        footer a {
             color: #64748b;
+            text-decoration: underline;
+            margin: 0 8px;
+            transition: color 0.2s ease;
+        }
+
+        footer a:hover {
+            color: #94a3b8;
         }
     </style>
 </head>
 <body>
 
     <div class="lang-switcher">
-        <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
-        <button class="lang-btn" onclick="setLanguage('cs')">CZ</button>
+        <button class="lang-btn" id="btn-en" onclick="setLanguage('en')">EN</button>
+        <button class="lang-btn" id="btn-cs" onclick="setLanguage('cs')">CZ</button>
     </div>
 
     <div class="container">
@@ -163,35 +174,49 @@
                 <div class="arrow">➔</div>
             </a>
 
-            <a href="#" class="project-card placeholder" onclick="return false;">
+            <a href="/worldforkids/" class="project-card">
                 <div class="project-info">
                     <div class="project-title">World for Kids</div>
-                    <div class="project-desc" id="desc-kids">Library of activities for children. (Coming soon)</div>
+                    <div class="project-desc" id="desc-kids">Library of activities for children.</div>
                 </div>
-                <div class="arrow">🔒</div>
+                <div class="arrow">➔</div>
             </a>
         </div>
     </div>
 
+    <footer>
+        <p>
+            © 2026 Vinmat.eu · 
+            <a href="privacy.html">Privacy Policy</a> · 
+            <a href="terms.html">Terms of Service</a>
+        </p>
+    </footer>
+
     <script>
-        // Databáze překladů
+        // Databáze rozšířených překladů (lepší pro Google roboty)
         const translations = {
             en: {
                 title: "Welcome to Vinmat.eu",
-                subtitle: "Select a project you want to visit:",
-                weekify: "Your web application for scheduling and productivity.",
-                kids: "Library of activities for children. (Coming soon)"
+                subtitle: "Select a digital project you want to visit:",
+                weekify: "A minimalist web application and lightweight productivity tracker designed for scheduling and efficient management of your weekly goals.",
+                kids: "A curated library of premium worksheets, printables, illustrated mazes, coloring pages, and dot-to-dot puzzles structured into clear difficulty levels for parents and educators."
             },
             cs: {
                 title: "Vítejte na Vinmat.eu",
-                subtitle: "Vyberte si projekt, který chcete navštívit:",
-                weekify: "Vaše webová aplikace pro plánování a produktivitu.",
-                kids: "Knihovna aktivit pro děti. (Připravujeme)"
+                subtitle: "Vyberte si digitální projekt, který chcete navštívit:",
+                weekify: "Minimalistická webová aplikace a lehký nástroj pro produktivitu navržený pro efektivní plánování a správu vašich týdenních cílů.",
+                kids: "Vybraná knihovna prémiových pracovních listů, ilustrovaných bludišť, omalovánek a spojovaček strukturovaných do jasných úrovní obtížnosti pro rodiče a pedagogy."
             }
         };
 
+        // Načtení uloženého jazyka z paměti nebo výchozí EN
+        let currentLang = localStorage.getItem('vinmat_main_lang') || 'en';
+
         // Funkce pro přepínání jazyků
         function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('vinmat_main_lang', lang);
+
             // Aktualizace textů na stránce
             document.getElementById('main-title').innerText = translations[lang].title;
             document.getElementById('main-subtitle').innerText = translations[lang].subtitle;
@@ -199,17 +224,14 @@
             document.getElementById('desc-kids').innerText = translations[lang].kids;
 
             // Správa aktivního vzhledu tlačítek
-            const buttons = document.querySelectorAll('.lang-btn');
-            buttons.forEach(btn => btn.classList.remove('active'));
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+            document.getElementById('btn-cs').classList.toggle('active', lang === 'cs');
             
-            if (lang === 'en') {
-                buttons[0].classList.add('active');
-                document.documentElement.lang = 'en';
-            } else {
-                buttons[1].classList.add('active');
-                document.documentElement.lang = 'cs';
-            }
+            document.documentElement.lang = lang === 'cs' ? 'cs' : 'en';
         }
+
+        // Automatické spuštění správného jazyka při načtení
+        setLanguage(currentLang);
     </script>
 </body>
 </html>
