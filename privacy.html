@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy / Zásady ochrany soukromí</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-300 p-6 md:p-12 font-sans leading-relaxed">
+    <div class="max-w-3xl mx-auto bg-slate-800 p-8 rounded-2xl border border-slate-700">
+        
+        <div id="lang-en" class="hidden">
+            <h1 class="text-2xl font-bold mb-2 text-white">Privacy Policy</h1>
+            <p class="text-xs text-slate-500 mb-6">Last updated: June 2026</p>
+            <p class="mb-4">This website (vinmat.eu) is a personal project landing page. We do not track users, register accounts, or collect personal information.</p>
+            <p class="mb-4">We use Google AdSense to serve contextual ads. Google may use advertising cookies to optimize ads based on your previous browsing history. You can opt out of personalized ads via Google Settings.</p>
+            
+            <div class="pt-6 mt-8 border-t border-slate-700">
+                <a href="index.html" class="text-amber-400 font-bold hover:underline">← Back to Home</a>
+            </div>
+        </div>
+
+        <div id="lang-cz" class="hidden">
+            <h1 class="text-2xl font-bold mb-2 text-white">Zásady ochrany osobních údajů</h1>
+            <p class="text-xs text-slate-500 mb-6">Poslední aktualizace: Červen 2026</p>
+            <p class="mb-4">Tento web (vinmat.eu) slouží jako osobní rozcestník projektů. Nesbíráme žádné osobní údaje, neshromažďujeme data o návštěvnících ani nevytváříme uživatelské profily.</p>
+            <p class="mb-4">Služba Google AdSense zde může zobrazovat reklamy za pomoci anonymních souborů cookies s cílem přizpůsobit nabídku zájmům návštěvníka. Personalizované reklamy můžete vypnout v nastavení svého Google účtu.</p>
+            
+            <div class="pt-6 mt-8 border-t border-slate-700">
+                <a href="index.html" class="text-amber-400 font-bold hover:underline">← Zpět na úvod</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Podíváme se, jaký jazyk byl aktivní na hlavní stránce
+        // Pokud tam byla čeština ('cs' nebo 'cz'), ukážeme české znění, jinak anglické
+        const ulozenyJazyk = localStorage.getItem('vinmat_main_lang') || 'en';
+        
+        if (ulozenyJazyk === 'cs' || ulozenyJazyk === 'cz') {
+            document.getElementById('lang-cz').classList.remove('hidden');
+            document.documentElement.lang = 'cs';
+        } else {
+            document.getElementById('lang-en').classList.remove('hidden');
+            document.documentElement.lang = 'en';
+        }
+    </script>
+</body>
+</html>

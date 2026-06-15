@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service / Podmínky užití</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-300 p-6 md:p-12 font-sans leading-relaxed">
+    <div class="max-w-3xl mx-auto bg-slate-800 p-8 rounded-2xl border border-slate-700">
+        
+        <div id="lang-en" class="hidden">
+            <h1 class="text-2xl font-bold mb-2 text-white">Terms of Service</h1>
+            <p class="text-xs text-slate-500 mb-6">Last updated: June 2026</p>
+            <p class="mb-4">By entering vinmat.eu, you agree to access its projects (Weekify, World for Kids) for personal, non-commercial purposes.</p>
+            <p class="mb-4">All custom tools and features are provided free of charge without any legal operational warranties or guaranteed uptime.</p>
+            
+            <div class="pt-6 mt-8 border-t border-slate-700">
+                <a href="index.html" class="text-amber-400 font-bold hover:underline">← Back to Home</a>
+            </div>
+        </div>
+
+        <div id="lang-cz" class="hidden">
+            <h1 class="text-2xl font-bold mb-2 text-white">Podmínky užití</h1>
+            <p class="text-xs text-slate-500 mb-6">Poslední aktualizace: Červen 2026</p>
+            <p class="mb-4">Vstupem na doménu vinmat.eu souhlasíte s využíváním zdejších bezplatných aplikací a projektů výhradně pro soukromé, osobní a vzdělávací účely.</p>
+            <p class="mb-4">Veškeré služby a nástroje jsou poskytovány bezplatně a bez jakýchkoli komerčních záruk stability, funkčnosti či trvalé dostupnosti.</p>
+            
+            <div class="pt-6 mt-8 border-t border-slate-700">
+                <a href="index.html" class="text-amber-400 font-bold hover:underline">← Zpět na úvod</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const ulozenyJazyk = localStorage.getItem('vinmat_main_lang') || 'en';
+        
+        if (ulozenyJazyk === 'cs' || ulozenyJazyk === 'cz') {
+            document.getElementById('lang-cz').classList.remove('hidden');
+            document.documentElement.lang = 'cs';
+        } else {
+            document.getElementById('lang-en').classList.remove('hidden');
+            document.documentElement.lang = 'en';
+        }
+    </script>
+</body>
+</html>
