@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinmat.eu - Personal Projects Ecosystem</title>
+    <title>Vinmat.eu</title>
     <style>
         * {
             box-sizing: border-box;
@@ -132,14 +132,14 @@
             transform: translateX(4px);
         }
 
-        /* Patička pro Google AdSense legal linky */
+        /* Patička */
         footer {
             width: 100%;
             text-align: center;
             padding: 20px;
             font-size: 12px;
             color: #475569;
-            border-t: 1px solid #1e293b;
+            border-top: 1px solid #1e293b;
         }
 
         footer a {
@@ -166,18 +166,18 @@
         <p class="subtitle" id="main-subtitle">Select a project you want to visit:</p>
         
         <div class="links-grid">
-            <a href="/weekify/" class="project-card">
+            <a href="/worldforkids/" class="project-card">
                 <div class="project-info">
-                    <div class="project-title">Weekify</div>
-                    <div class="project-desc" id="desc-weekify">Your web application for scheduling and productivity.</div>
+                    <div class="project-title" id="title-kids">World for Kids</div>
+                    <div class="project-desc" id="desc-kids">Library of activities for children.</div>
                 </div>
                 <div class="arrow">➔</div>
             </a>
 
-            <a href="/worldforkids/" class="project-card">
+            <a href="/weekify/" class="project-card">
                 <div class="project-info">
-                    <div class="project-title">World for Kids</div>
-                    <div class="project-desc" id="desc-kids">Library of activities for children.</div>
+                    <div class="project-title">Weekify</div>
+                    <div class="project-desc" id="desc-weekify">Your web application for scheduling and productivity.</div>
                 </div>
                 <div class="arrow">➔</div>
             </a>
@@ -187,50 +187,57 @@
     <footer>
         <p>
             © 2026 Vinmat.eu · 
-            <a href="privacy.html">Privacy Policy</a> · 
-            <a href="terms.html">Terms of Service</a>
+            <a href="privacy.html" id="link-privacy">Privacy Policy</a> · 
+            <a href="terms.html" id="link-terms">Terms of Service</a>
         </p>
     </footer>
 
     <script>
-        // Databáze rozšířených překladů (lepší pro Google roboty)
         const translations = {
             en: {
-                title: "Welcome to Vinmat.eu",
+                title: "Welcome to Vinmat's World",
                 subtitle: "Select a digital project you want to visit:",
-                weekify: "A minimalist web application and lightweight productivity tracker designed for scheduling and efficient management of your weekly goals.",
-                kids: "A curated library of premium worksheets, printables, illustrated mazes, coloring pages, and dot-to-dot puzzles structured into clear difficulty levels for parents and educators."
+                titleKids: "World for Kids",
+                kids: "A curated library of approved, illustrated mazes, coloring pages, and dot-to-dot puzzles structured into clear difficulty levels for parents and educators 🌍",
+                weekify: "Need to know what week or day of the year it currently is? Or look into the past? You are in the right place, click 👉",
+                privacy: "Privacy Policy",
+                terms: "Terms of Service"
             },
             cs: {
-                title: "Vítejte na Vinmat.eu",
+                title: "Vítejte ve Vinmatově světě",
                 subtitle: "Vyberte si digitální projekt, který chcete navštívit:",
-                weekify: "Minimalistická webová aplikace a lehký nástroj pro produktivitu navržený pro efektivní plánování a správu vašich týdenních cílů.",
-                kids: "Vybraná knihovna prémiových pracovních listů, ilustrovaných bludišť, omalovánek a spojovaček strukturovaných do jasných úrovní obtížnosti pro rodiče a pedagogy."
+                titleKids: "Vinmatův svět pro děti",
+                kids: "Vybraná knihovna odzkoušených ilustrovaných bludišť, omalovánek a spojovaček strukturovaných do jasných úrovní obtížnosti pro rodiče a pedagogy 🌍",
+                weekify: "Potřebujete vědět kolikátý je aktuální týden nebo den v tomto roce? Nebo se podívat i do minulosti? Jsi tu správně, klikni 👉",
+                privacy: "Zásady ochrany soukromí",
+                terms: "Podmínky užití"
             }
         };
 
-        // Načtení uloženého jazyka z paměti nebo výchozí EN
         let currentLang = localStorage.getItem('vinmat_main_lang') || 'en';
 
-        // Funkce pro přepínání jazyků
         function setLanguage(lang) {
             currentLang = lang;
             localStorage.setItem('vinmat_main_lang', lang);
 
-            // Aktualizace textů na stránce
+            // Aktualizace textů
             document.getElementById('main-title').innerText = translations[lang].title;
             document.getElementById('main-subtitle').innerText = translations[lang].subtitle;
-            document.getElementById('desc-weekify').innerText = translations[lang].weekify;
+            document.getElementById('title-kids').innerText = translations[lang].titleKids;
             document.getElementById('desc-kids').innerText = translations[lang].kids;
+            document.getElementById('desc-weekify').innerText = translations[lang].weekify;
+            
+            // Aktualizace textů v patičce podle jazyka
+            document.getElementById('link-privacy').innerText = translations[lang].privacy;
+            document.getElementById('link-terms').innerText = translations[lang].terms;
 
-            // Správa aktivního vzhledu tlačítek
+            // Aktivní stav tlačítek
             document.getElementById('btn-en').classList.toggle('active', lang === 'en');
             document.getElementById('btn-cs').classList.toggle('active', lang === 'cs');
             
             document.documentElement.lang = lang === 'cs' ? 'cs' : 'en';
         }
 
-        // Automatické spuštění správného jazyka při načtení
         setLanguage(currentLang);
     </script>
 </body>
