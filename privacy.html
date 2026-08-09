@@ -1,50 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy / Zásady ochrany soukromí</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | VinMat</title>
+  <meta name="description" content="Privacy information for VinMat and projects hosted on vinmat.eu.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://vinmat.eu/privacy.html">
+  <style>*{box-sizing:border-box}body{margin:0;background:#f8fafc;color:#0f172a;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.7}.top{background:#0f172a;color:#fff}.top div,.page{width:min(820px,calc(100% - 32px));margin:auto}.top div{min-height:60px;display:flex;align-items:center;justify-content:space-between}.top a{color:#fff;text-decoration:none;font-weight:900}.langs button{border:1px solid #475569;background:#1e293b;color:#cbd5e1;border-radius:7px;padding:5px 8px;font-weight:800;cursor:pointer}.langs button.active{background:#38bdf8;color:#082f49;border-color:#38bdf8}.page{padding:50px 0 70px}.card{background:#fff;border:1px solid #e2e8f0;border-radius:20px;padding:clamp(22px,5vw,42px);box-shadow:0 12px 40px #0f172a0a}h1{font-size:2.3rem;letter-spacing:-.04em;margin:0 0 4px}h2{margin-top:30px;font-size:1.2rem}p,li{color:#475569}.muted{font-size:.82rem;color:#94a3b8}.hidden{display:none}a{color:#4f46e5}</style>
 </head>
-<body class="bg-slate-900 text-slate-300 p-6 md:p-12 font-sans leading-relaxed">
-    <div class="max-w-3xl mx-auto bg-slate-800 p-8 rounded-2xl border border-slate-700">
-        
-        <div id="lang-en" class="hidden">
-            <h1 class="text-2xl font-bold mb-2 text-white">Privacy Policy</h1>
-            <p class="text-xs text-slate-500 mb-6">Last updated: June 2026</p>
-            <p class="mb-4">This website (vinmat.eu) is a personal project landing page. We do not track users, register accounts, or collect personal information.</p>
-            <p class="mb-4">We use Google AdSense to serve contextual ads. Google may use advertising cookies to optimize ads based on your previous browsing history. You can opt out of personalized ads via Google Settings.</p>
-            
-            <div class="pt-6 mt-8 border-t border-slate-700">
-                <a href="index.html" class="text-amber-400 font-bold hover:underline">← Back to Home</a>
-            </div>
-        </div>
-
-        <div id="lang-cz" class="hidden">
-            <h1 class="text-2xl font-bold mb-2 text-white">Zásady ochrany osobních údajů</h1>
-            <p class="text-xs text-slate-500 mb-6">Poslední aktualizace: Červen 2026</p>
-            <p class="mb-4">Tento web (vinmat.eu) slouží jako osobní rozcestník projektů. Nesbíráme žádné osobní údaje, neshromažďujeme data o návštěvnících ani nevytváříme uživatelské profily.</p>
-            <p class="mb-4">Služba Google AdSense zde může zobrazovat reklamy za pomoci anonymních souborů cookies s cílem přizpůsobit nabídku zájmům návštěvníka. Personalizované reklamy můžete vypnout v nastavení svého Google účtu.</p>
-            
-            <div class="pt-6 mt-8 border-t border-slate-700">
-                <a href="index.html" class="text-amber-400 font-bold hover:underline">← Zpět na úvod</a>
-            </div>
-        </div>
-
-    </div>
-
-    <script>
-        // Podíváme se, jaký jazyk byl aktivní na hlavní stránce
-        // Pokud tam byla čeština ('cs' nebo 'cz'), ukážeme české znění, jinak anglické
-        const ulozenyJazyk = localStorage.getItem('vinmat_main_lang') || 'en';
-        
-        if (ulozenyJazyk === 'cs' || ulozenyJazyk === 'cz') {
-            document.getElementById('lang-cz').classList.remove('hidden');
-            document.documentElement.lang = 'cs';
-        } else {
-            document.getElementById('lang-en').classList.remove('hidden');
-            document.documentElement.lang = 'en';
-        }
-    </script>
+<body>
+<header class="top"><div><a href="/">VinMat</a><span class="langs"><button id="enBtn" onclick="showLang('en')">EN</button> <button id="csBtn" onclick="showLang('cs')">CZ</button></span></div></header>
+<main class="page"><div class="card">
+<section id="en">
+<h1>Privacy Policy</h1><p class="muted">Last updated: August 2026</p>
+<p>VinMat operates the website <strong>vinmat.eu</strong> and projects available under this domain. We do not require user accounts and we do not sell personal data.</p>
+<h2>Analytics</h2><p>The main VinMat landing page and Weekify use GoatCounter for privacy-friendly website statistics. VinMat's World for Kids may use Google Analytics to understand how the project is used. These services can process technical information such as page visits, browser information, approximate location derived from network information, and similar usage data.</p>
+<h2>Advertising</h2><p>VinMat's World for Kids may use Google AdSense. Google and its advertising partners may use cookies or similar technologies to show, measure and limit ads in accordance with their own policies and the consent choices available to visitors. The main VinMat landing page and Weekify do not currently display AdSense ads.</p>
+<h2>Local storage and settings</h2><p>Some VinMat pages use browser local storage to remember settings such as language or interface preferences. These settings remain in your browser unless you clear them.</p>
+<h2>Email</h2><p>If you contact us by email, we receive the information you choose to send. We use it only to respond to your message or handle the related request.</p>
+<h2>Children</h2><p>VinMat's World for Kids is designed for use by families, parents, guardians and educators. We do not knowingly ask children to create accounts or submit personal information through the website.</p>
+<h2>Third-party services and links</h2><p>Individual projects can link to external services or use third-party infrastructure. Those services have their own privacy policies and practices.</p>
+<h2>Contact</h2><p>Questions about privacy can be sent to <a href="mailto:vinmatforkids@gmail.com">vinmatforkids@gmail.com</a>.</p>
+<p><a href="/">← Back to VinMat</a></p>
+</section>
+<section id="cs" class="hidden">
+<h1>Zásady ochrany soukromí</h1><p class="muted">Poslední aktualizace: srpen 2026</p>
+<p>VinMat provozuje web <strong>vinmat.eu</strong> a projekty dostupné pod touto doménou. Nevyžadujeme uživatelské účty a osobní údaje neprodáváme.</p>
+<h2>Statistiky návštěvnosti</h2><p>Hlavní stránka VinMat a Weekify používají GoatCounter pro základní statistiky návštěvnosti. VinMat's World for Kids může používat Google Analytics pro pochopení využívání projektu. Tyto služby mohou zpracovávat technické informace, například navštívené stránky, údaje o prohlížeči, přibližnou polohu odvozenou ze síťových údajů a podobná data o používání.</p>
+<h2>Reklama</h2><p>VinMat's World for Kids může používat Google AdSense. Google a jeho reklamní partneři mohou používat cookies nebo podobné technologie pro zobrazování, měření a omezení reklam podle svých zásad a podle souhlasu návštěvníka. Hlavní stránka VinMat ani Weekify nyní reklamy AdSense nezobrazují.</p>
+<h2>Lokální úložiště a nastavení</h2><p>Některé stránky VinMat používají local storage v prohlížeči pro zapamatování nastavení, například jazyka nebo vzhledu. Tato data zůstávají v prohlížeči, dokud je uživatel nevymaže.</p>
+<h2>E-mail</h2><p>Pokud nás kontaktujete e-mailem, obdržíme informace, které sami odešlete. Použijeme je pouze k odpovědi nebo vyřízení souvisejícího požadavku.</p>
+<h2>Děti</h2><p>VinMat's World for Kids je určen pro používání rodinami, rodiči, zákonnými zástupci a pedagogy. Děti vědomě nevyzýváme k vytváření účtů ani k odesílání osobních údajů přes web.</p>
+<h2>Služby třetích stran a odkazy</h2><p>Jednotlivé projekty mohou odkazovat na externí služby nebo využívat infrastrukturu třetích stran. Tyto služby mají vlastní zásady ochrany soukromí.</p>
+<h2>Kontakt</h2><p>Dotazy k ochraně soukromí můžete poslat na <a href="mailto:vinmatforkids@gmail.com">vinmatforkids@gmail.com</a>.</p>
+<p><a href="/">← Zpět na VinMat</a></p>
+</section>
+</div></main>
+<script>function showLang(lang){document.getElementById('en').classList.toggle('hidden',lang!=='en');document.getElementById('cs').classList.toggle('hidden',lang!=='cs');document.getElementById('enBtn').classList.toggle('active',lang==='en');document.getElementById('csBtn').classList.toggle('active',lang==='cs');document.documentElement.lang=lang==='cs'?'cs':'en';localStorage.setItem('vinmat_main_lang',lang)}showLang(localStorage.getItem('vinmat_main_lang')||'en');</script>
 </body>
 </html>
