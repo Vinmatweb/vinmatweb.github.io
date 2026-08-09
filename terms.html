@@ -1,48 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Service / Podmínky užití</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Use | VinMat</title>
+  <meta name="description" content="Terms of use for VinMat and projects hosted on vinmat.eu.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://vinmat.eu/terms.html">
+  <style>*{box-sizing:border-box}body{margin:0;background:#f8fafc;color:#0f172a;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.7}.top{background:#0f172a;color:#fff}.top div,.page{width:min(820px,calc(100% - 32px));margin:auto}.top div{min-height:60px;display:flex;align-items:center;justify-content:space-between}.top a{color:#fff;text-decoration:none;font-weight:900}.langs button{border:1px solid #475569;background:#1e293b;color:#cbd5e1;border-radius:7px;padding:5px 8px;font-weight:800;cursor:pointer}.langs button.active{background:#38bdf8;color:#082f49;border-color:#38bdf8}.page{padding:50px 0 70px}.card{background:#fff;border:1px solid #e2e8f0;border-radius:20px;padding:clamp(22px,5vw,42px);box-shadow:0 12px 40px #0f172a0a}h1{font-size:2.3rem;letter-spacing:-.04em;margin:0 0 4px}h2{margin-top:30px;font-size:1.2rem}p,li{color:#475569}.muted{font-size:.82rem;color:#94a3b8}.hidden{display:none}a{color:#4f46e5}</style>
 </head>
-<body class="bg-slate-900 text-slate-300 p-6 md:p-12 font-sans leading-relaxed">
-    <div class="max-w-3xl mx-auto bg-slate-800 p-8 rounded-2xl border border-slate-700">
-        
-        <div id="lang-en" class="hidden">
-            <h1 class="text-2xl font-bold mb-2 text-white">Terms of Service</h1>
-            <p class="text-xs text-slate-500 mb-6">Last updated: June 2026</p>
-            <p class="mb-4">By entering vinmat.eu, you agree to access its projects (Weekify, World for Kids) for personal, non-commercial purposes.</p>
-            <p class="mb-4">All custom tools and features are provided free of charge without any legal operational warranties or guaranteed uptime.</p>
-            
-            <div class="pt-6 mt-8 border-t border-slate-700">
-                <a href="index.html" class="text-amber-400 font-bold hover:underline">← Back to Home</a>
-            </div>
-        </div>
-
-        <div id="lang-cz" class="hidden">
-            <h1 class="text-2xl font-bold mb-2 text-white">Podmínky užití</h1>
-            <p class="text-xs text-slate-500 mb-6">Poslední aktualizace: Červen 2026</p>
-            <p class="mb-4">Vstupem na doménu vinmat.eu souhlasíte s využíváním zdejších bezplatných aplikací a projektů výhradně pro soukromé, osobní a vzdělávací účely.</p>
-            <p class="mb-4">Veškeré služby a nástroje jsou poskytovány bezplatně a bez jakýchkoli komerčních záruk stability, funkčnosti či trvalé dostupnosti.</p>
-            
-            <div class="pt-6 mt-8 border-t border-slate-700">
-                <a href="index.html" class="text-amber-400 font-bold hover:underline">← Zpět na úvod</a>
-            </div>
-        </div>
-
-    </div>
-
-    <script>
-        const ulozenyJazyk = localStorage.getItem('vinmat_main_lang') || 'en';
-        
-        if (ulozenyJazyk === 'cs' || ulozenyJazyk === 'cz') {
-            document.getElementById('lang-cz').classList.remove('hidden');
-            document.documentElement.lang = 'cs';
-        } else {
-            document.getElementById('lang-en').classList.remove('hidden');
-            document.documentElement.lang = 'en';
-        }
-    </script>
+<body>
+<header class="top"><div><a href="/">VinMat</a><span class="langs"><button id="enBtn" onclick="showLang('en')">EN</button> <button id="csBtn" onclick="showLang('cs')">CZ</button></span></div></header>
+<main class="page"><div class="card">
+<section id="en">
+<h1>Terms of Use</h1><p class="muted">Last updated: August 2026</p>
+<p>These terms apply to the VinMat website at <strong>vinmat.eu</strong> and to VinMat projects available under this domain unless a specific project states otherwise.</p>
+<h2>Using VinMat projects</h2><p>VinMat projects are provided for personal, family and educational use. Printable worksheets may be downloaded and printed for use at home or in a classroom. They may not be resold, republished as your own product, redistributed as downloadable files, or used to build competing commercial collections without permission.</p>
+<h2>Availability and changes</h2><p>Projects are provided as available. Features, content, links and project structure may change over time, and continuous availability is not guaranteed.</p>
+<h2>Accuracy</h2><p>We try to review content and tools before publication, but errors can occur. Users remain responsible for deciding whether a worksheet, activity or tool is suitable for their situation.</p>
+<h2>Third-party services</h2><p>Some projects can use or link to third-party services such as analytics, advertising platforms or external websites. Their own terms and policies also apply when you use those services.</p>
+<h2>Contact</h2><p>Questions about these terms can be sent to <a href="mailto:vinmatforkids@gmail.com">vinmatforkids@gmail.com</a>.</p>
+<p><a href="/">← Back to VinMat</a></p>
+</section>
+<section id="cs" class="hidden">
+<h1>Podmínky užití</h1><p class="muted">Poslední aktualizace: srpen 2026</p>
+<p>Tyto podmínky platí pro web VinMat na adrese <strong>vinmat.eu</strong> a pro projekty VinMat dostupné pod touto doménou, pokud konkrétní projekt nestanoví jinak.</p>
+<h2>Používání projektů VinMat</h2><p>Projekty VinMat jsou určeny pro osobní, rodinné a vzdělávací použití. Pracovní listy lze stáhnout a vytisknout pro použití doma nebo ve výuce. Bez souhlasu je nelze dále prodávat, vydávat za vlastní produkt, znovu distribuovat jako soubory ke stažení ani používat pro tvorbu konkurenčních komerčních kolekcí.</p>
+<h2>Dostupnost a změny</h2><p>Projekty jsou poskytovány v aktuálně dostupné podobě. Funkce, obsah, odkazy i struktura projektů se mohou v čase měnit a nepřetržitá dostupnost není zaručena.</p>
+<h2>Správnost obsahu</h2><p>Obsah a nástroje se snažíme před zveřejněním kontrolovat, ale chyba se může objevit. Uživatel vždy sám posuzuje, zda je konkrétní pracovní list, aktivita nebo nástroj vhodný pro jeho situaci.</p>
+<h2>Služby třetích stran</h2><p>Některé projekty mohou využívat nebo odkazovat na služby třetích stran, například analytické či reklamní platformy nebo externí weby. Při jejich používání se uplatňují také jejich vlastní podmínky a zásady.</p>
+<h2>Kontakt</h2><p>Dotazy k podmínkám můžete poslat na <a href="mailto:vinmatforkids@gmail.com">vinmatforkids@gmail.com</a>.</p>
+<p><a href="/">← Zpět na VinMat</a></p>
+</section>
+</div></main>
+<script>function showLang(lang){document.getElementById('en').classList.toggle('hidden',lang!=='en');document.getElementById('cs').classList.toggle('hidden',lang!=='cs');document.getElementById('enBtn').classList.toggle('active',lang==='en');document.getElementById('csBtn').classList.toggle('active',lang==='cs');document.documentElement.lang=lang==='cs'?'cs':'en';localStorage.setItem('vinmat_main_lang',lang)}showLang(localStorage.getItem('vinmat_main_lang')||'en');</script>
 </body>
 </html>
