@@ -1,246 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinmat.eu</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: #0f172a;
-            color: #f8fafc;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            position: relative;
-            padding: 20px;
-        }
-
-        /* Přepínač jazyků vpravo nahoře */
-        .lang-switcher {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            display: flex;
-            gap: 10px;
-            z-index: 20;
-        }
-
-        .lang-btn {
-            background: #1e293b;
-            color: #94a3b8;
-            border: 1px solid #334155;
-            padding: 6px 12px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-weight: 600;
-            font-size: 14px;
-            transition: all 0.2s ease;
-        }
-
-        .lang-btn:hover {
-            color: #f8fafc;
-            border-color: #475569;
-        }
-
-        .lang-btn.active {
-            background: #38bdf8;
-            color: #0f172a;
-            border-color: #38bdf8;
-        }
-
-        /* Obsah rozcestníku */
-        .container {
-            text-align: center;
-            max-width: 650px;
-            width: 100%;
-            margin: auto;
-            padding: 40px 0;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            background: linear-gradient(to right, #38bdf8, #818cf8);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .subtitle {
-            color: #94a3b8;
-            margin-bottom: 40px;
-            font-size: 1.1rem;
-        }
-
-        /* Karty s projekty */
-        .links-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-
-        .project-card {
-            background: #1e293b;
-            border: 1px solid #334155;
-            border-radius: 12px;
-            padding: 22px;
-            text-decoration: none;
-            color: #f8fafc;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: transform 0.2s ease, border-color 0.2s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-2px);
-            border-color: #38bdf8;
-        }
-
-        .project-info {
-            text-align: left;
-            padding-right: 15px;
-        }
-
-        .project-title {
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 6px;
-        }
-
-        .project-desc {
-            color: #94a3b8;
-            font-size: 0.95rem;
-            line-height: 1.5;
-        }
-
-        .arrow {
-            color: #38bdf8;
-            font-size: 1.5rem;
-            transition: transform 0.2s ease;
-        }
-
-        .project-card:hover .arrow {
-            transform: translateX(4px);
-        }
-
-        /* Patička */
-        footer {
-            width: 100%;
-            text-align: center;
-            padding: 20px;
-            font-size: 12px;
-            color: #475569;
-            border-top: 1px solid #1e293b;
-        }
-
-        footer a {
-            color: #64748b;
-            text-decoration: underline;
-            margin: 0 8px;
-            transition: color 0.2s ease;
-        }
-
-        footer a:hover {
-            color: #94a3b8;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VinMat – Creative Projects for Kids & Families</title>
+  <meta name="description" content="VinMat creates free printable activities, family games and simple digital tools. Explore VinMat's World for Kids and other useful family projects.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://vinmat.eu/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VinMat – Creative Projects for Kids & Families">
+  <meta property="og:description" content="Free printable activities, family projects and simple digital tools from VinMat.">
+  <meta property="og:url" content="https://vinmat.eu/">
+  <meta property="og:image" content="https://vinmat.eu/worldforkids/assets/images/banner.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="VinMat – Creative Projects for Kids & Families">
+  <meta name="twitter:description" content="Free printable activities, family projects and simple digital tools from VinMat.">
+  <meta name="twitter:image" content="https://vinmat.eu/worldforkids/assets/images/banner.png">
+  <style>
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#f8fafc;color:#0f172a;line-height:1.6}.wrap{width:min(1120px,calc(100% - 32px));margin:0 auto}.topbar{background:#0f172a;color:#fff;position:sticky;top:0;z-index:20;border-bottom:1px solid #1e293b}.topbar .wrap{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-weight:900;letter-spacing:-.04em;font-size:1.35rem;color:#fff;text-decoration:none}.nav{display:flex;align-items:center;gap:18px;font-size:.9rem}.nav a{color:#cbd5e1;text-decoration:none;font-weight:700}.nav a:hover{color:#fff}.langs{display:flex;gap:6px}.lang{border:1px solid #334155;background:#1e293b;color:#cbd5e1;border-radius:8px;padding:6px 9px;font-weight:800;cursor:pointer}.lang.active{background:#38bdf8;border-color:#38bdf8;color:#082f49}.hero{background:linear-gradient(135deg,#0f172a 0%,#172554 58%,#312e81 100%);color:#fff;padding:78px 0 68px}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}.eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.16em;font-weight:900;color:#7dd3fc}.hero h1{font-size:clamp(2.5rem,6vw,4.8rem);line-height:.98;letter-spacing:-.055em;margin:12px 0 20px;max-width:760px}.hero p{font-size:1.1rem;color:#cbd5e1;max-width:690px;margin:0 0 28px}.actions{display:flex;flex-wrap:wrap;gap:12px}.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:12px;padding:13px 18px;font-weight:900}.btn-primary{background:#38bdf8;color:#082f49}.btn-secondary{border:1px solid #475569;color:#fff;background:#ffffff0b}.hero-card{background:#ffffff0d;border:1px solid #ffffff24;border-radius:24px;padding:18px;box-shadow:0 20px 70px #02061766}.hero-card img{display:block;width:100%;border-radius:15px;background:#fff}.section{padding:70px 0}.section.alt{background:#fff}.section-head{max-width:760px;margin-bottom:32px}.section h2{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.08;letter-spacing:-.04em;margin:0 0 12px}.section-head p{color:#64748b;margin:0;font-size:1.02rem}.featured{display:grid;grid-template-columns:1.08fr .92fr;gap:32px;align-items:stretch}.feature-copy,.feature-panel,.tool-card,.about-card{background:#fff;border:1px solid #e2e8f0;border-radius:22px;padding:28px;box-shadow:0 10px 35px #0f172a0a}.feature-copy h3{font-size:1.75rem;letter-spacing:-.035em;margin:0 0 12px}.feature-copy p{color:#475569}.chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 24px}.chip{background:#eef2ff;color:#3730a3;border:1px solid #e0e7ff;border-radius:999px;padding:6px 10px;font-size:.78rem;font-weight:900}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.stat{background:#f8fafc;border:1px solid #e2e8f0;border-radius:14px;padding:14px}.stat strong{display:block;font-size:1.5rem;letter-spacing:-.04em}.stat span{font-size:.77rem;color:#64748b;font-weight:800}.feature-panel{background:#0f172a;color:#fff}.feature-panel h3{margin:0 0 8px}.feature-panel p{color:#94a3b8;margin:0 0 18px}.preview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.preview{background:#fff;border-radius:12px;overflow:hidden;min-height:130px}.preview img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}.preview-meta{padding:8px;color:#0f172a;font-size:.7rem;font-weight:800;line-height:1.25}.preview-grid:empty{display:none}.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.principle{background:#fff;border:1px solid #e2e8f0;border-radius:18px;padding:22px}.principle b{display:block;margin-bottom:6px}.principle p{margin:0;color:#64748b;font-size:.92rem}.tools{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.tool-card{text-decoration:none;color:inherit;transition:.18s ease}.tool-card:hover{transform:translateY(-2px);border-color:#94a3b8}.tool-icon{font-size:2rem}.tool-card h3{margin:8px 0 8px}.tool-card p{color:#64748b;margin:0}.tool-link{display:inline-block;margin-top:14px;color:#4f46e5;font-weight:900}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.about-card p{color:#475569}.process{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:18px}.process span{display:flex;align-items:center;justify-content:center;text-align:center;min-height:64px;border-radius:12px;background:#f1f5f9;color:#334155;font-size:.78rem;font-weight:900;padding:8px}.footer{background:#0f172a;color:#94a3b8;padding:28px 0;font-size:.86rem}.footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer a{color:#cbd5e1;text-decoration:none;margin-right:14px}.footer a:hover{color:#fff}@media(max-width:850px){.hero-grid,.featured,.about-grid{grid-template-columns:1fr}.hero-card{max-width:600px}.principles{grid-template-columns:1fr}.process{grid-template-columns:1fr 1fr}.nav>a{display:none}}@media(max-width:620px){.hero{padding:58px 0 52px}.tools,.stats{grid-template-columns:1fr}.preview-grid{grid-template-columns:repeat(2,1fr)}.topbar .wrap{min-height:58px}.section{padding:52px 0}}
+  </style>
 </head>
 <body>
-
-    <div class="lang-switcher">
-        <button class="lang-btn" id="btn-en" onclick="setLanguage('en')">EN</button>
-        <button class="lang-btn" id="btn-cs" onclick="setLanguage('cs')">CZ</button>
-    </div>
-
-    <div class="container">
-        <h1 id="main-title">Welcome to Vinmat.eu</h1>
-        <p class="subtitle" id="main-subtitle">Select a project you want to visit:</p>
-        
-        <div class="links-grid">
-            <a href="/worldforkids/" class="project-card">
-                <div class="project-info">
-                    <div class="project-title" id="title-kids">World for Kids</div>
-                    <div class="project-desc" id="desc-kids">Library of activities for children.</div>
-                </div>
-                <div class="arrow">➔</div>
-            </a>
-
-            <a href="/weekify/" class="project-card">
-                <div class="project-info">
-                    <div class="project-title">Weekify</div>
-                    <div class="project-desc" id="desc-weekify">Your web application for scheduling and productivity.</div>
-                </div>
-                <div class="arrow">➔</div>
-            </a>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="/">VinMat</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#projects" data-i18n="navProjects">Projects</a>
+        <a href="#tools" data-i18n="navTools">Small tools</a>
+        <a href="#about" data-i18n="navAbout">About</a>
+        <div class="langs" aria-label="Language">
+          <button class="lang" id="btn-en" type="button" onclick="setLanguage('en')">EN</button>
+          <button class="lang" id="btn-cs" type="button" onclick="setLanguage('cs')">CZ</button>
         </div>
+      </nav>
     </div>
+  </header>
 
-    <footer>
-        <p>
-            © 2026 Vinmat.eu · 
-            <a href="privacy.html" id="link-privacy">Privacy Policy</a> · 
-            <a href="terms.html" id="link-terms">Terms of Service</a>
-        </p>
-    </footer>
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow" data-i18n="eyebrow">Independent family project</div>
+          <h1 data-i18n="heroTitle">Creative projects for kids and families</h1>
+          <p data-i18n="heroText">VinMat creates free printable activities, playful family experiences and simple digital tools. The aim is practical content that children and parents can actually use at home, in the classroom or while travelling.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="/worldforkids/" data-i18n="exploreKids">Explore World for Kids</a>
+            <a class="btn btn-secondary" href="#about" data-i18n="learnMore">How VinMat works</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="/worldforkids/assets/images/banner.png" alt="VinMat's World for Kids printable activities" width="1200" height="630">
+        </div>
+      </div>
+    </section>
 
-    <script>
-        const translations = {
-            en: {
-                title: "Welcome to Vinmat's World",
-                subtitle: "Select a digital project you want to visit:",
-                titleKids: "World for Kids",
-                kids: "A curated library of approved, illustrated mazes, coloring pages, and dot-to-dot puzzles structured into clear difficulty levels for parents and educators 🌍",
-                weekify: "Need to know what week or day of the year it currently is? Or look into the past? You are in the right place, click 👉",
-                privacy: "Privacy Policy",
-                terms: "Terms of Service"
-            },
-            cs: {
-                title: "Vítejte ve Vinmatově světě",
-                subtitle: "Vyberte si digitální projekt, který chcete navštívit:", // VYKÁNÍ
-                titleKids: "Vinmatův svět pro děti",
-                kids: "Vybraná knihovna odzkoušených ilustrovaných bludišť, omalovánek a spojovaček strukturovaných do jasných úrovní obtížnosti pro rodiče a pedagogy 🌍",
-                weekify: "Potřebujete vědět, kolikátý je aktuální týden nebo den v tomto roce? Nebo se podívat i do minulosti? Jste tu správně, klikněte 👉", // VYKÁNÍ SOUDRŽNÉ S PODNADPISEM
-                privacy: "Zásady ochrany soukromí",
-                terms: "Podmínky užití"
-            }
-        };
+    <section class="section" id="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 data-i18n="projectsTitle">Featured project</h2>
+          <p data-i18n="projectsIntro">The main VinMat project is a growing library of printable activities designed around clear difficulty levels instead of a one-size-fits-all approach.</p>
+        </div>
+        <div class="featured">
+          <article class="feature-copy">
+            <h3>VinMat's World for Kids</h3>
+            <p data-i18n="kidsText">Free printable coloring pages, mazes and dot-to-dot activities for different ages and skill levels. Each worksheet is reviewed, categorized and prepared for simple A4 printing.</p>
+            <div class="chips">
+              <span class="chip" data-i18n="chipFree">Free printables</span>
+              <span class="chip" data-i18n="chipLevels">5 difficulty levels</span>
+              <span class="chip" data-i18n="chipLanguages">EN · CZ · DE · ES</span>
+            </div>
+            <div class="stats" aria-label="Activity library statistics">
+              <div class="stat"><strong id="count-coloring">Growing</strong><span data-i18n="coloring">Coloring pages</span></div>
+              <div class="stat"><strong id="count-mazes">Growing</strong><span data-i18n="mazes">Mazes</span></div>
+              <div class="stat"><strong id="count-dots">Growing</strong><span data-i18n="dots">Dot-to-dot</span></div>
+            </div>
+            <div class="actions" style="margin-top:22px">
+              <a class="btn btn-primary" href="/worldforkids/" data-i18n="browseActivities">Browse all activities</a>
+            </div>
+          </article>
+          <aside class="feature-panel">
+            <h3 data-i18n="latestTitle">A few recent activities</h3>
+            <p data-i18n="latestText">A small live preview from the growing World for Kids library.</p>
+            <div class="preview-grid" id="latest-grid" aria-live="polite"></div>
+          </aside>
+        </div>
+      </div>
+    </section>
 
-        let currentLang = localStorage.getItem('vinmat_main_lang') || 'en';
+    <section class="section alt">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 data-i18n="whyTitle">Made to be useful, not just numerous</h2>
+          <p data-i18n="whyIntro">VinMat projects are built around a simple process: create something practical, check it, improve it and publish it in a form that is easy to use.</p>
+        </div>
+        <div class="principles">
+          <div class="principle"><b data-i18n="p1Title">Clear difficulty</b><p data-i18n="p1Text">Activities are separated into levels so parents and educators can choose something appropriate instead of guessing.</p></div>
+          <div class="principle"><b data-i18n="p2Title">Print-friendly</b><p data-i18n="p2Text">Worksheets are prepared for straightforward A4 printing, with clean layouts and practical download options.</p></div>
+          <div class="principle"><b data-i18n="p3Title">Growing library</b><p data-i18n="p3Text">New activities and themes are added gradually, while existing content is reviewed and improved when needed.</p></div>
+        </div>
+      </div>
+    </section>
 
-        function setLanguage(lang) {
-            currentLang = lang;
-            localStorage.setItem('vinmat_main_lang', lang);
+    <section class="section" id="tools">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 data-i18n="toolsTitle">Small tools & features</h2>
+          <p data-i18n="toolsIntro">Not every useful idea needs to become a large project. Small utilities live here and can grow later if people find them useful.</p>
+        </div>
+        <div class="tools">
+          <a class="tool-card" href="/weekify/">
+            <div class="tool-icon">📅</div>
+            <h3>Weekify</h3>
+            <p data-i18n="weekifyText">Check the current ISO week number and day of the year, or browse weeks and dates in other years.</p>
+            <span class="tool-link" data-i18n="openWeekify">Open Weekify →</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-            // Aktualizace textů
-            document.getElementById('main-title').innerText = translations[lang].title;
-            document.getElementById('main-subtitle').innerText = translations[lang].subtitle;
-            document.getElementById('title-kids').innerText = translations[lang].titleKids;
-            document.getElementById('desc-kids').innerText = translations[lang].kids;
-            document.getElementById('desc-weekify').innerText = translations[lang].weekify;
-            
-            // Aktualizace textů v patičce podle jazyka
-            document.getElementById('link-privacy').innerText = translations[lang].privacy;
-            document.getElementById('link-terms').innerText = translations[lang].terms;
+    <section class="section alt" id="about">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 data-i18n="aboutTitle">About VinMat</h2>
+          <p data-i18n="aboutIntro">VinMat is an independent family project focused on printable activities, games and simple digital experiences for children and parents.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-card">
+            <h3 data-i18n="howTitle">How projects are made</h3>
+            <p data-i18n="howText">Ideas are developed with AI-assisted tools where useful, then reviewed, edited and organized before publication. The goal is a consistent result that is easy for families to understand and use.</p>
+            <div class="process"><span data-i18n="stepIdea">Idea</span><span data-i18n="stepDesign">Design</span><span data-i18n="stepCreate">Creation</span><span data-i18n="stepReview">Review</span><span data-i18n="stepPublish">Publish</span></div>
+          </div>
+          <div class="about-card">
+            <h3 data-i18n="contactTitle">Questions or feedback?</h3>
+            <p data-i18n="contactText">If you spot a problem, have an idea for a future activity or want to get in touch about a VinMat project, email us.</p>
+            <p><a href="mailto:vinmatforkids@gmail.com" style="color:#4f46e5;font-weight:900">vinmatforkids@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-            // Aktivní stav tlačítek
-            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
-            document.getElementById('btn-cs').classList.toggle('active', lang === 'cs');
-            
-            document.documentElement.lang = lang === 'cs' ? 'cs' : 'en';
-        }
+  <footer class="footer">
+    <div class="wrap">
+      <div>© 2026 VinMat</div>
+      <div><a href="/worldforkids/">World for Kids</a><a href="/weekify/">Weekify</a><a href="/privacy.html" data-i18n="privacy">Privacy</a><a href="/terms.html" data-i18n="terms">Terms</a></div>
+    </div>
+  </footer>
 
-        setLanguage(currentLang);
-    </script>
-    <script data-goatcounter="https://vinmat.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+  <script>
+    const t={
+      en:{navProjects:'Projects',navTools:'Small tools',navAbout:'About',eyebrow:'Independent family project',heroTitle:'Creative projects for kids and families',heroText:'VinMat creates free printable activities, playful family experiences and simple digital tools. The aim is practical content that children and parents can actually use at home, in the classroom or while travelling.',exploreKids:'Explore World for Kids',learnMore:'How VinMat works',projectsTitle:'Featured project',projectsIntro:'The main VinMat project is a growing library of printable activities designed around clear difficulty levels instead of a one-size-fits-all approach.',kidsText:'Free printable coloring pages, mazes and dot-to-dot activities for different ages and skill levels. Each worksheet is reviewed, categorized and prepared for simple A4 printing.',chipFree:'Free printables',chipLevels:'5 difficulty levels',chipLanguages:'EN · CZ · DE · ES',coloring:'Coloring pages',mazes:'Mazes',dots:'Dot-to-dot',browseActivities:'Browse all activities',latestTitle:'A few recent activities',latestText:'A small live preview from the growing World for Kids library.',whyTitle:'Made to be useful, not just numerous',whyIntro:'VinMat projects are built around a simple process: create something practical, check it, improve it and publish it in a form that is easy to use.',p1Title:'Clear difficulty',p1Text:'Activities are separated into levels so parents and educators can choose something appropriate instead of guessing.',p2Title:'Print-friendly',p2Text:'Worksheets are prepared for straightforward A4 printing, with clean layouts and practical download options.',p3Title:'Growing library',p3Text:'New activities and themes are added gradually, while existing content is reviewed and improved when needed.',toolsTitle:'Small tools & features',toolsIntro:'Not every useful idea needs to become a large project. Small utilities live here and can grow later if people find them useful.',weekifyText:'Check the current ISO week number and day of the year, or browse weeks and dates in other years.',openWeekify:'Open Weekify →',aboutTitle:'About VinMat',aboutIntro:'VinMat is an independent family project focused on printable activities, games and simple digital experiences for children and parents.',howTitle:'How projects are made',howText:'Ideas are developed with AI-assisted tools where useful, then reviewed, edited and organized before publication. The goal is a consistent result that is easy for families to understand and use.',stepIdea:'Idea',stepDesign:'Design',stepCreate:'Creation',stepReview:'Review',stepPublish:'Publish',contactTitle:'Questions or feedback?',contactText:'If you spot a problem, have an idea for a future activity or want to get in touch about a VinMat project, email us.',privacy:'Privacy',terms:'Terms'},
+      cs:{navProjects:'Projekty',navTools:'Vychytávky',navAbout:'O VinMat',eyebrow:'Nezávislý rodinný projekt',heroTitle:'Kreativní projekty pro děti a rodiny',heroText:'VinMat vytváří bezplatné pracovní listy, rodinné hry a jednoduché digitální nástroje. Cílem je praktický obsah, který děti a rodiče opravdu využijí doma, ve škole i na cestách.',exploreKids:'Prozkoumat World for Kids',learnMore:'Jak VinMat funguje',projectsTitle:'Hlavní projekt',projectsIntro:'Hlavním projektem VinMat je rostoucí knihovna pracovních listů rozdělených do jasných úrovní obtížnosti podle věku a dovedností.',kidsText:'Omalovánky, bludiště a spojovačky zdarma pro různé věkové skupiny a úrovně. Každý pracovní list je zkontrolovaný, zařazený a připravený pro jednoduchý tisk na A4.',chipFree:'Zdarma k vytisknutí',chipLevels:'5 úrovní obtížnosti',chipLanguages:'EN · CZ · DE · ES',coloring:'Omalovánky',mazes:'Bludiště',dots:'Spojovačky',browseActivities:'Procházet všechny aktivity',latestTitle:'Několik novějších aktivit',latestText:'Malá živá ukázka z rostoucí knihovny World for Kids.',whyTitle:'Užitečnost před množstvím',whyIntro:'Projekty VinMat vznikají jednoduchým postupem: vytvořit něco praktického, zkontrolovat to, upravit a zveřejnit tak, aby se to snadno používalo.',p1Title:'Jasná obtížnost',p1Text:'Aktivity jsou rozdělené do úrovní, aby rodiče a pedagogové mohli snadno vybrat vhodný pracovní list.',p2Title:'Připravené pro tisk',p2Text:'Pracovní listy jsou navržené pro jednoduchý tisk na A4 s čistým rozvržením a snadným stažením.',p3Title:'Rostoucí knihovna',p3Text:'Postupně přibývají nové aktivity a témata a stávající obsah se podle potřeby kontroluje a vylepšuje.',toolsTitle:'Vychytávky a drobnosti',toolsIntro:'Ne každý užitečný nápad musí být velký projekt. Menší nástroje mají místo tady a pokud budou užitečné, mohou časem růst.',weekifyText:'Zjistěte aktuální číslo ISO týdne a den v roce nebo si prohlédněte týdny a data v jiných letech.',openWeekify:'Otevřít Weekify →',aboutTitle:'O VinMat',aboutIntro:'VinMat je nezávislý rodinný projekt zaměřený na pracovní listy, hry a jednoduché digitální zážitky pro děti a rodiče.',howTitle:'Jak projekty vznikají',howText:'Nápady podle potřeby vznikají s pomocí AI nástrojů, poté jsou kontrolovány, upravovány a organizovány před zveřejněním. Cílem je konzistentní výsledek, který rodiny snadno pochopí a použijí.',stepIdea:'Nápad',stepDesign:'Návrh',stepCreate:'Tvorba',stepReview:'Kontrola',stepPublish:'Publikace',contactTitle:'Dotaz nebo připomínka?',contactText:'Pokud najdete problém, máte nápad na další aktivitu nebo se chcete ozvat kvůli některému projektu VinMat, napište nám.',privacy:'Soukromí',terms:'Podmínky'}
+    };
+    let currentLang=localStorage.getItem('vinmat_main_lang')||'en';
+    function setLanguage(lang){currentLang=lang;localStorage.setItem('vinmat_main_lang',lang);document.documentElement.lang=lang==='cs'?'cs':'en';document.querySelectorAll('[data-i18n]').forEach(el=>{const key=el.dataset.i18n;if(t[lang][key])el.textContent=t[lang][key]});document.getElementById('btn-en').classList.toggle('active',lang==='en');document.getElementById('btn-cs').classList.toggle('active',lang==='cs')}
+    setLanguage(currentLang);
+
+    function parseCSV(text){const rows=[];let row=[],field='',quoted=false;for(let i=0;i<text.length;i++){const c=text[i],n=text[i+1];if(c==='"'&&quoted&&n==='"'){field+='"';i++;continue}if(c==='"'){quoted=!quoted;continue}if(c===','&&!quoted){row.push(field);field='';continue}if((c==='\n'||c==='\r')&&!quoted){if(c==='\r'&&n==='\n')i++;row.push(field);field='';if(row.some(v=>v!==''))rows.push(row);row=[];continue}field+=c}if(field||row.length){row.push(field);rows.push(row)}if(rows.length<2)return[];const headers=rows[0];return rows.slice(1).map(r=>Object.fromEntries(headers.map((h,i)=>[h,r[i]||''])))}
+    const sources=[['omalovanky.csv','omalovanky','coloring'],['bludiste.csv','bludiste','maze'],['spojovacky.csv','spojovacky','dots']];
+    Promise.all(sources.map(async([file,folder,type])=>{const res=await fetch('/worldforkids/assets/data/'+file,{cache:'no-store'});if(!res.ok)throw new Error(file);return{folder,type,rows:parseCSV(await res.text())}})).then(groups=>{
+      const byType=Object.fromEntries(groups.map(g=>[g.type,g.rows.length]));
+      document.getElementById('count-coloring').textContent=byType.coloring||0;document.getElementById('count-mazes').textContent=byType.maze||0;document.getElementById('count-dots').textContent=byType.dots||0;
+      const all=groups.flatMap(g=>g.rows.map(r=>({...r,folder:g.folder,type:g.type}))).filter(r=>r.soubor&&r.datumPridani).sort((a,b)=>b.datumPridani.localeCompare(a.datumPridani)).slice(0,6);const grid=document.getElementById('latest-grid');
+      all.forEach(r=>{const card=document.createElement('a');card.className='preview';card.href='/worldforkids/';card.style.textDecoration='none';const img=document.createElement('img');img.loading='lazy';img.src='/worldforkids/public/'+r.folder+'/'+r.soubor+'.webp';img.alt=currentLang==='cs'?(r.nazevCz||r.nazevEn):(r.nazevEn||r.nazevCz);const meta=document.createElement('div');meta.className='preview-meta';meta.textContent=currentLang==='cs'?(r.nazevCz||r.nazevEn):(r.nazevEn||r.nazevCz);card.append(img,meta);grid.appendChild(card)})
+    }).catch(()=>{});
+  </script>
+  <script data-goatcounter="https://vinmat.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
