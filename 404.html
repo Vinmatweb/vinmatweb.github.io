@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page not found | VinMat</title>
+  <meta name="description" content="The requested VinMat page could not be found.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#080a0f">
+  <style>
+    :root{color-scheme:dark;--bg:#080a0f;--text:#f5f7fb;--muted:#9ca7b8;--line:rgba(255,255,255,.12);--blue:#74a7ff}
+    *{box-sizing:border-box}body{margin:0;min-height:100svh;display:grid;place-items:center;background:radial-gradient(circle at 75% 20%,rgba(76,111,255,.16),transparent 34%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.wrap{width:min(760px,calc(100% - 32px));padding:56px 0}.brand{display:inline-block;margin-bottom:54px;color:#fff;text-decoration:none;font-weight:900;letter-spacing:-.04em;font-size:1.25rem}.brand span{color:var(--blue)}.code{font-size:.75rem;text-transform:uppercase;letter-spacing:.18em;color:var(--blue);font-weight:850}h1{font-size:clamp(3.2rem,11vw,7rem);line-height:.92;letter-spacing:-.06em;margin:16px 0 22px}p{max-width:620px;color:var(--muted);font-size:1.08rem;line-height:1.7}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}.btn{display:inline-flex;padding:12px 16px;border:1px solid var(--line);border-radius:12px;text-decoration:none;font-weight:850}.btn.primary{background:#fff;color:#080a0f;border-color:#fff}.btn:hover{border-color:rgba(255,255,255,.3)}:focus-visible{outline:2px solid var(--blue);outline-offset:4px}@media(max-width:520px){.actions .btn{width:100%;justify-content:center}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <a class="brand" href="/" aria-label="VinMat home">VinMat<span>.</span></a>
+    <div class="code">404 · <span data-en="Page not found" data-cs="Stránka nenalezena">Page not found</span></div>
+    <h1 data-en="This page isn’t here." data-cs="Tahle stránka tu není.">This page isn’t here.</h1>
+    <p data-en="The address may be outdated or mistyped. Continue to the VinMat homepage or go directly to World for Kids." data-cs="Adresa může být zastaralá nebo chybně zadaná. Pokračujte na hlavní stránku VinMat nebo rovnou do World for Kids.">The address may be outdated or mistyped. Continue to the VinMat homepage or go directly to World for Kids.</p>
+    <div class="actions">
+      <a class="btn primary" href="/" data-en="VinMat home" data-cs="Hlavní stránka VinMat">VinMat home</a>
+      <a class="btn" href="/worldforkids/">World for Kids</a>
+      <a class="btn" href="/weekify/">Weekify</a>
+    </div>
+  </main>
+  <script>
+    (()=>{let lang='en';try{const saved=localStorage.getItem('vinmat-language');if(saved==='cs'||saved==='en')lang=saved;else if((navigator.language||'').toLowerCase().startsWith('cs'))lang='cs'}catch(e){}document.documentElement.lang=lang;document.querySelectorAll('[data-en][data-cs]').forEach(el=>{el.textContent=el.dataset[lang]})})();
+  </script>
+</body>
+</html>
