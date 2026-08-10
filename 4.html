@@ -3,119 +3,187 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VinMat — Projects, tools & creative worlds</title>
-  <meta name="description" content="VinMat is a growing collection of independent digital projects, creative worlds and practical tools.">
+  <title>VinMat — Creative Projects, Free Printables & Web Tools</title>
+  <meta name="description" content="VinMat brings together independent digital projects: free printable activities for kids, the VinMat’s Games YouTube channel and practical mini tools such as Weekify.">
   <meta name="robots" content="noindex, nofollow">
+  <meta name="author" content="VinMat">
+  <meta name="theme-color" content="#080a0f">
+  <link rel="canonical" href="https://vinmat.eu/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="VinMat">
+  <meta property="og:title" content="VinMat — Creative Projects, Free Printables & Web Tools">
+  <meta property="og:description" content="Explore VinMat’s independent projects: World for Kids, VinMat’s Games and practical mini tools such as Weekify.">
+  <meta property="og:url" content="https://vinmat.eu/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="VinMat — Creative Projects, Free Printables & Web Tools">
+  <meta name="twitter:description" content="Explore VinMat’s independent projects: World for Kids, VinMat’s Games and practical mini tools such as Weekify.">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"VinMat",
+    "url":"https://vinmat.eu/",
+    "description":"Independent digital projects from VinMat, including printable activities, gaming content and practical web tools.",
+    "inLanguage":["en","cs"]
+  }
+  </script>
   <style>
     :root{
-      --bg:#080a0f;--panel:#0d1118;--panel2:#111722;--text:#f5f7fb;--muted:#9ca7b8;--line:rgba(255,255,255,.11);
-      --blue:#74a7ff;--violet:#9477ff;--red:#ff4e4e;--green:#56d59a;--amber:#f3c969;
+      color-scheme:dark;
+      --bg:#080a0f;--panel:#0d1118;--panel2:#111722;--text:#f5f7fb;--muted:#a5afbf;--line:rgba(255,255,255,.12);
+      --blue:#74a7ff;--violet:#9477ff;--red:#ff6262;--green:#56d59a;--amber:#f3c969;--header:72px;
     }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth;scroll-snap-type:y mandatory;background:var(--bg)}
-    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5;text-rendering:optimizeLegibility}
+    body.menu-open{overflow:hidden}
     a{color:inherit}
-    .topbar{position:fixed;inset:0 0 auto 0;height:68px;z-index:50;background:linear-gradient(to bottom,rgba(8,10,15,.94),rgba(8,10,15,.62),transparent);display:flex;align-items:center}
+    button,input{font:inherit}
+    .skip-link{position:fixed;left:16px;top:12px;z-index:1000;padding:10px 14px;border-radius:10px;background:#fff;color:#080a0f;font-weight:850;text-decoration:none;transform:translateY(-180%);transition:transform .15s ease}
+    .skip-link:focus{transform:translateY(0)}
+    .topbar{position:fixed;inset:0 0 auto 0;height:var(--header);z-index:50;background:linear-gradient(to bottom,rgba(8,10,15,.97),rgba(8,10,15,.78),rgba(8,10,15,.18));display:flex;align-items:center}
     .topbar-inner{width:min(1240px,calc(100% - 40px));margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .brand{font-weight:850;letter-spacing:-.035em;font-size:1.25rem;text-decoration:none}.brand-dot{color:var(--blue)}
-    .nav{display:flex;align-items:center;gap:18px}.nav a{font-size:.82rem;color:#c6cfdb;text-decoration:none;font-weight:700}.nav a:hover{color:#fff}
+    .brand{font-weight:900;letter-spacing:-.04em;font-size:1.28rem;text-decoration:none}.brand-dot{color:var(--blue)}
+    .nav{display:flex;align-items:center;gap:18px}.nav>a{font-size:.82rem;color:#c6cfdb;text-decoration:none;font-weight:750}.nav>a:hover{color:#fff}
     .langs{display:flex;border:1px solid var(--line);border-radius:999px;padding:3px;background:rgba(255,255,255,.035)}
-    .langs button{border:0;background:transparent;color:#8f9aaa;border-radius:999px;padding:6px 9px;font-size:.72rem;font-weight:800;cursor:pointer}.langs button.active{background:#fff;color:#090b10}
+    .langs button{border:0;background:transparent;color:#9aa6b7;border-radius:999px;padding:6px 9px;font-size:.72rem;font-weight:850;cursor:pointer}.langs button.active{background:#fff;color:#090b10}
+    .menu-toggle{display:none;border:1px solid var(--line);background:rgba(255,255,255,.035);color:#dce3ed;border-radius:10px;padding:8px 10px;font-size:.78rem;font-weight:800;cursor:pointer}
+    .mobile-menu{display:none;position:fixed;z-index:49;top:60px;left:12px;right:12px;padding:10px;border:1px solid var(--line);border-radius:16px;background:rgba(10,13,19,.98);box-shadow:0 22px 60px rgba(0,0,0,.45)}
+    .mobile-menu.open{display:grid}.mobile-menu a{padding:13px 12px;border-radius:10px;text-decoration:none;color:#d5dce7;font-weight:750}.mobile-menu a:hover{background:rgba(255,255,255,.06);color:#fff}
     .section{min-height:100svh;scroll-snap-align:start;scroll-snap-stop:always;position:relative;display:flex;align-items:center;overflow:hidden;border-bottom:1px solid rgba(255,255,255,.055)}
-    .inner{width:min(1240px,calc(100% - 40px));margin:auto;padding:96px 0 64px;position:relative;z-index:2}
-    .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.72rem;text-transform:uppercase;letter-spacing:.18em;color:#9ca7b8;font-weight:800;margin-bottom:20px}
-    .dot{width:7px;height:7px;border-radius:50%;background:currentColor;box-shadow:0 0 20px currentColor}
-    h1,h2{margin:0;letter-spacing:-.055em;line-height:.95}h1{font-size:clamp(3.6rem,10vw,8.6rem);max-width:950px}h2{font-size:clamp(3rem,7.5vw,6.5rem);max-width:900px}
-    .lead{font-size:clamp(1.05rem,2vw,1.35rem);color:var(--muted);max-width:730px;margin:28px 0 0;line-height:1.7}
-    .actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:34px}.btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;padding:12px 16px;border:1px solid var(--line);border-radius:12px;font-size:.88rem;font-weight:800;background:rgba(255,255,255,.035);transition:.2s}.btn:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.26);background:rgba(255,255,255,.07)}.btn.primary{background:#fff;color:#080a0f;border-color:#fff}
+    .inner{width:min(1240px,calc(100% - 40px));margin:auto;padding:calc(var(--header) + 34px) 0 64px;position:relative;z-index:2}
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.72rem;text-transform:uppercase;letter-spacing:.18em;color:#9ca7b8;font-weight:850;margin-bottom:20px}
+    .dot{width:7px;height:7px;border-radius:50%;background:currentColor;box-shadow:0 0 20px currentColor;flex:0 0 auto}
+    h1,h2{margin:0;letter-spacing:-.055em;line-height:.95;text-wrap:balance}h1{font-size:clamp(3.6rem,10vw,8.4rem);max-width:970px}h2{font-size:clamp(3rem,7.2vw,6.2rem);max-width:930px}
+    .lead{font-size:clamp(1.04rem,1.7vw,1.28rem);color:var(--muted);max-width:760px;margin:28px 0 0;line-height:1.68}
+    .support{font-size:.9rem;color:#7f8b9c;max-width:720px;margin:14px 0 0;line-height:1.65}
+    .actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:30px}.btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;padding:12px 16px;border:1px solid var(--line);border-radius:12px;font-size:.88rem;font-weight:850;background:rgba(255,255,255,.035);transition:transform .18s ease,border-color .18s ease,background .18s ease}.btn:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.28);background:rgba(255,255,255,.07)}.btn.primary{background:#fff;color:#080a0f;border-color:#fff}
+    .project-meta{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);border-radius:999px;padding:7px 10px;font-size:.72rem;color:#b8c1cf;font-weight:760;background:rgba(255,255,255,.025)}
     .index{position:absolute;right:32px;bottom:28px;font-size:clamp(5rem,14vw,11rem);font-weight:900;line-height:.8;letter-spacing:-.08em;color:rgba(255,255,255,.025);user-select:none}
     .glow{position:absolute;border-radius:50%;filter:blur(110px);opacity:.18;pointer-events:none}.intro .g1{width:600px;height:600px;background:#4c6fff;right:-120px;top:-120px}.intro .g2{width:420px;height:420px;background:#7048e8;left:-180px;bottom:-180px}
     .intro-word{display:block;color:#fff}.intro-word.muted{color:#747f91}
+    .intro-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,.5fr);gap:70px;align-items:end}.intro-note{border-left:1px solid var(--line);padding:8px 0 8px 26px;color:#909cad;font-size:.9rem;max-width:360px}.intro-note strong{display:block;color:#e9edf3;font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;margin-bottom:8px}
     .project-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,.72fr);gap:70px;align-items:center}
-    .project-meta{display:flex;gap:9px;flex-wrap:wrap;margin-top:24px}.chip{border:1px solid var(--line);border-radius:999px;padding:7px 10px;font-size:.72rem;color:#aeb8c8;font-weight:750;background:rgba(255,255,255,.025)}
     .visual{height:min(62vh,620px);min-height:390px;border:1px solid var(--line);border-radius:28px;position:relative;overflow:hidden;background:#0f141d;box-shadow:0 30px 90px rgba(0,0,0,.28)}
     .w4k{background:linear-gradient(145deg,#0a1019,#0f1622)}.w4k .g1{width:500px;height:500px;background:#4b88ff;right:-120px;bottom:-150px;opacity:.14}.w4k .g2{width:350px;height:350px;background:#ffb14b;left:-150px;top:-100px;opacity:.08}
-    .w4k-img{position:absolute;inset:38px;background-image:linear-gradient(to top,rgba(5,9,15,.72),rgba(5,9,15,.06)),url('/worldforkids/assets/images/banner.webp');background-size:cover;background-position:center;border-radius:20px;border:1px solid rgba(255,255,255,.10)}
-    .visual-label{position:absolute;left:58px;bottom:54px}.visual-label strong{display:block;font-size:1.35rem}.visual-label span{font-size:.8rem;color:#c8d1de}
+    .w4k-img{position:absolute;inset:38px;border-radius:20px;border:1px solid rgba(255,255,255,.10);overflow:hidden;background:#141b26}.w4k-img img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}.w4k-img:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(5,9,15,.78),rgba(5,9,15,.04) 60%)}
+    .visual-label{position:absolute;left:58px;bottom:54px;z-index:2}.visual-label strong{display:block;font-size:1.35rem}.visual-label span{font-size:.8rem;color:#c8d1de}
     .youtube{background:radial-gradient(circle at 78% 42%,rgba(255,55,55,.16),transparent 36%),linear-gradient(145deg,#0d0d10,#120d0f)}.youtube .g1{width:560px;height:560px;background:#ff2f2f;right:-130px;top:10%;opacity:.15}
     .yt-mark{position:absolute;inset:0;display:grid;place-items:center}.yt-button{width:160px;height:112px;border-radius:29px;background:#ff0033;display:grid;place-items:center;box-shadow:0 0 80px rgba(255,0,51,.18);transform:rotate(-2deg)}.yt-play{width:0;height:0;border-top:23px solid transparent;border-bottom:23px solid transparent;border-left:39px solid #fff;margin-left:9px}
     .yt-name{position:absolute;left:38px;bottom:34px;font-size:clamp(1.5rem,3vw,2.6rem);font-weight:850;letter-spacing:-.04em}.yt-name small{display:block;color:#a7afbc;font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;margin-bottom:7px}
     .mini{background:linear-gradient(145deg,#0a0f0e,#0c1412)}.mini .g1{width:500px;height:500px;background:#36c88a;right:-120px;bottom:-100px;opacity:.12}
-    .week-card{position:absolute;inset:46px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid rgba(255,255,255,.10);border-radius:22px;padding:30px;background:rgba(255,255,255,.028)}.week-top{display:flex;justify-content:space-between;color:#9ca7b8;font-size:.76rem;text-transform:uppercase;letter-spacing:.12em;font-weight:800}.week-number{font-size:clamp(5.8rem,12vw,10rem);font-weight:900;letter-spacing:-.085em;line-height:.8}.week-bottom{display:flex;gap:22px;color:#c5ceda;font-size:.82rem}.week-bottom strong{display:block;color:#fff;font-size:1rem;margin-top:3px}
-    .footer-section{min-height:auto;scroll-snap-align:end;background:#06070a}.footer-inner{width:min(1240px,calc(100% - 40px));margin:auto;padding:38px 0;display:flex;justify-content:space-between;align-items:center;gap:20px;color:#7f8998;font-size:.8rem}.footer-links{display:flex;gap:18px;flex-wrap:wrap}.footer-links a{text-decoration:none;color:#9ca7b8}.footer-links a:hover{color:#fff}
-    .progress{position:fixed;left:22px;top:50%;transform:translateY(-50%);z-index:40;display:grid;gap:9px}.progress a{width:7px;height:7px;border:1px solid rgba(255,255,255,.35);border-radius:50%;display:block;background:rgba(255,255,255,.06)}
-    @media(max-width:900px){html{scroll-snap-type:y proximity}.nav>a{display:none}.section{min-height:auto}.inner{padding:110px 0 72px}.project-layout{grid-template-columns:1fr;gap:42px}.visual{height:52vh;min-height:360px}.progress{display:none}.index{right:14px}.w4k-img{inset:20px}.visual-label{left:38px;bottom:36px}.week-card{inset:24px}}
-    @media(max-width:560px){.topbar-inner,.inner,.footer-inner{width:min(100% - 28px,1240px)}.topbar{height:60px}.nav{gap:9px}h1{font-size:clamp(3.1rem,17vw,5rem)}h2{font-size:clamp(2.8rem,14vw,4.4rem)}.lead{font-size:1rem}.actions .btn{width:100%;justify-content:center}.visual{min-height:330px}.week-number{font-size:6rem}.footer-inner{display:block}.footer-links{margin-top:13px}}
+    .week-card{position:absolute;inset:46px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid rgba(255,255,255,.10);border-radius:22px;padding:30px;background:rgba(255,255,255,.028)}.week-top{display:flex;justify-content:space-between;gap:18px;color:#9ca7b8;font-size:.76rem;text-transform:uppercase;letter-spacing:.12em;font-weight:800}.week-number{font-size:clamp(5.8rem,12vw,10rem);font-weight:900;letter-spacing:-.085em;line-height:.8}.week-bottom{display:flex;gap:22px;color:#c5ceda;font-size:.82rem}.week-bottom strong{display:block;color:#fff;font-size:1rem;margin-top:3px}
+    .footer-section{min-height:auto;scroll-snap-align:end;background:#06070a}.footer-inner{width:min(1240px,calc(100% - 40px));margin:auto;padding:38px 0;display:flex;justify-content:space-between;align-items:center;gap:20px;color:#8994a4;font-size:.8rem}.footer-links{display:flex;gap:18px;flex-wrap:wrap}.footer-links a{text-decoration:none;color:#a5afbd}.footer-links a:hover{color:#fff}
+    .progress{position:fixed;left:22px;top:50%;transform:translateY(-50%);z-index:40;display:grid;gap:9px}.progress a{width:8px;height:8px;border:1px solid rgba(255,255,255,.35);border-radius:50%;display:block;background:rgba(255,255,255,.06);transition:transform .18s ease,background .18s ease}.progress a.active{background:#fff;transform:scale(1.25)}
+    :focus-visible{outline:2px solid var(--blue);outline-offset:4px}
+    @media(max-width:900px){html{scroll-snap-type:y proximity}.section{min-height:auto}.inner{padding:105px 0 72px}.intro-grid,.project-layout{grid-template-columns:1fr;gap:42px}.intro-note{border-left:0;border-top:1px solid var(--line);padding:20px 0 0;max-width:680px}.visual{height:52vh;min-height:360px}.progress{display:none}.index{right:14px}.w4k-img{inset:20px}.visual-label{left:38px;bottom:36px}.week-card{inset:24px}}
+    @media(max-width:720px){:root{--header:60px}.topbar-inner,.inner,.footer-inner{width:min(100% - 28px,1240px)}.nav>a{display:none}.menu-toggle{display:inline-flex}.nav{gap:8px}.mobile-menu{top:60px}h1{font-size:clamp(3.05rem,16vw,5rem)}h2{font-size:clamp(2.8rem,13.6vw,4.35rem)}.lead{font-size:1rem}.actions .btn{width:100%;justify-content:center}.visual{min-height:330px}.week-number{font-size:6rem}.footer-inner{display:block}.footer-links{margin-top:13px}.index{display:none}}
+    @media(max-width:420px){.brand{font-size:1.12rem}.menu-toggle{padding:7px 8px}.langs button{padding:6px 8px}.visual{min-height:300px}.week-card{padding:22px}.week-bottom{gap:14px;flex-wrap:wrap}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto;scroll-snap-type:none}*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}.btn:hover{transform:none}}
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#main" data-en="Skip to content" data-cs="Přejít na obsah">Skip to content</a>
+
   <header class="topbar">
     <div class="topbar-inner">
-      <a href="#intro" class="brand">VinMat<span class="brand-dot">.</span></a>
-      <nav class="nav">
+      <a href="#intro" class="brand" aria-label="VinMat home">VinMat<span class="brand-dot">.</span></a>
+      <nav class="nav" aria-label="Primary navigation">
         <a href="#worldforkids" data-en="World for Kids" data-cs="World for Kids">World for Kids</a>
-        <a href="#games" data-en="VinMat's Games" data-cs="VinMat's Games">VinMat's Games</a>
+        <a href="#games" data-en="VinMat’s Games" data-cs="VinMat’s Games">VinMat’s Games</a>
         <a href="#mini" data-en="Mini projects" data-cs="Miniprojekty">Mini projects</a>
-        <div class="langs"><button id="enBtn" class="active" onclick="setLang('en')">EN</button><button id="csBtn" onclick="setLang('cs')">CZ</button></div>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileMenu" data-en="Projects" data-cs="Projekty">Projects</button>
+        <div class="langs" aria-label="Language">
+          <button id="enBtn" type="button" class="active" lang="en" aria-pressed="true">EN</button>
+          <button id="csBtn" type="button" lang="cs" aria-pressed="false">CZ</button>
+        </div>
       </nav>
     </div>
   </header>
 
-  <div class="progress" aria-hidden="true"><a href="#intro"></a><a href="#worldforkids"></a><a href="#games"></a><a href="#mini"></a></div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+    <a href="#worldforkids" data-en="World for Kids" data-cs="World for Kids">World for Kids</a>
+    <a href="#games" data-en="VinMat’s Games" data-cs="VinMat’s Games">VinMat’s Games</a>
+    <a href="#mini" data-en="Mini projects" data-cs="Miniprojekty">Mini projects</a>
+  </nav>
 
-  <main>
-    <section class="section intro" id="intro">
+  <nav class="progress" aria-label="Section navigation">
+    <a href="#intro" class="active" aria-label="VinMat introduction"></a>
+    <a href="#worldforkids" aria-label="World for Kids"></a>
+    <a href="#games" aria-label="VinMat’s Games"></a>
+    <a href="#mini" aria-label="Mini projects"></a>
+  </nav>
+
+  <main id="main">
+    <section class="section intro" id="intro" data-section="intro">
       <div class="glow g1"></div><div class="glow g2"></div>
-      <div class="inner">
-        <div class="eyebrow" data-en="One name. Different projects." data-cs="Jedno jméno. Různé projekty."><span class="dot"></span>One name. Different projects.</div>
-        <h1><span class="intro-word">VinMat</span><span class="intro-word muted" data-en="is a world of ideas." data-cs="je svět nápadů.">is a world of ideas.</span></h1>
-        <p class="lead" data-en="A growing collection of independent digital projects, creative experiments, useful tools and channels. Different ideas, one place." data-cs="Rostoucí kolekce nezávislých digitálních projektů, kreativních experimentů, užitečných nástrojů a kanálů. Různé nápady na jednom místě.">A growing collection of independent digital projects, creative experiments, useful tools and channels. Different ideas, one place.</p>
-        <div class="actions"><a class="btn primary" href="#worldforkids" data-en="Explore the projects ↓" data-cs="Prozkoumat projekty ↓">Explore the projects ↓</a></div>
+      <div class="inner intro-grid">
+        <div>
+          <div class="eyebrow"><span class="dot"></span><span data-en="One name. Different projects." data-cs="Jedno jméno. Různé projekty.">One name. Different projects.</span></div>
+          <h1><span class="intro-word">VinMat</span><span class="intro-word muted" data-en="connects ideas that are useful, playful or both." data-cs="spojuje nápady, které jsou užitečné, hravé nebo obojí.">connects ideas that are useful, playful or both.</span></h1>
+          <p class="lead" data-en="VinMat is an independent home for digital projects with different audiences and purposes — from printable activities for children to gaming content and small web utilities. Each project has its own space; this page connects them." data-cs="VinMat je společný domov nezávislých digitálních projektů s různým zaměřením — od pracovních listů pro děti přes herní obsah až po malé webové nástroje. Každý projekt má vlastní prostor a tato stránka je propojuje.">VinMat is an independent home for digital projects with different audiences and purposes — from printable activities for children to gaming content and small web utilities. Each project has its own space; this page connects them.</p>
+          <div class="actions"><a class="btn primary" href="#worldforkids" data-en="Explore the projects ↓" data-cs="Prozkoumat projekty ↓">Explore the projects ↓</a></div>
+        </div>
+        <aside class="intro-note">
+          <strong data-en="What you’ll find here" data-cs="Co tu najdete">What you’ll find here</strong>
+          <span data-en="A clear directory of active VinMat projects, with direct links to the actual content and tools — no account or sign-in required to explore them." data-cs="Přehled aktivních projektů VinMat s přímými odkazy na skutečný obsah a nástroje — bez nutnosti účtu nebo přihlášení.">A clear directory of active VinMat projects, with direct links to the actual content and tools — no account or sign-in required to explore them.</span>
+        </aside>
       </div>
-      <div class="index">01</div>
+      <div class="index" aria-hidden="true">01</div>
     </section>
 
-    <section class="section w4k" id="worldforkids">
+    <section class="section w4k" id="worldforkids" data-section="worldforkids">
       <div class="glow g1"></div><div class="glow g2"></div>
       <div class="inner project-layout">
         <div>
-          <div class="eyebrow" style="color:var(--blue)" data-en="Main project · Printables" data-cs="Hlavní projekt · Materiály k tisku"><span class="dot"></span>Main project · Printables</div>
-          <h2>VinMat’s<br>World for Kids</h2>
-          <p class="lead" data-en="A growing library of free printable coloring pages, mazes, dot-to-dot activities and other worksheets, organized by age and difficulty." data-cs="Rostoucí knihovna bezplatných omalovánek, bludišť, spojovaček a dalších pracovních listů k tisku, rozdělených podle věku a obtížnosti.">A growing library of free printable coloring pages, mazes, dot-to-dot activities and other worksheets, organized by age and difficulty.</p>
-          <div class="project-meta"><span class="chip">Free printables</span><span class="chip">EN · CZ · DE · ES</span><span class="chip">5 difficulty levels</span></div>
+          <div class="eyebrow" style="color:var(--blue)"><span class="dot"></span><span data-en="Main project · Free printables" data-cs="Hlavní projekt · Materiály zdarma">Main project · Free printables</span></div>
+          <h2>VinMat’s World for Kids</h2>
+          <p class="lead" data-en="A growing library of free printable coloring pages, mazes, dot-to-dot activities and other worksheets for children. Activities are organized by age and difficulty to make it easier for parents and educators to choose an appropriate page." data-cs="Rostoucí knihovna bezplatných omalovánek, bludišť, spojovaček a dalších pracovních listů pro děti. Aktivity jsou rozdělené podle věku a obtížnosti, aby rodiče a pedagogové snadno vybrali vhodný list.">A growing library of free printable coloring pages, mazes, dot-to-dot activities and other worksheets for children. Activities are organized by age and difficulty to make it easier for parents and educators to choose an appropriate page.</p>
+          <p class="support" data-en="The project has its own guides, activity categories and individual worksheet pages, and is the main content project currently developed under VinMat." data-cs="Projekt má vlastní průvodce, kategorie aktivit i samostatné stránky jednotlivých pracovních listů a je aktuálně hlavním obsahovým projektem VinMat.">The project has its own guides, activity categories and individual worksheet pages, and is the main content project currently developed under VinMat.</p>
+          <div class="project-meta">
+            <span class="chip" data-en="Free printables" data-cs="Materiály zdarma">Free printables</span>
+            <span class="chip" data-en="Ages 3–10" data-cs="Věk 3–10 let">Ages 3–10</span>
+            <span class="chip" data-en="EN · CZ · DE · ES" data-cs="EN · CZ · DE · ES">EN · CZ · DE · ES</span>
+            <span class="chip" data-en="5 difficulty levels" data-cs="5 úrovní obtížnosti">5 difficulty levels</span>
+          </div>
           <div class="actions"><a class="btn primary" href="/worldforkids/" data-en="Open World for Kids ↗" data-cs="Otevřít World for Kids ↗">Open World for Kids ↗</a></div>
         </div>
-        <div class="visual"><div class="w4k-img"></div><div class="visual-label"><strong>World for Kids</strong><span data-en="Printable activities for different ages" data-cs="Aktivity k tisku pro různé věkové skupiny">Printable activities for different ages</span></div></div>
+        <div class="visual">
+          <div class="w4k-img"><img src="/worldforkids/assets/images/banner.webp" alt="Preview of VinMat's World for Kids printable activities" loading="lazy" decoding="async"></div>
+          <div class="visual-label"><strong>World for Kids</strong><span data-en="Printable activities for different ages" data-cs="Aktivity k tisku pro různé věkové skupiny">Printable activities for different ages</span></div>
+        </div>
       </div>
-      <div class="index">02</div>
+      <div class="index" aria-hidden="true">02</div>
     </section>
 
-    <section class="section youtube" id="games">
+    <section class="section youtube" id="games" data-section="games">
       <div class="glow g1"></div>
       <div class="inner project-layout">
         <div>
-          <div class="eyebrow" style="color:#ff6262" data-en="YouTube · Gaming" data-cs="YouTube · Hry"><span class="dot"></span>YouTube · Gaming</div>
-          <h2>VinMat’s<br>Games</h2>
-          <p class="lead" data-en="The gaming side of the VinMat world on YouTube." data-cs="Herní část světa VinMat na YouTube.">The gaming side of the VinMat world on YouTube.</p>
+          <div class="eyebrow" style="color:var(--red)"><span class="dot"></span><span data-en="YouTube · Gaming" data-cs="YouTube · Hry">YouTube · Gaming</span></div>
+          <h2>VinMat’s Games</h2>
+          <p class="lead" data-en="The gaming branch of VinMat lives on YouTube. It is kept separate from the printable and utility projects so visitors can go directly to the type of content they are looking for." data-cs="Herní část VinMat žije na YouTube. Je oddělená od pracovních listů i webových nástrojů, aby se návštěvník dostal rovnou k typu obsahu, který hledá.">The gaming branch of VinMat lives on YouTube. It is kept separate from the printable and utility projects so visitors can go directly to the type of content they are looking for.</p>
+          <div class="project-meta"><span class="chip">YouTube</span><span class="chip" data-en="Gaming content" data-cs="Herní obsah">Gaming content</span><span class="chip" data-en="External channel" data-cs="Externí kanál">External channel</span></div>
           <div class="actions"><a class="btn primary" href="https://www.youtube.com/@VinMat_G" target="_blank" rel="noopener noreferrer" data-en="Visit the YouTube channel ↗" data-cs="Otevřít YouTube kanál ↗">Visit the YouTube channel ↗</a></div>
         </div>
-        <div class="visual"><div class="yt-mark"><div class="yt-button"><div class="yt-play"></div></div></div><div class="yt-name"><small>YouTube channel</small>VinMat’s Games</div></div>
+        <div class="visual"><div class="yt-mark"><div class="yt-button" aria-hidden="true"><div class="yt-play"></div></div></div><div class="yt-name"><small data-en="YouTube channel" data-cs="YouTube kanál">YouTube channel</small>VinMat’s Games</div></div>
       </div>
-      <div class="index">03</div>
+      <div class="index" aria-hidden="true">03</div>
     </section>
 
-    <section class="section mini" id="mini">
+    <section class="section mini" id="mini" data-section="mini">
       <div class="glow g1"></div>
       <div class="inner project-layout">
         <div>
-          <div class="eyebrow" style="color:var(--green)" data-en="Mini projects · Utilities" data-cs="Miniprojekty · Nástroje"><span class="dot"></span>Mini projects · Utilities</div>
-          <h2>Small tools.<br>Useful ideas.</h2>
-          <p class="lead" data-en="Not every idea needs to become a large project. Mini projects are simple tools built to solve one thing well." data-cs="Ne každý nápad musí vyrůst ve velký projekt. Miniprojekty jsou jednoduché nástroje vytvořené tak, aby jednu věc řešily dobře.">Not every idea needs to become a large project. Mini projects are simple tools built to solve one thing well.</p>
+          <div class="eyebrow" style="color:var(--green)"><span class="dot"></span><span data-en="Mini projects · Useful web tools" data-cs="Miniprojekty · Užitečné webové nástroje">Mini projects · Useful web tools</span></div>
+          <h2 data-en="Small tools. Clear purpose." data-cs="Malé nástroje. Jasný účel.">Small tools. Clear purpose.</h2>
+          <p class="lead" data-en="Mini Projects are focused web utilities built to solve one small task without unnecessary complexity. Weekify is the first: it shows the current ISO week number and day of the year, with simple year-by-year browsing." data-cs="Mini Projects jsou malé webové nástroje zaměřené vždy na jeden konkrétní úkol bez zbytečné složitosti. Prvním je Weekify: ukazuje aktuální číslo ISO týdne a pořadí dne v roce a umožňuje jednoduché procházení dalších let.">Mini Projects are focused web utilities built to solve one small task without unnecessary complexity. Weekify is the first: it shows the current ISO week number and day of the year, with simple year-by-year browsing.</p>
+          <div class="project-meta"><span class="chip" data-en="Free web utility" data-cs="Webový nástroj zdarma">Free web utility</span><span class="chip" data-en="No account" data-cs="Bez účtu">No account</span><span class="chip" data-en="More projects later" data-cs="Další projekty později">More projects later</span></div>
           <div class="actions"><a class="btn primary" href="/weekify/" data-en="Open Weekify ↗" data-cs="Otevřít Weekify ↗">Open Weekify ↗</a></div>
         </div>
-        <div class="visual"><div class="week-card"><div class="week-top"><span>Weekify</span><span data-en="Current week" data-cs="Aktuální týden">Current week</span></div><div class="week-number">32</div><div class="week-bottom"><div><span data-en="Week number" data-cs="Číslo týdne">Week number</span><strong>ISO 32</strong></div><div><span data-en="Simple by design" data-cs="Jednoduché záměrně">Simple by design</span><strong>weekify</strong></div></div></div></div>
+        <div class="visual"><div class="week-card"><div class="week-top"><span>Weekify</span><span data-en="Current ISO week" data-cs="Aktuální ISO týden">Current ISO week</span></div><div class="week-number" id="weekNumber">--</div><div class="week-bottom"><div><span data-en="Week number" data-cs="Číslo týdne">Week number</span><strong id="weekLabel">ISO --</strong></div><div><span data-en="Simple by design" data-cs="Jednoduché záměrně">Simple by design</span><strong>weekify</strong></div></div></div></div>
       </div>
-      <div class="index">04</div>
+      <div class="index" aria-hidden="true">04</div>
     </section>
   </main>
 
@@ -131,14 +199,74 @@
   </footer>
 
   <script>
-    function setLang(lang){
-      document.documentElement.lang=lang==='cs'?'cs':'en';
-      document.querySelectorAll('[data-en][data-cs]').forEach(el=>{el.textContent=el.dataset[lang]});
-      document.getElementById('enBtn').classList.toggle('active',lang==='en');
-      document.getElementById('csBtn').classList.toggle('active',lang==='cs');
-      localStorage.setItem('vinmat_preview_lang',lang);
-    }
-    setLang(localStorage.getItem('vinmat_preview_lang')==='cs'?'cs':'en');
+    (()=>{
+      const enBtn=document.getElementById('enBtn');
+      const csBtn=document.getElementById('csBtn');
+      const menuToggle=document.getElementById('menuToggle');
+      const mobileMenu=document.getElementById('mobileMenu');
+
+      function setLang(lang){
+        lang=lang==='cs'?'cs':'en';
+        document.documentElement.lang=lang;
+        document.querySelectorAll('[data-en][data-cs]').forEach(el=>{el.textContent=el.dataset[lang]});
+        enBtn.classList.toggle('active',lang==='en');
+        csBtn.classList.toggle('active',lang==='cs');
+        enBtn.setAttribute('aria-pressed',String(lang==='en'));
+        csBtn.setAttribute('aria-pressed',String(lang==='cs'));
+        try{localStorage.setItem('vinmat-language',lang)}catch(e){}
+      }
+
+      function initialLang(){
+        try{
+          const stored=localStorage.getItem('vinmat-language');
+          if(stored==='en'||stored==='cs')return stored;
+        }catch(e){}
+        return (navigator.language||'').toLowerCase().startsWith('cs')?'cs':'en';
+      }
+
+      function closeMenu(){
+        mobileMenu.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded','false');
+        document.body.classList.remove('menu-open');
+      }
+
+      menuToggle.addEventListener('click',()=>{
+        const open=!mobileMenu.classList.contains('open');
+        mobileMenu.classList.toggle('open',open);
+        menuToggle.setAttribute('aria-expanded',String(open));
+        document.body.classList.toggle('menu-open',open);
+      });
+      mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
+      document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});
+      enBtn.addEventListener('click',()=>setLang('en'));
+      csBtn.addEventListener('click',()=>setLang('cs'));
+
+      const now=new Date();
+      function isoWeek(date){
+        const d=new Date(Date.UTC(date.getFullYear(),date.getMonth(),date.getDate()));
+        const day=d.getUTCDay()||7;
+        d.setUTCDate(d.getUTCDate()+4-day);
+        const yearStart=new Date(Date.UTC(d.getUTCFullYear(),0,1));
+        return Math.ceil((((d-yearStart)/86400000)+1)/7);
+      }
+      const week=isoWeek(now);
+      document.getElementById('weekNumber').textContent=week;
+      document.getElementById('weekLabel').textContent=`ISO ${week}`;
+
+      if('IntersectionObserver' in window){
+        const dots=[...document.querySelectorAll('.progress a')];
+        const sections=[...document.querySelectorAll('[data-section]')];
+        const observer=new IntersectionObserver(entries=>{
+          const visible=entries.filter(e=>e.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];
+          if(!visible)return;
+          dots.forEach(dot=>dot.classList.toggle('active',dot.getAttribute('href')===`#${visible.target.id}`));
+        },{threshold:[.35,.55,.7]});
+        sections.forEach(section=>observer.observe(section));
+      }
+
+      setLang(initialLang());
+    })();
   </script>
+  <script data-goatcounter="https://vinmat.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
