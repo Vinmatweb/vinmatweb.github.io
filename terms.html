@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Terms of Use | VinMat</title>
-  <meta name="description" content="Terms of use for VinMat and projects hosted on vinmat.eu.">
+  <meta id="metaDescription" name="description" content="Terms of use for VinMat and projects hosted on vinmat.eu.">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#080a0f">
   <link rel="canonical" href="https://vinmat.eu/terms.html">
@@ -14,7 +14,7 @@
   </style>
 </head>
 <body>
-<header class="top"><div class="top-inner"><a class="brand" href="/">VinMat<span>.</span></a><div class="langs" aria-label="Language"><button id="enBtn" type="button" lang="en">EN</button><button id="csBtn" type="button" lang="cs">CZ</button></div></div></header>
+<header class="top"><div class="top-inner"><a class="brand" href="/">VinMat<span>.</span></a><div id="languageSwitcher" class="langs" aria-label="Language"><button id="enBtn" type="button" lang="en" aria-label="English" aria-pressed="true">EN</button><button id="csBtn" type="button" lang="cs" aria-label="Čeština" aria-pressed="false">CZ</button></div></div></header>
 <main class="page"><div class="card">
 <section id="en">
   <h1>Terms of Use</h1><p class="muted">Last updated: August 11, 2026</p>
@@ -68,8 +68,25 @@
 </div></main>
 <script>
   (()=>{
-    const en=document.getElementById('en'),cs=document.getElementById('cs'),enBtn=document.getElementById('enBtn'),csBtn=document.getElementById('csBtn');
-    function showLang(lang){lang=lang==='cs'?'cs':'en';en.classList.toggle('hidden',lang!=='en');cs.classList.toggle('hidden',lang!=='cs');enBtn.classList.toggle('active',lang==='en');csBtn.classList.toggle('active',lang==='cs');document.documentElement.lang=lang;try{localStorage.setItem('vinmat-language',lang)}catch(e){}}
+    const en=document.getElementById('en'),cs=document.getElementById('cs'),enBtn=document.getElementById('enBtn'),csBtn=document.getElementById('csBtn'),languageSwitcher=document.getElementById('languageSwitcher'),metaDescription=document.getElementById('metaDescription');
+    const pageMeta={
+      en:{title:'Terms of Use | VinMat',description:'Terms of use for VinMat and projects hosted on vinmat.eu.',language:'Language'},
+      cs:{title:'Podmínky užití | VinMat',description:'Podmínky užití pro VinMat a projekty provozované na vinmat.eu.',language:'Jazyk'}
+    };
+    function showLang(lang){
+      lang=lang==='cs'?'cs':'en';
+      en.classList.toggle('hidden',lang!=='en');
+      cs.classList.toggle('hidden',lang!=='cs');
+      enBtn.classList.toggle('active',lang==='en');
+      csBtn.classList.toggle('active',lang==='cs');
+      enBtn.setAttribute('aria-pressed',String(lang==='en'));
+      csBtn.setAttribute('aria-pressed',String(lang==='cs'));
+      document.documentElement.lang=lang;
+      document.title=pageMeta[lang].title;
+      if(metaDescription)metaDescription.setAttribute('content',pageMeta[lang].description);
+      if(languageSwitcher)languageSwitcher.setAttribute('aria-label',pageMeta[lang].language);
+      try{localStorage.setItem('vinmat-language',lang)}catch(e){}
+    }
     function initial(){try{const v=localStorage.getItem('vinmat-language');if(v==='en'||v==='cs')return v}catch(e){}return (navigator.language||'').toLowerCase().startsWith('cs')?'cs':'en'}
     enBtn.addEventListener('click',()=>showLang('en'));csBtn.addEventListener('click',()=>showLang('cs'));showLang(initial());
   })();
