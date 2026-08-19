@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /ai-fantasy-adventure/
+
+Sitemap: https://vinmat.eu/ai-fantasy-adventure/sitemap.xml
