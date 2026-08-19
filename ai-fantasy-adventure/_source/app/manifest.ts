@@ -1,0 +1,15 @@
+import type { MetadataRoute } from "next";
+
+export default function manifest(): MetadataRoute.Manifest {
+  return {
+    name: "AI Fantasy Adventure",
+    short_name: "AI Fantasy",
+    description: "Kooperativní fantasy RPG pro děti a rodiče s AI Pánem jeskyně.",
+    start_url: "/",
+    display: "standalone",
+    background_color: "#080d12",
+    theme_color: "#080d12",
+    lang: "cs",
+    icons: [{ src: "/favicon.svg", sizes: "any", type: "image/svg+xml" }],
+  };
+}
