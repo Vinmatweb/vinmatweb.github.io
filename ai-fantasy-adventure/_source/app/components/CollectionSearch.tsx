@@ -1,5 +1,7 @@
 "use client";
 
+/* eslint-disable @next/next/no-img-element -- curated WebP assets are pre-sized and manually optimized */
+
 import Link from "next/link";
 import { useMemo, useState } from "react";
 
@@ -7,6 +9,8 @@ export type SearchItem = {
   href: string;
   title: string;
   eyebrow: string;
+  image?: string;
+  imageAlt?: string;
   description?: string;
   meta?: string;
   badge?: string;
@@ -37,7 +41,12 @@ export function CollectionSearch({ items, placeholder = "Hledat…" }: { items: 
       {filtered.length > 0 ? (
         <div className="collection-grid">
           {filtered.map((item) => (
-            <Link href={item.href} className="collection-card" key={item.href}>
+            <Link href={item.href} className={`collection-card${item.image ? " collection-card--image" : ""}`} key={item.href}>
+              {item.image && (
+                <span className="collection-card__image">
+                  <img src={item.image} alt={item.imageAlt ?? ""} loading="lazy" decoding="async" />
+                </span>
+              )}
               <span className="collection-card__eyebrow">{item.eyebrow}</span>
               <h3>{item.title}</h3>
               {item.description && <p>{item.description}</p>}

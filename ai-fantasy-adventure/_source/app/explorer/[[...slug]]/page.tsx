@@ -29,6 +29,14 @@ import {
 
 type PageProps = { params: Promise<{ slug?: string[] }> };
 
+const raceIllustrations: Record<string, string> = {
+  clovek: "/assets/heroes/clovek-hranicar.webp",
+  elf: "/assets/heroes/elf-kouzelnik.webp",
+  trpaslik: "/assets/heroes/trpaslik-bojovnik.webp",
+  ork: "/assets/heroes/ork-lecitel.webp",
+  pulcik: "/assets/heroes/pulcik-zlodej.webp",
+};
+
 function currentPath(segments: string[]) {
   return `/explorer${segments.length ? `/${segments.join("/")}` : ""}`;
 }
@@ -100,7 +108,7 @@ function EncyclopediaHeader({ eyebrow, title, description, count }: { eyebrow: s
 function FutureAssetLinks({ label = "Další materiály" }: { label?: string }) {
   return (
     <div className="future-assets" aria-label={label}>
-      <span>Barevný obrázek</span><span>Omalovánka</span><span>Karta</span><span>Další aktivita</span>
+      <small>Do budoucna</small><span>Omalovánka</span><span>Karta k vytištění</span><span>Další aktivita</span>
     </div>
   );
 }
@@ -142,6 +150,8 @@ function HeroItems(items: Hero[]): SearchItem[] {
       description: `${hero.strong} silná / ${hero.weak} slabá • ${hero.raceAbility.name} + ${hero.classAbility.name}`,
       meta: `S ${hero.stats.strength} · O ${hero.stats.agility} · CH ${hero.stats.intelligence} · CHA ${hero.stats.charisma} · Š ${hero.stats.luck}`,
       badge: `${hero.hp} Ž`,
+      image: `/assets/heroes/${hero.slug}.webp`,
+      imageAlt: `Barevná fantasy ilustrace hrdiny ${hero.name}`,
     };
   });
 }
@@ -165,6 +175,8 @@ function RaceList() {
     description: race.tagline,
     meta: race.ability.name,
     badge: "6 povolání",
+    image: raceIllustrations[race.slug],
+    imageAlt: `Barevná fantasy ilustrace rasy ${race.name}`,
   }));
   return (
     <>
@@ -183,7 +195,7 @@ function RaceDetail({ race }: { race: Race }) {
       <Breadcrumbs items={[{ label: "Hrdinové", href: "/explorer/hrdinove" }, { label: "Rasy", href: "/explorer/hrdinove/rasy" }, { label: race.name }]} />
       <div className="detail-hero">
         <div className="detail-hero__copy"><p className="kicker">Hratelná rasa</p><h1>{race.name}</h1><p className="lead">{race.tagline}</p><p>{race.description}</p><div className="pill-row"><span>Silná: {race.strong}</span><span>Slabá: {race.weak}</span></div></div>
-        <AssetSlot title={race.name} eyebrow="Připraveno pro vlastní ilustraci" symbol={race.name.charAt(0)}><p>Samostatný barevný obraz a ženská varianta mohou být přidány bez změny stránky.</p></AssetSlot>
+        <AssetSlot title={race.name} eyebrow="Barevná ilustrace" src={raceIllustrations[race.slug]} alt={`Barevná fantasy ilustrace rasy ${race.name}`} />
       </div>
       <section className="detail-section"><div className="detail-section__heading"><span>01</span><div><h2>Úpravy vlastností</h2><p>Všechny ostatní vlastnosti jsou normální; povolání kategorii silná/slabá nemění.</p></div></div><AttributeGrid values={race.modifiers} modifiers /></section>
       <section className="detail-grid-two"><article className="info-panel"><span className="panel-kicker">Rasová schopnost</span><h2>{race.ability.name}</h2><p>{race.ability.effect}</p></article><article className="info-panel"><span className="panel-kicker">Tematicky vhodná povolání</span><h2>Dobré výchozí směry</h2><div className="link-chips">{race.recommendedClassSlugs.map((slug) => { const item = findClass(slug)!; return <Link href={`/explorer/hrdinove/povolani/${slug}`} key={slug}>{item.name}</Link>; })}</div><p className="fine-print">Jde o tematický tip podle schválených vlastností, nikoli o omezení pravidel.</p></article></section>
@@ -201,6 +213,8 @@ function ClassList() {
     description: item.tagline,
     meta: item.playStyle,
     badge: "5 ras",
+    image: `/assets/heroes/clovek-${item.slug}.webp`,
+    imageAlt: `Barevná fantasy ilustrace povolání ${item.name}`,
   }));
   return (
     <>
@@ -219,7 +233,7 @@ function ClassDetail({ item }: { item: CharacterClass }) {
       <Breadcrumbs items={[{ label: "Hrdinové", href: "/explorer/hrdinove" }, { label: "Povolání", href: "/explorer/hrdinove/povolani" }, { label: item.name }]} />
       <div className="detail-hero">
         <div className="detail-hero__copy"><p className="kicker">Povolání</p><h1>{item.name}</h1><p className="lead">{item.tagline}</p><p>{item.description}</p><div className="pill-row"><span>{item.playStyle}</span></div></div>
-        <AssetSlot title={item.name} eyebrow="Připraveno pro vlastní ilustraci" symbol={item.name.charAt(0)}><p>Asset slot je připravený pro samostatnou postavu a její budoucí levelové varianty.</p></AssetSlot>
+        <AssetSlot title={item.name} eyebrow="Barevná ilustrace" src={`/assets/heroes/clovek-${item.slug}.webp`} alt={`Barevná fantasy ilustrace povolání ${item.name}`} />
       </div>
       <section className="detail-section"><div className="detail-section__heading"><span>01</span><div><h2>Bonusy povolání</h2><p>Povolání mění hodnoty, nikoli kategorii silné a slabé vlastnosti.</p></div></div><AttributeGrid values={item.modifiers} modifiers /></section>
       <section className="detail-grid-two"><article className="info-panel"><span className="panel-kicker">Schopnost povolání</span><h2>{item.ability.name}</h2><p>{item.ability.effect}</p></article><article className="info-panel"><span className="panel-kicker">Počáteční sestava</span><h2>Aktivní vybavení</h2><ul>{item.startingEquipment.active.map((value) => <li key={value}>{value}</li>)}</ul><h3>V inventáři</h3><p>{item.startingEquipment.inventory.join(" • ")}</p>{item.startingEquipment.note && item.startingEquipment.note !== "—" && <p className="fine-print">{item.startingEquipment.note}</p>}</article></section>
@@ -237,7 +251,7 @@ function HeroDetail({ hero }: { hero: Hero }) {
       <Breadcrumbs items={[{ label: "Hrdinové", href: "/explorer/hrdinove" }, { label: hero.name }]} />
       <div className="detail-hero detail-hero--character">
         <div className="detail-hero__copy"><p className="kicker">Základní hrdina • Level 1</p><h1>{hero.name}</h1><p className="lead">{race.tagline}</p><p>{hero.description}</p><div className="pill-row"><Link href={`/explorer/hrdinove/rasy/${race.slug}`}>{race.name}</Link><Link href={`/explorer/hrdinove/povolani/${cls.slug}`}>{cls.name}</Link><strong>{hero.hp} Ž</strong></div></div>
-        <AssetSlot title={hero.name} eyebrow="Asset slot postavy" symbol="✦"><p>Připraveno pro barevnou ilustraci, omalovánku, kartu i budoucí Lv10/Lv20 varianty.</p></AssetSlot>
+        <AssetSlot title={hero.name} eyebrow="Barevná ilustrace • Level 1" src={`/assets/heroes/${hero.slug}.webp`} alt={`Barevná fantasy ilustrace hrdiny ${hero.name}`} />
       </div>
       <section className="detail-section"><div className="detail-section__heading"><span>01</span><div><h2>Počáteční vlastnosti</h2><p>Počítáno přesně jako základ 5 + rasa + povolání.</p></div></div><AttributeGrid values={hero.stats} /><div className="derived-stats"><div><span>Silná vlastnost</span><strong>{hero.strong}</strong></div><div><span>Slabá vlastnost</span><strong>{hero.weak}</strong></div><div><span>Maximální Životy</span><strong>{hero.hp} Ž</strong></div></div></section>
       <section className="detail-grid-two"><article className="info-panel"><span className="panel-kicker">Rasa • {race.name}</span><h2>{hero.raceAbility.name}</h2><p>{hero.raceAbility.effect}</p></article><article className="info-panel"><span className="panel-kicker">Povolání • {cls.name}</span><h2>{hero.classAbility.name}</h2><p>{hero.classAbility.effect}</p></article></section>
@@ -255,6 +269,8 @@ function bestiaryItems(entries: BestiaryEntry[]): SearchItem[] {
     description: entry.ability.name === "—" ? "Bez zvláštní schopnosti" : entry.ability.name,
     meta: `FÚ ${entry.stats.physicalAttack} · FO ${entry.stats.physicalDefense} · MÚ ${entry.stats.magicAttack} · MO ${entry.stats.magicDefense}`,
     badge: entry.isBoss ? `BOSS • ${entry.xp} XP` : `${entry.stats.hp} Ž • ${entry.xp} XP`,
+    image: entry.isBoss ? `/assets/bestiary/${entry.slug}.webp` : undefined,
+    imageAlt: entry.isBoss ? `Barevná fantasy ilustrace bestie ${entry.name}` : undefined,
   }));
 }
 
@@ -283,7 +299,7 @@ function BestiaryDetail({ entry }: { entry: BestiaryEntry }) {
       <Breadcrumbs items={[{ label: "Bestiář", href: "/explorer/bestiar" }, { label: entry.name }]} />
       <div className="detail-hero">
         <div className="detail-hero__copy"><p className="kicker">{entry.category} • obtížnost {entry.difficulty}</p><h1>{entry.name}</h1><p className="lead">{entry.ability.name === "—" ? "Referenční protivník bez zvláštní schopnosti." : entry.ability.name}</p><p>{entry.ability.effect}</p><div className="pill-row">{entry.isBoss && <strong>Referenční boss</strong>}<span>Silná {entry.strong}</span><span>Slabá {entry.weak}</span></div></div>
-        <AssetSlot title={entry.name} eyebrow="Asset slot bestiáře" symbol={entry.isBoss ? "♛" : "◉"} tone={entry.isBoss ? "ember" : "earth"}><p>Připraveno pro barevnou ilustraci, omalovánku a kartu bestie.</p></AssetSlot>
+        <AssetSlot title={entry.name} eyebrow={entry.isBoss ? "Barevná ilustrace bosse" : "Asset slot bestiáře"} symbol={entry.isBoss ? "♛" : "◉"} tone={entry.isBoss ? "ember" : "earth"} src={entry.isBoss ? `/assets/bestiary/${entry.slug}.webp` : undefined} alt={entry.isBoss ? `Barevná fantasy ilustrace bestie ${entry.name}` : undefined}>{!entry.isBoss && <p>Prostor je připravený pro budoucí barevnou ilustraci.</p>}</AssetSlot>
       </div>
       <section className="detail-section"><div className="detail-section__heading"><span>01</span><div><h2>Statblok</h2><p>Přesné schválené hodnoty z Bestiáře v1.0.</p></div></div><div className="stat-table">{statRows.map(([label, value]) => <div key={label}><span>{label}</span><strong>{value}</strong></div>)}</div><details className="mechanics-details"><summary>Výzbroj, ochrana a další parametry</summary><dl><div><dt>Útočná vlastnost</dt><dd>{entry.attackAttribute}</dd></div><div><dt>Útok</dt><dd>{entry.weapon} (bonus {entry.weaponBonus})</dd></div><div><dt>Ochrana</dt><dd>{entry.armor} (bonus {entry.armorBonus})</dd></div><div><dt>Štít</dt><dd>{entry.shield || "—"} (bonus {entry.shieldBonus})</dd></div><div><dt>Bonus kouzla</dt><dd>{entry.spellBonus}</dd></div><div><dt>Magická ochrana</dt><dd>{entry.magicProtection}</dd></div></dl></details></section>
       <section className="detail-grid-two"><article className="info-panel"><span className="panel-kicker">Zvláštní schopnost</span><h2>{entry.ability.name}</h2><p>{entry.ability.effect}</p></article><article className="info-panel"><span className="panel-kicker">Doporučený počet</span><h2>Podle velikosti družiny</h2><div className="group-counts"><span>2 hráči <strong>{entry.recommendedGroups["2"] ?? "—"}</strong></span><span>3 hráči <strong>{entry.recommendedGroups["3"] ?? "—"}</strong></span><span>4 hráči <strong>{entry.recommendedGroups["4"] ?? "—"}</strong></span></div></article></section>
@@ -302,6 +318,8 @@ function equipmentItems(entries: EquipmentItem[]): SearchItem[] {
     description: String(item.fields["Herní účinek"] ?? item.fields["Poznámka"] ?? item.fields["Zvláštní schopnost / výpočet"] ?? "Schválená položka katalogu"),
     meta: Object.entries(item.fields).filter(([key]) => ["FÚ", "FO", "Bonus", "Požadavek", "Min.", "Min. Síla"].includes(key)).map(([key, value]) => `${key} ${value}`).join(" · "),
     badge: String(item.fields["Cena"] ?? item.fields["Hodnota"] ?? "—"),
+    image: `/assets/equipment/${item.categorySlug}.webp`,
+    imageAlt: `Barevný ilustrační motiv kategorie ${item.category}`,
   }));
 }
 
@@ -325,7 +343,7 @@ function EquipmentDetail({ item }: { item: EquipmentItem }) {
       <Breadcrumbs items={[{ label: "Vybavení", href: "/explorer/vybaveni" }, { label: item.name }]} />
       <div className="detail-hero">
         <div className="detail-hero__copy"><p className="kicker">{item.category}</p><h1>{item.name}</h1><p className="lead">Přesná položka Katalogu vybavení v1.0</p><p>{String(item.fields["Herní účinek"] ?? item.fields["Poznámka"] ?? item.fields["Zvláštní schopnost / výpočet"] ?? "Referenční vybavení pro dobrodružství.")}</p><div className="pill-row">{item.fields["Cena"] && <strong>{String(item.fields["Cena"])}</strong>}{item.fields["Hodnota"] && <strong>{String(item.fields["Hodnota"])}</strong>}{item.fields["Slot"] && <span>{String(item.fields["Slot"])}</span>}</div></div>
-        <AssetSlot title={item.name} eyebrow="Asset slot vybavení" symbol="⚔" tone="ember"><p>Samostatný produktový obrázek lze doplnit bez zásahu do dat.</p></AssetSlot>
+        <AssetSlot title={item.name} eyebrow={`Barevný motiv • ${item.category}`} symbol="⚔" tone="ember" src={`/assets/equipment/${item.categorySlug}.webp`} alt={`Barevný ilustrační motiv kategorie ${item.category}`}><p>Společný motiv kategorie; unikátní obrázek položky lze doplnit později.</p></AssetSlot>
       </div>
       <section className="detail-section"><div className="detail-section__heading"><span>01</span><div><h2>Schválené údaje</h2><p>Web zobrazuje pouze pole, která položka skutečně obsahuje.</p></div></div><dl className="definition-table">{Object.entries(item.fields).map(([key, value]) => <div key={key}><dt>{key}</dt><dd>{String(value)}</dd></div>)}</dl></section>
       <div className="notice"><strong>Pravidlo specificity</strong><p>Přesný řádek této položky má přednost před obecným vzorcem pouze v tom, co výslovně uvádí. Vaelor nepřidává další skryté bonusy.</p></div>
@@ -361,7 +379,7 @@ function SchoolDetail({ school }: { school: MagicSchool }) {
   return (
     <>
       <Breadcrumbs items={[{ label: "Magie", href: "/explorer/magie" }, { label: school.name }]} />
-      <div className={`school-hero school-hero--${school.tone}`}><span className="school-hero__symbol" aria-hidden="true">{school.symbol}</span><div><p className="kicker">Škola magie • 10 kouzel</p><h1>{school.name}</h1><p>{school.description}</p></div></div>
+      <div className={`school-hero school-hero--${school.tone}`}><div className="school-hero__art"><img src={`/assets/magic/${school.slug}.webp`} alt={`Barevný magický motiv školy ${school.name}`} loading="eager" decoding="async" /><span className="school-hero__symbol" aria-hidden="true">{school.symbol}</span></div><div><p className="kicker">Škola magie • 10 kouzel</p><h1>{school.name}</h1><p>{school.description}</p></div></div>
       <CollectionSearch items={spellItems(spells)} placeholder={`Hledat v ${school.name.toLocaleLowerCase("cs")}…`} />
     </>
   );
@@ -374,7 +392,7 @@ function SpellDetail({ spell }: { spell: Spell }) {
       <Breadcrumbs items={[{ label: "Magie", href: "/explorer/magie" }, { label: school.name, href: `/explorer/magie/${school.slug}` }, { label: spell.name }]} />
       <div className={`detail-hero spell-detail spell-detail--${school.tone}`}>
         <div className="detail-hero__copy"><p className="kicker">{school.name} • {spell.type}</p><h1>{spell.name}</h1><p className="lead">{spell.effect}</p><div className="pill-row"><span>Min. CH {spell.minIntelligence}</span><span>Min. Level {spell.minLevel}</span><strong>{spell.bonus}</strong></div></div>
-        <AssetSlot title={spell.name} eyebrow="Vizuální efekt kouzla" symbol={school.symbol} tone={school.tone}><p>Připraveno pro efektovou ilustraci a kartu kouzla.</p></AssetSlot>
+        <AssetSlot title={spell.name} eyebrow={`Barevný motiv • ${school.name}`} symbol={school.symbol} tone={school.tone} src={`/assets/magic/${school.slug}.webp`} alt={`Barevný magický motiv školy ${school.name}`}><p>Společný motiv školy; unikátní efekt konkrétního kouzla lze doplnit později.</p></AssetSlot>
       </div>
       <section className="detail-section"><div className="detail-section__heading"><span>01</span><div><h2>Parametry kouzla</h2><p>Přesný řádek z katalogu 110 kouzel.</p></div></div><dl className="definition-table"><div><dt>Škola</dt><dd>{spell.school}</dd></div><div><dt>Typ</dt><dd>{spell.type}</dd></div><div><dt>Min. Chytrost</dt><dd>{spell.minIntelligence}</dd></div><div><dt>Min. Level</dt><dd>{spell.minLevel}</dd></div><div><dt>Bonus</dt><dd>{spell.bonus}</dd></div><div><dt>Cíl</dt><dd>{spell.target}</dd></div><div><dt>Trvání</dt><dd>{spell.duration}</dd></div><div><dt>Omezení</dt><dd>{spell.limitations}</dd></div><div className="definition-table__wide"><dt>Přesný účinek</dt><dd>{spell.effect}</dd></div></dl></section>
       <div className="notice"><strong>Znát nestačí splnit požadavek</strong><p>Min. CH a Min. Level pouze dovolují kouzlo se naučit. Postava je musí skutečně získat při levelování, od učitele, z knihy, svitku, odměny, nálezu nebo příběhu.</p></div>

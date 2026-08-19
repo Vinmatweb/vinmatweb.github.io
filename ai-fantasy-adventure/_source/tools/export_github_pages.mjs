@@ -116,6 +116,26 @@ await cp(
   { recursive: true },
 );
 await cp(
+  join(projectRoot, "dist/client/assets/heroes"),
+  join(outputRoot, "assets/heroes"),
+  { recursive: true },
+);
+await cp(
+  join(projectRoot, "dist/client/assets/bestiary"),
+  join(outputRoot, "assets/bestiary"),
+  { recursive: true },
+);
+await cp(
+  join(projectRoot, "dist/client/assets/equipment"),
+  join(outputRoot, "assets/equipment"),
+  { recursive: true },
+);
+await cp(
+  join(projectRoot, "dist/client/assets/magic"),
+  join(outputRoot, "assets/magic"),
+  { recursive: true },
+);
+await cp(
   join(projectRoot, "dist/client/downloads"),
   join(outputRoot, "downloads"),
   { recursive: true },

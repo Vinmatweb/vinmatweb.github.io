@@ -64,7 +64,7 @@ export default function Home() {
           <div className="start-layout">
             <div className="start-steps">
               {[
-                ["01", "Stáhni čtyři dokumenty", "Nejjednodušší je kompletní balíček se všemi pravidly v1.0."],
+                ["01", "Stáhni čtyři dokumenty", "Na telefonu jednotlivě; na počítači můžeš zvolit i kompletní ZIP."],
                 ["02", "Otevři nový AI chat", "Nahraj Manuál, Bestiář, Knihu magie a Katalog vybavení."],
                 ["03", "Řekni, kdo chce hrát", "Stačí počet hráčů, přibližný věk a nálada dobrodružství."],
                 ["04", "Vaelor vás provede", "Pomůže vytvořit postavy a zahájí první scénu. Všechna čísla hlídá sám."],
@@ -82,7 +82,7 @@ export default function Home() {
                 <div><strong>Kompletní pravidla v1.0</strong><small>4 soubory • jeden systém</small></div>
               </div>
               <a href="/downloads/AI_Fantasy_Adventure_v1_0_complete.zip" download className="button button--gold button--full">
-                Stáhnout kompletní balíček
+                Volitelně stáhnout kompletní ZIP
               </a>
               <div className="download-list">
                 {downloads.map(([title, description, href]) => (

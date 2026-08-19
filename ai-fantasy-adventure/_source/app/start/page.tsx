@@ -40,7 +40,7 @@ export default function StartPage() {
               <p>Manuál určuje obecná pravidla a tři katalogy obsahují přesné hodnoty. Vaelor je používá jako jeden systém.</p>
             </div>
             {[
-              ["1", "Stáhněte kompletní balíček", "ZIP obsahuje všechny čtyři finální dokumenty v1.0. Rozbalte jej do jedné složky, ať je můžete vybrat najednou."],
+              ["1", "Stáhněte čtyři dokumenty", "Na telefonu je stáhněte samostatně bez rozbalování. Na počítači můžete použít i volitelný ZIP se všemi soubory."],
               ["2", "Otevřete nový AI chat", "Vytvořte nový chat v nástroji, který umí přijímat soubory. Pro nejlepší kontinuitu používejte jeden chat pro jednu kampaň."],
               ["3", "Nahrajte všechny dokumenty", "Počkejte, až se načtou Manuál, Bestiář, Magie a Vybavení. Pokud chat omezuje počet souborů, nahrajte je postupně před zahájením hry."],
               ["4", "Napište úvodní větu", "Uveďte počet hráčů, jejich přibližný věk a případně délku či tón hry. Vaelor se zeptá už jen na to, co opravdu potřebuje."],
@@ -58,16 +58,17 @@ export default function StartPage() {
 
           <aside className="guide-aside">
             <div className="download-panel download-panel--sticky">
-              <div className="download-panel__top"><span className="download-rune">✦</span><div><strong>Všechno v jednom</strong><small>AI Fantasy Adventure v1.0</small></div></div>
-              <a href="/downloads/AI_Fantasy_Adventure_v1_0_complete.zip" download className="button button--gold button--full">Stáhnout ZIP balíček</a>
-              <span className="file-note">4 soubory • přibližně 205 KB</span>
+              <div className="download-panel__top"><span className="download-rune">✦</span><div><strong>Dvě možnosti stažení</strong><small>AI Fantasy Adventure v1.0</small></div></div>
+              <a href="#samostatne-soubory" className="button button--gold button--full">Stáhnout soubory jednotlivě</a>
+              <a href="/downloads/AI_Fantasy_Adventure_v1_0_complete.zip" download className="button button--outline button--full">Volitelně stáhnout ZIP</a>
+              <span className="file-note">Na telefonu doporučujeme jednotlivé soubory</span>
             </div>
           </aside>
         </section>
 
-        <section className="section section--surface">
+        <section className="section section--surface" id="samostatne-soubory">
           <div className="shell">
-            <div className="section-heading"><p className="kicker">Samostatné soubory</p><h2>Čtyři zdroje pravdy</h2><p>Stahujte jednotlivě pouze tehdy, když už část balíčku máte.</p></div>
+            <div className="section-heading"><p className="kicker">Doporučeno pro telefon</p><h2>Čtyři soubory bez rozbalování</h2><p>Stáhněte každý dokument přímo a potom všechny čtyři nahrajte do AI chatu.</p></div>
             <div className="file-grid">
               {files.map((file, index) => (
                 <a href={file.href} download className="file-card" key={file.title}>
