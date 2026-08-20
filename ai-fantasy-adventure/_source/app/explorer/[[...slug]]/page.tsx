@@ -318,8 +318,8 @@ function equipmentItems(entries: EquipmentItem[]): SearchItem[] {
     description: String(item.fields["Herní účinek"] ?? item.fields["Poznámka"] ?? item.fields["Zvláštní schopnost / výpočet"] ?? "Schválená položka katalogu"),
     meta: Object.entries(item.fields).filter(([key]) => ["FÚ", "FO", "Bonus", "Požadavek", "Min.", "Min. Síla"].includes(key)).map(([key, value]) => `${key} ${value}`).join(" · "),
     badge: String(item.fields["Cena"] ?? item.fields["Hodnota"] ?? "—"),
-    image: `/assets/equipment/${item.categorySlug}.webp`,
-    imageAlt: `Barevný ilustrační motiv kategorie ${item.category}`,
+    image: `/assets/equipment/items/${item.slug}.webp`,
+    imageAlt: `Barevná fantasy ilustrace položky ${item.name}`,
   }));
 }
 
@@ -343,7 +343,7 @@ function EquipmentDetail({ item }: { item: EquipmentItem }) {
       <Breadcrumbs items={[{ label: "Vybavení", href: "/explorer/vybaveni" }, { label: item.name }]} />
       <div className="detail-hero">
         <div className="detail-hero__copy"><p className="kicker">{item.category}</p><h1>{item.name}</h1><p className="lead">Přesná položka Katalogu vybavení v1.0</p><p>{String(item.fields["Herní účinek"] ?? item.fields["Poznámka"] ?? item.fields["Zvláštní schopnost / výpočet"] ?? "Referenční vybavení pro dobrodružství.")}</p><div className="pill-row">{item.fields["Cena"] && <strong>{String(item.fields["Cena"])}</strong>}{item.fields["Hodnota"] && <strong>{String(item.fields["Hodnota"])}</strong>}{item.fields["Slot"] && <span>{String(item.fields["Slot"])}</span>}</div></div>
-        <AssetSlot title={item.name} eyebrow={`Barevný motiv • ${item.category}`} symbol="⚔" tone="ember" src={`/assets/equipment/${item.categorySlug}.webp`} alt={`Barevný ilustrační motiv kategorie ${item.category}`}><p>Společný motiv kategorie; unikátní obrázek položky lze doplnit později.</p></AssetSlot>
+        <AssetSlot title={item.name} eyebrow={`Barevná ilustrace • ${item.category}`} symbol="⚔" tone="ember" src={`/assets/equipment/items/${item.slug}.webp`} alt={`Barevná fantasy ilustrace položky ${item.name}`} />
       </div>
       <section className="detail-section"><div className="detail-section__heading"><span>01</span><div><h2>Schválené údaje</h2><p>Web zobrazuje pouze pole, která položka skutečně obsahuje.</p></div></div><dl className="definition-table">{Object.entries(item.fields).map(([key, value]) => <div key={key}><dt>{key}</dt><dd>{String(value)}</dd></div>)}</dl></section>
       <div className="notice"><strong>Pravidlo specificity</strong><p>Přesný řádek této položky má přednost před obecným vzorcem pouze v tom, co výslovně uvádí. Vaelor nepřidává další skryté bonusy.</p></div>
