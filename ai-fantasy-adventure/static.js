@@ -1,6 +1,6 @@
 (() => {
   const fold = (value) => value.toLocaleLowerCase('cs');
-  const illustratedSpellSchools = new Set(["obecna", "ohen", "voda", "vzduch", "zeme", "mysl"]);
+  const illustratedSpellSchools = new Set(["obecna", "ohen", "voda", "vzduch", "zeme", "mysl", "duch"]);
   const spellRouteFromPath = (pathname) => {
     const parts = pathname.split("/").filter(Boolean);
     const magicIndex = parts.findIndex((part, index) => part === "magie" && parts[index - 1] === "explorer");
