@@ -145,7 +145,7 @@ await cp(join(projectRoot, "dist/client/og-image.jpg"), join(outputRoot, "og-ima
 
 const staticScript = `(() => {
   const fold = (value) => value.toLocaleLowerCase('cs');
-  const illustratedSpellSchools = new Set(["obecna", "ohen", "voda", "vzduch", "zeme", "mysl", "duch", "svetla", "temna", "prirodni"]);
+  const illustratedSpellSchools = new Set(["obecna", "ohen", "voda", "vzduch", "zeme", "mysl", "duch", "svetla", "temna", "prirodni", "hvezdna"]);
   const spellRouteFromPath = (pathname) => {
     const parts = pathname.split("/").filter(Boolean);
     const magicIndex = parts.findIndex((part, index) => part === "magie" && parts[index - 1] === "explorer");
