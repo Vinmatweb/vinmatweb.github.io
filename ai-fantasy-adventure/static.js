@@ -93,7 +93,7 @@
     return '/en';
   };
   const isEnglish = document.documentElement.lang === 'en';
-  const languageLink = [...document.querySelectorAll('.language-switch a')].find((link) => (link.textContent || '').trim() === (isEnglish ? 'CZ' : 'EN'));
+  const languageLink = [...document.querySelectorAll('.language-switch:not(.language-switch--fixed) a')].find((link) => (link.textContent || '').trim() === (isEnglish ? 'CZ' : 'EN'));
   if (languageLink) {
     const destination = isEnglish ? toCzech(location.pathname, location.hash) : toEnglish(location.pathname, location.hash);
     languageLink.href = basePath + destination;
