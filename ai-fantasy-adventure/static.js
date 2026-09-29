@@ -1,5 +1,23 @@
 (() => {
   const basePath = '/ai-fantasy-adventure';
+  const footerVersion = document.querySelector('.site-footer__meta span:first-child');
+  if (footerVersion && /^(Rules|Pravidla)\b/.test((footerVersion.textContent || '').trim())) footerVersion.remove();
+  const textWalker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  const textNodes = [];
+  while (textWalker.nextNode()) textNodes.push(textWalker.currentNode);
+  for (const node of textNodes) {
+    const previousText = (() => {
+      let sibling = node.previousSibling;
+      while (sibling && sibling.nodeType !== Node.TEXT_NODE) sibling = sibling.previousSibling;
+      return sibling;
+    })();
+    if (/^\s*1\.0\s*$/.test(node.nodeValue || '') && previousText && /v\s*$/i.test(previousText.nodeValue || '')) {
+      previousText.nodeValue = (previousText.nodeValue || '').replace(/v\s*$/i, '');
+      node.nodeValue = '';
+    } else {
+      node.nodeValue = (node.nodeValue || '').replace(/v1\.0\b/gi, '');
+    }
+  }
   const isEnglish = document.documentElement.lang === 'en';
   const encyclopediaLink = document.querySelector('.site-nav a[href$="/explorer"], .site-nav a[href$="/explorer/"]');
   if (encyclopediaLink) encyclopediaLink.textContent = isEnglish ? 'Encyclopedia' : 'Encyklopedie';
