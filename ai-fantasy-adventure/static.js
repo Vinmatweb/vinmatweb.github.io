@@ -1,5 +1,21 @@
 (() => {
   const basePath = '/ai-fantasy-adventure';
+  const isEnglish = document.documentElement.lang === 'en';
+  const encyclopediaLink = document.querySelector('.site-nav a[href$="/explorer"], .site-nav a[href$="/explorer/"]');
+  if (encyclopediaLink) encyclopediaLink.textContent = isEnglish ? 'Encyclopedia' : 'Encyklopedie';
+  const footerLinks = document.querySelector('.site-footer__links');
+  if (footerLinks) {
+    [...footerLinks.querySelectorAll('a')].forEach((link) => {
+      const label = (link.textContent || '').trim();
+      if (['Start playing', 'Začít hrát', 'World overview', 'Encyklopedie'].includes(label) || link.hasAttribute('download') || /\.zip(?:$|\?)/i.test(link.href)) link.remove();
+    });
+    if (![...footerLinks.querySelectorAll('a')].some((link) => /\/support\/?$/.test(new URL(link.href, location.href).pathname))) {
+      const support = document.createElement('a');
+      support.href = basePath + (isEnglish ? '/en/support/' : '/support/');
+      support.textContent = isEnglish ? 'Support' : 'Podpora';
+      footerLinks.insertBefore(support, footerLinks.firstChild);
+    }
+  }
   const bestiaryEnglishToCzech = { animals: 'zvirata', people: 'lide-npc', 'fantasy-humanoids': 'fantasy-humanoidi', undead: 'nemrtvi', monsters: 'nestvury' };
   const bestiaryCzechToEnglish = Object.fromEntries(Object.entries(bestiaryEnglishToCzech).map(([en, cs]) => [cs, en]));
   const equipmentEnglishToCzech = { 'melee-weapons': 'weapons-melee', 'ranged-weapons': 'weapons-ranged', armor: 'armor', shields: 'shields', 'adventure-gear': 'adventure-gear', instruments: 'instruments', potions: 'potions', 'magic-items': 'magic-items' };
@@ -92,7 +108,6 @@
     if (path === '/explorer/vaelor') return '/en/explorer/vaelor';
     return '/en';
   };
-  const isEnglish = document.documentElement.lang === 'en';
   const languageLink = [...document.querySelectorAll('.language-switch:not(.language-switch--fixed) a')].find((link) => (link.textContent || '').trim() === (isEnglish ? 'CZ' : 'EN'));
   if (languageLink) {
     const destination = isEnglish ? toCzech(location.pathname, location.hash) : toEnglish(location.pathname, location.hash);
