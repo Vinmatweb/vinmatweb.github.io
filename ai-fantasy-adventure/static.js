@@ -44,6 +44,8 @@
     const magic = '/en/explorer/magic';
     if (path === magic) return '/explorer/magie';
     if (path.startsWith(magic + '/')) return '/explorer/magie/' + path.slice(magic.length + 1);
+    if (path === '/en/explorer/rules') return '/explorer/pravidla';
+    if (path === '/en/explorer/vaelor') return '/explorer/vaelor';
     return '/explorer';
   };
   const toEnglish = (path, hash) => {
@@ -84,8 +86,8 @@
     const magic = '/explorer/magie';
     if (path === magic) return '/en/explorer/magic';
     if (path.startsWith(magic + '/')) return '/en/explorer/magic/' + path.slice(magic.length + 1);
-    if (path.startsWith('/explorer/pravidla')) return '/en/explorer#rules';
-    if (path.startsWith('/explorer/vaelor')) return '/en/explorer#vaelor';
+    if (path === '/explorer/pravidla') return '/en/explorer/rules';
+    if (path === '/explorer/vaelor') return '/en/explorer/vaelor';
     return '/en';
   };
   const isEnglish = document.documentElement.lang === 'en';
