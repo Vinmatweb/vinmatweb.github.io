@@ -10,6 +10,7 @@
   const toCzech = (path, hash) => {
     path = cleanPath(path.replace(/^\/ai-fantasy-adventure(?=\/|$)/, ''));
     if (path === '/en') return '/';
+    if (path === '/en/support') return '/support';
     if (path === '/en/explorer') {
       const section = (hash || '').replace(/^#/, '');
       return ({ heroes: '/explorer/hrdinove', bestiary: '/explorer/bestiar', equipment: '/explorer/vybaveni', magic: '/explorer/magie', rules: '/explorer/pravidla', vaelor: '/explorer/vaelor' })[section] || '/explorer';
@@ -51,6 +52,7 @@
   const toEnglish = (path, hash) => {
     path = cleanPath(path.replace(/^\/ai-fantasy-adventure(?=\/|$)/, ''));
     if (path === '/') return '/en';
+    if (path === '/support') return '/en/support';
     if (path === '/start') return '/en#play';
     if (path === '/explorer') return '/en/explorer';
     if (path === '/explorer/vybaveni') return '/en/explorer/equipment';
