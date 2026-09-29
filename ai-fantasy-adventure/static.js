@@ -41,6 +41,9 @@
       const category = equipmentEnglishToCzech[rest[0]];
       return category ? '/explorer/vybaveni/kategorie/' + category : '/explorer/vybaveni';
     }
+    const magic = '/en/explorer/magic';
+    if (path === magic) return '/explorer/magie';
+    if (path.startsWith(magic + '/')) return '/explorer/magie/' + path.slice(magic.length + 1);
     return '/explorer';
   };
   const toEnglish = (path, hash) => {
@@ -78,7 +81,9 @@
       const category = equipmentCzechToEnglish[equipmentCategoryBySlug[slug]];
       return category ? '/en/explorer/equipment/' + category + '/' + slug : '/en/explorer/equipment/melee-weapons';
     }
-    if (path.startsWith('/explorer/magie')) return '/en/explorer#magic';
+    const magic = '/explorer/magie';
+    if (path === magic) return '/en/explorer/magic';
+    if (path.startsWith(magic + '/')) return '/en/explorer/magic/' + path.slice(magic.length + 1);
     if (path.startsWith('/explorer/pravidla')) return '/en/explorer#rules';
     if (path.startsWith('/explorer/vaelor')) return '/en/explorer#vaelor';
     return '/en';
