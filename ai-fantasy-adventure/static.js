@@ -32,7 +32,7 @@
     while (worldHeading.firstChild) worldLink.appendChild(worldHeading.firstChild);
     worldHeading.appendChild(worldLink);
   }
-  const currentRoute = location.pathname.replace(basePath, '').replace(/\\/+$/, '') || '/';
+  const currentRoute = location.pathname.replace(basePath, '').replace(/\/+$/, '') || '/';
   const representativeHeroes = { clovek: 'clovek-bard', trpaslik: 'trpaslik-hranicar', ork: 'ork-bojovnik' };
   const isRaceIndex = currentRoute === '/explorer/hrdinove/rasy' || currentRoute === '/en/explorer/heroes/races';
   if (isRaceIndex) {
@@ -43,7 +43,7 @@
       if (race && image) image.src = basePath + '/assets/heroes/' + representativeHeroes[race] + '.webp';
     });
   } else {
-    const raceMatch = currentRoute.match(/(?:\\/explorer\\/hrdinove\\/rasy|\\/en\\/explorer\\/heroes\\/races)\\/(clovek|trpaslik|ork)$/);
+    const raceMatch = currentRoute.match(/(?:\/explorer\/hrdinove\/rasy|\/en\/explorer\/heroes\/races)\/(clovek|trpaslik|ork)$/);
     if (raceMatch) {
       const image = document.querySelector('.detail-hero img');
       if (image) image.src = basePath + '/assets/heroes/' + representativeHeroes[raceMatch[1]] + '.webp';
