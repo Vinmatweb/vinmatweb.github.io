@@ -12,3 +12,5 @@
 .bestiary-card-dialog__actions{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;padding:14px 18px 18px}
 .bestiary-card-dialog__actions a{text-decoration:none}
 @media(max-width:620px){.bestiary-print-panel{padding:18px}.bestiary-card-dialog__preview-wrap{padding:8px}.bestiary-card-dialog__preview{max-height:60vh}}
+.detail-hero .kicker a.difficulty-link{color:inherit;text-decoration:underline;text-decoration-color:rgba(226,194,130,.55);text-underline-offset:.18em}
+.detail-hero .kicker a.difficulty-link:hover{text-decoration-color:currentColor}
