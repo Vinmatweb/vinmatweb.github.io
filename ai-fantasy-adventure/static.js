@@ -20,12 +20,14 @@
   }
   const isEnglish = document.documentElement.lang === 'en';
   const encyclopediaLink = document.querySelector('.site-nav a[href$="/explorer"], .site-nav a[href$="/explorer/"]');
-  if (encyclopediaLink) encyclopediaLink.textContent = isEnglish ? 'Encyclopedia' : 'Encyklopedie';
+  if (encyclopediaLink) encyclopediaLink.textContent = isEnglish ? 'World guide' : 'Průvodce světem';
+  const overviewLink = document.querySelector('.explorer-nav a[href$="/explorer"], .explorer-nav a[href$="/explorer/"]');
+  if (overviewLink) overviewLink.textContent = isEnglish ? 'World guide' : 'Průvodce světem';
   const footerLinks = document.querySelector('.site-footer__links');
   if (footerLinks) {
     [...footerLinks.querySelectorAll('a')].forEach((link) => {
       const label = (link.textContent || '').trim();
-      if (['Start playing', 'Začít hrát', 'World overview', 'Encyklopedie'].includes(label) || link.hasAttribute('download') || /\.zip(?:$|\?)/i.test(link.href)) link.remove();
+      if (['Start playing', 'Začít hrát', 'World overview', 'World guide', 'Encyklopedie', 'Průvodce světem'].includes(label) || link.hasAttribute('download') || /\.zip(?:$|\?)/i.test(link.href)) link.remove();
     });
     if (![...footerLinks.querySelectorAll('a')].some((link) => /\/support\/?$/.test(new URL(link.href, location.href).pathname))) {
       const support = document.createElement('a');
