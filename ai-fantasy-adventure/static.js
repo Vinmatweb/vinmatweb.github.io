@@ -51,7 +51,11 @@
   }
   const encyclopediaLink = document.querySelector('.site-nav a[href$="/explorer"], .site-nav a[href$="/explorer/"]');
   if (encyclopediaLink) encyclopediaLink.textContent = isEnglish ? 'World guide' : 'Průvodce světem';
-  const overviewLink = document.querySelector('.explorer-nav a[href$="/explorer"], .explorer-nav a[href$="/explorer/"]');
+  const guidePath = basePath + (isEnglish ? '/en/explorer' : '/explorer');
+  const overviewLink = [...document.querySelectorAll('.explorer-nav a')].find((link) => {
+    const path = new URL(link.href, location.href).pathname.replace(/\/$/, '');
+    return path === guidePath;
+  });
   if (overviewLink) overviewLink.textContent = isEnglish ? 'World guide' : 'Průvodce světem';
   document.querySelectorAll('.breadcrumbs a[href$="/explorer"], .breadcrumbs a[href$="/explorer/"], .breadcrumbs a[href$="/en/explorer"], .breadcrumbs a[href$="/en/explorer/"]').forEach((link) => {
     link.textContent = isEnglish ? 'World Guide' : 'Průvodce světem';
