@@ -23,6 +23,32 @@
   if (explorerNav) explorerNav.setAttribute('aria-label', isEnglish ? 'World guide' : 'Průvodce světem');
   const worldName = document.querySelector('.explorer-nav__heading strong');
   if (worldName) worldName.textContent = 'Elaria';
+  const worldHeading = document.querySelector('.explorer-nav__heading');
+  if (worldHeading && !worldHeading.querySelector('a')) {
+    const worldLink = document.createElement('a');
+    worldLink.href = basePath + (isEnglish ? '/en/explorer/' : '/explorer/');
+    worldLink.setAttribute('aria-label', isEnglish ? 'The world of Elaria – World guide' : 'Svět Elaria – Průvodce světem');
+    worldLink.style.cssText = 'display:flex;flex-direction:column;color:inherit;text-decoration:none';
+    while (worldHeading.firstChild) worldLink.appendChild(worldHeading.firstChild);
+    worldHeading.appendChild(worldLink);
+  }
+  const currentRoute = location.pathname.replace(basePath, '').replace(/\\/+$/, '') || '/';
+  const representativeHeroes = { clovek: 'clovek-bard', trpaslik: 'trpaslik-hranicar', ork: 'ork-bojovnik' };
+  const isRaceIndex = currentRoute === '/explorer/hrdinove/rasy' || currentRoute === '/en/explorer/heroes/races';
+  if (isRaceIndex) {
+    document.querySelectorAll('.collection-card[href]').forEach((card) => {
+      const href = card.getAttribute('href') || '';
+      const race = Object.keys(representativeHeroes).find((slug) => href.includes('/' + slug + '/'));
+      const image = card.querySelector('img');
+      if (race && image) image.src = basePath + '/assets/heroes/' + representativeHeroes[race] + '.webp';
+    });
+  } else {
+    const raceMatch = currentRoute.match(/(?:\\/explorer\\/hrdinove\\/rasy|\\/en\\/explorer\\/heroes\\/races)\\/(clovek|trpaslik|ork)$/);
+    if (raceMatch) {
+      const image = document.querySelector('.detail-hero img');
+      if (image) image.src = basePath + '/assets/heroes/' + representativeHeroes[raceMatch[1]] + '.webp';
+    }
+  }
   const encyclopediaLink = document.querySelector('.site-nav a[href$="/explorer"], .site-nav a[href$="/explorer/"]');
   if (encyclopediaLink) encyclopediaLink.textContent = isEnglish ? 'World guide' : 'Průvodce světem';
   const overviewLink = document.querySelector('.explorer-nav a[href$="/explorer"], .explorer-nav a[href$="/explorer/"]');
@@ -41,6 +67,14 @@
       support.href = basePath + (isEnglish ? '/en/support/' : '/support/');
       support.textContent = isEnglish ? 'Support' : 'Podpora';
       footerLinks.insertBefore(support, footerLinks.firstChild);
+    }
+    for (const [href, label] of [['https://vinmat.eu/privacy.html', isEnglish ? 'Privacy' : 'Soukromí'], ['https://vinmat.eu/terms.html', isEnglish ? 'Terms' : 'Podmínky']]) {
+      if (![...footerLinks.querySelectorAll('a')].some((link) => new URL(link.href, location.href).href === href)) {
+        const legal = document.createElement('a');
+        legal.href = href;
+        legal.textContent = label;
+        footerLinks.appendChild(legal);
+      }
     }
   }
   const bestiaryEnglishToCzech = { animals: 'zvirata', people: 'lide-npc', 'fantasy-humanoids': 'fantasy-humanoidi', undead: 'nemrtvi', monsters: 'nestvury' };
