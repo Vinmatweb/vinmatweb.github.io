@@ -57,6 +57,52 @@
     return path === guidePath;
   });
   if (overviewLink) overviewLink.textContent = isEnglish ? 'World guide' : 'Průvodce světem';
+  if (explorerNav) {
+    const directLinks = [...explorerNav.querySelectorAll(':scope > a.explorer-nav__link')];
+    directLinks.forEach((link) => {
+      const path = new URL(link.href, location.href).pathname.replace(/\/$/, '');
+      if (path === guidePath || path.endsWith('/printable-samples') || path.endsWith('/tiskove-vzory')) link.remove();
+    });
+    const infoPath = basePath + (isEnglish ? '/en/explorer/more-information/' : '/explorer/dalsi-informace/');
+    let infoLink = [...explorerNav.querySelectorAll(':scope > a.explorer-nav__link')].find((link) => new URL(link.href, location.href).pathname.replace(/\/$/, '') === infoPath.replace(/\/$/, ''));
+    if (!infoLink) {
+      infoLink = document.createElement('a');
+      infoLink.className = 'explorer-nav__link';
+      infoLink.href = infoPath;
+      infoLink.textContent = isEnglish ? 'More information' : 'Další informace';
+    }
+    const magicGroup = [...explorerNav.querySelectorAll(':scope > details')].find((group) => /^(Magic|Magie)/.test((group.querySelector('summary')?.textContent || '').trim()));
+    if (magicGroup) magicGroup.insertAdjacentElement('afterend', infoLink);
+    const findDirect = (suffixes) => [...explorerNav.querySelectorAll(':scope > a.explorer-nav__link')].find((link) => suffixes.some((suffix) => new URL(link.href, location.href).pathname.replace(/\/$/, '').endsWith(suffix)));
+    const vaelor = findDirect(['/explorer/vaelor']);
+    let adventures = findDirect(isEnglish ? ['/explorer/adventures'] : ['/explorer/dobrodruzstvi']);
+    if (!adventures) {
+      adventures = document.createElement('a');
+      adventures.className = 'explorer-nav__link';
+      adventures.href = basePath + (isEnglish ? '/en/explorer/adventures/' : '/explorer/dobrodruzstvi/');
+      adventures.textContent = isEnglish ? 'Sample adventures' : 'Ukázková dobrodružství';
+    }
+    const rules = findDirect(isEnglish ? ['/explorer/rules'] : ['/explorer/pravidla']);
+    if (vaelor) explorerNav.appendChild(vaelor);
+    explorerNav.appendChild(adventures);
+    if (rules) explorerNav.appendChild(rules);
+  }
+  const siteNav = document.querySelector('.site-nav');
+  if (siteNav) {
+    const anchors = [...siteNav.querySelectorAll('a')];
+    const pathEndsWith = (link, suffix) => new URL(link.href, location.href).pathname.replace(/\/$/, '').endsWith(suffix);
+    const vaelor = anchors.find((link) => pathEndsWith(link, '/explorer/vaelor'));
+    const rules = anchors.find((link) => pathEndsWith(link, isEnglish ? '/explorer/rules' : '/explorer/pravidla'));
+    let adventures = anchors.find((link) => pathEndsWith(link, isEnglish ? '/explorer/adventures' : '/explorer/dobrodruzstvi'));
+    if (!adventures) {
+      adventures = document.createElement('a');
+      adventures.href = basePath + (isEnglish ? '/en/explorer/adventures/' : '/explorer/dobrodruzstvi/');
+      adventures.textContent = isEnglish ? 'Sample adventures' : 'Ukázková dobrodružství';
+    }
+    if (vaelor) siteNav.appendChild(vaelor);
+    siteNav.appendChild(adventures);
+    if (rules) siteNav.appendChild(rules);
+  }
   document.querySelectorAll('.breadcrumbs a[href$="/explorer"], .breadcrumbs a[href$="/explorer/"], .breadcrumbs a[href$="/en/explorer"], .breadcrumbs a[href$="/en/explorer/"]').forEach((link) => {
     link.textContent = isEnglish ? 'World Guide' : 'Průvodce světem';
   });
@@ -92,6 +138,8 @@
     path = cleanPath(path.replace(/^\/ai-fantasy-adventure(?=\/|$)/, ''));
     if (path === '/en') return '/';
     if (path === '/en/support') return '/support';
+    if (path === '/en/explorer/adventures') return '/explorer/dobrodruzstvi';
+    if (path === '/en/explorer/more-information') return '/explorer/dalsi-informace';
     if (path === '/en/explorer') {
       const section = (hash || '').replace(/^#/, '');
       return ({ heroes: '/explorer/hrdinove', bestiary: '/explorer/bestiar', equipment: '/explorer/vybaveni', magic: '/explorer/magie', rules: '/explorer/pravidla', vaelor: '/explorer/vaelor' })[section] || '/explorer';
@@ -135,6 +183,8 @@
     if (path === '/') return '/en';
     if (path === '/support') return '/en/support';
     if (path === '/start') return '/en#play';
+    if (path === '/explorer/dobrodruzstvi') return '/en/explorer/adventures';
+    if (path === '/explorer/dalsi-informace') return '/en/explorer/more-information';
     if (path === '/explorer') return '/en/explorer';
     if (path === '/explorer/vybaveni') return '/en/explorer/equipment';
     const heroes = '/explorer/hrdinove';
