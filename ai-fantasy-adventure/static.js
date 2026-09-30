@@ -23,6 +23,9 @@
   if (encyclopediaLink) encyclopediaLink.textContent = isEnglish ? 'World guide' : 'Průvodce světem';
   const overviewLink = document.querySelector('.explorer-nav a[href$="/explorer"], .explorer-nav a[href$="/explorer/"]');
   if (overviewLink) overviewLink.textContent = isEnglish ? 'World guide' : 'Průvodce světem';
+  document.querySelectorAll('.breadcrumbs a[href$="/explorer"], .breadcrumbs a[href$="/explorer/"], .breadcrumbs a[href$="/en/explorer"], .breadcrumbs a[href$="/en/explorer/"]').forEach((link) => {
+    link.textContent = isEnglish ? 'World Guide' : 'Průvodce světem';
+  });
   const footerLinks = document.querySelector('.site-footer__links');
   if (footerLinks) {
     [...footerLinks.querySelectorAll('a')].forEach((link) => {
