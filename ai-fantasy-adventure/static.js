@@ -19,6 +19,8 @@
     }
   }
   const isEnglish = document.documentElement.lang === 'en';
+  const explorerNav = document.querySelector('.explorer-nav');
+  if (explorerNav) explorerNav.setAttribute('aria-label', isEnglish ? 'World guide' : 'Průvodce světem');
   const encyclopediaLink = document.querySelector('.site-nav a[href$="/explorer"], .site-nav a[href$="/explorer/"]');
   if (encyclopediaLink) encyclopediaLink.textContent = isEnglish ? 'World guide' : 'Průvodce světem';
   const overviewLink = document.querySelector('.explorer-nav a[href$="/explorer"], .explorer-nav a[href$="/explorer/"]');
