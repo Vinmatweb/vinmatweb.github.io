@@ -11,7 +11,11 @@
     "medved",
     "krokodyl",
     "orel",
-    "jelen"
+    "jelen",
+    "vesnican",
+    "obchodnik",
+    "kovar",
+    "lovec"
   ],
   "profiles": {
     "krysa": [
@@ -73,6 +77,26 @@
       "Jelen patří k obyvatelům lesů, luk a otevřených horských údolí. Potravu hledá na pasekách a klidných okrajích lesa, odkud se může rychle stáhnout do úkrytu. Jeho stopami jsou otisky kopyt, okousané výhonky a odřená kůra. V příbězích Elarie se působivý jelen může stát symbolem určitého lesa, skutečné setkání ale stále vychází z chování divokého zvířete.",
       "Jeleni se sdružují podle prostředí a roční doby; samci mohou putovat odděleně a v době soupeření bránit svůj prostor výrazněji. Opatrnost jim pomáhá přežít více než ochota bojovat. Na neznámý pach nebo hluk obvykle reagují zastavením, nasloucháním a ústupem. Parohy jsou nebezpečné, pokud se zvíře cítí sevřené nebo pokud mu někdo blokuje cestu.",
       "Schopnost Útěk zvyšuje fyzickou obranu, když se jelen místo útoku rozhodne prchnout. Ponechání volné cesty proto odpovídá jeho přirozenému způsobu řešení nebezpečí. Družina může sledovat jeho stopu k vodě, najít opuštěné mládě nebo zjistit, proč z lesa zmizela zvěř. Neobvyklé chování stáda může varovat před predátorem, požárem či narušeným územím, aniž by jelen sám představoval nepřítele."
+    ],
+    "vesnican": [
+      "Vesničan představuje běžného obyvatele Elarie: rolníka, pastevce, dřevorubce nebo člověka, jehož každodenní práce drží osadu při životě. Zná místní cesty, sousedy, počasí a proměny okolní krajiny. Zpráva o nezvyklých stopách, prázdném poli nebo voze, který nepřijel, může být pro dobrodruhy cennější než učená mapa. Jeho znalosti vyrůstají ze zkušenosti, nikoli z dobrodružného výcviku.",
+      "Většinou žije v rodině a spoléhá na sousedskou pomoc. Rozhodování ovlivňuje starosta, rada obce, místní vrchnost i nepsaná pravidla komunity. Jeho cílem bývá bezpečí blízkých, úroda a přežití další zimy. K cizincům může být vstřícný nebo nedůvěřivý podle toho, co vesnice zažila. Strach, dluh či tlak mocnějšího člověka mohou vysvětlit chování, které na první pohled působí nepřátelsky.",
+      "Vesničan nemá zvláštní bojovou schopnost a otevřený střet pro něj představuje vážné nebezpečí. Pokud se brání, často brání dům, zásoby nebo rodinu. Rozhovor, důkaz dobrých úmyslů a konkrétní pomoc mohou změnit vztah rychleji než výhrůžka. V příběhu může být svědkem, průvodcem i člověkem, který něco zatajuje z obavy před následky. Statový profil popisuje běžného obyvatele; jeho osobnost a minulost určuje konkrétní postava."
+    ],
+    "obchodnik": [
+      "Obchodník propojuje vesnice, města a vzdálená tržiště. Může vlastnit krám, vést karavanu nebo putovat s jediným vozem a několika bednami zboží. Dobře zná ceny, poptávku a rizikové úseky cest. Všímá si, kde chybí sůl, kdo vykupuje železo a proč najednou zmizely léčivé byliny. Takové změny mohou odhalit vznikající konflikt dříve než veřejné vyhlášky.",
+      "Jeho hlavním cílem je obvykle udržet obchod a pověst, ale konkrétní obchodník může upřednostnit rodinu, cech nebo velkého zákazníka. Často spolupracuje s dopravci, strážemi a dodavateli; bohatší kupec má rozsáhlou síť kontaktů. Schopnost jednat s lidmi neznamená automaticky nepoctivost. Někteří smlouvají tvrdě a férově, jiní ukrývají vadu zboží nebo obchodují s tím, na co se nechtějí ptát.",
+      "Smlouvání mu poskytuje výhodu v sociálním střetu založeném na Charismatu. V boji zpravidla chrání vlastní život a zboží a hledá cestu k dohodě nebo k pomoci stráží. Družina mu může nabídnout ochranu, informace či službu místo peněz. Ztracená zásilka, falešné mince a neobvykle levný artefakt jsou přirozenými zárodky dobrodružství. Předpokládat u každého kupce podvod by znamenalo přehlédnout možného dlouhodobého spojence."
+    ],
+    "kovar": [
+      "Kovář pracuje v osadě, městské dílně nebo u vojenského tábora. Vyrábí a opravuje nástroje, podkovy, zbraně i součásti výstroje podle své specializace. Potřebuje spolehlivý přísun kovu, paliva a zakázek, takže dobře vnímá potíže na cestách i v dolech. Kovárnu lze poznat podle úderů kladiva, zápachu žhavého kovu a zákazníků, kteří přinášejí věci důležité pro jejich obživu.",
+      "Je zvyklý na náročnou práci a praktické řešení problémů. Může pracovat sám, s rodinou nebo vést učně a tovaryše; ve městě může podléhat pravidlům cechu. Jeho síla neříká nic o povaze. Stejně dobře může být trpělivým mistrem, hrdým specialistou i člověkem podrážděným nedodrženými sliby. Často si váží kvalitního materiálu a poctivé práce více než okázalých řečí.",
+      "Nemá zvláštní bojovou schopnost a dílenské zkušenosti nejsou totéž co výcvik válečníka. Při ohrožení se však může rozhodně postavit na obranu dílny a blízkých. Družině může pomoci poznat neobvyklé opracování kovu, dohledat původ výstroje nebo opravit poškozený předmět podle možností příběhu. Ukradená zakázka, zmizelý učeň či kov, který se při práci chová podivně, mohou otevřít dobrodružství, ve kterém kovář zůstává partnerem, nikoli překážkou."
+    ],
+    "lovec": [
+      "Lovec tráví velkou část života mimo bezpečí osad. Pohybuje se po lesních stezkách, stopuje zvěř a zná místa, kde se dá najít voda nebo úkryt. Jeho domovem může být osamělá chata i vesnice, do které se vrací s úlovkem. Rozlišuje běžné stopy od těch, které ukazují na zraněné zvíře, neobvyklého predátora nebo někoho, kdo se snaží svůj pohyb zakrýt.",
+      "Obvykle pracuje sám nebo v malé skupině, kde záleží na tichu a vzájemné důvěře. Jedná samostatně, ale může sloužit správci lesa, zásobovat obec nebo chránit panství. Jeho cílem bývá obživa, bezpečí známého území a návrat z další výpravy. Poctivý lovec i pytlák mohou mít podobné dovednosti, jejich vztah k místním lidem a pravidlům však bude velmi odlišný.",
+      "Přesná rána mu jednou za souboj posílí útok na dálku. Výhodu hledá v připravené pozici, rozhledu a odstupu; bezmyšlenkovitý boj zblízka nemusí odpovídat jeho zkušenostem. Může družinu provést nebezpečným terénem, naučit ji číst stopu nebo požádat o pomoc s něčím, co běžná zvěř nevysvětluje. Při jednání často rozhoduje respekt k jeho znalostem a ochota naslouchat varování, které zbytek vesnice přehlíží."
     ]
   }
 }
