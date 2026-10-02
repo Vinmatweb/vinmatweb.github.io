@@ -1,0 +1,30 @@
+{
+  "updated": [
+    "krysa",
+    "netopyr",
+    "divoka-kocka",
+    "toulavy-pes"
+  ],
+  "profiles": {
+    "krysa": [
+      "Krysy se drží tam, kde najdou potravu, teplo a úkryt: ve sklepích, sýpkách, stájích i podzemních chodbách. Jejich přítomnost prozradí drobné stopy, ohlodané pytle a šustění za zdí. Často obývají společné úkryty a dobře si pamatují bezpečné cesty k zásobám.",
+      "Jsou opatrné a rychlé, obvykle se snaží před větším protivníkem schovat. Kousnout mohou, když jsou zahnané do kouta nebo chrání hnízdo; větší shluk krys může družině uzavřít úzký průchod. Jejich předností je obratnost, slabinou malá tělesná síla. Ve hře jim Proklouznutí pomáhá uniknout dalšímu fyzickému zásahu.",
+      "Setkání nemusí skončit bojem. Družina může zabezpečit zásoby, najít otvor ve zdi nebo krysy odlákat od cesty. Pokud se neobvykle početně shromažďují na jednom místě, mohou upozorňovat na ukryté jídlo či zapomenutou chodbu."
+    ],
+    "netopyr": [
+      "Netopýři odpočívají v jeskyních, dutých stromech a opuštěných věžích. Za šera vyrážejí hledat potravu; běžní drobní netopýři loví zejména hmyz. Ve tmě se orientují pomocí ozvěny vlastních zvuků a mohou obývat společné úkryty ve velkých koloniích.",
+      "Nejsou přirozenými nepřáteli hrdinů. Vyrušená kolonie však dokáže proměnit tichou chodbu v chaotický proud křídel a zvuků. Netopýr je obratný ve vzduchu, ale tělesně slabý. Jeho schopnost Let zvyšuje fyzickou obranu proti útokům zblízka pouze tehdy, když opravdu může létat.",
+      "Pán jeskyně může netopýry použít jako znamení blízké jeskyně nebo otevřené cesty ven. Hrdinové mohou nechat zvířata v klidu proletět a pokračovat, místo aby proti nim tasili zbraně. Neobvyklé chování kolonie může být stopou k rušení jejího úkrytu."
+    ],
+    "divoka-kocka": [
+      "Divoká kočka žije v klidnějších lesích, houštinách a skalnatých místech, kde nachází drobnou kořist a bezpečné skrýše. Bývá samotářská a pohybuje se tiše; její přítomnost může prozradit otisk tlapky, škrábance na kmeni nebo krátké zablesknutí očí mezi větvemi.",
+      "Je pozorná, trpělivá a dává přednost úniku před zbytečným střetem. Pokud však brání mláďata nebo nemá kudy ustoupit, dokáže prudce vyrazit a použít drápy i zuby. Spoléhá na pohyblivost a okamžik překvapení. Herní schopnost Výpad jí pomáhá především na začátku souboje.",
+      "Družina může sledováním kočky objevit klidný úkryt, drobnou stezku nebo místo, které nedávno narušil jiný tvor. Získat její důvěru vyžaduje trpělivost a odstup; není to ochočená domácí kočka a příliš rychlé přibližování ji může vyplašit."
+    ],
+    "toulavy-pes": [
+      "Toulavý pes bývá ztraceným nebo opuštěným společníkem lidí. Pohybuje se kolem vesnic, tržišť a cest, kde hledá jídlo, vodu a suché místo k odpočinku. Někteří psi žijí sami, jiní se přidají k menší skupině a společně hledají bezpečí.",
+      "Dokáže rozpoznávat náladu, známé pachy i jednoduché lidské chování. Hlad nebo špatné zkušenosti jej mohou učinit nedůvěřivým, ale ne každý toulavý pes je agresivní. Štěkotem varuje, hlídá nalezený úkryt nebo upozorňuje na něco, co družina dosud nezaznamenala. Nemá zvláštní bojovou schopnost.",
+      "Setkání může být začátkem pátrání po majiteli či pomoci celé vesnici. Pes může hlídat ztracený batoh, vracet se k prázdnému domu nebo stopovat známou osobu. Hrdinové by měli respektovat jeho odstup a získávat důvěru postupně, bez násilného chytání."
+    ]
+  }
+}
