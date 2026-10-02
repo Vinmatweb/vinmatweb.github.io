@@ -47,7 +47,11 @@
     "upir",
     "nekromant",
     "obri-had",
-    "obri-pavouk"
+    "obri-pavouk",
+    "harpyje",
+    "gryfon",
+    "bazilisek",
+    "kamenny-golem"
   ],
   "profiles": {
     "krysa": [
@@ -289,6 +293,26 @@
       "Obří pavouk obývá jeskyně, zarostlé lesy, podzemní prostory a opuštěné stavby, kde může upevnit síť. V Elarii může pocházet z divoké populace nebo z místa dlouhodobě ovlivněného magií. Zbytky sítí, obalená kořist a jemné chvění vláken varují před jeho blízkostí. Síť nemusí být jen překážkou; může pavoukovi pomáhat rozpoznat pohyb v prostoru, kam přímo nevidí.",
       "Jedná především jako lovec. Často žije samostatně, i když větší zamoření může obsahovat více jedinců a mladé. Nesleduje lidské bohatství ani běžnou pomstu; kořist, bezpečí a obrana úkrytu vysvětlují většinu jeho chování. Může trpělivě čekat a zaútočit až ve chvíli, kdy je cíl v nevýhodné pozici. Pokud slouží jiné bytosti, způsob ovládání musí vysvětlit konkrétní příběh.",
       "Jed po zraňujícím zásahu kusadly působí další ztrátu života na konci příštího kola. Síť jednou za souboj dočasně snižuje obranu cíle o dva; nejde automaticky o úplné znehybnění. Kombinace obou účinků dělá izolovanou postavu zranitelnou. Družina může prozkoumat upevnění sítí, zvolit jinou cestu nebo vyprostit dosud živou oběť. Náhlé rozšíření pavouků může ukazovat na opuštěný prostor, změnu dostupné potravy nebo na otevření podzemí, které mělo zůstat uzavřené."
+    ],
+    "harpyje": [
+      "Harpyje je okřídlený tvor s humanoidními rysy, který obývá vysoké útesy, horské soutěsky a ruiny nad obtížně přístupným terénem. V Elarii se její původ vysvětluje různými starými pověstmi o proměnách a divoké magii. Hnízdiště může obsahovat zbytky kořisti i předměty přinesené z okolních cest. Zvláštní zpěv zaslechnutý ze skal může být první známkou, že družina vstoupila na její území.",
+      "Harpyje může jednat sama nebo v malé skupině. Dokáže si vybrat výhodné místo a využít to, co přitahuje pozornost návštěvníků. Některé skupiny mají dominantní jedince, jiné spolupracují volně podle kořisti a bezpečí. Motivací může být potrava, obrana hnízda nebo získání zajímavých předmětů. Míra rozumu a možnost domluvy se liší podle konkrétní harpyje, která může cizince posuzovat jako hrozbu, příležitost i zdroj informací.",
+      "Vábivý zpěv jednou za souboj působí jako magický útok bez zranění. Pokud překoná magickou obranu, oslabí příští útok cíle o dva. Nejde automaticky o úplné ovládnutí ani příkaz skočit ze skály. Výška a členitý terén však samy zvyšují nebezpečí setkání. Družina může hledat jiný přístup, zjistit příčinu napadání cesty nebo jednat o vrácení předmětu. Zpěv může být také vodítkem k hnízdišti, kterému se lze vyhnout."
+    ],
+    "gryfon": [
+      "Gryfon spojuje mohutné tělo šelmy s křídly a hlavou dravého ptáka. V Elarii hnízdí na skalách, v horských oblastech a nad otevřenou krajinou, odkud může sledovat kořist. Potřebuje prostor k vzletu a bezpečné místo pro mladé. O jeho přítomnosti svědčí velká pírka, stopy drápů a pozůstatky kořisti v místech, kam se běžný pozemní predátor těžko dostane.",
+      "Chová se jako ostražitý lovec a ochránce svého hnízdiště. Může žít samostatně, v páru nebo s mladými, kteří ještě nejsou schopní vlastní obživy. Neřídí ho přirozeně lidský velitel. Pokud byl vychován ve spolupráci s lidmi, vztah a důvěra musí mít skutečný příběhový základ. Divoce žijící gryfon hledá potravu a bezpečí; cizí přítomnost u hnízda může posoudit jako přímé ohrožení.",
+      "Střemhlavý útok jednou za souboj zesílí zásah, ale následně dočasně snižuje jeho fyzickou obranu. Vzdušný prostor, kryt a místo, kde se nacházejí ostatní členové družiny, výrazně ovlivňují střet. Zajímavá výprava může spočívat v nalezení ukradeného vejce, záchraně poraněného jedince nebo bezpečném přechodu pod hnízdem. Nabídka potravy sama nezaručuje poslušnost. Gryfon si zaslouží zacházení odpovídající silnému divokému tvoru, jehož rozhodnutí nelze koupit jedním gestem."
+    ],
+    "bazilisek": [
+      "Bazilišek je nebezpečný šupinatý tvor, jehož přítomnost mění běžný průzkum ruin v mimořádně opatrnou výpravu. V Elarii obývá skalní dutiny, vyprahlé rokle a podzemní prostory. Pověsti jeho původ spojují s dávnými magickými proměnami. Neobvykle prázdné teritorium, zbytky kořisti a postavy připomínající zkamenělé svědky mohou ukazovat na jeho blízkost; konkrétní minulost místa je ale potřeba zjistit.",
+      "Zpravidla žije samotářsky a reaguje jako lovec či obránce svého prostoru. Nevyhledává poklady kvůli jejich ceně a neřídí se lidskými příkazy bez zvláštního důvodu. Může si zapamatovat bezpečné loviště a vracet se na místa, kde mu kořist neuniká. Zadržování baziliška jako strážce je pro jeho chovatele nebezpečné a může vysvětlit, proč se tvor objevil u důležité stavby.",
+      "Kamenný pohled jednou za souboj překonává magickou obranu; zasažený cíl v příštím kole nemůže útočit, ale normálně se brání a tento účinek nezpůsobuje zranění. Nejde podle základního profilu o trvalé zkamenění. Magické šupiny navíc zvyšují magickou obranu baziliška. Družina může hledat bezpečnou trasu či zjistit, kdo tvora přivedl. Legendy o zrcadlech a podobných tricích mohou vést k pokusu, jejich účinek však vyžaduje konkrétní podmínky dobrodružství."
+    ],
+    "kamenny-golem": [
+      "Kamenný golem je uměle vytvořený strážce, jehož tělo drží pohromadě magie a runové jádro. Může pocházet z dílny mága, chrámu nebo dávné kultury, která potřebovala ochranu přesahující lidský život. V Elarii střeží brány, trezory, chodby a zapomenuté sály. Materiál, nápisy a způsob opracování mohou odhalit tvůrce i původní účel, i když se stavba kolem něj už změnila k nepoznání.",
+      "Obvykle plní vymezené příkazy. Nepotřebuje potravu, odměnu ani běžný odpočinek a nemusí rozumět změnám, které nejsou zahrnuté v jeho zadání. Může čekat nehybně do chvíle, kdy někdo splní podmínku spuštění. Jeden golem chrání konkrétní přístup, více golemů může tvořit celý obranný systém. Řídí ho současný pán, původní příkaz nebo ovládací prostředek podle jeho vzniku.",
+      "Kamenné tělo snižuje každé fyzické zranění o dva. Pokud jediný magický útok způsobí alespoň čtyři zranění, redukce se do začátku dalšího kola golema nepoužívá; to představuje přesnou bojovou zranitelnost Runového jádra. Družina může zkoumat podmínku průchodu, hledat znak oprávnění nebo odhalit chybu starého příkazu. Ovládací kámen či heslo mohou existovat, jejich podobu ale určuje příběh. Golem nemusí být zlý: může důsledně chránit něco, jehož skutečný význam už živí zapomněli."
     ]
   }
 }
