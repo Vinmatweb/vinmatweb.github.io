@@ -73,7 +73,11 @@
     "hero/ork-hranicar",
     "hero/pulcik-hranicar",
     "hero/clovek-kouzelnik",
-    "hero/elf-kouzelnik"
+    "hero/elf-kouzelnik",
+    "hero/trpaslik-kouzelnik",
+    "hero/ork-kouzelnik",
+    "hero/pulcik-kouzelnik",
+    "hero/clovek-zlodej"
   ],
   "profiles": {
     "best/krysa": [
@@ -445,6 +449,26 @@
       "Elfí kouzelník vyniká počáteční chytrostí a spojuje studium magie s pozorným pozorováním světa. Může pátrat po starém kouzlu, porozumět narušení lesního místa nebo pokračovat v práci učitele. Jeho znalosti mají cenu především tehdy, když se o ně dělí s družinou. Nižší síla a méně životů vybízejí k promyšlenému postavení a spolupráci s někým, kdo dokáže chránit sesilatele.",
       "V družině pomáhá rozpoznat magii a vybírat známé kouzlo podle skutečného problému. Uplatní se při průzkumu zvláštních míst, řešení hádanek i ochraně spojenců. Splnění požadované chytrosti samo nové kouzlo nenaučí; znalosti musí získat od učitele, z knihy či v příběhu. Magický cit upozorní na přítomnost magie, ale neodhalí automaticky její účel, spouštěč ani bezpečnost. Opatrné otázky proto patří k jeho práci.",
       "Rasová schopnost Ostrý zrak: Automaticky si všimne vzdáleného viditelného detailu, stop nebo pohybu, pokud nejsou magicky či objektivně skryté. Povolání přidává schopnost Magický cit: Automaticky pozná, že předmět, místo nebo bytost jsou magické. Sám o sobě neodhalí přesný druh, účel, spouštěč ani nebezpečí magie. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/trpaslik-kouzelnik": [
+      "Trpasličí kouzelník propojuje poznání magie s praktickým zájmem o kámen, stavby a podzemí. Může studovat ochranné runy, hledat příčinu zvláštního chování rudy nebo chránit místo důležité pro svůj rod. Síla mu dává jiné možnosti než drobnějším sesilatelům, ale nenahrazuje znalost kouzel. Je vhodný pro postavu, která ráda ověřuje, jak tajemné jevy opravdu fungují.",
+      "V družině pomáhá rozpoznat magii a vybírat známé kouzlo podle skutečného problému. Uplatní se při průzkumu zvláštních míst, řešení hádanek i ochraně spojenců. Splnění požadované chytrosti samo nové kouzlo nenaučí; znalosti musí získat od učitele, z knihy či v příběhu. Magický cit upozorní na přítomnost magie, ale neodhalí automaticky její účel, spouštěč ani bezpečnost. Opatrné otázky proto patří k jeho práci.",
+      "Rasová schopnost Cit pro kámen: V relevantním kamenném/podzemním prostředí automaticky rozpozná dutiny, tajné chodby, nestabilní skálu, kvalitní rudu nebo neobvyklé vlastnosti kamene. Povolání přidává schopnost Magický cit: Automaticky pozná, že předmět, místo nebo bytost jsou magické. Sám o sobě neodhalí přesný druh, účel, spouštěč ani nebezpečí magie. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/ork-kouzelnik": [
+      "Orčí kouzelník může být žákem učitele, badatelem nebo strážcem tradice své komunity. Jeho cesta ukazuje, že původ neurčuje povolání. Zachovává výraznou sílu a současně se učí řešit problémy magií; není nutné z něj dělat zlého šamana ani uživatele jediné školy. Zajímavým motivem může být hledání vlastního místa mezi lidmi, kteří očekávají jen bojovníka.",
+      "V družině pomáhá rozpoznat magii a vybírat známé kouzlo podle skutečného problému. Uplatní se při průzkumu zvláštních míst, řešení hádanek i ochraně spojenců. Splnění požadované chytrosti samo nové kouzlo nenaučí; znalosti musí získat od učitele, z knihy či v příběhu. Magický cit upozorní na přítomnost magie, ale neodhalí automaticky její účel, spouštěč ani bezpečnost. Opatrné otázky proto patří k jeho práci.",
+      "Rasová schopnost Bojová zuřivost: Když má méně než polovinu maximálních Ž, získává +1 k výsledku každého útoku zblízka. Povolání přidává schopnost Magický cit: Automaticky pozná, že předmět, místo nebo bytost jsou magické. Sám o sobě neodhalí přesný druh, účel, spouštěč ani nebezpečí magie. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/pulcik-kouzelnik": [
+      "Půlčík kouzelník spojuje zvídavou mysl s obratností a vysokým štěstím. Může studovat u potulného mistra, opatrovat rodinnou knihu nebo hledat kouzla užitečná pro běžný život své obce. Malá síla omezuje těžkou výstroj a vybízí ke spolupráci. Jeho příběh může stát na nápaditosti a schopnosti najít přesně ten drobný zásah, který celé družině otevře další cestu.",
+      "V družině pomáhá rozpoznat magii a vybírat známé kouzlo podle skutečného problému. Uplatní se při průzkumu zvláštních míst, řešení hádanek i ochraně spojenců. Splnění požadované chytrosti samo nové kouzlo nenaučí; znalosti musí získat od učitele, z knihy či v příběhu. Magický cit upozorní na přítomnost magie, ale neodhalí automaticky její účel, spouštěč ani bezpečnost. Opatrné otázky proto patří k jeho práci.",
+      "Rasová schopnost Šťastlivec: 1× za dobrodružství po vlastním neúspěšném virtuálním hodu změní výsledek na těsný úspěch. Hod se neopakuje; jde o nejnižší nutný úspěch bez dodatečné výhody. Povolání přidává schopnost Magický cit: Automaticky pozná, že předmět, místo nebo bytost jsou magické. Sám o sobě neodhalí přesný druh, účel, spouštěč ani nebezpečí magie. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/clovek-zlodej": [
+      "Lidský zloděj je odborníkem na nenápadný pohyb a přístup do míst, kam běžná cesta nevede. Může být průzkumníkem ruin, pomocníkem stráže nebo bývalým kapsářem, který změnil život. Název povolání neurčuje morálku postavy. Přizpůsobivost podporuje hrdinu, který improvizuje a učí se z neúspěchu, zatímco jeho skutečné hodnoty poznáme z toho, komu pomáhá a co odmítá udělat.",
+      "V družině pomáhá získat informace, projít nenápadně a otevřít přístup pomocí vhodných nástrojů. Největší hodnotu často přinese před bojem, když skupina díky průzkumu pochopí, čemu se může vyhnout. Tiché kroky usnadňují běžné plížení, ale výjimečná překážka může vyžadovat hod a neexistující úkryt nevytvoří. Důvěra ostatních závisí na jeho rozhodnutích, proto je užitečné určit vlastní hranice a vztah k cizímu majetku.",
+      "Rasová schopnost Přizpůsobivost: 1× za dobrodružství po vlastním neúspěšném hodu hod zopakuje. Vaelor vytvoří novou náhodnou permutaci, hráč znovu zvolí číslo a použije se lepší z obou výsledků. Povolání přidává schopnost Tiché kroky: Při běžném plížení Vaelor předpokládá úspěch. Hod vyžaduje jen výjimečná překážka; schopnost neumožní ukrýt se tam, kde je to objektivně nemožné. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
     ]
   }
 }
