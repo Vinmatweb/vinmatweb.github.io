@@ -65,7 +65,11 @@
     "hero/clovek-bojovnik",
     "hero/elf-bojovnik",
     "hero/trpaslik-bojovnik",
-    "hero/ork-bojovnik"
+    "hero/ork-bojovnik",
+    "hero/pulcik-bojovnik",
+    "hero/clovek-hranicar",
+    "hero/elf-hranicar",
+    "hero/trpaslik-hranicar"
   ],
   "profiles": {
     "best/krysa": [
@@ -397,6 +401,26 @@
       "Orčí bojovník vyniká silou a odvahou čelit hrozbě zblízka. Jeho minulost může být spojena s obranou rodiny, službou ve stráži i snahou napravit chybu vlastního vůdce. Vzhled neurčuje povahu: může být trpělivým ochráncem, veselým společníkem nebo člověkem, který se teprve učí ovládat hněv. Potřebuje spolehlivé spojence stejně jako každý jiný hrdina.",
       "V družině pomáhá držet nebezpečí dál od zranitelnějších spojenců a vytvořit prostor pro jejich rozhodnutí. Může hlídat ústup, doprovodit vyjednavače nebo stát u důležitého průchodu. Užitečný je i mimo souboj: při ochraně cestujících, přípravě výpravy a řešení situací, kde někdo potřebuje oporu. Odvaha se může projevit přiznáním chyby nebo volbou bezpečnější cesty, ne pouze přijetím každé výzvy.",
       "Rasová schopnost Bojová zuřivost: Když má méně než polovinu maximálních Ž, získává +1 k výsledku každého útoku zblízka. Povolání přidává schopnost Ochrana: 1× za souboj může převzít útok mířící na blízkého spojence. Útok se místo něj vyhodnotí proti bojovníkově obraně. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/pulcik-bojovnik": [
+      "Půlčík bojovník ukazuje, že rozhodnutí chránit druhé nezávisí na velikosti postavy. Může hlídat rodnou obec, bránit cestující nebo se vydat za někým, kdo mu kdysi pomohl. Nízká síla omezuje část výstroje, proto je důležitý výběr zbraně i štítu podle skutečných požadavků. Jeho odvaha může vyrůstat z péče o konkrétní lidi, nikoli z touhy porazit každého většího protivníka.",
+      "V družině pomáhá držet nebezpečí dál od zranitelnějších spojenců a vytvořit prostor pro jejich rozhodnutí. Může hlídat ústup, doprovodit vyjednavače nebo stát u důležitého průchodu. Užitečný je i mimo souboj: při ochraně cestujících, přípravě výpravy a řešení situací, kde někdo potřebuje oporu. Odvaha se může projevit přiznáním chyby nebo volbou bezpečnější cesty, ne pouze přijetím každé výzvy.",
+      "Rasová schopnost Šťastlivec: 1× za dobrodružství po vlastním neúspěšném virtuálním hodu změní výsledek na těsný úspěch. Hod se neopakuje; jde o nejnižší nutný úspěch bez dodatečné výhody. Povolání přidává schopnost Ochrana: 1× za souboj může převzít útok mířící na blízkého spojence. Útok se místo něj vyhodnotí proti bojovníkově obraně. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/clovek-hranicar": [
+      "Lidský hraničář je průvodcem mezi bezpečím osad a krajinou, kterou neznají ani místní mapy. Může být bývalým pastýřem, strážcem stezek či zvědavým cestovatelem. Všímá si změn prostředí a pomáhá skupině rozhodnout, kterou cestou pokračovat. Jeho přizpůsobivost podporuje postavu, která se učí z omylů a hledá řešení i tehdy, když původní plán selže.",
+      "V družině pomáhá plánovat cestu, sledovat použitelné stopy a rozpoznávat změny krajiny. Před vstupem do nebezpečného místa může zjišťovat přístupy, kryt a možnosti návratu. Stopařská dovednost neurčuje totožnost každého tvora ani jeho úmysl; informace je potřeba spojovat s dalšími vodítky. Hraničář se tak uplatní i při záchraně ztracené osoby, hledání vody a rozhodování, kdy má skupina raději zastavit.",
+      "Rasová schopnost Přizpůsobivost: 1× za dobrodružství po vlastním neúspěšném hodu hod zopakuje. Vaelor vytvoří novou náhodnou permutaci, hráč znovu zvolí číslo a použije se lepší z obou výsledků. Povolání přidává schopnost Stopař: Automaticky pozná směr, kterým odešla hledaná osoba nebo zvíře, pokud existují použitelné stopy. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/elf-hranicar": [
+      "Elfí hraničář je pozorným průzkumníkem, který spojuje ostrý zrak se čtením použitelných stop. Může hlídat okraj lesa, doprovázet obchodníky nebo pátrat po narušení známého území. Uplatní se při hledání vzdáleného pohybu a směru cesty, ale stále potřebuje rozlišovat to, co opravdu vidí, od toho, co si domýšlí. Skryté skutečnosti a chybějící stopy mohou překvapit i jeho.",
+      "V družině pomáhá plánovat cestu, sledovat použitelné stopy a rozpoznávat změny krajiny. Před vstupem do nebezpečného místa může zjišťovat přístupy, kryt a možnosti návratu. Stopařská dovednost neurčuje totožnost každého tvora ani jeho úmysl; informace je potřeba spojovat s dalšími vodítky. Hraničář se tak uplatní i při záchraně ztracené osoby, hledání vody a rozhodování, kdy má skupina raději zastavit.",
+      "Rasová schopnost Ostrý zrak: Automaticky si všimne vzdáleného viditelného detailu, stop nebo pohybu, pokud nejsou magicky či objektivně skryté. Povolání přidává schopnost Stopař: Automaticky pozná směr, kterým odešla hledaná osoba nebo zvíře, pokud existují použitelné stopy. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/trpaslik-hranicar": [
+      "Trpasličí hraničář je přirozeným průvodcem skalnatou krajinou, lomy a horskými cestami. Může hledat bezpečné průsmyky pro svou osadu nebo sledovat stopu, která mizí pod zemí. Cit pro kámen doplňuje jeho zkušenost s cestou, zatímco výcvik hraničáře posiluje pohyb a průzkum. Hodí se pro hráče, který chce spojit praktickou sílu s objevováním a péčí o bezpečí celé skupiny.",
+      "V družině pomáhá plánovat cestu, sledovat použitelné stopy a rozpoznávat změny krajiny. Před vstupem do nebezpečného místa může zjišťovat přístupy, kryt a možnosti návratu. Stopařská dovednost neurčuje totožnost každého tvora ani jeho úmysl; informace je potřeba spojovat s dalšími vodítky. Hraničář se tak uplatní i při záchraně ztracené osoby, hledání vody a rozhodování, kdy má skupina raději zastavit.",
+      "Rasová schopnost Cit pro kámen: V relevantním kamenném/podzemním prostředí automaticky rozpozná dutiny, tajné chodby, nestabilní skálu, kvalitní rudu nebo neobvyklé vlastnosti kamene. Povolání přidává schopnost Stopař: Automaticky pozná směr, kterým odešla hledaná osoba nebo zvíře, pokud existují použitelné stopy. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
     ]
   }
 }
