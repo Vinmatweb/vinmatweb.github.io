@@ -19,7 +19,11 @@
     "zlodej",
     "bandita",
     "vudce-banditu",
-    "zoldner"
+    "zoldner",
+    "vojak",
+    "lucistnik",
+    "rytir",
+    "kouzelnik"
   ],
   "profiles": {
     "krysa": [
@@ -121,6 +125,26 @@
       "Žoldnéř nabízí bojové zkušenosti za odměnu. Může hlídat karavanu, chránit důl, sloužit městské radě nebo bojovat v cizím vojsku. Jeho původ se liší: někdo opustil armádu, jiný se celý život pohybuje mezi krátkými zakázkami. Výstroj nosí podle svých prostředků a práce, kterou přijímá. Zkušený žoldnéř si před cestou všímá zásob, stavu zbraní i schopností budoucích spojenců.",
       "Pracuje samostatně nebo v družstvu vedeném kapitánem. Loajalita se může opírat o smlouvu, osobní čest i dlouhé společné tažení. Zaplacení samo o sobě neznamená, že udělá cokoli; někteří odmítají útoky na civilisty nebo zakázky, které odporují jejich přesvědčení. Jiní sledují jen výši odměny. Většina však potřebuje přežít a udržet si pověst, aby získala další práci.",
       "Nemá zvláštní schopnost, ale jeho bojové hodnoty představují člověka zvyklého na skutečné střety. Obvykle se snaží splnit úkol a hlídat podmínky zakázky. Pokud stojí proti družině, může pomoci zjistit, koho chrání, co mu bylo řečeno a kde končí jeho závazek. Zadržená výplata, podvodný zaměstnavatel či rozkaz, který odporuje smlouvě, mohou vytvořit prostor pro jednání. Žoldnéř se může stát protivníkem i spolehlivým spojencem v jednom příběhu."
+    ],
+    "vojak": [
+      "Voják slouží v organizovaném vojsku, městské stráži nebo posádce pohraniční pevnosti. Naučil se zacházet s výstrojí, hlídat svěřené místo a plnit úkol společně s ostatními. Běžný den zahrnuje výcvik, směny, pochody i údržbu vybavení. Může znát své město lépe než návštěvník a současně vědět velmi málo o tom, proč jeho velitel přijal konkrétní rozkaz.",
+      "Patří do jednotky s jasným velením. Velitel, přísaha a vztahy se spolubojovníky ovlivňují jeho rozhodování, ale neodstraňují vlastní svědomí. Službu mohl zvolit kvůli platu, rodinné tradici nebo ochraně domova. Není automaticky agresivní: na stanovišti může být jeho cílem kontrola průchodu a udržení pořádku. Unavený nováček a veterán budou stejnou situaci posuzovat odlišně.",
+      "Nemá zvláštní schopnost, jeho síla spočívá ve výcviku a spolupráci. Při konfliktu může povolat pomoc, udržovat svěřenou pozici nebo zajistit podezřelou osobu. Družina má prostor předložit důkaz, zjistit znění rozkazu a obrátit se na odpovědného velitele. Voják může být svědkem zneužití moci, člověkem s chybnými informacemi nebo spojencem, který potřebuje pomoc mimo dosah své posádky. Uniforma určuje službu, nikoli celou osobnost."
+    ],
+    "lucistnik": [
+      "Lučištník je vycvičený bojovník zaměřený na střelbu na dálku. Najdeme ho na hradbách, při obraně průsmyku, u vojenské jednotky i mezi strážci karavan. Pozornost věnuje rozhledu, překážkám a zásobě šípů. Výhodná pozice mu umožňuje plnit úkol bezpečněji než místo, kde se protivník může bez povšimnutí dostat přímo k němu.",
+      "Může sloužit veliteli nebo jednat samostatně jako najatý střelec. Ve skupině potřebuje domluvu s lidmi, kteří chrání přístup k jeho stanovišti. Jeho cílem bývá zastavit postup, podpořit spojence nebo pokrýt ústup. Výcvik střelce sám o sobě nevypovídá o krutosti či čestnosti; rozdíl mezi obráncem vesnice a lupičem na skále určuje zadání a volba konkrétního člověka.",
+      "Krytá střelba posiluje útok na dálku v kole, ve kterém lučištník nezažil útok zblízka. Udržení odstupu je proto pro jeho bojový styl zásadní. Kryt, přerušení výhledu a promyšlený pohyb mění podmínky střetu. Družina se může s lučištníkem setkat při doprovodu, při hlídce nebo ve chvíli, kdy míří na nesprávnou osobu na základě cizího rozkazu. Jednání musí brát v úvahu jeho pozici i možnost, že poblíž čekají další obránci."
+    ],
+    "rytir": [
+      "Rytíř spojuje bojový výcvik s postavením, přísahou nebo službou určitému řádu. Může spravovat malé panství, putovat za úkolem nebo stát v čele obrany pevnosti. Jeho výstroj, znak a doprovod často prozrazují, komu slouží. Dobrá zbroj vyžaduje péči i prostředky; rytířský titul proto zahrnuje vztahy a závazky, které obyčejný bojovník nemusí mít.",
+      "Ne každý rytíř naplňuje ideál spravedlivého ochránce. Někdo chrání slabší, jiný hájí především svůj rod nebo výsady. Obvykle má pána, řád či vlastní přísahu, podle níž poměřuje rozhodnutí. Může cestovat s panošem, družinou nebo vojáky, ale osamělý rytíř na výpravě je stejně možný. Čest a pověst pro něj mohou být silnější motivací než peníze.",
+      "Parírování zvyšuje obranu proti prvnímu fyzickému útoku, který na něj v každém kole míří. V přímém střetu je tak spolehlivým obráncem a protivníkem, kterého je potřeba brát vážně. Rozpor mezi rozkazem a přísahou může otevřít prostor pro rozhovor. Rytíř může požadovat důkaz, přijmout společný úkol nebo chránit člověka, o jehož vině zatím neví. Příběh získá hloubku, když družina zjistí, co považuje za povinnost a čeho se bojí ztratit."
+    ],
+    "kouzelnik": [
+      "Kouzelník rozvíjí magii studiem, praxí nebo vedením zkušenějšího učitele. V Elarii může působit v akademii, vlastní pracovně, u dvora či na cestách za vzácnými poznatky. Jeho zázemí často zahrnuje knihy, pomůcky a materiály potřebné k výzkumu. Konkrétní kouzelník může patřit k tradici, která si své znalosti pečlivě střeží, nebo je naopak předává dalším žákům.",
+      "Obvykle přemýšlí v souvislostech a připravuje si prostředky k řešení obtížných situací. Vysoká učenost však nevylučuje ješitnost, omyl ani špatný odhad lidí. Může sloužit škole, patronovi nebo vlastnímu výzkumu. Vyhledává nové znalosti, přístup k artefaktům a čas na práci; není důvod předpokládat, že každý mág usiluje o moc nad ostatními. Povaha a hranice jeho pokusů rozhodují o vztahu s družinou.",
+      "Tento profil používá Ohnivou střelu a Magický štít. Má účinný magický útok a zvýšenou magickou obranu proti prvnímu takovému útoku v kole. Jeho schopnosti proto zasluhují jiný přístup než běžný ozbrojenec. Ztracený svitek, nebezpečný experiment nebo potřeba bezpečně dopravit zvláštní předmět mohou vést ke spolupráci. Jednání může stát na výměně poznatků a služeb; tajemství kouzelníka nemusí být zlé, ale může mít důsledky, kterým sám zatím nerozumí."
     ]
   }
 }
