@@ -31,7 +31,11 @@
     "goblin-lucistnik",
     "kobold",
     "hobgoblin",
-    "bugbear"
+    "bugbear",
+    "gnom",
+    "kentaur",
+    "minotaur",
+    "obr"
   ],
   "profiles": {
     "krysa": [
@@ -193,6 +197,26 @@
       "Bugbear je mohutný humanoid, který v Elarii vyhledává členité lesy, skalnaté rokle a opuštěné stavby. Jeho síla budí pozornost, ale nebezpečný bývá také tím, jak dobře se dokáže ukrýt a počkat. Podle místních pověstí pocházejí některé skupiny z dávných lesních rodů, jiné dlouho žijí vedle gobliních tlup. V ruinách si vybírá prostor, odkud může sledovat přístup a rychle zasáhnout.",
       "Může být samotářem, členem rodiny nebo silným spojencem větší tlupy. Někdy přijímá vedení náčelníka, jindy ostatní poslouchají jeho vlastní autoritu. Není pouze tělem bez rozumu: umí zhodnotit riziko, zapamatovat si cestu a využít cizí nepozornost. Jeho cílem může být potrava, úkryt, odměna či ochrana blízkých. Někteří bugbeaři přepadávají, ale jejich povahu nelze určit jen podle vzhledu.",
       "Přepad mu v prvním kole přidává k útoku, pokud nebyl před bojem odhalen. Pozorný průzkum okolí tak může odstranit jeho hlavní výhodu ještě před střetem. Jakmile se ukáže, stále zůstává silným protivníkem, kterého je nebezpečné podcenit. Družina může narazit na najatého strážce, osamělého obyvatele ruin nebo někoho, kdo odmítá odejít z místa spojeného s rodinou. Zjištění skutečného důvodu jeho přítomnosti otevírá i jiné řešení než útok."
+    ],
+    "gnom": [
+      "Gnomové v Elarii zakládají malé osady, dílny a skrytá obydlí v kopcích či pod starými městy. Jejich tradice spojují řemeslo, zvídavost a studium zvláštních jevů. Rodinné příběhy často připomínají předky, kteří bezpečně překročili hranici mezi praktickým vynálezem a magickým poznáním. V gnomím domově lze čekat dobře využitý prostor, množství pracovních pomůcek a věci, jejichž účel návštěvník nepozná na první pohled.",
+      "Jsou inteligentní a rádi hledají jiné řešení, než jaké nabízí zvyk. Žijí v rodinách nebo komunitách, kde významné postavení mohou získat zkušení mistři, badatelé a starší. Samostatný gnom na cestě může shánět materiál, zkoumat záhadu nebo hledat někoho, kdo jeho práci ocení. Zvědavost může vést k odvaze i neopatrnosti. Obvykle chtějí bezpečně tvořit, poznávat a sdílet výsledky s lidmi, kterým důvěřují.",
+      "Důvtip jednou za scénu zlepšuje výsledek Chytrosti mimo přímý útok a Runová odolnost zvyšuje magickou obranu. Gnom tedy nabízí více než malého bojovníka: jeho předností je řešení problémů a odolnost proti magii. Družina může potřebovat vysvětlit podivný mechanismus, získat pomoc s výzkumem nebo dohledat zmizelého učně. Gnomí osada může být přátelská, ale nemusí přístup k citlivým poznatkům poskytnout každému, kdo umí zaplatit."
+    ],
+    "kentaur": [
+      "Kentauři spojují lidskou horní část těla s koňskou stavbou a v Elarii vyhledávají otevřenou krajinu. Žijí na travnatých pláních, v širokých údolích a na okrajích lesů, kde mají dost prostoru k pohybu. Jejich tradice se pojí s putováním, krajinou a pamětí rodu. Změny cest, pastvin a vodních zdrojů se proto dotýkají jejich života bezprostředněji než vzdálené hranice na cizí mapě.",
+      "Jsou rozumnými obyvateli světa s vlastními názory a kulturou. Mohou tvořit rodové skupiny vedené staršími či zkušeným vůdcem, ale potulný kentaur může cestovat i sám. Usilují o bezpečné území, svobodu pohybu a dodržování dohod. K cizincům se chovají podle předchozích zkušeností. Překážka přes tradiční cestu nebo ohrožení vody může vyvolat konflikt, který je pro okolní osady překvapivý, pro kentaura však zcela pochopitelný.",
+      "Rozběh posiluje jeho první útok po volném rozběhu. Otevřený prostor tak podporuje jeho bojový styl, zatímco stísněné chodby a překážky ho omezují v pohybu. Družina může získat průvodce, vyjednat průchod nebo pomoct napravit spor o krajinu. Kentaur může bojovat tvrdě při obraně skupiny, ale stále je schopný dohody a změny postoje. Respekt k jeho prostoru a zvyklostem bývá lepším začátkem než snaha zacházet s ním jako s jezdeckým zvířetem."
+    ],
+    "minotaur": [
+      "Minotaur je mohutný humanoid s býčí hlavou a rohy. V Elarii se s ním lze setkat v hlubokých ruinách, skalních pevnostech a složitých podzemních stavbách. Pověsti připisují některým rodům dávné kletby a jiným původ v zapomenutých kulturách. Spojení s labyrinty může vyrůstat ze skutečného domova i z příběhů lidí, kteří nedokázali najít cestu z jeho území.",
+      "Může žít samotářsky, chránit rodovou skupinu nebo sloužit jako strážce důležitého místa. Síla a vzhled z něj nedělají tvora bez rozumu. Umí se rozhodovat, rozpoznat známé lidi a hájit vlastní závazek. Jeho cílem může být bezpečí domova, splnění přísahy nebo ochrana něčeho, čemu jiní nerozumějí. Někteří minotauři jsou násilní útočníci, jiní používají hrozivou přítomnost k tomu, aby k boji vůbec nemuselo dojít.",
+      "Rohový náraz může po silném zásahu oslabit příští útok cíle. Býčí houževnatost snižuje první fyzické i první magické zranění v každém kole, každé zvlášť. Přímý střet proto vyžaduje plán a dobrou znalost pravidel. Družina může hledat jiný vstup, zjistit podmínku strážcovy přísahy nebo mu předložit důkaz oprávněného průchodu. Nemá automaticky předepsanou slabinu na určitou látku; skutečná zranitelnost se může odvíjet od konkrétního příběhu a prostředí."
+    ],
+    "obr": [
+      "Obři obývají horské oblasti, rozlehlé pustiny a místa, kde je dost prostoru i potravy pro jejich velikost. Jejich stavby působí lidským návštěvníkům hrubě a přehnaně velké, přesto mohou mít vlastní řád a řemeslné tradice. V Elarii existují pověsti o dávných obřích rodech, jejichž sídla dnes ostatní pokládají za přirozené skalní útvary. Osamělý obr může být potomkem takového rodu nebo vyhnancem z vlastní skupiny.",
+      "Žije sám, s rodinou nebo v menší komunitě. Vedení může vycházet z věku, síly i uznávané zkušenosti. Obr rozumí svým potřebám a vztahům; pomalejší jednání či odlišné zvyky nejsou důkazem neschopnosti přemýšlet. Hledá potravu, klid a bezpečné území. To, co považuje za běžnou zásobu či průchozí cestu, může ovšem pro člověka znamenat celé stádo nebo střechu nad hlavou.",
+      "Široký úder jednou za souboj zasáhne dva cíle samostatnými oslabenými útoky. Masivní tělo snižuje každé fyzické zranění, zatímco magické zranění se tímto způsobem nesnižuje. Družina může využít terén, zůstat mimo dosah nebo zkusit vyjasnit spor dříve, než se projeví velikostní převaha. Obr může potřebovat pomoc se ztraceným příbuzným či s hrozbou pro svou jeskyni. Dohoda je možná, pokud obě strany pochopí, co ta druhá skutečně požaduje."
     ]
   }
 }
