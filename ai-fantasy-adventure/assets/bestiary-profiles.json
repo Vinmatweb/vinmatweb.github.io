@@ -35,7 +35,11 @@
     "gnom",
     "kentaur",
     "minotaur",
-    "obr"
+    "obr",
+    "troll",
+    "kostlivec",
+    "kostlivec-lucistnik",
+    "zombie"
   ],
   "profiles": {
     "krysa": [
@@ -217,6 +221,26 @@
       "Obři obývají horské oblasti, rozlehlé pustiny a místa, kde je dost prostoru i potravy pro jejich velikost. Jejich stavby působí lidským návštěvníkům hrubě a přehnaně velké, přesto mohou mít vlastní řád a řemeslné tradice. V Elarii existují pověsti o dávných obřích rodech, jejichž sídla dnes ostatní pokládají za přirozené skalní útvary. Osamělý obr může být potomkem takového rodu nebo vyhnancem z vlastní skupiny.",
       "Žije sám, s rodinou nebo v menší komunitě. Vedení může vycházet z věku, síly i uznávané zkušenosti. Obr rozumí svým potřebám a vztahům; pomalejší jednání či odlišné zvyky nejsou důkazem neschopnosti přemýšlet. Hledá potravu, klid a bezpečné území. To, co považuje za běžnou zásobu či průchozí cestu, může ovšem pro člověka znamenat celé stádo nebo střechu nad hlavou.",
       "Široký úder jednou za souboj zasáhne dva cíle samostatnými oslabenými útoky. Masivní tělo snižuje každé fyzické zranění, zatímco magické zranění se tímto způsobem nesnižuje. Družina může využít terén, zůstat mimo dosah nebo zkusit vyjasnit spor dříve, než se projeví velikostní převaha. Obr může potřebovat pomoc se ztraceným příbuzným či s hrozbou pro svou jeskyni. Dohoda je možná, pokud obě strany pochopí, co ta druhá skutečně požaduje."
+    ],
+    "troll": [
+      "Troll vyhledává vlhké lesy, močály, skalní rozsedliny a opuštěné podzemní prostory. V Elarii se o jeho původu vyprávějí příběhy spojené s divokou magií a dávnými proměnami krajiny. Své teritorium může měnit podle dostupné potravy, ale vrací se k bezpečnému doupěti. Zbytky kořisti, rozlámané větve a mohutné stopy upozorňují, že se v okolí pohybuje něco, co běžná zvířata raději obcházejí.",
+      "Často žije samotářsky, někdy se však trolové sdružují nebo podléhají silnějšímu vůdci. Dokáže si pamatovat úspěšné loviště, rozpoznat opakovanou hrozbu a zkusit jednoduchý způsob, jak získat potravu. Jeho motivace může být hlad, obrana úkrytu nebo odměna za službu. Ne každý troll je ochotný mluvit a ne každá nabídka ho zastaví, ale příběh může dát konkrétnímu jedinci srozumitelný důvod, proč blokuje cestu.",
+      "Regenerace obnovuje na začátku jeho tahu dva životy, pokud od konce minulého tahu neutrpěl magické zranění. Tuhá kůže zároveň snižuje první fyzické zranění v kole. Je tedy důležité udržet tlak a využít skutečnou slabinu z pravidel: magické zranění přeruší obnovu, nemusí to být právě oheň. Družina může trolla obejít, odloučit od chráněného místa či zjistit, kdo ho zásobuje. Pověst o nepřemožitelném tvoru často vznikne z toho, že předchozí protivníci nepochopili jeho obnovování."
+    ],
+    "kostlivec": [
+      "Kostlivec je pozůstatek mrtvého těla uvedený do pohybu nekromancií, kletbou nebo starou ochranou místa. Potkat ho lze v hrobkách, na opuštěných bojištích a v sídlech, kde po smrti strážců přetrval rozkaz. Výstroj může odkazovat k dávné posádce a pomoci určit původ nemrtvého. Samotné kosti však neprozrazují, zda je podstatný příkaz, předmět nebo někdo, kdo ho stále ovládá.",
+      "Obvykle nemá běžné lidské potřeby a nejedná z hladu či touhy po odměně. Může opakovat jednoduchý úkol, střežit hranici nebo následovat nekromantovu vůli. Jednotlivý kostlivec bývá strážcem; více nemrtvých může tvořit řadu, hlídku či skupinu připravenou na jeden povel. Jeho zdánlivá trpělivost vychází z toho, že nemusí spát ani se rozhodovat jako živý člověk. Agrese často začíná splněním konkrétní podmínky, například vstupem do střežené místnosti.",
+      "Schopnost Kosti snižuje fyzické zranění z dýky nebo šípu o jeden. Neznamená úplnou nezranitelnost ani ochranu proti všem fyzickým zbraním. Družina může hledat bezpečný průchod, původ rozkazu nebo důvod, proč se kostlivci probudili právě teď. Znak na štítu či opakovaný pohyb mohou poskytovat vodítko. Zrušení kletby nebo změna ovládání vyžadují konkrétní podmínky dobrodružství; pouhý rozhovor s prázdně vykonávaným rozkazem nemusí stačit."
+    ],
+    "kostlivec-lucistnik": [
+      "Kostlivec lučištník je oživený střelec, který pokračuje v obraně svěřeného místa i po smrti. Může stát na hradbě zaniklé pevnosti, v galerii hrobky nebo za střílnou, na kterou živá posádka dávno zapomněla. Luk, odznak či zbytky výstroje mohou určit, komu původní voják sloužil. Magie může udržovat starý rozkaz nebo jej podřídit novému pánovi.",
+      "Nejedná podle běžných potřeb živého střelce. Může nehybně čekat, dokud někdo nevstoupí do vymezeného prostoru, a pak reagovat stále stejným způsobem. Ve skupině lze spojit jeho palbu s kostlivci, kteří hlídají přístup. Ovládat ho může nekromant, kletba nebo mechanismus magické ochrany. Stupeň vlastní vůle závisí na konkrétním původu; samotný statový profil z něj nedělá nositele vzpomínek původního člověka.",
+      "Stejně jako běžný kostlivec snižuje zranění z dýky nebo šípu o jeden. Na dálku těží z pozice a přímého výhledu, proto mohou kryt a jiná cesta výrazně změnit střet. Nejde však automaticky o stejné zvláštní schopnosti, jaké používá živý lučištník. Družina může zkoumat, co palbu spouští, komu patří znak na výstroji a zda existuje oprávněný způsob vstupu. Odhalený původ stráže pomůže vysvětlit, proč se brání něco, co dnes působí zcela bezcenně."
+    ],
+    "zombie": [
+      "Zombie je mrtvé tělo udržované v pohybu temnou magií nebo kletbou. Může povstat na hřbitově, v podzemí či na místě dávné katastrofy; vznik často souvisí s někým nebo něčím, co narušilo klid mrtvých. Rozpadlá výstroj, osobní předmět či známá tvář mohou propojit hrozbu s minulostí osady. Zombie tak připomíná nejen nebezpečí, ale i člověka, jehož příběh neskončil důstojně.",
+      "Většinou má omezenou vlastní vůli. Následuje rozkaz, opakuje jednoduché chování nebo reaguje na přítomnost živých podle povahy oživení. Může bloudit sama, zatímco skupina ovládaná nekromantem postupuje za společným cílem. Nedostatek strachu a únavy ji činí vytrvalou; zároveň nedokáže běžně přehodnotit situaci nebo vyjednávat jako člověk. Konkrétní výjimku může tvořit zombie spojená s nezvykle silnou vzpomínkou či kletbou.",
+      "Neúnavný znamená, že poprvé při poklesu na nulu životů zůstane na jednom životě; podruhé padne běžně. Vypadá tedy poražená dříve, než skutečně přestane být hrozbou. Pravidla jí nedávají automatické nakažlivé kousnutí ani povinnou slabinu na zásah do hlavy. Družina může oddělit skupinu, zajistit ústup nebo hledat zdroj oživení. Prozkoumání minulosti a odstranění příčiny může mít větší význam než ničení dalších těl, která se stále vracejí."
     ]
   }
 }
