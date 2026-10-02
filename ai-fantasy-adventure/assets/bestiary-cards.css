@@ -2,7 +2,14 @@
 .bestiary-print-panel h2{margin:6px 0 10px;color:var(--ink,#f4f0e8)}
 .bestiary-print-panel p,.bestiary-print-note{color:var(--ink-muted,#b8c2c9)}
 .bestiary-print-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
-.bestiary-card-dialog{width:min(1000px,calc(100vw - 28px));max-width:none;max-height:94vh;padding:0;border:1px solid rgba(190,157,96,.48);border-radius:18px;background:#0b141b;color:#f4f0e8;box-shadow:0 24px 100px #000b}
+/* Keep summary and trait typography identical across static page bundles. */
+.detail-hero .beast-summary{margin:0;font-size:1rem;line-height:1.66;color:var(--ink-muted,#bdb5a9)}
+.detail-hero .beast-traits{display:grid;gap:8px;margin:18px 0 0;padding:0;list-style:none}
+.detail-hero .beast-traits>li{display:grid;grid-template-columns:155px minmax(0,1fr);column-gap:12px;row-gap:12px;margin:0;color:#bdb5a9;font-size:1rem;line-height:1.66}
+.detail-hero .beast-traits>li>strong,.detail-hero .beast-traits>li>span,.detail-hero .beast-traits>li>a{display:block;margin:0}
+.detail-hero .beast-traits>li>strong{color:#e9dfd1;font-weight:700}
+.detail-hero .beast-traits>li>a{color:#e6b85b;text-decoration:underline;text-underline-offset:3px}
+.bestiary-card-dialog{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);inset:auto;margin:0;width:min(1000px,calc(100vw - 28px));max-width:none;max-height:94vh;padding:0;border:1px solid rgba(190,157,96,.48);border-radius:18px;background:#0b141b;color:#f4f0e8;box-shadow:0 24px 100px #000b}
 .bestiary-card-dialog::backdrop{background:rgba(2,7,10,.78);backdrop-filter:blur(4px)}
 .bestiary-card-dialog__header{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 18px;border-bottom:1px solid #33424b}
 .bestiary-card-dialog__header h2{margin:0;font-size:1.05rem;color:#f4f0e8}
