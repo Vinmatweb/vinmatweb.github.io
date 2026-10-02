@@ -59,7 +59,9 @@
     "mlady-drak",
     "dospely-drak",
     "prastary-drak",
-    "goblini-nacelnik"
+    "goblini-nacelnik",
+    "orci-nacelnik",
+    "arcimag"
   ],
   "profiles": {
     "krysa": [
@@ -361,6 +363,16 @@
       "Gobliní náčelník stojí v čele skupiny, jejíž bezpečí a obživa závisejí na rychlém rozhodování. Může pocházet z uznávané rodiny, prosadit se lstí nebo získat autoritu při obraně tlupy. Sídlí v chráněné části jeskynního tábora, ruin či opuštěného dolu. Kolem něj se soustředí zásoby, důležité informace a předměty, které ostatní uznávají jako znak jeho postavení.",
       "Je chytřejším a vlivnějším protivníkem než osamělý goblin. Zná potřeby vlastní skupiny a umí využít strach i naději na odměnu. Může rozhodovat samostatně nebo odvádět kořist silnějšímu patronovi, kterého si nemůže dovolit neposlechnout. Hledá zásoby, bezpečí a udržení autority. Násilí proti okolí může být jeho volbou, ale také důsledkem tlaku, o kterém družina zatím neví. Vztahy s hlídkami, rodinami a dalšími významnými gobliny odhalují skutečnou oporu jeho vlády.",
       "Rozkazy náčelníka posilují útok jednoho gobliního spojence v každém kole, dokud je při vědomí. Záludný úskok mu jednou za souboj zvýší obranu proti vyhlášenému útoku. Družina může odhalit, koho potřebuje ke svému vedení, přerušit zdroj kořisti nebo nabídnout řešení společné hrozby. Rozhovor by měl respektovat, že náčelník potřebuje dohodu obhájit před tlupou. Porážka jediného vůdce sama nemusí odstranit hlad, strach či patrona, kteří konflikt vyvolali."
+    ],
+    "orci-nacelnik": [
+      "Orčí náčelník vede skupinu, jejíž síla stojí na bojovnících, zásobách a schopnosti hájit vlastní území. V Elarii může pocházet z uznávaného rodu, získat vedení v souboji nebo si vybudovat autoritu jako ochránce komunity. Jeho sídlem může být opevněný tábor, horská osada i obsazená pevnost. Znak, výstroj a trofeje často připomínají činy, na kterých své postavení zakládá.",
+      "Je schopný plánovat a rozumí vztahům uvnitř skupiny. Musí přesvědčit bojovníky, významné rodiny a další vlivné osoby, že jeho vedení přináší bezpečí či úspěch. Může jednat samostatně nebo mít závazek vůči mocnějšímu spojenci. Cílem bývá ochrana území, prostředky pro skupinu, uznání i osobní moc. Agresivní jednání může vycházet z tradice, obavy ze ztráty autority nebo dlouhého sporu s okolím. Původ a vzhled samy neurčují, zda bude ochotný dodržet dohodu.",
+      "Bojový pokřik jednou za souboj dočasně posílí útok až dvou spojenců. Bojová zuřivost zvýší jeho útok zblízka, pokud má méně než polovinu maximálních životů; zraněný náčelník tedy zůstává nebezpečný. Družina může hledat příčinu sporu, jednat o zajatcích nebo odhalit cizího manipulátora. Nabídka potřebuje zohlednit, jak ji náčelník vysvětlí vlastním lidem. Pokud se podaří odstranit skutečnou hrozbu pro komunitu, může vzniknout pevnější dohoda než pouhé vynucené příměří."
+    ],
+    "arcimag": [
+      "Arcimág je mimořádně zkušený uživatel magie, jehož znalosti a vliv přesahují možnosti běžného kouzelníka. Může vést školu, sloužit jako rádce, spravovat chráněné sídlo nebo dlouhodobě pracovat v ústraní. V Elarii za sebou zanechává žáky, výsledky výzkumu a zásahy, které ovlivnily širší okolí. Jeho pracovna, věž či podzemní laboratoř představují místo, kde se každodenní život potkává s mocí, které většina lidí nerozumí.",
+      "Je inteligentní a zvyklý promýšlet více kroků dopředu. Může řídit učně, služebníky nebo společenství odborníků, případně se naopak vyhýbat všem, kdo by jeho práci omezovali. Usiluje o poznání, ochranu, vliv nebo dokončení konkrétního díla. Dlouhé zkušenosti mu dávají přehled, ale mohou posílit i přesvědčení, že ostatní nedokážou jeho rozhodnutí posoudit. Konflikt může vzniknout z nebezpečného pokusu, zamlčených následků nebo cíle, pro který je ochoten obětovat cizí bezpečí.",
+      "Řetězový blesk mu jednou za souboj umožní magicky napadnout až dva cíle. Krystal moci podporuje obranu proti prvnímu fyzickému útoku v kole a posiluje jeho magii. Zničení nebo odnětí krystalu ruší tuto ochranu, snižuje bonus kouzla na +1 a magickou ochranu na nulu; výsledný magický útok je 14 a magická obrana 13. Družina může připravit způsob, jak krystal bezpečně odpojit, či vyjednávat o zastavení konkrétního plánu. Arcimágova síla tak má jasné herní pouto, které lze odhalit a využít, místo aby střet závisel jen na výměně útoků."
     ]
   }
 }
