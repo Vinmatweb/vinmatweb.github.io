@@ -69,7 +69,11 @@
     "hero/pulcik-bojovnik",
     "hero/clovek-hranicar",
     "hero/elf-hranicar",
-    "hero/trpaslik-hranicar"
+    "hero/trpaslik-hranicar",
+    "hero/ork-hranicar",
+    "hero/pulcik-hranicar",
+    "hero/clovek-kouzelnik",
+    "hero/elf-kouzelnik"
   ],
   "profiles": {
     "best/krysa": [
@@ -421,6 +425,26 @@
       "Trpasličí hraničář je přirozeným průvodcem skalnatou krajinou, lomy a horskými cestami. Může hledat bezpečné průsmyky pro svou osadu nebo sledovat stopu, která mizí pod zemí. Cit pro kámen doplňuje jeho zkušenost s cestou, zatímco výcvik hraničáře posiluje pohyb a průzkum. Hodí se pro hráče, který chce spojit praktickou sílu s objevováním a péčí o bezpečí celé skupiny.",
       "V družině pomáhá plánovat cestu, sledovat použitelné stopy a rozpoznávat změny krajiny. Před vstupem do nebezpečného místa může zjišťovat přístupy, kryt a možnosti návratu. Stopařská dovednost neurčuje totožnost každého tvora ani jeho úmysl; informace je potřeba spojovat s dalšími vodítky. Hraničář se tak uplatní i při záchraně ztracené osoby, hledání vody a rozhodování, kdy má skupina raději zastavit.",
       "Rasová schopnost Cit pro kámen: V relevantním kamenném/podzemním prostředí automaticky rozpozná dutiny, tajné chodby, nestabilní skálu, kvalitní rudu nebo neobvyklé vlastnosti kamene. Povolání přidává schopnost Stopař: Automaticky pozná směr, kterým odešla hledaná osoba nebo zvíře, pokud existují použitelné stopy. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/ork-hranicar": [
+      "Orčí hraničář využívá sílu při náročných cestách a výcvik při průzkumu terénu. Může strážit vzdálené hranice, hledat ztracené členy komunity nebo chránit krajinu před lidmi, kteří ji ničí. Není odsouzen k útočné povaze. Klidná znalost okolí a vztah ke skupině mohou být jeho nejvýraznějšími rysy; bojová zuřivost se projeví až při splnění své přesné podmínky.",
+      "V družině pomáhá plánovat cestu, sledovat použitelné stopy a rozpoznávat změny krajiny. Před vstupem do nebezpečného místa může zjišťovat přístupy, kryt a možnosti návratu. Stopařská dovednost neurčuje totožnost každého tvora ani jeho úmysl; informace je potřeba spojovat s dalšími vodítky. Hraničář se tak uplatní i při záchraně ztracené osoby, hledání vody a rozhodování, kdy má skupina raději zastavit.",
+      "Rasová schopnost Bojová zuřivost: Když má méně než polovinu maximálních Ž, získává +1 k výsledku každého útoku zblízka. Povolání přidává schopnost Stopař: Automaticky pozná směr, kterým odešla hledaná osoba nebo zvíře, pokud existují použitelné stopy. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/pulcik-hranicar": [
+      "Půlčík hraničář je zvídavý cestovatel, který si poradí s průzkumem a rád hledá méně nápadnou cestu. Může vyrůst u obchodní stezky, znát pěšiny mezi vesnicemi nebo sbírat zprávy o místech, kam ostatní nechodí. Obratnost a štěstí podporují jeho styl, nízká síla však vyžaduje lehkou výstroj. Předností je připravenost, nikoli předpoklad, že z každého nebezpečí automaticky vyvázne.",
+      "V družině pomáhá plánovat cestu, sledovat použitelné stopy a rozpoznávat změny krajiny. Před vstupem do nebezpečného místa může zjišťovat přístupy, kryt a možnosti návratu. Stopařská dovednost neurčuje totožnost každého tvora ani jeho úmysl; informace je potřeba spojovat s dalšími vodítky. Hraničář se tak uplatní i při záchraně ztracené osoby, hledání vody a rozhodování, kdy má skupina raději zastavit.",
+      "Rasová schopnost Šťastlivec: 1× za dobrodružství po vlastním neúspěšném virtuálním hodu změní výsledek na těsný úspěch. Hod se neopakuje; jde o nejnižší nutný úspěch bez dodatečné výhody. Povolání přidává schopnost Stopař: Automaticky pozná směr, kterým odešla hledaná osoba nebo zvíře, pokud existují použitelné stopy. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/clovek-kouzelnik": [
+      "Lidský kouzelník může získat znalosti v akademii, u venkovského učitele nebo studiem zděděných poznámek. Je vhodný pro hráče, který chce zkoumat různé školy a hledat vlastní zaměření. Magii používá jako nástroj k porozumění i k ochraně skupiny. Zajímavý příběh vznikne kolem otázky, proč se rozhodl učit: zda hledá poznání, pomoc blízkému nebo odpověď na událost z minulosti.",
+      "V družině pomáhá rozpoznat magii a vybírat známé kouzlo podle skutečného problému. Uplatní se při průzkumu zvláštních míst, řešení hádanek i ochraně spojenců. Splnění požadované chytrosti samo nové kouzlo nenaučí; znalosti musí získat od učitele, z knihy či v příběhu. Magický cit upozorní na přítomnost magie, ale neodhalí automaticky její účel, spouštěč ani bezpečnost. Opatrné otázky proto patří k jeho práci.",
+      "Rasová schopnost Přizpůsobivost: 1× za dobrodružství po vlastním neúspěšném hodu hod zopakuje. Vaelor vytvoří novou náhodnou permutaci, hráč znovu zvolí číslo a použije se lepší z obou výsledků. Povolání přidává schopnost Magický cit: Automaticky pozná, že předmět, místo nebo bytost jsou magické. Sám o sobě neodhalí přesný druh, účel, spouštěč ani nebezpečí magie. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/elf-kouzelnik": [
+      "Elfí kouzelník vyniká počáteční chytrostí a spojuje studium magie s pozorným pozorováním světa. Může pátrat po starém kouzlu, porozumět narušení lesního místa nebo pokračovat v práci učitele. Jeho znalosti mají cenu především tehdy, když se o ně dělí s družinou. Nižší síla a méně životů vybízejí k promyšlenému postavení a spolupráci s někým, kdo dokáže chránit sesilatele.",
+      "V družině pomáhá rozpoznat magii a vybírat známé kouzlo podle skutečného problému. Uplatní se při průzkumu zvláštních míst, řešení hádanek i ochraně spojenců. Splnění požadované chytrosti samo nové kouzlo nenaučí; znalosti musí získat od učitele, z knihy či v příběhu. Magický cit upozorní na přítomnost magie, ale neodhalí automaticky její účel, spouštěč ani bezpečnost. Opatrné otázky proto patří k jeho práci.",
+      "Rasová schopnost Ostrý zrak: Automaticky si všimne vzdáleného viditelného detailu, stop nebo pohybu, pokud nejsou magicky či objektivně skryté. Povolání přidává schopnost Magický cit: Automaticky pozná, že předmět, místo nebo bytost jsou magické. Sám o sobě neodhalí přesný druh, účel, spouštěč ani nebezpečí magie. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
     ]
   }
 }

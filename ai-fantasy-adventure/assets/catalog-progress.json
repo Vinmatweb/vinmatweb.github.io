@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 70,
+  "completed": 74,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -10,7 +10,11 @@
     "hero/pulcik-bojovnik",
     "hero/clovek-hranicar",
     "hero/elf-hranicar",
-    "hero/trpaslik-hranicar"
+    "hero/trpaslik-hranicar",
+    "hero/ork-hranicar",
+    "hero/pulcik-hranicar",
+    "hero/clovek-kouzelnik",
+    "hero/elf-kouzelnik"
   ],
-  "latestBatch": 2
+  "latestBatch": 3
 }
