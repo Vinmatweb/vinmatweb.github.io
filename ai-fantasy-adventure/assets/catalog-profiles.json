@@ -85,7 +85,11 @@
     "hero/clovek-lecitel",
     "hero/elf-lecitel",
     "hero/trpaslik-lecitel",
-    "hero/ork-lecitel"
+    "hero/ork-lecitel",
+    "hero/pulcik-lecitel",
+    "hero/clovek-bard",
+    "hero/elf-bard",
+    "hero/trpaslik-bard"
   ],
   "profiles": {
     "best/krysa": [
@@ -517,6 +521,26 @@
       "Orčí léčitel ukazuje ochrannou stránku síly. Může pečovat o svou skupinu po obtížném pochodu, sloužit jako putovní pomocník nebo se snažit spojit komunity poznamenané starým sporem. Jeho vzhled může u cizinců vyvolat předsudek, ale rozhoduje vlastní jednání. Síla a první pomoc se doplňují při záchraně, zatímco magie vyžaduje skutečně známá kouzla a splnění jejich požadavků.",
       "V družině pomáhá rozhodovat, kdy ošetřit zranění, použít známé léčivé kouzlo a kdy zajistit bezpečný odpočinek. První pomoc je samostatná schopnost a nespotřebovává magický limit léčení. Počet obnovených životů vychází ze skutečné chytrosti a nemůže překročit maximum ošetřovaného. Dobrý léčitel potřebuje prostor k práci a podporu druhých; prevence nebezpečí má často stejnou hodnotu jako další zásah léčivou magií.",
       "Rasová schopnost Bojová zuřivost: Když má méně než polovinu maximálních Ž, získává +1 k výsledku každého útoku zblízka. Povolání přidává schopnost První pomoc: 1× za souboj obnoví sobě nebo jednomu spojenci ⌈CH/2⌉ Ž, nejvýše do maxima. Není to léčivé kouzlo a nespotřebuje magický limit léčení. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/pulcik-lecitel": [
+      "Půlčík léčitel je pozorný pomocník, který často poznává lidi zblízka a všímá si běžných potřeb skupiny. Může vyrůst v malé obci, doprovázet karavanu nebo hledat ztraceného učitele. Nízká síla zvyšuje význam lehké výstroje a spolupráce. Štěstí nabízí jednu mimořádnou záchranu neúspěchu, ale nejspolehlivější pomoc stále vychází z přípravy, znalostí a ochoty včas požádat ostatní o podporu.",
+      "V družině pomáhá rozhodovat, kdy ošetřit zranění, použít známé léčivé kouzlo a kdy zajistit bezpečný odpočinek. První pomoc je samostatná schopnost a nespotřebovává magický limit léčení. Počet obnovených životů vychází ze skutečné chytrosti a nemůže překročit maximum ošetřovaného. Dobrý léčitel potřebuje prostor k práci a podporu druhých; prevence nebezpečí má často stejnou hodnotu jako další zásah léčivou magií.",
+      "Rasová schopnost Šťastlivec: 1× za dobrodružství po vlastním neúspěšném virtuálním hodu změní výsledek na těsný úspěch. Hod se neopakuje; jde o nejnižší nutný úspěch bez dodatečné výhody. Povolání přidává schopnost První pomoc: 1× za souboj obnoví sobě nebo jednomu spojenci ⌈CH/2⌉ Ž, nejvýše do maxima. Není to léčivé kouzlo a nespotřebuje magický limit léčení. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/clovek-bard": [
+      "Lidský bard spojuje příběhy, hudbu a schopnost rozumět lidem. Může být hostinským vypravěčem, hercem, poslem nebo sběratelem zapomenutých písní. Do dobrodružství přináší vlastní důvod, proč naslouchat i těm, které ostatní přehlížejí. Je vhodný pro hráče, který rád mluví za postavu, ale může být i tišším pozorovatelem, jehož dobře zvolená věta povzbudí skupinu ve správný okamžik.",
+      "V družině pomáhá při jednání, poznávání místních příběhů a podpoře spojenců. Může se stát prostředníkem mezi lidmi, kteří si nerozumějí, nebo připomenout důležitou souvislost v pravou chvíli. Povzbuzení mění bonus odhaleného virtuálního hodu o jeden stupeň, nejvýše do maxima dané kategorie; není to libovolné zvýšení každého výsledku. Vyprávění, hudba i naslouchání dávají bardovi smysluplnou roli také ve scénách, které nevedou k boji.",
+      "Rasová schopnost Přizpůsobivost: 1× za dobrodružství po vlastním neúspěšném hodu hod zopakuje. Vaelor vytvoří novou náhodnou permutaci, hráč znovu zvolí číslo a použije se lepší z obou výsledků. Povolání přidává schopnost Povzbuzení: Jednou v daném souboji nebo významné scéně může po odhalení virtuálního hodu sobě nebo spojenci zvýšit bonus hodu o jeden stupeň, nejvýše do maxima dané kategorie. Nevyžaduje hlavní akci a nepoužívá se na nepřítele. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/elf-bard": [
+      "Elfí bard může uchovávat paměť rodiny, zpívat o proměnách lesa nebo hledat pokračování příběhu, který zná pouze napůl. Pozornost a chytrost mu pomáhají všímat si podrobností důležitých pro vyprávění i jednání. Výcvik barda podporuje jeho schopnost spojovat lidi a povzbuzovat družinu. Není nutné hrát ho jako dokonalého zpěváka; zajímavější může být, proč určitou píseň nikdy nedokončí.",
+      "V družině pomáhá při jednání, poznávání místních příběhů a podpoře spojenců. Může se stát prostředníkem mezi lidmi, kteří si nerozumějí, nebo připomenout důležitou souvislost v pravou chvíli. Povzbuzení mění bonus odhaleného virtuálního hodu o jeden stupeň, nejvýše do maxima dané kategorie; není to libovolné zvýšení každého výsledku. Vyprávění, hudba i naslouchání dávají bardovi smysluplnou roli také ve scénách, které nevedou k boji.",
+      "Rasová schopnost Ostrý zrak: Automaticky si všimne vzdáleného viditelného detailu, stop nebo pohybu, pokud nejsou magicky či objektivně skryté. Povolání přidává schopnost Povzbuzení: Jednou v daném souboji nebo významné scéně může po odhalení virtuálního hodu sobě nebo spojenci zvýšit bonus hodu o jeden stupeň, nejvýše do maxima dané kategorie. Nevyžaduje hlavní akci a nepoužívá se na nepřítele. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/trpaslik-bard": [
+      "Trpasličí bard může nést příběhy dílen, horských cest a rodů, které si své sliby pamatují po generace. Zachovaná síla a cit pro kámen z něj dělají praktického člena výpravy i tehdy, když se zrovna nehraje. Hudba může pomoci překlenout rozdíly mezi skupinami. Jeho povaha může být vážná, vtipná i přemýšlivá; hlasitost vystoupení není podmínkou, aby byl dobrým bardem.",
+      "V družině pomáhá při jednání, poznávání místních příběhů a podpoře spojenců. Může se stát prostředníkem mezi lidmi, kteří si nerozumějí, nebo připomenout důležitou souvislost v pravou chvíli. Povzbuzení mění bonus odhaleného virtuálního hodu o jeden stupeň, nejvýše do maxima dané kategorie; není to libovolné zvýšení každého výsledku. Vyprávění, hudba i naslouchání dávají bardovi smysluplnou roli také ve scénách, které nevedou k boji.",
+      "Rasová schopnost Cit pro kámen: V relevantním kamenném/podzemním prostředí automaticky rozpozná dutiny, tajné chodby, nestabilní skálu, kvalitní rudu nebo neobvyklé vlastnosti kamene. Povolání přidává schopnost Povzbuzení: Jednou v daném souboji nebo významné scéně může po odhalení virtuálního hodu sobě nebo spojenci zvýšit bonus hodu o jeden stupeň, nejvýše do maxima dané kategorie. Nevyžaduje hlavní akci a nepoužívá se na nepřítele. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
     ]
   }
 }
