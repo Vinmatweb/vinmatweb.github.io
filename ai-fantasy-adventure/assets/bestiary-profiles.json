@@ -15,7 +15,11 @@
     "vesnican",
     "obchodnik",
     "kovar",
-    "lovec"
+    "lovec",
+    "zlodej",
+    "bandita",
+    "vudce-banditu",
+    "zoldner"
   ],
   "profiles": {
     "krysa": [
@@ -97,6 +101,26 @@
       "Lovec tráví velkou část života mimo bezpečí osad. Pohybuje se po lesních stezkách, stopuje zvěř a zná místa, kde se dá najít voda nebo úkryt. Jeho domovem může být osamělá chata i vesnice, do které se vrací s úlovkem. Rozlišuje běžné stopy od těch, které ukazují na zraněné zvíře, neobvyklého predátora nebo někoho, kdo se snaží svůj pohyb zakrýt.",
       "Obvykle pracuje sám nebo v malé skupině, kde záleží na tichu a vzájemné důvěře. Jedná samostatně, ale může sloužit správci lesa, zásobovat obec nebo chránit panství. Jeho cílem bývá obživa, bezpečí známého území a návrat z další výpravy. Poctivý lovec i pytlák mohou mít podobné dovednosti, jejich vztah k místním lidem a pravidlům však bude velmi odlišný.",
       "Přesná rána mu jednou za souboj posílí útok na dálku. Výhodu hledá v připravené pozici, rozhledu a odstupu; bezmyšlenkovitý boj zblízka nemusí odpovídat jeho zkušenostem. Může družinu provést nebezpečným terénem, naučit ji číst stopu nebo požádat o pomoc s něčím, co běžná zvěř nevysvětluje. Při jednání často rozhoduje respekt k jeho znalostem a ochota naslouchat varování, které zbytek vesnice přehlíží."
+    ],
+    "zlodej": [
+      "Zloděj může vyrůst v městských uličkách, působit na tržišti nebo vykrádat domy v bohaté čtvrti. Tento profil popisuje člověka zvyklého získávat věci nenápadně a hledat slabá místa v cizí pozornosti. Sleduje zvyky stráží, proud lidí a příležitosti k úniku. Opuštěné skladiště či pokoj nad hostincem mu může sloužit jako úkryt, ale zkušený zloděj nerad prozrazuje skutečné zázemí.",
+      "Pracuje sám, s důvěryhodným partnerem nebo pro skupinu, která dělí úkoly mezi pozorovatele, vykonavatele a překupníky. Pokud patří k cechu, může podléhat jeho pravidlům a vedení. Motivací mohou být peníze, dluh, přežití, pomsta i touha získat konkrétní předmět. Jeho schopnost krást neurčuje, koho je ochoten poškodit. Někteří se násilí vyhýbají, jiní odstraní překážku bez váhání.",
+      "Zákeřný útok jednou za souboj zvýhodňuje zásah proti cíli, který v daném kole ještě nejednal. Zloděj proto těží z překvapení a rychlé iniciativy, zatímco dlouhý otevřený střet může ohrozit jeho únikovou cestu. Družina ho může přistihnout, najmout nebo přesvědčit, aby vrátil ukradenou věc. Zajímavé setkání vzniká i tehdy, když ví o větším zločinu a informace nabízí výměnou za ochranu před vlastním zaměstnavatelem."
+    ],
+    "bandita": [
+      "Bandita se živí přepadáváním cestujících, vydíráním a krádežemi zásob. Úkryt hledá u opuštěných cest, v lese, lomu nebo zchátralé pevnosti, odkud může sledovat pohyb vozů. Do takového života se mohl dostat jako zběh, zadlužený člověk či dobrovolný lupič. Společný profil proto neznamená společný původ ani stejnou ochotu riskovat.",
+      "Nejčastěji operuje v menší tlupě. Část lidí hlídá, jiní vybírají kořist a další mají kontakt na překupníka. Poslouchá vůdce, dokud mu nabízí zisk, bezpečí nebo vzbuzuje dostatečný strach. Bandité obvykle chtějí získat majetek s co nejmenšími vlastními ztrátami. Bezbranný vůz proto působí přitažlivěji než připravená družina, a výrazná převaha protivníka může rychle změnit odhodlání v útěk.",
+      "Nemá zvláštní bojovou schopnost. Nebezpečnost tlupy vychází z počtu, přepadení a znalosti místa. Může požadovat výkupné, zablokovat cestu nebo zastrašovat, aniž by byl rozhodnut bojovat do smrti. Odhalení hlídek, zajištění jiné trasy nebo nabídka, která naruší soudržnost skupiny, mohou střet vyřešit. Zajatý bandita může znát úkryt i zadavatele loupeží, ale bude zvažovat, kdo ho ochrání před odvetou."
+    ],
+    "vudce-banditu": [
+      "Vůdce banditů dokázal proměnit několik jednotlivých lupičů ve skupinu, která má úkryty, hlídky a plán. Často bývá zkušeným bojovníkem, bývalým velitelem nebo člověkem, který se prosadil odvahou a schopností opatřit kořist. Jeho sídlo bývá lépe chráněné než obyčejný tábor a může obsahovat zásoby, zajatce i doklady o tom, komu tlupa prodává ukradené věci.",
+      "Členy drží pohromadě podílem na zisku, osobní loajalitou nebo strachem. Schopný vůdce přiděluje úkoly a zná slabiny vlastních lidí; krutý vůdce může přehlížet jejich nespokojenost, dokud není pozdě. Jeho cílem může být bohatství, ovládnutí obchodní cesty nebo služba skrytému patronovi. K podřízeným se nechová nutně stejně jako k cizincům, a vztahy uvnitř tlupy mohou rozhodnout celý konflikt.",
+      "Schopnost Velitel posiluje v každém kole útok jednoho spojeneckého bandity, dokud vůdce zůstává při vědomí. Jeho přítomnost tak ovlivňuje boj celé skupiny. Družina může hledat důkazy proti patronovi, oslabit zásobování nebo vyjednávat o propuštění zajatců. Ztráta autority, rozpor při dělení kořisti či odhalená lež mohou být stejně účinným příběhovým bodem jako přímý souboj. Nabídku příměří však vůdce posuzuje podle toho, co si myslí, že může ztratit."
+    ],
+    "zoldner": [
+      "Žoldnéř nabízí bojové zkušenosti za odměnu. Může hlídat karavanu, chránit důl, sloužit městské radě nebo bojovat v cizím vojsku. Jeho původ se liší: někdo opustil armádu, jiný se celý život pohybuje mezi krátkými zakázkami. Výstroj nosí podle svých prostředků a práce, kterou přijímá. Zkušený žoldnéř si před cestou všímá zásob, stavu zbraní i schopností budoucích spojenců.",
+      "Pracuje samostatně nebo v družstvu vedeném kapitánem. Loajalita se může opírat o smlouvu, osobní čest i dlouhé společné tažení. Zaplacení samo o sobě neznamená, že udělá cokoli; někteří odmítají útoky na civilisty nebo zakázky, které odporují jejich přesvědčení. Jiní sledují jen výši odměny. Většina však potřebuje přežít a udržet si pověst, aby získala další práci.",
+      "Nemá zvláštní schopnost, ale jeho bojové hodnoty představují člověka zvyklého na skutečné střety. Obvykle se snaží splnit úkol a hlídat podmínky zakázky. Pokud stojí proti družině, může pomoci zjistit, koho chrání, co mu bylo řečeno a kde končí jeho závazek. Zadržená výplata, podvodný zaměstnavatel či rozkaz, který odporuje smlouvě, mohou vytvořit prostor pro jednání. Žoldnéř se může stát protivníkem i spolehlivým spojencem v jednom příběhu."
     ]
   }
 }
