@@ -89,7 +89,11 @@
     "hero/pulcik-lecitel",
     "hero/clovek-bard",
     "hero/elf-bard",
-    "hero/trpaslik-bard"
+    "hero/trpaslik-bard",
+    "hero/ork-bard",
+    "hero/pulcik-bard",
+    "hero/vila-bojovnik",
+    "hero/vila-hranicar"
   ],
   "profiles": {
     "best/krysa": [
@@ -541,6 +545,26 @@
       "Trpasličí bard může nést příběhy dílen, horských cest a rodů, které si své sliby pamatují po generace. Zachovaná síla a cit pro kámen z něj dělají praktického člena výpravy i tehdy, když se zrovna nehraje. Hudba může pomoci překlenout rozdíly mezi skupinami. Jeho povaha může být vážná, vtipná i přemýšlivá; hlasitost vystoupení není podmínkou, aby byl dobrým bardem.",
       "V družině pomáhá při jednání, poznávání místních příběhů a podpoře spojenců. Může se stát prostředníkem mezi lidmi, kteří si nerozumějí, nebo připomenout důležitou souvislost v pravou chvíli. Povzbuzení mění bonus odhaleného virtuálního hodu o jeden stupeň, nejvýše do maxima dané kategorie; není to libovolné zvýšení každého výsledku. Vyprávění, hudba i naslouchání dávají bardovi smysluplnou roli také ve scénách, které nevedou k boji.",
       "Rasová schopnost Cit pro kámen: V relevantním kamenném/podzemním prostředí automaticky rozpozná dutiny, tajné chodby, nestabilní skálu, kvalitní rudu nebo neobvyklé vlastnosti kamene. Povolání přidává schopnost Povzbuzení: Jednou v daném souboji nebo významné scéně může po odhalení virtuálního hodu sobě nebo spojenci zvýšit bonus hodu o jeden stupeň, nejvýše do maxima dané kategorie. Nevyžaduje hlavní akci a nepoužívá se na nepřítele. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/ork-bard": [
+      "Orčí bard může znát rodové kroniky, rytmus společné práce i příběhy, které jeho sousedé nikdy neslyšeli. Spojuje výraznou sílu s povoláním zaměřeným na podporu a jednání. Jeho úkolem může být doručit důležitou zprávu, uchovat paměť skupiny nebo najít společnou řeč s cizí osadou. Nemusí všechny spory řešit hlasitým pokřikem; klidný vypravěč může být stejně přesvědčivou postavou.",
+      "V družině pomáhá při jednání, poznávání místních příběhů a podpoře spojenců. Může se stát prostředníkem mezi lidmi, kteří si nerozumějí, nebo připomenout důležitou souvislost v pravou chvíli. Povzbuzení mění bonus odhaleného virtuálního hodu o jeden stupeň, nejvýše do maxima dané kategorie; není to libovolné zvýšení každého výsledku. Vyprávění, hudba i naslouchání dávají bardovi smysluplnou roli také ve scénách, které nevedou k boji.",
+      "Rasová schopnost Bojová zuřivost: Když má méně než polovinu maximálních Ž, získává +1 k výsledku každého útoku zblízka. Povolání přidává schopnost Povzbuzení: Jednou v daném souboji nebo významné scéně může po odhalení virtuálního hodu sobě nebo spojenci zvýšit bonus hodu o jeden stupeň, nejvýše do maxima dané kategorie. Nevyžaduje hlavní akci a nepoužívá se na nepřítele. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/pulcik-bard": [
+      "Půlčík bard je obratný a šťastný společník, který může získávat informace v hostincích, na slavnostech i během cest. Hudbu a příběhy používá k navázání vztahů, povzbuzení druhých a vyjádření vlastních hodnot. Drobná postava omezuje silovou výstroj, ale neomezuje význam jeho rozhodnutí. Hodí se pro hráče, kterého baví spolupráce a hledání řešení, při němž se lidé přestanou navzájem obávat.",
+      "V družině pomáhá při jednání, poznávání místních příběhů a podpoře spojenců. Může se stát prostředníkem mezi lidmi, kteří si nerozumějí, nebo připomenout důležitou souvislost v pravou chvíli. Povzbuzení mění bonus odhaleného virtuálního hodu o jeden stupeň, nejvýše do maxima dané kategorie; není to libovolné zvýšení každého výsledku. Vyprávění, hudba i naslouchání dávají bardovi smysluplnou roli také ve scénách, které nevedou k boji.",
+      "Rasová schopnost Šťastlivec: 1× za dobrodružství po vlastním neúspěšném virtuálním hodu změní výsledek na těsný úspěch. Hod se neopakuje; jde o nejnižší nutný úspěch bez dodatečné výhody. Povolání přidává schopnost Povzbuzení: Jednou v daném souboji nebo významné scéně může po odhalení virtuálního hodu sobě nebo spojenci zvýšit bonus hodu o jeden stupeň, nejvýše do maxima dané kategorie. Nevyžaduje hlavní akci a nepoužívá se na nepřítele. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/vila-bojovnik": [
+      "Víla bojovnice může chránit cestu ke své komunitě, doprovázet zranitelného spojence nebo opustit bezpečný domov kvůli důležité přísaze. Její bojová role není založená na hrubé síle. Potřebuje lehkou vhodnou výstroj a promyšlený postup, přesto může rozhodnout, koho ochrání v kritickém okamžiku. Křídla a podoba patří k příběhu; sama nepřidávají další bojový bonus ani pravidlo volného letu.",
+      "V družině pomáhá držet nebezpečí dál od zranitelnějších spojenců a vytvořit prostor pro jejich rozhodnutí. Může hlídat ústup, doprovodit vyjednavače nebo stát u důležitého průchodu. Užitečný je i mimo souboj: při ochraně cestujících, přípravě výpravy a řešení situací, kde někdo potřebuje oporu. Odvaha se může projevit přiznáním chyby nebo volbou bezpečnější cesty, ne pouze přijetím každé výzvy.",
+      "Rasová schopnost Vílí prach: Každé léčení provedené vílou obnoví o 1 Ž navíc. Povolání přidává schopnost Ochrana: 1× za souboj může převzít útok mířící na blízkého spojence. Útok se místo něj vyhodnotí proti bojovníkově obraně. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/vila-hranicar": [
+      "Víla hraničářka může poznávat zarostlé stezky, pomáhat ztraceným poutníkům a zkoumat proměny míst blízkých své komunitě. Obratnost podporuje průzkum, drobná síla však omezuje těžší ochranu a vybavení. Je vhodná pro postavu, která v přírodě hledá souvislosti a pečuje o bezpečný pohyb celé skupiny. Vlastní zvědavost může vést k výpravě stejně dobře jako povinnost chránit domov.",
+      "V družině pomáhá plánovat cestu, sledovat použitelné stopy a rozpoznávat změny krajiny. Před vstupem do nebezpečného místa může zjišťovat přístupy, kryt a možnosti návratu. Stopařská dovednost neurčuje totožnost každého tvora ani jeho úmysl; informace je potřeba spojovat s dalšími vodítky. Hraničář se tak uplatní i při záchraně ztracené osoby, hledání vody a rozhodování, kdy má skupina raději zastavit.",
+      "Rasová schopnost Vílí prach: Každé léčení provedené vílou obnoví o 1 Ž navíc. Povolání přidává schopnost Stopař: Automaticky pozná směr, kterým odešla hledaná osoba nebo zvíře, pokud existují použitelné stopy. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
     ]
   }
 }
