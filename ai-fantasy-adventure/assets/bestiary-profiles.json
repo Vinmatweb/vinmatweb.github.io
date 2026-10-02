@@ -55,7 +55,11 @@
     "elemental",
     "chimera",
     "hydra",
-    "wyverna"
+    "wyverna",
+    "mlady-drak",
+    "dospely-drak",
+    "prastary-drak",
+    "goblini-nacelnik"
   ],
   "profiles": {
     "krysa": [
@@ -337,6 +341,26 @@
       "Wyverna je velká okřídlená nestvůra s dravým tělem a nebezpečným jedovým bodcem. V Elarii hnízdí na skalách, vysokých ruinách a horských výběžcích, odkud dokáže sledovat okolní krajinu. Zbytky kořisti pod hnízdem a stopy velkých pařátů prozrazují její přítomnost. Přestože může na první pohled připomínat draka, její chování vychází především z lovu a obrany vlastního prostoru.",
       "Často žije sama nebo v páru s mladými. Je pozorná a schopná využít výhodné podmínky, ale tento profil jí nepřisuzuje dračí učenost či touhu budovat rozsáhlý poklad. Hledá potravu a bezpečné hnízdiště. Může napadat stáda, pokud pro ni znamenají snadnější kořist než zvířata v horách. Pokud slouží člověku či jinému pánovi, vztah musí vycházet z konkrétního chovu, výcviku nebo magie.",
       "Jedový bodec jednou za souboj přidá po fyzickém zásahu dvě zranění, pokud základní útok opravdu zranil. Není to automatická dlouhodobá otrava ani další útok bez podmínky. Výška, otevřený prostor a možnost krytu mění nebezpečí střetu. Družina může dohledat hnízdo, zabránit dalším útokům na stáda nebo pomoci majiteli získat zpět uniklou nestvůru. Poznání příčiny jejího chování často pomůže zvolit mezi přímým střetem, zabezpečením okolí a změnou cesty."
+    ],
+    "mlady-drak": [
+      "Mladý drak už představuje velmi nebezpečnou bytost, přesto teprve získává zkušenosti a vlastní postavení. V Elarii hledá odlehlé doupě v horách, ruinách či hlubokém lese, kde má prostor a zásoby. Může pocházet z dračího rodu, který území dlouho ovládá, nebo být jedincem vytlačeným z domova. První předměty shromážděné v doupěti mohou ukazovat, čeho si cení a odkud přichází.",
+      "Je inteligentní a schopný učit se z rozhovorů i konfliktů. Často jedná samotářsky, ale může hledat uznání staršího draka, spojenectví nebo vlastní služebníky. Chce bezpečí, potravu a možnost rozhodovat o svém prostoru. Mládí může přinášet zvídavost, pýchu i špatný odhad následků. Krádež zásob či výhružka osadě může být promyšlenou snahou o moc i nerozvážným pokusem napodobit staršího příbuzného.",
+      "Dračí dech jednou za souboj umožňuje magický útok až na dva cíle a Dračí šupiny snižují první fyzické zranění v kole. Podobu dechu určuje konkrétní drak; není potřeba předpokládat u všech stejný živel. Družina může jednat o hranicích území, odhalit, proč mladý drak změnil chování, nebo mu nabídnout cestu z nebezpečného sporu. Přímý střet vyžaduje připravenou obranu i ústup. Dohoda může být možná, pokud drak uvidí skutečný přínos a nemusí ji chápat jako veřejné ponížení."
+    ],
+    "dospely-drak": [
+      "Dospělý drak je zkušená inteligentní bytost, jejíž přítomnost může ovlivňovat celé okolní území. Doupě v horské pevnosti, rozsáhlém podzemí či odlehlé ruině není jen místo k odpočinku: může obsahovat zásoby, památky, cenné předměty a doklady starých dohod. Jeho původ a rodová tradice mohou sahat k událostem, které místní lidé znají pouze z pověstí. Vztah k území bývá mnohem delší než život jednotlivého vládce.",
+      "Obvykle rozhoduje samostatně a dokáže plánovat na dlouhou dobu. Může udržovat služebníky, spojence či závislé osady, aniž by sdílel běžný domov s dalšími draky. Usiluje o bezpečí, vliv a věci, kterým přikládá hodnotu; takovou hodnotou mohou být znalosti či splněná přísaha stejně jako zlato. Povaha se liší. Dospělý drak může být ničivým tyranem, důsledným ochráncem dohody nebo bytostí, která vidí krátkodobé lidské spory jako rušení vlastního klidu.",
+      "Dračí dech může jednou za souboj zasáhnout až dva cíle. Staré dračí šupiny snižují první fyzické i první magické zranění v kole. Pokud družina odhalí a skutečně využije jeho konkrétní slabinu, tato redukce přestane platit a obě obrany klesnou o dva. Pátrání po slabině proto tvoří důležitou část výpravy; její podobu určuje konkrétní příběh a musí mít oporu ve vodítkách. Stejně významná může být dohoda, náprava porušeného slibu nebo nabídka, která odstraní skutečný důvod dračího nepřátelství."
+    ],
+    "prastary-drak": [
+      "Prastarý drak přežil proměny říší, krajiny i lidských rodů. Jeho doupě může být místem s vlastními dějinami, rozsáhlou ochranou a předměty, které měly význam dávno před vznikem dnešních osad. V Elarii se jeho jméno může objevovat v kronikách pod několika podobami, protože jednotlivé kultury si stejnou bytost vykládaly odlišně. Jeho území bývá pečlivě zvolené a změny v okolí málokdy zůstávají bez povšimnutí.",
+      "Je velmi inteligentní, zkušený a zpravidla zvyklý jednat z pozice velké převahy. Může vládnout síti spojenců, ovlivňovat okolí nepřímo nebo zůstávat stranou, dokud někdo nenaruší jeho dlouhý plán. Chce uchovat to, co považuje za podstatné: moc, paměť, slib, území či konkrétní osobu. Věk sám neznamená zlobu ani moudrost bez chyb. Dlouhá samota a jistota vlastní síly mohou způsobit, že podcení rozhodnutí lidí, jejichž životy mu připadají krátké.",
+      "Dračí dech ohrožuje až dva cíle a Prastaré dračí šupiny snižují první fyzické i první magické zranění v kole o tři. Skutečně využitá konkrétní slabina ruší redukci a snižuje fyzickou i magickou obranu o čtyři. Přímý boj bez předchozího pátrání je proto mimořádně nebezpečný. Družina může sbírat stará svědectví, zjistit význam opatrovaného předmětu a vyjednávat o cíli, který drak nepovažuje za malicherný. Slabina i možnost dohody potřebují jasná příběhová vodítka, aby úspěch vycházel z pochopení a přípravy."
+    ],
+    "goblini-nacelnik": [
+      "Gobliní náčelník stojí v čele skupiny, jejíž bezpečí a obživa závisejí na rychlém rozhodování. Může pocházet z uznávané rodiny, prosadit se lstí nebo získat autoritu při obraně tlupy. Sídlí v chráněné části jeskynního tábora, ruin či opuštěného dolu. Kolem něj se soustředí zásoby, důležité informace a předměty, které ostatní uznávají jako znak jeho postavení.",
+      "Je chytřejším a vlivnějším protivníkem než osamělý goblin. Zná potřeby vlastní skupiny a umí využít strach i naději na odměnu. Může rozhodovat samostatně nebo odvádět kořist silnějšímu patronovi, kterého si nemůže dovolit neposlechnout. Hledá zásoby, bezpečí a udržení autority. Násilí proti okolí může být jeho volbou, ale také důsledkem tlaku, o kterém družina zatím neví. Vztahy s hlídkami, rodinami a dalšími významnými gobliny odhalují skutečnou oporu jeho vlády.",
+      "Rozkazy náčelníka posilují útok jednoho gobliního spojence v každém kole, dokud je při vědomí. Záludný úskok mu jednou za souboj zvýší obranu proti vyhlášenému útoku. Družina může odhalit, koho potřebuje ke svému vedení, přerušit zdroj kořisti nebo nabídnout řešení společné hrozby. Rozhovor by měl respektovat, že náčelník potřebuje dohodu obhájit před tlupou. Porážka jediného vůdce sama nemusí odstranit hlad, strach či patrona, kteří konflikt vyvolali."
     ]
   }
 }
