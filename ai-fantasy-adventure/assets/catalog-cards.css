@@ -1,0 +1,33 @@
+.bestiary-print-panel{width:100%;box-sizing:border-box;margin:48px 0;padding:24px;border:1px solid rgba(190,157,96,.38);border-radius:18px;background:var(--surface-2,#16232d)}
+.bestiary-print-panel h2{margin:6px 0 10px;color:var(--ink,#f4f0e8)}
+.bestiary-print-panel p,.bestiary-print-note{color:var(--ink-muted,#b8c2c9)}
+.bestiary-print-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+/* Keep summary and trait typography identical across static page bundles. */
+.detail-hero .beast-summary{margin:0;font-size:1rem;line-height:1.66;color:var(--ink-muted,#bdb5a9)}
+.detail-hero .beast-traits{display:grid;gap:8px;margin:18px 0 0;padding:0;list-style:none}
+.detail-hero .beast-traits>li{display:grid;grid-template-columns:155px minmax(0,1fr);column-gap:12px;row-gap:12px;margin:0;color:#bdb5a9;font-size:1rem;line-height:1.66}
+.detail-hero .beast-traits>li>strong,.detail-hero .beast-traits>li>span,.detail-hero .beast-traits>li>a{display:block;margin:0}
+.detail-hero .beast-traits>li>strong{color:#e9dfd1;font-weight:700}
+.detail-hero .beast-traits>li>a{color:#e6b85b;text-decoration:underline;text-underline-offset:3px}
+.bestiary-card-dialog{position:fixed;inset:50% auto auto 50%;transform:translate(-50%,-50%);margin:0;width:min(1000px,calc(100vw - 28px));max-width:none;max-height:94vh;padding:0;border:1px solid rgba(190,157,96,.48);border-radius:18px;background:#0b141b;color:#f4f0e8;box-shadow:0 24px 100px #000b}
+.bestiary-card-dialog::backdrop{background:rgba(2,7,10,.78);backdrop-filter:blur(4px)}
+.bestiary-card-dialog__header{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 18px;border-bottom:1px solid #33424b}
+.bestiary-card-dialog__header h2{margin:0;font-size:1.05rem;color:#f4f0e8}
+.bestiary-card-dialog__close{width:36px;height:36px;border:1px solid #43525c;border-radius:50%;background:#15232d;color:#d2ae68;font-size:24px;line-height:1;cursor:pointer}
+.bestiary-card-dialog__preview-wrap{display:grid;place-items:center;padding:12px;min-height:180px}
+.bestiary-card-dialog__preview{display:block;width:auto;max-width:100%;max-height:68vh;object-fit:contain;background:#fff;border-radius:6px}
+.bestiary-card-dialog__actions{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;padding:14px 18px 18px}
+.bestiary-card-dialog__actions a{text-decoration:none}
+@media(max-width:620px){.bestiary-print-panel{padding:18px}.bestiary-card-dialog__preview-wrap{padding:8px}.bestiary-card-dialog__preview{max-height:60vh}}
+.detail-hero .kicker a.difficulty-link{color:inherit;text-decoration:underline;text-decoration-color:rgba(226,194,130,.55);text-underline-offset:.18em}
+.detail-hero .kicker a.difficulty-link:hover{text-decoration-color:currentColor}
+
+.beast-profile{margin:0;font-size:1rem;line-height:1.66;color:var(--ink-muted,#bdb5a9)}.beast-profile p{margin:0 0 1em}.beast-profile p:last-child{margin-bottom:0}.detail-hero:has(.beast-profile){align-items:start}.detail-hero .beast-traits>li{grid-template-columns:minmax(0,155px) minmax(0,1fr)}@media(max-width:480px){.detail-hero .beast-traits>li{grid-template-columns:1fr;row-gap:0}.detail-hero .beast-traits>li>a{margin-top:0}}
+
+.catalog-profile{margin:0;font-size:1rem;line-height:1.66;color:var(--ink-muted,#bdb5a9)}
+.catalog-profile p{margin:0 0 1em}.catalog-profile p:last-child{margin-bottom:0}
+.detail-hero:has(.catalog-profile){align-items:start}
+.catalog-traits{display:grid;gap:8px;margin:18px 0 0;padding:0;list-style:none}
+.catalog-traits li{display:grid;grid-template-columns:155px minmax(0,1fr);gap:12px;color:#bdb5a9;font-size:1rem;line-height:1.66}
+.catalog-traits strong{color:#e9dfd1}.catalog-traits a{color:#e6b85b;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:480px){.catalog-traits li{grid-template-columns:1fr;gap:0}}

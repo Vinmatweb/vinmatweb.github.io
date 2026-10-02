@@ -1,0 +1,12 @@
+{
+  "target": 300,
+  "completed": 66,
+  "completedBestiary": 62,
+  "updatedCatalog": [
+    "hero/clovek-bojovnik",
+    "hero/elf-bojovnik",
+    "hero/trpaslik-bojovnik",
+    "hero/ork-bojovnik"
+  ],
+  "latestBatch": 1
+}
