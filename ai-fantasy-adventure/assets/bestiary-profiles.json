@@ -39,7 +39,11 @@
     "troll",
     "kostlivec",
     "kostlivec-lucistnik",
-    "zombie"
+    "zombie",
+    "ghul",
+    "duch",
+    "prizrak",
+    "mumie"
   ],
   "profiles": {
     "krysa": [
@@ -241,6 +245,26 @@
       "Zombie je mrtvé tělo udržované v pohybu temnou magií nebo kletbou. Může povstat na hřbitově, v podzemí či na místě dávné katastrofy; vznik často souvisí s někým nebo něčím, co narušilo klid mrtvých. Rozpadlá výstroj, osobní předmět či známá tvář mohou propojit hrozbu s minulostí osady. Zombie tak připomíná nejen nebezpečí, ale i člověka, jehož příběh neskončil důstojně.",
       "Většinou má omezenou vlastní vůli. Následuje rozkaz, opakuje jednoduché chování nebo reaguje na přítomnost živých podle povahy oživení. Může bloudit sama, zatímco skupina ovládaná nekromantem postupuje za společným cílem. Nedostatek strachu a únavy ji činí vytrvalou; zároveň nedokáže běžně přehodnotit situaci nebo vyjednávat jako člověk. Konkrétní výjimku může tvořit zombie spojená s nezvykle silnou vzpomínkou či kletbou.",
       "Neúnavný znamená, že poprvé při poklesu na nulu životů zůstane na jednom životě; podruhé padne běžně. Vypadá tedy poražená dříve, než skutečně přestane být hrozbou. Pravidla jí nedávají automatické nakažlivé kousnutí ani povinnou slabinu na zásah do hlavy. Družina může oddělit skupinu, zajistit ústup nebo hledat zdroj oživení. Prozkoumání minulosti a odstranění příčiny může mít větší význam než ničení dalších těl, která se stále vracejí."
+    ],
+    "ghul": [
+      "Ghúl je nemrtvý spojený s místy smrti, rozkladu a narušeného klidu. V Elarii obývá hrobky, zpustošené osady a podzemí, kde se drží temná magie. Jeho vznik mohou vysvětlovat různé kletby nebo dlouhé působení nekromancie. Znepokojivé stopy vedou k otevřeným hrobům, zbytkům těl a místům, kde mizí lidé, kteří se vydali hledat ztraceného příbuzného.",
+      "Oproti nemrtvému vykonávajícímu jediný rozkaz může působit jako lovec s vlastní dravou potřebou. Je ostražitý a umí vyčkávat na vhodnou chvíli, ale míru rozumu a zachovaných vzpomínek určuje jeho příběh. Může jednat sám, tvořit skupinu s dalšími ghúly nebo sloužit nekromantovi, který jeho hlad využívá. Živý člověk pro něj obvykle znamená kořist či překážku. Setkání je proto nebezpečné i bez otevřeného nepřátelství předchozího pána.",
+      "Ochromující chlad po zraňujícím zásahu jednou za souboj dočasně snižuje útok i obranu cíle. Oslabený spojenec může rychle potřebovat krytí a pomoc ostatních. Schopnost nezpůsobuje automatické úplné ochrnutí ani proměnu oběti v dalšího ghúla. Družina může zabezpečit místo, odhalit zdroj kletby nebo zachránit někoho, kdo v podzemí ještě přežívá. Pokud má konkrétní ghúl zbytky identity, osobní předmět může být příběhovým vodítkem; jeho účinek však musí vyplynout z daného dobrodružství."
+    ],
+    "duch": [
+      "Duch je přetrvávající nehmotná přítomnost člověka nebo jiné bytosti, jejíž příběh nebyl po smrti uzavřen. Může ho poutat místo, předmět, nesplněný slib nebo násilný čin. V Elarii se objevuje v domech, na starých cestách i v ruinách, kde živí přehlédli událost, která pro mrtvého zůstala zásadní. Chlad, opakovaný zvuk či zjevující se postava mohou odkazovat k posledním okamžikům jeho života.",
+      "Míra vědomí se liší. Některý duch dokáže mluvit a učit se novým skutečnostem, jiný pouze opakuje událost nebo reaguje na určitý podnět. Obvykle je spojen s vlastní minulostí, ale může být pod vlivem kletby či cizí magie. Nemusí být agresivní: může hledat svědka, chránit místo nebo se snažit upozornit na nebezpečí. Strach návštěvníků a neporozumění jeho jednání mohou proměnit sdělení v konflikt.",
+      "Nehmotnost snižuje každé fyzické zranění o dva, zatímco magické zranění se nesnižuje. Duch tedy není zcela nezranitelný, ale běžná zbraň proti němu ztrácí účinnost. Družina může zkusit zjistit jméno, příčinu smrti a význam opakovaného projevu. Splnění slibu či odhalení pravdy mohou být cestou ke klidu, pokud odpovídají konkrétnímu příběhu. Rozumný duch může poskytnout informace, které živí nemají; neměl by však automaticky znát vše, co se od jeho smrti odehrálo."
+    ],
+    "prizrak": [
+      "Přízrak vzniká tam, kde smrt, kletba nebo dlouho hromaděná temná magie vytvořily obzvlášť nebezpečnou přítomnost. V Elarii se drží míst spojených se strachem a násilím: opuštěných pevností, znesvěcených svatyní či podzemí, kam lidé přestali chodit. Jeho podoba může připomínat původního člověka, ale také jen stín, který si zachoval několik rozpoznatelných znaků.",
+      "Často působí záměrněji a hrozivěji než duch opakující vzpomínku. Může hlídat tajemství, sledovat cíl pomsty nebo sloužit tomu, kdo jej přivolal. Někdy jedná samostatně, jindy je součástí širšího prokletí. Vlastní inteligence a možnost rozhovoru závisí na původu: mocný hněv může potlačit vše kromě jediného záměru. Nemusí útočit na každého bez rozdílu, pokud jeho hrozbu spouští konkrétní čin nebo totožnost.",
+      "Mrazivý dotek mu umožňuje magický útok a Částečná nehmotnost snižuje fyzické zranění o jeden. Magické zranění se touto ochranou nesnižuje. Družina proto potřebuje počítat s útokem, proti kterému fyzická obrana není hlavním prostředkem. Zkoumání místa může odhalit, co přízrak váže a koho ve skutečnosti hledá. Zničení pouta, náprava křivdy či bezpečné obejití místa mohou nabídnout řešení, ale jejich podmínky musí určit příběh, nikoli obecná pověra o všech nemrtvých."
+    ],
+    "mumie": [
+      "Mumie je zachované tělo, které po smrti znovu uvedla do pohybu kletba, nekromancie nebo starobylá ochrana. Její domov bývá v hrobce, chrámovém podzemí či pohřební stavbě zapomenuté kultury. Obvazy, šperky a nápisy mohou určit původ i původní postavení mrtvého. Otevření hrobky může spustit obranu, která byla vytvořena pro svět s úplně jinými pravidly než dnešní Elaria.",
+      "Může být strážcem, vykonavatelem příkazu nebo bytostí se zachovanou částí vzpomínek. Některá chrání pohřební výbavu, jiná hledá předmět odnesený z hrobky. Samostatná mumie může představovat pohřbeného vládce, více mumií doprovod či stráž. Ovládání se může opírat o dávný rituál nebo současného nekromanta. Agrese často souvisí s narušením chráněného místa, nikoli s potřebou potravy nebo běžné kořisti.",
+      "Kletba po úspěšném zranění jednou za souboj dočasně zhorší všechny výsledné hody cíle. Starobylá ochrana zvyšuje magickou obranu, takže samotná magie nemusí být snadným řešením. Tento účinek nepředstavuje automaticky trvalou nemoc a profil nestanovuje zvláštní slabinu na oheň. Družina může přeložit nápisy, vrátit odnesenou věc nebo hledat způsob oprávněného vstupu. Pochopení pohřebních pravidel dokáže změnit dojem slepého násilí v řešitelný spor o to, co bylo mrtvým slíbeno."
     ]
   }
 }
