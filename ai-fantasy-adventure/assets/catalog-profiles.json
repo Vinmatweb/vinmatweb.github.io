@@ -93,7 +93,11 @@
     "hero/ork-bard",
     "hero/pulcik-bard",
     "hero/vila-bojovnik",
-    "hero/vila-hranicar"
+    "hero/vila-hranicar",
+    "hero/vila-kouzelnik",
+    "hero/vila-zlodej",
+    "hero/vila-lecitel",
+    "hero/vila-bard"
   ],
   "profiles": {
     "best/krysa": [
@@ -565,6 +569,26 @@
       "Víla hraničářka může poznávat zarostlé stezky, pomáhat ztraceným poutníkům a zkoumat proměny míst blízkých své komunitě. Obratnost podporuje průzkum, drobná síla však omezuje těžší ochranu a vybavení. Je vhodná pro postavu, která v přírodě hledá souvislosti a pečuje o bezpečný pohyb celé skupiny. Vlastní zvědavost může vést k výpravě stejně dobře jako povinnost chránit domov.",
       "V družině pomáhá plánovat cestu, sledovat použitelné stopy a rozpoznávat změny krajiny. Před vstupem do nebezpečného místa může zjišťovat přístupy, kryt a možnosti návratu. Stopařská dovednost neurčuje totožnost každého tvora ani jeho úmysl; informace je potřeba spojovat s dalšími vodítky. Hraničář se tak uplatní i při záchraně ztracené osoby, hledání vody a rozhodování, kdy má skupina raději zastavit.",
       "Rasová schopnost Vílí prach: Každé léčení provedené vílou obnoví o 1 Ž navíc. Povolání přidává schopnost Stopař: Automaticky pozná směr, kterým odešla hledaná osoba nebo zvíře, pokud existují použitelné stopy. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/vila-kouzelnik": [
+      "Víla kouzelnice spojuje magické nadání s vysokou chytrostí a obratností. Může studovat u zkušeného učitele, hledat vysvětlení podivného jevu nebo poznávat kouzla užitečná pro ochranu svého domova. Nízká síla a menší zásoba životů podporují opatrné postavení v družině. Vílí prach se projeví při léčení, ale neruší potřebu léčivé kouzlo opravdu znát a správně ho použít.",
+      "V družině pomáhá rozpoznat magii a vybírat známé kouzlo podle skutečného problému. Uplatní se při průzkumu zvláštních míst, řešení hádanek i ochraně spojenců. Splnění požadované chytrosti samo nové kouzlo nenaučí; znalosti musí získat od učitele, z knihy či v příběhu. Magický cit upozorní na přítomnost magie, ale neodhalí automaticky její účel, spouštěč ani bezpečnost. Opatrné otázky proto patří k jeho práci.",
+      "Rasová schopnost Vílí prach: Každé léčení provedené vílou obnoví o 1 Ž navíc. Povolání přidává schopnost Magický cit: Automaticky pozná, že předmět, místo nebo bytost jsou magické. Sám o sobě neodhalí přesný druh, účel, spouštěč ani nebezpečí magie. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/vila-zlodej": [
+      "Víla zlodějka může být průzkumnicí, doručovatelkou tajných zpráv nebo hledačkou odcizených věcí. Obratnost a nenápadný pohyb jí dávají jasnou roli při objevování, zatímco drobná síla omezuje silová řešení. Nemusí být sobecká ani nepoctivá. Tiché kroky neumožňují zmizet na otevřeném prostranství a vzhled víly sám nenahrazuje úkryt, proto potřebuje pečlivě číst skutečné prostředí.",
+      "V družině pomáhá získat informace, projít nenápadně a otevřít přístup pomocí vhodných nástrojů. Největší hodnotu často přinese před bojem, když skupina díky průzkumu pochopí, čemu se může vyhnout. Tiché kroky usnadňují běžné plížení, ale výjimečná překážka může vyžadovat hod a neexistující úkryt nevytvoří. Důvěra ostatních závisí na jeho rozhodnutích, proto je užitečné určit vlastní hranice a vztah k cizímu majetku.",
+      "Rasová schopnost Vílí prach: Každé léčení provedené vílou obnoví o 1 Ž navíc. Povolání přidává schopnost Tiché kroky: Při běžném plížení Vaelor předpokládá úspěch. Hod vyžaduje jen výjimečná překážka; schopnost neumožní ukrýt se tam, kde je to objektivně nemožné. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/vila-lecitel": [
+      "Víla léčitelka je přirozenou volbou pro hráče, který chce chránit druhé pomocí péče a magie. Může opatrovat lesní komunitu, doprovázet přátele nebo hledat pomoc pro nemocného blízkého. Vílí prach podporuje léčení a vysoká chytrost posiluje její hlavní roli. Sama je však drobná a zranitelná, proto je důležitá spolupráce: družina chrání léčitelku stejně jako ona pomáhá družině.",
+      "V družině pomáhá rozhodovat, kdy ošetřit zranění, použít známé léčivé kouzlo a kdy zajistit bezpečný odpočinek. První pomoc je samostatná schopnost a nespotřebovává magický limit léčení. Počet obnovených životů vychází ze skutečné chytrosti a nemůže překročit maximum ošetřovaného. Dobrý léčitel potřebuje prostor k práci a podporu druhých; prevence nebezpečí má často stejnou hodnotu jako další zásah léčivou magií.",
+      "Rasová schopnost Vílí prach: Každé léčení provedené vílou obnoví o 1 Ž navíc. Povolání přidává schopnost První pomoc: 1× za souboj obnoví sobě nebo jednomu spojenci ⌈CH/2⌉ Ž, nejvýše do maxima. Není to léčivé kouzlo a nespotřebuje magický limit léčení. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/vila-bard": [
+      "Víla bardka může přinášet písně z odlehlých míst, spojovat různé komunity a povzbuzovat přátele během náročné cesty. Obratnost a štěstí podporují její styl, ale rozhodující zůstává vlastní vztah k posluchačům. Může být veselá, klidná i ostýchavá. Hudba nemusí být hlavním cílem každé scény; dobře zvolený příběh nebo malé gesto mohou vyjádřit podporu stejně přirozeně.",
+      "V družině pomáhá při jednání, poznávání místních příběhů a podpoře spojenců. Může se stát prostředníkem mezi lidmi, kteří si nerozumějí, nebo připomenout důležitou souvislost v pravou chvíli. Povzbuzení mění bonus odhaleného virtuálního hodu o jeden stupeň, nejvýše do maxima dané kategorie; není to libovolné zvýšení každého výsledku. Vyprávění, hudba i naslouchání dávají bardovi smysluplnou roli také ve scénách, které nevedou k boji.",
+      "Rasová schopnost Vílí prach: Každé léčení provedené vílou obnoví o 1 Ž navíc. Povolání přidává schopnost Povzbuzení: Jednou v daném souboji nebo významné scéně může po odhalení virtuálního hodu sobě nebo spojenci zvýšit bonus hodu o jeden stupeň, nejvýše do maxima dané kategorie. Nevyžaduje hlavní akci a nepoužívá se na nepřítele. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
     ]
   }
 }

@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 94,
+  "completed": 98,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -34,7 +34,11 @@
     "hero/ork-bard",
     "hero/pulcik-bard",
     "hero/vila-bojovnik",
-    "hero/vila-hranicar"
+    "hero/vila-hranicar",
+    "hero/vila-kouzelnik",
+    "hero/vila-zlodej",
+    "hero/vila-lecitel",
+    "hero/vila-bard"
   ],
-  "latestBatch": 8
+  "latestBatch": 9
 }
