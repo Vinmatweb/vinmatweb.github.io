@@ -51,7 +51,11 @@
     "harpyje",
     "gryfon",
     "bazilisek",
-    "kamenny-golem"
+    "kamenny-golem",
+    "elemental",
+    "chimera",
+    "hydra",
+    "wyverna"
   ],
   "profiles": {
     "krysa": [
@@ -313,6 +317,26 @@
       "Kamenný golem je uměle vytvořený strážce, jehož tělo drží pohromadě magie a runové jádro. Může pocházet z dílny mága, chrámu nebo dávné kultury, která potřebovala ochranu přesahující lidský život. V Elarii střeží brány, trezory, chodby a zapomenuté sály. Materiál, nápisy a způsob opracování mohou odhalit tvůrce i původní účel, i když se stavba kolem něj už změnila k nepoznání.",
       "Obvykle plní vymezené příkazy. Nepotřebuje potravu, odměnu ani běžný odpočinek a nemusí rozumět změnám, které nejsou zahrnuté v jeho zadání. Může čekat nehybně do chvíle, kdy někdo splní podmínku spuštění. Jeden golem chrání konkrétní přístup, více golemů může tvořit celý obranný systém. Řídí ho současný pán, původní příkaz nebo ovládací prostředek podle jeho vzniku.",
       "Kamenné tělo snižuje každé fyzické zranění o dva. Pokud jediný magický útok způsobí alespoň čtyři zranění, redukce se do začátku dalšího kola golema nepoužívá; to představuje přesnou bojovou zranitelnost Runového jádra. Družina může zkoumat podmínku průchodu, hledat znak oprávnění nebo odhalit chybu starého příkazu. Ovládací kámen či heslo mohou existovat, jejich podobu ale určuje příběh. Golem nemusí být zlý: může důsledně chránit něco, jehož skutečný význam už živí zapomněli."
+    ],
+    "elemental": [
+      "Elementál je bytost utvářená silou jednoho živlu, například ohně, vody, země nebo vzduchu. V Elarii může vzniknout v místě mimořádného soustředění magie nebo být přivolán rituálem. Jeho tělo se chová podle podstaty živlu a nemusí připomínat žádné známé zvíře. V okolí lze pozorovat změny teploty, proudění, vlhkosti či pohyb materiálu, které neodpovídají běžným podmínkám.",
+      "Může jednat podle vlastní jednoduché potřeby, bránit své místo nebo plnit příkaz přivolávajícího. Jeho vnímání není nutně lidské: to, co člověk považuje za ničení, může elementál vnímat jako přirozené šíření či obnovu. Obvykle se setkáváme s jedincem, ale silně narušené místo může přitahovat více podobných bytostí. Možnost rozhovoru, trvání přivolání a závazek vůči pánovi závisejí na jeho konkrétním původu.",
+      "Elementární výboj umožňuje magický útok. Elementární podstata obvykle zvyšuje magickou obranu o dva, zatímco proti magii, která je zjevně přirozeným protikladem jeho živlu, má místo toho magickou obranu sníženou o dva. Před střetem je proto důležité určit podstatu tvora. Družina může hledat zdroj narušení, obnovit rovnováhu místa nebo rozkrýt podmínky přivolání. Pouhá přítomnost obyčejné vody či hlíny automaticky neznamená stejný účinek jako odpovídající magický útok."
+    ],
+    "chimera": [
+      "Chiméra je nestvůra, jejíž tělo spojuje znaky několika odlišných tvorů. V Elarii se její vznik připisuje divoké magii, dávným pokusům i oblastem, kde se přírodní řád dlouhodobě mění. Usazuje se v odlehlých skalách, jeskyních a ruinách s dostatkem prostoru. Nesourodé stopy a neobvyklé zbytky kořisti mohou družinu zmást, jako by místo obývalo několik různých predátorů.",
+      "Jednotlivá chiméra může mít jinou podobu, ale tento bojový profil vychází z prudkých fyzických útoků. Obvykle je samotářským lovcem a obráncem teritoria. Při hledání potravy využívá sílu, pohyb a překvapení; nemusí být schopná složitého lidského jednání. Pokud ji někdo chová nebo ovládá, potřebuje mít konkrétní prostředek a záměr. Hlad, zranění nebo ztráta doupěte mohou vysvětlit útoky mimo původní území.",
+      "Dvojitý výpad jí jednou za souboj umožňuje dva fyzické útoky v jednom tahu, každý se sníženým výsledkem útoku. Družina musí počítat s náhlým zvýšením tlaku na obranu. Profil jí automaticky nepřidává dračí dech ani jiné schopnosti podle každé možné hlavy; ty by musely patřit ke zvláštní variantě. Pátrání po původu chiméry může vést k opuštěné laboratoři či narušenému místu. Bezpečný obchvat nebo odstranění příčiny jejího přesunu mohou zachránit okolní osadu bez dalšího přímého střetu."
+    ],
+    "hydra": [
+      "Hydra je mohutná vícehlavá nestvůra, která vyhledává mokřady, zatopené jeskyně a odlehlá údolí s velkým množstvím potravy. V Elarii se její původ pojí s dávnými vodními hlubinami a místy poznamenanými silnou magií. Rozryté břehy, několik stop po útoku na jednom těle kořisti a nezvykle pusté napajedlo mohou upozornit na její loviště. Její přítomnost může uzavřít celou důležitou cestu.",
+      "Obvykle žije samotářsky a prosazuje se velikostí i několika hlavami, které sledují různé směry. Neznamená to několik samostatných osobností se schopností lidského rozhovoru. Jedná jako nebezpečný lovec a obránce území, který potřebuje mnoho potravy. Některý příběh může spojit hydru s chovatelem, kletbou nebo ochranou dávného místa; způsob řízení však musí být vysvětlen, protože běžná nestvůra nemá důvod poslouchat cizí rozkazy.",
+      "Více hlav dovoluje každé kolo zaútočit na dva různé cíle, oba oslabeným útokem. Houževnaté krky snižují první dvě zranění v kole o tři, takže obrana hydry nezávisí jen na vysokém počtu životů. Pravidla jí automaticky nepřidávají dorůstání hlav ani povinnou slabinu na oheň. Družina může potřebovat připravit přechod, zajistit ústup a zjistit, proč se hydra přesunula k osadě. Odvedení od cesty či vyřešení původního narušení prostředí může být plnohodnotným cílem výpravy."
+    ],
+    "wyverna": [
+      "Wyverna je velká okřídlená nestvůra s dravým tělem a nebezpečným jedovým bodcem. V Elarii hnízdí na skalách, vysokých ruinách a horských výběžcích, odkud dokáže sledovat okolní krajinu. Zbytky kořisti pod hnízdem a stopy velkých pařátů prozrazují její přítomnost. Přestože může na první pohled připomínat draka, její chování vychází především z lovu a obrany vlastního prostoru.",
+      "Často žije sama nebo v páru s mladými. Je pozorná a schopná využít výhodné podmínky, ale tento profil jí nepřisuzuje dračí učenost či touhu budovat rozsáhlý poklad. Hledá potravu a bezpečné hnízdiště. Může napadat stáda, pokud pro ni znamenají snadnější kořist než zvířata v horách. Pokud slouží člověku či jinému pánovi, vztah musí vycházet z konkrétního chovu, výcviku nebo magie.",
+      "Jedový bodec jednou za souboj přidá po fyzickém zásahu dvě zranění, pokud základní útok opravdu zranil. Není to automatická dlouhodobá otrava ani další útok bez podmínky. Výška, otevřený prostor a možnost krytu mění nebezpečí střetu. Družina může dohledat hnízdo, zabránit dalším útokům na stáda nebo pomoci majiteli získat zpět uniklou nestvůru. Poznání příčiny jejího chování často pomůže zvolit mezi přímým střetem, zabezpečením okolí a změnou cesty."
     ]
   }
 }
