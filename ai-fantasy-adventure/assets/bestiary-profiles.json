@@ -43,7 +43,11 @@
     "ghul",
     "duch",
     "prizrak",
-    "mumie"
+    "mumie",
+    "upir",
+    "nekromant",
+    "obri-had",
+    "obri-pavouk"
   ],
   "profiles": {
     "krysa": [
@@ -265,6 +269,26 @@
       "Mumie je zachované tělo, které po smrti znovu uvedla do pohybu kletba, nekromancie nebo starobylá ochrana. Její domov bývá v hrobce, chrámovém podzemí či pohřební stavbě zapomenuté kultury. Obvazy, šperky a nápisy mohou určit původ i původní postavení mrtvého. Otevření hrobky může spustit obranu, která byla vytvořena pro svět s úplně jinými pravidly než dnešní Elaria.",
       "Může být strážcem, vykonavatelem příkazu nebo bytostí se zachovanou částí vzpomínek. Některá chrání pohřební výbavu, jiná hledá předmět odnesený z hrobky. Samostatná mumie může představovat pohřbeného vládce, více mumií doprovod či stráž. Ovládání se může opírat o dávný rituál nebo současného nekromanta. Agrese často souvisí s narušením chráněného místa, nikoli s potřebou potravy nebo běžné kořisti.",
       "Kletba po úspěšném zranění jednou za souboj dočasně zhorší všechny výsledné hody cíle. Starobylá ochrana zvyšuje magickou obranu, takže samotná magie nemusí být snadným řešením. Tento účinek nepředstavuje automaticky trvalou nemoc a profil nestanovuje zvláštní slabinu na oheň. Družina může přeložit nápisy, vrátit odnesenou věc nebo hledat způsob oprávněného vstupu. Pochopení pohřebních pravidel dokáže změnit dojem slepého násilí v řešitelný spor o to, co bylo mrtvým slíbeno."
+    ],
+    "upir": [
+      "Upír je inteligentní nemrtvý, který může uchovat vzpomínky, dovednosti i ambice původního života. Jeho vznik v Elarii se pojí s kletbou, temným rituálem nebo působením jiného upíra podle příběhu konkrétní postavy. Bezpečné zázemí hledá v místech chráněných před přímým sluncem: v podzemí, odlehlém sídle nebo pečlivě spravovaném domě. Nemusí působit jako zjevná nestvůra; upravené vystupování a dlouhé zkušenosti mu mohou umožnit skrývat pravou povahu.",
+      "Může jednat samotářsky, udržovat síť služebníků nebo patřit ke skupině s vlastním vedením a pravidly. Hledá krev či životní sílu, bezpečí a možnost zachovat vliv. Rozumí lidem a může je využívat, ale jeho osobnost, vztahy a hranice se liší. Pověsti o česneku, svěcené vodě, pozvání do domu či zvláštním způsobu zničení se v různých krajích rozcházejí. Mohou být vodítkem při pátrání; jejich skutečnou účinnost je třeba ověřit pro konkrétního upíra v daném dobrodružství.",
+      "Jeho skutečnou slabinou podle těchto pravidel je přímé sluneční světlo. Na slunci neplatí redukce prvního fyzického a magického zranění, fyzická i magická obrana klesnou o čtyři a nemůže použít Sání života. Ve stínu mu úspěšný zásah tesáky může jednou za souboj obnovit tři životy. Družina může plánovat čas a místo střetu, hledat oběti či rozkrývat jeho síť. Vyjednávání je možné s bytostí, která rozumí vlastnímu prospěchu, ale její dlouhodobý plán může přesahovat krátký slib."
+    ],
+    "nekromant": [
+      "Nekromant je živý uživatel magie zaměřené na smrt, pozůstatky a síly, které mohou udržovat nemrtvé v pohybu. Jeho znalosti mohou pocházet ze zakázaných knih, tajného učitele či vlastního výzkumu. V Elarii hledá klidné zázemí u hrobek, bojišť a jiných míst spojených s mrtvými, ale může pracovat také ve městě pod jinou zástěrkou. Stopy jeho činnosti zahrnují narušené hroby, zvláštní objednávky a opakované zmizení stejných druhů předmětů.",
+      "Je inteligentní a umí plánovat. Může jednat sám, vést učně nebo sloužit mocnějšímu patronovi; nemrtví pro něj mohou být strážci i pracovní prostředek. Motivací bývá moc, poznání, strach ze smrti nebo snaha vrátit ztraceného člověka. Takový důvod vysvětluje jednání, ale neospravedlňuje jeho následky. Rozsah ovládání nemrtvých a rituálů určuje konkrétní dobrodružství, nikoli automaticky tento bojový profil.",
+      "Temný výboj poskytuje magický útok a Temný štít zvyšuje obranu proti prvnímu magickému útoku v kole. Nekromant proto může být nebezpečný i bez služebníků. Družina může odhalit jeho zázemí, přerušit přípravy nebo zjistit, kdo mu dodává prostředky. Rozhovor může odhalit podmínku, které se nechce vzdát, i slabé místo jeho plánu. Pokud jedná z osobní ztráty, může nabídka jiného řešení změnit situaci; pokud sleduje ovládnutí okolí, může informace jen využít k získání času."
+    ],
+    "obri-had": [
+      "Obří had vyhledává prostředí s dostatkem úkrytů a velké kořisti: mokřady, husté porosty, teplé skalní dutiny a zarostlé ruiny. Jeho nezvyklá velikost může v Elarii souviset s místními podmínkami, magií či dávným chovem, podle původu konkrétního jedince. Široká stopa v měkké půdě, svlečená kůže a zmizelá zvířata upozorňují, že běžný obraz drobného hada není na místě.",
+      "Obvykle žije samotářsky. Vnímá pohyb a okolí podle svých smyslů, šetří síly a vyčkává na kořist, která se přiblíží. Neřídí ho společenský vůdce, pokud ho někdo neovlivňuje konkrétní magií. Jeho hlavní motivací je potrava, bezpečí a obrana úkrytu. Hluk, narušení doupěte či blokování ústupu mohou vyvolat útok i v situaci, kdy původně nelovil.",
+      "Silný jed se uplatní, pokud uštknutí skutečně způsobí zranění; oběť ztratí další dva životy na konci příštího kola a účinek se nesčítá. Opožděné zranění je potřeba zahrnout do plánu pomoci a ústupu. Profil nepřidává automatické sevření či škrcení. Družina může hledat obchvat, vyjasnit důvod jeho přítomnosti nebo zabezpečit cestu kolem loviště. Had, který se objevil u osady náhle, může odkazovat k narušenému močálu nebo někomu, kdo ho přivezl jako nebezpečnou stráž."
+    ],
+    "obri-pavouk": [
+      "Obří pavouk obývá jeskyně, zarostlé lesy, podzemní prostory a opuštěné stavby, kde může upevnit síť. V Elarii může pocházet z divoké populace nebo z místa dlouhodobě ovlivněného magií. Zbytky sítí, obalená kořist a jemné chvění vláken varují před jeho blízkostí. Síť nemusí být jen překážkou; může pavoukovi pomáhat rozpoznat pohyb v prostoru, kam přímo nevidí.",
+      "Jedná především jako lovec. Často žije samostatně, i když větší zamoření může obsahovat více jedinců a mladé. Nesleduje lidské bohatství ani běžnou pomstu; kořist, bezpečí a obrana úkrytu vysvětlují většinu jeho chování. Může trpělivě čekat a zaútočit až ve chvíli, kdy je cíl v nevýhodné pozici. Pokud slouží jiné bytosti, způsob ovládání musí vysvětlit konkrétní příběh.",
+      "Jed po zraňujícím zásahu kusadly působí další ztrátu života na konci příštího kola. Síť jednou za souboj dočasně snižuje obranu cíle o dva; nejde automaticky o úplné znehybnění. Kombinace obou účinků dělá izolovanou postavu zranitelnou. Družina může prozkoumat upevnění sítí, zvolit jinou cestu nebo vyprostit dosud živou oběť. Náhlé rozšíření pavouků může ukazovat na opuštěný prostor, změnu dostupné potravy nebo na otevření podzemí, které mělo zůstat uzavřené."
     ]
   }
 }
