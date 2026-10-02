@@ -77,7 +77,11 @@
     "hero/trpaslik-kouzelnik",
     "hero/ork-kouzelnik",
     "hero/pulcik-kouzelnik",
-    "hero/clovek-zlodej"
+    "hero/clovek-zlodej",
+    "hero/elf-zlodej",
+    "hero/trpaslik-zlodej",
+    "hero/ork-zlodej",
+    "hero/pulcik-zlodej"
   ],
   "profiles": {
     "best/krysa": [
@@ -469,6 +473,26 @@
       "Lidský zloděj je odborníkem na nenápadný pohyb a přístup do míst, kam běžná cesta nevede. Může být průzkumníkem ruin, pomocníkem stráže nebo bývalým kapsářem, který změnil život. Název povolání neurčuje morálku postavy. Přizpůsobivost podporuje hrdinu, který improvizuje a učí se z neúspěchu, zatímco jeho skutečné hodnoty poznáme z toho, komu pomáhá a co odmítá udělat.",
       "V družině pomáhá získat informace, projít nenápadně a otevřít přístup pomocí vhodných nástrojů. Největší hodnotu často přinese před bojem, když skupina díky průzkumu pochopí, čemu se může vyhnout. Tiché kroky usnadňují běžné plížení, ale výjimečná překážka může vyžadovat hod a neexistující úkryt nevytvoří. Důvěra ostatních závisí na jeho rozhodnutích, proto je užitečné určit vlastní hranice a vztah k cizímu majetku.",
       "Rasová schopnost Přizpůsobivost: 1× za dobrodružství po vlastním neúspěšném hodu hod zopakuje. Vaelor vytvoří novou náhodnou permutaci, hráč znovu zvolí číslo a použije se lepší z obou výsledků. Povolání přidává schopnost Tiché kroky: Při běžném plížení Vaelor předpokládá úspěch. Hod vyžaduje jen výjimečná překážka; schopnost neumožní ukrýt se tam, kde je to objektivně nemožné. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/elf-zlodej": [
+      "Elfí zloděj propojuje nenápadný pohyb s pozorným zrakem a bystrým úsudkem. Může sledovat podezřelého, zkoumat opuštěné sídlo nebo pomáhat družině získat informace bez otevřeného střetu. Snadno si všimne viditelného detailu, ale pohled sám neodhalí tajný úmysl ani dokonale skrytý mechanismus. Hodí se pro hráče, kterého baví průzkum, pozorování a promyšlená spolupráce.",
+      "V družině pomáhá získat informace, projít nenápadně a otevřít přístup pomocí vhodných nástrojů. Největší hodnotu často přinese před bojem, když skupina díky průzkumu pochopí, čemu se může vyhnout. Tiché kroky usnadňují běžné plížení, ale výjimečná překážka může vyžadovat hod a neexistující úkryt nevytvoří. Důvěra ostatních závisí na jeho rozhodnutích, proto je užitečné určit vlastní hranice a vztah k cizímu majetku.",
+      "Rasová schopnost Ostrý zrak: Automaticky si všimne vzdáleného viditelného detailu, stop nebo pohybu, pokud nejsou magicky či objektivně skryté. Povolání přidává schopnost Tiché kroky: Při běžném plížení Vaelor předpokládá úspěch. Hod vyžaduje jen výjimečná překážka; schopnost neumožní ukrýt se tam, kde je to objektivně nemožné. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/trpaslik-zlodej": [
+      "Trpasličí zloděj může být průzkumníkem podzemních staveb, zachráncem uvězněných lidí nebo znalcem bezpečných cest za zamčenou branou. Cit pro kámen mu pomáhá číst prostředí, v němž ostatní vidí pouze stěnu. Výcvik zloděje podporuje obratnost, zatímco zachovaná síla nabízí praktické možnosti. Jeho role je zajímavá právě spojením nenápadnosti s odvahou proniknout do neznámého podzemí.",
+      "V družině pomáhá získat informace, projít nenápadně a otevřít přístup pomocí vhodných nástrojů. Největší hodnotu často přinese před bojem, když skupina díky průzkumu pochopí, čemu se může vyhnout. Tiché kroky usnadňují běžné plížení, ale výjimečná překážka může vyžadovat hod a neexistující úkryt nevytvoří. Důvěra ostatních závisí na jeho rozhodnutích, proto je užitečné určit vlastní hranice a vztah k cizímu majetku.",
+      "Rasová schopnost Cit pro kámen: V relevantním kamenném/podzemním prostředí automaticky rozpozná dutiny, tajné chodby, nestabilní skálu, kvalitní rudu nebo neobvyklé vlastnosti kamene. Povolání přidává schopnost Tiché kroky: Při běžném plížení Vaelor předpokládá úspěch. Hod vyžaduje jen výjimečná překážka; schopnost neumožní ukrýt se tam, kde je to objektivně nemožné. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/ork-zlodej": [
+      "Orčí zloděj kombinuje sílu s výcvikem v nenápadném pohybu. Může být zvědem, vyšetřovatelem nebo člověkem, který se specializuje na vysvobození ostatních. Velká postava může ovlivnit příběhové možnosti úkrytu, ale schopnost Tiché kroky má stejná pravidla jako u jiných ras. Výhodou je různorodost řešení: někdy otevře cestu pozorováním, jindy nástrojem či silou podle skutečné situace.",
+      "V družině pomáhá získat informace, projít nenápadně a otevřít přístup pomocí vhodných nástrojů. Největší hodnotu často přinese před bojem, když skupina díky průzkumu pochopí, čemu se může vyhnout. Tiché kroky usnadňují běžné plížení, ale výjimečná překážka může vyžadovat hod a neexistující úkryt nevytvoří. Důvěra ostatních závisí na jeho rozhodnutích, proto je užitečné určit vlastní hranice a vztah k cizímu majetku.",
+      "Rasová schopnost Bojová zuřivost: Když má méně než polovinu maximálních Ž, získává +1 k výsledku každého útoku zblízka. Povolání přidává schopnost Tiché kroky: Při běžném plížení Vaelor předpokládá úspěch. Hod vyžaduje jen výjimečná překážka; schopnost neumožní ukrýt se tam, kde je to objektivně nemožné. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/pulcik-zlodej": [
+      "Půlčík zloděj je přirozenou volbou pro hráče, který chce vysokou obratnost, štěstí a důležitou roli při průzkumu. Může být poslem, hledačem ztracených věcí či nenápadným ochráncem sousedů. Drobnost nenahrazuje skutečný úkryt a nízká síla omezuje výstroj. Zajímavá postava nemusí krást přátelům; může mít jasný vlastní kodex a schopnosti používat pro bezpečí družiny.",
+      "V družině pomáhá získat informace, projít nenápadně a otevřít přístup pomocí vhodných nástrojů. Největší hodnotu často přinese před bojem, když skupina díky průzkumu pochopí, čemu se může vyhnout. Tiché kroky usnadňují běžné plížení, ale výjimečná překážka může vyžadovat hod a neexistující úkryt nevytvoří. Důvěra ostatních závisí na jeho rozhodnutích, proto je užitečné určit vlastní hranice a vztah k cizímu majetku.",
+      "Rasová schopnost Šťastlivec: 1× za dobrodružství po vlastním neúspěšném virtuálním hodu změní výsledek na těsný úspěch. Hod se neopakuje; jde o nejnižší nutný úspěch bez dodatečné výhody. Povolání přidává schopnost Tiché kroky: Při běžném plížení Vaelor předpokládá úspěch. Hod vyžaduje jen výjimečná překážka; schopnost neumožní ukrýt se tam, kde je to objektivně nemožné. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
     ]
   }
 }
