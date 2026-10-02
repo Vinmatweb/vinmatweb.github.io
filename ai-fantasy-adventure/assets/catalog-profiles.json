@@ -81,7 +81,11 @@
     "hero/elf-zlodej",
     "hero/trpaslik-zlodej",
     "hero/ork-zlodej",
-    "hero/pulcik-zlodej"
+    "hero/pulcik-zlodej",
+    "hero/clovek-lecitel",
+    "hero/elf-lecitel",
+    "hero/trpaslik-lecitel",
+    "hero/ork-lecitel"
   ],
   "profiles": {
     "best/krysa": [
@@ -493,6 +497,26 @@
       "Půlčík zloděj je přirozenou volbou pro hráče, který chce vysokou obratnost, štěstí a důležitou roli při průzkumu. Může být poslem, hledačem ztracených věcí či nenápadným ochráncem sousedů. Drobnost nenahrazuje skutečný úkryt a nízká síla omezuje výstroj. Zajímavá postava nemusí krást přátelům; může mít jasný vlastní kodex a schopnosti používat pro bezpečí družiny.",
       "V družině pomáhá získat informace, projít nenápadně a otevřít přístup pomocí vhodných nástrojů. Největší hodnotu často přinese před bojem, když skupina díky průzkumu pochopí, čemu se může vyhnout. Tiché kroky usnadňují běžné plížení, ale výjimečná překážka může vyžadovat hod a neexistující úkryt nevytvoří. Důvěra ostatních závisí na jeho rozhodnutích, proto je užitečné určit vlastní hranice a vztah k cizímu majetku.",
       "Rasová schopnost Šťastlivec: 1× za dobrodružství po vlastním neúspěšném virtuálním hodu změní výsledek na těsný úspěch. Hod se neopakuje; jde o nejnižší nutný úspěch bez dodatečné výhody. Povolání přidává schopnost Tiché kroky: Při běžném plížení Vaelor předpokládá úspěch. Hod vyžaduje jen výjimečná překážka; schopnost neumožní ukrýt se tam, kde je to objektivně nemožné. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/clovek-lecitel": [
+      "Lidský léčitel se může vydat na cestu z péče o sousedy, po zkušenosti s nemocí v rodině nebo na žádost svého učitele. Spojuje praktickou pomoc s poznáváním magie a lidí. V družině vytváří prostor, aby ostatní mohli pokračovat, ale má i vlastní cíle a rozhodnutí. Přizpůsobivost mu pomáhá zvládnout omyl; neznamená, že má vyřešit každé zranění nebo nést odpovědnost za všechny sám.",
+      "V družině pomáhá rozhodovat, kdy ošetřit zranění, použít známé léčivé kouzlo a kdy zajistit bezpečný odpočinek. První pomoc je samostatná schopnost a nespotřebovává magický limit léčení. Počet obnovených životů vychází ze skutečné chytrosti a nemůže překročit maximum ošetřovaného. Dobrý léčitel potřebuje prostor k práci a podporu druhých; prevence nebezpečí má často stejnou hodnotu jako další zásah léčivou magií.",
+      "Rasová schopnost Přizpůsobivost: 1× za dobrodružství po vlastním neúspěšném hodu hod zopakuje. Vaelor vytvoří novou náhodnou permutaci, hráč znovu zvolí číslo a použije se lepší z obou výsledků. Povolání přidává schopnost První pomoc: 1× za souboj obnoví sobě nebo jednomu spojenci ⌈CH/2⌉ Ž, nejvýše do maxima. Není to léčivé kouzlo a nespotřebuje magický limit léčení. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/elf-lecitel": [
+      "Elfí léčitel využívá vysokou chytrost a pozornost při pomoci ostatním. Může vycházet z lesní tradice, sloužit v osadě nebo zkoumat neobvyklý původ opakovaných zranění. Jeho úloha stojí na znalostech, komunikaci a správném rozhodnutí, kdy použít dostupné prostředky. Nízká síla a menší zásoba životů připomínají, že také pomocník potřebuje ochranu a podporu ostatních.",
+      "V družině pomáhá rozhodovat, kdy ošetřit zranění, použít známé léčivé kouzlo a kdy zajistit bezpečný odpočinek. První pomoc je samostatná schopnost a nespotřebovává magický limit léčení. Počet obnovených životů vychází ze skutečné chytrosti a nemůže překročit maximum ošetřovaného. Dobrý léčitel potřebuje prostor k práci a podporu druhých; prevence nebezpečí má často stejnou hodnotu jako další zásah léčivou magií.",
+      "Rasová schopnost Ostrý zrak: Automaticky si všimne vzdáleného viditelného detailu, stop nebo pohybu, pokud nejsou magicky či objektivně skryté. Povolání přidává schopnost První pomoc: 1× za souboj obnoví sobě nebo jednomu spojenci ⌈CH/2⌉ Ž, nejvýše do maxima. Není to léčivé kouzlo a nespotřebuje magický limit léčení. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/trpaslik-lecitel": [
+      "Trpasličí léčitel může pečovat o horníky, doprovázet výpravu do hor nebo hledat pomoc pro odříznutou osadu. Síla mu umožňuje prakticky se zapojit do záchrany a cit pro kámen upozorní na prostředí, které zranění způsobuje. Spojuje péči s rozvahou: někdy nestačí ošetřit člověka, je třeba zabezpečit cestu, odstranit nebezpečí a zabránit tomu, aby se situace opakovala.",
+      "V družině pomáhá rozhodovat, kdy ošetřit zranění, použít známé léčivé kouzlo a kdy zajistit bezpečný odpočinek. První pomoc je samostatná schopnost a nespotřebovává magický limit léčení. Počet obnovených životů vychází ze skutečné chytrosti a nemůže překročit maximum ošetřovaného. Dobrý léčitel potřebuje prostor k práci a podporu druhých; prevence nebezpečí má často stejnou hodnotu jako další zásah léčivou magií.",
+      "Rasová schopnost Cit pro kámen: V relevantním kamenném/podzemním prostředí automaticky rozpozná dutiny, tajné chodby, nestabilní skálu, kvalitní rudu nebo neobvyklé vlastnosti kamene. Povolání přidává schopnost První pomoc: 1× za souboj obnoví sobě nebo jednomu spojenci ⌈CH/2⌉ Ž, nejvýše do maxima. Není to léčivé kouzlo a nespotřebuje magický limit léčení. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "hero/ork-lecitel": [
+      "Orčí léčitel ukazuje ochrannou stránku síly. Může pečovat o svou skupinu po obtížném pochodu, sloužit jako putovní pomocník nebo se snažit spojit komunity poznamenané starým sporem. Jeho vzhled může u cizinců vyvolat předsudek, ale rozhoduje vlastní jednání. Síla a první pomoc se doplňují při záchraně, zatímco magie vyžaduje skutečně známá kouzla a splnění jejich požadavků.",
+      "V družině pomáhá rozhodovat, kdy ošetřit zranění, použít známé léčivé kouzlo a kdy zajistit bezpečný odpočinek. První pomoc je samostatná schopnost a nespotřebovává magický limit léčení. Počet obnovených životů vychází ze skutečné chytrosti a nemůže překročit maximum ošetřovaného. Dobrý léčitel potřebuje prostor k práci a podporu druhých; prevence nebezpečí má často stejnou hodnotu jako další zásah léčivou magií.",
+      "Rasová schopnost Bojová zuřivost: Když má méně než polovinu maximálních Ž, získává +1 k výsledku každého útoku zblízka. Povolání přidává schopnost První pomoc: 1× za souboj obnoví sobě nebo jednomu spojenci ⌈CH/2⌉ Ž, nejvýše do maxima. Není to léčivé kouzlo a nespotřebuje magický limit léčení. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
     ]
   }
 }
