@@ -97,7 +97,11 @@
     "hero/vila-kouzelnik",
     "hero/vila-zlodej",
     "hero/vila-lecitel",
-    "hero/vila-bard"
+    "hero/vila-bard",
+    "equip/dyka",
+    "equip/bojova-hul",
+    "equip/kyj",
+    "equip/kratky-mec"
   ],
   "profiles": {
     "best/krysa": [
@@ -589,6 +593,26 @@
       "Víla bardka může přinášet písně z odlehlých míst, spojovat různé komunity a povzbuzovat přátele během náročné cesty. Obratnost a štěstí podporují její styl, ale rozhodující zůstává vlastní vztah k posluchačům. Může být veselá, klidná i ostýchavá. Hudba nemusí být hlavním cílem každé scény; dobře zvolený příběh nebo malé gesto mohou vyjádřit podporu stejně přirozeně.",
       "V družině pomáhá při jednání, poznávání místních příběhů a podpoře spojenců. Může se stát prostředníkem mezi lidmi, kteří si nerozumějí, nebo připomenout důležitou souvislost v pravou chvíli. Povzbuzení mění bonus odhaleného virtuálního hodu o jeden stupeň, nejvýše do maxima dané kategorie; není to libovolné zvýšení každého výsledku. Vyprávění, hudba i naslouchání dávají bardovi smysluplnou roli také ve scénách, které nevedou k boji.",
       "Rasová schopnost Vílí prach: Každé léčení provedené vílou obnoví o 1 Ž navíc. Povolání přidává schopnost Povzbuzení: Jednou v daném souboji nebo významné scéně může po odhalení virtuálního hodu sobě nebo spojenci zvýšit bonus hodu o jeden stupeň, nejvýše do maxima dané kategorie. Nevyžaduje hlavní akci a nepoužívá se na nepřítele. Počáteční výbavu vybírejte podle splněných požadavků konkrétního hrdiny. Uvedené hodnoty jsou základem postavy na první úrovni; osobnost, jméno, vztahy a důvod výpravy si určíte při tvorbě."
+    ],
+    "equip/dyka": [
+      "Dýka je drobná zbraň, kterou v Elarii nosí průzkumníci, cestovatelé i lidé, kteří se nechtějí zatěžovat velkou výzbrojí. Její hodnota spočívá v lehkosti a snadném uložení. Může být prostým pracovním nožem přizpůsobeným k obraně nebo osobním předmětem s rodovým znakem. Podoba a původ mohou vyprávět příběh majitele, aniž by měnily herní hodnoty.",
+      "Uplatní se u postavy spoléhající na obratnost a může být záložní volbou, když hlavní zbraň není dostupná. Snadná ukrytelnost není automatická neviditelnost při prohlídce. V příběhu může posloužit k běžné práci, pokud to odpovídá situaci, ale nenahrazuje každý odborný nástroj. Ztracená dýka se známým znakem může být vodítkem ke svému majiteli.",
+      "Při útoku používá Obratnost (O). Označení 1R znamená použití jedné ruky. Minimum je O4 a katalogový bonus fyzického útoku FÚ je +1. Cena je 6 s. Celkový útok hrdiny se dále vypočítá podle jeho vlastností a platných pravidel; uvedený bonus zbraně není celý výsledný útok."
+    ],
+    "equip/bojova-hul": [
+      "Bojová hůl je jednoduchá dlouhá zbraň, kterou může nosit poutník, strážce stezky či žák bojového učitele. Vzhled může připomínat obyčejnou oporu při cestě, její původ však nemusí být skromný. Pečlivě opracované dřevo, opravené místo a vyrytá značka mohou ukazovat, kdo ji vyrobil a proč si ji majitel ponechává.",
+      "V boji využívá obratnost a vyžaduje obě ruce. Volba hole proto souvisí s tím, zda hrdina potřebuje současně držet štít nebo jiný předmět. Nabízí levnou a přehlednou možnost pro začínající výpravu. Příběhové použití při opírání či ověřování běžné překážky posuzujte podle okolností; samotná hůl nepřidává další bonus k lezení nebo hledání pastí.",
+      "Při útoku používá Obratnost (O). Označení 2R znamená použití obou rukou. Minimum je O4 a katalogový bonus fyzického útoku FÚ je +1. Cena je 3 s. Celkový útok hrdiny se dále vypočítá podle jeho vlastností a platných pravidel; uvedený bonus zbraně není celý výsledný útok."
+    ],
+    "equip/kyj": [
+      "Kyj je prostá silová zbraň, která se může objevit u venkovského strážce, v táboře nebo mezi skromně vybavenými cestovateli. Nepotřebuje zdobenou čepel ani prestižní rodový původ, aby splnil základní účel. Zpracování a opotřebení mohou odlišit nouzovou pomůcku od předmětu, který majitel používá dlouho a pravidelně.",
+      "Je vhodný pro hrdinu s menšími prostředky, který už splňuje požadavek na sílu. Jedna volná ruka ponechává možnost vhodné další výstroje. Jednoduchost kyje však nezaručuje výhodu proti zbroji ani zvláštní omráčení. Při výběru zvažujte celý způsob hry: někdo dá přednost levnému základu, jiný si připlatí za účinnější zbraň odpovídající jeho vlastnostem.",
+      "Při útoku používá Sílu (S). Označení 1R znamená použití jedné ruky. Minimum je S4 a katalogový bonus fyzického útoku FÚ je +1. Cena je 1 s. Celkový útok hrdiny se dále vypočítá podle jeho vlastností a platných pravidel; uvedený bonus zbraně není celý výsledný útok."
+    ],
+    "equip/kratky-mec": [
+      "Krátký meč je obratnostní zbraň vhodná pro dobrodruha, který hledá přehledný začátek a nechce stavět vše na síle. V Elarii může pocházet z městské dílny, ze zbrojnice nebo být odměnou za první službu. Jeho zdobení může ukazovat vztah majitele k místu či lidem, kteří mu jej svěřili.",
+      "Využívá jednu ruku a ponechává možnost používat další vhodnou výstroj. Často dobře zapadá do lehčího vybavení průzkumníka nebo barda, pokud hrdina splňuje požadavky. Menší velikost nepřidává automatický bonus k rychlosti či plížení. V příběhu může být meč předmětem slibu, dokladem služby nebo součástí záhady kolem opuštěné stráže.",
+      "Při útoku používá Obratnost (O). Označení 1R znamená použití jedné ruky. Minimum je O5 a katalogový bonus fyzického útoku FÚ je +2. Cena je 1 z. Celkový útok hrdiny se dále vypočítá podle jeho vlastností a platných pravidel; uvedený bonus zbraně není celý výsledný útok."
     ]
   }
 }

@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 98,
+  "completed": 102,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -38,7 +38,11 @@
     "hero/vila-kouzelnik",
     "hero/vila-zlodej",
     "hero/vila-lecitel",
-    "hero/vila-bard"
+    "hero/vila-bard",
+    "equip/dyka",
+    "equip/bojova-hul",
+    "equip/kyj",
+    "equip/kratky-mec"
   ],
-  "latestBatch": 9
+  "latestBatch": 10
 }
