@@ -23,7 +23,11 @@
     "vojak",
     "lucistnik",
     "rytir",
-    "kouzelnik"
+    "kouzelnik",
+    "lecitel",
+    "slechtic",
+    "kral-kralovna",
+    "goblin"
   ],
   "profiles": {
     "krysa": [
@@ -145,6 +149,26 @@
       "Kouzelník rozvíjí magii studiem, praxí nebo vedením zkušenějšího učitele. V Elarii může působit v akademii, vlastní pracovně, u dvora či na cestách za vzácnými poznatky. Jeho zázemí často zahrnuje knihy, pomůcky a materiály potřebné k výzkumu. Konkrétní kouzelník může patřit k tradici, která si své znalosti pečlivě střeží, nebo je naopak předává dalším žákům.",
       "Obvykle přemýšlí v souvislostech a připravuje si prostředky k řešení obtížných situací. Vysoká učenost však nevylučuje ješitnost, omyl ani špatný odhad lidí. Může sloužit škole, patronovi nebo vlastnímu výzkumu. Vyhledává nové znalosti, přístup k artefaktům a čas na práci; není důvod předpokládat, že každý mág usiluje o moc nad ostatními. Povaha a hranice jeho pokusů rozhodují o vztahu s družinou.",
       "Tento profil používá Ohnivou střelu a Magický štít. Má účinný magický útok a zvýšenou magickou obranu proti prvnímu takovému útoku v kole. Jeho schopnosti proto zasluhují jiný přístup než běžný ozbrojenec. Ztracený svitek, nebezpečný experiment nebo potřeba bezpečně dopravit zvláštní předmět mohou vést ke spolupráci. Jednání může stát na výměně poznatků a služeb; tajemství kouzelníka nemusí být zlé, ale může mít důsledky, kterým sám zatím nerozumí."
+    ],
+    "lecitel": [
+      "Léčitel pomáhá lidem po zranění, při nemoci i během náročné cesty. Může pečovat o vesnici, působit v chrámu, u vojska nebo doprovázet dobrodruhy. Jeho znalosti pocházejí ze studia, tradice či praktické služby zkušenému učiteli. Potřebuje zásoby a bezpečné místo k práci, takže nedostatek léčiv nebo násilí v okolí dopadá i na ty, kteří jeho pomoc nejvíce potřebují.",
+      "Často má pevné vazby na komunitu a zná příběhy lidí, kteří se u něj střídají. Může pracovat sám nebo s pomocníky, případně podléhat pravidlům řádu. Motivuje ho péče o druhé, víra, závazek či obyčejná obživa. Ochota pomáhat však neznamená neomezené síly ani povinnost důvěřovat každému. Léčitel může odmítnout cestu, která by nechala celou osadu bez pomoci.",
+      "Schopnost Léčení mu jednou za souboj dovolí místo útoku obnovit sobě nebo spojenci čtyři životy. V boji proto hledá bezpečí a přístup k tomu, kdo pomoc potřebuje; jeho vyřazení může změnit vyhlídky celé skupiny. Družina ho může chránit, shánět chybějící prostředky nebo pomoci vyřešit původ opakovaných zranění. Zajímavý konflikt vzniká, když léčitel ošetřuje obě strany sporu a někdo chce jeho neutralitu zneužít."
+    ],
+    "slechtic": [
+      "Šlechtic získal postavení dědictvím, službou nebo rozhodnutím panovníka. Může spravovat panství, pobývat u dvora či zastupovat rod při jednání. Jeho sídlo a bohatství závisejí na rozsahu majetku a skutečných možnostech. I působivý titul může skrývat zadlužený statek, nepřátelské sousedy nebo rodinu, která už ztratila většinu svého vlivu.",
+      "Je součástí sítě příbuzenských vztahů, závazků a společenských očekávání. Poddaní, správci a spojenci mohou jeho rozhodnutí podporovat, ale také omezovat. Usiluje o bezpečí panství, prestiž či pokračování rodu; konkrétní člověk může místo toho dávat přednost spravedlnosti, osobním zájmům nebo pomstě. Jedná zdvořile i výhružně podle povahy a okolností. Zdánlivě malá urážka může mít význam, pokud ohrožuje jeho autoritu před ostatními.",
+      "Autorita poskytuje bonus v sociálním střetu jen tam, kde má šlechtic skutečnou společenskou pravomoc. Titul tedy není univerzálním prostředkem k ovládání cizích lidí. Družina může nabídnout službu, doložit právo nebo odhalit rozpor mezi veřejnou pověstí a skutečností. Spor o hranice, ztracený dědic či problém, který správce zatajuje, poskytují prostor pro dobrodružství. Šlechtic může být zadavatelem, překážkou i spojencem, jehož moc má jasné hranice."
+    ],
+    "kral-kralovna": [
+      "Král nebo královna stojí v čele země, ale podobu vlády určují dějiny, zákony a skutečná opora trůnu. Panovník může sídlit v paláci, vést tažení nebo spravovat království z dočasného dvora. Tento profil představuje vládce jako člověka ve významné roli; síla celé říše se nedá vyjádřit jen jeho osobními bojovými hodnotami.",
+      "Vládne prostřednictvím rádců, úředníků, velitelů a místních správců. Informace se k němu dostávají přes lidi s vlastními zájmy, takže nemusí znát skutečný stav vzdálené provincie. Cílem může být mír, prosperita, zachování dynastie nebo rozšíření moci. Dobrý úmysl nezaručuje dobré rozhodnutí a tvrdé rozhodnutí nemusí vznikat z krutosti. Vztah k poddaným a ochota přijmout nepříjemnou pravdu utvářejí jeho povahu.",
+      "Královská autorita zlepšuje jednání s poddanými, v boji však tento bonus neplatí. Panovník obvykle spoléhá na ochranu a organizaci dvora, nikoli na osobní souboj s každým protivníkem. Družina může doručit důkaz, získat pověření nebo odhalit, kdo informace před trůnem zkresluje. Audience je zajímavá tehdy, když mají obě strany konkrétní potřebu a časový tlak. Zachránit panovníka nemusí stačit, pokud zdroj hrozby zůstává v jeho nejbližším okolí."
+    ],
+    "goblin": [
+      "Goblini jsou drobní humanoidi Elarie, kteří si hledají místo na okraji mocnějších společností. Žijí v jeskyních, roklích, opuštěných dolech a ruinách, kde lze získat úkryt i použitelný materiál. Jejich původ spojují různé příběhy s dávnými podzemními osadami; jednotlivé kmeny si však uchovávají vlastní pověsti a nemusí znát společnou historii. Obydlí prozradí drobné stopy, improvizované opravy a hromady věcí, které jiní považují za odpad.",
+      "Jsou praktičtí, všímaví a schopní rychle odhadnout příležitost. Nízké postavení či hrubé vystupování nejsou důkazem hlouposti. Obvykle žijí v rodinách a skupinách vedených náčelníkem, někdy pod vlivem silnějšího souseda. Shánějí potravu, bezpečí a užitečné předměty. Některé tlupy loupí, jiné obchodují nebo sbírají zbytky po cizích výpravách. Agresivitu ovlivňuje hlad, strach, vedení i zkušenost s okolím.",
+      "V boji vyhledávají početní výhodu, kryt a cestu k ústupu. Úhyb do krytu jednou za souboj zvyšuje obranu proti útoku na dálku. Odhalený goblin se může stáhnout, varovat skupinu nebo nabídnout dohodu. Družina může zjistit, co tlupu vyhnalo z původního úkrytu, komu musí odvádět zásoby a kdo ji nutí k přepadům. Jídlo, bezpečný průchod či odstranění společné hrozby mohou vytvořit skutečný důvod k vyjednávání."
     ]
   }
 }
