@@ -7,7 +7,11 @@
     "liska",
     "vlk",
     "divoke-prase",
-    "jedovaty-had"
+    "jedovaty-had",
+    "medved",
+    "krokodyl",
+    "orel",
+    "jelen"
   ],
   "profiles": {
     "krysa": [
@@ -49,6 +53,26 @@
       "Jedovatý had se ukrývá pod kameny, v kořenech, ve vysoké trávě nebo v teplých skalních štěrbinách. Tato položka bestiáře představuje herního hada s jedovatým uštknutím, nikoli všechny hady skutečného světa. Obvykle žije samotářsky a vyhledává především kořist a bezpečný úkryt.",
       "Je nenápadný a dokáže dlouho nehybně čekat. Na většího tvora zpravidla neútočí jako na potravu; nebezpečí vzniká hlavně při překvapení či zahnaní do kouta. Družina by měla sledovat, kam šlape a sahá. Jeho herní jed se uplatní až po uštknutí, které způsobí zranění, a následný účinek je přesně popsán ve schopnosti.",
       "Had může hlídat místo jen tím, že si je vybral jako úkryt. Projít jinudy nebo mu nechat prostor bývá rozumnější než bojovat. V příběhu mohou svlečená kůže a drobné stopy vést k teplému prameni či dlouho neotevřené místnosti."
+    ],
+    "medved": [
+      "Medvěd obývá rozlehlé lesy, horská údolí a odlehlé svahy Elarie. Úkryt nachází v houštinách, skalních dutinách nebo pod vyvrácenými stromy. Jeho přítomnost prozradí velké stopy, rozhrabaná půda, poškozené včelí úly a škrábance na kmenech. Potravu hledá podle ročního období; láká ho ovoce, med, drobná kořist i snadno dostupné zásoby.",
+      "Většinu času se pohybuje samotářsky. Výjimkou je především medvědice s mláďaty, která brání jejich bezpečí mnohem rozhodněji než vlastní pohodlí. Medvěd si pamatuje místa s potravou a rychle rozpozná, odkud přichází nebezpečí. Neřídí ho žádný vůdce ani zlý úmysl. Zaskočení na krátkou vzdálenost, zranění nebo zahnaní do kouta však mohou změnit klidné zvíře v mimořádně nebezpečného protivníka.",
+      "V boji spoléhá na sílu a odolnost. Mohutný úder mu jednou za souboj posílí útok zblízka, takže zůstat v dosahu jeho tlap znamená skutečné riziko. Prostor k ústupu a odstup od mláďat mohou konfliktu předejít. Ztracený medvěd u vesnice může být stopou k narušenému lesu, vypleněnému doupěti nebo někomu, kdo ho úmyslně láká k lidským obydlím."
+    ],
+    "krokodyl": [
+      "Krokodýl žije v teplých řekách, močálech a zatopených ruinách. V bahnité vodě dokáže dlouho zůstat téměř neviditelný; nad hladinou jsou patrné jen oči a nozdrami rozvlněná voda. Vyhledává místa, kde ostatní tvorové pijí, brodí se nebo přicházejí k břehu. Jeho teritorium mohou prozradit klouzavé stopy v bahně a nápadně prázdné napajedlo.",
+      "Je to trpělivý lovec, který šetří síly a vybírá vhodný okamžik k útoku. Obvykle jedná samostatně, i když se více jedinců může sejít u bohatého zdroje potravy. Takové shromáždění není poslušnou smečkou. Krokodýl se rozhoduje podle kořisti, prostoru a bezprostředního ohrožení; chráněný úkryt nebo hnízdiště může bránit i bez hladu.",
+      "Jeho největší výhodou je překvapení u vody. Sevření ztěžuje zasaženému cíli další útok a Tvrdý krunýř snižuje první fyzické zranění v každém kole. Bezpečnější bývá obejít břeh, použít pevnou lávku nebo změnit místo přechodu. Krokodýl může střežit přístup k ruinám čistě tím, že se tam usadil; k vyřešení situace nemusí být nutné zvíře zabít."
+    ],
+    "orel": [
+      "Orel hnízdí na skalních římsách, vysokých stromech a opuštěných věžích, odkud má přehled o širokém okolí. Nad horami a otevřenou krajinou využívá vzdušné proudy k dlouhému kroužení. Jeho hnízdo bývá těžko přístupné a objevovat se může na místě, které družina potřebuje použít jako vyhlídku nebo cestu přes skalní stěnu.",
+      "Má výborný zrak a rychle reaguje na pohyb. Loví menší kořist a zpravidla se drží stranou hlučných skupin. Často žije v páru, který hájí hnízdo a mladé, nikoli v organizované bojové skupině. Útok na velkého člověka je spíše obranou hnízdiště nebo reakcí na přímé ohrožení než běžným způsobem získávání potravy.",
+      "Střemhlavý útok jednou za souboj zesílí jeho zásah, ale následně mu dočasně sníží fyzickou obranu. V letu využívá výšku, rychlost a otevřený prostor; kroužení před útokem dává pozorným postavám možnost hledat kryt. Orel může dovést družinu k horskému průsmyku, odhalit pohyb kořisti nebo upozornit na narušení krajiny. Záchrana zraněného ptáka či bezpečné obejití hnízda nabízí i klidné setkání."
+    ],
+    "jelen": [
+      "Jelen patří k obyvatelům lesů, luk a otevřených horských údolí. Potravu hledá na pasekách a klidných okrajích lesa, odkud se může rychle stáhnout do úkrytu. Jeho stopami jsou otisky kopyt, okousané výhonky a odřená kůra. V příbězích Elarie se působivý jelen může stát symbolem určitého lesa, skutečné setkání ale stále vychází z chování divokého zvířete.",
+      "Jeleni se sdružují podle prostředí a roční doby; samci mohou putovat odděleně a v době soupeření bránit svůj prostor výrazněji. Opatrnost jim pomáhá přežít více než ochota bojovat. Na neznámý pach nebo hluk obvykle reagují zastavením, nasloucháním a ústupem. Parohy jsou nebezpečné, pokud se zvíře cítí sevřené nebo pokud mu někdo blokuje cestu.",
+      "Schopnost Útěk zvyšuje fyzickou obranu, když se jelen místo útoku rozhodne prchnout. Ponechání volné cesty proto odpovídá jeho přirozenému způsobu řešení nebezpečí. Družina může sledovat jeho stopu k vodě, najít opuštěné mládě nebo zjistit, proč z lesa zmizela zvěř. Neobvyklé chování stáda může varovat před predátorem, požárem či narušeným územím, aniž by jelen sám představoval nepřítele."
     ]
   }
 }
