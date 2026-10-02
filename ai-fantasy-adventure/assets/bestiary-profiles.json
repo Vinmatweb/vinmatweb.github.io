@@ -27,7 +27,11 @@
     "lecitel",
     "slechtic",
     "kral-kralovna",
-    "goblin"
+    "goblin",
+    "goblin-lucistnik",
+    "kobold",
+    "hobgoblin",
+    "bugbear"
   ],
   "profiles": {
     "krysa": [
@@ -169,6 +173,26 @@
       "Goblini jsou drobní humanoidi Elarie, kteří si hledají místo na okraji mocnějších společností. Žijí v jeskyních, roklích, opuštěných dolech a ruinách, kde lze získat úkryt i použitelný materiál. Jejich původ spojují různé příběhy s dávnými podzemními osadami; jednotlivé kmeny si však uchovávají vlastní pověsti a nemusí znát společnou historii. Obydlí prozradí drobné stopy, improvizované opravy a hromady věcí, které jiní považují za odpad.",
       "Jsou praktičtí, všímaví a schopní rychle odhadnout příležitost. Nízké postavení či hrubé vystupování nejsou důkazem hlouposti. Obvykle žijí v rodinách a skupinách vedených náčelníkem, někdy pod vlivem silnějšího souseda. Shánějí potravu, bezpečí a užitečné předměty. Některé tlupy loupí, jiné obchodují nebo sbírají zbytky po cizích výpravách. Agresivitu ovlivňuje hlad, strach, vedení i zkušenost s okolím.",
       "V boji vyhledávají početní výhodu, kryt a cestu k ústupu. Úhyb do krytu jednou za souboj zvyšuje obranu proti útoku na dálku. Odhalený goblin se může stáhnout, varovat skupinu nebo nabídnout dohodu. Družina může zjistit, co tlupu vyhnalo z původního úkrytu, komu musí odvádět zásoby a kdo ji nutí k přepadům. Jídlo, bezpečný průchod či odstranění společné hrozby mohou vytvořit skutečný důvod k vyjednávání."
+    ],
+    "goblin-lucistnik": [
+      "Goblin lučištník pochází ze stejného prostředí jako ostatní goblini, ale naučil se spoléhat na odstup a výhodné stanoviště. Hlídá vstupy do jeskyní, sleduje stezky nad roklí nebo kryje tlupu z oken opuštěné stavby. Luk a šípy může mít vyrobené doma, získané obchodem i posbírané po cizích výpravách. Zásoba střel a znalost okolních úkrytů jsou pro něj stejně důležité jako samotná zbraň.",
+      "Obvykle pracuje s dalšími členy skupiny. Někdo sleduje přístup, jiný vyláká cíl a střelec čeká na vhodný okamžik. Poslouchá náčelníka nebo zkušenějšího velitele, ale může především chránit vlastní rodinu a úkryt. Je schopný plánovat a učit se z neúspěchu. Pokud tlupa nemá důvod bojovat, může místo přepadení jen varovat cizince, aby se nepřibližovali k jejím zásobám.",
+      "Rychlý přesun po útoku na dálku zlepšuje jeho fyzickou obranu proti nejbližšímu útoku zblízka do dalšího tahu. To odpovídá stylu střelby a okamžité změny pozice. Otevřený prostor bez úkrytu nebo přerušený výhled mu znesnadňují využít prostředí. Družina může odhalit jeho stanoviště, nabídnout bezpečný ústup nebo zjistit, proč hlídá právě tento průchod. Ostražitý lučištník často ví o dění v okolí více než člen tlupy, který zůstává hluboko v táboře."
+    ],
+    "kobold": [
+      "Koboldi jsou malí humanoidi, jejichž komunity se v Elarii usazují v podzemních chodbách, skalních dutinách a starých dolech. Vlastní původ často vysvětlují legendami o dávných ochráncích zemských hlubin a mocných šupinatých patronech. Jednotlivé osady tyto příběhy vykládají různě. Úzké chodby, drobné pracovní nástroje a pečlivě využité výklenky ukazují, že jejich domov je přizpůsoben menším obyvatelům.",
+      "Spoléhají na skupinu a rozdělení práce. Hlídači, sběrači, řemeslníci a průzkumníci mají vlastní úkoly, které mohou řídit starší, náčelník nebo uctívaný patron. Koboldi jsou obezřetní a praktičtí; učí se, kde je bezpečno a co velcí protivníci nedokážou snadno překonat. Chtějí udržet úkryt, zásoby a postavení komunity. Konflikt často vzniká kvůli vstupu na jejich území, nejasné dohodě nebo nátlaku silnějšího tvora.",
+      "Spolupráce zvyšuje útok, pokud je vedle cíle další kobold. Osamocený jedinec se proto může snažit přivést pomoc místo hrdinského souboje. Družina může hledat cestu přes podzemí, jednat o přístupu nebo pomoci komunitě zbavit se zneužívajícího patrona. Schopnost připravit prostředí je součástí jejich způsobu života, ale konkrétní pasti a jejich účinky určuje dané dobrodružství. Nabídka bezpečí a respektování dohod mohou změnit nedůvěru v praktické spojenectví."
+    ],
+    "hobgoblin": [
+      "Hobgoblini budují pevnější a organizovanější společenství než mnohé menší tlupy. V Elarii je lze potkat v opevněných táborech, obsazených pevnostech a na hranicích sporných území. Jejich tradice zdůrazňují službu, pořádek a společnou sílu. Původ jednotlivých družin se liší: některé pocházejí ze starých vojenských rodů, jiné vznikly kolem schopného velitele v období válek.",
+      "Jsou rozumní, disciplinovaní a schopní dlouhodobého plánování. Ve skupině mají jasné role a očekávají plnění rozkazů; autorita bývá svázána s hodností i výsledky. Mohou sloužit vlastnímu náčelníkovi, místnímu vládci nebo jako smluvní jednotka. Usilují o zásoby, bezpečné území a uznání síly své skupiny. Přísnost neznamená automaticky bezhlavou agresi. Dobře připravená dohoda může být pro velitele výhodnější než ztráty v boji.",
+      "Štítová zeď zvyšuje fyzickou obranu, pokud je v boji alespoň jeden další hobgoblin. Společné nasazení proto výrazně podporuje jejich bojový styl. Narušení organizace, odhalený chybný rozkaz či ohrožená zásobovací cesta mohou změnit situaci ještě před soubojem. Družina může jednat s velitelem o průchodu, zajatcích nebo společném nepříteli. Hobgoblin, který dal slovo a má důvod ho dodržet, může být spolehlivějším partnerem než uhlazený člověk s nejasnými zájmy."
+    ],
+    "bugbear": [
+      "Bugbear je mohutný humanoid, který v Elarii vyhledává členité lesy, skalnaté rokle a opuštěné stavby. Jeho síla budí pozornost, ale nebezpečný bývá také tím, jak dobře se dokáže ukrýt a počkat. Podle místních pověstí pocházejí některé skupiny z dávných lesních rodů, jiné dlouho žijí vedle gobliních tlup. V ruinách si vybírá prostor, odkud může sledovat přístup a rychle zasáhnout.",
+      "Může být samotářem, členem rodiny nebo silným spojencem větší tlupy. Někdy přijímá vedení náčelníka, jindy ostatní poslouchají jeho vlastní autoritu. Není pouze tělem bez rozumu: umí zhodnotit riziko, zapamatovat si cestu a využít cizí nepozornost. Jeho cílem může být potrava, úkryt, odměna či ochrana blízkých. Někteří bugbeaři přepadávají, ale jejich povahu nelze určit jen podle vzhledu.",
+      "Přepad mu v prvním kole přidává k útoku, pokud nebyl před bojem odhalen. Pozorný průzkum okolí tak může odstranit jeho hlavní výhodu ještě před střetem. Jakmile se ukáže, stále zůstává silným protivníkem, kterého je nebezpečné podcenit. Družina může narazit na najatého strážce, osamělého obyvatele ruin nebo někoho, kdo odmítá odejít z místa spojeného s rodinou. Zjištění skutečného důvodu jeho přítomnosti otevírá i jiné řešení než útok."
     ]
   }
 }
