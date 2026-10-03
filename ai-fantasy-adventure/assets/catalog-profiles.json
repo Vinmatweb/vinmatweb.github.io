@@ -133,7 +133,11 @@
     "equip/lucerna",
     "equip/olej-do-lucerny",
     "equip/kresadlo",
-    "equip/mech-na-vodu"
+    "equip/mech-na-vodu",
+    "equip/cestovni-jidlo",
+    "equip/krida",
+    "equip/paklice",
+    "equip/pacidlo"
   ],
   "profiles": {
     "best/krysa": [
@@ -805,6 +809,26 @@
       "Měch na vodu je nádoba, díky které může hrdina přenášet jednu z nejběžnějších zásob výpravy. V Elarii může být novým nákupem, opravovanou cestovní věcí nebo darem od člověka, který ví, jak důležitá je příprava. Podoba a značení mohou pomoci rozpoznat majitele při nálezu.",
       "Vlastnit nádobu není totéž jako mít bezpečný obsah a dostatečnou zásobu na celou cestu. Družina může plánovat doplnění, sdílení i hledání zdroje podle prostředí. Katalog neurčuje automatickou léčbu ani zvláštní bonus k přežití. Prázdný měch může otevřít klidnou scénu s místními obyvateli nebo upozornit na problém se známým pramenem.",
       "Pravidlový účinek: Nádoba na vodu. Cena je 2 s. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/cestovni-jidlo": [
+      "Cestovní jídlo představuje běžnou zásobu na jeden den a pomáhá družině plánovat výpravu mimo osady. V Elarii může pocházet z domácí přípravy, trhu nebo být darem od lidí, kterým hrdinové pomohli. Vzhled a chuť mohou připomínat konkrétní krajinu a dodat cestě osobní ráz.",
+      "Rozdělení zásob nabízí prostor pro spolupráci a rozhodování, kdy doplnit vybavení nebo změnit trasu. Jídlo samo neobnovuje stanovený počet životů a nenahrazuje léčivé prostředky. Může být předmětem obchodu či laskavosti v příběhu. Chybějící zásoby mohou přivést družinu do nové osady, kde se dozví zprávu důležitou pro svůj úkol.",
+      "Pravidlový účinek: Jídlo na jeden den. Cena je 5 m. Jde o spotřební zásobu; při použití zohledněte její spotřebování. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/krida": [
+      "Křída je drobná spotřební pomůcka, která může při průzkumu znamenat rozdíl mezi návratem známou cestou a dalším hledáním. V Elarii ji používají řemeslníci, průzkumníci i lidé zapisující jednoduché značky. Její nenápadná podoba připomíná, že užitečná výbava nemusí být drahá ani magická.",
+      "Družina může značit dveře, odbočky a místa, která už prozkoumala. Značka ale neprozradí automaticky, co se nachází za další chodbou, a může zmizet podle prostředí. Katalog nepřidává samostatný bonus k orientaci. Cizí značky mohou otevřít záhadu: kdo je vytvořil, zda jsou ještě spolehlivé a proč některá cesta nebyla označena.",
+      "Pravidlový účinek: Značení cesty, dveří nebo stěn. Cena je 2 m. Jde o spotřební zásobu; při použití zohledněte její spotřebování. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/paklice": [
+      "Paklíče jsou specializovaný nástroj pro otevírání zámků. V Elarii je může nosit průzkumník, zámečník, pomocník stráže i člověk s méně poctivým záměrem. Samotné vlastnictví neurčuje povahu hrdiny. Pouzdro se znakem dílny může pomoci dohledat výrobce nebo bývalého majitele, pokud se souprava najde v opuštěném sídle.",
+      "Přidávají bonus k odpovídajícímu testu obratnosti, ale úspěch nezaručují. Je potřeba mít přístup k zámku a popsat skutečný pokus. Neodstraňují automaticky past, kletbu ani magickou ochranu dveří. Družina může místo otevírání také hledat klíč, vlastníka nebo oprávněný přístup; nástroj rozšiřuje možnosti, nevnucuje jediný způsob řešení.",
+      "Pravidlový účinek: +2 O k testu otevírání zámku. Cena je 2 z. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/pacidlo": [
+      "Páčidlo je praktický nástroj pro situace, kde lze využít sílu a vhodnou oporu. V Elarii patří do dílen, zásob vozů i výstroje průzkumníků ruin. Může být prostým pracovním předmětem nebo nosit značku skupiny, která ho pravidelně používá. Jeho význam roste tam, kde nestačí jen zatlačit rukou.",
+      "Při páčení dveří, beden či podobné překážky zlepšuje odpovídající silový test. Je však potřeba určit, kde a jak bude použito; zcela nevhodnou překážku automaticky nevyřeší. Pracovní účinek z něj nedělá bojovou zbraň s nevyjmenovaným bonusem. Družina může zvažovat také následky otevření a to, zda za dveřmi někoho neohrozí.",
+      "Pravidlový účinek: +2 S při páčení dveří, beden apod. Cena je 8 s. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
     ]
   }
 }

@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 134,
+  "completed": 138,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -74,7 +74,11 @@
     "equip/lucerna",
     "equip/olej-do-lucerny",
     "equip/kresadlo",
-    "equip/mech-na-vodu"
+    "equip/mech-na-vodu",
+    "equip/cestovni-jidlo",
+    "equip/krida",
+    "equip/paklice",
+    "equip/pacidlo"
   ],
-  "latestBatch": 18
+  "latestBatch": 19
 }
