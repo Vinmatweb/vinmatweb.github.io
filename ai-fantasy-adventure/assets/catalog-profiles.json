@@ -253,7 +253,11 @@
     "magic/duch/videni-duchu",
     "magic/duch/pozehnani",
     "magic/duch/ochrana-duse",
-    "magic/duch/rozhovor-s-duchem"
+    "magic/duch/rozhovor-s-duchem",
+    "magic/duch/obnova-odvahy",
+    "magic/duch/duchovni-paprsek",
+    "magic/duch/strazny-duch",
+    "magic/duch/rada-predku"
   ],
   "profiles": {
     "best/krysa": [
@@ -1525,6 +1529,26 @@
       "Rozhovor s duchem umožní položit přítomnému duchu několik krátkých otázek. Může proměnit nalezenou duchovní stopu ve skutečné setkání a nabídnout vzpomínku člověka či bytosti spojené s místem. Duch ale není neomylná kronika. Ví jen to, co zná a pamatuje si, a odpověď závisí také na jeho ochotě.",
       "Omezený počet otázek je důvodem připravit si je pečlivě. Dobrá otázka může poskytnout užitečný směr, ale kouzlo ducha nenutí mluvit. V příběhu může být potřeba důvěra, vysvětlení záměru nebo jiný přirozený důvod spolupráce. Získané odpovědi se vyplatí porovnat s dalšími stopami, místo očekávání celého hotového řešení záhady.",
       "Přesný účinek: Dovolí položit tři krátké otázky. Duch odpovídá podle svých znalostí, vzpomínek a ochoty; kouzlo ho nenutí lhát ani mluvit. Cíl: 1 přítomný duch. Trvání: nejvýše 3 otázky. Omezení: 1× na stejného ducha za scénu. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/duch/obnova-odvahy": [
+      "Obnova odvahy pomůže spojenci zbavit se jednoho účinku Strachu nebo běžného mentálního postihu. V příběhu může být důležitým okamžikem podpory, kdy jeden člen družiny pomůže druhému znovu jednat. Její účinek řeší konkrétní omezení, nikoli každé trápení postavy. Neobnovuje Životy a nelze ji zaměnit za léčivé kouzlo.",
+      "Sesilatel se musí dostat na dosah a vybrat účinek, který odpovídá uvedeným podmínkám. Použití na stejný cíl je omezené za souboj. Odstranění postihu může vytvořit příležitost k navázání na původní plán, ale nepřesune hrdinu do bezpečí ani nevyřeší nepřítele. Družina by měla vědět, jak uvolněné možnosti spojence využije.",
+      "Přesný účinek: Ukončí jeden účinek Strachu nebo jeden běžný mentální postih. Neobnovuje Životy. Cíl: 1 spojenec na dosah. Trvání: okamžitě. Omezení: 1× na stejný cíl za souboj. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/duch/duchovni-paprsek": [
+      "Duchovní paprsek je magický útok určený proti duchům a nemrtvým. Hodí se sesilateli, který chce čelit takovým bytostem přímo, místo pouhého pozorování či jednání. Jeho zaměření je důležitou součástí školy Duch. Nejde o všeobecný útok použitelný proti každému živému protivníkovi, který se družině postaví do cesty.",
+      "Před sesláním je potřeba znát vhodnost cíle a mít jej v dohledu. Zranění se vyhodnocuje proti magické obraně, takže úspěch není zaručen samotnou povahou nemrtvého či ducha. Kouzlo automaticky nezruší kletbu, která bytost vytvořila, ani nepřináší odpovědi na její minulost. K tomu může být nutné další pátrání nebo jiný postup.",
+      "Přesný účinek: Magický útok proti MO ducha nebo nemrtvého. Bonus: +3 k MÚ. Cíl: 1 duch nebo nemrtvý na dohled. Trvání: okamžitě. Omezení: nelze cílit na běžného živého tvora. K použití je potřeba minimálně Chytrost 8 a Level 2, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/duch/strazny-duch": [
+      "Strážný duch poskytne viditelnému spojenci krátké posílení fyzické i magické obrany. Může být výrazným ochranným okamžikem, kdy sesilatel podpoří ohroženého člena družiny. Jeho název však neznamená samostatnou bytost s neomezenými vlastními akcemi. Uvedený účinek je obranný bonus pro cíl, nikoli další plnohodnotný bojovník v souboji.",
+      "Výhoda trvá dvě kola a je potřeba zohlednit nesčítání. Jediné použití za souboj vybízí k výběru důležité chvíle, nikoli k předpokladu trvalé ochrany. Družina může bonus využít při nebezpečném kroku nebo pokračujícím střetu. Cíl ale stále může utrpět zranění a potřebuje jednat s ohledem na skutečnou situaci.",
+      "Přesný účinek: Cíl získá +2 FO i MO. Bonus: +2 FO a MO. Cíl: 1 spojenec na dohled. Trvání: 2 kola. Omezení: 1× za souboj; nesčítá se. K použití je potřeba minimálně Chytrost 8 a Level 2, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/duch/rada-predku": [
+      "Rada předků poskytne družině jednu pravdivou a užitečnou stopu k právě řešenému problému. V příběhu může připomenout spojení s minulostí a zkušenostmi, které přesahují samotné hrdiny. Je to pomoc pro další uvažování, ne převzetí celého dobrodružství. Stopa má podpořit vlastní rozhodnutí hráčů a nabídnout směr, který mohou dále prozkoumat.",
+      "Použití jednou za dobrodružství dává radě zvláštní váhu. Vyplatí se vědět, jaký problém družina právě řeší a kde potřebuje nový podnět. Kouzlo neprozradí celé řešení ani jistou budoucnost. I pravdivá informace může vyžadovat výklad a ověření dalšími kroky, takže po získání rady začíná nové rozhodování místo automatického vítězství.",
+      "Přesný účinek: AI poskytne jednu pravdivou a užitečnou stopu k právě řešenému problému. Neprozradí celé řešení ani jistou budoucnost. Cíl: družina. Trvání: okamžitě. Omezení: 1× za dobrodružství. K použití je potřeba minimálně Chytrost 9 a Level 3, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
     ]
   }
 }

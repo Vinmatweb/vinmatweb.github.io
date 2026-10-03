@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 254,
+  "completed": 258,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -194,7 +194,11 @@
     "magic/duch/videni-duchu",
     "magic/duch/pozehnani",
     "magic/duch/ochrana-duse",
-    "magic/duch/rozhovor-s-duchem"
+    "magic/duch/rozhovor-s-duchem",
+    "magic/duch/obnova-odvahy",
+    "magic/duch/duchovni-paprsek",
+    "magic/duch/strazny-duch",
+    "magic/duch/rada-predku"
   ],
-  "latestBatch": 48
+  "latestBatch": 49
 }
