@@ -153,7 +153,11 @@
     "equip/pergamen",
     "equip/brk",
     "equip/inkoust",
-    "equip/mech-s-vinem"
+    "equip/mech-s-vinem",
+    "equip/loutna",
+    "equip/mandolina",
+    "equip/harfa",
+    "equip/dudy"
   ],
   "profiles": {
     "best/krysa": [
@@ -925,6 +929,26 @@
       "Měch s vínem je cestovní zásoba, která může být v Elarii určena pro hostinu, obchod nebo předání dospělému obyvateli osady. Jeho značení může určit původ a obsah se může stát předmětem drobné dohody. Pro hru je důležité zachovat přesný omezený účinek a nepovažovat obyčejnou zásobu za léčivý lektvar.",
       "Katalog výslovně uvádí, že neobnovuje životy. Herně může otupit běžnou bolest při ošetření pouze tehdy, když je bolest jedinou překážkou klidného provedení zákroku. Neodstraňuje jed, kletbu ani samotné zranění. Družina může zásobu doručit, směnit nebo podle příběhu využít při domluvě; žádné další léčivé bonusy z ní automaticky nevznikají.",
       "Pravidlový účinek: Neléčí Ž. Může otupit běžnou bolest při ošetření, pokud je bolest jedinou překážkou klidného provedení zákroku. Cena je 3 s. Jde o spotřební zásobu; při použití zohledněte její spotřebování. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/loutna": [
+      "Loutna patří k večerům u ohniště, k písním o dávných výpravách i k vystoupením, na kterých bard poprvé získá jméno. Její struny mohou doprovázet hlas, rozhovor nebo tanec. Vyřezávané tělo a odřený obal vypovídají o cestách majitele; drahocenný vzhled však sám nepřináší další pravidlovou výhodu.",
+      "Dobře se hodí k příběhu putujícího hudebníka, který navazuje vztahy písněmi a pamatuje si místní balady. Vystoupení může otevřít rozhovor s hostinským či přilákat posluchače, jejich reakce ale závisí na okolnostech. Nástroj nepřebírá rozhodování publika a sám nezaručuje úspěch při vyjednávání. Na cestě potřebuje ochranu před poškozením.",
+      "Pravidlový účinek: +1 CHA při hudebním vystoupení. Cena je 2 z. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/mandolina": [
+      "Mandolína nabízí jasný, živý zvuk vhodný pro taneční melodie a svižné doprovody. V Elarii ji může nosit potulný hráč, člen malé kapely nebo hrdina, který se hudbu naučil doma. Osobní styl vystoupení určuje hudebník: stejný nástroj může doprovázet veselou slavnost i tichou vzpomínku na ztraceného přítele.",
+      "Uplatní se tam, kde chce postava oslovit lidi hudebním vystoupením a zapojit se do místního života. Znalost oblíbené melodie může posloužit jako začátek setkání, nikoli jako automatické přesvědčení každého posluchače. Příběh nástroje může vést ke starému učiteli, bývalé kapele nebo nedořešenému dluhu; tyto motivy nemění jeho základní účinek.",
+      "Pravidlový účinek: +1 CHA při hudebním vystoupení. Cena je 2 z. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/harfa": [
+      "Harfa spojuje jemný zvuk strun s výraznou siluetou, která může být ozdobou sálu i skromného vystoupení. Její majitel nemusí být dvorním umělcem: může uchovávat rodinné písně nebo cestovat za zapomenutými melodiemi. Velikost, materiál a zdobení lze přizpůsobit postavě, přičemž herní hodnoty zůstávají stejné jako v katalogu.",
+      "Hodí se k hudebním scénám, které mají vytvořit náladu a přimět publikum naslouchat. Hudba může doprovodit slavnost, rozloučení nebo vyprávění legendy, sama však nenahrazuje kouzlo uspání ani léčení. Na výpravě dává smysl domluvit způsob bezpečné přepravy. Prasklá struna či ztracená skladba mohou přirozeně zahájit menší dobrodružství.",
+      "Pravidlový účinek: +1 CHA při hudebním vystoupení. Cena je 2 z. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/dudy": [
+      "Dudy mají nápadný, pronikavý hlas, který se hodí ke společnému tanci, průvodům a slavnostem pod širým nebem. V příběhu mohou připomínat domov horského cestovatele nebo tradici vesnice, která se schází při každé sklizni. Jejich majitel určuje repertoár i náladu; nástroj sám nepřidává bojové povely ani magický vliv.",
+      "Vystoupení na dudy může přitáhnout pozornost a dát družině příležitost představit se místním lidem. Výrazný zvuk se zároveň nehodí k nenápadnému průzkumu, takže záleží na místě a záměru hráče. Ohlas publika není předem zaručený. Zapomenutý sváteční nápěv nebo soutěž mezi hudebníky mohou nabídnout zajímavější scénu než pouhé házení na úspěch.",
+      "Pravidlový účinek: +1 CHA při hudebním vystoupení. Cena je 1 z 5 s. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
     ]
   }
 }
