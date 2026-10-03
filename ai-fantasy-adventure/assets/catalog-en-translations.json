@@ -221,5 +221,19 @@
       "dlouhý luk +3": "Longbow +3",
       "kožená +2": "Leather armor +2"
     }
+  },
+  "best/zlodej": {
+    "name": "Thief",
+    "profile": [
+      "A thief may grow up in city alleys, operate in a marketplace or burgle houses in a wealthy neighborhood. This profile describes someone accustomed to acquiring things discreetly and finding gaps in other people's attention. They study guards' habits, crowds and escape opportunities. An abandoned warehouse or a room above an inn may serve as a hideout, but an experienced thief dislikes revealing their true base.",
+      "They work alone, with a trusted partner or for a group that divides tasks among lookouts, thieves and fences. If they belong to a guild, they may answer to its rules and leaders. Money, debt, survival, revenge or a desire for a particular object can motivate them. Their ability to steal does not determine whom they are willing to harm. Some avoid violence, while others remove obstacles without hesitation.",
+      "Sneak Attack gives them an advantage once per combat against a target that has not yet acted that round. A thief therefore benefits from surprise and acting quickly, while a long, open confrontation may jeopardize their escape route. The party can catch, hire or persuade them to return a stolen item. An interesting encounter can also arise when they know about a greater crime and offer information in exchange for protection from their own employer."
+    ],
+    "strings": {
+      "Zákeřný útok": "Sneak Attack",
+      "1× za souboj získá +2 k výslednému ÚTOKU, pokud cíl v tomto kole ještě nejednal.": "Once per combat, gains +2 to the final Attack result if the target has not yet acted this round.",
+      "krátký meč +2": "Short sword +2",
+      "kožená +2": "Leather armor +2"
+    }
   }
 }
