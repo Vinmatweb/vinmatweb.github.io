@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 122,
+  "completed": 126,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -62,7 +62,11 @@
     "equip/prosivana-zbroj",
     "equip/kozena-zbroj",
     "equip/krouzkova-zbroj",
-    "equip/supinova-zbroj"
+    "equip/supinova-zbroj",
+    "equip/platova-zbroj",
+    "equip/maly-stit",
+    "equip/stredni-stit",
+    "equip/velky-stit"
   ],
-  "latestBatch": 15
+  "latestBatch": 16
 }

@@ -121,7 +121,11 @@
     "equip/prosivana-zbroj",
     "equip/kozena-zbroj",
     "equip/krouzkova-zbroj",
-    "equip/supinova-zbroj"
+    "equip/supinova-zbroj",
+    "equip/platova-zbroj",
+    "equip/maly-stit",
+    "equip/stredni-stit",
+    "equip/velky-stit"
   ],
   "profiles": {
     "best/krysa": [
@@ -733,6 +737,26 @@
       "Šupinová zbroj je těžká ochrana s výraznou podobou, kterou v Elarii může nosit zkušený obránce nebo člen významné stráže. Jednotlivé části mohou být zdobené znakem dílny, rodu či místa služby. Předmět může mít vlastní příběh, například památku na dlouhou obranu města, a přesto zůstat běžnou zbrojí.",
       "Vysoký základ fyzické obrany je spojen se značným požadavkem na sílu. Hrdina by měl zvolit ochranu, kterou opravdu dokáže aktivně používat, nikoli jen nejvyšší dostupné číslo. Nevyjmenované pohybové postihy ani ochranu proti živlům nepřidávejte automaticky. Podoba zbroje umožňuje výrazné výtvarné zpracování, herní účinek však zůstává podle přesného řádku.",
       "Katalog uvádí typ „těžká“ a základní bonus fyzické obrany FO +4. Požadovaná Síla je S8. Cena je 12 z. Konečná obrana vychází také z vlastností hrdiny a pravidel používané výstroje. Ochranná hodnota této zbroje sama nepřidává další bonus k magické obraně."
+    ],
+    "equip/platova-zbroj": [
+      "Plátová zbroj je nejsilnější běžnou zbrojí tohoto katalogu a v Elarii může představovat významnou investici i osobní závazek. Může být dílem uznávaného zbrojíře, služební výstrojí nebo odměnou za mimořádný čin. Znaky a ozdoby mohou určit, koho nositel chrání a proč si důvěry spojené s takovou výbavou váží.",
+      "Vyžaduje velmi vysokou sílu a má výraznou cenu. Pokud minimum není splněné, nelze její bonus prostě použít proto, že ji postava získala. Vhodná může být jiná zbroj nebo čas na další rozvoj hrdiny. Katalog jí automaticky nepřidává magickou obranu ani nevyjmenované postihy. Při plánování je důležitá obrana celé družiny, ne pouze výstroj jednoho člena.",
+      "Katalog uvádí typ „těžká“ a základní bonus fyzické obrany FO +5. Požadovaná Síla je S10. Cena je 25 z. Konečná obrana vychází také z vlastností hrdiny a pravidel používané výstroje. Ochranná hodnota této zbroje sama nepřidává další bonus k magické obraně."
+    ],
+    "equip/maly-stit": [
+      "Malý štít je dostupná ochrana pro hrdinu, který potřebuje přidat fyzickou obranu a chce ponechat druhou ruku pro vhodnou zbraň. V Elarii může mít prostý povrch, osobní znak nebo barvy stráže. Zdobení často vyjadřuje vztah k rodině či skupině, ale nemění automaticky herní účinnost.",
+      "Nižší silový požadavek umožňuje použití i některým hrdinům, pro které je větší štít nevhodný. Pořád jej však musí držet v jedné ruce; současné používání obouruční zbraně tím není vyřešené. Přítomnost štítu nepřidává další zvláštní parírování či magickou odolnost. Rozhoduje uvedený bonus a jeho započtení podle pravidel.",
+      "Katalog uvádí typ „štít“ a základní bonus fyzické obrany FO +1. Požadovaná Síla je S4. Cena je 8 s. Konečná obrana vychází také z vlastností hrdiny a pravidel používané výstroje. Štít je držen v jedné ruce; při jeho používání musí zůstat odpovídající ruka volná."
+    ],
+    "equip/stredni-stit": [
+      "Střední štít je běžná ochranná volba pro silnějšího dobrodruha, který kombinuje jednoruční zbraň a obranu. V Elarii může být součástí strážní výzbroje nebo předmětem nesoucím rodový znak. Jeho podoba se může změnit při opravách a cestách; příběhová historie nemusí ovlivnit přesné hodnoty.",
+      "Nabízí vyšší základ fyzické obrany než malý štít a zároveň zvyšuje silový požadavek. Doporučená sestava povolání musí odpovídat skutečné síle konkrétní postavy. Štít zabírá jednu ruku a neposkytuje automatický útok navíc. Družina může řešit, komu ochranu svěřit, aby byla užitečná v rámci společné výpravy.",
+      "Katalog uvádí typ „štít“ a základní bonus fyzické obrany FO +2. Požadovaná Síla je S6. Cena je 2 z. Konečná obrana vychází také z vlastností hrdiny a pravidel používané výstroje. Štít je držen v jedné ruce; při jeho používání musí zůstat odpovídající ruka volná."
+    ],
+    "equip/velky-stit": [
+      "Velký štít je nejsilnější běžnou štítovou volbou tohoto katalogu. V Elarii může patřit obránci brány, zkušenému strážci nebo hrdinovi, který staví svůj styl na ochraně. Výrazný znak se může stát poznávacím znamením nositele i předmětem důležitého slibu. Příběhová prestiž však není zvláštní herní schopností.",
+      "Vyšší ochrana vyžaduje dostatečnou sílu a jednu volnou ruku. Volba štítu proto souvisí s používanou zbraní a s tím, jakou roli chce hrdina plnit. Katalog automaticky nepovoluje ukrýt za štítem celou družinu nebo přidat odolnost proti magii. Konkrétní kryt a další možnosti závisejí na situaci a platných pravidlech.",
+      "Katalog uvádí typ „štít“ a základní bonus fyzické obrany FO +3. Požadovaná Síla je S8. Cena je 4 z. Konečná obrana vychází také z vlastností hrdiny a pravidel používané výstroje. Štít je držen v jedné ruce; při jeho používání musí zůstat odpovídající ruka volná."
     ]
   }
 }
