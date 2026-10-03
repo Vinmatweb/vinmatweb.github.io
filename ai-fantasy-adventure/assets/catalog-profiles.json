@@ -205,7 +205,11 @@
     "magic/ohen/zhavy-dotek",
     "magic/ohen/kourova-clona",
     "magic/ohen/odolnost-vuci-zaru",
-    "magic/ohen/plamenny-stit"
+    "magic/ohen/plamenny-stit",
+    "magic/ohen/ohnive-kopi",
+    "magic/ohen/ohniva-koule",
+    "magic/ohen/ohniva-zed",
+    "magic/ohen/draci-dech"
   ],
   "profiles": {
     "best/krysa": [
@@ -1237,6 +1241,26 @@
       "Plamenný štít poskytne sesilateli nebo viditelnému spojenci krátké posílení fyzické obrany proti útokům zblízka. Jeho jméno může vyvolávat představu nebezpečných plamenů, pravidlově však jde o ochranu. Útočníka sám nezraňuje, což je důležitý rozdíl při rozhodování, jak bude chráněný hrdina postupovat v bezprostředním střetu.",
       "Hodí se načasovat jej na dvě kola, kdy se očekává tlak v boji zblízka. Útoky z jiných směrů či jiného druhu nejsou automaticky pokryté stejnou výhodou. Kouzlo se nesčítá a má omezené použití za souboj. Výhodu proto posuzujte společně s ostatní obranou cíle a plánem celé družiny.",
       "Přesný účinek: Cíl získá +2 FO pouze proti útokům zblízka. Štít sám nezraňuje útočníka. Bonus: +2 FO. Cíl: sesilatel nebo 1 spojenec na dohled. Trvání: 2 kola. Omezení: 1× za souboj; nesčítá se. K použití je potřeba minimálně Chytrost 8 a Level 2, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/ohen/ohnive-kopi": [
+      "Ohnivé kopí je pokročilý útok soustředěný na jediný viditelný cíl. Může být výrazným okamžikem souboje, kdy sesilatel využije svou silnější ohnivou magii proti významnému protivníkovi. Přestože jeho podoba připomíná zbraň, nejde o běžné kopí držené v ruce ani o nástroj pro opakované fyzické výpady.",
+      "Protože je dostupné jen jednou za souboj, záleží na volbě okamžiku i cíle. Zranění se vypočítá běžným magickým vzorcem proti obraně protivníka a není předem zaručené. Kouzlo nezasahuje automaticky další nepřátele za prvním cílem. Jeho vyšší požadavky zdůrazňují, že nejde o náhradu základního útoku pro každého začínajícího sesilatele.",
+      "Přesný účinek: Silný jednobodový útok; zranění se vypočte běžným vzorcem proti MO. Bonus: +5 k MÚ. Cíl: 1 cíl na dohled. Trvání: okamžitě. Omezení: 1× za souboj. K použití je potřeba minimálně Chytrost 10 a Level 5, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/ohen/ohniva-koule": [
+      "Ohnivá koule je plošný ohnivý útok pro několik cílů stojících blízko sebe. Její význam je jiný než u silného kouzla proti jednomu protivníkovi: zasáhne více cílů, ale používá bonus upravený pro plošné pravidlo. V příběhu může rozhodnout napjatý okamžik, stále však záleží na konkrétním rozložení účastníků.",
+      "Před sesláním je důležité určit cíle a dodržet společné pravidlo plošných útoků. Jeden hod se vyhodnotí proti magické obraně každého zvlášť, takže výsledky nemusejí být stejné. Nelze automaticky zasáhnout neomezený dav. Omezení na jedno použití za souboj vybízí počkat na skutečně vhodnou situaci, místo očekávání stejné síly proti jednotlivci i skupině.",
+      "Přesný účinek: Jeden hod MÚ se porovná zvlášť s MO každého cíle. Bonus je už snížen proti srovnatelnému jednobodovému kouzlu. Bonus: +3 k MÚ. Cíl: nejvýše 3 cíle blízko sebe. Trvání: okamžitě. Omezení: 1× za souboj; platí společné plošné pravidlo. K použití je potřeba minimálně Chytrost 9 a Level 3, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/ohen/ohniva-zed": [
+      "Ohnivá zeď kombinuje zásah při vzniku s krátkodobou překážkou v prostoru. Hodí se k rozdělení bojiště nebo přerušení běžné cesty, když družina potřebuje získat čas. Její nebezpečí pro cíle je přesně časově vymezené: vznik může zasáhnout, další trvání už podle katalogu nepřidává nové zranění.",
+      "Při plánování je potřeba rozlišit počáteční plošný útok od následného zakrytí výhledu a ztížení průchodu. Nejde o opakované zraňování každé kolo. Krátká linie má omezenou délku i počet zasažených cílů, takže je důležité vhodné umístění. Zeď může pomoci ústupu, ale může také oddělit družinu od cesty, kterou chtěla sama použít.",
+      "Přesný účinek: Při vzniku zasáhne nejvýše 3 cíle v linii podle plošného pravidla. Poté zeď zakrývá výhled a brání běžnému průchodu, ale už znovu nezraňuje. Bonus: +2 k MÚ. Cíl: linie do 5 m; nejvýše 3 cíle při vzniku. Trvání: 3 kola. Omezení: 1× za souboj. K použití je potřeba minimálně Chytrost 10 a Level 5, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/ohen/draci-dech": [
+      "Dračí dech patří k výrazným pokročilým ohnivým kouzlům a zasahuje několik cílů v kuželu. Název vyjadřuje jeho silnou podobu, nedává však sesilateli všechny schopnosti draka. V příběhu je to vzácný okamžik, pro který se hrdina rozhodne po zvážení situace a dalšího průběhu výpravy.",
+      "Použití je omezené na jednou za dobrodružství, proto není vhodné počítat s ním v každém střetu. Je nutné vymezit kužel a nejvýše tři cíle podle plošného pravidla. Jeden hod se porovnává s magickou obranou každého zvlášť. Síla útoku z něj nedělá neomezenou zbraň proti celé armádě ani zaručené vítězství.",
+      "Přesný účinek: Velmi silný plošný ohnivý útok. Jeden hod MÚ se porovná zvlášť s MO každého cíle. Bonus: +4 k MÚ. Cíl: kužel; nejvýše 3 cíle. Trvání: okamžitě. Omezení: 1× za dobrodružství; platí plošné pravidlo. K použití je potřeba minimálně Chytrost 11 a Level 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
     ]
   }
 }

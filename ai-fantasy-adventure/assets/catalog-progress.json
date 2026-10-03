@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 206,
+  "completed": 210,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -146,7 +146,11 @@
     "magic/ohen/zhavy-dotek",
     "magic/ohen/kourova-clona",
     "magic/ohen/odolnost-vuci-zaru",
-    "magic/ohen/plamenny-stit"
+    "magic/ohen/plamenny-stit",
+    "magic/ohen/ohnive-kopi",
+    "magic/ohen/ohniva-koule",
+    "magic/ohen/ohniva-zed",
+    "magic/ohen/draci-dech"
   ],
-  "latestBatch": 36
+  "latestBatch": 37
 }
