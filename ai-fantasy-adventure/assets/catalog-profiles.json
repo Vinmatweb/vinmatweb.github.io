@@ -113,7 +113,11 @@
     "equip/obourucni-sekera",
     "equip/vrhaci-nuz",
     "equip/prak",
-    "equip/ostep"
+    "equip/ostep",
+    "equip/kratky-luk",
+    "equip/kuse",
+    "equip/dlouhy-luk",
+    "equip/bez-zbroje"
   ],
   "profiles": {
     "best/krysa": [
@@ -685,6 +689,26 @@
       "Oštěp je vrhací silová zbraň, která se hodí k postavě spojující fyzickou zdatnost s možností jednat na dálku. V Elarii může doprovázet průzkumníka otevřené krajiny, strážce hranic nebo obyvatele osady, kde je taková výzbroj obvyklá. Znak na násadě může rozpoznat majitele nebo jeho skupinu.",
       "Na rozdíl od obratnostních střelných zbraní vychází z požadavku na sílu. Používá jednu ruku a po vrhu je potřeba uvažovat o další výzbroji či získání oštěpu zpět. Nepřidává automatický druhý útok ani zvláštní průraz. Jeho volba dává smysl, pokud odpovídá skutečným vlastnostem hrdiny a plánovanému prostředí výpravy.",
       "Při útoku používá Sílu (S). Označení 1R znamená použití jedné ruky. Minimum je S5 a katalogový bonus fyzického útoku FÚ je +2. Cena je 6 s. Celkový útok hrdiny se dále vypočítá podle jeho vlastností a platných pravidel; uvedený bonus zbraně není celý výsledný útok."
+    ],
+    "equip/kratky-luk": [
+      "Krátký luk je obratnostní zbraň na dálku vhodná pro začínajícího hraničáře i dalšího dobrodruha, který splňuje požadavky. V Elarii jej může vyrábět místní řemeslník nebo předávat zkušený průvodce svému žákovi. Podoba luku může připomínat konkrétní krajinu a rodovou tradici, aniž by přidávala skryté vlastnosti.",
+      "Při používání potřebuje obě ruce. Výběr proto souvisí s možností odložit štít a získat bezpečné místo pro střelbu. Kryt, výhled a přístup protivníků jsou často důležitější než samotný název zbraně. Krátký luk automaticky nezvyšuje plížení ani neumožňuje střelbu skrz překážku; družina musí vycházet z konkrétní situace.",
+      "Při útoku používá Obratnost (O). Označení 2R znamená použití obou rukou. Minimum je O5 a katalogový bonus fyzického útoku FÚ je +2. Cena je 2 z. Celkový útok hrdiny se dále vypočítá podle jeho vlastností a platných pravidel; uvedený bonus zbraně není celý výsledný útok."
+    ],
+    "equip/kuse": [
+      "Kuše je účinnější obratnostní zbraň na dálku, kterou lze v Elarii spojit s městskou stráží, ochranou karavan i samostatným dobrodruhem. Její mechanismus nabízí výraznou vizuální podobu a může mít řemeslnický znak. Opravený detail nebo známé značení mohou odhalit, odkud kus výzbroje pochází.",
+      "Vyžaduje obě ruce a vyšší obratnost než jednodušší střelné volby. Katalog jí nepřidává samostatné pravidlo nabíjení, automatické prorážení zbroje ani další omezení podle skutečných historických kuší. Při hraní tedy rozhodují zde uvedené parametry. Hrdina může preferovat kuši kvůli osobní zkušenosti, dostupnosti nebo podobě své postavy.",
+      "Při útoku používá Obratnost (O). Označení 2R znamená použití obou rukou. Minimum je O6 a katalogový bonus fyzického útoku FÚ je +3. Cena je 4 z. Celkový útok hrdiny se dále vypočítá podle jeho vlastností a platných pravidel; uvedený bonus zbraně není celý výsledný útok."
+    ],
+    "equip/dlouhy-luk": [
+      "Dlouhý luk je zbraň pro hrdinu s vysokou obratností, který chce mít výraznou roli při boji na dálku. V Elarii může být odměnou od zkušeného učitele, výrobkem vyhlášené dílny nebo součástí ochrany rodné krajiny. Jeho původ může dát postavě zajímavý vztah k lidem, kteří jí výzbroj svěřili.",
+      "Používá obě ruce a má vyšší požadavek na obratnost než krátký luk. Stejný uvedený základ útoku jako kuše neznamená, že jsou jejich příběhové podoby stejné; výběr může vycházet z charakteru a dostupnosti. Delší tvar však nevytváří další číselný bonus k dosahu. V boji stále potřebuje výhled a vhodné postavení.",
+      "Při útoku používá Obratnost (O). Označení 2R znamená použití obou rukou. Minimum je O7 a katalogový bonus fyzického útoku FÚ je +3. Cena je 4 z. Celkový útok hrdiny se dále vypočítá podle jeho vlastností a platných pravidel; uvedený bonus zbraně není celý výsledný útok."
+    ],
+    "equip/bez-zbroje": [
+      "Bez zbroje je referenční stav hrdiny, který právě nemá aktivní ochrannou zbroj. Nejde o zvláštní kupovaný předmět ani o kouzelnou výhodu. Postava může nosit běžné oblečení, cestovní oděv nebo vlastní osobní doplňky. Tento řádek pomáhá jasně určit, jakou část ochrany je potřeba zahrnout do výpočtu.",
+      "Volba může souviset s nízkou silou, nedostatkem prostředků nebo okolnostmi příběhu. Neznamená, že je hrdina bez jakékoli obrany: další složky vycházejí z jeho vlastností a platných pravidel. Zároveň nevzniká automatický bonus k obratnosti či plížení. Při pozdějším získání zbroje stačí ověřit požadavky a odpovídajícím způsobem změnit aktivní výstroj.",
+      "Katalog uvádí typ „žádná“ a základní bonus fyzické obrany FO +0. Tento referenční stav nemá silový požadavek. Běžná cena není uvedená. Konečná obrana vychází také z vlastností hrdiny a pravidel používané výstroje. Ochranná hodnota této zbroje sama nepřidává další bonus k magické obraně."
     ]
   }
 }
