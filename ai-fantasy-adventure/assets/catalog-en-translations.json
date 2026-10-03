@@ -110,5 +110,19 @@
       "uštknutí +1": "Bite +1",
       "šupiny +1": "Scales +1"
     }
+  },
+  "best/medved": {
+    "name": "Bear",
+    "profile": [
+      "Bears inhabit Elaria's vast forests, mountain valleys and remote slopes. They shelter in thickets, rocky hollows or beneath fallen trees. Large tracks, dug-up ground, damaged beehives and scratches on trunks reveal their presence. They seek food according to the season; fruit, honey, small prey and easily accessible supplies attract them.",
+      "They spend most of their time alone. The main exception is a mother with cubs, who protects their safety far more fiercely than her own comfort. A bear remembers places where food is available and quickly recognizes where danger is coming from. No leader or evil intention controls it. Being surprised at close range, injured or cornered can, however, turn a peaceful animal into an extremely dangerous opponent.",
+      "In combat, it relies on strength and endurance. Mighty Blow strengthens a melee attack once per combat, making it truly risky to remain within reach of its paws. Leaving room to retreat and keeping away from cubs can prevent conflict. A displaced bear near a village may be a clue to a disturbed forest, a ruined den or someone deliberately luring it toward human homes."
+    ],
+    "strings": {
+      "Mohutný úder": "Mighty Blow",
+      "1× za souboj získá +2 k výslednému ÚTOKU zblízka.": "Once per combat, gains +2 to the final result of a melee Attack.",
+      "drápy a tlapy +3": "Claws and paws +3",
+      "hustá srst +2": "Thick fur +2"
+    }
   }
 }
