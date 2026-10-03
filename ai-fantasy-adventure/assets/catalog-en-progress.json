@@ -1,11 +1,12 @@
 {
   "target": 300,
-  "completed": 4,
+  "completed": 5,
   "updated": [
     "best/liska",
     "best/vlk",
     "best/krysa",
-    "best/netopyr"
+    "best/netopyr",
+    "best/divoka-kocka"
   ],
-  "latest": "best/netopyr"
+  "latest": "best/divoka-kocka"
 }

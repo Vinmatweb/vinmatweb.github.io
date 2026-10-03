@@ -55,5 +55,19 @@
       "kousnutí +0": "Bite +0",
       "bez ochrany": "No protection"
     }
+  },
+  "best/divoka-kocka": {
+    "name": "Wildcat",
+    "profile": [
+      "The wildcat lives in quiet forests, thickets and rocky places where it can find small prey and safe hiding places. It is usually solitary and moves silently; a paw print, scratches on a trunk or a brief flash of eyes among the branches may reveal its presence.",
+      "It is alert and patient, preferring escape to an unnecessary confrontation. When defending its young or unable to retreat, however, it can spring forward fiercely and use both claws and teeth. It relies on mobility and surprise. Its Pounce ability is most useful at the start of combat.",
+      "By following a wildcat, the party might discover a quiet shelter, a small trail or a place recently disturbed by another creature. Earning its trust requires patience and distance; it is not a tame house cat, and approaching too quickly may frighten it."
+    ],
+    "strings": {
+      "Výpad": "Pounce",
+      "V prvním kole souboje má +1 k výslednému ÚTOKU.": "Gains +1 to the final Attack result during the first round of combat.",
+      "drápy +1": "Claws +1",
+      "srst +1": "Fur +1"
+    }
   }
 }
