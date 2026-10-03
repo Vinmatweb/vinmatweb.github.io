@@ -281,7 +281,11 @@
     "magic/temna/nemrtvy-sluzebnik",
     "magic/temna/paprsek-vycerpani",
     "magic/prirodni/rec-zvirat",
-    "magic/prirodni/uklidneni-zvirete"
+    "magic/prirodni/uklidneni-zvirete",
+    "magic/prirodni/leciva-bylina",
+    "magic/prirodni/rust-rostlin",
+    "magic/prirodni/trny",
+    "magic/prirodni/koreny"
   ],
   "profiles": {
     "best/krysa": [
@@ -1693,6 +1697,26 @@
       "Uklidnění zvířete se pokusí ukončit útok běžného zvířete, pokud není dál ohrožováno. Může umožnit bezpečnější setkání nebo odchod bez zbytečného boje. Nevytváří ale trvalého poslušného společníka. Zvíře nepřestává mít vlastní chování a původní důvod obav může být důležitý pro další průběh scény i rozhodnutí družiny.",
       "Po seslání je zásadní, aby hrdinové zvíře znovu nenapadli nebo neohrozili. U hlavního zvířecího protivníka platí pouze omezení zvláštní schopnosti a příštího útoku. Je potřeba respektovat rozdíl i omezení použití na stejný cíl. Kouzlo může nabídnout příležitost pochopit situaci, ale samo nevysvětluje, proč bylo zvíře agresivní.",
       "Přesný účinek: Při úspěchu běžné zvíře přestane útočit, pokud není znovu ohroženo. Hlavní zvířecí protivník pouze vynechá zvláštní schopnost a má −2 k příštímu útoku. Bonus: +0 k MÚ. Cíl: 1 zvíře na dohled. Trvání: do konce scény nebo do napadení. Omezení: 1× na stejné zvíře za scénu; platí pravidlo hlavního protivníka. K použití je potřeba minimálně Chytrost 6, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/prirodni/leciva-bylina": [
+      "Léčivá bylina čerpá z prostředí s živými rostlinami a nabídne malou léčivou pomoc. V příběhu může být jemným okamžikem péče, kdy sesilatel využije vztah k přírodě při cestě krajinou. Kouzlo vytvoří krátce zářící bylinu a obnoví Životy podle koeficientu léčení, nikoli podle libovolně popsané vzácnosti rostliny.",
+      "Je třeba stát tam, kde živé rostliny skutečně rostou, a dostat se na dosah cíle. Použití je omezené za scénu a v souboji podléhá sdílenému léčivému limitu. Kouzlo tedy není volnou další obnovou vedle ostatních léčivých seslání. Také automaticky neodstraňuje každý jed nebo kletbu jen díky svému přírodnímu původu.",
+      "Přesný účinek: Vytvoří krátce zářící léčivou bylinu a obnoví počet Ž podle koeficientu léčení. Bonus: základ 3 Ž před koeficientem léčení. Cíl: 1 tvor na dosah. Trvání: okamžitě. Omezení: 1× za scénu; jen tam, kde rostou živé rostliny; sdílený limit léčení v souboji. K použití je potřeba minimálně Chytrost 6, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/prirodni/rust-rostlin": [
+      "Růst rostlin upraví živé rostliny do jednoduché užitečné podoby, například žebříku, úkrytu, mostku nebo průchodu. Může pomoci družině využít krajinu místo jejího ničení. Příběhově nabízí prostor pro nápaditý postup, ale vyžaduje vhodné rostliny a omezený prostor. Neznamená neomezené vytváření celého lesa z prázdného kamene.",
+      "Výsledek trvá jednu scénu, proto je potřeba myslet na návrat i další využití. Kouzlo nezachytí tvora; tuto možnost mají Kořeny. Družina by měla promyslet konkrétní tvar a jeho roli v plánu. Není vhodné odvozovat z praktické vegetační úpravy další automatické útoky, trvalou stavbu nebo libovolně rozsáhlou změnu krajiny.",
+      "Přesný účinek: Urychlí růst do podoby žebříku, úkrytu, mostku nebo průchodu. Nezachytí tvora; k tomu slouží Kořeny. Cíl: živé rostliny v prostoru do 3 m. Trvání: okamžitě; výsledek trvá 1 scénu. Omezení: 1× za scénu. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/prirodni/trny": [
+      "Trny jsou přímý útok Přírodní magie proti viditelnému cíli poblíž rostlin nebo půdy. Jejich podoba může připomenout nebezpečí, které krajina skrývá i ve zdánlivě klidném místě. Použití má jasné prostředí a útočný účinek. Kouzlo není současně uvězněním, dlouhodobým růstem překážky ani neomezenou změnou okolí podle přání sesilatele.",
+      "Před sesláním je třeba ověřit vhodnost okolí cíle. Zranění se vyhodnotí proti magické obraně a není zaručené samotným popisem ostrých trnů. Nejsou uvedené další opakované útoky nebo jedový účinek. Pro družinu se může stát základní možností útočné Přírodní magie, zatímco omezení pohybu a plošné zásahy řeší jiná konkrétní kouzla.",
+      "Přesný účinek: Přímý přírodní útok proti MO cíle. Bonus: +2 k MÚ. Cíl: 1 cíl na dohled poblíž rostlin nebo půdy. Trvání: okamžitě. Omezení: —. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/prirodni/koreny": [
+      "Kořeny se pokusí krátce omezit přesun cíle stojícího poblíž půdy nebo rostlin. Mohou vytvořit příležitost změnit vzdálenost v souboji nebo získat prostor pro odchod. Běžný cíl při úspěchu nemůže přejít jinam, ale stále může jednat na dosah. Není tedy automaticky zbavený všech způsobů útoku či obrany.",
+      "U hlavního protivníka platí jen poloviční přesun. Kouzlo trvá jedno kolo a na stejný cíl je možné jediné použití za souboj. Družina by měla vědět, jak krátkou výhodu využije, a zohlednit terén. Není možné přenést stejné uvěznění na každý povrch nebo počítat s opakovaným zastavováním nejsilnějšího nepřítele bez omezení.",
+      "Přesný účinek: Při úspěchu se běžný cíl nemůže přesunout, ale může jednat na dosah. Hlavní protivník má pouze poloviční přesun. Bonus: +0 k MÚ. Cíl: 1 cíl stojící poblíž půdy nebo rostlin. Trvání: 1 kolo. Omezení: 1× na stejný cíl za souboj; platí pravidlo hlavního protivníka. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
     ]
   }
 }

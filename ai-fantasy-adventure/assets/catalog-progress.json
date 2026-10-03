@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 282,
+  "completed": 286,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -222,7 +222,11 @@
     "magic/temna/nemrtvy-sluzebnik",
     "magic/temna/paprsek-vycerpani",
     "magic/prirodni/rec-zvirat",
-    "magic/prirodni/uklidneni-zvirete"
+    "magic/prirodni/uklidneni-zvirete",
+    "magic/prirodni/leciva-bylina",
+    "magic/prirodni/rust-rostlin",
+    "magic/prirodni/trny",
+    "magic/prirodni/koreny"
   ],
-  "latestBatch": 55
+  "latestBatch": 56
 }
