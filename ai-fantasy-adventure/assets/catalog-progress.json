@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 294,
+  "completed": 298,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -234,7 +234,11 @@
     "magic/hvezdna/pohled-osudu",
     "magic/hvezdna/astralni-cesta",
     "magic/hvezdna/zmena-osudu",
-    "magic/hvezdna/hvezdny-stit"
+    "magic/hvezdna/hvezdny-stit",
+    "magic/hvezdna/hvezdny-dest",
+    "magic/hvezdna/zastaveni-casu",
+    "magic/hvezdna/otevreni-brany-mezi-svety",
+    "magic/hvezdna/navrat-casu"
   ],
-  "latestBatch": 58
+  "latestBatch": 59
 }

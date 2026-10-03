@@ -293,7 +293,11 @@
     "magic/hvezdna/pohled-osudu",
     "magic/hvezdna/astralni-cesta",
     "magic/hvezdna/zmena-osudu",
-    "magic/hvezdna/hvezdny-stit"
+    "magic/hvezdna/hvezdny-stit",
+    "magic/hvezdna/hvezdny-dest",
+    "magic/hvezdna/zastaveni-casu",
+    "magic/hvezdna/otevreni-brany-mezi-svety",
+    "magic/hvezdna/navrat-casu"
   ],
   "profiles": {
     "best/krysa": [
@@ -1765,6 +1769,26 @@
       "Hvězdný štít je výrazná krátká ochrana sesilatele a nejvýše dvou blízkých spojenců. Posiluje fyzickou i magickou obranu a může být důležitým okamžikem společného přežití. Jeho vysoký bonus je vyvážen vzácností použití a požadavky. Nejde o trvalou ochranu celé skupiny bez ohledu na vzdálenost nebo neomezené bezpečí.",
       "Družina musí zohlednit blízkost cílů, tři kola trvání a nesčítání. Jediné použití za dobrodružství je důvodem připravit konkrétní plán, jak ochranu využije. Kouzlo samo neodstraní protivníka ani všechny překážky. Výhoda je velká, ale cíle mohou stále čelit nebezpečným výsledkům a musí pokračovat v promyšleném jednání.",
       "Přesný účinek: Každý z nejvýše 3 cílů získá +5 FO i MO. Bonus: +5 FO a MO. Cíl: sesilatel a nejvýše 2 blízcí spojenci. Trvání: 3 kola. Omezení: 1× za dobrodružství; nesčítá se; vyžaduje znalost kouzla. K použití je potřeba minimálně Chytrost 15 a Level 14, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/hvezdna/hvezdny-dest": [
+      "Hvězdný déšť představuje výjimečně silný plošný útok proti malé skupině blízkých cílů. Může být vrcholem náročného střetu a výrazným projevem Hvězdné magie. Přesto má přesně určený rozsah a nejvýše tři cíle. Jeho dramatický název neznamená zásah celé krajiny nebo libovolného počtu protivníků bez ohledu na rozmístění.",
+      "Jeden hod se porovná s magickou obranou každého cíle zvlášť a výsledky mohou být různé. Je třeba dodržet plošné pravidlo a jediné použití za dobrodružství. Znalost a další požadavky kouzla jsou nezbytné. Družina by měla vybrat vhodnou chvíli a počítat s navazujícím průběhem střetu, místo očekávání automatického ukončení každého boje.",
+      "Přesný účinek: Jeden hod MÚ se porovná zvlášť s MO každého cíle. Jde o výjimečnou plošnou sílu vyváženou požadavky a omezením. Bonus: +6 k MÚ. Cíl: nejvýše 3 cíle blízko sebe. Trvání: okamžitě. Omezení: 1× za dobrodružství; platí plošné pravidlo; vyžaduje znalost. K použití je potřeba minimálně Chytrost 16 a Level 16, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/hvezdna/zastaveni-casu": [
+      "Zastavení času dá sesilateli jednu dodatečnou hlavní akci, během níž nikdo jiný nejedná. Je to velmi výrazná, ale přesně omezená příležitost pro vlastní krok. Není neomezeným obdobím, ve kterém může hrdina vykonat cokoli a kolikrát chce. Po této akci pokračuje původní pořadí a souboj běží dál.",
+      "Je potřeba předem vědět, jakou konkrétní akci chce sesilatel využít. Použití je jednou za dobrodružství a během získané akce nelze seslat další Hvězdné kouzlo. Tento limit brání řetězení mimořádných účinků. Příběhově může jít o klíčový okamžik rozhodnutí, jehož hodnota vychází z promyšleného použití jedné možnosti, ne z nekonečného času.",
+      "Přesný účinek: Sesilatel okamžitě získá jednu dodatečnou hlavní akci, během níž nikdo jiný nejedná. Poté pokračuje původní pořadí. Cíl: sesilatel. Trvání: okamžitě. Omezení: 1× za dobrodružství; nelze jím seslat další Hvězdné kouzlo. K použití je potřeba minimálně Chytrost 17 a Level 18, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/hvezdna/otevreni-brany-mezi-svety": [
+      "Otevření brány mezi světy je rituál pro výpravu do předem známého a příběhově ukotveného světa či roviny. Může zahájit významnou cestu celé družiny, ale není libovolným výběrem neznámého místa bez souvislostí. Cíl musí mít v příběhu konkrétní základ. Brána přenáší tvory i jejich nesené vybavení po krátkou dobu.",
+      "Rituál trvá deset minut a probíhá mimo souboj, takže potřebuje vhodné místo a přípravu. Otevřený průchod existuje tři kola a použití je jednou za dobrodružství. Družina musí promyslet pořadí přechodu i další postup na druhé straně. Samotné otevření automaticky nezaručuje zpáteční cestu nebo bezpečné podmínky v cílovém světě.",
+      "Přesný účinek: Otevře průchod pouze do předem známého a příběhově ukotveného světa či roviny. Bránou mohou projít tvorové i nesené vybavení. Cíl: prázdný prostor pro bránu. Trvání: 3 kola. Omezení: 1× za dobrodružství; rituál 10 minut; mimo souboj. K použití je potřeba minimálně Chytrost 17 a Level 20, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/hvezdna/navrat-casu": [
+      "Návrat času obnoví stav aktuální scény na začátku předchozího kola nebo nejvýše o minutu dříve. Vrátí pozice, Životy, předměty i účinky a sesilatel si návrat pamatuje. Může vytvořit mimořádnou druhou možnost jednat na základě zkušenosti, ale není neomezeným cestováním do libovolného období nebo přepisem celé minulosti kampaně.",
+      "Použití je možné jen jednou za kampaň a vyžaduje znalost kouzla. Je potřeba zachovat přesnou hranici návratu a obnovit celý uvedený stav, nikoli vybrat jen výhodné části. Další průběh opět závisí na rozhodnutích a událostech. Získaná vzpomínka může pomoci změnit postup, sama však nezaručuje, že nový pokus bude bez nebezpečí.",
+      "Přesný účinek: Vrátí stav hry přesně na začátek předchozího kola nebo nejvýše o 1 minutu. Obnoví pozice, Životy, předměty i účinky; sesilatel si návrat pamatuje. Cíl: celá aktuální scéna. Trvání: okamžitě. Omezení: 1× za kampaň; vyžaduje znalost kouzla. K použití je potřeba minimálně Chytrost 18 a Level 22, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
     ]
   }
 }
