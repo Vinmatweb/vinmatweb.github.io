@@ -105,7 +105,11 @@
     "equip/kopi",
     "equip/rapir",
     "equip/jednorucni-mec",
-    "equip/palcat"
+    "equip/palcat",
+    "equip/jednorucni-sekera",
+    "equip/halapartna",
+    "equip/obourucni-mec",
+    "equip/valecne-kladivo"
   ],
   "profiles": {
     "best/krysa": [
@@ -637,6 +641,26 @@
       "Palcát je jednoruční silová zbraň s pevnou údernou částí. V Elarii může patřit strážci, ochránci svatyně či cestovateli, který dává přednost jednoduchému vzhledu před zdobenou čepelí. Rodový nebo služební znak může proměnit běžný kus vybavení v důležitý osobní předmět, jehož hodnota pro majitele přesahuje uvedenou cenu.",
       "Patří ke stejnému stupni útoku jako některé meče, proto výběr často vychází ze stylu postavy a dostupnosti. Používá jednu ruku a vyžaduje odpovídající sílu. Katalog mu nepřidává automatický bonus proti kostlivcům nebo zbroji; zvláštní odolnosti protivníka se vyhodnocují samostatně. Nález palcátu se známým znakem může spojit vybavení s minulostí konkrétního řádu.",
       "Při útoku používá Sílu (S). Označení 1R znamená použití jedné ruky. Minimum je S6 a katalogový bonus fyzického útoku FÚ je +3. Cena je 2 z 5 s. Celkový útok hrdiny se dále vypočítá podle jeho vlastností a platných pravidel; uvedený bonus zbraně není celý výsledný útok."
+    ],
+    "equip/jednorucni-sekera": [
+      "Jednoruční sekera je účinnější silová zbraň pro hrdinu, který už dokáže unést její nároky. V Elarii může pocházet z horské dílny, strážní výzbroje nebo sbírky zkušeného dobrodruha. Vyvážený tvar a zdobení mohou ukazovat zamýšlené použití. Není třeba z každé sekery dělat důkaz divoké povahy jejího nositele.",
+      "Zabírá jednu ruku a nabízí vyšší základ útoku než lehčí silové volby, zároveň však vyžaduje větší sílu. Výběr může souviset s potřebou kombinovat útok a štít. Bojová sekera nepřidává automaticky bonus k práci se dřevem ani zvláštní zranění. Pokud se použije jako běžný nástroj, záleží na podobě předmětu a konkrétní překážce.",
+      "Při útoku používá Sílu (S). Označení 1R znamená použití jedné ruky. Minimum je S7 a katalogový bonus fyzického útoku FÚ je +4. Cena je 4 z. Celkový útok hrdiny se dále vypočítá podle jeho vlastností a platných pravidel; uvedený bonus zbraně není celý výsledný útok."
+    ],
+    "equip/halapartna": [
+      "Halapartna je dlouhá obouruční silová zbraň, která může být součástí strážní výstroje pevnosti nebo symbolizovat službu u významného sídla. V Elarii se její vzhled dá přizpůsobit kultuře i dílně, odkud pochází. Ztracená halapartna poblíž brány může upozornit, že stráž odešla jinak, než bylo obvyklé.",
+      "Vyžaduje obě ruce a odpovídající sílu, takže se hodí pro postavu, která vědomě volí takový bojový styl. Dlouhá podoba může ovlivnit příběhový popis pohybu v úzkém prostoru, sama však nepřidává bonus k dosahu ani další útok. Při plánování výstroje je potřeba rozhodnout, co hrdina odloží nebo uloží, aby ji mohl opravdu používat.",
+      "Při útoku používá Sílu (S). Označení 2R znamená použití obou rukou. Minimum je S8 a katalogový bonus fyzického útoku FÚ je +4. Cena je 4 z. Celkový útok hrdiny se dále vypočítá podle jeho vlastností a platných pravidel; uvedený bonus zbraně není celý výsledný útok."
+    ],
+    "equip/obourucni-mec": [
+      "Obouruční meč je výrazná zbraň pro silného a vycvičeného dobrodruha. Může pocházet z prestižní kovárny, být služební výzbrojí nebo připomínat čin předchozího majitele. V Elarii jeho vzhled přitahuje pozornost, ale samotná velikost neurčuje povahu nositele. Ochranář může zvolit stejnou zbraň jako ctižádostivý vyzyvatel.",
+      "Vysoký základ útoku je spojen s nárokem na sílu a použití obou rukou. Hrdina se proto vzdává současně drženého štítu a měl by výběr spojit se svou obranou a rolí v družině. Meč automaticky nezasahuje více cílů najednou. Příběh může pracovat s nutností získat důvěru člověka, který je ochoten takovou výzbroj vyrobit nebo svěřit.",
+      "Při útoku používá Sílu (S). Označení 2R znamená použití obou rukou. Minimum je S9 a katalogový bonus fyzického útoku FÚ je +5. Cena je 7 z. Celkový útok hrdiny se dále vypočítá podle jeho vlastností a platných pravidel; uvedený bonus zbraně není celý výsledný útok."
+    ],
+    "equip/valecne-kladivo": [
+      "Válečné kladivo je těžší obouruční silová zbraň, která může být spojena s horskými bojovníky, strážci dílen nebo hrdinou s vlastní řemeslnou minulostí. V Elarii se může stát odměnou za pomoc kovárně či památkou na rodinného ochránce. Prostý povrch a zdobení mají příběhový význam, nikoli automaticky jiná čísla.",
+      "Vyžaduje silného nositele a obě ruce. Nabízí vysoký základ útoku, ale jeho výběr je potřeba poměřit s možností používat štít a s ostatní výbavou. Název nepřidává automatické probíjení zbroje, sražení ani výhodu proti určitému tvoru. Rozhodují konkrétní pravidla zbraně a odolnosti protivníka. Hrdina může mít důvod tuto volbu upřednostnit i čistě osobní.",
+      "Při útoku používá Sílu (S). Označení 2R znamená použití obou rukou. Minimum je S9 a katalogový bonus fyzického útoku FÚ je +5. Cena je 6 z. Celkový útok hrdiny se dále vypočítá podle jeho vlastností a platných pravidel; uvedený bonus zbraně není celý výsledný útok."
     ]
   }
 }
