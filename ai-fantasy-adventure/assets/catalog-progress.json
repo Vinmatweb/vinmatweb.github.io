@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 214,
+  "completed": 218,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -154,7 +154,11 @@
     "magic/voda/vytvoreni-vody",
     "magic/voda/vodni-proud",
     "magic/voda/ledova-strela",
-    "magic/voda/mrazivy-dotek"
+    "magic/voda/mrazivy-dotek",
+    "magic/voda/kraceni-po-vode",
+    "magic/voda/dychani-pod-vodou",
+    "magic/voda/ledovy-stit",
+    "magic/voda/zmrazeni"
   ],
-  "latestBatch": 38
+  "latestBatch": 39
 }

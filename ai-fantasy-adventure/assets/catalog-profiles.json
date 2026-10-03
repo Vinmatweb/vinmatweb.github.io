@@ -213,7 +213,11 @@
     "magic/voda/vytvoreni-vody",
     "magic/voda/vodni-proud",
     "magic/voda/ledova-strela",
-    "magic/voda/mrazivy-dotek"
+    "magic/voda/mrazivy-dotek",
+    "magic/voda/kraceni-po-vode",
+    "magic/voda/dychani-pod-vodou",
+    "magic/voda/ledovy-stit",
+    "magic/voda/zmrazeni"
   ],
   "profiles": {
     "best/krysa": [
@@ -1285,6 +1289,26 @@
       "Mrazivý dotek spojuje útok z bezprostřední blízkosti s možností oslabit příští fyzický útok cíle. V příběhu jde o riskantní krok, při němž sesilatel musí přistoupit na dosah ruky. Chladný projev kouzla je výrazný, ale protivník neztrácí automaticky celý tah ani všechny možnosti reagovat na okolní dění.",
       "Dodatečný postih vznikne jen při zranění alespoň jednoho Života a vztahuje se na příští fyzický útok. Nesčítá se a má omezené trvání. Při rozhodování proto záleží na tom, zda se očekává právě takový útok a zda se hrdina dokáže bezpečně přiblížit. Kouzlo nenahrazuje obranu sesilatele proti případné odvetě.",
       "Přesný účinek: Při zranění alespoň 1 Ž má cíl navíc −1 k příštímu FÚ. Postih se nesčítá. Bonus: +2 k MÚ. Cíl: 1 cíl na dosah ruky. Trvání: do konce příštího tahu cíle. Omezení: —. K použití je potřeba minimálně Chytrost 8, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/voda/kraceni-po-vode": [
+      "Kráčení po vodě dovolí ochotnému tvoru pohybovat se po klidné hladině jako po pevné zemi. Je to kouzlo překonávání krajiny, které může otevřít cestu k ostrůvku, břehu nebo jinému cíli za vodou. Sesilatel tím neodstraňuje všechny překážky v okolí a nedává celé družině stejnou výhodu jediným použitím.",
+      "Před vstupem na hladinu je potřeba promyslet trasu a desetiminutové trvání. Klidná voda je důležitou podmínkou; prudká vlna může vyžadovat zkoušku Obratnosti. Kouzlo neřeší útoky, nebezpečí pod hladinou ani nedostupný cíl za horizontem. Zajímavou scénou může být návrat, když je nutné sladit čas kouzla s plánem výpravy.",
+      "Přesný účinek: Cíl se může pohybovat po klidné vodní hladině jako po pevné zemi. Prudká vlna může vyžadovat zkoušku O. Cíl: 1 ochotný tvor na dosah. Trvání: 10 minut. Omezení: 1× za scénu na cíl. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/voda/dychani-pod-vodou": [
+      "Dýchání pod vodou pomůže jednomu ochotnému tvoru při krátkém podvodním průzkumu. Může umožnit prohlédnout zatopenou chodbu, hledat předmět nebo se přiblížit k jinak obtížně dostupnému místu. Řeší konkrétní potřebu dýchat, nikoli všechny schopnosti, které by postava potřebovala pro bezpečné a rychlé pohybování ve vodním prostředí.",
+      "Před ponořením dává smysl naplánovat délku cesty i návrat. Kouzlo nepřidává lepší vidění, rychlost plavání ani odolnost proti tlaku, takže ostatní podmínky mohou být stále nebezpečné. Desetiminutové trvání není neomezený pobyt pod vodou. Pro družinu jde o příležitost ke spolupráci při přípravě, jištění a následném návratu průzkumníka.",
+      "Přesný účinek: Cíl může normálně dýchat pod vodou. Kouzlo nepřidává rychlost, vidění ani odolnost proti tlaku. Cíl: 1 ochotný tvor na dosah. Trvání: 10 minut. Omezení: 1× za scénu na cíl. K použití je potřeba minimálně Chytrost 8, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/voda/ledovy-stit": [
+      "Ledový štít je krátká magická podpora fyzické obrany pro sesilatele nebo viditelného spojence. Jeho příběhová podoba může připomínat chladnou ochrannou vrstvu, ale zásadní je přesný obranný bonus. Samotný název nepřidává mrazivý protiútok, zpomalení nepřítele ani zvláštní ochranu proti každému kouzlu, které družinu ohrožuje.",
+      "Hodí se při očekávaném fyzickém napadení během příštích dvou kol. Je potřeba vybrat chráněný cíl a zohlednit jeho další aktivní obranu, protože účinek se nesčítá. Omezené použití za souboj vybízí k promyšlenému načasování. Družina může využít krátkou ochranu při důležitém postupu, ale neměla by ji považovat za trvalý bezpečný stav.",
+      "Přesný účinek: Cíl získá +2 FO proti fyzickým útokům. Bonus: +2 FO. Cíl: sesilatel nebo 1 spojenec na dohled. Trvání: 2 kola. Omezení: 1× za souboj; nesčítá se. K použití je potřeba minimálně Chytrost 8 a Level 2, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/voda/zmrazeni": [
+      "Zmrazení slouží k omezení pohybu jednoho viditelného cíle. Při úspěchu může běžného protivníka přimrazit k místu, což otevře krátkou příležitost změnit vzdálenost nebo průběh střetu. Cíl ale stále může jednat na dosah. Kouzlo proto není totožné s úplným znehybněním mysli, ztrátou všech akcí nebo automatickým vyřazením.",
+      "Rozdíl mezi běžným a hlavním protivníkem je zásadní: hlavní cíl dostane místo přimražení postih k příštímu pohybovému testu. Omezené trvání a jediné použití na stejný cíl za souboj vylučují neustálé obnovování stejné blokace. Družina by měla mít konkrétní plán, jak krátkou změnu pohybu využije, a počítat s možnostmi cíle reagovat.",
+      "Přesný účinek: Při úspěchu je běžný cíl přimražen k místu a nemůže se přesunout; stále může jednat na dosah. Hlavní protivník má místo toho −2 k příštímu pohybovému testu. Bonus: +2 k MÚ. Cíl: 1 cíl na dohled. Trvání: 1 kolo. Omezení: 1× na stejný cíl za souboj; platí pravidlo hlavního protivníka. K použití je potřeba minimálně Chytrost 9 a Level 3, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
     ]
   }
 }
