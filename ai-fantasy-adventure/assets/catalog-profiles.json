@@ -145,7 +145,11 @@
     "equip/lecitelska-brasna",
     "equip/prevlekova-souprava",
     "equip/toulec",
-    "equip/mesec"
+    "equip/mesec",
+    "equip/hak-s-lanem",
+    "equip/dalekohled",
+    "equip/obvazy",
+    "equip/prazdna-lahvicka"
   ],
   "profiles": {
     "best/krysa": [
@@ -877,6 +881,26 @@
       "Měšec je jednoduché místo pro mince a drobné osobní věci. V Elarii může být obyčejným nákupem, domácím výrobkem nebo památkou na člověka, který hrdinovi pomohl před první cestou. Značka na zapínání či neobvyklý obsah mohou vytvořit malé vodítko, jehož význam se ukáže až později.",
       "Pomáhá mít drobnosti přehledně uložené, ale nevytváří automaticky nekonečný prostor ani ochranu před ztrátou. Nález měšce nabízí scénu založenou na rozhodnutí, komu patří a zda ho vrátit. Samotný předmět nezlepšuje smlouvání ani štěstí. Důležitá může být spíš zpráva, neznámá mince nebo osobní památka, kterou uvnitř družina objeví.",
       "Pravidlový účinek: Nošení mincí a drobností. Cena je 1 s. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/hak-s-lanem": [
+      "Hák s lanem je nástroj pro situace, kde lze upevnit spojení s místem, na které hrdina přímo nedosáhne. V Elarii může patřit průzkumníkovi, horalovi či skupině zachraňující lidi z obtížných přístupů. Podoba háku a provazu může odkazovat k místní dílně nebo k výpravě, ze které se dochovala jen výstroj.",
+      "Bonus při lezení nebo překonávání překážky platí pouze tehdy, když se hák může bezpečně zachytit. Hráč musí popsat vhodný bod a postup, místo aby předmět automaticky otevřel jakoukoli cestu. Katalog nepřidává bojový útok ani bezpodmínečný úspěch. Družina může společně hledat správný přístup a rozhodnout, kdo bude ostatním pomáhat.",
+      "Pravidlový účinek: +2 O při lezení/překonávání překážky, pokud lze hák bezpečně zachytit. Cena je 8 s. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/dalekohled": [
+      "Dalekohled pomáhá prozkoumávat viditelná vzdálená místa a může být v Elarii cenným darem pro průzkumníka. Patřit může strážci věže, kapitánovi, cestovateli i učenci sledujícímu krajinu. Pouzdro a značení mohou určit výrobce nebo bývalého majitele. Získání kvalitního pozorování často změní rozhodnutí celé výpravy.",
+      "Podporuje test hledání nebo rozeznávání něčeho ve velké vzdálenosti. Neumožňuje vidět skrz zeď, odhalit neviditelného tvora ani automaticky pochopit úmysl pozorované osoby. Družina může z bezpečné vyhlídky zjišťovat přístupy, pohyb či změny na cestě. Informaci je potřeba spojit s dalšími poznatky; vzdálený detail může být důležitý, ale stále neúplný.",
+      "Pravidlový účinek: +2 CH při hledání nebo rozeznávání něčeho ve velké vzdálenosti. Cena je 3 z. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/obvazy": [
+      "Obvazy jsou spotřební pomůckou pro běžné ošetření a připomínají, že péče může začínat praktickým vybavením. V Elarii mohou pocházet z léčitelovy dílny, zásob posádky nebo daru vděčné osady. Jejich příběhový význam může být malý a přesto důležitý: někdo se postaral, aby družina nevyrazila zcela nepřipravená.",
+      "Poskytují bonus k jednomu běžnému testu ošetření. Nejsou automatickým kouzlem, nepřidávají přímo určitý počet životů a nenahrazují všechny možnosti léčitele. Družina může rozhodnout, pro koho je využije a kde doplní zásoby. Chybějící obvazy mohou vést k drobnému úkolu s doručením pomoci nebo k setkání s člověkem, který nabízí znalosti i výbavu.",
+      "Pravidlový účinek: +1 CH k jednomu běžnému testu ošetření zranění. Cena je 3 s. Jde o spotřební zásobu; při použití zohledněte její spotřebování. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/prazdna-lahvicka": [
+      "Prázdná lahvička je běžná nádoba na malé množství kapaliny. V Elarii ji může nosit badatel, léčitel, řemeslník nebo zvědavý dobrodruh. Značka na skle, tvar a drobný nápis mohou určit původ, aniž by měl samotný předmět magickou schopnost. Někdy je právě prázdná nádoba připomínkou toho, co v ní kdysi bylo.",
+      "Uplatní se při uchování běžné kapaliny a přehledném popsání nálezu. Automaticky nepromění obsah v lektvar ani nezaručí jeho bezpečnost či zachování magického účinku. Družina může chtít odebrat vzorek pro člověka, který se v něm vyzná. Rozpoznání obsahu a jeho použití jsou samostatné otázky, které musí vyplynout z příběhu a pravidel.",
+      "Pravidlový účinek: Uchování malého množství běžné kapaliny. Cena je 5 m. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
     ]
   }
 }

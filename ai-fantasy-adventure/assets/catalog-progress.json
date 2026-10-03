@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 146,
+  "completed": 150,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -86,7 +86,11 @@
     "equip/lecitelska-brasna",
     "equip/prevlekova-souprava",
     "equip/toulec",
-    "equip/mesec"
+    "equip/mesec",
+    "equip/hak-s-lanem",
+    "equip/dalekohled",
+    "equip/obvazy",
+    "equip/prazdna-lahvicka"
   ],
-  "latestBatch": 21
+  "latestBatch": 22
 }
