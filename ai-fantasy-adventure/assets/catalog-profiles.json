@@ -125,7 +125,11 @@
     "equip/platova-zbroj",
     "equip/maly-stit",
     "equip/stredni-stit",
-    "equip/velky-stit"
+    "equip/velky-stit",
+    "equip/batoh",
+    "equip/spaci-vak-deka",
+    "equip/provaz",
+    "equip/pochoden"
   ],
   "profiles": {
     "best/krysa": [
@@ -757,6 +761,26 @@
       "Velký štít je nejsilnější běžnou štítovou volbou tohoto katalogu. V Elarii může patřit obránci brány, zkušenému strážci nebo hrdinovi, který staví svůj styl na ochraně. Výrazný znak se může stát poznávacím znamením nositele i předmětem důležitého slibu. Příběhová prestiž však není zvláštní herní schopností.",
       "Vyšší ochrana vyžaduje dostatečnou sílu a jednu volnou ruku. Volba štítu proto souvisí s používanou zbraní a s tím, jakou roli chce hrdina plnit. Katalog automaticky nepovoluje ukrýt za štítem celou družinu nebo přidat odolnost proti magii. Konkrétní kryt a další možnosti závisejí na situaci a platných pravidlech.",
       "Katalog uvádí typ „štít“ a základní bonus fyzické obrany FO +3. Požadovaná Síla je S8. Cena je 4 z. Konečná obrana vychází také z vlastností hrdiny a pravidel používané výstroje. Štít je držen v jedné ruce; při jeho používání musí zůstat odpovídající ruka volná."
+    ],
+    "equip/batoh": [
+      "Batoh drží cestovní vybavení pohromadě a umožňuje hrdinovi vyrazit s věcmi, které potřebuje více než jednu scénu. V Elarii může pocházet z rodinné dílny, trhu nebo být dlouho opravovanou památkou. Kapsa se starým dopisem či značka na přezce mohou propojit praktický předmět s osobní minulostí.",
+      "Při přípravě výpravy pomáhá uvažovat, co je uložené a co má postava právě po ruce. Nemá automaticky nekonečný prostor ani zvláštní ochranu obsahu. Ztracený či zaměněný batoh může přinést nenásilnou zápletku: důležité je získat zásoby, zjistit majitele nebo vrátit věc, která patří někomu jinému.",
+      "Pravidlový účinek: Běžné přenášení dobrodružného vybavení. Cena je 5 s. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/spaci-vak-deka": [
+      "Spací vak nebo deka pomáhají vytvořit běžné zázemí pro odpočinek mimo obydlené místo. V Elarii mohou být darem rodiny, součástí výstroje karavany nebo připomínkou minulých cest. Vzor, záplata a malý osobní předmět uložený uvnitř mohou vyprávět něco o hrdinovi bez změny herních hodnot.",
+      "Uplatní se při táboření a přípravě místa, kde chce družina bezpečně přenocovat. Pohodlný odpočinek stále potřebuje vhodné podmínky; deka sama neodstraňuje stráž, nebezpečné počasí ani kletbu. Katalog nepřidává automatické obnovení určitého počtu životů. Péče o společný tábor může dát prostor pro rozhovor, pomoc a budování vztahů.",
+      "Pravidlový účinek: Pohodlný odpočinek venku. Cena je 3 s. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/provaz": [
+      "Provaz patří k předmětům, jejichž význam často zjistíme až u první překážky. V Elarii může být běžným nákupem před cestou, výstrojí horala nebo dědictvím po zkušeném průvodci. Kvalitu v příběhu prozradí stav vláken a opravy, ale konkrétní bonus zůstává podle katalogu.",
+      "Pomáhá při lezení a překonávání překážky, pokud ho lze smysluplně použít. Družina musí nejprve popsat, kde a jak bude upevněn; předmět automaticky nevyřeší chybějící oporu. Může sloužit také k běžnému svázání nákladu nebo předání věci přes otvor. Každé takové použití má vycházet ze skutečné situace.",
+      "Pravidlový účinek: +2 O při lezení nebo překonávání překážky, pokud jej lze smysluplně použít. Cena je 4 s. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/pochoden": [
+      "Pochodeň je jednoduchý zdroj světla pro cestu, tábor a průzkum temného místa. V Elarii ji mohou používat strážci bran i dobrodruzi bez přístupu k magii. Její podoba může odpovídat místnímu řemeslu a účelu; ozdobená slavnostní pochodeň může vyprávět jiný příběh než běžná cestovní zásoba.",
+      "Světlo umožňuje vnímat okolí, ale zároveň může prozradit přítomnost skupiny. Pochodeň je spotřební vybavení, proto patří do plánování zásob. Katalog nestanovuje automatický bojový bonus ani přesné trvání každého kusu. Zhaslé či odložené pochodně mohou být vodítkem, kudy prošel někdo před družinou a kde se jeho plán změnil.",
+      "Pravidlový účinek: Poskytuje světlo v okolí. Cena je 5 m. Jde o spotřební zásobu; při použití zohledněte její spotřebování. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
     ]
   }
 }
