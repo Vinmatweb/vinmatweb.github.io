@@ -249,7 +249,11 @@
     "magic/mysl/zmateni",
     "magic/mysl/uspani",
     "magic/mysl/okouzleni",
-    "magic/mysl/cteni-myslenek"
+    "magic/mysl/cteni-myslenek",
+    "magic/duch/videni-duchu",
+    "magic/duch/pozehnani",
+    "magic/duch/ochrana-duse",
+    "magic/duch/rozhovor-s-duchem"
   ],
   "profiles": {
     "best/krysa": [
@@ -1501,6 +1505,26 @@
       "Čtení myšlenek se zaměřuje na povrchovou myšlenku nebo bezprostřední záměr cíle. Může nabídnout stopu v nejistém rozhovoru nebo při pátrání, ale není otevřením celé cizí minulosti. Sesilatel získává omezenou aktuální informaci, jejíž význam musí zasadit do kontextu. Představa cíle může být neúplná, stejně jako běžná vlastní myšlenka.",
       "Je potřeba úspěch a soustředění během krátkého trvání. Za kolo se odhaluje jen uvedený rozsah informace. U hlavního protivníka je výsledek omezený na jednu emoci nebo aktuální cíl. Kouzlo tedy nezaručuje všechny odpovědi na vyšetřovanou záhadu; družina stále potřebuje otázky, další stopy a vlastní úsudek při jejich spojování.",
       "Přesný účinek: Při úspěchu odhalí jednu povrchovou myšlenku nebo bezprostřední záměr za kolo. U hlavního protivníka jen jednu emoci nebo aktuální cíl. Bonus: +0 k MÚ. Cíl: 1 tvor na dohled. Trvání: soustředění, nejvýše 3 kola. Omezení: 1× na stejný cíl za scénu. K použití je potřeba minimálně Chytrost 10 a Level 5, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/duch/videni-duchu": [
+      "Vidění duchů umožní sesilateli vnímat přítomné duchy a stopy duchovní energie. Může otevřít novou vrstvu pátrání v místě, které na první pohled působí prázdně. Vidět však neznamená rozumět všemu, co se tam odehrálo. Kouzlo nenabízí automatickou znalost minulosti ani schopnost přikazovat bytostem, které hrdina nově rozpozná.",
+      "V příběhu může být prvním krokem k rozhovoru, hledání původu stopy nebo opatrnému pozorování. Rozpoznaný duch nemusí být ochotný spolupracovat a sesilatel mu nemusí rozumět. Trvání jedné scény dává prostor pro průzkum, ale nenahrazuje ostatní schopnosti. Družina stále potřebuje spojovat nové informace s tím, co už o místě ví.",
+      "Přesný účinek: Sesilatel vidí přítomné duchy a stopy duchovní energie. Neumožňuje jim automaticky rozumět ani je ovládat. Cíl: sesilatel. Trvání: 1 scéna. Omezení: 1× za scénu. K použití je potřeba minimálně Chytrost 6, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/duch/pozehnani": [
+      "Požehnání podpoří jednu vybranou zkoušku spojence malým konkrétním bonusem. V příběhu může být krátkým povzbuzením před důležitým pokusem, projevem důvěry nebo součástí společné přípravy družiny. Jeho síla není v neomezené změně osudu. Hrdina stále potřebuje vhodný plán a musí vědět, kterou zkoušku chce skutečně podpořit.",
+      "Použití bonusu je potřeba oznámit před vyhodnocením, nikoli až po neúspěchu. Výhoda čeká jen po omezenou dobu a nesčítá se. Jediné použití na stejný cíl za scénu podporuje rozumný výběr okamžiku. Požehnání není všeobecné zvýšení všech vlastností ani dodatečný bonus ke každému útoku během celého střetu.",
+      "Přesný účinek: Cíl získá +1 k jedné zvolené zkoušce. Použití musí oznámit před vyhodnocením. Bonus: +1 k jedné zkoušce. Cíl: 1 spojenec na dosah. Trvání: do použití, nejdéle 1 scéna. Omezení: 1× na stejný cíl za scénu; bonus se nesčítá. K použití je potřeba minimálně Chytrost 6, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/duch/ochrana-duse": [
+      "Ochrana duše poskytne krátkou podporu magické obrany proti školám Duch a Temná magie. Může být cenná při setkání s protivníkem, jehož síla působí na tuto oblast. Její příběhový význam lze spojit s odhodláním či ochranným znamením, ale pravidlový účinek se vztahuje pouze na výslovně uvedené druhy magie.",
+      "Sesilatel volí sebe nebo viditelného spojence a měl by zohlednit tři kola trvání. Jediné použití za souboj a nesčítání znamenají, že je potřeba výhodu načasovat. Kouzlo nechrání automaticky proti všem školám nebo fyzickým útokům. Družina tak stále potřebuje rozpoznat hrozbu a rozhodnout, komu tato konkrétní ochrana nejvíc pomůže.",
+      "Přesný účinek: Cíl získá +3 MO proti kouzlům škol Duch a Temná magie. Bonus: +3 MO. Cíl: sesilatel nebo 1 spojenec na dohled. Trvání: 3 kola. Omezení: 1× za souboj; pouze proti Duchu a Temné magii; nesčítá se. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/duch/rozhovor-s-duchem": [
+      "Rozhovor s duchem umožní položit přítomnému duchu několik krátkých otázek. Může proměnit nalezenou duchovní stopu ve skutečné setkání a nabídnout vzpomínku člověka či bytosti spojené s místem. Duch ale není neomylná kronika. Ví jen to, co zná a pamatuje si, a odpověď závisí také na jeho ochotě.",
+      "Omezený počet otázek je důvodem připravit si je pečlivě. Dobrá otázka může poskytnout užitečný směr, ale kouzlo ducha nenutí mluvit. V příběhu může být potřeba důvěra, vysvětlení záměru nebo jiný přirozený důvod spolupráce. Získané odpovědi se vyplatí porovnat s dalšími stopami, místo očekávání celého hotového řešení záhady.",
+      "Přesný účinek: Dovolí položit tři krátké otázky. Duch odpovídá podle svých znalostí, vzpomínek a ochoty; kouzlo ho nenutí lhát ani mluvit. Cíl: 1 přítomný duch. Trvání: nejvýše 3 otázky. Omezení: 1× na stejného ducha za scénu. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
     ]
   }
 }

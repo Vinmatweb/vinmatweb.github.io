@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 250,
+  "completed": 254,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -190,7 +190,11 @@
     "magic/mysl/zmateni",
     "magic/mysl/uspani",
     "magic/mysl/okouzleni",
-    "magic/mysl/cteni-myslenek"
+    "magic/mysl/cteni-myslenek",
+    "magic/duch/videni-duchu",
+    "magic/duch/pozehnani",
+    "magic/duch/ochrana-duse",
+    "magic/duch/rozhovor-s-duchem"
   ],
-  "latestBatch": 47
+  "latestBatch": 48
 }
