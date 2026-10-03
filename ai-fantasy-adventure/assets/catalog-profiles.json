@@ -197,7 +197,11 @@
     "magic/obecna/hledani-vody",
     "magic/obecna/magicka-ruka",
     "magic/obecna/oprava-drobnosti",
-    "magic/obecna/odhaleni-magie"
+    "magic/obecna/odhaleni-magie",
+    "magic/obecna/kouzelny-klic",
+    "magic/obecna/drobny-magicky-stit",
+    "magic/ohen/jiskra",
+    "magic/ohen/ohniva-strela"
   ],
   "profiles": {
     "best/krysa": [
@@ -1189,6 +1193,26 @@
       "Odhalení magie pomůže rozpoznat, že vybraný předmět, tvor nebo blízký prostor nese magický vliv, a určí nejbližší školu. Hodí se k prvnímu průzkumu neznámého nálezu. Poskytuje stopu pro další uvažování, nikoli hotový návod k bezpečnému použití všeho, co družina našla ve staré truhle či zapomenuté svatyni.",
       "Po seslání může následovat rozhovor s odborníkem, studium znaků nebo opatrné pozorování. Kouzlo neprozradí přesný účinek, jeho spouštěč ani způsob zrušení. Nalezená magie tak může zůstat záhadou i nebezpečím. Omezený dosah a použití za scénu je potřeba zohlednit při rozhodování, který nález prozkoumat jako první.",
       "Přesný účinek: Odhalí přítomnost magie a její nejbližší školu. Neprozradí přesný účinek, spouštěč ani způsob zrušení. Cíl: 1 předmět, tvor nebo prostor do 5 m. Trvání: okamžitě. Omezení: 1× za scénu. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/obecna/kouzelny-klic": [
+      "Kouzelný klíč je pokusem otevřít běžný nemagický zámek pomocí Chytrosti sesilatele. Může vytvořit alternativu v příběhu, kde družina nemá správný klíč nebo zkušeného zámečníka. Nejde ale o univerzální příkaz všem dveřím, aby se otevřely: záleží na kvalitě konkrétního zámku a úspěchu předepsané zkoušky.",
+      "Před sesláním stojí za to prohlédnout dveře i jejich okolí. Úspěšné odemčení totiž neodstraní případnou past a kouzlo nepřekoná magický zámek. Na stejný zámek je jen jeden pokus, takže družina potřebuje i náhradní plán. Zamčená cesta může stále vyžadovat vyjednávání, pátrání po původním klíči nebo jiný vhodný postup.",
+      "Přesný účinek: Provede zkoušku CH proti 7/9/11 podle kvality zámku. Úspěch zámek otevře; magický zámek ani past nezruší. Cíl: 1 běžný nemagický zámek na dosah. Trvání: okamžitě. Omezení: 1 pokus na zámek. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/obecna/drobny-magicky-stit": [
+      "Drobný magický štít je krátká ochrana pro sesilatele nebo spojence, kterého vidí. Je vhodný pro okamžik, kdy družina očekává bezprostřední útok a chce podpořit ohroženého člena. Jeho účinek je malý, ale konkrétní; nezaručuje úplnou bezpečnost a nevytváří trvalou obrannou vrstvu pro celé dobrodružství.",
+      "Důležité je načasování, protože ochrana skončí po příštím útoku proti cíli nebo po krátké době. Dává smysl spojit seslání s jasným plánem, koho je potřeba chránit právě teď. Bonusy se nesčítají s jiným magickým bonusem stejné obrany, takže je nutné zohlednit už aktivní účinky místo jejich automatického vrstvení.",
+      "Přesný účinek: Cíl získá +1 k FO i MO proti jednomu příštímu útoku. Cíl: sesilatel nebo 1 spojenec na dohled. Trvání: do příštího útoku proti cíli, nejdéle 1 kolo. Omezení: 2× za souboj; nesčítá se s jiným magickým bonusem stejné obrany. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/ohen/jiskra": [
+      "Jiskra je základní útočné kouzlo školy Oheň zaměřené na jediný viditelný cíl. Může být prvním výrazným projevem sesilatelovy bojové magie: krátký okamžik, kdy soustředění přejde v útok. Jeho použití má konkrétní pravidlový výsledek a nelze jej zaměňovat za obyčejné zapálení cestovní svíčky nebo volnou manipulaci s ohněm.",
+      "Hodí se pro přímočarý magický útok bez zvláštních dodatečných podmínek uvedených u pokročilejších kouzel. Zranění ale neurčuje samotný název ani velikost příběhového plamene; vypočítá se proti magické obraně cíle. Výběr protivníka a jeho viditelnost zůstávají důležité a seslání automaticky nezpůsobuje další opakované hoření.",
+      "Přesný účinek: Proveď magický útok. Zranění se vypočte běžným vzorcem proti MO cíle. Bonus: +1 k MÚ. Cíl: 1 cíl na dohled. Trvání: okamžitě. Omezení: —. K použití je potřeba minimálně Chytrost 6, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/ohen/ohniva-strela": [
+      "Ohnivá střela soustředí útok ohněm na jediný cíl v dohledu. V příběhu může působit jako jasný a rychlý projev odhodlání sesilatele. Je určena k přímému střetu, nikoli k rozšíření výbuchu na všechny poblíž. Její bonus odlišuje účinnost od základní Jiskry, stále ale platí obvyklá pravidla magického útoku.",
+      "Použití dává smysl, když chce hrdina napadnout konkrétního protivníka, kterého vidí. Konečné zranění závisí na útoku a magické obraně cíle; není předem pevně zaručené. Kouzlo nepřidává nevypsané zasažení sousedních tvorů ani trvalý stav hoření. V družině se může stát jasně zaměřeným nástrojem místo riskantnějšího plošného zásahu.",
+      "Přesný účinek: Přímý jednobodový magický útok ohněm proti MO cíle. Bonus: +2 k MÚ. Cíl: 1 cíl na dohled. Trvání: okamžitě. Omezení: —. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
     ]
   }
 }

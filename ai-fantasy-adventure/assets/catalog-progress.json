@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 198,
+  "completed": 202,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -138,7 +138,11 @@
     "magic/obecna/hledani-vody",
     "magic/obecna/magicka-ruka",
     "magic/obecna/oprava-drobnosti",
-    "magic/obecna/odhaleni-magie"
+    "magic/obecna/odhaleni-magie",
+    "magic/obecna/kouzelny-klic",
+    "magic/obecna/drobny-magicky-stit",
+    "magic/ohen/jiskra",
+    "magic/ohen/ohniva-strela"
   ],
-  "latestBatch": 34
+  "latestBatch": 35
 }
