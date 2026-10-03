@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 262,
+  "completed": 266,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -202,7 +202,11 @@
     "magic/duch/klid-dusi",
     "magic/duch/zachrana-duse",
     "magic/svetla/leceni",
-    "magic/svetla/ocista"
+    "magic/svetla/ocista",
+    "magic/svetla/svetelny-paprsek",
+    "magic/svetla/zarivy-stit",
+    "magic/svetla/slepive-svetlo",
+    "magic/svetla/hojive-svetlo"
   ],
-  "latestBatch": 50
+  "latestBatch": 51
 }

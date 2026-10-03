@@ -261,7 +261,11 @@
     "magic/duch/klid-dusi",
     "magic/duch/zachrana-duse",
     "magic/svetla/leceni",
-    "magic/svetla/ocista"
+    "magic/svetla/ocista",
+    "magic/svetla/svetelny-paprsek",
+    "magic/svetla/zarivy-stit",
+    "magic/svetla/slepive-svetlo",
+    "magic/svetla/hojive-svetlo"
   ],
   "profiles": {
     "best/krysa": [
@@ -1573,6 +1577,26 @@
       "Očista řeší jeden běžný jed, nemoc nebo slabý temný účinek na tvoru či předmětu. Hodí se do dobrodružství, v němž samotné obnovení Životů nestačí. Její význam je v odstranění konkrétního problému, nikoli v obecném umytí povrchu. Sesilatel by měl zjistit, jakou povahu má stav, který se snaží ukončit.",
       "Silná kletba podle katalogu vyžaduje Zlomení kletby a nelze ji automaticky zaměnit za slabý účinek. Očista se na stejný cíl používá omezeně za scénu a vyžaduje dosah. Družina tak může potřebovat znalosti, další pátrání nebo odlišný rituál. Kouzlo nepřidává současně nevypsané obnovení Životů či trvalou imunitu.",
       "Přesný účinek: Ukončí jeden běžný jed, nemoc nebo slabý temný účinek. Silná kletba vyžaduje Zlomení kletby. Cíl: 1 tvor nebo předmět na dosah. Trvání: okamžitě. Omezení: 1× na stejný cíl za scénu. K použití je potřeba minimálně Chytrost 6, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/svetla/svetelny-paprsek": [
+      "Světelný paprsek je přímý magický útok školy Světlo na jeden viditelný cíl. Umožňuje této škole působit i útočně, nikoli jen pomáhat a chránit. Jeho příběhová záře může být výrazná, ale konkrétní zranění určuje běžné vyhodnocení proti magické obraně. Nejde o automatické vítězství nad každou bytostí spojovanou s temnotou.",
+      "Kouzlo samo nepřidává zvláštní omezení jen na nemrtvé ani nevypsaný bonus proti nim. Nemá uvedené oslepení, odstranění kletby nebo plošné působení. Takové schopnosti je potřeba odlišit od dalších kouzel školy. Při použití záleží na vhodném viditelném cíli, výsledku útoku a navazujícím postupu družiny v konkrétním střetu.",
+      "Přesný účinek: Přímý světelný útok proti MO cíle. Bonus: +2 k MÚ. Cíl: 1 cíl na dohled. Trvání: okamžitě. Omezení: —. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/svetla/zarivy-stit": [
+      "Zářivý štít poskytne sesilateli nebo viditelnému spojenci krátké zvýšení magické obrany. Jeho účinek je širší než ochrana omezená na jednu školu, ale stále se týká magických útoků. Příběhový projev může působit jako ochranná záře; nepřináší automatickou fyzickou nezranitelnost ani další útočný účinek vůči lidem stojícím v okolí.",
+      "Je vhodné jej načasovat na dvě kola očekávaného magického ohrožení. Platí jediné použití za souboj a nesčítání, takže je potřeba zohlednit už aktivní ochranu. Družina může vybrat člena, který je právě nejvíc ohrožený. Samotný bonus ale nezaručuje odvrácení každého kouzla a nevyřeší jiné druhy útoků proti chráněnému cíli.",
+      "Přesný účinek: Cíl získá +2 MO proti všem magickým útokům. Bonus: +2 MO. Cíl: sesilatel nebo 1 spojenec na dohled. Trvání: 2 kola. Omezení: 1× za souboj; nesčítá se. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/svetla/slepive-svetlo": [
+      "Slepivé světlo se pokusí krátce omezit malou skupinu blízkých cílů. Úspěšně zasažený protivník má postih k příštímu útoku a nemůže použít schopnost založenou na zraku. Je to přesně vymezená krátká změna jeho možností, nikoli úplné vyřazení. V příběhu může vytvořit potřebný okamžik pro změnu postupu družiny.",
+      "Plošné pravidlo vyžaduje jeden hod porovnaný s obranou každého cíle zvlášť. Není zaručeno, že účinek získají všichni vybraní protivníci. Použití je omezené a trvání krátké, takže záleží na tom, zda cíle skutečně potřebují zrak pro svou nebezpečnou schopnost. Kouzlo samo nepřidává trvalou slepotu ani odebrání celého tahu.",
+      "Přesný účinek: Jeden hod MÚ se porovná s MO každého cíle. Úspěšně zasažený cíl má −2 k příštímu útoku a nemůže použít schopnost založenou na zraku. Bonus: +1 k MÚ. Cíl: nejvýše 3 cíle blízko sebe. Trvání: 1 kolo. Omezení: 1× za souboj; platí plošné pravidlo. K použití je potřeba minimálně Chytrost 8 a Level 2, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/svetla/hojive-svetlo": [
+      "Hojivé světlo poskytne léčivou pomoc sesilateli nebo spojenci v dohledu. Oproti základnímu Léčení nabízí jiný základ obnovy a podmínku viditelnosti místo bezprostředního dosahu. V příběhu může podpořit druha, ke kterému není snadné se přiblížit, ale skutečný počet obnovených Životů stále závisí na koeficientu léčení a maximu cíle.",
+      "Platí sdílený limit všech kouzel obnovujících Životy za souboj na sesilatele. Není tedy samostatnou cestou k dalšímu léčení jen díky odlišnému názvu. Družina by měla porovnat dostupné možnosti a vybrat vhodný cíl i chvíli. Obnovení Životů také není automatickým odstraněním trvajícího jedu, nemoci, kletby nebo jiného nebezpečného účinku.",
+      "Přesný účinek: Obnoví počet Ž podle koeficientu léčení, nejvýše do maxima cíle. Bonus: základ 6 Ž před koeficientem léčení. Cíl: sesilatel nebo 1 spojenec na dohled. Trvání: okamžitě. Omezení: sdílený limit: 1 kouzlo obnovující Ž za souboj na sesilatele. K použití je potřeba minimálně Chytrost 8 a Level 2, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
     ]
   }
 }
