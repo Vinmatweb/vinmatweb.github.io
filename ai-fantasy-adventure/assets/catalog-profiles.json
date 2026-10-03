@@ -181,7 +181,11 @@
     "equip/natepniky-lucistnika",
     "equip/prsten-tepla",
     "equip/prsten-stesteny",
-    "equip/mec-presnosti"
+    "equip/mec-presnosti",
+    "equip/hul-prirody",
+    "equip/kouzelnicka-hul",
+    "equip/stit-ochrany",
+    "equip/opasek-sily"
   ],
   "profiles": {
     "best/krysa": [
@@ -1093,6 +1097,26 @@
       "Meč přesnosti vychází z jednoručního meče a doplňuje jeho fyzický útok magickým bonusem. V příběhu může být výtvorem pečlivého mistra nebo odměnou za službu člověku, který si cenil ukázněného boje. Pojmenování může připomínat jeho zvláštní pověst, ale není slibem automatického zásahu při každém pokusu o útok.",
       "Nositel musí splnit stejné požadavky jako u běžného jednoručního meče. Důležité je správné pořadí výpočtu: základ zbraně se upraví koeficientem a magický bonus se přičte až potom. Nelze jej nejprve přičíst k základu a násobit společně. Meč také neuděluje další samostatnou schopnost odzbrojení nebo neomylné nalezení slabého místa.",
       "Používá slot „Hlavní ruka“ a vychází ze základu „jednoruční meč“. Uvedený bonus je +1 FÚ navíc. Základ meče +3 se upraví koeficientem Zbraně; +1 FÚ se přičte potom. Požadavek: Stejné jako jednoruční meč. Katalogová hodnota je 30 z. Výpočet a podmínky bonusu dodržujte přesně; samotný příběhový původ mu nepřidává další schopnosti."
+    ],
+    "equip/hul-prirody": [
+      "Hůl přírody spojuje základ bojové hole s podporou magického útoku Přírodní magie. Její příběhový původ může souviset s lesním učitelem, ochranou starého háje nebo cestou za poznáním krajiny. Materiál a ozdoby mohou vystihovat vztah nositele k přírodě. Neznamenají však automatickou schopnost mluvit se zvířaty či přikazovat stromům.",
+      "Je určena postavě splňující požadovanou Obratnost a schopnost sesílat Přírodní magii. Fyzický útok stále vychází z bojové hole a jejího koeficientu; magické posílení této školy se přičítá přímo. Obě části je potřeba rozlišovat. Hůl nezvyšuje kouzla všech škol a sama nenaučí nositele kouzlo, které dosud neovládá.",
+      "Používá slot „Hlavní + Druhá ruka“ a vychází ze základu „bojová hůl“. Uvedený bonus je +1 MÚ Přírodní magie. Fyzický základ hole se upraví koeficientem Zbraně; +1 MÚ se přičte přímo. Požadavek: O4 + schopnost sesílat Přírodní magii. Katalogová hodnota je 22 z. Výpočet a podmínky bonusu dodržujte přesně; samotný příběhový původ mu nepřidává další schopnosti."
+    ],
+    "equip/kouzelnicka-hul": [
+      "Kouzelnická hůl vychází z bojové hole a poskytuje přímé zvýšení Chytrosti. Může být poznávacím znamením učitele, oporou na cestách nebo památkou na první studium magie. Její zdobení lze přizpůsobit postavě, ale katalog nestanovuje další kouzla uložená uvnitř, neomezené sesílání ani automatický bonus ke všem magickým účinkům.",
+      "Při fyzickém útoku se použije základ bojové hole upravený koeficientem Zbraně. Bonus k Chytrosti se přičítá přímo a nelze jej zaměňovat za dodatečný fyzický útok. Použití vyžaduje uvedenou Obratnost a obě ruce. Protože běžná hodnota není stanovena, není vhodné ji nahrazovat vymyšlenou cenou nebo příběhovým odhadem.",
+      "Používá slot „Hlavní + Druhá ruka“ a vychází ze základu „bojová hůl“. Uvedený bonus je +1 CH. Fyzický základ bojové hole +1 FÚ se upraví koeficientem Zbraně; +1 CH se přičte přímo. Požadavek: O4. Běžná hodnota není stanovená. Výpočet a podmínky bonusu dodržujte přesně; samotný příběhový původ mu nepřidává další schopnosti."
+    ],
+    "equip/stit-ochrany": [
+      "Štít ochrany vychází ze středního štítu a přidává magické posílení fyzické obrany. Může být znakem ochránce družiny, dědictvím po strážci nebo odměnou za obranu ohroženého místa. Příběhové stopy na jeho povrchu mohou připomenout staré bitvy. Neurčují ale novou nezranitelnost ani neomezenou ochranu lidí stojících v okolí.",
+      "Nositel musí splnit požadovanou Sílu a používat odpovídající ruku pro štít. Nejprve se vypočte upravený základ středního štítu, až poté se přičítá magický bonus. Štít neposkytuje automaticky stejnou výhodu proti každému druhu magie. Je dobré sladit jeho používání s hlavní zbraní a výbavou, která může vyžadovat obě ruce.",
+      "Používá slot „Druhá ruka“ a vychází ze základu „střední štít“. Uvedený bonus je +1 FO navíc. Základ štítu se upraví koeficientem; +1 FO se přičte potom. Požadavek: S6. Katalogová hodnota je 28 z. Výpočet a podmínky bonusu dodržujte přesně; samotný příběhový původ mu nepřidává další schopnosti."
+    ],
+    "equip/opasek-sily": [
+      "Opasek síly je magický doplněk zvyšující Sílu nositele. V příběhu může patřit řemeslníkovi, bojovníkovi nebo cestovateli, který jej získal za náročnou službu. Jeho pevné provedení může zdůraznit praktický charakter předmětu. Kouzlo však nemá další skryté podmínky odvozené ze zdobení a nedělá z hrdiny bytost schopnou zvednout cokoli bez omezení.",
+      "Uplatní se všude tam, kde se zvýšená vlastnost použije podle platných pravidel. Je potřeba rozlišovat bonus k Síle od přímého bonusu k útoku nebo obraně. Opasek také automaticky neřeší každý silový problém: rozhoduje konkrétní situace, obtížnost a vhodný postup. Příběh předmětu může otevřít vztah k bývalému majiteli, aniž by měnil jeho hodnotu.",
+      "Používá slot „Pas“ a vychází ze základu „opasek“. Uvedený bonus je +1 S. Předmět nemá další výslovně uvedený požadavek. Katalogová hodnota je 20 z. Výpočet a podmínky bonusu dodržujte přesně; samotný příběhový původ mu nepřidává další schopnosti."
     ]
   }
 }

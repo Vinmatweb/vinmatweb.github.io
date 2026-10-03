@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 182,
+  "completed": 186,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -122,7 +122,11 @@
     "equip/natepniky-lucistnika",
     "equip/prsten-tepla",
     "equip/prsten-stesteny",
-    "equip/mec-presnosti"
+    "equip/mec-presnosti",
+    "equip/hul-prirody",
+    "equip/kouzelnicka-hul",
+    "equip/stit-ochrany",
+    "equip/opasek-sily"
   ],
-  "latestBatch": 30
+  "latestBatch": 31
 }
