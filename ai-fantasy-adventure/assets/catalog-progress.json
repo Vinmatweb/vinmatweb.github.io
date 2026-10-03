@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 166,
+  "completed": 170,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -106,7 +106,11 @@
     "equip/velky-lecivy-lektvar",
     "equip/protijed",
     "equip/lektvar-sily",
-    "equip/lektvar-obratnosti"
+    "equip/lektvar-obratnosti",
+    "equip/lektvar-chytrosti",
+    "equip/lektvar-charismatu",
+    "equip/lektvar-stesti",
+    "equip/celenka-jasne-mysli"
   ],
-  "latestBatch": 26
+  "latestBatch": 27
 }

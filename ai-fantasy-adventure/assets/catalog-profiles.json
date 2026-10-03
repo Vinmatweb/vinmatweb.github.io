@@ -165,7 +165,11 @@
     "equip/velky-lecivy-lektvar",
     "equip/protijed",
     "equip/lektvar-sily",
-    "equip/lektvar-obratnosti"
+    "equip/lektvar-obratnosti",
+    "equip/lektvar-chytrosti",
+    "equip/lektvar-charismatu",
+    "equip/lektvar-stesti",
+    "equip/celenka-jasne-mysli"
   ],
   "profiles": {
     "best/krysa": [
@@ -997,6 +1001,26 @@
       "Lektvar obratnosti nabízí dočasné zlepšení vlastnosti spojené s pohybem a obratným jednáním. Může čekat v zásobách průzkumníka před riskantním úsekem cesty nebo u hrdiny, který se chystá na důležitý souboj. Jeho původ a vzhled lze zasadit do místní alchymistické tradice, ale nemění dobu trvání ani velikost bonusu.",
       "Uplatní se ve významné scéně, v níž je Obratnost skutečně důležitá podle platných pravidel. Nezaručuje neomylné šplhání, neviditelnost ani záchranu z každé pasti. Hrdina se stále musí rozhodovat podle prostředí a svých možností. Družině dává konkrétní důvod připravit se předem a domluvit postup místo spoléhání na neomezený účinek.",
       "Pravidlový účinek: +2 O na jednu významnou scénu nebo jeden souboj. Cena je 3 z. Při použití zachovejte přesně uvedený účinek a dobu trvání. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/lektvar-chytrosti": [
+      "Lektvar chytrosti poskytuje omezenou podporu Chytrosti pro významnou scénu nebo souboj. Příběhově může být ceněným výrobkem učenecké dílny či darem před obtížným úkolem. Jeho užití lze popsat jako jasnější soustředění, ale nezpřístupňuje bez dalšího všechny znalosti světa a nepřidává naučená kouzla, která postava ve skutečnosti neovládá.",
+      "Hodí se plánovat kolem konkrétního úkolu, u něhož se tato vlastnost použije. Hádanka stále potřebuje přemýšlení a neznámý jev může vyžadovat informace nebo zkušenost. Bonus k vlastnosti není automatická odpověď na jakoukoli otázku. Při sesílání kouzel je nutné zachovat také ostatní požadavky, schopnosti a omezení dané příslušnými pravidly.",
+      "Pravidlový účinek: +2 CH na jednu významnou scénu nebo jeden souboj. Cena je 3 z. Při použití zachovejte přesně uvedený účinek a dobu trvání. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/lektvar-charismatu": [
+      "Lektvar charismatu dočasně posiluje Charisma postavy a může se stát zásobou pro důležité veřejné vystoupení či jinou významnou scénu. Příběhově jej může vyrobit alchymista vyhledávaný herci a vyjednavači. Jeho osobitá vůně nebo slavná značka mohou dotvořit atmosféru, ale velikost a trvání účinku určuje přesný katalogový řádek.",
+      "Hrdina může jeho použití naplánovat před jednáním, kde se skutečně uplatní Charisma. Protistrana však stále má své cíle, informace a hranice. Lektvar nezpůsobuje ovládnutí mysli a nezaručuje souhlas s libovolným požadavkem. Zajímavá scéna vzniká spojením lepšího vystupování s věrohodným argumentem, znalostí situace a rozhodnutím, jakou nabídku družina předloží.",
+      "Pravidlový účinek: +2 CHA na jednu významnou scénu nebo jeden souboj. Cena je 3 z. Při použití zachovejte přesně uvedený účinek a dobu trvání. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/lektvar-stesti": [
+      "Lektvar štěstí dočasně zvyšuje Štěstí postavy a láká zejména hrdiny, kteří se chystají riskovat v zásadní chvíli výpravy. Může mít pověst vzácné zásoby, která dlouho zůstává na dně batohu. Taková pověst je příběhovým detailem; lektvar neposkytuje právo měnit jakoukoli událost nebo předem určovat výsledek dobrodružství.",
+      "Použijte jej pro významnou scénu či souboj, kde se Štěstí uplatní podle pravidel. Stále záleží na konkrétním pokusu, jeho obtížnosti a rozhodnutí hráče. Bonus není absolutní ochrana před následky riskantního plánu. V příběhu může už samotné rozhodnutí vypít poslední zásobu před nejistým krokem dobře ukázat odvahu i obavy postavy.",
+      "Pravidlový účinek: +2 Š na jednu významnou scénu nebo jeden souboj. Cena je 3 z. Při použití zachovejte přesně uvedený účinek a dobu trvání. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/celenka-jasne-mysli": [
+      "Čelenka jasné mysli je nenápadný magický doplněk pro postavu, která si cení Chytrosti. V příběhu může pocházet ze studovny učence, být odměnou za zachráněný rukopis nebo památkou na učitele. Její účinek se váže na konkrétní vlastnost; nedává majiteli automatickou znalost cizích jazyků, tajných dějin ani všech řešení hádanek.",
+      "Hodí se k hrdinovi, který své schopnosti staví na promyšleném postupu a znalostech. Vyšší hodnota vlastnosti stále potřebuje rozumné rozhodování a správné informace. Příběh čelenky může otevřít pátrání po bývalém majiteli nebo původu značky na kovu. Takový motiv obohatí dobrodružství, aniž by měnil přesný bonus či vybavovací slot.",
+      "Používá slot „Hlava“ a vychází ze základu „čelenka“. Uvedený bonus je +1 CH. Předmět nemá další výslovně uvedený požadavek. Katalogová hodnota je 15 z. Výpočet a podmínky bonusu dodržujte přesně; samotný příběhový původ mu nepřidává další schopnosti."
     ]
   }
 }
