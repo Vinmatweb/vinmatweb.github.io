@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 270,
+  "completed": 274,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -210,7 +210,11 @@
     "magic/svetla/ochranna-aura",
     "magic/svetla/zlomeni-kletby",
     "magic/svetla/hromadne-leceni",
-    "magic/svetla/velke-leceni"
+    "magic/svetla/velke-leceni",
+    "magic/temna/stinovy-plast",
+    "magic/temna/stinova-strela",
+    "magic/temna/strach",
+    "magic/temna/oslabeni"
   ],
-  "latestBatch": 52
+  "latestBatch": 53
 }
