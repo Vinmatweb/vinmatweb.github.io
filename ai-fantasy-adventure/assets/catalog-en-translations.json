@@ -167,5 +167,18 @@
       "parohy +1": "Antlers +1",
       "srst +1": "Fur +1"
     }
+  },
+  "best/vesnican": {
+    "name": "Villager",
+    "profile": [
+      "A villager represents an ordinary inhabitant of Elaria: a farmer, shepherd, woodcutter or someone whose daily work keeps a settlement alive. They know local roads, neighbors, the weather and changes in the surrounding landscape. News of unusual tracks, an empty field or a cart that never arrived may be more valuable to adventurers than a scholarly map. Their knowledge comes from experience rather than adventuring training.",
+      "They usually live with a family and rely on help from neighbors. Their decisions are influenced by the mayor, village council, local lord and the community's unwritten rules. Their goals are often the safety of loved ones, a good harvest and survival through another winter. They may welcome or distrust strangers depending on the village's experiences. Fear, debt or pressure from someone more powerful may explain behavior that initially seems hostile.",
+      "A villager has no special combat ability, and an open confrontation is seriously dangerous for them. When they defend themselves, they are often protecting a home, supplies or family. Conversation, proof of good intentions and practical help can change a relationship faster than threats. In a story, they may be a witness, guide or someone hiding information for fear of the consequences. The stat profile describes an ordinary resident; the individual character determines their personality and past."
+    ],
+    "strings": {
+      "improvizovaná zbraň +0": "Improvised weapon +0",
+      "bez zbroje": "No armor",
+      "Bez zvláštní schopnosti.": "No special ability."
+    }
   }
 }
