@@ -209,7 +209,11 @@
     "magic/ohen/ohnive-kopi",
     "magic/ohen/ohniva-koule",
     "magic/ohen/ohniva-zed",
-    "magic/ohen/draci-dech"
+    "magic/ohen/draci-dech",
+    "magic/voda/vytvoreni-vody",
+    "magic/voda/vodni-proud",
+    "magic/voda/ledova-strela",
+    "magic/voda/mrazivy-dotek"
   ],
   "profiles": {
     "best/krysa": [
@@ -1261,6 +1265,26 @@
       "Dračí dech patří k výrazným pokročilým ohnivým kouzlům a zasahuje několik cílů v kuželu. Název vyjadřuje jeho silnou podobu, nedává však sesilateli všechny schopnosti draka. V příběhu je to vzácný okamžik, pro který se hrdina rozhodne po zvážení situace a dalšího průběhu výpravy.",
       "Použití je omezené na jednou za dobrodružství, proto není vhodné počítat s ním v každém střetu. Je nutné vymezit kužel a nejvýše tři cíle podle plošného pravidla. Jeden hod se porovnává s magickou obranou každého zvlášť. Síla útoku z něj nedělá neomezenou zbraň proti celé armádě ani zaručené vítězství.",
       "Přesný účinek: Velmi silný plošný ohnivý útok. Jeden hod MÚ se porovná zvlášť s MO každého cíle. Bonus: +4 k MÚ. Cíl: kužel; nejvýše 3 cíle. Trvání: okamžitě. Omezení: 1× za dobrodružství; platí plošné pravidlo. K použití je potřeba minimálně Chytrost 11 a Level 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/voda/vytvoreni-vody": [
+      "Vytvoření vody poskytne čistou pitnou vodu do připravené nádoby. Je užitečné pro cestovatele, který musí myslet na zásoby stejně jako na nepřátele. V příběhu může změnit náladu družiny během suché cesty nebo pomoci při obyčejné péči o tábořiště. Připravená nádoba je součástí použití, nikoli detail, který lze přeskočit.",
+      "Kouzlo má omezené množství vody za scénu, takže nenahradí neomezený zdroj pro celé město. Hodí se rozdělit získanou zásobu podle potřeb výpravy. Nevytváří tlakový proud ani led a nelze mu automaticky přiznat útočnou funkci. Jeho síla spočívá v praktické pomoci a možnosti pokračovat dál s rozumně doplněnými zásobami.",
+      "Přesný účinek: Vytvoří čistou pitnou vodu v připravené nádobě. Nevytvoří tlakový proud ani led. Cíl: prázdná nádoba na dosah. Trvání: okamžitě. Omezení: nejvýše 5 litrů za scénu. K použití je potřeba minimálně Chytrost 6, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/voda/vodni-proud": [
+      "Vodní proud je magický útok proti jedinému viditelnému cíli, který může kromě zranění krátce změnit jeho postavení. V příběhu dobře zapadá k sesilateli, jenž pracuje s pohybem a prostorem kolem protivníka. Dodatečné odstrčení ale není jisté při každém seslání: podmínkou je skutečné zranění alespoň jednoho Života.",
+      "Odstrčení se týká běžného cíle a jen krátkého kroku, nikoli libovolné vzdálenosti. Velký nebo hlavní protivník se neposune. Omezení na stejný cíl za kolo je potřeba respektovat při spolupráci více sesilatelů. Hrdina může kouzlo využít k drobné změně situace, nesmí z něj však odvozovat automatické vyřazení silného nepřítele.",
+      "Přesný účinek: Při zranění alespoň 1 Ž navíc odstrčí běžný cíl o krátký krok. Velký nebo hlavní protivník se neposune. Bonus: +1 k MÚ. Cíl: 1 cíl na dohled. Trvání: okamžitě. Omezení: posunutí nejvýše 1× na stejný cíl za kolo. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/voda/ledova-strela": [
+      "Ledová střela je přímý útok školy Voda a led na jediný viditelný cíl. Její podoba může zdůraznit ostrý chlad a přesné zaměření, výsledek však vychází z běžného vyhodnocení magického útoku. Nejde o plošné zmrazení okolí ani o vytvoření trvalého předmětu, který by družina mohla později znovu použít.",
+      "Hodí se v situaci, kdy sesilatel potřebuje jasně zaměřený útok proti konkrétnímu protivníkovi. Zranění závisí na jeho magické obraně a výsledku útoku. Kouzlo samo nepřidává zpomalení nebo zákaz pohybu jen proto, že používá led. Takové dodatečné účinky je nutné odlišit od jiných kouzel, která je výslovně uvádějí.",
+      "Přesný účinek: Přímý ledový útok; zranění se vypočte proti MO cíle. Bonus: +2 k MÚ. Cíl: 1 cíl na dohled. Trvání: okamžitě. Omezení: —. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/voda/mrazivy-dotek": [
+      "Mrazivý dotek spojuje útok z bezprostřední blízkosti s možností oslabit příští fyzický útok cíle. V příběhu jde o riskantní krok, při němž sesilatel musí přistoupit na dosah ruky. Chladný projev kouzla je výrazný, ale protivník neztrácí automaticky celý tah ani všechny možnosti reagovat na okolní dění.",
+      "Dodatečný postih vznikne jen při zranění alespoň jednoho Života a vztahuje se na příští fyzický útok. Nesčítá se a má omezené trvání. Při rozhodování proto záleží na tom, zda se očekává právě takový útok a zda se hrdina dokáže bezpečně přiblížit. Kouzlo nenahrazuje obranu sesilatele proti případné odvetě.",
+      "Přesný účinek: Při zranění alespoň 1 Ž má cíl navíc −1 k příštímu FÚ. Postih se nesčítá. Bonus: +2 k MÚ. Cíl: 1 cíl na dosah ruky. Trvání: do konce příštího tahu cíle. Omezení: —. K použití je potřeba minimálně Chytrost 8, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
     ]
   }
 }

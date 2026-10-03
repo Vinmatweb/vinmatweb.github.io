@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 210,
+  "completed": 214,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -150,7 +150,11 @@
     "magic/ohen/ohnive-kopi",
     "magic/ohen/ohniva-koule",
     "magic/ohen/ohniva-zed",
-    "magic/ohen/draci-dech"
+    "magic/ohen/draci-dech",
+    "magic/voda/vytvoreni-vody",
+    "magic/voda/vodni-proud",
+    "magic/voda/ledova-strela",
+    "magic/voda/mrazivy-dotek"
   ],
-  "latestBatch": 37
+  "latestBatch": 38
 }
