@@ -248,5 +248,29 @@
       "kožená +2": "Leather armor +2",
       "Bez zvláštní schopnosti.": "No special ability."
     }
+  },
+  "best/vudce-banditu": {
+    "name": "Bandit Leader",
+    "profile": [
+      "A bandit leader has turned several individual robbers into a group with hideouts, lookouts and a plan. They are often an experienced fighter, a former commander or someone who rose through courage and an ability to secure loot. Their base is better protected than an ordinary camp and may hold supplies, prisoners and records of whom the gang sells stolen goods to.",
+      "They keep members together through a share of profits, personal loyalty or fear. A capable leader assigns tasks and knows their followers' weaknesses; a cruel leader may overlook resentment until it is too late. Their goal might be wealth, control of a trade route or service to a hidden patron. They do not necessarily treat subordinates like strangers, and relationships within the gang may decide the entire conflict.",
+      "Commander strengthens one allied bandit's attack each round while the leader remains conscious. Their presence therefore affects the whole group's combat. The party can seek evidence against the patron, disrupt supplies or negotiate the release of prisoners. A loss of authority, a dispute over sharing loot or an exposed lie can be as effective a story development as a direct fight. The leader judges a proposed truce, however, by what they believe they stand to lose."
+    ],
+    "strings": {
+      "Velitel": "Commander",
+      "Dokud je při vědomí, 1 spojenec bandita v každém kole získá +1 k výslednému ÚTOKU.": "While the leader is conscious, one allied bandit gains +1 to its final Attack result each round.",
+      "jednoruční meč +3": "One-handed sword +3",
+      "kožená +2": "Leather armor +2",
+      "1 (těžké)": "1 (difficult)",
+      "1 + 1 bandita": "1 + 1 bandit",
+      "1 + 2 bandité": "1 + 2 bandits",
+      "Základní boss": "Basic boss",
+      "Jak použít Vůdce banditů": "How to use the Bandit Leader",
+      "Charakteristická schopnost": "Signature ability",
+      "Slabina / výhoda": "Weakness / advantage",
+      "Alternativní řešení": "Alternative solution",
+      "Poznámka": "Note",
+      "Jak použít": "How to use"
+    }
   }
 }
