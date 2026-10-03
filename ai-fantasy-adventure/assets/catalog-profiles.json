@@ -185,7 +185,11 @@
     "equip/hul-prirody",
     "equip/kouzelnicka-hul",
     "equip/stit-ochrany",
-    "equip/opasek-sily"
+    "equip/opasek-sily",
+    "equip/opasek-lecitele",
+    "equip/boty-lehkeho-kroku",
+    "equip/boty-obratnosti",
+    "equip/luk-vetru"
   ],
   "profiles": {
     "best/krysa": [
@@ -1117,6 +1121,26 @@
       "Opasek síly je magický doplněk zvyšující Sílu nositele. V příběhu může patřit řemeslníkovi, bojovníkovi nebo cestovateli, který jej získal za náročnou službu. Jeho pevné provedení může zdůraznit praktický charakter předmětu. Kouzlo však nemá další skryté podmínky odvozené ze zdobení a nedělá z hrdiny bytost schopnou zvednout cokoli bez omezení.",
       "Uplatní se všude tam, kde se zvýšená vlastnost použije podle platných pravidel. Je potřeba rozlišovat bonus k Síle od přímého bonusu k útoku nebo obraně. Opasek také automaticky neřeší každý silový problém: rozhoduje konkrétní situace, obtížnost a vhodný postup. Příběh předmětu může otevřít vztah k bývalému majiteli, aniž by měnil jeho hodnotu.",
       "Používá slot „Pas“ a vychází ze základu „opasek“. Uvedený bonus je +1 S. Předmět nemá další výslovně uvedený požadavek. Katalogová hodnota je 20 z. Výpočet a podmínky bonusu dodržujte přesně; samotný příběhový původ mu nepřidává další schopnosti."
+    ],
+    "equip/opasek-lecitele": [
+      "Opasek léčitele je doplněk pro postavu, která využívá léčivá seslání. Může připomínat službu u zkušeného učitele nebo péči o lidi v odlehlém kraji. Jeho příběhové kapsy a značení mohou vystihnout práci nositele, ale magický účinek je konkrétní: zvyšuje celkový výsledek jednoho léčivého seslání o uvedené množství Životů.",
+      "Při výpočtu se jeho bonus přičítá až po použití koeficientu a zaokrouhlení. Nelze jej přičítat ke každému jednotlivému dílčímu kroku nebo automaticky násobit počtem cílů. Opasek sám nikoho nenaučí léčivé kouzlo a neléčí bez příslušného použití. Stejně tak neposiluje každou běžnou léčitelskou pomůcku nebo libovolný vypitý lektvar.",
+      "Používá slot „Pas“ a vychází ze základu „opasek“. Uvedený bonus je +1 k léčení. +1 Ž k celkovému výsledku jednoho léčivého seslání po koeficientu a zaokrouhlení. Předmět nemá další výslovně uvedený požadavek. Katalogová hodnota je 18 z. Výpočet a podmínky bonusu dodržujte přesně; samotný příběhový původ mu nepřidává další schopnosti."
+    ],
+    "equip/boty-lehkeho-kroku": [
+      "Boty lehkého kroku jsou magickou výbavou cestovatele, který nechce při běžném pohybu zanechávat snadno viditelné stopy. Mohou se hodit průzkumníkovi, opatrnému poslovi nebo hrdinovi, který se snaží uniknout nežádoucí pozornosti. Jejich název nevytváří schopnost létat a katalog neslibuje naprosté zmizení všech známek přítomnosti nositele.",
+      "Výhoda se týká běžných viditelných stop, nikoli absolutní ochrany před každým stopařem. Cílené stopování a zvláštní terén mohou pohyb odhalit. Postava také může zanechat jiné důkazy svými činy, hlukem nebo ztraceným předmětem. V příběhu proto pomáhají dobrému plánu úniku, ale nenahrazují přemýšlení o tom, co se za družinou skutečně děje.",
+      "Používá slot „Nohy“ a vychází ze základu „boty“. Při běžném pohybu nezanechává snadno viditelné stopy; cílené stopování nebo zvláštní terén je mohou odhalit. Předmět nemá další výslovně uvedený požadavek. Katalogová hodnota je 14 z. Výpočet a podmínky bonusu dodržujte přesně; samotný příběhový původ mu nepřidává další schopnosti."
+    ],
+    "equip/boty-obratnosti": [
+      "Boty obratnosti poskytují přímé zvýšení Obratnosti a mohou být nenápadnou součástí osobní výbavy. V příběhu je může nosit zkušený průzkumník, tanečník i dobrodruh, který potřebuje jistější pohyb. Jejich původ a vzhled jsou pro charakter zajímavé, ale neudělují samostatnou schopnost chůze po vodě, letu nebo automatického překonání jakékoli překážky.",
+      "Vyšší Obratnost se uplatní při činnostech a výpočtech, které tuto vlastnost používají podle pravidel. Bonus není zaručený úspěch a není samostatným přímým posílením každé zbraně. Hrdina stále potřebuje zvažovat situaci, povrch a vlastní plán. Při volbě výstroje dává smysl rozlišit obecný bonus k vlastnosti od úzce zaměřených magických pomůcek.",
+      "Používá slot „Nohy“ a vychází ze základu „boty“. Uvedený bonus je +1 O. Předmět nemá další výslovně uvedený požadavek. Katalogová hodnota je 20 z. Výpočet a podmínky bonusu dodržujte přesně; samotný příběhový původ mu nepřidává další schopnosti."
+    ],
+    "equip/luk-vetru": [
+      "Luk větru vychází z dlouhého luku a přidává magické posílení fyzického útoku. V příběhu může být ceněným nástrojem průzkumníka, trofejí ze střelecké soutěže nebo odkazem starého učitele. Jeho jméno a ozdoby lze propojit s větrem a cestami, ale samy nezakládají ovládání počasí ani neomezenou přesnost za všech podmínek.",
+      "Nositel musí splnit stejné požadavky jako u běžného dlouhého luku. Základ se nejprve upraví koeficientem Zbraně a dodatečný bonus se přičítá potom. Luk stále používá obě ruce a nenahrazuje potřebné střelivo. Důležitá zůstává i situace konkrétního útoku; magické posílení nesmí být rozšířeno na další nevypsané efekty jen podle názvu.",
+      "Používá slot „Hlavní + Druhá ruka“ a vychází ze základu „dlouhý luk“. Uvedený bonus je +1 FÚ navíc. Základ dlouhého luku se upraví koeficientem Zbraně; +1 FÚ se přičte potom. Požadavek: Stejné jako dlouhý luk. Katalogová hodnota je 30 z. Výpočet a podmínky bonusu dodržujte přesně; samotný příběhový původ mu nepřidává další schopnosti."
     ]
   }
 }

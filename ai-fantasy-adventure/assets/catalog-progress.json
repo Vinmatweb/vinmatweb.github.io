@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 186,
+  "completed": 190,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -126,7 +126,11 @@
     "equip/hul-prirody",
     "equip/kouzelnicka-hul",
     "equip/stit-ochrany",
-    "equip/opasek-sily"
+    "equip/opasek-sily",
+    "equip/opasek-lecitele",
+    "equip/boty-lehkeho-kroku",
+    "equip/boty-obratnosti",
+    "equip/luk-vetru"
   ],
-  "latestBatch": 31
+  "latestBatch": 32
 }
