@@ -169,7 +169,11 @@
     "equip/lektvar-chytrosti",
     "equip/lektvar-charismatu",
     "equip/lektvar-stesti",
-    "equip/celenka-jasne-mysli"
+    "equip/celenka-jasne-mysli",
+    "equip/helma-strazce",
+    "equip/amulet-svetla",
+    "equip/talisman-ducha",
+    "equip/plast-sucha"
   ],
   "profiles": {
     "best/krysa": [
@@ -1021,6 +1025,26 @@
       "Čelenka jasné mysli je nenápadný magický doplněk pro postavu, která si cení Chytrosti. V příběhu může pocházet ze studovny učence, být odměnou za zachráněný rukopis nebo památkou na učitele. Její účinek se váže na konkrétní vlastnost; nedává majiteli automatickou znalost cizích jazyků, tajných dějin ani všech řešení hádanek.",
       "Hodí se k hrdinovi, který své schopnosti staví na promyšleném postupu a znalostech. Vyšší hodnota vlastnosti stále potřebuje rozumné rozhodování a správné informace. Příběh čelenky může otevřít pátrání po bývalém majiteli nebo původu značky na kovu. Takový motiv obohatí dobrodružství, aniž by měnil přesný bonus či vybavovací slot.",
       "Používá slot „Hlava“ a vychází ze základu „čelenka“. Uvedený bonus je +1 CH. Předmět nemá další výslovně uvedený požadavek. Katalogová hodnota je 15 z. Výpočet a podmínky bonusu dodržujte přesně; samotný příběhový původ mu nepřidává další schopnosti."
+    ],
+    "equip/helma-strazce": [
+      "Helma strážce spojuje ochrannou výstroj s přesně vymezeným magickým posílením fyzické obrany. Může být součástí výbavy veterána nebo odměnou od pevnosti, které družina pomohla. Oděrky a znak původního nositele mohou vyprávět o minulých střetech, ale helma tím nezískává nevypsanou imunitu ani schopnost rozhodovat za svého majitele.",
+      "Uplatní se u postavy, která splní silový požadavek a chce zvýšit svou fyzickou obranu. Při výpočtu je důležité odlišit přímý dodatečný bonus od základních hodnot upravovaných koeficientem. Ochrana nezaručuje, že každý útok mine, a sama nenavyšuje magickou obranu. Hrdina stále potřebuje vhodný postup a spolupráci družiny.",
+      "Používá slot „Hlava“ a vychází ze základu „helma“. Uvedený bonus je +1 FO. Přímý dodatečný bonus; bez koeficientu. Požadavek: S5. Katalogová hodnota je 18 z. Výpočet a podmínky bonusu dodržujte přesně; samotný příběhový původ mu nepřidává další schopnosti."
+    ],
+    "equip/amulet-svetla": [
+      "Amulet světla slouží cestovateli, který chce mít po ruce ovladatelný zdroj světla. Příběhově může být výrobkem řemeslné dílny, darem důlního průvodce nebo drobnou památkou z dávné výpravy. Jeho záře pomáhá vidět v temném prostředí; katalog ji nepopisuje jako sluneční světlo ani jako útok proti tvorům citlivým na světlo.",
+      "Praktickou výhodou je možnost zapnout a zhasnout jej podle potřeby. Hodí se k čtení mapy, průchodu tmavou chodbou nebo hledání ztraceného předmětu. Světlo ale může upozornit okolí na přítomnost družiny. Předmět sám neodhaluje pasti, neviditelné bytosti ani tajné dveře; k takovému pátrání je stále potřeba pozornost nebo jiná odpovídající schopnost.",
+      "Používá slot „Krk“ a vychází ze základu „amulet“. Na povel svítí přibližně jako lucerna; lze kdykoliv zhasnout. Předmět nemá další výslovně uvedený požadavek. Katalogová hodnota je 10 z. Výpočet a podmínky bonusu dodržujte přesně; samotný příběhový původ mu nepřidává další schopnosti."
+    ],
+    "equip/talisman-ducha": [
+      "Talisman ducha je drobný osobní předmět spojený s posílením magické obrany. Jeho podoba může vycházet z víry nositele, tradice jeho kraje nebo příběhu dávného ochránce. Název však sám nepotvrzuje, že v talismanu sídlí vědomá bytost. Pravidlovou hodnotu určuje konkrétní bonus, nikoli domnělé schopnosti odvozené z jeho vzhledu.",
+      "Hodí se pro hrdinu, který očekává magické ohrožení a chce doplnit svou běžnou výbavu. Přímý bonus je potřeba zahrnout správně do výsledné magické obrany. Talisman není všeobecná ochrana před kletbami, strachem či každým nadpřirozeným jevem. Setkání s jeho původním vlastníkem může vytvořit příběhovou otázku, komu tento předmět skutečně patří.",
+      "Používá slot „Krk“ a vychází ze základu „talisman“. Uvedený bonus je +1 MO. Přímý dodatečný bonus; bez koeficientu. Předmět nemá další výslovně uvedený požadavek. Katalogová hodnota je 18 z. Výpočet a podmínky bonusu dodržujte přesně; samotný příběhový původ mu nepřidává další schopnosti."
+    ],
+    "equip/plast-sucha": [
+      "Plášť sucha ocení každý, kdo tráví čas na cestách a nechce po obyčejném dešti hledat suché šaty. Může působit jako praktický dar od zkušeného poutníka, který ví, jak snadno vlhko zkomplikuje výpravu. Jeho kouzlo je pohodlné a konkrétní; není to neomezená ochrana před vodou ani před všemi vlivy počasí.",
+      "Chrání majitele a věci schované pod pláštěm před promáčením běžným deštěm. Uložení věcí mimo jeho krytí nelze automaticky považovat za chráněné. Při brodění řeky či ponoření do vody nejde o náhradu jiné potřebné výbavy. Hodí se k dlouhým cestám, ochraně cestovních zásob a příběhům, v nichž mají drobné praktické výhody skutečný význam.",
+      "Používá slot „Plášť“ a vychází ze základu „plášť“. Běžný déšť nepromáčí majitele ani věci schované pod pláštěm. Předmět nemá další výslovně uvedený požadavek. Katalogová hodnota je 10 z. Výpočet a podmínky bonusu dodržujte přesně; samotný příběhový původ mu nepřidává další schopnosti."
     ]
   }
 }
