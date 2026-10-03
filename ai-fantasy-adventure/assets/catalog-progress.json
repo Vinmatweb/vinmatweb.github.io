@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 226,
+  "completed": 230,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -166,7 +166,11 @@
     "magic/vzduch/bleskova-strela",
     "magic/vzduch/vetrny-stit",
     "magic/vzduch/levitace",
-    "magic/vzduch/blesk"
+    "magic/vzduch/blesk",
+    "magic/vzduch/teleportace-predmetu",
+    "magic/vzduch/let",
+    "magic/vzduch/retezovy-blesk",
+    "magic/vzduch/teleportace-osoby"
   ],
-  "latestBatch": 41
+  "latestBatch": 42
 }

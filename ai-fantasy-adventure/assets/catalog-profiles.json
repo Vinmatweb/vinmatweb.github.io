@@ -225,7 +225,11 @@
     "magic/vzduch/bleskova-strela",
     "magic/vzduch/vetrny-stit",
     "magic/vzduch/levitace",
-    "magic/vzduch/blesk"
+    "magic/vzduch/blesk",
+    "magic/vzduch/teleportace-predmetu",
+    "magic/vzduch/let",
+    "magic/vzduch/retezovy-blesk",
+    "magic/vzduch/teleportace-osoby"
   ],
   "profiles": {
     "best/krysa": [
@@ -1357,6 +1361,26 @@
       "Blesk je silnější útok proti jedinému viditelnému cíli. V příběhu může být rozhodným okamžikem, který ukáže schopnost sesilatele využít moc školy Vzduch. Jeho útočný bonus je vyšší než u základní střely, ale výsledné zranění stále vychází z běžného magického vyhodnocení proti obraně konkrétního protivníka.",
       "Protože je možné použít jej jen jednou za souboj, má smysl vybrat významný cíl a vhodnou chvíli. Kouzlo není automatický útok na celou skupinu ani zdroj trvalého elektrického pole. Nepřidává nevypsanou paralýzu. Družina může svou strategii postavit na jednom silném zásahu, stále však potřebuje plán pro případ slabšího výsledku.",
       "Přesný účinek: Silný jednobodový bleskový útok proti MO cíle. Bonus: +4 k MÚ. Cíl: 1 cíl na dohled. Trvání: okamžitě. Omezení: 1× za souboj. K použití je potřeba minimálně Chytrost 9 a Level 2, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/vzduch/teleportace-predmetu": [
+      "Teleportace předmětu přenese omezený nemagický předmět mezi viditelnými místy. Může pomoci s dosažením jinak nepřístupné věci nebo s jejím umístěním na vhodný bod. Není to libovolné získání pokladu z neznámé místnosti: sesilatel musí vidět výchozí i cílové místo a respektovat hmotnost i vzdálenost.",
+      "U volného předmětu je použití jiné než u věci, kterou někdo drží. Držitel se brání magickou obranou a předmět hlavního protivníka takto vzít nelze. Cíl musí být prázdné místo. Kouzlo se proto hodí k promyšlenému nápadu, nikoli k automatickému odzbrojení každého nepřítele nebo přenášení čehokoli bez omezení.",
+      "Přesný účinek: Přenese volný předmět na prázdné místo. U drženého předmětu je nutný MÚ proti MO držitele; předmět hlavního protivníka nelze vzít. Bonus: +0 k MÚ u drženého předmětu. Cíl: nemagický předmět do 5 kg. Trvání: okamžitě. Omezení: 1× za scénu; výchozí i cílové místo musí být na dohled a do 20 m. K použití je potřeba minimálně Chytrost 9 a Level 3, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/vzduch/let": [
+      "Let otevře sesilateli nebo jednomu ochotnému tvoru možnost pohybovat se vzduchem. Může změnit cestu průzkumu, pomoci překonat překážku nebo nabídnout jiný pohled na krajinu. Nejde však o trvalé získání křídel. Trvání závisí na tom, zda se kouzlo používá v souboji, nebo mimo něj, a je potřeba je hlídat.",
+      "Důležitý je plán návratu na zem. Po skončení kouzlo zajistí bezpečný sestup jen z malé výšky; z vyššího místa je podle katalogu potřeba Tlumený pád. Rychlost je přibližně rychlost běhu, nikoli neomezené cestování světem. Možnost letu tak přináší skutečnou výhodu, ale zároveň vyžaduje dobré načasování a zodpovědné rozhodování.",
+      "Přesný účinek: Cíl létá přibližně rychlostí běhu. Po skončení bezpečně klesne nejvýše 3 m; z větší výšky potřebuje Tlumený pád. Cíl: sesilatel nebo 1 ochotný tvor na dosah. Trvání: 3 kola v souboji nebo 10 minut mimo něj. Omezení: 1× za scénu. K použití je potřeba minimálně Chytrost 10 a Level 5, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/vzduch/retezovy-blesk": [
+      "Řetězový blesk zasahuje omezenou skupinu cílů navázaných blízkostí jeden na druhý. Jeho příběhový projev může působit rychle a působivě, pravidlově však jde o plošný útok s nejvýše třemi cíli. Rozmístění protivníků je součástí použití: nelze si vybrat libovolné osoby rozptýlené po celém prostoru bez ohledu na jejich vzdálenosti.",
+      "Jeden hod se porovná s magickou obranou každého vybraného cíle zvlášť. Výsledky tak nemusejí být stejné a útok nepokračuje bez omezení dál. Použití je dostupné jednou za souboj. Dává smysl sledovat postavení nepřátel a rozhodnout, zda je výhodnější tento zásah do skupiny, nebo jiný útok zaměřený na jediného protivníka.",
+      "Přesný účinek: Jeden hod MÚ se porovná zvlášť s MO každého cíle. Bonus: +3 k MÚ. Cíl: nejvýše 3 cíle, každý do několika metrů od předchozího. Trvání: okamžitě. Omezení: 1× za souboj; platí plošné pravidlo. K použití je potřeba minimálně Chytrost 10 a Level 5, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/vzduch/teleportace-osoby": [
+      "Teleportace osoby umožní okamžitě přesunout sesilatele nebo jednoho ochotného tvora na viditelné bezpečné místo v blízkém dosahu. Může pomoci s únikem, překonáním překážky nebo změnou postavení v souboji. Její význam vychází z rychlé změny místa, ne ze schopnosti cestovat kamkoli na světě bez znalosti cíle.",
+      "Cílový prostor musí být prázdný, bezpečný, viditelný a v uvedené vzdálenosti. Kouzlo neprochází do neznámé místnosti ani mezi světy. Pro přesun ochotného tvora je potřebný dosah a jedno použití za souboj. Zajímavou volbou je, koho přesunout právě teď, když celá družina nemusí mít stejnou cestu úniku.",
+      "Přesný účinek: Přenese cíl na viditelné bezpečné místo. Neprochází do neznámého prostoru ani mezi světy. Cíl: sesilatel nebo 1 ochotný tvor na dosah. Trvání: okamžitě. Omezení: 1× za souboj; cílové prázdné místo musí být na dohled a do 30 m. K použití je potřeba minimálně Chytrost 11 a Level 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
     ]
   }
 }
