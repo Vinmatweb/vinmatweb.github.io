@@ -124,5 +124,20 @@
       "drápy a tlapy +3": "Claws and paws +3",
       "hustá srst +2": "Thick fur +2"
     }
+  },
+  "best/krokodyl": {
+    "name": "Crocodile",
+    "profile": [
+      "A crocodile lives in warm rivers, swamps and flooded ruins. It can remain almost invisible in muddy water for a long time; only its eyes and ripples around its nostrils show above the surface. It seeks places where other creatures drink, wade or approach the bank. Sliding tracks in mud and a conspicuously deserted watering hole may reveal its territory.",
+      "It is a patient hunter that conserves its strength and chooses the right moment to attack. It usually acts alone, although several individuals may gather around a rich food source. Such a gathering is not an obedient pack. A crocodile responds to prey, space and immediate threats; it may defend a sheltered retreat or nesting place even when it is not hungry.",
+      "Its greatest advantage is surprise near water. Crush makes the injured target's next attack harder, while Tough Hide reduces the first physical damage it takes each round. Going around the bank, using a sturdy footbridge or choosing another crossing is often safer. A crocodile may guard access to ruins simply by settling there; killing it need not be necessary to resolve the situation."
+    ],
+    "strings": {
+      "Sevření; Tvrdý krunýř": "Crush; Tough Hide",
+      "Pokud způsobí alespoň 3 zranění jedním útokem, cíl má −1 k výslednému ÚTOKU v příštím kole. Tvrdý krunýř snižuje první fyzické zranění, které krokodýl v každém kole utrpí, o 2 (min. 0).": "If one attack deals at least 3 damage, the target gets −1 to its final Attack result next round. Tough Hide reduces the first physical damage the crocodile takes each round by 2 (minimum 0).",
+      "čelisti +4": "Jaws +4",
+      "šupiny +4": "Scales +4",
+      "Fyzická": "Physical"
+    }
   }
 }
