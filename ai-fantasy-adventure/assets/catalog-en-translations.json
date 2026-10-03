@@ -153,5 +153,19 @@
       "pařáty +2": "Talons +2",
       "peří +1": "Feathers +1"
     }
+  },
+  "best/jelen": {
+    "name": "Deer",
+    "profile": [
+      "Deer inhabit forests, meadows and open mountain valleys. They forage in clearings and along quiet forest edges from which they can quickly withdraw into cover. Hoof prints, nibbled shoots and rubbed bark mark their presence. In Elaria's stories, an impressive stag may symbolize a particular forest, but an actual encounter still follows the behavior of a wild animal.",
+      "Deer gather according to their surroundings and the season; males may travel separately and defend their space more vigorously when competing. Caution helps them survive more than a willingness to fight. An unfamiliar smell or noise usually makes them stop, listen and retreat. Antlers are dangerous when the animal feels trapped or someone blocks its way.",
+      "Flee increases physical defense when the deer chooses to escape instead of attacking. Leaving an open route therefore suits its natural response to danger. The party can follow its tracks to water, find an abandoned fawn or discover why wildlife has disappeared from the forest. Unusual herd behavior may warn of a predator, fire or disturbed territory without the deer itself being an enemy."
+    ],
+    "strings": {
+      "Útěk": "Flee",
+      "Pokud se místo útoku rozhodne utéct, získá do příštího tahu +2 FO.": "If it chooses to flee instead of attacking, gains +2 PDEF until its next turn.",
+      "parohy +1": "Antlers +1",
+      "srst +1": "Fur +1"
+    }
   }
 }
