@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 266,
+  "completed": 270,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -206,7 +206,11 @@
     "magic/svetla/svetelny-paprsek",
     "magic/svetla/zarivy-stit",
     "magic/svetla/slepive-svetlo",
-    "magic/svetla/hojive-svetlo"
+    "magic/svetla/hojive-svetlo",
+    "magic/svetla/ochranna-aura",
+    "magic/svetla/zlomeni-kletby",
+    "magic/svetla/hromadne-leceni",
+    "magic/svetla/velke-leceni"
   ],
-  "latestBatch": 51
+  "latestBatch": 52
 }
