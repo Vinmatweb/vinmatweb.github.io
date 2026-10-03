@@ -207,5 +207,19 @@
       "kožená +2": "Leather armor +2",
       "Bez zvláštní schopnosti.": "No special ability."
     }
+  },
+  "best/lovec": {
+    "name": "Hunter",
+    "profile": [
+      "A hunter spends much of their life beyond the safety of settlements. They travel forest trails, track game and know where to find water or shelter. Their home may be a solitary cabin or a village to which they return with their catch. They distinguish ordinary tracks from those of an injured animal, an unusual predator or someone trying to conceal their movements.",
+      "They usually work alone or in a small group where silence and mutual trust matter. They act independently, but may serve a forest warden, supply a village or protect an estate. Their goals are often a livelihood, the safety of familiar territory and returning from another expedition. An honest hunter and a poacher may have similar skills, but their relationships with local people and rules will be very different.",
+      "Precise Shot strengthens a ranged attack once per combat. They seek an advantage in a prepared position, a clear view and distance; reckless melee combat may not suit their experience. They can guide the party through dangerous terrain, teach them to read tracks or ask for help with something ordinary wildlife cannot explain. Respect for their knowledge and a willingness to heed warnings the rest of the village ignores often determine how negotiations go."
+    ],
+    "strings": {
+      "Přesná rána": "Precise Shot",
+      "1× za souboj získá +2 k výslednému ÚTOKU na dálku.": "Once per combat, gains +2 to the final result of a ranged Attack.",
+      "dlouhý luk +3": "Longbow +3",
+      "kožená +2": "Leather armor +2"
+    }
   }
 }
