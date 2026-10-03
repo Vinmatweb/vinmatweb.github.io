@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 278,
+  "completed": 282,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -218,7 +218,11 @@
     "magic/temna/kletba",
     "magic/temna/temna-mlha",
     "magic/temna/vysati-zivota",
-    "magic/temna/prizracna-pouta"
+    "magic/temna/prizracna-pouta",
+    "magic/temna/nemrtvy-sluzebnik",
+    "magic/temna/paprsek-vycerpani",
+    "magic/prirodni/rec-zvirat",
+    "magic/prirodni/uklidneni-zvirete"
   ],
-  "latestBatch": 54
+  "latestBatch": 55
 }

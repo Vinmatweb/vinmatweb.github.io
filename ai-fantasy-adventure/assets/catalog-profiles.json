@@ -277,7 +277,11 @@
     "magic/temna/kletba",
     "magic/temna/temna-mlha",
     "magic/temna/vysati-zivota",
-    "magic/temna/prizracna-pouta"
+    "magic/temna/prizracna-pouta",
+    "magic/temna/nemrtvy-sluzebnik",
+    "magic/temna/paprsek-vycerpani",
+    "magic/prirodni/rec-zvirat",
+    "magic/prirodni/uklidneni-zvirete"
   ],
   "profiles": {
     "best/krysa": [
@@ -1669,6 +1673,26 @@
       "Přízračná pouta se pokusí na krátkou dobu omezit přesun jednoho tvora. Při úspěchu se běžný cíl nemůže přesunout, ale stále může jednat na dosah. Kouzlo tak může pomoci změnit vzdálenost nebo umožnit ústup. Není však úplným uvězněním, které by automaticky odstranilo všechny útoky a schopnosti protivníka.",
       "Pro hlavního protivníka platí pouze poloviční přesun. Jedno kolo a jediné použití na stejný cíl za souboj dávají krátké příležitosti skutečné hranice. Družina by měla vědět, jak ji využije, a neplánovat neomezené obnovování pout. Zvlášť důležité je rozlišit zákaz přesunu od možnosti cíle dál jednat ve svém dosahu.",
       "Přesný účinek: Při úspěchu se běžný cíl nemůže přesunout, ale může jednat na dosah. Hlavní protivník má pouze poloviční přesun. Bonus: +2 k MÚ. Cíl: 1 tvor na dohled. Trvání: 1 kolo. Omezení: 1× na stejný cíl za souboj; platí pravidlo hlavního protivníka. K použití je potřeba minimálně Chytrost 9 a Level 3, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/temna/nemrtvy-sluzebnik": [
+      "Nemrtvý služebník vznikne z malé hromádky kostí nebo nehybných ostatků a pomáhá s jednoduchými úkoly. Jeho podoba může výrazně ovlivnit atmosféru scény a reakce okolních lidí. Pravidlově ale jde o neútočnou pomoc, nikoli o dalšího bojovníka. Neumí mluvit a nesmí být automaticky vybaven vlastními nevypsanými zvláštními schopnostmi.",
+      "Může přinést, držet, otevřít nebo střežit podle jednoduchého příkazu a unese omezený náklad. Záleží na jasném zadání a prostředí. Použití je vzácné, trvá jednu scénu a může existovat jen jeden služebník. Jeho přítomnost může vyvolat příběhové otázky a napětí, ale sama neposkytuje odpovědi na minulost ostatků nebo neomezenou poslušnou armádu.",
+      "Přesný účinek: Vytvoří neútočného kostěného služebníka. Unese do 20 kg a splní jednoduché příkazy jako přines, drž, otevři nebo střež; nemůže bojovat ani mluvit. Cíl: jedna malá hromádka kostí nebo nehybné ostatky. Trvání: 1 scéna. Omezení: 1× za dobrodružství; nejvýše 1 služebník. K použití je potřeba minimálně Chytrost 10 a Level 5, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/temna/paprsek-vycerpani": [
+      "Paprsek vyčerpání je silný útok proti jednomu viditelnému cíli, který může navíc oslabit jeho příští útok. V příběhu může představovat výrazný okamžik Temné magie. Dodatečný postih však vzniká jen při skutečném zranění alespoň jednoho Života. Samotné seslání není automatická ztráta všech sil nebo úplné vyřazení protivníka.",
+      "Kouzlo se používá jednou za souboj a krátký postih se nesčítá. Dává smysl zvolit významný cíl, u něhož je nebezpečný příští útok. Výsledek zranění stále závisí na magické obraně. Družina by měla být připravená navázat na získanou výhodu a mít postup i pro situaci, kdy se dodatečné oslabení neuplatní.",
+      "Přesný účinek: Silný útok proti MO. Při zranění alespoň 1 Ž má cíl navíc −1 k příštímu útoku; postih se nesčítá. Bonus: +5 k MÚ. Cíl: 1 cíl na dohled. Trvání: do konce příštího tahu cíle. Omezení: 1× za souboj. K použití je potřeba minimálně Chytrost 11 a Level 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/prirodni/rec-zvirat": [
+      "Řeč zvířat otevře sesilateli rozhovor s běžnými zvířaty. Může nabídnout neobvyklý pohled na místo: tvor zná cestu, pach, pohyb nebo událost jen tak, jak je sám mohl vnímat. Není to rozhovor s vševědoucím vypravěčem. Jeho poznání může být pro družinu cenné právě tím, že se liší od lidského popisu.",
+      "Zvíře není nuceno pomáhat a stále má vlastní potřeby či obavy. Smysluplné otázky proto vycházejí z jeho skutečné zkušenosti, místo složitých lidských pojmů, které nemusí chápat. Kouzlo nepřidává ovládání ani automatickou důvěru. V příběhu může být důležité trpělivě naslouchat a porovnat odpovědi s dalšími stopami nalezenými v okolí.",
+      "Přesný účinek: Sesilatel rozumí běžným zvířatům a může jim odpovídat. Zvíře není nuceno pomáhat a ví jen to, co mohlo vnímat. Cíl: sesilatel. Trvání: 1 scéna. Omezení: 1× za scénu. K použití je potřeba minimálně Chytrost 6, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/prirodni/uklidneni-zvirete": [
+      "Uklidnění zvířete se pokusí ukončit útok běžného zvířete, pokud není dál ohrožováno. Může umožnit bezpečnější setkání nebo odchod bez zbytečného boje. Nevytváří ale trvalého poslušného společníka. Zvíře nepřestává mít vlastní chování a původní důvod obav může být důležitý pro další průběh scény i rozhodnutí družiny.",
+      "Po seslání je zásadní, aby hrdinové zvíře znovu nenapadli nebo neohrozili. U hlavního zvířecího protivníka platí pouze omezení zvláštní schopnosti a příštího útoku. Je potřeba respektovat rozdíl i omezení použití na stejný cíl. Kouzlo může nabídnout příležitost pochopit situaci, ale samo nevysvětluje, proč bylo zvíře agresivní.",
+      "Přesný účinek: Při úspěchu běžné zvíře přestane útočit, pokud není znovu ohroženo. Hlavní zvířecí protivník pouze vynechá zvláštní schopnost a má −2 k příštímu útoku. Bonus: +0 k MÚ. Cíl: 1 zvíře na dohled. Trvání: do konce scény nebo do napadení. Omezení: 1× na stejné zvíře za scénu; platí pravidlo hlavního protivníka. K použití je potřeba minimálně Chytrost 6, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
     ]
   }
 }
