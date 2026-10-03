@@ -161,7 +161,11 @@
     "equip/maly-buben",
     "equip/pistalka",
     "equip/maly-lecivy-lektvar",
-    "equip/lecivy-lektvar"
+    "equip/lecivy-lektvar",
+    "equip/velky-lecivy-lektvar",
+    "equip/protijed",
+    "equip/lektvar-sily",
+    "equip/lektvar-obratnosti"
   ],
   "profiles": {
     "best/krysa": [
@@ -973,6 +977,26 @@
       "Léčivý lektvar patří k výbavě, jejíž cenu hrdina pochopí ve chvíli, kdy pomoc potřebuje některý z jeho druhů. Může být výsledkem práce místního léčitele nebo pečlivě uchovávaným darem. Příběhový recept, uzávěr a značka výrobce mohou lahvičce dát osobitost, aniž by měnily přesné množství obnovených Životů uvedené v katalogu.",
       "Družině nabízí rezervu pro pokračování výpravy po zranění. Vyplatí se myslet na něj před vstupem do nebezpečné oblasti a domluvit, kdo jej ponese. Léčení samo neřeší každou příčinu ohrožení: jed, kletba nebo nepřátelské prostředí mohou zůstat aktivní. Rozhodnutí použít zásobu teď, nebo ji schovat na později je přirozenou součástí dobrodružství.",
       "Pravidlový účinek: Obnoví +6 Ž. Cena je 2 z. Při použití zachovejte přesně uvedený účinek a dobu trvání. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/velky-lecivy-lektvar": [
+      "Velký léčivý lektvar představuje výraznější léčivou zásobu, kterou může družina dlouho chránit pro opravdu nepříjemnou chvíli. Příběhově může pocházet od uznávaného léčitele nebo být součástí odměny za náročnou službu. Jeho označení se vztahuje k obnově Životů, nikoli k neomezené schopnosti napravit jakékoli poškození těla, kouzel či osudu.",
+      "Hodí se jako důležitá rezerva pro zraněného člena výpravy. Větší účinek neznamená, že je vhodné jej bez rozmyslu použít na každé drobné zranění; smysl závisí na aktuálním stavu a dalších dostupných možnostech. Nedává automatickou nezranitelnost pro pokračující boj. Po jeho použití je stále potřeba řešit nepřítele, bezpečný ústup a zdroj nebezpečí.",
+      "Pravidlový účinek: Obnoví +10 Ž. Cena je 4 z. Při použití zachovejte přesně uvedený účinek a dobu trvání. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/protijed": [
+      "Protijed je lahvička určená k řešení běžné otravy, nikoli všeobecný lék na každý nepříjemný stav. V příběhu může pocházet od bylinkáře, alchymisty nebo zkušeného cestovatele, který zná nebezpečí svého kraje. Jeho hodnota spočívá v konkrétním účinku; vzácná etiketa nebo tajemný název z něj samy neudělají univerzální ochranu.",
+      "Družina jej může připravit před cestou do míst, kde hrozí otrávené jídlo, jedovaté látky či jiné běžné zdroje otravy. Pomáhá řešit vzniklou běžnou otravu, katalog ale nepřiznává preventivní imunitu ani automatické odstranění magické kletby. Pokud není povaha stavu jasná, je důležité nejprve zjistit, s čím se postava skutečně potýká.",
+      "Pravidlový účinek: Odstraní běžnou otravu. Cena je 2 z. Při použití zachovejte přesně uvedený účinek a dobu trvání. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/lektvar-sily": [
+      "Lektvar síly je dočasná podpora pro chvíli, kdy se postava chce opřít o vlastní svaly. Družina si jej může schovat pro náročný střet nebo scénu s fyzickou překážkou. Jeho příběhový recept může působit drsně či vznešeně, účinek však zůstává stejný: posílí vlastnost Síla po omezenou dobu uvedenou v pravidlech.",
+      "Pomůže plánovat zásadní okamžik výpravy, ale nenahrazuje rozumný postup, vhodnou výbavu ani součinnost ostatních. Zvýšená Síla není slib úspěchu při každém pokusu a nelze z ní odvozovat další nevypsané schopnosti. Použití má proto smysl načasovat na konkrétní významnou scénu nebo souboj; nejde o trvalou změnu původní postavy.",
+      "Pravidlový účinek: +2 S na jednu významnou scénu nebo jeden souboj. Cena je 3 z. Při použití zachovejte přesně uvedený účinek a dobu trvání. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/lektvar-obratnosti": [
+      "Lektvar obratnosti nabízí dočasné zlepšení vlastnosti spojené s pohybem a obratným jednáním. Může čekat v zásobách průzkumníka před riskantním úsekem cesty nebo u hrdiny, který se chystá na důležitý souboj. Jeho původ a vzhled lze zasadit do místní alchymistické tradice, ale nemění dobu trvání ani velikost bonusu.",
+      "Uplatní se ve významné scéně, v níž je Obratnost skutečně důležitá podle platných pravidel. Nezaručuje neomylné šplhání, neviditelnost ani záchranu z každé pasti. Hrdina se stále musí rozhodovat podle prostředí a svých možností. Družině dává konkrétní důvod připravit se předem a domluvit postup místo spoléhání na neomezený účinek.",
+      "Pravidlový účinek: +2 O na jednu významnou scénu nebo jeden souboj. Cena je 3 z. Při použití zachovejte přesně uvedený účinek a dobu trvání. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
     ]
   }
 }

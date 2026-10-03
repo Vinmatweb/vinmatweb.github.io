@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 162,
+  "completed": 166,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -102,7 +102,11 @@
     "equip/maly-buben",
     "equip/pistalka",
     "equip/maly-lecivy-lektvar",
-    "equip/lecivy-lektvar"
+    "equip/lecivy-lektvar",
+    "equip/velky-lecivy-lektvar",
+    "equip/protijed",
+    "equip/lektvar-sily",
+    "equip/lektvar-obratnosti"
   ],
-  "latestBatch": 25
+  "latestBatch": 26
 }
