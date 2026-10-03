@@ -289,7 +289,11 @@
     "magic/prirodni/kurova-zbroj",
     "magic/prirodni/zvireci-smysly",
     "magic/prirodni/regenerace",
-    "magic/prirodni/hnev-lesa"
+    "magic/prirodni/hnev-lesa",
+    "magic/hvezdna/pohled-osudu",
+    "magic/hvezdna/astralni-cesta",
+    "magic/hvezdna/zmena-osudu",
+    "magic/hvezdna/hvezdny-stit"
   ],
   "profiles": {
     "best/krysa": [
@@ -1741,6 +1745,26 @@
       "Hněv lesa je vzácný plošný útok proti malé skupině blízkých cílů poblíž půdy nebo rostlin. Může výrazně změnit souboj v prostředí vhodném pro Přírodní magii. Jeho název vyjadřuje sílu příběhového okamžiku, ne neomezené ovládnutí celého lesa. Rozsah i počet cílů jsou konkrétní a vyhodnocení podléhá plošnému pravidlu.",
       "Jeden hod se porovná s obranou každého cíle zvlášť. Zraněný cíl se v příštím tahu nemůže přiblížit k sesilateli, ale nejde o úplnou ztrátu všech možností pohybu. Podmínkou je skutečné zranění alespoň za jeden Život. Jediné použití za dobrodružství vybízí ke vhodnému načasování a promyšlenému navázání celé družiny.",
       "Přesný účinek: Jeden hod MÚ se porovná s MO každého cíle. Cíl zraněný alespoň za 1 Ž se v příštím tahu nemůže přiblížit k sesilateli. Bonus: +3 k MÚ. Cíl: nejvýše 3 cíle blízko sebe poblíž půdy nebo rostlin. Trvání: okamžitě. Omezení: 1× za dobrodružství; platí plošné pravidlo. K použití je potřeba minimálně Chytrost 10 a Level 5, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/hvezdna/pohled-osudu": [
+      "Pohled osudu pomůže družině porovnat dvě konkrétní možnosti právě zvažovaného rozhodnutí. Nabídne pravdivý popis jejich nejpravděpodobnějších krátkodobých následků. Je to podpora uvažování, nikoli jistá mapa budoucnosti. V příběhu může být vzácným okamžikem jasnějšího pohledu, který stále nechává odpovědnost za volbu a další jednání samotným hrdinům.",
+      "Vyplatí se formulovat skutečně konkrétní možnosti, které družina může udělat nyní. Kouzlo neodhalí všechny skryté jistoty ani vzdálenou budoucnost a jeho použití je jednou za dobrodružství. Informace může pomoci vybrat směr, ale svět se dál mění podle událostí. Znalost kouzla je nutná; vysoké vlastnosti samy tento pohled nezpřístupní.",
+      "Přesný účinek: AI pravdivě popíše dva nejpravděpodobnější krátkodobé následky dvou konkrétních možností. Neodhalí skryté jistoty ani vzdálenou budoucnost. Cíl: jedno právě zvažované rozhodnutí družiny. Trvání: okamžitě. Omezení: 1× za dobrodružství; vyžaduje znalost kouzla. K použití je potřeba minimálně Chytrost 14 a Level 12, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/hvezdna/astralni-cesta": [
+      "Astrální cesta umožní duchu sesilatele oddělit se od nehybného těla a krátce prozkoumávat prostor. Může nabídnout jiný pohled na místo a projít nemagickými překážkami. Její síla je průzkumná, nikoli útočná. Duch nemůže manipulovat s předměty, útočit ani sesílat další kouzla, takže nedokáže automaticky vyřešit vše, co cestou objeví.",
+      "Družina by měla promyslet bezpečí nehybného těla a návrat v omezeném čase. Magická bariéra je pro ducha překážkou a příběhová možnost létat nezruší tento limit. Výprava může získat informace, ale následné fyzické jednání stále vyžaduje jiný postup. Jediné použití za dobrodružství podporuje pečlivou volbu průzkumu, který má skutečný význam.",
+      "Přesný účinek: Duch sesilatele létá a prochází nemagickými překážkami. Nemůže útočit, sesílat další kouzla, manipulovat s předměty ani projít magickou bariérou. Cíl: sesilatel. Trvání: nejvýše 10 minut. Omezení: 1× za dobrodružství; tělo zůstává nehybné. K použití je potřeba minimálně Chytrost 14 a Level 12, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/hvezdna/zmena-osudu": [
+      "Změna osudu je vzácná reakce na právě vyhodnocenou zkoušku v dohledu. Po odhalení výsledku umožní zopakovat virtuální hod a ponechat lepší výsledek. Je to konkrétní příležitost ovlivnit jednu nejistou chvíli, nikoli libovolně přepsat celý příběh. Ani druhý hod nemusí znamenat úspěch, pokud ani jeho výsledek nestačí.",
+      "Použití je jednou za dobrodružství, proto má smysl zvážit význam právě proběhlé zkoušky. Opakování používá novou náhodnou permutaci podle pravidel virtuálního hodu. Kouzlo automaticky nemění obtížnost, předmět zkoušky ani všechny další následné události. Družina získává druhou šanci v přesně vymezeném okamžiku a potřebuje na její výsledek navázat vlastním rozhodnutím.",
+      "Přesný účinek: Po odhalení výsledku se virtuální hod zopakuje s novou náhodnou permutací a ponechá se lepší z obou výsledků. Cíl: jedna právě vyhodnocená zkouška na dohled. Trvání: okamžitá reakce. Omezení: 1× za dobrodružství; vyžaduje znalost kouzla. K použití je potřeba minimálně Chytrost 15 a Level 14, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/hvezdna/hvezdny-stit": [
+      "Hvězdný štít je výrazná krátká ochrana sesilatele a nejvýše dvou blízkých spojenců. Posiluje fyzickou i magickou obranu a může být důležitým okamžikem společného přežití. Jeho vysoký bonus je vyvážen vzácností použití a požadavky. Nejde o trvalou ochranu celé skupiny bez ohledu na vzdálenost nebo neomezené bezpečí.",
+      "Družina musí zohlednit blízkost cílů, tři kola trvání a nesčítání. Jediné použití za dobrodružství je důvodem připravit konkrétní plán, jak ochranu využije. Kouzlo samo neodstraní protivníka ani všechny překážky. Výhoda je velká, ale cíle mohou stále čelit nebezpečným výsledkům a musí pokračovat v promyšleném jednání.",
+      "Přesný účinek: Každý z nejvýše 3 cílů získá +5 FO i MO. Bonus: +5 FO a MO. Cíl: sesilatel a nejvýše 2 blízcí spojenci. Trvání: 3 kola. Omezení: 1× za dobrodružství; nesčítá se; vyžaduje znalost kouzla. K použití je potřeba minimálně Chytrost 15 a Level 14, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
     ]
   }
 }

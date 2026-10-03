@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 290,
+  "completed": 294,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -230,7 +230,11 @@
     "magic/prirodni/kurova-zbroj",
     "magic/prirodni/zvireci-smysly",
     "magic/prirodni/regenerace",
-    "magic/prirodni/hnev-lesa"
+    "magic/prirodni/hnev-lesa",
+    "magic/hvezdna/pohled-osudu",
+    "magic/hvezdna/astralni-cesta",
+    "magic/hvezdna/zmena-osudu",
+    "magic/hvezdna/hvezdny-stit"
   ],
-  "latestBatch": 57
+  "latestBatch": 58
 }
