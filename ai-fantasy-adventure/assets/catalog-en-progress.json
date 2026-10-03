@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 21,
+  "completed": 22,
   "updated": [
     "best/liska",
     "best/vlk",
@@ -22,7 +22,8 @@
     "best/bandita",
     "best/vudce-banditu",
     "best/zoldner",
-    "best/vojak"
+    "best/vojak",
+    "best/lucistnik"
   ],
-  "latest": "best/vojak"
+  "latest": "best/lucistnik"
 }

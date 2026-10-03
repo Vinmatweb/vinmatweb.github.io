@@ -299,5 +299,19 @@
       "malý +1": "Small shield +1",
       "Bez zvláštní schopnosti.": "No special ability."
     }
+  },
+  "best/lucistnik": {
+    "name": "Archer",
+    "profile": [
+      "An archer is a trained fighter specializing in ranged attacks. They can be found on city walls, defending a mountain pass, with a military unit or among caravan guards. They pay attention to their field of view, obstacles and their supply of arrows. A favorable position allows them to carry out their task more safely than a spot where an opponent can approach unnoticed.",
+      "They may serve a commander or act independently as a hired bowman. Within a group, they need to coordinate with those protecting access to their position. Their aim is often to stop an advance, support allies or cover a retreat. Archery training alone says nothing about cruelty or honor; the difference between a village defender and a robber on a cliff comes from the assignment and the individual's choices.",
+      "Covering Fire strengthens a ranged attack in a round during which the archer has not faced a melee attack. Maintaining distance is therefore central to their fighting style. Cover, blocked sightlines and thoughtful movement change the conditions of an encounter. The party may meet an archer on an escort mission, on patrol or when they are aiming at the wrong person on someone else's orders. Negotiations must account for their position and the possibility of other defenders waiting nearby."
+    ],
+    "strings": {
+      "Krytá střelba": "Covering Fire",
+      "Pokud v tomto kole nezažil útok zblízka, má +1 k výslednému ÚTOKU na dálku.": "If the archer has not been attacked at close range this round, gains +1 to the final result of a ranged Attack.",
+      "dlouhý luk +3": "Longbow +3",
+      "prošívaná +1": "Quilted armor +1"
+    }
   }
 }
