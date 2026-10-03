@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 242,
+  "completed": 246,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -182,7 +182,11 @@
     "magic/zeme/otres-zeme",
     "magic/zeme/pevnost-hory",
     "magic/mysl/myslenkovy-sepot",
-    "magic/mysl/telekineze"
+    "magic/mysl/telekineze",
+    "magic/mysl/uklidneni",
+    "magic/mysl/drobna-iluze",
+    "magic/mysl/mentalni-stit",
+    "magic/mysl/telepatie"
   ],
-  "latestBatch": 45
+  "latestBatch": 46
 }

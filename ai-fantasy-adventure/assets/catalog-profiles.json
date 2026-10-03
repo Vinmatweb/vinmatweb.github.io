@@ -241,7 +241,11 @@
     "magic/zeme/otres-zeme",
     "magic/zeme/pevnost-hory",
     "magic/mysl/myslenkovy-sepot",
-    "magic/mysl/telekineze"
+    "magic/mysl/telekineze",
+    "magic/mysl/uklidneni",
+    "magic/mysl/drobna-iluze",
+    "magic/mysl/mentalni-stit",
+    "magic/mysl/telepatie"
   ],
   "profiles": {
     "best/krysa": [
@@ -1453,6 +1457,26 @@
       "Telekineze umožní pohybovat jedním předmětem v omezeném dosahu a hmotnosti. Nabízí prostor pro nápadité zacházení s okolím: přesun věci může být důležitý stejně jako přímý útok. Sesilatel se ale musí soustředit a nemůže zároveň volně ovládat neomezené množství předmětů nebo měnit samotné tvory v bezmocné objekty.",
       "Před sesláním je potřeba vybrat konkrétní předmět a záměr. Pokud jej sesilatel vrhne na tvora, proběhne jeden předepsaný magický útok a kouzlo tím skončí. Nejde o opakované vrhání každé kolo při jednom použití. Praktický přesun a útok tak představují různé volby, které je vhodné promyslet podle situace.",
       "Přesný účinek: Pohybuje předmětem libovolným směrem. Pokud je vržen na tvora, provede se jeden MÚ s bonusem +1; poté Telekineze končí. Bonus: +1 k MÚ při útoku. Cíl: předmět do 10 kg a 10 m. Trvání: soustředění, nejvýše 3 kola. Omezení: nejvýše 1 předmět; útok kouzlo ukončí. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/mysl/uklidneni": [
+      "Uklidnění se pokusí krátce přerušit útočné jednání jednoho cíle. Může vytvořit prostor pro slovo, ústup nebo změnu napjaté situace. Běžný cíl při úspěchu neútočí, dokud není napaden, ale stále může mluvit, krýt se či odejít. Kouzlo tedy neodnímá jeho osobnost a nenutí jej přijmout každý požadavek.",
+      "Načasování je důležité, protože účinek trvá krátce a napadení cíle ruší jeho klid. Družina by měla vědět, zda chce příležitost využít k jednání nebo bezpečnému odchodu. Hlavní protivník má místo přerušení útoku pouze uvedený postih k příštímu útoku. Omezení použití na stejný cíl brání neustálému opakování stejného vlivu.",
+      "Přesný účinek: Při úspěchu běžný cíl nezaútočí, dokud není napaden; může mluvit, krýt se nebo ustoupit. Hlavní protivník má místo toho −2 k příštímu útoku. Bonus: +0 k MÚ. Cíl: 1 tvor na dohled. Trvání: do konce příštího tahu cíle. Omezení: 1× na stejný cíl za scénu; platí pravidlo hlavního protivníka. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/mysl/drobna-iluze": [
+      "Drobná iluze vytvoří malý nehmotný obraz nebo zvuk. Její zajímavost spočívá v nápadu sesilatele a v tom, jak okolí na zjev reaguje. Může se stát součástí představení nebo pokusu odvést pozornost, sama však nemá fyzický účinek. Iluzorní předmět nezadrží skutečný útok a nepodepře váhu hrdiny.",
+      "Kdo s iluzí přímo pracuje, může ji prohlédnout podle předepsaného porovnání obrany a útoku. Výsledek proto není automaticky stejný pro každého pozorovatele. Platí jen jeden aktivní zjev a krátké trvání. Je potřeba přemýšlet o prostoru, okolnostech a reakci cíle, místo předpokladu, že každý bezvýhradně uvěří libovolnému obrazu.",
+      "Přesný účinek: Vytvoří nehmotný obraz nebo zvuk. Kdo s ním přímo pracuje, porovná svou MO s MÚ sesilatele; při úspěšné obraně iluzi prohlédne. Bonus: +0 k MÚ při prohlédnutí. Cíl: obraz nebo zvuk v prostoru do 2 m. Trvání: 3 kola. Omezení: 1 aktivní; bez fyzického účinku. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/mysl/mentalni-stit": [
+      "Mentální štít poskytne krátkou ochranu proti kouzlům školy Mysli. Může být důležitý ve střetu s nepřítelem, který ovlivňuje vnímání nebo duševní stav postav. Jeho ochrana se však vztahuje ke konkrétní škole. Název neznamená všeobecnou imunitu proti každé nepříjemné emoci, klamavému tvrzení nebo jinému druhu magického útoku.",
+      "Sesilatel chrání sebe nebo viditelného spojence a musí zohlednit tři kola trvání. Účinek se nesčítá a lze jej použít jednou za souboj. Před sesláním je proto užitečné poznat druh hrozby. Ochrana může podpořit plán družiny proti mentální magii, ale nezaručuje, že cíl bude bezpečný před fyzickým či jiným útokem.",
+      "Přesný účinek: Cíl získá +3 MO proti kouzlům školy Mysli. Bonus: +3 MO. Cíl: sesilatel nebo 1 spojenec na dohled. Trvání: 3 kola. Omezení: 1× za souboj; pouze proti Mysli; nesčítá se. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/mysl/telepatie": [
+      "Telepatie vytvoří spojení pro krátké věty a jednoduché obrazy mezi sesilatelem a jedním ochotným známým tvorem. Může se hodit při rozdělení družiny na krátkou vzdálenost nebo při tiché spolupráci. Jde o vědomě předávanou komunikaci, ne o neomezený přístup ke vzpomínkám, tajemstvím a neodeslaným myšlenkám druhé osoby.",
+      "Cíl musí být na začátku v dohledu a spojení má omezený dosah i trvání. Existuje jen jedno takové spojení, takže nejde o automatickou síť pro všechny členy výpravy. V příběhu se vyplatí předem domluvit stručné zprávy a plán postupu. Kouzlo usnadňuje spolupráci, ale nenahrazuje informace, které účastníci sami neznají.",
+      "Přesný účinek: Umožní obousměrný přenos krátkých vět a jednoduchých obrazů. Nečte neodeslané myšlenky. Cíl: 1 ochotný známý tvor do 100 m. Trvání: 10 minut. Omezení: 1 spojení; cíl musí být na začátku na dohled. K použití je potřeba minimálně Chytrost 8 a Level 2, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
     ]
   }
 }
