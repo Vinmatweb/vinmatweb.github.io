@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 246,
+  "completed": 250,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -186,7 +186,11 @@
     "magic/mysl/uklidneni",
     "magic/mysl/drobna-iluze",
     "magic/mysl/mentalni-stit",
-    "magic/mysl/telepatie"
+    "magic/mysl/telepatie",
+    "magic/mysl/zmateni",
+    "magic/mysl/uspani",
+    "magic/mysl/okouzleni",
+    "magic/mysl/cteni-myslenek"
   ],
-  "latestBatch": 46
+  "latestBatch": 47
 }
