@@ -177,7 +177,11 @@
     "equip/plast-stinu",
     "equip/roba-ohne",
     "equip/kozena-zbroj-poutnika",
-    "equip/rukavice-prilnavosti"
+    "equip/rukavice-prilnavosti",
+    "equip/natepniky-lucistnika",
+    "equip/prsten-tepla",
+    "equip/prsten-stesteny",
+    "equip/mec-presnosti"
   ],
   "profiles": {
     "best/krysa": [
@@ -1069,6 +1073,26 @@
       "Rukavice přilnavosti jsou magická pomůcka pro šplhání a mohou být cenné pro průzkumníka, který se pohybuje mezi skálami a vysokými zdmi. V příběhu je může zanechat zkušený lezec nebo mistr, který chtěl usnadnit práci svým učedníkům. Jejich praktický účinek se váže na šplhání, nikoli na každou činnost prováděnou rukama.",
       "Dává smysl používat je společně s plánem cesty a odpovídajícím jištěním. Bonus k Obratnosti při šplhání není jistota, že postava překoná jakýkoli povrch nebo přežije pád. Nepropůjčují automaticky chůzi po stropě. V napínavé scéně může být jejich výhoda důležitá, ale stále záleží na terénu, obtížnosti a rozhodnutí družiny.",
       "Používá slot „Ruce“ a vychází ze základu „rukavice“. Uvedený bonus je +1 O při šplhání. Předmět nemá další výslovně uvedený požadavek. Katalogová hodnota je 12 z. Výpočet a podmínky bonusu dodržujte přesně; samotný příběhový původ mu nepřidává další schopnosti."
+    ],
+    "equip/natepniky-lucistnika": [
+      "Nátepníky lučištníka jsou doplňkem zaměřeným na fyzický útok s luky. Mohou nést znak střeleckého učitele nebo být ceněnou odměnou ze soutěže. Jejich příběh dobře zapadá k hrdinovi, který se dlouho cvičil ve střelbě, ale konkrétní pravidlový účinek není odvozený z trofejí ani vzpomínek na bývalého majitele.",
+      "Hodí se nositeli luku, který chce posílit výsledný útok bez změny základní zbraně. Bonus se přičítá přímo po výpočtu jejího základu. Podmínka se vztahuje na luky; nelze ji automaticky rozšířit na každou střelnou či vrhací zbraň. Nátepníky samy nenahradí střelivo, vhodnou vzdálenost nebo ostatní pravidla konkrétního útoku.",
+      "Používá slot „Ruce“ a vychází ze základu „nátepníky“. Uvedený bonus je +1 FÚ s luky. Přičte se přímo po výpočtu základu luku. Požadavek: Použití luku. Katalogová hodnota je 18 z. Výpočet a podmínky bonusu dodržujte přesně; samotný příběhový původ mu nepřidává další schopnosti."
+    ],
+    "equip/prsten-tepla": [
+      "Prsten tepla nabízí cestovateli ochranu před běžným přírodním chladem. Může být nenápadnou výbavou horského průvodce nebo darem od někoho, kdo se bojí o bezpečí hrdiny na zimní cestě. Jeho hodnota je především praktická. Nenápadný vzhled nemění účinek a název se nesmí zaměnit za úplnou odolnost proti všem ledovým nebezpečím.",
+      "Pomáhá při obyčejném chladném počasí, ale extrémní a magický chlad podle katalogu působí normálně. Stále je tedy důležité rozlišit cestovní nepohodu od skutečně nebezpečných podmínek. Nezajišťuje ochranu celé družině ani automatické přežití ledového útoku. Příběhově může být ceněnou drobností, kterou hrdina půjčí příteli, aniž by tím získal další nové schopnosti.",
+      "Používá slot „Prsten 1/2“ a vychází ze základu „prsten“. Chrání před běžným přírodním chladem; extrémní a magický chlad funguje normálně. Předmět nemá další výslovně uvedený požadavek. Katalogová hodnota je 12 z. Výpočet a podmínky bonusu dodržujte přesně; samotný příběhový původ mu nepřidává další schopnosti."
+    ],
+    "equip/prsten-stesteny": [
+      "Prsten štěstěny může patřit dobrodruhovi, který věří v šťastné náhody, i opatrnému hrdinovi, jenž své přípravy bere vážně. Jeho původ může být rodinný, tržištní nebo tajemný. Historky o bývalých majitelích dodají předmětu zajímavost, ale samy nepotvrzují, že každý jeho nositel vždy vyhraje nebo se vyhne všem nepříjemnostem.",
+      "Zvyšuje konkrétní vlastnost Štěstí a jeho účinek se používá v souladu s pravidly hry. Nemění automaticky cizí rozhodnutí, neodvrací každou past a nezaručuje nalezení pokladu. Důležitá zůstává volba rizika a další schopnosti postavy. Dobrou příběhovou otázkou je, zda majitel věří prstenu víc než vlastnímu úsudku a radám družiny.",
+      "Používá slot „Prsten 1/2“ a vychází ze základu „prsten“. Uvedený bonus je +1 Š. Předmět nemá další výslovně uvedený požadavek. Katalogová hodnota je 20 z. Výpočet a podmínky bonusu dodržujte přesně; samotný příběhový původ mu nepřidává další schopnosti."
+    ],
+    "equip/mec-presnosti": [
+      "Meč přesnosti vychází z jednoručního meče a doplňuje jeho fyzický útok magickým bonusem. V příběhu může být výtvorem pečlivého mistra nebo odměnou za službu člověku, který si cenil ukázněného boje. Pojmenování může připomínat jeho zvláštní pověst, ale není slibem automatického zásahu při každém pokusu o útok.",
+      "Nositel musí splnit stejné požadavky jako u běžného jednoručního meče. Důležité je správné pořadí výpočtu: základ zbraně se upraví koeficientem a magický bonus se přičte až potom. Nelze jej nejprve přičíst k základu a násobit společně. Meč také neuděluje další samostatnou schopnost odzbrojení nebo neomylné nalezení slabého místa.",
+      "Používá slot „Hlavní ruka“ a vychází ze základu „jednoruční meč“. Uvedený bonus je +1 FÚ navíc. Základ meče +3 se upraví koeficientem Zbraně; +1 FÚ se přičte potom. Požadavek: Stejné jako jednoruční meč. Katalogová hodnota je 30 z. Výpočet a podmínky bonusu dodržujte přesně; samotný příběhový původ mu nepřidává další schopnosti."
     ]
   }
 }

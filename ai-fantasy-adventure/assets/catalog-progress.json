@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 178,
+  "completed": 182,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -118,7 +118,11 @@
     "equip/plast-stinu",
     "equip/roba-ohne",
     "equip/kozena-zbroj-poutnika",
-    "equip/rukavice-prilnavosti"
+    "equip/rukavice-prilnavosti",
+    "equip/natepniky-lucistnika",
+    "equip/prsten-tepla",
+    "equip/prsten-stesteny",
+    "equip/mec-presnosti"
   ],
-  "latestBatch": 29
+  "latestBatch": 30
 }
