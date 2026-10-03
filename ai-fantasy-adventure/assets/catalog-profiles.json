@@ -285,7 +285,11 @@
     "magic/prirodni/leciva-bylina",
     "magic/prirodni/rust-rostlin",
     "magic/prirodni/trny",
-    "magic/prirodni/koreny"
+    "magic/prirodni/koreny",
+    "magic/prirodni/kurova-zbroj",
+    "magic/prirodni/zvireci-smysly",
+    "magic/prirodni/regenerace",
+    "magic/prirodni/hnev-lesa"
   ],
   "profiles": {
     "best/krysa": [
@@ -1717,6 +1721,26 @@
       "Kořeny se pokusí krátce omezit přesun cíle stojícího poblíž půdy nebo rostlin. Mohou vytvořit příležitost změnit vzdálenost v souboji nebo získat prostor pro odchod. Běžný cíl při úspěchu nemůže přejít jinam, ale stále může jednat na dosah. Není tedy automaticky zbavený všech způsobů útoku či obrany.",
       "U hlavního protivníka platí jen poloviční přesun. Kouzlo trvá jedno kolo a na stejný cíl je možné jediné použití za souboj. Družina by měla vědět, jak krátkou výhodu využije, a zohlednit terén. Není možné přenést stejné uvěznění na každý povrch nebo počítat s opakovaným zastavováním nejsilnějšího nepřítele bez omezení.",
       "Přesný účinek: Při úspěchu se běžný cíl nemůže přesunout, ale může jednat na dosah. Hlavní protivník má pouze poloviční přesun. Bonus: +0 k MÚ. Cíl: 1 cíl stojící poblíž půdy nebo rostlin. Trvání: 1 kolo. Omezení: 1× na stejný cíl za souboj; platí pravidlo hlavního protivníka. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/prirodni/kurova-zbroj": [
+      "Kůrová zbroj poskytne sesilateli nebo spojenci na dosah krátké zvýšení fyzické obrany. Její příběhová podoba může připomínat ochrannou vrstvu přírody, ale není běžnou trvalou výstrojí, kterou lze po scéně odložit či prodat. Uvedený efekt je obranný bonus po omezenou dobu, nikoli změna hrdiny ve strom.",
+      "Hodí se na tři kola očekávaného fyzického nebezpečí. Účinek se nesčítá a lze jej použít jednou za souboj. Pro ochranu spojence se sesilatel musí dostat na dosah, což je důležité při plánování postupu. Kouzlo nezvyšuje automaticky magickou obranu a nepřidává nové útoky; chráněný hrdina stále musí rozumně jednat.",
+      "Přesný účinek: Cíl získá +2 FO proti fyzickým útokům. Bonus: +2 FO. Cíl: sesilatel nebo 1 spojenec na dosah. Trvání: 3 kola. Omezení: 1× za souboj; nesčítá se. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/prirodni/zvireci-smysly": [
+      "Zvířecí smysly podpoří vnímání, stopování nebo orientaci omezeným bonusem ke dvěma zkouškám. Mohou pomoci výpravě pozorněji číst krajinu a všimnout si stop, které by jinak zůstaly nejisté. Název však neznamená získání všech smyslových schopností libovolného zvířete nebo automatické poznání celé historie prostoru z jediného pohledu.",
+      "Bonus se vztahuje jen na uvedené činnosti a zkoušky Obratnosti nebo Chytrosti. Nezvyšuje každou zkoušku těchto vlastností ani útoky. Je vhodné vědět, co chce družina hledat a které dva pokusy jsou důležité. Výsledek stále závisí na zkoušce, takže kouzlo pomáhá pátrání, ale nedodává automaticky všechny potřebné odpovědi.",
+      "Přesný účinek: Cíl získá +2 k nejvýše dvěma zkouškám O nebo CH souvisejícím se smysly, stopami či orientací. Bonus: +2 ke dvěma zkouškám. Cíl: sesilatel nebo 1 ochotný tvor na dosah. Trvání: 1 scéna. Omezení: bonus jen na vnímání, stopování nebo orientaci. K použití je potřeba minimálně Chytrost 8 a Level 2, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/prirodni/regenerace": [
+      "Regenerace rozloží léčivý účinek do tří kol. Může se hodit v situaci, kdy pomoc nemusí přijít celá v jediném okamžiku. Uvedený základ se nejprve upraví koeficientem léčení a až výsledné celkové množství se rozdělí. Nejde o tři samostatné plné léčivé dávky, které by pokaždé znovu použily celý základ.",
+      "Případný zbytek se obnoví v dřívějších kolech, aby rozdělení zůstalo co nejrovnoměrnější. Použití je jednou za dobrodružství a v souboji platí sdílený limit léčení. Sesilatel potřebuje cíl na dosah. Družina musí počítat s postupným účinkem a stále chránit zraněného hrdinu, zvlášť když další nebezpečí pokračuje během následujících kol.",
+      "Přesný účinek: Urči celkové léčení koeficientem a rozděl je co nejrovnoměrněji do 3 kol; případný zbytek se obnoví v dřívějších kolech. Bonus: základ 6 Ž před koeficientem léčení. Cíl: 1 tvor na dosah. Trvání: 3 kola. Omezení: 1× za dobrodružství; sdílený limit léčení v souboji. K použití je potřeba minimálně Chytrost 9 a Level 3, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/prirodni/hnev-lesa": [
+      "Hněv lesa je vzácný plošný útok proti malé skupině blízkých cílů poblíž půdy nebo rostlin. Může výrazně změnit souboj v prostředí vhodném pro Přírodní magii. Jeho název vyjadřuje sílu příběhového okamžiku, ne neomezené ovládnutí celého lesa. Rozsah i počet cílů jsou konkrétní a vyhodnocení podléhá plošnému pravidlu.",
+      "Jeden hod se porovná s obranou každého cíle zvlášť. Zraněný cíl se v příštím tahu nemůže přiblížit k sesilateli, ale nejde o úplnou ztrátu všech možností pohybu. Podmínkou je skutečné zranění alespoň za jeden Život. Jediné použití za dobrodružství vybízí ke vhodnému načasování a promyšlenému navázání celé družiny.",
+      "Přesný účinek: Jeden hod MÚ se porovná s MO každého cíle. Cíl zraněný alespoň za 1 Ž se v příštím tahu nemůže přiblížit k sesilateli. Bonus: +3 k MÚ. Cíl: nejvýše 3 cíle blízko sebe poblíž půdy nebo rostlin. Trvání: okamžitě. Omezení: 1× za dobrodružství; platí plošné pravidlo. K použití je potřeba minimálně Chytrost 10 a Level 5, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
     ]
   }
 }

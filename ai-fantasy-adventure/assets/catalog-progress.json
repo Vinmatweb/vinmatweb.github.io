@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 286,
+  "completed": 290,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -226,7 +226,11 @@
     "magic/prirodni/leciva-bylina",
     "magic/prirodni/rust-rostlin",
     "magic/prirodni/trny",
-    "magic/prirodni/koreny"
+    "magic/prirodni/koreny",
+    "magic/prirodni/kurova-zbroj",
+    "magic/prirodni/zvireci-smysly",
+    "magic/prirodni/regenerace",
+    "magic/prirodni/hnev-lesa"
   ],
-  "latestBatch": 56
+  "latestBatch": 57
 }
