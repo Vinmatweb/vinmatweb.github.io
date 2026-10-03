@@ -139,5 +139,19 @@
       "šupiny +4": "Scales +4",
       "Fyzická": "Physical"
     }
+  },
+  "best/orel": {
+    "name": "Eagle",
+    "profile": [
+      "An eagle nests on rocky ledges, tall trees and abandoned towers that give it a view over a wide area. Above mountains and open countryside, it uses air currents to circle for long periods. Its nest is usually difficult to reach and may occupy a spot the party needs as a lookout or a route across a cliff face.",
+      "It has excellent eyesight and reacts quickly to movement. It hunts smaller prey and usually keeps away from noisy groups. It often lives as part of a pair defending a nest and young, rather than an organized combat group. Attacking a large human is more likely a defense of its nesting ground or a response to a direct threat than an ordinary way of finding food.",
+      "Dive Attack strengthens its strike once per combat, but temporarily lowers its physical defense afterward. In flight, it uses height, speed and open space; circling before an attack gives observant characters a chance to find cover. An eagle can lead the party to a mountain pass, reveal the movement of prey or signal a disturbance in the landscape. Rescuing an injured bird or safely going around a nest can also provide a peaceful encounter."
+    ],
+    "strings": {
+      "Střemhlavý útok": "Dive Attack",
+      "1× za souboj získá +2 k výslednému ÚTOKU; po tomto útoku má do začátku svého dalšího tahu −1 FO.": "Once per combat, gains +2 to the final Attack result; after this attack, has −1 PDEF until the start of its next turn.",
+      "pařáty +2": "Talons +2",
+      "peří +1": "Feathers +1"
+    }
   }
 }
