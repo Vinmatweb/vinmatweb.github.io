@@ -117,7 +117,11 @@
     "equip/kratky-luk",
     "equip/kuse",
     "equip/dlouhy-luk",
-    "equip/bez-zbroje"
+    "equip/bez-zbroje",
+    "equip/prosivana-zbroj",
+    "equip/kozena-zbroj",
+    "equip/krouzkova-zbroj",
+    "equip/supinova-zbroj"
   ],
   "profiles": {
     "best/krysa": [
@@ -709,6 +713,26 @@
       "Bez zbroje je referenční stav hrdiny, který právě nemá aktivní ochrannou zbroj. Nejde o zvláštní kupovaný předmět ani o kouzelnou výhodu. Postava může nosit běžné oblečení, cestovní oděv nebo vlastní osobní doplňky. Tento řádek pomáhá jasně určit, jakou část ochrany je potřeba zahrnout do výpočtu.",
       "Volba může souviset s nízkou silou, nedostatkem prostředků nebo okolnostmi příběhu. Neznamená, že je hrdina bez jakékoli obrany: další složky vycházejí z jeho vlastností a platných pravidel. Zároveň nevzniká automatický bonus k obratnosti či plížení. Při pozdějším získání zbroje stačí ověřit požadavky a odpovídajícím způsobem změnit aktivní výstroj.",
       "Katalog uvádí typ „žádná“ a základní bonus fyzické obrany FO +0. Tento referenční stav nemá silový požadavek. Běžná cena není uvedená. Konečná obrana vychází také z vlastností hrdiny a pravidel používané výstroje. Ochranná hodnota této zbroje sama nepřidává další bonus k magické obraně."
+    ],
+    "equip/prosivana-zbroj": [
+      "Prošívaná zbroj je základní lehká ochrana vhodná pro dobrodruha, který potřebuje dostupnou výstroj a splňuje i menší silový požadavek. V Elarii může pocházet z domácí dílny, být služebním přídělem nebo darem před první cestou. Barva látky a opravy mohou vyprávět historii nositele, aniž by měnily její bonus.",
+      "Pomáhá chránit hrdinu při běžných fyzických střetech, ale není náhradou za promyšlený postup. U lehké postavy může představovat vhodnější volbu než ochrana, kterou podle požadavků ještě nemůže používat. Uvedený řádek jí nepřidává samostatnou ochranu proti magii ani další skrytou vlastnost. Při výběru ji porovnávejte s celou výstrojí a rozpočtem.",
+      "Katalog uvádí typ „lehká“ a základní bonus fyzické obrany FO +1. Požadovaná Síla je S3. Cena je 1 z. Konečná obrana vychází také z vlastností hrdiny a pravidel používané výstroje. Ochranná hodnota této zbroje sama nepřidává další bonus k magické obraně."
+    ],
+    "equip/kozena-zbroj": [
+      "Kožená zbroj je lehká ochrana, kterou mohou v Elarii nosit průzkumníci, strážci cest i dobrodruzi. Její podoba může být jednoduchá nebo přizpůsobená určité komunitě. Opotřebení, značení a opravené řemínky mohou ukázat, kolik výprav už absolvovala. Předmět tak nabízí vizuální charakter bez potřeby vymýšlet dodatečné bonusy.",
+      "Poskytuje vyšší uvedený základ fyzické obrany než prošívaná zbroj a současně vyžaduje více síly. Lehké zařazení neznamená, že ji může používat každý hrdina bez kontroly minima. Nepřidává automaticky bonus k plížení nebo odolnost proti počasí. Družina může získat poškozený kus, který potřebuje běžnou opravu podle situace v příběhu.",
+      "Katalog uvádí typ „lehká“ a základní bonus fyzické obrany FO +2. Požadovaná Síla je S4. Cena je 3 z. Konečná obrana vychází také z vlastností hrdiny a pravidel používané výstroje. Ochranná hodnota této zbroje sama nepřidává další bonus k magické obraně."
+    ],
+    "equip/krouzkova-zbroj": [
+      "Kroužková zbroj patří mezi střední ochrannou výstroj a může být v Elarii součástí vybavení zkušeného strážce nebo dobrodruha. Její původ může souviset se službou, rodovým dědictvím i významnou odměnou. Značka dílny nebo neobvyklé zdobení mohou pomoci rozpoznat bývalého majitele a propojit zbroj s minulostí určitého místa.",
+      "Nabízí silnější základ fyzické obrany než lehké zbroje, ale zvyšuje požadavek na sílu a cenu. Při rozhodování zvažujte, zda hrdina splňuje minimum a co bude muset omezit v ostatních nákupech. Samotné zařazení nepřidává postih k pohybu či další pravidlo, které katalog neuvádí. Nejde také o automatickou ochranu proti magickým útokům.",
+      "Katalog uvádí typ „střední“ a základní bonus fyzické obrany FO +3. Požadovaná Síla je S6. Cena je 8 z. Konečná obrana vychází také z vlastností hrdiny a pravidel používané výstroje. Ochranná hodnota této zbroje sama nepřidává další bonus k magické obraně."
+    ],
+    "equip/supinova-zbroj": [
+      "Šupinová zbroj je těžká ochrana s výraznou podobou, kterou v Elarii může nosit zkušený obránce nebo člen významné stráže. Jednotlivé části mohou být zdobené znakem dílny, rodu či místa služby. Předmět může mít vlastní příběh, například památku na dlouhou obranu města, a přesto zůstat běžnou zbrojí.",
+      "Vysoký základ fyzické obrany je spojen se značným požadavkem na sílu. Hrdina by měl zvolit ochranu, kterou opravdu dokáže aktivně používat, nikoli jen nejvyšší dostupné číslo. Nevyjmenované pohybové postihy ani ochranu proti živlům nepřidávejte automaticky. Podoba zbroje umožňuje výrazné výtvarné zpracování, herní účinek však zůstává podle přesného řádku.",
+      "Katalog uvádí typ „těžká“ a základní bonus fyzické obrany FO +4. Požadovaná Síla je S8. Cena je 12 z. Konečná obrana vychází také z vlastností hrdiny a pravidel používané výstroje. Ochranná hodnota této zbroje sama nepřidává další bonus k magické obraně."
     ]
   }
 }

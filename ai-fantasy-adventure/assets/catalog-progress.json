@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 118,
+  "completed": 122,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -58,7 +58,11 @@
     "equip/kratky-luk",
     "equip/kuse",
     "equip/dlouhy-luk",
-    "equip/bez-zbroje"
+    "equip/bez-zbroje",
+    "equip/prosivana-zbroj",
+    "equip/kozena-zbroj",
+    "equip/krouzkova-zbroj",
+    "equip/supinova-zbroj"
   ],
-  "latestBatch": 14
+  "latestBatch": 15
 }
