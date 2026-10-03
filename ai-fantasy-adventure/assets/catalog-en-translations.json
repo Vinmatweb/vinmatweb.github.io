@@ -1,0 +1,17 @@
+{
+  "best/liska": {
+    "name": "Fox",
+    "ability": "Dodge",
+    "profile": [
+      "Foxes live in forests, along meadow edges and near human settlements. They seek shelter in burrows, among roots or in dense vegetation. They hunt small animals for food, but also eat fruit and readily available scraps. A narrow trail, a print in the mud or a russet tail disappearing into the undergrowth may reveal their presence.",
+      "A fox is curious, quick to learn and cautious. It often travels alone, although it may share its territory with a mate and cubs. Rather than face a direct confrontation, it prefers speed, cover and an evasive move; it usually bites in self-defence when it cannot escape. Its Dodge ability helps it resist one declared attack during a combat.",
+      "In an adventure, a fox might carry supplies away from camp or lead the party to a den in forgotten ruins. The heroes may discover that the apparently cheeky thief is simply gathering food for its cubs. Patient observation is often more useful than a chase."
+    ],
+    "abilityEffect": "Once per combat, after an attack target is declared, gains +2 Defense against that attack.",
+    "gear": {
+      "attack": "Bite +1",
+      "armor": "Fur +1",
+      "shield": "—"
+    }
+  }
+}
