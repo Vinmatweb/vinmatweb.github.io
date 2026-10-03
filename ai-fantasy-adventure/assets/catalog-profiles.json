@@ -217,7 +217,11 @@
     "magic/voda/kraceni-po-vode",
     "magic/voda/dychani-pod-vodou",
     "magic/voda/ledovy-stit",
-    "magic/voda/zmrazeni"
+    "magic/voda/zmrazeni",
+    "magic/voda/ledova-zed",
+    "magic/voda/ledova-boure",
+    "magic/vzduch/poryv-vetru",
+    "magic/vzduch/tlumeny-pad"
   ],
   "profiles": {
     "best/krysa": [
@@ -1309,6 +1313,26 @@
       "Zmrazení slouží k omezení pohybu jednoho viditelného cíle. Při úspěchu může běžného protivníka přimrazit k místu, což otevře krátkou příležitost změnit vzdálenost nebo průběh střetu. Cíl ale stále může jednat na dosah. Kouzlo proto není totožné s úplným znehybněním mysli, ztrátou všech akcí nebo automatickým vyřazením.",
       "Rozdíl mezi běžným a hlavním protivníkem je zásadní: hlavní cíl dostane místo přimražení postih k příštímu pohybovému testu. Omezené trvání a jediné použití na stejný cíl za souboj vylučují neustálé obnovování stejné blokace. Družina by měla mít konkrétní plán, jak krátkou změnu pohybu využije, a počítat s možnostmi cíle reagovat.",
       "Přesný účinek: Při úspěchu je běžný cíl přimražen k místu a nemůže se přesunout; stále může jednat na dosah. Hlavní protivník má místo toho −2 k příštímu pohybovému testu. Bonus: +2 k MÚ. Cíl: 1 cíl na dohled. Trvání: 1 kolo. Omezení: 1× na stejný cíl za souboj; platí pravidlo hlavního protivníka. K použití je potřeba minimálně Chytrost 9 a Level 3, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/voda/ledova-zed": [
+      "Ledová zeď vytvoří krátkodobou překážku, která blokuje pohyb i výhled. Hodí se k oddělení části prostoru nebo k získání času, když družina potřebuje změnit svůj postup. Její odolnost je pravidlově stanovena pomocí Životů a fyzické obrany; není to nezničitelná hranice, před kterou musí každý protivník bez dalšího zastavit.",
+      "Zeď vzniká ve volné linii a má omezenou délku i trvání. Při umístění je potřeba zvážit také vlastní cestu a možnost nepřítele překážku poškodit. Po skončení roztaje bez nebezpečné záplavy. Nelze ji tedy používat jako automatický zdroj dalšího plošného útoku nebo neomezeně měnit rozměry podle přání sesilatele.",
+      "Přesný účinek: Vytvoří překážku s 10 Ž a FO 12, která blokuje pohyb i výhled. Po skončení roztaje bez nebezpečné záplavy. Bonus: nezvyšuje FO ani MO; zeď má FO 12. Cíl: volná linie do 4 m. Trvání: 3 kola. Omezení: 1× za souboj. K použití je potřeba minimálně Chytrost 10 a Level 5, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/voda/ledova-boure": [
+      "Ledová bouře je silný plošný útok proti několika cílům stojícím blízko sebe. Kromě vyhodnoceného zranění může zasaženým zkomplikovat příští pohybový test. V příběhu působí jako výrazný zásah do okamžiku souboje, ale její pravidlový rozsah se stále vztahuje na nejvýše tři cíle, nikoli na celé bojiště.",
+      "Použití je omezené na jednou za dobrodružství, takže záleží na skutečné potřebě. Jeden útok se porovná s obranou každého cíle zvlášť a výsledky mohou být různé. Dodatečný pohybový postih není úplné zastavení ani trvalé zmrazení. Družina potřebuje vhodné rozmístění cílů a plán, jak na následnou situaci naváže.",
+      "Přesný účinek: Jeden hod MÚ se porovná zvlášť s MO každého cíle. Zasažený cíl má navíc −1 k příštímu pohybovému testu. Bonus: +4 k MÚ. Cíl: nejvýše 3 cíle blízko sebe. Trvání: okamžitě. Omezení: 1× za dobrodružství; platí plošné pravidlo. K použití je potřeba minimálně Chytrost 11 a Level 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/vzduch/poryv-vetru": [
+      "Poryv větru pomůže přesunout lehký předmět nebo se pokusí krátce změnit postavení tvora. Je to kouzlo, které může podpořit nápad při průzkumu i v souboji. Práce s předmětem a útok proti tvoru však mají různé podmínky; sesilatel nemůže považovat každý cíl za stejně snadno odfouknutelnou věc.",
+      "Při použití je nutné zohlednit hmotnost, dosah a povahu cíle. Proti tvoru se vyhodnotí magický útok a velký či hlavní protivník se neposune. Přesun běžného tvora je jen krátký krok. Poryv tak nabízí drobnou změnu situace, nikoli neomezený přesun celé skupiny nebo jisté odstranění nejsilnějšího nepřítele z bojiště.",
+      "Přesný účinek: Předmět do 5 kg odfoukne o několik metrů. Proti tvoru se provede MÚ proti MO; běžný cíl se posune o krátký krok, velký či hlavní ne. Bonus: +0 k MÚ proti tvoru. Cíl: lehký předmět nebo 1 cíl do 10 m. Trvání: okamžitě. Omezení: 1 pokus na stejný cíl za kolo. K použití je potřeba minimálně Chytrost 6, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/vzduch/tlumeny-pad": [
+      "Tlumený pád je reakce na konkrétní nebezpečí padajícího tvora. Může být důležitým záchranným okamžikem při lezení, průzkumu výšek nebo nečekaném zřícení podlahy. Jeho ochrana je přesně vymezená výškou pádu. Nejde o obecný štít, který by hrdinu chránil před každou další hrozbou během sestupu nebo po přistání.",
+      "Sesilatel potřebuje padajícího tvora vidět a mít k dispozici omezené použití za scénu. Kouzlo ruší zranění z pádu do stanovené výšky, ne z libovolného propadu. Padající předmět ani jiný útok tím zastaven není. Při plánované výpravě do výšek tak doplňuje jištění a opatrnost, ale nesmaže všechny možné následky špatného rozhodnutí.",
+      "Přesný účinek: Zruší zranění z pádu do 10 m a dovolí bezpečné přistání. Nezastaví jiný útok ani padající předmět. Bonus: nezvyšuje FO ani MO. Cíl: 1 padající tvor na dohled. Trvání: okamžitá reakce. Omezení: 2× za scénu. K použití je potřeba minimálně Chytrost 6, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
     ]
   }
 }
