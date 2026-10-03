@@ -129,7 +129,11 @@
     "equip/batoh",
     "equip/spaci-vak-deka",
     "equip/provaz",
-    "equip/pochoden"
+    "equip/pochoden",
+    "equip/lucerna",
+    "equip/olej-do-lucerny",
+    "equip/kresadlo",
+    "equip/mech-na-vodu"
   ],
   "profiles": {
     "best/krysa": [
@@ -781,6 +785,26 @@
       "Pochodeň je jednoduchý zdroj světla pro cestu, tábor a průzkum temného místa. V Elarii ji mohou používat strážci bran i dobrodruzi bez přístupu k magii. Její podoba může odpovídat místnímu řemeslu a účelu; ozdobená slavnostní pochodeň může vyprávět jiný příběh než běžná cestovní zásoba.",
       "Světlo umožňuje vnímat okolí, ale zároveň může prozradit přítomnost skupiny. Pochodeň je spotřební vybavení, proto patří do plánování zásob. Katalog nestanovuje automatický bojový bonus ani přesné trvání každého kusu. Zhaslé či odložené pochodně mohou být vodítkem, kudy prošel někdo před družinou a kde se jeho plán změnil.",
       "Pravidlový účinek: Poskytuje světlo v okolí. Cena je 5 m. Jde o spotřební zásobu; při použití zohledněte její spotřebování. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/lucerna": [
+      "Lucerna je opakovaně používaný světelný předmět, který v Elarii doprovází strážce, cestovatele i obyvatele podzemních pracovišť. Může mít značku dílny, odlišné zdobení či vzpomínku na člověka, který ji nosil dříve. Osvětlení pomáhá proměnit neznámý prostor v místo, které lze opravdu prozkoumat.",
+      "Na rozdíl od jednorázového světelného zdroje potřebuje vhodnou zásobu oleje. Před výpravou je užitečné určit, kdo nese lucernu a kdo její náplň. Světlo nevytváří automatické odhalení magie nebo skrytých pastí. Přerušená stopa světel či nalezená lucerna může upozornit na ztraceného pracovníka, opuštěný tábor nebo náhlý odchod hlídky.",
+      "Pravidlový účinek: Poskytuje světlo; používá olej. Cena je 8 s. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/olej-do-lucerny": [
+      "Olej do lucerny je běžná zásoba, díky které může světelná výstroj plnit svůj účel. V Elarii se prodává na trzích, doplňuje ve zbrojnicích nebo chybí právě tam, kde je cesta nejdelší. Nádoba se známou značkou může propojit zásobu s karavanou, dílnou nebo obchodníkem.",
+      "Předmět připomíná, že samotná lucerna nestačí bez potřebné náplně. Družina může řešit společný nákup, doplnění zásob nebo nedostatek v odříznuté osadě. Katalog uvádí jednu zásobu a nepřidává automatické bojové poškození či další zvláštní použití. Není vhodné domýšlet přesnou výdrž, kterou řádek nestanovuje; podmínky cesty popíše Vaelor.",
+      "Pravidlový účinek: Jedna zásoba oleje pro lucernu. Cena je 1 s. Jde o spotřební zásobu; při použití zohledněte její spotřebování. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/kresadlo": [
+      "Křesadlo umožňuje běžně rozdělat oheň a patří k výstroji cestovatele, který chce být připravený i bez magie. V Elarii může být jednoduchým kusem z trhu nebo osobním darem před odchodem z domova. Samotný předmět může připomínat praktickou dovednost a vztah k učiteli či rodině.",
+      "Uplatní se při táboření a dalších přirozených situacích, kde lze oheň opravdu založit. Potřebné podmínky nezmizí jen tím, že je v inventáři křesadlo. Není to bojové kouzlo Zapálení ani zdroj automatického zranění. Zapomenuté křesadlo může vést k domluvě se sousední skupinou, využití jiné známé možnosti nebo změně plánu výpravy.",
+      "Pravidlový účinek: Umožňuje běžně rozdělat oheň. Cena je 2 s. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/mech-na-vodu": [
+      "Měch na vodu je nádoba, díky které může hrdina přenášet jednu z nejběžnějších zásob výpravy. V Elarii může být novým nákupem, opravovanou cestovní věcí nebo darem od člověka, který ví, jak důležitá je příprava. Podoba a značení mohou pomoci rozpoznat majitele při nálezu.",
+      "Vlastnit nádobu není totéž jako mít bezpečný obsah a dostatečnou zásobu na celou cestu. Družina může plánovat doplnění, sdílení i hledání zdroje podle prostředí. Katalog neurčuje automatickou léčbu ani zvláštní bonus k přežití. Prázdný měch může otevřít klidnou scénu s místními obyvateli nebo upozornit na problém se známým pramenem.",
+      "Pravidlový účinek: Nádoba na vodu. Cena je 2 s. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
     ]
   }
 }

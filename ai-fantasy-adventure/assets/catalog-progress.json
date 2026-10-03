@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 130,
+  "completed": 134,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -70,7 +70,11 @@
     "equip/batoh",
     "equip/spaci-vak-deka",
     "equip/provaz",
-    "equip/pochoden"
+    "equip/pochoden",
+    "equip/lucerna",
+    "equip/olej-do-lucerny",
+    "equip/kresadlo",
+    "equip/mech-na-vodu"
   ],
-  "latestBatch": 17
+  "latestBatch": 18
 }
