@@ -410,5 +410,19 @@
       "krátký meč +2": "Short sword +2",
       "kožená +2": "Leather armor +2"
     }
+  },
+  "best/goblin-lucistnik": {
+    "name": "Goblin Archer",
+    "profile": [
+      "A goblin archer comes from the same surroundings as other goblins, but has learned to rely on distance and favorable positions. They guard cave entrances, watch trails above ravines or cover their gang from the windows of abandoned buildings. Their bow and arrows may be homemade, traded for or collected after other expeditions. A supply of arrows and knowledge of nearby hiding places matter as much as the weapon itself.",
+      "They usually work with other group members. One watches the approach, another lures the target out, and the archer waits for the right moment. They obey a chief or a more experienced commander, but may primarily be protecting their own family and shelter. They can plan and learn from failure. If the gang has no reason to fight, they may simply warn strangers to stay away from its supplies instead of ambushing them.",
+      "Quick Reposition improves physical defense against the next melee attack until their next turn after they make a ranged attack. This suits a style of shooting and immediately changing position. Open ground without cover or a blocked view makes it harder to use the surroundings. The party can discover their position, offer a safe retreat or find out why they guard this particular passage. An alert archer often knows more about nearby events than a gang member who stays deep in camp."
+    ],
+    "strings": {
+      "Rychlý přesun": "Quick Reposition",
+      "Po útoku na dálku získá +1 FO proti nejbližšímu útoku zblízka do svého dalšího tahu.": "After a ranged attack, gains +1 PDEF against the next melee attack until its next turn.",
+      "krátký luk +2": "Shortbow +2",
+      "prošívaná +1": "Quilted armor +1"
+    }
   }
 }

@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 28,
+  "completed": 29,
   "updated": [
     "best/liska",
     "best/vlk",
@@ -29,7 +29,8 @@
     "best/lecitel",
     "best/slechtic",
     "best/kral-kralovna",
-    "best/goblin"
+    "best/goblin",
+    "best/goblin-lucistnik"
   ],
-  "latest": "best/goblin"
+  "latest": "best/goblin-lucistnik"
 }
