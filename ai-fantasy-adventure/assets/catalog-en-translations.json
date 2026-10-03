@@ -235,5 +235,18 @@
       "krátký meč +2": "Short sword +2",
       "kožená +2": "Leather armor +2"
     }
+  },
+  "best/bandita": {
+    "name": "Bandit",
+    "profile": [
+      "A bandit makes a living by ambushing travelers, extortion and stealing supplies. They seek a hideout beside abandoned roads, in a forest, quarry or ruined stronghold from which they can watch passing carts. They may have entered this life as a deserter, someone in debt or a willing robber. A shared profile therefore does not imply a shared origin or equal willingness to take risks.",
+      "They most often operate in a small gang. Some keep watch, others select targets, and others maintain contact with a fence. They obey a leader while that leader offers profit, safety or inspires enough fear. Bandits usually want to acquire property with as few losses of their own as possible. An unprotected cart is therefore more attractive than a prepared party, and a clearly superior opponent may quickly turn determination into flight.",
+      "A bandit has no special combat ability. A gang's danger comes from numbers, ambush and knowledge of the location. They may demand a ransom, block a road or intimidate people without intending to fight to the death. Discovering lookouts, securing another route or making an offer that undermines the group's cohesion can resolve the confrontation. A captured bandit may know the hideout and who ordered the robberies, but will consider who can protect them from retaliation."
+    ],
+    "strings": {
+      "krátký meč +2": "Short sword +2",
+      "kožená +2": "Leather armor +2",
+      "Bez zvláštní schopnosti.": "No special ability."
+    }
   }
 }
