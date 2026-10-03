@@ -41,5 +41,19 @@
       "kousnutí +0": "Bite +0",
       "bez ochrany": "No protection"
     }
+  },
+  "best/netopyr": {
+    "name": "Bat",
+    "profile": [
+      "Bats rest in caves, hollow trees and abandoned towers. At dusk they set out in search of food; ordinary small bats mainly hunt insects. They navigate in darkness using echoes of their own calls and may share their shelters in large colonies.",
+      "They are not natural enemies of the heroes. A disturbed colony can, however, turn a quiet passage into a chaotic stream of wings and sounds. A bat is agile in the air but physically weak. Its Flight ability increases physical defense against melee attacks only while it can actually fly.",
+      "The Game Master can use bats as a sign of a nearby cave or an open route outside. The heroes can let the animals fly past undisturbed and continue instead of drawing their weapons. Unusual behavior in a colony may provide a clue that something is disturbing its shelter."
+    ],
+    "strings": {
+      "Let": "Flight",
+      "Dokud může létat, získává +1 FO proti útokům zblízka.": "While it can fly, gains +1 PDEF against melee attacks.",
+      "kousnutí +0": "Bite +0",
+      "bez ochrany": "No protection"
+    }
   }
 }
