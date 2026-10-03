@@ -336,5 +336,22 @@
       "Alternativní řešení": "Alternative solution",
       "Poznámka": "Note"
     }
+  },
+  "best/kouzelnik": {
+    "name": "Wizard",
+    "profile": [
+      "A wizard develops magic through study, practice or guidance from an experienced teacher. In Elaria, they may work in an academy, a private study, at court or travel in search of rare knowledge. Their base often holds books, tools and materials needed for research. An individual wizard may belong to a tradition that closely guards its knowledge or passes it on to new students.",
+      "They usually consider connections and prepare ways of dealing with difficult situations. Great learning, however, does not rule out vanity, mistakes or poor judgment of people. They may serve a school, a patron or their own research. They seek new knowledge, access to artifacts and time to work; there is no reason to assume every mage wants power over others. Their personality and the limits of their experiments determine their relationship with the party.",
+      "This profile uses Fire Bolt and Magic Shield. It has an effective magic attack and increased magic defense against the first such attack each round. Its abilities therefore call for a different approach than an ordinary armed opponent. A lost scroll, dangerous experiment or the need to transport an unusual object safely can lead to cooperation. Negotiations may involve exchanging knowledge and services; a wizard's secret need not be evil, but may have consequences they do not yet understand."
+    ],
+    "strings": {
+      "Ohnivá střela; Magický štít": "Fire Bolt; Magic Shield",
+      "Může používat magický útok s bonusem kouzla +3. Proti prvnímu magickému útoku v každém kole má +2 MO.": "Can make a magic attack with a +3 spell bonus. Gains +2 MDEF against the first magic attack each round.",
+      "bojová hůl +1": "Quarterstaff +1",
+      "bez zbroje": "No armor",
+      "1 + 1 strážce": "1 + 1 guard",
+      "1 + 2 strážci": "1 + 2 guards",
+      "Magická": "Magic"
+    }
   }
 }
