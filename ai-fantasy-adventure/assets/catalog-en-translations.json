@@ -313,5 +313,28 @@
       "dlouhý luk +3": "Longbow +3",
       "prošívaná +1": "Quilted armor +1"
     }
+  },
+  "best/rytir": {
+    "name": "Knight",
+    "profile": [
+      "A knight combines combat training with rank, an oath or service to a particular order. They may administer a small estate, travel on a mission or lead the defense of a fortress. Their equipment, emblem and entourage often reveal whom they serve. Good armor requires care and resources; a knighthood therefore brings relationships and obligations an ordinary warrior may not have.",
+      "Not every knight fulfills the ideal of a just protector. Some defend the vulnerable, while others chiefly protect their family or privileges. They usually have a lord, order or personal oath against which they measure their decisions. They may travel with a squire, companions or soldiers, but a lone knight on a quest is just as possible. Honor and reputation can motivate them more strongly than money.",
+      "Parry increases defense against the first physical attack aimed at them each round. In a direct confrontation, they are therefore a reliable defender and an opponent to take seriously. A conflict between an order and an oath may create room for conversation. A knight may demand evidence, accept a shared mission or protect someone whose guilt they do not yet know about. The story gains depth when the party discovers what they consider their duty and what they fear losing."
+    ],
+    "strings": {
+      "Parírování": "Parry",
+      "1× za kolo získá +2 k OBRANĚ proti prvnímu fyzickému útoku, který na něj míří.": "Once per round, gains +2 Defense against the first physical attack aimed at the knight.",
+      "obouruční meč +5": "Two-handed sword +5",
+      "plátová +5": "Plate armor +5",
+      "1 (těžké)": "1 (difficult)",
+      "1 + 1 voják": "1 + 1 soldier",
+      "Fyzická": "Physical",
+      "Základní boss": "Basic boss",
+      "Jak použít": "How to use",
+      "Charakteristická schopnost": "Signature ability",
+      "Slabina / výhoda": "Weakness / advantage",
+      "Alternativní řešení": "Alternative solution",
+      "Poznámka": "Note"
+    }
   }
 }
