@@ -180,5 +180,19 @@
       "bez zbroje": "No armor",
       "Bez zvláštní schopnosti.": "No special ability."
     }
+  },
+  "best/obchodnik": {
+    "name": "Merchant",
+    "profile": [
+      "A merchant connects villages, cities and distant markets. They may own a shop, lead a caravan or travel with a single cart and a few crates of goods. They know prices, demand and dangerous stretches of road. They notice where salt is scarce, who is buying up iron and why medicinal herbs have suddenly disappeared. Such changes can reveal a developing conflict before public proclamations do.",
+      "Their main goal is usually to maintain their business and reputation, but an individual merchant may put family, guild or a major customer first. They often work with carriers, guards and suppliers; a wealthy trader has an extensive network of contacts. An ability to deal with people does not automatically imply dishonesty. Some bargain hard but fairly, while others conceal faulty goods or trade in things they prefer not to ask about.",
+      "Haggle gives them an advantage in a social encounter based on Charisma. In combat, they usually protect their life and goods, seeking an agreement or help from guards. The party can offer protection, information or a service instead of money. A lost shipment, counterfeit coins and an unusually cheap artifact are natural starting points for adventures. Assuming every trader is a fraud could mean overlooking a potential long-term ally."
+    ],
+    "strings": {
+      "Smlouvání": "Haggle",
+      "Při sociálním střetu založeném na Charismatu má +1 k výsledku svého hodu.": "Gains +1 to the result of a roll in a social encounter based on Charisma.",
+      "dýka +1": "Dagger +1",
+      "bez zbroje": "No armor"
+    }
   }
 }
