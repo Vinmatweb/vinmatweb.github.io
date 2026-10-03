@@ -257,7 +257,11 @@
     "magic/duch/obnova-odvahy",
     "magic/duch/duchovni-paprsek",
     "magic/duch/strazny-duch",
-    "magic/duch/rada-predku"
+    "magic/duch/rada-predku",
+    "magic/duch/klid-dusi",
+    "magic/duch/zachrana-duse",
+    "magic/svetla/leceni",
+    "magic/svetla/ocista"
   ],
   "profiles": {
     "best/krysa": [
@@ -1549,6 +1553,26 @@
       "Rada předků poskytne družině jednu pravdivou a užitečnou stopu k právě řešenému problému. V příběhu může připomenout spojení s minulostí a zkušenostmi, které přesahují samotné hrdiny. Je to pomoc pro další uvažování, ne převzetí celého dobrodružství. Stopa má podpořit vlastní rozhodnutí hráčů a nabídnout směr, který mohou dále prozkoumat.",
       "Použití jednou za dobrodružství dává radě zvláštní váhu. Vyplatí se vědět, jaký problém družina právě řeší a kde potřebuje nový podnět. Kouzlo neprozradí celé řešení ani jistou budoucnost. I pravdivá informace může vyžadovat výklad a ověření dalšími kroky, takže po získání rady začíná nové rozhodování místo automatického vítězství.",
       "Přesný účinek: AI poskytne jednu pravdivou a užitečnou stopu k právě řešenému problému. Neprozradí celé řešení ani jistou budoucnost. Cíl: družina. Trvání: okamžitě. Omezení: 1× za dobrodružství. K použití je potřeba minimálně Chytrost 9 a Level 3, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/duch/klid-dusi": [
+      "Klid duší se pokusí krátce přerušit útočné jednání malé skupiny duchů či nemrtvých. Může dát družině prostor k ústupu, změně postavení nebo jinému postupu. Rozsah je omezený a účinek se vyhodnocuje proti každému cíli zvlášť. Nejde o automatické uklidnění všech nadpřirozených bytostí v širokém okolí.",
+      "Běžný úspěšně zasažený cíl nemůže zaútočit po uvedenou dobu. Pro hlavního protivníka platí menší omezení útoku a zvláštní schopnosti. Je potřeba zachovat plošné pravidlo a omezení použití za souboj. Družina by měla vědět, co během jednoho kola udělá; krátký klid sám nevyřeší původ nebezpečí nebo celý střet.",
+      "Přesný účinek: Jeden hod MÚ se porovná s MO každého cíle. Běžný úspěšně zasažený cíl nemůže zaútočit; hlavní protivník má −2 k útoku a bez zvláštní schopnosti. Bonus: +2 k MÚ. Cíl: nejvýše 3 duchové nebo nemrtví blízko sebe. Trvání: 1 kolo. Omezení: 1× za souboj; platí plošné i boss pravidlo. K použití je potřeba minimálně Chytrost 9 a Level 3, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/duch/zachrana-duse": [
+      "Záchrana duše je reakce na okamžik, kdy by spojenec právě klesl na nulu Životů. Může být významným bodem dobrodružství, ve kterém se rozhoduje o dalším osudu hrdiny. Kouzlo zasáhne v této konkrétní chvíli a ponechá jej na jednom Životě. Není to běžné léčení ani neomezená návratová cesta po každém vyřazení.",
+      "Použití je možné jen jednou za dobrodružství a cíl musí být v dohledu. Nelze je použít dodatečně na někoho, kdo už na nule byl. Zachráněný spojenec zůstává zranitelný a potřebuje další pomoc nebo bezpečný postup. Družina proto musí navázat na tento okamžik, nikoli předpokládat, že je vše vyřešeno jediným sesláním.",
+      "Přesný účinek: Místo pádu na 0 Ž zůstane cíl na 1 Ž. Nejde o léčení a nelze použít na cíl, který už na 0 Ž byl. Bonus: nezvyšuje FO ani MO. Cíl: 1 spojenec na dohled, který by právě klesl na 0 Ž. Trvání: okamžitá reakce. Omezení: 1× za dobrodružství. K použití je potřeba minimálně Chytrost 11 a Level 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/svetla/leceni": [
+      "Léčení je základní pomoc sesilateli nebo spojenci, ke kterému se dostane na dosah. V příběhu může zachytit důležitou chvíli péče po střetu nebo podporu druha, který ještě potřebuje pokračovat. Výsledek není vždy pevný počet Životů: uvedený základ se upravuje koeficientem léčení a obnova končí na maximu cíle.",
+      "Družina potřebuje vybrat, komu pomoc přinese největší užitek. Platí sdílený limit kouzel obnovujících Životy za souboj na sesilatele, takže jiný název léčivého kouzla automaticky nedává další použití. Léčení samo neodstraňuje každý jed, nemoc či kletbu. Je potřeba odlišit obnovu Životů od řešení příčiny, která postavu dál ohrožuje.",
+      "Přesný účinek: Obnoví počet Ž podle koeficientu léčení, nejvýše do maxima cíle. Bonus: základ 4 Ž před koeficientem léčení. Cíl: sesilatel nebo 1 spojenec na dosah. Trvání: okamžitě. Omezení: sdílený limit: 1 kouzlo obnovující Ž za souboj na sesilatele. K použití je potřeba minimálně Chytrost 6, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/svetla/ocista": [
+      "Očista řeší jeden běžný jed, nemoc nebo slabý temný účinek na tvoru či předmětu. Hodí se do dobrodružství, v němž samotné obnovení Životů nestačí. Její význam je v odstranění konkrétního problému, nikoli v obecném umytí povrchu. Sesilatel by měl zjistit, jakou povahu má stav, který se snaží ukončit.",
+      "Silná kletba podle katalogu vyžaduje Zlomení kletby a nelze ji automaticky zaměnit za slabý účinek. Očista se na stejný cíl používá omezeně za scénu a vyžaduje dosah. Družina tak může potřebovat znalosti, další pátrání nebo odlišný rituál. Kouzlo nepřidává současně nevypsané obnovení Životů či trvalou imunitu.",
+      "Přesný účinek: Ukončí jeden běžný jed, nemoc nebo slabý temný účinek. Silná kletba vyžaduje Zlomení kletby. Cíl: 1 tvor nebo předmět na dosah. Trvání: okamžitě. Omezení: 1× na stejný cíl za scénu. K použití je potřeba minimálně Chytrost 6, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
     ]
   }
 }
