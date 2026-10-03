@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 202,
+  "completed": 206,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -142,7 +142,11 @@
     "magic/obecna/kouzelny-klic",
     "magic/obecna/drobny-magicky-stit",
     "magic/ohen/jiskra",
-    "magic/ohen/ohniva-strela"
+    "magic/ohen/ohniva-strela",
+    "magic/ohen/zhavy-dotek",
+    "magic/ohen/kourova-clona",
+    "magic/ohen/odolnost-vuci-zaru",
+    "magic/ohen/plamenny-stit"
   ],
-  "latestBatch": 35
+  "latestBatch": 36
 }

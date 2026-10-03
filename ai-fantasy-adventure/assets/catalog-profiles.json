@@ -201,7 +201,11 @@
     "magic/obecna/kouzelny-klic",
     "magic/obecna/drobny-magicky-stit",
     "magic/ohen/jiskra",
-    "magic/ohen/ohniva-strela"
+    "magic/ohen/ohniva-strela",
+    "magic/ohen/zhavy-dotek",
+    "magic/ohen/kourova-clona",
+    "magic/ohen/odolnost-vuci-zaru",
+    "magic/ohen/plamenny-stit"
   ],
   "profiles": {
     "best/krysa": [
@@ -1213,6 +1217,26 @@
       "Ohnivá střela soustředí útok ohněm na jediný cíl v dohledu. V příběhu může působit jako jasný a rychlý projev odhodlání sesilatele. Je určena k přímému střetu, nikoli k rozšíření výbuchu na všechny poblíž. Její bonus odlišuje účinnost od základní Jiskry, stále ale platí obvyklá pravidla magického útoku.",
       "Použití dává smysl, když chce hrdina napadnout konkrétního protivníka, kterého vidí. Konečné zranění závisí na útoku a magické obraně cíle; není předem pevně zaručené. Kouzlo nepřidává nevypsané zasažení sousedních tvorů ani trvalý stav hoření. V družině se může stát jasně zaměřeným nástrojem místo riskantnějšího plošného zásahu.",
       "Přesný účinek: Přímý jednobodový magický útok ohněm proti MO cíle. Bonus: +2 k MÚ. Cíl: 1 cíl na dohled. Trvání: okamžitě. Omezení: —. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/ohen/zhavy-dotek": [
+      "Žhavý dotek je silnější ohnivý útok, který vyžaduje bezprostřední blízkost cíle. Dobře vystihuje sesilatele ochotného podstoupit riziko, aby využil větší útočnou sílu. Jeho příběhová podoba může být krátká a intenzivní, ale stále jde o konkrétní magický útok, ne o nepřetržitý žár po celou další scénu.",
+      "Rozhodujícím omezením je dosah ruky: sesilatel musí stát těsně u protivníka. Při plánování proto záleží na možnosti bezpečně se přiblížit a na hrozbách v okolí. Samotné kouzlo nepřesune hrdinu k cíli ani mu nezajistí ochranu před odvetou. Vyšší bonus tak přináší zajímavou volbu mezi útokem a osobním nebezpečím.",
+      "Přesný účinek: Silnější útok vyvážený nutností dotyku; zranění se určí proti MO. Bonus: +3 k MÚ. Cíl: 1 cíl na dosah ruky. Trvání: okamžitě. Omezení: sesilatel musí stát těsně u cíle. K použití je potřeba minimálně Chytrost 8, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/ohen/kourova-clona": [
+      "Kouřová clona změní malou část bojiště v prostor, skrz který je obtížnější útočit. Její význam spočívá ve vedení střetu, ústupu nebo vytvoření krátké příležitosti ke změně postavení. Nevytváří selektivní ochranu jen pro přátele: postih se vztahuje na útoky obou stran, pokud procházejí clonou.",
+      "Před sesláním je dobré domluvit, kudy družina potřebuje projít a odkud bude dál útočit. Nevhodně položená clona může zkomplikovat i vlastní plán. Platí krátce a jen jednou za souboj, takže načasování má skutečnou váhu. Katalog jí nepřiznává automatické zranění, úplnou neviditelnost nebo odstranění každé možnosti nepřítele jednat.",
+      "Přesný účinek: Útoky vedené skrz clonu mají −2 k výslednému FÚ nebo MÚ. Postih platí pro obě strany. Cíl: prostor přibližně 3 m široký. Trvání: 2 kola. Omezení: 1× za souboj. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/ohen/odolnost-vuci-zaru": [
+      "Odolnost vůči žáru pomůže ochotnému tvoru čelit běžnému horku a posílí jeho magickou obranu proti vymezeným ohnivým nebezpečím. Hodí se k výpravě do horkého prostředí i ke střetu s ohnivou magií. Její příběhový projev může být nenápadný: rozhodující je konkrétní ochrana, kterou pravidla skutečně uvádějí.",
+      "Při použití rozlišujte obyčejné horko, ohnivá kouzla a jiné druhy útoků. Bonus k magické obraně nepokrývá všechna nebezpečí světa. Sesilatel se musí dostat na dosah ochotného cíle a počítat s trváním jedné scény. Ochrana může podpořit promyšlený postup, ale není důvodem ignorovat další hrozby v nebezpečném prostředí.",
+      "Přesný účinek: Cíl ignoruje běžné horko a získá +3 MO pouze proti ohnivým kouzlům a magickému žáru. Bonus: +3 MO proti ohni. Cíl: 1 ochotný tvor na dosah. Trvání: 1 scéna. Omezení: 1× za scénu na cíl. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/ohen/plamenny-stit": [
+      "Plamenný štít poskytne sesilateli nebo viditelnému spojenci krátké posílení fyzické obrany proti útokům zblízka. Jeho jméno může vyvolávat představu nebezpečných plamenů, pravidlově však jde o ochranu. Útočníka sám nezraňuje, což je důležitý rozdíl při rozhodování, jak bude chráněný hrdina postupovat v bezprostředním střetu.",
+      "Hodí se načasovat jej na dvě kola, kdy se očekává tlak v boji zblízka. Útoky z jiných směrů či jiného druhu nejsou automaticky pokryté stejnou výhodou. Kouzlo se nesčítá a má omezené použití za souboj. Výhodu proto posuzujte společně s ostatní obranou cíle a plánem celé družiny.",
+      "Přesný účinek: Cíl získá +2 FO pouze proti útokům zblízka. Štít sám nezraňuje útočníka. Bonus: +2 FO. Cíl: sesilatel nebo 1 spojenec na dohled. Trvání: 2 kola. Omezení: 1× za souboj; nesčítá se. K použití je potřeba minimálně Chytrost 8 a Level 2, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
     ]
   }
 }
