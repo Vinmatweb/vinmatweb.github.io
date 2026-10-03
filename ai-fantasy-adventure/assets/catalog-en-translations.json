@@ -13,5 +13,19 @@
       "armor": "Fur +1",
       "shield": "—"
     }
+  },
+  "best/vlk": {
+    "name": "Wolf",
+    "profile": [
+      "Wolves live in forests, on open plains and in mountain areas where they can find prey and enough space. A pack is usually a family group that works together to hunt and care for its young. Tracks left by several animals and distant howling may suggest that the party has entered their territory.",
+      "Wolves are alert, quick to learn and capable of cooperation. They usually avoid people; they may defend themselves when protecting their young, cornered or left with no other choice. A lone wolf does not necessarily mean an immediate attack, but it is worth watching the surroundings. In the game, Pack Attack applies if another wolf has attacked the same target during that round.",
+      "The party might discover an injured animal, a den they have approached too closely or a trail shared by wolves and people. A good solution may involve going around their territory and removing the cause of the conflict. A wolf is not automatically an evil opponent: its behaviour should fit the situation."
+    ],
+    "strings": {
+      "Smečkový útok": "Pack Attack",
+      "Pokud stejný cíl v tomto kole napadl alespoň 1 další vlk, tento vlk získá +1 k výslednému ÚTOKU.": "If at least one other wolf attacked the same target this round, this wolf gains +1 to its final Attack result.",
+      "tesáky +2": "Fangs +2",
+      "srst +1": "Fur +1"
+    }
   }
 }

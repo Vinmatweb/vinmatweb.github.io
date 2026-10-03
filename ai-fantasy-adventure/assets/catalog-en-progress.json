@@ -1,8 +1,9 @@
 {
   "target": 300,
-  "completed": 1,
+  "completed": 2,
   "updated": [
-    "best/liska"
+    "best/liska",
+    "best/vlk"
   ],
-  "latest": "best/liska"
+  "latest": "best/vlk"
 }
