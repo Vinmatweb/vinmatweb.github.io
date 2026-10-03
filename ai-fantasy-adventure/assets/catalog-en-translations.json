@@ -396,5 +396,19 @@
       "kroužková +3": "Chainmail +3",
       "malý +1": "Small shield +1"
     }
+  },
+  "best/goblin": {
+    "name": "Goblin",
+    "profile": [
+      "Goblins are small humanoids of Elaria who seek a place on the fringes of more powerful societies. They live in caves, ravines, abandoned mines and ruins that offer shelter and useful materials. Various stories link their origins to ancient underground settlements; individual tribes preserve their own legends, however, and may not know a shared history. Small tracks, improvised repairs and piles of things others consider rubbish reveal their homes.",
+      "They are practical, observant and quick to spot an opportunity. Low status or rough manners are not evidence of stupidity. They usually live in families and groups led by a chief, sometimes under the influence of a stronger neighbor. They seek food, safety and useful objects. Some gangs raid, while others trade or collect leftovers from other expeditions. Hunger, fear, leadership and experiences with their surroundings influence their aggression.",
+      "In combat, they seek superior numbers, cover and an escape route. Duck for Cover increases defense against a ranged attack once per combat. An exposed goblin may retreat, warn its group or offer a deal. The party can discover what drove the gang from its original shelter, whom it must pay in supplies and who forces it to raid. Food, safe passage or removing a shared threat can provide a genuine reason to negotiate."
+    ],
+    "strings": {
+      "Úhyb do krytu": "Duck for Cover",
+      "1× za souboj získá +2 OBRANA proti jednomu útoku na dálku.": "Once per combat, gains +2 Defense against one ranged attack.",
+      "krátký meč +2": "Short sword +2",
+      "kožená +2": "Leather armor +2"
+    }
   }
 }
