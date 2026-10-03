@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 238,
+  "completed": 242,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -178,7 +178,11 @@
     "magic/zeme/tvarovani-kamene",
     "magic/zeme/kamenna-pouta",
     "magic/zeme/kamenne-kopi",
-    "magic/zeme/kamenna-zed"
+    "magic/zeme/kamenna-zed",
+    "magic/zeme/otres-zeme",
+    "magic/zeme/pevnost-hory",
+    "magic/mysl/myslenkovy-sepot",
+    "magic/mysl/telekineze"
   ],
-  "latestBatch": 44
+  "latestBatch": 45
 }

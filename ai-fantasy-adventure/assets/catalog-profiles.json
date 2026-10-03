@@ -237,7 +237,11 @@
     "magic/zeme/tvarovani-kamene",
     "magic/zeme/kamenna-pouta",
     "magic/zeme/kamenne-kopi",
-    "magic/zeme/kamenna-zed"
+    "magic/zeme/kamenna-zed",
+    "magic/zeme/otres-zeme",
+    "magic/zeme/pevnost-hory",
+    "magic/mysl/myslenkovy-sepot",
+    "magic/mysl/telekineze"
   ],
   "profiles": {
     "best/krysa": [
@@ -1429,6 +1433,26 @@
       "Kamenná zeď vytvoří krátkou překážku na zemi, která blokuje pohyb a výhled. Může rozdělit prostor, podpořit ústup nebo na několik kol změnit dostupné cesty. Překážka má vlastní Životy a fyzickou obranu, takže není nezničitelná. Její hodnoty také nejsou obranným bonusem, který by automaticky dostali hrdinové stojící vedle ní.",
       "Vzniká ve volné linii omezené délky a vyžaduje vhodné umístění na zemi. Sesilatel by měl zvážit, zda neuzavírá cestu také své družině. Po skončení se bezpečně rozpadne, proto neposkytuje trvalou stavbu ani další útok z padajících trosek. Při boji je důležitá její krátkodobá role a možnost protivníka překážku poškodit.",
       "Přesný účinek: Vytvoří překážku s 12 Ž a FO 13, která blokuje pohyb a výhled. Po skončení se bezpečně rozpadne. Bonus: nezvyšuje FO ani MO; zeď má FO 13. Cíl: volná linie do 4 m na zemi. Trvání: 3 kola. Omezení: 1× za souboj. K použití je potřeba minimálně Chytrost 9 a Level 3, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/zeme/otres-zeme": [
+      "Otřes země zasáhne několik blízkých cílů stojících na zemi a může narušit jejich příští přesun. Hodí se do situace, kde se soupeři shromáždili v jednom prostoru. Rozsah je omezený společným plošným pravidlem; nejde o libovolné zemětřesení v celé oblasti ani o automatické zničení okolních budov.",
+      "Jeden hod se porovná s magickou obranou každého cíle zvlášť. Dodatečná ztráta příštího přesunu vznikne pouze u cíle skutečně zraněného alespoň za jeden Život. Neodebere celou akci. Jediné použití za souboj znamená, že je potřeba vybrat vhodný okamžik a vědět, jak družina krátké omezení pohybu využije.",
+      "Přesný účinek: Jeden hod MÚ se porovná s MO každého cíle. Cíl zraněný alespoň za 1 Ž navíc ztratí svůj příští přesun, nikoli celou akci. Bonus: +2 k MÚ. Cíl: nejvýše 3 cíle stojící blízko sebe na zemi. Trvání: okamžitě. Omezení: 1× za souboj; platí plošné pravidlo. K použití je potřeba minimálně Chytrost 10 a Level 5, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/zeme/pevnost-hory": [
+      "Pevnost hory poskytne jednomu ochotnému tvoru výraznou krátkou podporu fyzické obrany za cenu pomalejšího vlastního pohybu. Je to kouzlo pro okamžik, kdy udržet pozici může být důležitější než rychle postupovat. Příběhově může působit jako pevné soustředění na ochranu, stále ale nejde o trvalou změnu těla nebo nezranitelnost.",
+      "Použití je vzácné a omezené na jednou za dobrodružství. Je třeba počítat s polovičním pohybem a nesčítáním obranného účinku. Nevhodné načasování by mohlo zkomplikovat ústup nebo dosažení cíle. Družina by tedy měla vědět, koho potřebuje chránit právě v těchto třech kolech a jak se bude přizpůsobovat jeho pomalejšímu postupu.",
+      "Přesný účinek: Cíl získá +4 FO, ale jeho vlastní pohyb je po dobu kouzla poloviční. Bonus: +4 FO. Cíl: 1 ochotný tvor na dosah. Trvání: 3 kola. Omezení: 1× za dobrodružství; nesčítá se. K použití je potřeba minimálně Chytrost 11 a Level 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/mysl/myslenkovy-sepot": [
+      "Myšlenkový šepot je krátká zpráva jednomu ochotnému tvoru, kterého sesilatel vidí. Může pomoci domluvit jednoduchý krok bez hlasitého volání. V příběhu je užitečný pro diskrétní spolupráci, ale jeho možnosti jsou malé a přesné: posílá jednu větu hlasem sesilatele, nikoli celý rozhovor nebo skryté pátrání v cizí mysli.",
+      "Dává smysl připravit stručnou informaci, například upozornění nebo domluvené znamení. Příjemce tím nezískává možnost odpovědět stejným kouzlem. Sesilatel také nepozná neodeslané myšlenky cíle. Je potřeba zachovat ochotu a dohled, takže zprávu nelze bez dalšího poslat neznámému protivníkovi za zdí nebo komukoli na druhém konci světa.",
+      "Přesný účinek: Pošle cíli jednu krátkou myšlenkovou větu hlasem sesilatele. Nečte myšlenky cíle. Cíl: 1 ochotný tvor na dohled. Trvání: okamžitě. Omezení: jedna věta; bez odpovědi. K použití je potřeba minimálně Chytrost 6, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/mysl/telekineze": [
+      "Telekineze umožní pohybovat jedním předmětem v omezeném dosahu a hmotnosti. Nabízí prostor pro nápadité zacházení s okolím: přesun věci může být důležitý stejně jako přímý útok. Sesilatel se ale musí soustředit a nemůže zároveň volně ovládat neomezené množství předmětů nebo měnit samotné tvory v bezmocné objekty.",
+      "Před sesláním je potřeba vybrat konkrétní předmět a záměr. Pokud jej sesilatel vrhne na tvora, proběhne jeden předepsaný magický útok a kouzlo tím skončí. Nejde o opakované vrhání každé kolo při jednom použití. Praktický přesun a útok tak představují různé volby, které je vhodné promyslet podle situace.",
+      "Přesný účinek: Pohybuje předmětem libovolným směrem. Pokud je vržen na tvora, provede se jeden MÚ s bonusem +1; poté Telekineze končí. Bonus: +1 k MÚ při útoku. Cíl: předmět do 10 kg a 10 m. Trvání: soustředění, nejvýše 3 kola. Omezení: nejvýše 1 předmět; útok kouzlo ukončí. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
     ]
   }
 }
