@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 194,
+  "completed": 198,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -134,7 +134,11 @@
     "magic/obecna/svetelko",
     "magic/obecna/zapaleni",
     "magic/obecna/kouzelny-zvuk",
-    "magic/obecna/kouzelna-cistota"
+    "magic/obecna/kouzelna-cistota",
+    "magic/obecna/hledani-vody",
+    "magic/obecna/magicka-ruka",
+    "magic/obecna/oprava-drobnosti",
+    "magic/obecna/odhaleni-magie"
   ],
-  "latestBatch": 33
+  "latestBatch": 34
 }

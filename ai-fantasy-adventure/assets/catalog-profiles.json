@@ -193,7 +193,11 @@
     "magic/obecna/svetelko",
     "magic/obecna/zapaleni",
     "magic/obecna/kouzelny-zvuk",
-    "magic/obecna/kouzelna-cistota"
+    "magic/obecna/kouzelna-cistota",
+    "magic/obecna/hledani-vody",
+    "magic/obecna/magicka-ruka",
+    "magic/obecna/oprava-drobnosti",
+    "magic/obecna/odhaleni-magie"
   ],
   "profiles": {
     "best/krysa": [
@@ -1165,6 +1169,26 @@
       "Kouzelná čistota řeší obyčejnou špínu a nepříjemný zápach, které výpravu provázejí stejně věrně jako dobrodružství. Umožní očistit menší předmět nebo plochu, aniž by je poškodila. V příběhu může připravit hrdinu na setkání s důležitým člověkem nebo zpřístupnit povrch, jehož detaily dosud zakrývalo bláto a prach.",
       "Čistý vzhled ale není potvrzením bezpečnosti. Očistěná nádoba může stále obsahovat jed a poškozený předmět zůstává poškozený. Kouzlo je praktická pomoc při údržbě, nikoli všeobecné léčení či odstraňování kleteb. Při pátrání také stojí za úvahu, zda nečistoty samy nenesou stopu, kterou by předčasné očištění odstranilo.",
       "Přesný účinek: Odstraní běžnou špínu, bláto, prach nebo zápach, aniž by předmět poškodila. Cíl: předmět nebo plocha do 1 m². Trvání: okamžitě. Omezení: neodstraňuje jed, kletbu ani poškození. K použití je potřeba minimálně Chytrost 5, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/obecna/hledani-vody": [
+      "Hledání vody dává cestovateli směr k nejbližšímu dosažitelnému zdroji v omezeném okolí. V suché krajině může být zásadním podnětem ke změně trasy a připomíná, že úspěšná výprava závisí také na obyčejných zásobách. Kouzlo nevyčaruje vodu do měchu ani nevybere nejpohodlnější tábořiště za celou družinu.",
+      "Po zjištění směru je stále potřeba dojít na místo a posoudit nalezený zdroj. Voda nemusí být vhodná k pití a cestou mohou čekat překážky. Informace se hodí pro plánování průzkumu a doplnění zásob, přičemž omezení na jedno použití za scénu podporuje promyšlené načasování místo opakovaného zkoušení bez cíle.",
+      "Přesný účinek: Ukáže směr k nejbližšímu dosažitelnému zdroji vody do 1 km. Neurčí, zda je voda bezpečná k pití. Cíl: sesilatel. Trvání: okamžitě. Omezení: 1× za scénu. K použití je potřeba minimálně Chytrost 6, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/obecna/magicka-ruka": [
+      "Magická ruka vytvoří viditelnou pomůcku pro jednoduchou práci s lehkým volným předmětem. Může něco zvednout, přinést nebo stisknout prostý mechanismus a hodí se pro opatrné zacházení z malé vzdálenosti. Její možnosti jsou úzce vymezené: není to všeobecná síla, která by pohnula každým objektem nebo nahradila zručného řemeslníka.",
+      "Družina může využít její dosah tam, kam nechce hned vložit vlastní ruce. Je však nutné ověřit hmotnost, vzdálenost a jednoduchost úkonu. Kouzlo neútočí, neovlivňuje tvora a neprovádí složitou jemnou práci. Vyžaduje soustředění a jeho omezené trvání je důvodem připravit si postup před sesláním, ne až během něj.",
+      "Přesný účinek: Vytvoří viditelnou magickou ruku, která zvedne, přinese, položí nebo stiskne jednoduchý mechanismus. Není to Telekineze a nemůže ovlivnit tvora. Cíl: volný předmět do 2 kg a 5 m. Trvání: soustředění, nejvýše 3 kola. Omezení: 1 ruka; bez útoku a složité jemné práce. K použití je potřeba minimálně Chytrost 6, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/obecna/oprava-drobnosti": [
+      "Oprava drobnosti dokáže spojit jednoduché poškození nemagického předmětu, pokud jsou k dispozici všechny jeho části. Je to kouzlo, které může zachránit přetržený řemínek nebo drobnou rozbitou součást daleko od dílny. V příběhu ocení hrdinu, který své věci udržuje a nezahazuje je při prvním problému.",
+      "Nejprve je třeba zjistit, co je skutečně rozbité, a shromáždit chybějící části. Kouzlo neobnoví spotřebovaný obsah ani ztracenou magii a nelze je opakovat na totéž poškození bez omezení. Praktické použití může zajistit pokračování cesty, ale rozsáhlou přestavbu nebo obnovu zničeného předmětu je nutné řešit jinými dostupnými prostředky.",
+      "Přesný účinek: Spojí prasklinu, přetržený řemínek nebo rozbitou drobnou součást. Neobnoví spotřebovaný obsah ani magii. Cíl: 1 nemagický předmět do velikosti batohu. Trvání: okamžitě. Omezení: 1× na stejné poškození; musí být přítomny všechny části. K použití je potřeba minimálně Chytrost 6, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/obecna/odhaleni-magie": [
+      "Odhalení magie pomůže rozpoznat, že vybraný předmět, tvor nebo blízký prostor nese magický vliv, a určí nejbližší školu. Hodí se k prvnímu průzkumu neznámého nálezu. Poskytuje stopu pro další uvažování, nikoli hotový návod k bezpečnému použití všeho, co družina našla ve staré truhle či zapomenuté svatyni.",
+      "Po seslání může následovat rozhovor s odborníkem, studium znaků nebo opatrné pozorování. Kouzlo neprozradí přesný účinek, jeho spouštěč ani způsob zrušení. Nalezená magie tak může zůstat záhadou i nebezpečím. Omezený dosah a použití za scénu je potřeba zohlednit při rozhodování, který nález prozkoumat jako první.",
+      "Přesný účinek: Odhalí přítomnost magie a její nejbližší školu. Neprozradí přesný účinek, spouštěč ani způsob zrušení. Cíl: 1 předmět, tvor nebo prostor do 5 m. Trvání: okamžitě. Omezení: 1× za scénu. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
     ]
   }
 }
