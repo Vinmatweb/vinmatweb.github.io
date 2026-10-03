@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 298,
+  "completed": 300,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -238,7 +238,9 @@
     "magic/hvezdna/hvezdny-dest",
     "magic/hvezdna/zastaveni-casu",
     "magic/hvezdna/otevreni-brany-mezi-svety",
-    "magic/hvezdna/navrat-casu"
+    "magic/hvezdna/navrat-casu",
+    "magic/hvezdna/mimoradne-vzkriseni",
+    "magic/hvezdna/prepis-reality"
   ],
-  "latestBatch": 59
+  "latestBatch": 60
 }

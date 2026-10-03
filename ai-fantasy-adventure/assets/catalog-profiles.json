@@ -297,7 +297,9 @@
     "magic/hvezdna/hvezdny-dest",
     "magic/hvezdna/zastaveni-casu",
     "magic/hvezdna/otevreni-brany-mezi-svety",
-    "magic/hvezdna/navrat-casu"
+    "magic/hvezdna/navrat-casu",
+    "magic/hvezdna/mimoradne-vzkriseni",
+    "magic/hvezdna/prepis-reality"
   ],
   "profiles": {
     "best/krysa": [
@@ -1789,6 +1791,16 @@
       "Návrat času obnoví stav aktuální scény na začátku předchozího kola nebo nejvýše o minutu dříve. Vrátí pozice, Životy, předměty i účinky a sesilatel si návrat pamatuje. Může vytvořit mimořádnou druhou možnost jednat na základě zkušenosti, ale není neomezeným cestováním do libovolného období nebo přepisem celé minulosti kampaně.",
       "Použití je možné jen jednou za kampaň a vyžaduje znalost kouzla. Je potřeba zachovat přesnou hranici návratu a obnovit celý uvedený stav, nikoli vybrat jen výhodné části. Další průběh opět závisí na rozhodnutích a událostech. Získaná vzpomínka může pomoci změnit postup, sama však nezaručuje, že nový pokus bude bez nebezpečí.",
       "Přesný účinek: Vrátí stav hry přesně na začátek předchozího kola nebo nejvýše o 1 minutu. Obnoví pozice, Životy, předměty i účinky; sesilatel si návrat pamatuje. Cíl: celá aktuální scéna. Trvání: okamžitě. Omezení: 1× za kampaň; vyžaduje znalost kouzla. K použití je potřeba minimálně Chytrost 18 a Level 22, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/hvezdna/mimoradne-vzkriseni": [
+      "Mimořádné vzkříšení je výjimečný rituál pro příběh, v němž skutečná smrt vůbec existuje. Základní hráčské postavy na nule Životů neumírají, takže kouzlo není běžnou součástí každého jejich vyřazení. Cíl musí být ochotná duše nedávno zemřelého a výsledek vrací postavu do těla na jednom Životě, nikoli do plné kondice.",
+      "Rituál trvá hodinu a lze jej použít pouze jednou za kampaň. Souhlas duše je nezbytný a časová hranice úmrtí se musí zachovat. V příběhu tak může být důležitý rozhovor o vůli a návratu, nikoli jen technické odstranění následku. Po probuzení cíl stále potřebuje péči a další bezpečný postup.",
+      "Přesný účinek: Navrátí duši do těla a cíl se probudí na 1 Ž. Jde o výjimku pro příběhy, kde skutečná smrt vůbec existuje; základní hráčské postavy na 0 Ž neumírají. Bonus: návrat na 1 Ž. Cíl: 1 ochotná duše zemřelá nejvýše před 1 dnem. Trvání: rituál 1 hodina. Omezení: 1× za kampaň; nefunguje bez souhlasu duše; vyžaduje znalost. K použití je potřeba minimálně Chytrost 18 a Level 25, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/hvezdna/prepis-reality": [
+      "Přepis reality krátce promění nemagický neživý předmět v jiný běžný nemagický předmět stejné nebo menší velikosti. Může nabídnout tvořivé řešení překážky, ale jeho rozsah je přesný. Nejde o volné tvoření života, artefaktů nebo bohatství. Název označuje výjimečný magický okamžik, nikoli právo měnit libovolnou skutečnost bez dalších hranic.",
+      "Je potřeba vhodný původní cíl a plán pro desetiminutové trvání. Kouzlo nevytvoří peníze ani přesnou kopii unikátního klíče. Jediné použití za dobrodružství dává rozhodnutí velkou váhu. Družina by měla promyslet, jak dočasně změněný předmět využije a co bude dělat po skončení účinku, místo spoléhání na trvalé řešení.",
+      "Přesný účinek: Na 10 minut změní cíl v jiný běžný nemagický předmět stejné nebo menší velikosti. Nevytvoří živou bytost, artefakt, peníze ani přesnou kopii unikátního klíče. Cíl: 1 nemagický neživý předmět nejvýše velikosti vozu. Trvání: 10 minut. Omezení: 1× za dobrodružství; vyžaduje znalost kouzla. K použití je potřeba minimálně Chytrost 18 a Level 25, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
     ]
   }
 }
