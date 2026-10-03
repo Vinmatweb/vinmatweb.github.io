@@ -272,5 +272,18 @@
       "Poznámka": "Note",
       "Jak použít": "How to use"
     }
+  },
+  "best/zoldner": {
+    "name": "Mercenary",
+    "profile": [
+      "A mercenary offers combat experience for payment. They may guard a caravan, protect a mine, serve a city council or fight in a foreign army. Their backgrounds vary: some left the army, while others have spent their lives moving between short contracts. Their equipment reflects their means and the work they accept. Before a journey, an experienced mercenary checks supplies, the condition of weapons and the abilities of future allies.",
+      "They work independently or in a company led by a captain. Loyalty may rest on a contract, personal honor or a long campaign together. Payment alone does not mean they will do anything; some refuse attacks on civilians or jobs that conflict with their convictions. Others care only about the reward. Most, however, need to survive and maintain a reputation to secure future work.",
+      "They have no special ability, but their combat values represent someone accustomed to real fighting. They usually aim to complete the task and observe the contract's terms. If they oppose the party, it can help to discover whom they protect, what they were told and where their obligation ends. Withheld pay, a dishonest employer or an order that violates the contract may create room for negotiation. A mercenary can become both an opponent and a dependable ally within one story."
+    ],
+    "strings": {
+      "jednoruční sekera +4": "One-handed axe +4",
+      "kroužková +3": "Chainmail +3",
+      "Bez zvláštní schopnosti.": "No special ability."
+    }
   }
 }
