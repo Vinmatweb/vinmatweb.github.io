@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 110,
+  "completed": 114,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -50,7 +50,11 @@
     "equip/jednorucni-sekera",
     "equip/halapartna",
     "equip/obourucni-mec",
-    "equip/valecne-kladivo"
+    "equip/valecne-kladivo",
+    "equip/obourucni-sekera",
+    "equip/vrhaci-nuz",
+    "equip/prak",
+    "equip/ostep"
   ],
-  "latestBatch": 12
+  "latestBatch": 13
 }

@@ -109,7 +109,11 @@
     "equip/jednorucni-sekera",
     "equip/halapartna",
     "equip/obourucni-mec",
-    "equip/valecne-kladivo"
+    "equip/valecne-kladivo",
+    "equip/obourucni-sekera",
+    "equip/vrhaci-nuz",
+    "equip/prak",
+    "equip/ostep"
   ],
   "profiles": {
     "best/krysa": [
@@ -661,6 +665,26 @@
       "Válečné kladivo je těžší obouruční silová zbraň, která může být spojena s horskými bojovníky, strážci dílen nebo hrdinou s vlastní řemeslnou minulostí. V Elarii se může stát odměnou za pomoc kovárně či památkou na rodinného ochránce. Prostý povrch a zdobení mají příběhový význam, nikoli automaticky jiná čísla.",
       "Vyžaduje silného nositele a obě ruce. Nabízí vysoký základ útoku, ale jeho výběr je potřeba poměřit s možností používat štít a s ostatní výbavou. Název nepřidává automatické probíjení zbroje, sražení ani výhodu proti určitému tvoru. Rozhodují konkrétní pravidla zbraně a odolnosti protivníka. Hrdina může mít důvod tuto volbu upřednostnit i čistě osobní.",
       "Při útoku používá Sílu (S). Označení 2R znamená použití obou rukou. Minimum je S9 a katalogový bonus fyzického útoku FÚ je +5. Cena je 6 z. Celkový útok hrdiny se dále vypočítá podle jeho vlastností a platných pravidel; uvedený bonus zbraně není celý výsledný útok."
+    ],
+    "equip/obourucni-sekera": [
+      "Obouruční sekera stojí na vrcholu běžných silových zbraní tohoto katalogu. V Elarii může být mistrovským výrobkem, rodovým předmětem nebo výzbrojí zkušeného ochránce. Poutavý příběh může vycházet z toho, proč si ji majitel zasloužil a komu slíbil, že ji použije na obranu. Vysoká účinnost není důkazem, že musí být agresivní.",
+      "Její silový požadavek ji omezuje na postavy, které skutečně splňují uvedené minimum. Potřebuje obě ruce a její vyšší cena může ovlivnit přípravu celé výpravy. Automaticky nezasáhne dva cíle ani neudělí další zvláštní účinek. Hrdina by měl zvažovat, zda mu vysoký útok pomůže více než jiná kombinace výzbroje a ochrany.",
+      "Při útoku používá Sílu (S). Označení 2R znamená použití obou rukou. Minimum je S10 a katalogový bonus fyzického útoku FÚ je +6. Cena je 8 z. Celkový útok hrdiny se dále vypočítá podle jeho vlastností a platných pravidel; uvedený bonus zbraně není celý výsledný útok."
+    ],
+    "equip/vrhaci-nuz": [
+      "Vrhací nůž je malá zbraň pro dobrodruha, který chce jednat na krátkou vzdálenost bez přiblížení na dosah protivníka. V Elarii může patřit průzkumníkovi, zkušenému strážci nebo člověku, který si jej pořídil jako zálohu. Podoba může být prostá i zdobená, ale ozdobný vzhled sám nemění jeho účinek.",
+      "Používá obratnost a jednu ruku. Katalog upozorňuje na krátký dosah, takže nelze předpokládat stejné možnosti jako u luku. Po vrhu zůstává otázka, kde nůž dopadl a zda ho lze získat zpět; konkrétní okolnosti určí příběh. Nemá automatický zvláštní bonus za překvapení ani jedový účinek.",
+      "Při útoku používá Obratnost (O). Označení 1R znamená použití jedné ruky. Minimum je O4 a katalogový bonus fyzického útoku FÚ je +1. Cena je 5 s. Celkový útok hrdiny se dále vypočítá podle jeho vlastností a platných pravidel; uvedený bonus zbraně není celý výsledný útok."
+    ],
+    "equip/prak": [
+      "Prak je dostupná střelná zbraň, kterou mohou v Elarii používat lidé s menšími prostředky i cestovatelé, kteří nechtějí nosit luk. Jeho nenápadná podoba umožňuje dát předmětu osobní historii bez okázalého zdobení. Může připomínat domov, prvního učitele nebo dar někoho, koho si hrdina váží.",
+      "Spoléhá na obratnost, používá jednu ruku a nabízí stejný základ útoku jako některé malé zbraně. Nízká cena ponechává prostředky na další zásoby. Nejde však o automatickou zbraň na každou vzdálenost či proti libovolné překážce. Herní účinnost vychází z uvedených parametrů, vhodné situace a výpočtu hrdinova útoku.",
+      "Při útoku používá Obratnost (O). Označení 1R znamená použití jedné ruky. Minimum je O4 a katalogový bonus fyzického útoku FÚ je +1. Cena je 2 s. Celkový útok hrdiny se dále vypočítá podle jeho vlastností a platných pravidel; uvedený bonus zbraně není celý výsledný útok."
+    ],
+    "equip/ostep": [
+      "Oštěp je vrhací silová zbraň, která se hodí k postavě spojující fyzickou zdatnost s možností jednat na dálku. V Elarii může doprovázet průzkumníka otevřené krajiny, strážce hranic nebo obyvatele osady, kde je taková výzbroj obvyklá. Znak na násadě může rozpoznat majitele nebo jeho skupinu.",
+      "Na rozdíl od obratnostních střelných zbraní vychází z požadavku na sílu. Používá jednu ruku a po vrhu je potřeba uvažovat o další výzbroji či získání oštěpu zpět. Nepřidává automatický druhý útok ani zvláštní průraz. Jeho volba dává smysl, pokud odpovídá skutečným vlastnostem hrdiny a plánovanému prostředí výpravy.",
+      "Při útoku používá Sílu (S). Označení 1R znamená použití jedné ruky. Minimum je S5 a katalogový bonus fyzického útoku FÚ je +2. Cena je 6 s. Celkový útok hrdiny se dále vypočítá podle jeho vlastností a platných pravidel; uvedený bonus zbraně není celý výsledný útok."
     ]
   }
 }
