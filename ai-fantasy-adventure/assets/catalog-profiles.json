@@ -157,7 +157,11 @@
     "equip/loutna",
     "equip/mandolina",
     "equip/harfa",
-    "equip/dudy"
+    "equip/dudy",
+    "equip/maly-buben",
+    "equip/pistalka",
+    "equip/maly-lecivy-lektvar",
+    "equip/lecivy-lektvar"
   ],
   "profiles": {
     "best/krysa": [
@@ -949,6 +953,26 @@
       "Dudy mají nápadný, pronikavý hlas, který se hodí ke společnému tanci, průvodům a slavnostem pod širým nebem. V příběhu mohou připomínat domov horského cestovatele nebo tradici vesnice, která se schází při každé sklizni. Jejich majitel určuje repertoár i náladu; nástroj sám nepřidává bojové povely ani magický vliv.",
       "Vystoupení na dudy může přitáhnout pozornost a dát družině příležitost představit se místním lidem. Výrazný zvuk se zároveň nehodí k nenápadnému průzkumu, takže záleží na místě a záměru hráče. Ohlas publika není předem zaručený. Zapomenutý sváteční nápěv nebo soutěž mezi hudebníky mohou nabídnout zajímavější scénu než pouhé házení na úspěch.",
       "Pravidlový účinek: +1 CHA při hudebním vystoupení. Cena je 1 z 5 s. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/maly-buben": [
+      "Malý buben nese rytmus, který může doprovázet píseň, tanec i pochod. Jeho jednoduchý vzhled neznamená jednoduché vystoupení: zkušený hráč dokáže pracovat s tempem, tichem a očekáváním publika. V Elarii jej může mít pouliční umělec, cestující vypravěč nebo člen slavnostního průvodu, aniž by potřeboval zvláštní magický původ.",
+      "Dobře zapadá do skupinového hraní a scén, v nichž družina přispěje ke slavnosti nebo si získá prostor pro vlastní příběh. Rytmus může sloužit jako domluvený signál, pokud je slyšitelný, katalog mu však nepřiznává samostatný bojový bonus. Při rozhodování o použití záleží i na tom, zda hrdinové chtějí přitahovat pozornost.",
+      "Pravidlový účinek: +1 CHA při hudebním vystoupení. Cena je 1 z. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/pistalka": [
+      "Píšťalka je malý nástroj, který se vejde do cestovní výbavy a může provázet hrdinu od dětských her až k dobrodružství. Jednoduchá melodie se snadno spojí se vzpomínkou, krajem nebo osobou. V příběhu může být obyčejným výrobkem řemeslníka i dárkem na rozloučenou; její účinek není podmíněný vzácností či okázalým vzhledem.",
+      "Uplatní se při drobném hudebním vystoupení, odpočinku a společném hraní. Může také vydat smluvený zvukový signál, ale dosah ani spolehlivost takového použití nejsou automaticky neomezené. Zvláštností katalogu je vazba na Štěstí, kterou je potřeba odlišit od Charismatu ostatních nástrojů. Píšťalka tak nezvyšuje každé společenské jednání nebo každou náhodnou událost.",
+      "Pravidlový účinek: +1 Š při hudebním vystoupení. Cena je 3 s. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/maly-lecivy-lektvar": [
+      "Malý léčivý lektvar je skromná zásoba pomoci pro hrdinu, který se vrací z nebezpečné stezky nebo pokračuje dál po zranění. Lahvička může pocházet z léčitelské dílny, tržiště i od vděčného člověka. Barva a vůně se mohou lišit podle příběhu výrobce; samotný vzhled nepřidává nové účinky ani větší léčivou sílu.",
+      "Dává smysl jako menší rezerva, když družina nechce hned použít cennější prostředek. Rozhodnutí, komu jej věnovat, může odhalit priority postav a vztahy mezi nimi. Obnovení Životů není automatické odstranění otravy, nemoci či prokletí. Při plánování zásob proto rozlišujte obyčejné zranění od problému, který potřebuje jiné konkrétní řešení.",
+      "Pravidlový účinek: Obnoví +3 Ž. Cena je 1 z. Při použití zachovejte přesně uvedený účinek a dobu trvání. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/lecivy-lektvar": [
+      "Léčivý lektvar patří k výbavě, jejíž cenu hrdina pochopí ve chvíli, kdy pomoc potřebuje některý z jeho druhů. Může být výsledkem práce místního léčitele nebo pečlivě uchovávaným darem. Příběhový recept, uzávěr a značka výrobce mohou lahvičce dát osobitost, aniž by měnily přesné množství obnovených Životů uvedené v katalogu.",
+      "Družině nabízí rezervu pro pokračování výpravy po zranění. Vyplatí se myslet na něj před vstupem do nebezpečné oblasti a domluvit, kdo jej ponese. Léčení samo neřeší každou příčinu ohrožení: jed, kletba nebo nepřátelské prostředí mohou zůstat aktivní. Rozhodnutí použít zásobu teď, nebo ji schovat na později je přirozenou součástí dobrodružství.",
+      "Pravidlový účinek: Obnoví +6 Ž. Cena je 2 z. Při použití zachovejte přesně uvedený účinek a dobu trvání. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
     ]
   }
 }

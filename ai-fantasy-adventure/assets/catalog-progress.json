@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 158,
+  "completed": 162,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -98,7 +98,11 @@
     "equip/loutna",
     "equip/mandolina",
     "equip/harfa",
-    "equip/dudy"
+    "equip/dudy",
+    "equip/maly-buben",
+    "equip/pistalka",
+    "equip/maly-lecivy-lektvar",
+    "equip/lecivy-lektvar"
   ],
-  "latestBatch": 24
+  "latestBatch": 25
 }
