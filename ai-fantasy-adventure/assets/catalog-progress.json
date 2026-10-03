@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 274,
+  "completed": 278,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -214,7 +214,11 @@
     "magic/temna/stinovy-plast",
     "magic/temna/stinova-strela",
     "magic/temna/strach",
-    "magic/temna/oslabeni"
+    "magic/temna/oslabeni",
+    "magic/temna/kletba",
+    "magic/temna/temna-mlha",
+    "magic/temna/vysati-zivota",
+    "magic/temna/prizracna-pouta"
   ],
-  "latestBatch": 53
+  "latestBatch": 54
 }
