@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 190,
+  "completed": 194,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -130,7 +130,11 @@
     "equip/opasek-lecitele",
     "equip/boty-lehkeho-kroku",
     "equip/boty-obratnosti",
-    "equip/luk-vetru"
+    "equip/luk-vetru",
+    "magic/obecna/svetelko",
+    "magic/obecna/zapaleni",
+    "magic/obecna/kouzelny-zvuk",
+    "magic/obecna/kouzelna-cistota"
   ],
-  "latestBatch": 32
+  "latestBatch": 33
 }

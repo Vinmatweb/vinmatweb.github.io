@@ -189,7 +189,11 @@
     "equip/opasek-lecitele",
     "equip/boty-lehkeho-kroku",
     "equip/boty-obratnosti",
-    "equip/luk-vetru"
+    "equip/luk-vetru",
+    "magic/obecna/svetelko",
+    "magic/obecna/zapaleni",
+    "magic/obecna/kouzelny-zvuk",
+    "magic/obecna/kouzelna-cistota"
   ],
   "profiles": {
     "best/krysa": [
@@ -1141,6 +1145,26 @@
       "Luk větru vychází z dlouhého luku a přidává magické posílení fyzického útoku. V příběhu může být ceněným nástrojem průzkumníka, trofejí ze střelecké soutěže nebo odkazem starého učitele. Jeho jméno a ozdoby lze propojit s větrem a cestami, ale samy nezakládají ovládání počasí ani neomezenou přesnost za všech podmínek.",
       "Nositel musí splnit stejné požadavky jako u běžného dlouhého luku. Základ se nejprve upraví koeficientem Zbraně a dodatečný bonus se přičítá potom. Luk stále používá obě ruce a nenahrazuje potřebné střelivo. Důležitá zůstává i situace konkrétního útoku; magické posílení nesmí být rozšířeno na další nevypsané efekty jen podle názvu.",
       "Používá slot „Hlavní + Druhá ruka“ a vychází ze základu „dlouhý luk“. Uvedený bonus je +1 FÚ navíc. Základ dlouhého luku se upraví koeficientem Zbraně; +1 FÚ se přičte potom. Požadavek: Stejné jako dlouhý luk. Katalogová hodnota je 30 z. Výpočet a podmínky bonusu dodržujte přesně; samotný příběhový původ mu nepřidává další schopnosti."
+    ],
+    "magic/obecna/svetelko": [
+      "Světélko je malé praktické kouzlo pro temné chodby, večerní čtení a chvíle, kdy družina nechce hledat další pochodeň. Jeho neškodná záře může osvětlit předmět či vybraný bod. Dobře vystihuje kouzelníka, který magii používá i k běžné pomoci a pohodlí, ne jen při nebezpečných střetech.",
+      "Při průzkumu dovolí lépe vidět okolí, ale samo nerozpozná past nebo skrytého protivníka. Sesilatel musí také zvážit, zda světlem neprozradí přítomnost družiny. Lze je kdykoli zhasnout, což je užitečné při změně plánu. Jeho omezený dosah a jediný aktivní zdroj je potřeba respektovat i při osvětlování většího prostoru.",
+      "Přesný účinek: Vytvoří neškodné světlo o dosahu přibližně 5 m. Sesilatel je může zhasnout kdykoli. Cíl: bod nebo předmět na dosah. Trvání: 1 hodina. Omezení: nejvýše 1 aktivní. K použití je potřeba minimálně Chytrost 5, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/obecna/zapaleni": [
+      "Zapálení promění připravenou svíčku, pochodeň nebo suchý troud v malý zdroj ohně. Je to kouzlo cestovní pohotovosti: dobrá příprava materiálu je stejně důležitá jako samotné seslání. V příběhu může ukázat zkušenost hrdiny, který nejprve najde vhodné místo a palivo a teprve potom sáhne po magii.",
+      "Hodí se k rozsvícení připravené pochodně nebo založení malého ohně tam, kde to podmínky dovolují. Není určeno k útoku na tvora a nemůže cílit na nesený předmět. Mokré palivo nepřekoná pouhým přáním sesilatele. Po vzniku běžného ohně je stále důležité zacházet s ním podle prostředí a situace.",
+      "Přesný účinek: Zapálí malý připravený zdroj ohně. Nezpůsobuje zranění a nezapálí mokrý materiál. Cíl: svíčka, pochodeň nebo suchý troud na dohled. Trvání: okamžitě. Omezení: nelze cílit na tvora ani nesený předmět. K použití je potřeba minimálně Chytrost 5, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/obecna/kouzelny-zvuk": [
+      "Kouzelný zvuk vytvoří krátký jednoduchý zvuk v blízkém prostoru. Může připomenout klepnutí, cinknutí nebo jiné prosté znamení a hodí se kouzelníkovi, který pracuje s pozorností okolí. Jeho síla spočívá v nápadu a načasování. Kouzlo nevytváří dlouhé představení ani důvěryhodný rozhovor hlasem konkrétního člověka.",
+      "Družina jej může využít jako krátký signál nebo pokus odvést něčí pozornost, ale reakce posluchače není automaticky daná. Podezřívavý strážce může zvuk vyhodnotit jinak než zvědavé zvíře. Důležité je zvolit bod v dosahu a počítat s krátkým trváním; srozumitelnou řeč konkrétní osoby toto kouzlo nenapodobuje.",
+      "Přesný účinek: Vytvoří jednoduchý zvuk dlouhý nejvýše 6 sekund. Nedokáže napodobit srozumitelnou řeč konkrétní osoby. Cíl: bod do 10 m. Trvání: nejvýše 1 kolo. Omezení: nejvýše 1 aktivní. K použití je potřeba minimálně Chytrost 5, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/obecna/kouzelna-cistota": [
+      "Kouzelná čistota řeší obyčejnou špínu a nepříjemný zápach, které výpravu provázejí stejně věrně jako dobrodružství. Umožní očistit menší předmět nebo plochu, aniž by je poškodila. V příběhu může připravit hrdinu na setkání s důležitým člověkem nebo zpřístupnit povrch, jehož detaily dosud zakrývalo bláto a prach.",
+      "Čistý vzhled ale není potvrzením bezpečnosti. Očistěná nádoba může stále obsahovat jed a poškozený předmět zůstává poškozený. Kouzlo je praktická pomoc při údržbě, nikoli všeobecné léčení či odstraňování kleteb. Při pátrání také stojí za úvahu, zda nečistoty samy nenesou stopu, kterou by předčasné očištění odstranilo.",
+      "Přesný účinek: Odstraní běžnou špínu, bláto, prach nebo zápach, aniž by předmět poškodila. Cíl: předmět nebo plocha do 1 m². Trvání: okamžitě. Omezení: neodstraňuje jed, kletbu ani poškození. K použití je potřeba minimálně Chytrost 5, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
     ]
   }
 }
