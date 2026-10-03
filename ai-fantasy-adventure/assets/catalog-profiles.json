@@ -173,7 +173,11 @@
     "equip/helma-strazce",
     "equip/amulet-svetla",
     "equip/talisman-ducha",
-    "equip/plast-sucha"
+    "equip/plast-sucha",
+    "equip/plast-stinu",
+    "equip/roba-ohne",
+    "equip/kozena-zbroj-poutnika",
+    "equip/rukavice-prilnavosti"
   ],
   "profiles": {
     "best/krysa": [
@@ -1045,6 +1049,26 @@
       "Plášť sucha ocení každý, kdo tráví čas na cestách a nechce po obyčejném dešti hledat suché šaty. Může působit jako praktický dar od zkušeného poutníka, který ví, jak snadno vlhko zkomplikuje výpravu. Jeho kouzlo je pohodlné a konkrétní; není to neomezená ochrana před vodou ani před všemi vlivy počasí.",
       "Chrání majitele a věci schované pod pláštěm před promáčením běžným deštěm. Uložení věcí mimo jeho krytí nelze automaticky považovat za chráněné. Při brodění řeky či ponoření do vody nejde o náhradu jiné potřebné výbavy. Hodí se k dlouhým cestám, ochraně cestovních zásob a příběhům, v nichž mají drobné praktické výhody skutečný význam.",
       "Používá slot „Plášť“ a vychází ze základu „plášť“. Běžný déšť nepromáčí majitele ani věci schované pod pláštěm. Předmět nemá další výslovně uvedený požadavek. Katalogová hodnota je 10 z. Výpočet a podmínky bonusu dodržujte přesně; samotný příběhový původ mu nepřidává další schopnosti."
+    ],
+    "equip/plast-stinu": [
+      "Plášť stínů je určen postavě, která potřebuje výhodu při skrývání. Jeho podoba může být prostá, takže na první pohled připomíná běžný cestovní oděv. V příběhu může pocházet z výbavy průzkumníka nebo ze zakázky pro opatrného posla. Název neznamená úplnou neviditelnost ani právo projít jakoukoli hlídkou bez povšimnutí.",
+      "Pomůže při pokusu ukrýt se, ale výsledek stále závisí na okolnostech a příslušných pravidlech. Je potřeba hledat vhodné místo, přemýšlet o světle a nepřitahovat pozornost nevhodným jednáním. Bonus se nepřenáší na každý obratný úkon nebo všechny útoky. Zajímavou scénou může být útěk, při kterém je nutné skloubit výhodu pláště s dobrým plánem.",
+      "Používá slot „Plášť“ a vychází ze základu „plášť“. Uvedený bonus je +1 O při skrývání. Platí pouze při pokusu ukrýt se. Předmět nemá další výslovně uvedený požadavek. Katalogová hodnota je 16 z. Výpočet a podmínky bonusu dodržujte přesně; samotný příběhový původ mu nepřidává další schopnosti."
+    ],
+    "equip/roba-ohne": [
+      "Róba ohně je oděv zaměřený na sesílání kouzel školy Oheň. V příběhu může nést znaky učitele, kruhu mágů nebo osobní studijní tradice. Její podoba může zdůraznit odhodlání a sílu nositele, ale skutečný účinek není dán barvou látky. Pravidla jí přiznávají posílení magického útoku této konkrétní školy.",
+      "Hodí se postavě, která Oheň skutečně umí sesílat a chce tuto část své výbavy podpořit. Sama nikoho nenaučí nová kouzla a nesplní za něj jejich další požadavky. Název róby také neslibuje odolnost proti ohni. Při volbě výstroje proto rozlišujte posílení vlastních ohnivých kouzel od ochrany před plameny a jinými útoky.",
+      "Používá slot „Tělo“ a vychází ze základu „róba“. Uvedený bonus je +1 MÚ Ohně. Přímé +1 MÚ při sesílání kouzla školy Oheň. Požadavek: Schopnost sesílat Oheň. Katalogová hodnota je 20 z. Výpočet a podmínky bonusu dodržujte přesně; samotný příběhový původ mu nepřidává další schopnosti."
+    ],
+    "equip/kozena-zbroj-poutnika": [
+      "Kožená zbroj poutníka vychází z běžné kožené zbroje a přidává k její ochraně magické posílení. Může být společníkem cestovatele, který si cení pohyblivé výbavy a zůstává často mimo bezpečí měst. Staré opravy a známky cest lze použít jako příběhové detaily, aniž by přepisovaly obrannou hodnotu uvedenou v pravidlech.",
+      "Uplatní se u hrdiny splňujícího silový požadavek. Při výpočtu zachovejte pořadí: nejprve základ kožené zbroje a jeho koeficient, poté dodatečný bonus. Vzhled lehké cestovní výstroje neznamená automatickou ochranu proti počasí, jedu nebo magii. Příběhově může být cennější její známý původ než samotné zdobení, zejména pokud ji kdysi nosil ztracený průvodce.",
+      "Používá slot „Tělo“ a vychází ze základu „kožená zbroj“. Uvedený bonus je +1 FO navíc. Základ kožené zbroje se upraví koeficientem; +1 FO se přičte potom. Požadavek: S4. Katalogová hodnota je 25 z. Výpočet a podmínky bonusu dodržujte přesně; samotný příběhový původ mu nepřidává další schopnosti."
+    ],
+    "equip/rukavice-prilnavosti": [
+      "Rukavice přilnavosti jsou magická pomůcka pro šplhání a mohou být cenné pro průzkumníka, který se pohybuje mezi skálami a vysokými zdmi. V příběhu je může zanechat zkušený lezec nebo mistr, který chtěl usnadnit práci svým učedníkům. Jejich praktický účinek se váže na šplhání, nikoli na každou činnost prováděnou rukama.",
+      "Dává smysl používat je společně s plánem cesty a odpovídajícím jištěním. Bonus k Obratnosti při šplhání není jistota, že postava překoná jakýkoli povrch nebo přežije pád. Nepropůjčují automaticky chůzi po stropě. V napínavé scéně může být jejich výhoda důležitá, ale stále záleží na terénu, obtížnosti a rozhodnutí družiny.",
+      "Používá slot „Ruce“ a vychází ze základu „rukavice“. Uvedený bonus je +1 O při šplhání. Předmět nemá další výslovně uvedený požadavek. Katalogová hodnota je 12 z. Výpočet a podmínky bonusu dodržujte přesně; samotný příběhový původ mu nepřidává další schopnosti."
     ]
   }
 }

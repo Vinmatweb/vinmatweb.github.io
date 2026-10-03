@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 174,
+  "completed": 178,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -114,7 +114,11 @@
     "equip/helma-strazce",
     "equip/amulet-svetla",
     "equip/talisman-ducha",
-    "equip/plast-sucha"
+    "equip/plast-sucha",
+    "equip/plast-stinu",
+    "equip/roba-ohne",
+    "equip/kozena-zbroj-poutnika",
+    "equip/rukavice-prilnavosti"
   ],
-  "latestBatch": 28
+  "latestBatch": 29
 }
