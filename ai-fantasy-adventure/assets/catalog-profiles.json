@@ -101,7 +101,11 @@
     "equip/dyka",
     "equip/bojova-hul",
     "equip/kyj",
-    "equip/kratky-mec"
+    "equip/kratky-mec",
+    "equip/kopi",
+    "equip/rapir",
+    "equip/jednorucni-mec",
+    "equip/palcat"
   ],
   "profiles": {
     "best/krysa": [
@@ -613,6 +617,26 @@
       "Krátký meč je obratnostní zbraň vhodná pro dobrodruha, který hledá přehledný začátek a nechce stavět vše na síle. V Elarii může pocházet z městské dílny, ze zbrojnice nebo být odměnou za první službu. Jeho zdobení může ukazovat vztah majitele k místu či lidem, kteří mu jej svěřili.",
       "Využívá jednu ruku a ponechává možnost používat další vhodnou výstroj. Často dobře zapadá do lehčího vybavení průzkumníka nebo barda, pokud hrdina splňuje požadavky. Menší velikost nepřidává automatický bonus k rychlosti či plížení. V příběhu může být meč předmětem slibu, dokladem služby nebo součástí záhady kolem opuštěné stráže.",
       "Při útoku používá Obratnost (O). Označení 1R znamená použití jedné ruky. Minimum je O5 a katalogový bonus fyzického útoku FÚ je +2. Cena je 1 z. Celkový útok hrdiny se dále vypočítá podle jeho vlastností a platných pravidel; uvedený bonus zbraně není celý výsledný útok."
+    ],
+    "equip/kopi": [
+      "Kopí je silová jednoruční zbraň, kterou mohou v Elarii používat strážci cest, obránci osad i lidé zvyklí na otevřenou krajinu. Dlouhá násada a hrot dávají předmětu výraznou podobu. Různé skupiny mohou kopí značit barvou či znakem, takže nález v terénu může pomoci rozpoznat původ výpravy.",
+      "Katalog výslovně dovoluje použít kopí také jako vrhací zbraň. To nabízí možnost změnit přístup podle situace, ale po odhození není samozřejmě stále v ruce. Samotná délka nevytváří zvláštní útok navíc ani automatické zastavení protivníka. Při volbě je užitečné přemýšlet o prostředí a o tom, jak hrdina získá zbraň po vrhu zpět.",
+      "Při útoku používá Sílu (S). Označení 1R znamená použití jedné ruky. Minimum je S5 a katalogový bonus fyzického útoku FÚ je +2. Cena je 8 s. Celkový útok hrdiny se dále vypočítá podle jeho vlastností a platných pravidel; uvedený bonus zbraně není celý výsledný útok."
+    ],
+    "equip/rapir": [
+      "Rapír je obratnostní alternativa meče pro hrdinu, který se chce opírat o přesný a promyšlený bojový styl. V Elarii může patřit šermíři, městskému ochránci i cestovateli s osobní tradicí. Zdobený jílec může nést znak školy nebo rodiny, ale také prostě připomínat odměnu za dobře splněný úkol.",
+      "Vyšší požadavek na obratnost odpovídá jeho místu mezi účinnějšími zbraněmi. Zabírá jednu ruku, takže se dá vybírat v souvislosti s další výstrojí a rolí postavy. Nemá automatickou schopnost prorazit zbroj či odzbrojit protivníka. Příběh může vycházet z hledání učitele, ztraceného rapíru nebo sporu o to, komu významný předmět opravdu patří.",
+      "Při útoku používá Obratnost (O). Označení 1R znamená použití jedné ruky. Minimum je O6 a katalogový bonus fyzického útoku FÚ je +3. Cena je 2 z 5 s. Celkový útok hrdiny se dále vypočítá podle jeho vlastností a platných pravidel; uvedený bonus zbraně není celý výsledný útok."
+    ],
+    "equip/jednorucni-mec": [
+      "Jednoruční meč je výrazná silová zbraň, kterou v Elarii potkáme u vycvičených bojovníků, strážců i dobrodruhů. Může být běžným výrobkem dobré kovárny nebo předmětem s dlouhou rodovou historií. Znak na jílci a styl opracování mohou poskytnout vodítko k jeho původu, aniž by z obyčejné zbraně dělaly magický artefakt.",
+      "Umožňuje spojit útok s vhodným štítem, pokud postava splňuje požadavky obou předmětů. Pro hrdinu s dostatečnou silou je přehlednou volbou, ale vyšší cena může znamenat omezení jiných zásob. Není automaticky lepší pro každou postavu než obratnostní alternativa. Důležitá je celá výstroj, způsob spolupráce a skutečné hodnoty hrdiny.",
+      "Při útoku používá Sílu (S). Označení 1R znamená použití jedné ruky. Minimum je S6 a katalogový bonus fyzického útoku FÚ je +3. Cena je 3 z. Celkový útok hrdiny se dále vypočítá podle jeho vlastností a platných pravidel; uvedený bonus zbraně není celý výsledný útok."
+    ],
+    "equip/palcat": [
+      "Palcát je jednoruční silová zbraň s pevnou údernou částí. V Elarii může patřit strážci, ochránci svatyně či cestovateli, který dává přednost jednoduchému vzhledu před zdobenou čepelí. Rodový nebo služební znak může proměnit běžný kus vybavení v důležitý osobní předmět, jehož hodnota pro majitele přesahuje uvedenou cenu.",
+      "Patří ke stejnému stupni útoku jako některé meče, proto výběr často vychází ze stylu postavy a dostupnosti. Používá jednu ruku a vyžaduje odpovídající sílu. Katalog mu nepřidává automatický bonus proti kostlivcům nebo zbroji; zvláštní odolnosti protivníka se vyhodnocují samostatně. Nález palcátu se známým znakem může spojit vybavení s minulostí konkrétního řádu.",
+      "Při útoku používá Sílu (S). Označení 1R znamená použití jedné ruky. Minimum je S6 a katalogový bonus fyzického útoku FÚ je +3. Cena je 2 z 5 s. Celkový útok hrdiny se dále vypočítá podle jeho vlastností a platných pravidel; uvedený bonus zbraně není celý výsledný útok."
     ]
   }
 }

@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 102,
+  "completed": 106,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -42,7 +42,11 @@
     "equip/dyka",
     "equip/bojova-hul",
     "equip/kyj",
-    "equip/kratky-mec"
+    "equip/kratky-mec",
+    "equip/kopi",
+    "equip/rapir",
+    "equip/jednorucni-mec",
+    "equip/palcat"
   ],
-  "latestBatch": 10
+  "latestBatch": 11
 }
