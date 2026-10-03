@@ -194,5 +194,18 @@
       "dýka +1": "Dagger +1",
       "bez zbroje": "No armor"
     }
+  },
+  "best/kovar": {
+    "name": "Blacksmith",
+    "profile": [
+      "A blacksmith works in a settlement, a city workshop or near a military camp. Depending on their specialty, they make and repair tools, horseshoes, weapons and pieces of equipment. They need a reliable supply of metal, fuel and commissions, so they are keenly aware of trouble on roads and in mines. Hammer blows, the smell of hot metal and customers bringing items essential to their livelihood identify the smithy.",
+      "They are used to demanding work and practical problem-solving. They may work alone, with family or supervise apprentices and journeymen; in a city, they may follow guild rules. Their strength says nothing about their personality. They could be a patient master, a proud specialist or someone irritated by broken promises. They often value good materials and honest work more than impressive speeches.",
+      "They have no special combat ability, and workshop experience is not the same as warrior training. When threatened, however, they may firmly defend their workshop and loved ones. They can help the party recognize unusual metalwork, trace the origin of equipment or repair a damaged item as the story allows. A stolen commission, a missing apprentice or metal that behaves strangely when worked can open an adventure in which the blacksmith remains a partner rather than an obstacle."
+    ],
+    "strings": {
+      "kladivo +3": "Hammer +3",
+      "kožená +2": "Leather armor +2",
+      "Bez zvláštní schopnosti.": "No special ability."
+    }
   }
 }
