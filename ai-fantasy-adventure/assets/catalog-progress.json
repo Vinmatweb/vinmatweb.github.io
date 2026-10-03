@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 150,
+  "completed": 154,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -90,7 +90,11 @@
     "equip/hak-s-lanem",
     "equip/dalekohled",
     "equip/obvazy",
-    "equip/prazdna-lahvicka"
+    "equip/prazdna-lahvicka",
+    "equip/pergamen",
+    "equip/brk",
+    "equip/inkoust",
+    "equip/mech-s-vinem"
   ],
-  "latestBatch": 22
+  "latestBatch": 23
 }
