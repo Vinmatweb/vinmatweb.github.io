@@ -82,5 +82,19 @@
       "srst +1": "Fur +1",
       "Bez zvláštní schopnosti.": "No special ability."
     }
+  },
+  "best/divoke-prase": {
+    "name": "Wild Boar",
+    "profile": [
+      "A wild boar searches for food in forests, thickets and along the edges of fields. Churned earth, tracks in wet mud and bark rubbed off trees reveal its movements. Females with young stay in groups, while an adult male may roam alone.",
+      "It has an excellent sense of smell, a powerful body and can quickly gather speed. It usually prefers to retreat, but may attack fiercely if surprised at close range or defending its young. Surrounding it is unwise. Its Charge ability strengthens its first attack only if it actually has room for a running start.",
+      "In an adventure, a herd might block a forest path or forage somewhere hunger has driven it to. The heroes can retreat, find another route or discover why the animals have left their usual territory. Freshly churned ground may also uncover a lost object or an old entrance underground."
+    ],
+    "strings": {
+      "Náraz": "Charge",
+      "V prvním kole, pokud může zaútočit po rozběhu, získá +2 k výslednému ÚTOKU.": "During the first round, if it can attack after a running start, gains +2 to its final Attack result.",
+      "kly +3": "Tusks +3",
+      "tuhá kůže +2": "Tough hide +2"
+    }
   }
 }
