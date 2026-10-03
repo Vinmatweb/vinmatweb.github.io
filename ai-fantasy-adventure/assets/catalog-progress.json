@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 230,
+  "completed": 234,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -170,7 +170,11 @@
     "magic/vzduch/teleportace-predmetu",
     "magic/vzduch/let",
     "magic/vzduch/retezovy-blesk",
-    "magic/vzduch/teleportace-osoby"
+    "magic/vzduch/teleportace-osoby",
+    "magic/zeme/kamenicky-dotek",
+    "magic/zeme/pevny-krok",
+    "magic/zeme/zemni-hrot",
+    "magic/zeme/kamenna-kuze"
   ],
-  "latestBatch": 42
+  "latestBatch": 43
 }

@@ -229,7 +229,11 @@
     "magic/vzduch/teleportace-predmetu",
     "magic/vzduch/let",
     "magic/vzduch/retezovy-blesk",
-    "magic/vzduch/teleportace-osoby"
+    "magic/vzduch/teleportace-osoby",
+    "magic/zeme/kamenicky-dotek",
+    "magic/zeme/pevny-krok",
+    "magic/zeme/zemni-hrot",
+    "magic/zeme/kamenna-kuze"
   ],
   "profiles": {
     "best/krysa": [
@@ -1381,6 +1385,26 @@
       "Teleportace osoby umožní okamžitě přesunout sesilatele nebo jednoho ochotného tvora na viditelné bezpečné místo v blízkém dosahu. Může pomoci s únikem, překonáním překážky nebo změnou postavení v souboji. Její význam vychází z rychlé změny místa, ne ze schopnosti cestovat kamkoli na světě bez znalosti cíle.",
       "Cílový prostor musí být prázdný, bezpečný, viditelný a v uvedené vzdálenosti. Kouzlo neprochází do neznámé místnosti ani mezi světy. Pro přesun ochotného tvora je potřebný dosah a jedno použití za souboj. Zajímavou volbou je, koho přesunout právě teď, když celá družina nemusí mít stejnou cestu úniku.",
       "Přesný účinek: Přenese cíl na viditelné bezpečné místo. Neprochází do neznámého prostoru ani mezi světy. Cíl: sesilatel nebo 1 ochotný tvor na dosah. Trvání: okamžitě. Omezení: 1× za souboj; cílové prázdné místo musí být na dohled a do 30 m. K použití je potřeba minimálně Chytrost 11 a Level 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/zeme/kamenicky-dotek": [
+      "Kamenický dotek je drobná práce s nemagickým kamenem, který se vejde do dlaně. Může pomoci vytvořit jednoduchý tvar a dobře vystihuje sesilatele, jenž magii používá jako součást každodenní zručnosti. Není to neomezená kamenická dílna: přesnost a druh výsledku jsou omezené a kouzlo nezvyšuje vzácnost původního materiálu.",
+      "Uplatní se tam, kde postačí jednoduchá podoba, například při drobné přípravě nebo příběhovém daru. Nevytvoří přesný klíč, zbraň ani drahokam. Na stejném předmětu je možná jediná změna, proto dává smysl předem promyslet požadovaný tvar. K náročnějším stavebním zásahům nebo jemné výrobě je potřeba jiný odpovídající postup.",
+      "Přesný účinek: Vytvaruje malý kus nemagického kamene do jednoduchého tvaru. Nevytvoří přesný klíč, zbraň ani drahokam. Cíl: kámen do velikosti dlaně. Trvání: okamžitě. Omezení: 1 změna na předmět. K použití je potřeba minimálně Chytrost 5, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/zeme/pevny-krok": [
+      "Pevný krok podpoří ochotného tvora proti běžnému odstrčení a sražení. Hodí se hrdinovi, který potřebuje udržet místo během krátkého nebezpečného úseku. Jeho význam není v nehybnosti za všech okolností: postava se stále může sama pohybovat a kouzlo nepřidává žádný přímý bonus k fyzické ani magické obraně.",
+      "Před sesláním je důležité zjistit, zda skutečnou hrozbou je právě posunutí či sražení. Silný příběhový účinek může stále vyžadovat zkoušku Síly. Dvě kola a jediné použití za souboj omezují ochranu na konkrétní okamžik. Družina může výhodu využít k udržení postavení, stále ale potřebuje řešit zranění a jiné schopnosti protivníka.",
+      "Přesný účinek: Cíl nelze běžným odstrčením srazit ani posunout. Stále se může sám pohybovat a silný příběhový účinek může vyžadovat zkoušku S. Bonus: nezvyšuje FO ani MO. Cíl: 1 ochotný tvor na dosah. Trvání: 2 kola. Omezení: 1× za souboj. K použití je potřeba minimálně Chytrost 6, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/zeme/zemni-hrot": [
+      "Zemní hrot je přímý útok proti tvoru stojícímu na zemi. Jeho síla je spojená s vhodným povrchem a poskytuje škole Země jasně zaměřený útočný prostředek. Příběhově může zdůraznit vztah sesilatele k půdě a kameni, ale tento motiv nepřekonává výslovné omezení prostředí, ve kterém kouzlo skutečně funguje.",
+      "Před použitím je potřeba ověřit, kde cíl stojí. Kouzlo nefunguje ve vzduchu a nelze je automaticky použít na palubě bez kamene nebo půdy. Útok se vyhodnocuje proti magické obraně, nikoli jako obyčejný úder běžné zbraně. Dodatečné uvěznění, sražení nebo změna okolního terénu nejsou součástí uvedeného účinku.",
+      "Přesný účinek: Přímý zemní útok proti MO cíle. Bonus: +2 k MÚ. Cíl: 1 cíl stojící na zemi a na dohled. Trvání: okamžitě. Omezení: nefunguje ve vzduchu ani na palubě bez kamene či půdy. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/zeme/kamenna-kuze": [
+      "Kamenná kůže poskytne sesilateli nebo viditelnému spojenci krátké zvýšení fyzické obrany. Její název může inspirovat popis ochranného magického povrchu, nedělá však z cíle trvalou kamennou sochu. Hrdina si zachovává své rozhodování a kouzlo mu samo nepřidává nové útočné schopnosti, vyšší Sílu ani obecnou nezranitelnost.",
+      "Dává smysl při očekávaném fyzickém napadení v nejbližších dvou kolech. Je třeba zohlednit další ochranná kouzla, protože účinek se nesčítá. Jediné použití za souboj podporuje volbu vhodné chvíle a cíle. Zvýšená obrana může pomoci udržet postup družiny, ale nezaručuje, že všechny útoky selžou nebo že se vyřeší jiné nebezpečí.",
+      "Přesný účinek: Cíl získá +2 FO proti fyzickým útokům. Bonus: +2 FO. Cíl: sesilatel nebo 1 spojenec na dohled. Trvání: 2 kola. Omezení: 1× za souboj; nesčítá se. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
     ]
   }
 }
