@@ -221,7 +221,11 @@
     "magic/voda/ledova-zed",
     "magic/voda/ledova-boure",
     "magic/vzduch/poryv-vetru",
-    "magic/vzduch/tlumeny-pad"
+    "magic/vzduch/tlumeny-pad",
+    "magic/vzduch/bleskova-strela",
+    "magic/vzduch/vetrny-stit",
+    "magic/vzduch/levitace",
+    "magic/vzduch/blesk"
   ],
   "profiles": {
     "best/krysa": [
@@ -1333,6 +1337,26 @@
       "Tlumený pád je reakce na konkrétní nebezpečí padajícího tvora. Může být důležitým záchranným okamžikem při lezení, průzkumu výšek nebo nečekaném zřícení podlahy. Jeho ochrana je přesně vymezená výškou pádu. Nejde o obecný štít, který by hrdinu chránil před každou další hrozbou během sestupu nebo po přistání.",
       "Sesilatel potřebuje padajícího tvora vidět a mít k dispozici omezené použití za scénu. Kouzlo ruší zranění z pádu do stanovené výšky, ne z libovolného propadu. Padající předmět ani jiný útok tím zastaven není. Při plánované výpravě do výšek tak doplňuje jištění a opatrnost, ale nesmaže všechny možné následky špatného rozhodnutí.",
       "Přesný účinek: Zruší zranění z pádu do 10 m a dovolí bezpečné přistání. Nezastaví jiný útok ani padající předmět. Bonus: nezvyšuje FO ani MO. Cíl: 1 padající tvor na dohled. Trvání: okamžitá reakce. Omezení: 2× za scénu. K použití je potřeba minimálně Chytrost 6, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/vzduch/bleskova-strela": [
+      "Blesková střela je přímý magický útok na jediný viditelný cíl. Její krátký elektrický projev může vystihnout prudké rozhodnutí sesilatele, který chce zasáhnout konkrétního protivníka. Pravidlově jde o jasně zaměřené kouzlo: název neznamená automatický zásah dalších tvorů v okolí nebo neomezenou změnu počasí nad bojištěm.",
+      "Útok se vyhodnocuje proti magické obraně cíle, takže samotné seslání ještě neurčuje množství zranění. Nepřidává nevypsané omráčení, ztrátu tahu nebo řetězení mezi sousedními protivníky. Pro družinu může být spolehlivě vymezenou možností základního útoku této školy, zatímco silnější a plošná kouzla vyžadují jinou volbu situace i dostupných použití.",
+      "Přesný účinek: Přímý bleskový útok proti MO cíle. Bonus: +2 k MÚ. Cíl: 1 cíl na dohled. Trvání: okamžitě. Omezení: —. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/vzduch/vetrny-stit": [
+      "Větrný štít je krátká ochrana proti fyzickým útokům na dálku. Hodí se ve chvíli, kdy protivníci spoléhají na střely a družina potřebuje přesunout nebo ochránit konkrétního člena. Jeho zaměření je úzké: obranný účinek nelze automaticky rozšířit na boj zblízka, kouzla nebo každé nebezpečí přicházející z větší vzdálenosti.",
+      "Sesilatel může zvolit sebe nebo viditelného spojence a musí počítat s krátkým trváním. Jediné použití za souboj a zákaz sčítání podporují promyšlené načasování. Před sesláním je důležité zjistit, čím nepřítel skutečně útočí. Vhodně zvolený štít může pomoci překonat ohrožený úsek, ale nenahrazuje plán proti jiným druhům útoků.",
+      "Přesný účinek: Cíl získá +2 FO proti fyzickým útokům na dálku. Nechrání proti boji zblízka ani kouzlům. Bonus: +2 FO. Cíl: sesilatel nebo 1 spojenec na dohled. Trvání: 2 kola. Omezení: 1× za souboj; pouze proti střelám; nesčítá se. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/vzduch/levitace": [
+      "Levitace zvedne vybraný cíl do malé výšky a dovolí pomalý svislý pohyb. Může usnadnit práci s nákladem nebo krátký přesun ve výšce, ale není totožná s volným létáním. Rozlišuje také předmět, ochotného tvora a protivníka, který se brání; sesilatel nemůže automaticky nadzvednout všechno, na co ukáže.",
+      "Platí omezení hmotnosti, vzdálenosti, výšky a soustředění. Proti neochotnému tvoru je potřeba vyhodnocení vůči magické obraně. Hlavní protivník se nezvedne a místo toho dostane pouze uvedené omezení pohybu. Kouzlo mu neodebere akci. Při plánování je důležité promyslet i to, co se stane po skončení krátkého účinku.",
+      "Přesný účinek: Cíl se zvedne nejvýše 3 m a může se pomalu pohybovat svisle. Neochotný tvor se brání MO. Hlavní protivník se nezvedne a do konce příštího tahu má poloviční pohyb. Bonus: +0 k MÚ proti neochotnému cíli. Cíl: 1 tvor nebo předmět do 100 kg a 10 m. Trvání: soustředění, nejvýše 3 kola. Omezení: 1× za scénu; hlavní protivník neztratí akci. K použití je potřeba minimálně Chytrost 8 a Level 2, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/vzduch/blesk": [
+      "Blesk je silnější útok proti jedinému viditelnému cíli. V příběhu může být rozhodným okamžikem, který ukáže schopnost sesilatele využít moc školy Vzduch. Jeho útočný bonus je vyšší než u základní střely, ale výsledné zranění stále vychází z běžného magického vyhodnocení proti obraně konkrétního protivníka.",
+      "Protože je možné použít jej jen jednou za souboj, má smysl vybrat významný cíl a vhodnou chvíli. Kouzlo není automatický útok na celou skupinu ani zdroj trvalého elektrického pole. Nepřidává nevypsanou paralýzu. Družina může svou strategii postavit na jednom silném zásahu, stále však potřebuje plán pro případ slabšího výsledku.",
+      "Přesný účinek: Silný jednobodový bleskový útok proti MO cíle. Bonus: +4 k MÚ. Cíl: 1 cíl na dohled. Trvání: okamžitě. Omezení: 1× za souboj. K použití je potřeba minimálně Chytrost 9 a Level 2, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
     ]
   }
 }

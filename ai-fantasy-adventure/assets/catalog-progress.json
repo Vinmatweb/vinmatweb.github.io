@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 222,
+  "completed": 226,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -162,7 +162,11 @@
     "magic/voda/ledova-zed",
     "magic/voda/ledova-boure",
     "magic/vzduch/poryv-vetru",
-    "magic/vzduch/tlumeny-pad"
+    "magic/vzduch/tlumeny-pad",
+    "magic/vzduch/bleskova-strela",
+    "magic/vzduch/vetrny-stit",
+    "magic/vzduch/levitace",
+    "magic/vzduch/blesk"
   ],
-  "latestBatch": 40
+  "latestBatch": 41
 }
