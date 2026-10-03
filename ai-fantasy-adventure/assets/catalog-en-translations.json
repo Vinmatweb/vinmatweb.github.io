@@ -353,5 +353,19 @@
       "1 + 2 strážci": "1 + 2 guards",
       "Magická": "Magic"
     }
+  },
+  "best/lecitel": {
+    "name": "Healer",
+    "profile": [
+      "A healer helps people after injuries, during illness and on demanding journeys. They may care for a village, work in a temple or army, or accompany adventurers. Their knowledge comes from study, tradition or practical service to an experienced teacher. They need supplies and a safe place to work, so shortages of remedies or violence nearby also affect those who need their help most.",
+      "They often have strong community ties and know the stories of the people who come to them. They may work alone, with assistants or under an order's rules. Caring for others, faith, obligation or an ordinary livelihood can motivate them. A willingness to help does not mean unlimited strength or an obligation to trust everyone. A healer may refuse a journey that would leave an entire settlement without care.",
+      "Healing lets them restore four Health to themselves or an ally instead of attacking once per combat. In battle, they therefore seek safety and access to whoever needs help; taking them out of action can change the whole group's prospects. The party can protect them, obtain missing supplies or help uncover the cause of recurring injuries. An interesting conflict arises when a healer treats both sides of a dispute and someone tries to exploit their neutrality."
+    ],
+    "strings": {
+      "Léčení": "Healing",
+      "1× za souboj obnoví sobě nebo spojenci 4 Ž místo útoku.": "Once per combat, restores 4 HP to themself or an ally instead of attacking.",
+      "bojová hůl +1": "Quarterstaff +1",
+      "prošívaná +1": "Quilted armor +1"
+    }
   }
 }
