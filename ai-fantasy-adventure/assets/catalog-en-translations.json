@@ -367,5 +367,19 @@
       "bojová hůl +1": "Quarterstaff +1",
       "prošívaná +1": "Quilted armor +1"
     }
+  },
+  "best/slechtic": {
+    "name": "Noble",
+    "profile": [
+      "A noble gained their position through inheritance, service or a ruler's decision. They may administer an estate, reside at court or represent their family in negotiations. Their residence and wealth depend on their holdings and actual resources. Even an impressive title may conceal a debt-ridden estate, hostile neighbors or a family that has already lost most of its influence.",
+      "They belong to a network of family relationships, obligations and social expectations. Subjects, stewards and allies may support their decisions, but also constrain them. They seek the safety of their estate, prestige or continuity of their family; an individual may instead prioritize justice, personal interests or revenge. They can be courteous or threatening according to their personality and circumstances. A seemingly small insult may matter if it undermines their authority in front of others.",
+      "Authority provides a bonus in a social encounter only where the noble has genuine social authority. A title is therefore not a universal means of controlling strangers. The party can offer a service, establish a right or expose a discrepancy between public reputation and reality. A boundary dispute, a missing heir or a problem concealed by a steward provide opportunities for adventure. A noble can be a quest giver, an obstacle or an ally whose power has clear limits."
+    ],
+    "strings": {
+      "Autorita": "Authority",
+      "Při sociálním střetu, kde má skutečnou společenskou pravomoc, získá +2 k výsledku Charismatu.": "In a social encounter where the noble has genuine social authority, gains +2 to the Charisma result.",
+      "dýka +1": "Dagger +1",
+      "prošívaná +1": "Quilted armor +1"
+    }
   }
 }
