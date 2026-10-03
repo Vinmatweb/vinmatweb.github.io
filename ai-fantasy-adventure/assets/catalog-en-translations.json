@@ -69,5 +69,18 @@
       "drápy +1": "Claws +1",
       "srst +1": "Fur +1"
     }
+  },
+  "best/toulavy-pes": {
+    "name": "Stray Dog",
+    "profile": [
+      "A stray dog is often a lost or abandoned human companion. It wanders around villages, markets and roads in search of food, water and a dry place to rest. Some dogs live alone, while others join a small group to seek safety together.",
+      "It can recognize moods, familiar smells and simple human behavior. Hunger or bad experiences may make it distrustful, but not every stray dog is aggressive. Its barking may warn of danger, guard a shelter it has found or draw attention to something the party has not yet noticed. It has no special combat ability.",
+      "An encounter may begin a search for its owner or an effort to help an entire village. The dog might guard a lost backpack, return to an empty house or follow the trail of someone it knows. The heroes should respect its distance and earn its trust gradually, without trying to grab it by force."
+    ],
+    "strings": {
+      "kousnutí +1": "Bite +1",
+      "srst +1": "Fur +1",
+      "Bez zvláštní schopnosti.": "No special ability."
+    }
   }
 }
