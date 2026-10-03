@@ -27,5 +27,19 @@
       "tesáky +2": "Fangs +2",
       "srst +1": "Fur +1"
     }
+  },
+  "best/krysa": {
+    "name": "Rat",
+    "profile": [
+      "Rats stay wherever they can find food, warmth and shelter: in cellars, granaries, stables and underground passages. Tiny tracks, gnawed sacks and rustling behind a wall reveal their presence. They often share hiding places and remember safe routes to supplies.",
+      "They are cautious and quick, usually trying to hide from a larger opponent. They may bite when cornered or protecting a nest; a large cluster of rats can block a narrow passage for the party. Agility is their strength, while their small size limits their physical strength. In the game, Slip Away helps them avoid a subsequent physical hit.",
+      "An encounter need not end in combat. The party can secure its supplies, find a hole in the wall or lure the rats away from the route. If unusually large numbers gather in one place, they may point to hidden food or a forgotten passage."
+    ],
+    "strings": {
+      "Proklouznutí": "Slip Away",
+      "1× za souboj po obdržení zranění získá +2 OBRANA proti následujícímu fyzickému útoku.": "Once per combat, after taking damage, gains +2 Defense against the next physical attack.",
+      "kousnutí +0": "Bite +0",
+      "bez ochrany": "No protection"
+    }
   }
 }
