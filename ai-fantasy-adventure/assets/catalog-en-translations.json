@@ -96,5 +96,19 @@
       "kly +3": "Tusks +3",
       "tuhá kůže +2": "Tough hide +2"
     }
+  },
+  "best/jedovaty-had": {
+    "name": "Venomous Snake",
+    "profile": [
+      "A venomous snake hides under stones, among roots, in tall grass or in warm cracks in the rock. This bestiary entry represents a game creature with a venomous bite, rather than every snake in the real world. It usually lives alone, seeking prey and a safe shelter.",
+      "It is inconspicuous and can wait motionless for a long time. It generally does not attack a larger creature as prey; danger mainly arises when it is startled or cornered. The party should watch where it steps and reaches. Its game venom only takes effect after a bite that causes damage, and the subsequent effect is specified precisely in its ability.",
+      "A snake may guard a location simply because it has chosen to shelter there. Taking another route or leaving it room is often wiser than fighting. In a story, shed skin and small tracks might lead to a warm spring or a room that has remained unopened for years."
+    ],
+    "strings": {
+      "Jed": "Venom",
+      "Pokud uštknutí způsobí alespoň 1 zranění, cíl ztratí ještě 1 Ž na konci následujících 2 kol; účinek se nesčítá.": "If a bite deals at least 1 damage, the target loses 1 additional HP at the end of each of the next 2 rounds; this effect does not stack.",
+      "uštknutí +1": "Bite +1",
+      "šupiny +1": "Scales +1"
+    }
   }
 }
