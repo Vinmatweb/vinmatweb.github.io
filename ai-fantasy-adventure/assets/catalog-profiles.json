@@ -141,7 +141,11 @@
     "equip/lezecka-souprava",
     "equip/lopatka",
     "equip/kompas",
-    "equip/mapa-oblasti"
+    "equip/mapa-oblasti",
+    "equip/lecitelska-brasna",
+    "equip/prevlekova-souprava",
+    "equip/toulec",
+    "equip/mesec"
   ],
   "profiles": {
     "best/krysa": [
@@ -853,6 +857,26 @@
       "Mapa oblasti zachycuje určité území a může mít v Elarii cenu díky znalostem člověka, který ji vytvořil. Může být přesná, stará, doplněná poznámkami nebo předávaná mezi průvodci. Známé symboly, prázdné místo a rozdílné názvy mohou upozornit na proměnu krajiny i minulost zobrazené oblasti.",
       "Bonus k orientaci platí v oblasti, kterou mapa skutečně zobrazuje. Předmět neodhaluje automaticky události, které nastaly po jejím vytvoření, ani pohyb skrytých protivníků. Družina může porovnávat mapu s terénem, doplňovat vlastní zjištění a hledat autora. Spor o neoznačený průchod či chybějící osadu nabízí přirozený začátek dalšího dobrodružství.",
       "Pravidlový účinek: +2 CH k orientaci v zobrazené oblasti. Cena je 1 z. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/lecitelska-brasna": [
+      "Léčitelská brašna představuje běžné odborné vybavení postavy, která pomáhá při ošetřování zranění. V Elarii ji může připravit učitel, místní léčitel nebo zkušená cestovní skupina. Podoba a obsah mohou vyjadřovat tradici či vztah k domovu, aniž by měnily konkrétní bonus uvedený v katalogu.",
+      "Pomáhá při běžném testu ošetření, nepředstavuje však sama léčivé kouzlo a automaticky neobnovuje životy. Je potřeba určit, komu postava pomáhá a jaká je skutečná situace. Brašna může být předmětem dobrodružství, pokud chybí v odříznuté osadě, patří zmizelému léčiteli nebo je třeba bezpečně doručit zásobu pomocníkům.",
+      "Pravidlový účinek: +2 CH k běžnému testu ošetření zranění. Cena je 2 z. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/prevlekova-souprava": [
+      "Převleková souprava umožňuje postavě upravit vzhled a přiblížit se určité roli. V Elarii může patřit herci, zvědovi nebo někomu, kdo potřebuje projít bez zbytečné pozornosti. Oblečení a doplňky mohou připomínat místní řemeslo, službu či tradici. Předmět tak podporuje nápaditost a přípravu konkrétního plánu.",
+      "Bonus se uplatní při testu vydávání se za jinou osobu nebo roli. Souprava nezaručí znalost cizí minulosti, hlasu ani hesla a nevytvoří magickou proměnu těla. Úspěch vychází také z toho, zda převlek dává smysl v prostředí. Družina může místo klamání použít převlek pro vystoupení, doručení zprávy nebo bezpečné ověření podezřelé situace.",
+      "Pravidlový účinek: +2 CHA k testu vydávání se za jinou osobu či roli. Cena je 2 z. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/toulec": [
+      "Toulec usnadňuje pohodlné nošení šípů nebo šipek a patří k přehledné střelecké výstroji. V Elarii může mít znak skupiny, osobní zdobení nebo jednoduchou praktickou podobu. Ztracený kus může pomoci rozpoznat průzkumníka či hlídku, která prošla místem před družinou a nechala část výbavy za sebou.",
+      "Hráči díky němu nemusejí jednotlivě počítat běžnou munici, jak uvádí katalog. Nepřidává však bonus k útoku, přesnosti ani počet útoků za tah. Hodí se pro postavu, která používá odpovídající střelnou zbraň a chce mít výstroj jasně popsanou. Příběhový nedostatek zásob se řeší podle konkrétních okolností, ne automatickým skrytým odečítáním každé střely.",
+      "Pravidlový účinek: Pohodlné nošení šípů nebo šipek; munice se jednotlivě nepočítá. Cena je 3 s. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/mesec": [
+      "Měšec je jednoduché místo pro mince a drobné osobní věci. V Elarii může být obyčejným nákupem, domácím výrobkem nebo památkou na člověka, který hrdinovi pomohl před první cestou. Značka na zapínání či neobvyklý obsah mohou vytvořit malé vodítko, jehož význam se ukáže až později.",
+      "Pomáhá mít drobnosti přehledně uložené, ale nevytváří automaticky nekonečný prostor ani ochranu před ztrátou. Nález měšce nabízí scénu založenou na rozhodnutí, komu patří a zda ho vrátit. Samotný předmět nezlepšuje smlouvání ani štěstí. Důležitá může být spíš zpráva, neznámá mince nebo osobní památka, kterou uvnitř družina objeví.",
+      "Pravidlový účinek: Nošení mincí a drobností. Cena je 1 s. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
     ]
   }
 }
