@@ -137,7 +137,11 @@
     "equip/cestovni-jidlo",
     "equip/krida",
     "equip/paklice",
-    "equip/pacidlo"
+    "equip/pacidlo",
+    "equip/lezecka-souprava",
+    "equip/lopatka",
+    "equip/kompas",
+    "equip/mapa-oblasti"
   ],
   "profiles": {
     "best/krysa": [
@@ -829,6 +833,26 @@
       "Páčidlo je praktický nástroj pro situace, kde lze využít sílu a vhodnou oporu. V Elarii patří do dílen, zásob vozů i výstroje průzkumníků ruin. Může být prostým pracovním předmětem nebo nosit značku skupiny, která ho pravidelně používá. Jeho význam roste tam, kde nestačí jen zatlačit rukou.",
       "Při páčení dveří, beden či podobné překážky zlepšuje odpovídající silový test. Je však potřeba určit, kde a jak bude použito; zcela nevhodnou překážku automaticky nevyřeší. Pracovní účinek z něj nedělá bojovou zbraň s nevyjmenovaným bonusem. Družina může zvažovat také následky otevření a to, zda za dveřmi někoho neohrozí.",
       "Pravidlový účinek: +2 S při páčení dveří, beden apod. Cena je 8 s. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/lezecka-souprava": [
+      "Lezecká souprava je specializovaná výbava pro výpravy, které potřebují bezpečně překonávat výšku a náročné přístupy. V Elarii může pocházet od horského průvodce, řemeslníka nebo z výstroje minulé expedice. Značka a opravy mohou ukazovat, kdo ji používal a kde se nachází člověk, který se z cesty nevrátil.",
+      "Bonus k obratnosti se uplatní při lezení, pokud soupravu lze použít. Hrdinové musí stále zvolit místo, postup a způsob spolupráce. Předmět nezaručuje automatický úspěch ani bezpečný přístup tam, kde chybí vhodné podmínky. Výprava může začít sháněním soupravy, domluvou s průvodcem nebo nalezením známého kusu pod obtížnou stěnou.",
+      "Pravidlový účinek: +2 O k testu lezení, pokud ji lze použít. Cena je 2 z. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/lopatka": [
+      "Lopatka je běžný pracovní nástroj, který může v Elarii doprovázet cestovatele, průzkumníka i člověka pomáhajícího osadě. Je vhodná do situací, kde je potřeba pracovat se zeminou nebo odstranit menší vrstvu materiálu. Opotřebení a značení mohou prozradit, k čemu ji předchozí majitel pravidelně používal.",
+      "Přidává bonus k silovému testu kopání nebo odstraňování zeminy. Neotevře automaticky kamennou stěnu a sama neprozradí, kde je něco ukryté. Družina musí nejprve vybrat smysluplné místo a cíl práce. Lopatka může pomoci při úpravě tábora, odkrývání zapadaného vstupu nebo hledání předmětu, jehož polohu určují jiná vodítka.",
+      "Pravidlový účinek: +2 S při kopání nebo odstraňování zeminy. Cena je 5 s. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/kompas": [
+      "Kompas pomáhá s orientací v krajině a může být pro cestovatele v Elarii osobním předmětem spojeným s první samostatnou výpravou. Může pocházet z přístavní dílny, rodinné sbírky nebo od zkušeného průvodce. Pouzdro a vyrytý nápis mohou vyprávět, komu bylo jeho bezpečné putování kdysi důležité.",
+      "Podporuje test chytrosti při orientaci, ale neukazuje automaticky polohu hledané osoby ani bezpečnou cestu kolem každé překážky. Má smysl spojovat jeho použití s pozorováním terénu a dalšími informacemi. Ztracený kompas může otevřít úkol se záchranou výpravy. Podivné chování konkrétního kusu může být příběhovým vodítkem, nikoli běžnou vlastností všech kompasů.",
+      "Pravidlový účinek: +2 CH k orientaci v krajině. Cena je 2 z. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
+    ],
+    "equip/mapa-oblasti": [
+      "Mapa oblasti zachycuje určité území a může mít v Elarii cenu díky znalostem člověka, který ji vytvořil. Může být přesná, stará, doplněná poznámkami nebo předávaná mezi průvodci. Známé symboly, prázdné místo a rozdílné názvy mohou upozornit na proměnu krajiny i minulost zobrazené oblasti.",
+      "Bonus k orientaci platí v oblasti, kterou mapa skutečně zobrazuje. Předmět neodhaluje automaticky události, které nastaly po jejím vytvoření, ani pohyb skrytých protivníků. Družina může porovnávat mapu s terénem, doplňovat vlastní zjištění a hledat autora. Spor o neoznačený průchod či chybějící osadu nabízí přirozený začátek dalšího dobrodružství.",
+      "Pravidlový účinek: +2 CH k orientaci v zobrazené oblasti. Cena je 1 z. Předmět je opakovaně použitelný, nikoli jednorázová zásoba. Uvedený účinek platí v situaci, pro kterou je určen. Další bonusy, jiný druh ochrany nebo nové magické schopnosti nejsou součástí tohoto řádku."
     ]
   }
 }

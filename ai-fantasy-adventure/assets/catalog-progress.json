@@ -1,6 +1,6 @@
 {
   "target": 300,
-  "completed": 138,
+  "completed": 142,
   "completedBestiary": 62,
   "updatedCatalog": [
     "hero/clovek-bojovnik",
@@ -78,7 +78,11 @@
     "equip/cestovni-jidlo",
     "equip/krida",
     "equip/paklice",
-    "equip/pacidlo"
+    "equip/pacidlo",
+    "equip/lezecka-souprava",
+    "equip/lopatka",
+    "equip/kompas",
+    "equip/mapa-oblasti"
   ],
-  "latestBatch": 19
+  "latestBatch": 20
 }
