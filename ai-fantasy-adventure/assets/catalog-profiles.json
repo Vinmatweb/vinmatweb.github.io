@@ -233,7 +233,11 @@
     "magic/zeme/kamenicky-dotek",
     "magic/zeme/pevny-krok",
     "magic/zeme/zemni-hrot",
-    "magic/zeme/kamenna-kuze"
+    "magic/zeme/kamenna-kuze",
+    "magic/zeme/tvarovani-kamene",
+    "magic/zeme/kamenna-pouta",
+    "magic/zeme/kamenne-kopi",
+    "magic/zeme/kamenna-zed"
   ],
   "profiles": {
     "best/krysa": [
@@ -1405,6 +1409,26 @@
       "Kamenná kůže poskytne sesilateli nebo viditelnému spojenci krátké zvýšení fyzické obrany. Její název může inspirovat popis ochranného magického povrchu, nedělá však z cíle trvalou kamennou sochu. Hrdina si zachovává své rozhodování a kouzlo mu samo nepřidává nové útočné schopnosti, vyšší Sílu ani obecnou nezranitelnost.",
       "Dává smysl při očekávaném fyzickém napadení v nejbližších dvou kolech. Je třeba zohlednit další ochranná kouzla, protože účinek se nesčítá. Jediné použití za souboj podporuje volbu vhodné chvíle a cíle. Zvýšená obrana může pomoci udržet postup družiny, ale nezaručuje, že všechny útoky selžou nebo že se vyřeší jiné nebezpečí.",
       "Přesný účinek: Cíl získá +2 FO proti fyzickým útokům. Bonus: +2 FO. Cíl: sesilatel nebo 1 spojenec na dohled. Trvání: 2 kola. Omezení: 1× za souboj; nesčítá se. K použití je potřeba minimálně Chytrost 7, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/zeme/tvarovani-kamene": [
+      "Tvarování kamene je praktické kouzlo pro jednoduchou úpravu souvislého nemagického kamene. Může vytvořit otvor, schod, žlábek nebo oporu a nabídnout novou cestu k řešení překážky. Jeho rozměrový limit je skutečnou součástí použití. Nelze z něj odvozovat libovolnou přestavbu hory nebo okamžité zmizení celé pevnosti.",
+      "Družina by měla před sesláním promyslet, co chce úpravou získat a jakou roli má kámen v okolní stavbě. Zásah do nosné konstrukce není bez následků. Kouzlo tak podporuje opatrné plánování stejně jako nápaditost. Při průzkumu ruin může být důležité nejprve pochopit prostředí, místo bezmyšlenkovitého vytvoření otvoru v každé překážce.",
+      "Přesný účinek: Vytvoří jednoduchý otvor, schod, žlábek nebo oporu. Nezboří nosnou stavbu bez příběhového následku. Cíl: souvislý nemagický kámen do 1 m³. Trvání: 10 minut. Omezení: 1× za scénu. K použití je potřeba minimálně Chytrost 8 a Level 2, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/zeme/kamenna-pouta": [
+      "Kamenná pouta omezí přesun cíle stojícího na kameni či půdě. Pro běžného protivníka mohou při úspěchu vytvořit krátký okamžik, kdy se nedokáže přemístit. Stále však může jednat na dosah. Kouzlo tím vytváří taktickou možnost, nikoli úplné vypnutí nepřítele nebo automatickou jistotu, že družině nemůže ublížit.",
+      "Je nutné respektovat povrch, krátké trvání a omezení na stejný cíl za souboj. Hlavní protivník dostane místo zastavení přesunu pouze postih k příštímu pohybovému testu. Družina potřebuje plán, jak změnu využít, například ke změně vzdálenosti. Bezprostřední útoky nebo jiné jednání cíle přitom mohou zůstat nebezpečné.",
+      "Přesný účinek: Při úspěchu se běžný cíl nemůže přesunout, ale může jednat na dosah. Hlavní protivník má pouze −2 k příštímu pohybovému testu. Bonus: +1 k MÚ. Cíl: 1 cíl stojící na kameni či půdě. Trvání: 1 kolo. Omezení: 1× na stejný cíl za souboj; platí pravidlo hlavního protivníka. K použití je potřeba minimálně Chytrost 8 a Level 2, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/zeme/kamenne-kopi": [
+      "Kamenné kopí je silnější zemní útok soustředěný na jediný viditelný cíl. Může představovat důležitý okamžik souboje, kdy sesilatel sáhne po výraznější moci své školy. Jeho podoba připomínající kopí není samostatnou běžnou zbraní pro následné použití a název sám nepřidává průraz proti všem druhům ochrany.",
+      "Použití jednou za souboj je důvodem pečlivě vybírat cíl. Útok se vyhodnotí proti magické obraně a výsledné zranění není automaticky stejné při každém seslání. Kouzlo nemá uvedený plošný zásah ani trvalé uvěznění protivníka. V plánování družiny se může uplatnit jako jedna silnější možnost, která potřebuje navazující postup ostatních.",
+      "Přesný účinek: Silný jednobodový zemní útok proti MO cíle. Bonus: +4 k MÚ. Cíl: 1 cíl na dohled. Trvání: okamžitě. Omezení: 1× za souboj. K použití je potřeba minimálně Chytrost 9 a Level 3, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
+    ],
+    "magic/zeme/kamenna-zed": [
+      "Kamenná zeď vytvoří krátkou překážku na zemi, která blokuje pohyb a výhled. Může rozdělit prostor, podpořit ústup nebo na několik kol změnit dostupné cesty. Překážka má vlastní Životy a fyzickou obranu, takže není nezničitelná. Její hodnoty také nejsou obranným bonusem, který by automaticky dostali hrdinové stojící vedle ní.",
+      "Vzniká ve volné linii omezené délky a vyžaduje vhodné umístění na zemi. Sesilatel by měl zvážit, zda neuzavírá cestu také své družině. Po skončení se bezpečně rozpadne, proto neposkytuje trvalou stavbu ani další útok z padajících trosek. Při boji je důležitá její krátkodobá role a možnost protivníka překážku poškodit.",
+      "Přesný účinek: Vytvoří překážku s 12 Ž a FO 13, která blokuje pohyb a výhled. Po skončení se bezpečně rozpadne. Bonus: nezvyšuje FO ani MO; zeď má FO 13. Cíl: volná linie do 4 m na zemi. Trvání: 3 kola. Omezení: 1× za souboj. K použití je potřeba minimálně Chytrost 9 a Level 3, dále příslušná schopnost sesílat a znalost tohoto kouzla. Splnění číselných požadavků samo nepřidává znalost kouzla."
     ]
   }
 }
