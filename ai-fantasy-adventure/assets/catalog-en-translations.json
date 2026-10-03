@@ -285,5 +285,19 @@
       "kroužková +3": "Chainmail +3",
       "Bez zvláštní schopnosti.": "No special ability."
     }
+  },
+  "best/vojak": {
+    "name": "Soldier",
+    "profile": [
+      "A soldier serves in an organized army, a city guard or a border fortress garrison. They have learned to handle equipment, guard an assigned location and carry out tasks alongside others. An ordinary day includes training, shifts, marches and equipment maintenance. They may know their city better than a visitor while knowing very little about why their commander accepted a particular order.",
+      "They belong to a unit with a clear chain of command. Their commander, oath and relationships with fellow soldiers influence their decisions without removing their own conscience. They may have chosen service for pay, family tradition or to protect their home. They are not automatically aggressive: at a checkpoint, their aim may be to control passage and maintain order. A tired recruit and a veteran will judge the same situation differently.",
+      "They have no special ability; their strength lies in training and cooperation. In a conflict, they may call for help, hold their assigned position or detain a suspect. The party can present evidence, establish what an order actually says and approach the responsible commander. A soldier may witness abuse of power, act on incorrect information or be an ally needing help beyond their garrison's reach. A uniform defines their service, not their entire personality."
+    ],
+    "strings": {
+      "kopí +2": "Spear +2",
+      "kroužková +3": "Chainmail +3",
+      "malý +1": "Small shield +1",
+      "Bez zvláštní schopnosti.": "No special ability."
+    }
   }
 }
