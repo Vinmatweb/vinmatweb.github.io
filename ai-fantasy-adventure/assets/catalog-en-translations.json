@@ -381,5 +381,20 @@
       "dýka +1": "Dagger +1",
       "prošívaná +1": "Quilted armor +1"
     }
+  },
+  "best/kral-kralovna": {
+    "name": "King / Queen",
+    "profile": [
+      "A king or queen leads a country, but history, laws and the throne's actual support shape their rule. The monarch may reside in a palace, lead a campaign or administer the kingdom from a temporary court. This profile represents a ruler as a person in a significant role; an entire realm's strength cannot be expressed through their personal combat values alone.",
+      "They govern through advisers, officials, commanders and local administrators. Information reaches them through people with their own interests, so they may not know the true state of a distant province. Their goal may be peace, prosperity, preserving the dynasty or expanding their power. Good intentions do not guarantee good decisions, and a harsh decision does not necessarily arise from cruelty. Their relationship with their subjects and willingness to accept uncomfortable truths shape their character.",
+      "Royal Authority improves dealings with subjects, but its bonus does not apply in combat. The monarch usually relies on the court's protection and organization rather than personally dueling every opponent. The party can deliver evidence, receive a commission or expose who is distorting information before it reaches the throne. An audience is interesting when both sides have a specific need and face time pressure. Saving the monarch may not be enough if the source of the threat remains in their inner circle."
+    ],
+    "strings": {
+      "Královská autorita": "Royal Authority",
+      "Při jednání s poddanými získá +2 k výsledku Charismatu; v boji nemá tento bonus.": "When dealing with their subjects, gains +2 to the Charisma result; this bonus does not apply in combat.",
+      "jednoruční meč +3": "One-handed sword +3",
+      "kroužková +3": "Chainmail +3",
+      "malý +1": "Small shield +1"
+    }
   }
 }
