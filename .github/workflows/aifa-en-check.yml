@@ -1,0 +1,25 @@
+name: Validate AIFA English page
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/aifa-en/ci-input.json'
+      - '.github/workflows/aifa-en-check.yml'
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: tools/aifa-en
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install validation dependencies
+        run: |
+          python3 -m venv .venv
+          .venv/bin/python -m pip install beautifulsoup4 qrcode pillow opencv-python-headless numpy
+          npm install --no-save @napi-rs/canvas pdf-lib
+      - name: Build and validate the complete page and card
+        run: .venv/bin/python ci-run.py
