@@ -1,7 +1,7 @@
 name: Validate AIFA English page
 on:
   push:
-    branches: [main]
+    branches: [aifa-en-validation]
     paths:
       - 'tools/aifa-en/ci-input.json'
       - '.github/workflows/aifa-en-check.yml'
