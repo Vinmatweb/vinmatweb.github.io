@@ -1,7 +1,8 @@
 {
   "target": 4,
   "completed": [
-    "manual"
+    "manual",
+    "bestiary"
   ],
   "files": {
     "manual": {
@@ -15,6 +16,30 @@
         "renderedPages": 16,
         "numericValues": "match CS",
         "untranslatedVisibleText": 0
+      }
+    },
+    "bestiary": {
+      "path": "ai-fantasy-adventure/downloads/en/AI_Fantasy_Adventure_Bestiary_v1_0_EN.xlsx",
+      "sha256": "7541ccd1eb2393a6409a7c58e8e0967536cdee390dcbbf7e2b62c5898509d39f",
+      "source": "713a40a59f32f3d0a3dc8428cda1b32d6da90aea",
+      "checks": {
+        "sheets": [
+          "Overview",
+          "Bestiary",
+          "Groups",
+          "Defensive Specialisations",
+          "Bosses",
+          "XP",
+          "Rules and Compatibility"
+        ],
+        "creatures": 62,
+        "bosses": 9,
+        "translatedCells": 1188,
+        "numericCells": 789,
+        "formulas": 372,
+        "numericValues": "match CS",
+        "untranslatedVisibleText": 0,
+        "sha256": "7541ccd1eb2393a6409a7c58e8e0967536cdee390dcbbf7e2b62c5898509d39f"
       }
     }
   },
