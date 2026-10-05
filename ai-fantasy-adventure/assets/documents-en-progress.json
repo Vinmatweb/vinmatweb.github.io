@@ -3,7 +3,8 @@
   "completed": [
     "manual",
     "bestiary",
-    "magic"
+    "magic",
+    "equipment"
   ],
   "files": {
     "manual": {
@@ -56,6 +57,21 @@
         "untranslatedVisibleText": 0,
         "sha256": "3696430363d3725cd771fb56b6035ecd9705ee9879d5bfdcff634ea20358ec8b",
         "spells": 110
+      }
+    },
+    "equipment": {
+      "path": "ai-fantasy-adventure/downloads/en/AI_Fantasy_Adventure_Equipment_Catalogue_v1_0_EN.docx",
+      "sha256": "40dfd04b41f1fc4a68596179bebbf1dfb7c34fd7cc152cf38d2205c13df7abe0",
+      "source": "95a45d33bbe891ac9fcbad173d6d6101104ba3d0",
+      "checks": {
+        "paragraphs": 78,
+        "tables": 11,
+        "translatedEntries": 693,
+        "renderedPages": 8,
+        "numericValues": "match CS",
+        "untranslatedVisibleText": 0,
+        "sha256": "40dfd04b41f1fc4a68596179bebbf1dfb7c34fd7cc152cf38d2205c13df7abe0",
+        "items": 92
       }
     }
   },
