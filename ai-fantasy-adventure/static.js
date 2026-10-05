@@ -157,6 +157,7 @@
     path = cleanPath(path.replace(/^\/ai-fantasy-adventure(?=\/|$)/, ''));
     if (path === '/en') return '/';
     if (path === '/en/support') return '/support';
+    if (path === '/en/start') return '/start';
     if (path === '/en/explorer/adventures') return '/explorer/dobrodruzstvi';
     if (path === '/en/explorer/more-information') return '/explorer/dalsi-informace';
     if (path === '/en/explorer') {
@@ -201,7 +202,7 @@
     path = cleanPath(path.replace(/^\/ai-fantasy-adventure(?=\/|$)/, ''));
     if (path === '/') return '/en';
     if (path === '/support') return '/en/support';
-    if (path === '/start') return '/en#play';
+    if (path === '/start') return '/en/start';
     if (path === '/explorer/dobrodruzstvi') return '/en/explorer/adventures';
     if (path === '/explorer/dalsi-informace') return '/en/explorer/more-information';
     if (path === '/explorer') return '/en/explorer';
