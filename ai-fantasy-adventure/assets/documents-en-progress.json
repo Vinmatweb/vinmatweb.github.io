@@ -2,7 +2,8 @@
   "target": 4,
   "completed": [
     "manual",
-    "bestiary"
+    "bestiary",
+    "magic"
   ],
   "files": {
     "manual": {
@@ -40,6 +41,21 @@
         "numericValues": "match CS",
         "untranslatedVisibleText": 0,
         "sha256": "7541ccd1eb2393a6409a7c58e8e0967536cdee390dcbbf7e2b62c5898509d39f"
+      }
+    },
+    "magic": {
+      "path": "ai-fantasy-adventure/downloads/en/AI_Fantasy_Adventure_Magic_and_Spell_Catalogue_v1_0_EN.docx",
+      "sha256": "3696430363d3725cd771fb56b6035ecd9705ee9879d5bfdcff634ea20358ec8b",
+      "source": "6abe9029a736b7de6bf03366b291443937605446",
+      "checks": {
+        "paragraphs": 148,
+        "tables": 37,
+        "translatedEntries": 1500,
+        "renderedPages": 24,
+        "numericValues": "match CS",
+        "untranslatedVisibleText": 0,
+        "sha256": "3696430363d3725cd771fb56b6035ecd9705ee9879d5bfdcff634ea20358ec8b",
+        "spells": 110
       }
     }
   },

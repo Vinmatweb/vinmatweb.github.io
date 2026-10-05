@@ -8,6 +8,17 @@ def replace_paragraph(p,text):
     # Preserve paragraph style, layout, and the original leading number's run.
     old=p.text
     runs=p.runs
+    field_runs=[r for r in runs if r._r.xpath('.//w:fldChar | .//w:instrText')]
+    if field_runs:
+        field_text=''.join(r.text for r in field_runs)
+        if field_text and not text.endswith(field_text):raise ValueError(('field placement',old,text))
+        static_text=text[:-len(field_text)] if field_text else text
+        plain_runs=[r for r in runs if r not in field_runs]
+        leading=next((r for r in plain_runs if r.text),plain_runs[0])
+        leading.text=static_text
+        for r in plain_runs:
+            if r is not leading:r.text=''
+        return
     prefix=re.match(r"^\d+\.\s+",old)
     if prefix and len(runs)>1 and runs[0].text==prefix.group() and text.startswith(prefix.group()):
         runs[1].text=text[len(prefix.group()):]
@@ -19,7 +30,7 @@ def replace_paragraph(p,text):
             if run is not leading:run.text=""
     else:p.add_run(text)
 
-def translate(source,target,paragraph_map,cell_map,allowed=()):
+def translate(source,target,paragraph_map,cell_map,allowed=(),remove_forced_breaks=True):
     doc=Document(source)
     missing=[]
     evidence=[]
@@ -58,7 +69,7 @@ def translate(source,target,paragraph_map,cell_map,allowed=()):
     if missing:raise ValueError(("untranslated",missing))
     # Extra English line lengths must not spill before a forced chapter break.
     for i,p in enumerate(doc.paragraphs):
-        if i>9:
+        if remove_forced_breaks and i>9:
             for br in p._p.xpath('.//w:br[@w:type="page"]'):br.getparent().remove(br)
     for section in doc.sections:
         for part in [section.header,section.footer,section.first_page_header,section.first_page_footer,section.even_page_header,section.even_page_footer]:
@@ -69,6 +80,11 @@ def translate(source,target,paragraph_map,cell_map,allowed=()):
                     check(old,new,"header/footer");replace_paragraph(p,new)
                 elif re.search(r"[áčďéěíňóřšťúůýžÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]",old):raise ValueError(("untranslated header/footer",old))
     # Localise proofing and metadata without changing source design.
+    if not remove_forced_breaks:
+        for table in doc.tables:
+            for row in table.rows:
+                trpr=row._tr.get_or_add_trPr()
+                if trpr.find(qn('w:cantSplit')) is None:trpr.append(OxmlElement('w:cantSplit'))
     for p in doc.element.iter(qn("w:p")):
         for r in p.findall(qn("w:r")):
             rp=r.find(qn("w:rPr"))
