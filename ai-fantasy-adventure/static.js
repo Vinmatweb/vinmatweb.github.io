@@ -48,7 +48,10 @@
     while (worldHeading.firstChild) worldLink.appendChild(worldHeading.firstChild);
     worldHeading.appendChild(worldLink);
   }
-  const currentRoute = location.pathname.replace(basePath, '').replace(/\/+$/, '') || '/';
+  const rawRoute = location.pathname.replace(basePath, '').replace(/\/+$/, '') || '/';
+  const currentRoute = isEnglish
+    ? (rawRoute === '/' ? '/en' : (rawRoute.startsWith('/en/') ? rawRoute : '/en' + rawRoute))
+    : (rawRoute.replace(/^\/cs(?=\/|$)/, '') || '/');
   const representativeHeroes = { clovek: 'clovek-bard', trpaslik: 'trpaslik-hranicar', ork: 'ork-bojovnik' };
   const isRaceIndex = currentRoute === '/explorer/hrdinove/rasy' || currentRoute === '/en/explorer/heroes/races';
   if (isRaceIndex) {
@@ -241,7 +244,9 @@
   };
   const languageLink = [...document.querySelectorAll('.language-switch:not(.language-switch--fixed) a')].find((link) => (link.textContent || '').trim() === (isEnglish ? 'CZ' : 'EN'));
   if (languageLink) {
-    const destination = isEnglish ? toCzech(location.pathname, location.hash) : toEnglish(location.pathname, location.hash);
+    const destination = isEnglish
+      ? '/cs' + toCzech(basePath + currentRoute, location.hash)
+      : toEnglish(basePath + currentRoute, location.hash).replace(/^\/en(?=\/|$)/, '') || '/';
     languageLink.href = basePath + destination;
   }
 
@@ -275,4 +280,41 @@
       window.setTimeout(() => { button.textContent = original; }, 1800);
     });
   });
+
+  // Put English pages at the primary URL and Czech pages under /cs/.
+  const isSharedPath = (pathname) => [basePath + '/assets/', basePath + '/downloads/', basePath + '/aifa/'].some((prefix) => pathname.startsWith(prefix))
+    || [basePath + '/manifest.webmanifest', basePath + '/favicon.svg', basePath + '/og-image.jpg'].includes(pathname);
+  document.querySelectorAll('a[href]').forEach((link) => {
+    if (link.matches('.language-switch a, .language-switch--fixed a')) return;
+    const url = new URL(link.href, location.href);
+    if (url.origin !== location.origin || !url.pathname.startsWith(basePath) || isSharedPath(url.pathname)) return;
+    if (isEnglish) {
+      url.pathname = url.pathname.replace(/^\/ai-fantasy-adventure\/en(?=\/|$)/, basePath) || basePath + '/';
+    } else {
+      let route = url.pathname.slice(basePath.length) || '/';
+      if (route === '/cs' || route.startsWith('/cs/')) return;
+      if (route === '/en' || route.startsWith('/en/')) route = toCzech(basePath + route, url.hash);
+      if (!route.startsWith('/cs/')) route = '/cs' + (route === '/' ? '/' : route);
+      url.pathname = basePath + route;
+    }
+    link.href = url.href;
+  });
+
+  const englishRoute = isEnglish
+    ? (currentRoute.replace(/^\/en(?=\/|$)/, '') || '/')
+    : (toEnglish(basePath + currentRoute, location.hash).replace(/^\/en(?=\/|#|$)/, '').split('#')[0] || '/');
+  const czechRoute = isEnglish
+    ? toCzech(basePath + currentRoute, location.hash)
+    : currentRoute;
+  const routeHref = (route) => basePath + (route === '/' ? '/' : route.replace(/^\//, '') + (route.endsWith('/') ? '' : '/'));
+  const canonical = document.querySelector('link[rel="canonical"]') || document.head.appendChild(Object.assign(document.createElement('link'), { rel: 'canonical' }));
+  canonical.href = location.origin + (isEnglish ? routeHref(englishRoute) : routeHref('/cs' + (czechRoute === '/' ? '/' : czechRoute)));
+  document.querySelectorAll('link[rel="alternate"][hreflang]').forEach((link) => link.remove());
+  const addAlternate = (lang, route) => {
+    const link = document.createElement('link'); link.rel = 'alternate'; link.hreflang = lang; link.href = location.origin + routeHref(route); document.head.appendChild(link);
+  };
+  addAlternate('en', englishRoute);
+  addAlternate('cs-CZ', '/cs' + (czechRoute === '/' ? '/' : czechRoute));
+  const ogLocale = document.querySelector('meta[property="og:locale"]');
+  if (ogLocale) ogLocale.content = isEnglish ? 'en_US' : 'cs_CZ';
 })();
