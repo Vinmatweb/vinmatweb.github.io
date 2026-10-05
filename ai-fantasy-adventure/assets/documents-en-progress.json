@@ -1,0 +1,22 @@
+{
+  "target": 4,
+  "completed": [
+    "manual"
+  ],
+  "files": {
+    "manual": {
+      "path": "ai-fantasy-adventure/downloads/en/AI_Fantasy_Adventure_Manual_v1_0_EN.docx",
+      "sha256": "320361c7abc8e20fa08bf7522787154767a4c78bd49a1351b8d4724c373de88b",
+      "source": "0ec17c2ac5cfb80836e5a1b658e2ccd68719ea25",
+      "checks": {
+        "paragraphs": 364,
+        "tables": 21,
+        "translatedEntries": 570,
+        "renderedPages": 16,
+        "numericValues": "match CS",
+        "untranslatedVisibleText": 0
+      }
+    }
+  },
+  "zip": false
+}
