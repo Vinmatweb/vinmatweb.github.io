@@ -19,6 +19,22 @@
     }
   }
   const isEnglish = document.documentElement.lang === 'en';
+  if (isEnglish) {
+    const englishDownloads = {
+    "AI_Fantasy_Adventure_Manual_v1_0.docx": "AI_Fantasy_Adventure_Manual_v1_0_EN.docx",
+    "AI_Fantasy_Adventure_Bestiar_v1_0.xlsx": "AI_Fantasy_Adventure_Bestiary_v1_0_EN.xlsx",
+    "AI_Fantasy_Adventure_Magie_a_katalog_kouzel_v1_0.docx": "AI_Fantasy_Adventure_Magic_and_Spell_Catalogue_v1_0_EN.docx",
+    "AI_Fantasy_Adventure_Katalog_vybaveni_v1_0.docx": "AI_Fantasy_Adventure_Equipment_Catalogue_v1_0_EN.docx",
+    "AI_Fantasy_Adventure_v1_0_complete.zip": "AI_Fantasy_Adventure_v1_0_complete_EN.zip"
+};
+    document.querySelectorAll('a[href]').forEach((link) => {
+      const url = new URL(link.href, location.href);
+      if (url.origin !== location.origin || !url.pathname.startsWith(basePath + '/downloads/')) return;
+      const filename = url.pathname.slice((basePath + '/downloads/').length);
+      if (englishDownloads[filename]) link.href = basePath + '/downloads/en/' + englishDownloads[filename] + url.search + url.hash;
+    });
+  }
+
   const explorerNav = document.querySelector('.explorer-nav');
   if (explorerNav) explorerNav.setAttribute('aria-label', isEnglish ? 'World guide' : 'Průvodce světem');
   const worldName = document.querySelector('.explorer-nav__heading strong');

@@ -75,5 +75,21 @@
       }
     }
   },
-  "zip": false
+  "zip": {
+    "complete": true,
+    "path": "ai-fantasy-adventure/downloads/en/AI_Fantasy_Adventure_v1_0_complete_EN.zip",
+    "sha256": "532014f61db6dfd2f6a9da4cee8563070d77d224c9466248fd5dcba482780f9d",
+    "checks": {
+      "files": [
+        "AI_Fantasy_Adventure_Manual_v1_0_EN.docx",
+        "AI_Fantasy_Adventure_Bestiary_v1_0_EN.xlsx",
+        "AI_Fantasy_Adventure_Magic_and_Spell_Catalogue_v1_0_EN.docx",
+        "AI_Fantasy_Adventure_Equipment_Catalogue_v1_0_EN.docx"
+      ],
+      "fileCount": 4,
+      "integrity": "pass",
+      "contents": "match verified English documents",
+      "sha256": "532014f61db6dfd2f6a9da4cee8563070d77d224c9466248fd5dcba482780f9d"
+    }
+  }
 }
