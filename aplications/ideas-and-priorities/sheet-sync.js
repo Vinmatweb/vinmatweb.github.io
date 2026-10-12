@@ -147,7 +147,7 @@
     }
 
     const view = new pickerApi.DocsView(pickerApi.ViewId.SPREADSHEETS)
-      .setFileIds([SHEET_ID])
+      .setFileIds(SHEET_ID)
       .setMimeTypes("application/vnd.google-apps.spreadsheet")
       .setIncludeFolders(false)
       .setMode(pickerApi.DocsViewMode.LIST);
