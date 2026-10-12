@@ -1,20 +1,12 @@
 (() => {
   "use strict";
 
-  const STORAGE_KEY = "vinmat-ideas-and-priorities-v1";
   const THEME_KEY = "vinmat-ideas-and-priorities-theme-v1";
   const MODE_KEY = "vinmat-ideas-and-priorities-mode-v1";
   const DATA_VERSION = 1;
   const THEMES = ["graffiti", "classic", "hybrid"];
   const MODES = ["day", "night"];
-  const seededBoard = {
-    version: DATA_VERSION,
-    priorities: [
-      { id: "starter-coloring-pack", text: "Dokončit halloweenský balíček omalovánek", importance: "high" },
-      { id: "starter-tracing-pack", text: "Dokončit halloweenské obtahovačky", importance: "medium" }
-    ],
-    ideas: []
-  };
+  const sheetSync = window.VinmatSheetSync;
 
   const elements = {
     board: document.querySelector(".app-shell"),
@@ -34,34 +26,39 @@
     exportButton: document.getElementById("export-button"),
     importButton: document.getElementById("import-button"),
     importFile: document.getElementById("import-file"),
+    syncConnectButton: document.getElementById("sync-connect-button"),
+    syncRefreshButton: document.getElementById("sync-refresh-button"),
+    syncDot: document.getElementById("sync-dot"),
     themeSelect: document.getElementById("theme-select"),
     modeToggle: document.getElementById("mode-toggle"),
     modeIcon: document.getElementById("mode-icon"),
     modeLabel: document.getElementById("mode-label")
   };
 
-  let state = loadBoard();
+  let state = emptyBoard();
+  let lastSavedState = emptyBoard();
   let draggedItem = null;
   let editingItem = null;
   let toastTimer = null;
   let activeRecognition = null;
+  let syncPollTimer = null;
+  let saveQueue = Promise.resolve();
+  let pendingSaves = 0;
+  let hasLoadedBoard = false;
 
   applySavedAppearance();
   render();
   setupVoiceInput();
+  setBoardEnabled(false);
+  updateSyncControls();
+  setupSyncControls();
 
   function makeId() {
     return globalThis.crypto?.randomUUID?.() || `ukol-${Date.now()}-${Math.random().toString(16).slice(2)}`;
   }
 
-  function loadBoard() {
-    try {
-      const saved = localStorage.getItem(STORAGE_KEY);
-      if (!saved) return structuredClone(seededBoard);
-      return normalizeBoard(JSON.parse(saved));
-    } catch {
-      return structuredClone(seededBoard);
-    }
+  function emptyBoard() {
+    return { version: DATA_VERSION, priorities: [], ideas: [] };
   }
 
   function loadTheme() {
@@ -118,7 +115,11 @@
         if (item.id === "starter-tracing-pack" && text === "Finish the Halloween tracing pages") text = "Dokončit halloweenské obtahovačky";
         return {
           id: typeof item.id === "string" && item.id ? item.id : makeId(),
-          text: text.slice(0, 180),
+          text,
+          project: typeof item.project === "string" ? item.project : "",
+          source: typeof item.source === "string" ? item.source : "",
+          ...(Number.isInteger(item._sheetRow) ? { _sheetRow: item._sheetRow } : {}),
+          ...(typeof item._sheetOrder === "number" ? { _sheetOrder: item._sheetOrder } : {}),
           ...(items === value.priorities ? { importance: ["high", "medium", "low"].includes(item.importance) ? item.importance : "medium" } : {})
         };
       });
@@ -130,15 +131,173 @@
   }
 
   function saveBoard(showSaved = true) {
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-      if (showSaved) {
-        const time = new Intl.DateTimeFormat("cs-CZ", { hour: "2-digit", minute: "2-digit" }).format(new Date());
-        elements.saveStatus.textContent = `Uloženo v ${time}`;
+    if (!sheetSync?.isConnected()) {
+      elements.saveStatus.textContent = "Připoj Google Sheets; změna zatím není uložená.";
+      return Promise.resolve();
+    }
+    const snapshot = normalizeBoard(structuredClone(state));
+    pendingSaves += 1;
+    setBoardEnabled(false);
+    elements.saveStatus.textContent = "Ukládám do Google Sheets…";
+    updateSyncControls();
+    saveQueue = saveQueue.then(async () => {
+      const result = await sheetSync.save(snapshot);
+      state = normalizeBoard(result.board);
+      lastSavedState = normalizeBoard(result.board);
+      render();
+      hasLoadedBoard = true;
+      elements.saveStatus.textContent = "Synchronizováno v " + currentTime();
+      if (result.keptRemoteConflicts) {
+        showToast("Konfliktní položky zůstaly podle Google Sheetu; ostatní změny jsou uložené.");
+      } else if (showSaved) {
+        showToast("Změna je uložená v Google Sheets.");
       }
-    } catch {
-      elements.saveStatus.textContent = "Uložení se nezdařilo";
-      showToast("V tomto prohlížeči se nepodařilo uložit změny. Stáhni si zálohu tabule.");
+    }).catch(error => {
+      elements.saveStatus.textContent = sheetSync?.isConnected()
+        ? "Synchronizace se nezdařila"
+        : "Přihlášení vypršelo; změna není uložená.";
+      showToast(error.message || "Změnu se nepodařilo uložit do Google Sheets.");
+      if (!sheetSync?.isConnected()) {
+        document.body.dataset.sync = "offline";
+        setBoardEnabled(false);
+      } else {
+        setBoardEnabled(true);
+      }
+    }).finally(() => {
+      pendingSaves = Math.max(0, pendingSaves - 1);
+      updateSyncControls();
+      if (sheetSync?.isConnected()) setBoardEnabled(true);
+    });
+    return saveQueue;
+  }
+
+  function currentTime() {
+    return new Intl.DateTimeFormat("cs-CZ", { hour: "2-digit", minute: "2-digit" }).format(new Date());
+  }
+
+  function boardSignature(board) {
+    const signatureItems = list => (board[list] || []).map(item => ({
+      id: item.id,
+      text: item.text,
+      importance: list === "priorities" ? item.importance || "medium" : "",
+      project: item.project || "",
+      source: item.source || ""
+    }));
+    return JSON.stringify({
+      priorities: signatureItems("priorities"),
+      ideas: signatureItems("ideas")
+    });
+  }
+
+  function hasUnsavedChanges() {
+    return boardSignature(state) !== boardSignature(lastSavedState);
+  }
+
+  function setBoardEnabled(enabled) {
+    const ready = Boolean(enabled && pendingSaves === 0 && sheetSync?.isConnected());
+    document.body.dataset.sync = ready ? "connected" : "offline";
+    [elements.priorityForm, elements.ideaForm].forEach(form => {
+      form.querySelectorAll("input, button").forEach(control => { control.disabled = !ready; });
+    });
+    elements.importButton.disabled = !ready;
+    elements.importFile.disabled = !ready;
+    elements.exportButton.disabled = !hasLoadedBoard;
+    document.querySelectorAll("[data-task-card] input, [data-task-card] button, [data-task-card] select").forEach(control => {
+      control.disabled = !ready;
+      if (control.classList.contains("drag-handle")) control.draggable = ready;
+    });
+  }
+
+  function updateSyncControls() {
+    const connected = Boolean(sheetSync?.isConnected());
+    elements.syncConnectButton.textContent = connected ? "Odpojit Google" : "Připojit Google Sheets";
+    elements.syncConnectButton.setAttribute("aria-label", connected ? "Odpojit Google Sheets" : "Připojit Google Sheets");
+    elements.syncConnectButton.disabled = pendingSaves > 0;
+    elements.syncRefreshButton.hidden = !connected;
+    elements.syncRefreshButton.textContent = hasUnsavedChanges() ? "Zkusit uložit" : "Načíst změny";
+    elements.syncRefreshButton.disabled = pendingSaves > 0;
+    elements.syncDot.classList.toggle("is-connected", connected);
+    elements.syncDot.classList.toggle("is-offline", !connected);
+  }
+
+  function setupSyncControls() {
+    elements.syncConnectButton.addEventListener("click", connectGoogleSheet);
+    elements.syncRefreshButton.addEventListener("click", () => {
+      if (hasUnsavedChanges()) saveBoard();
+      else refreshFromSheet(true);
+    });
+    window.addEventListener("vinmat-sheets-auth-expired", () => {
+      if (syncPollTimer) clearInterval(syncPollTimer);
+      syncPollTimer = null;
+      setBoardEnabled(false);
+      updateSyncControls();
+      elements.saveStatus.textContent = "Přihlášení vypršelo. Znovu připoj Google Sheets.";
+    });
+  }
+
+  async function connectGoogleSheet() {
+    if (sheetSync?.isConnected()) {
+      sheetSync.disconnect();
+      if (syncPollTimer) clearInterval(syncPollTimer);
+      syncPollTimer = null;
+      setBoardEnabled(false);
+      updateSyncControls();
+      elements.saveStatus.textContent = "Google Sheets je odpojený; data zůstávají uložená v tabulce.";
+      return;
+    }
+    const pendingBoard = normalizeBoard(structuredClone(state));
+    const savedBaseline = normalizeBoard(structuredClone(lastSavedState));
+    const hadUnsavedChanges = hasLoadedBoard && hasUnsavedChanges();
+    elements.syncConnectButton.disabled = true;
+    elements.saveStatus.textContent = "Připojuji Google Sheets…";
+    try {
+      const remoteBoard = await sheetSync.connect();
+      state = normalizeBoard(remoteBoard);
+      hasLoadedBoard = true;
+      if (hadUnsavedChanges) {
+        const result = await sheetSync.save(pendingBoard, savedBaseline);
+        state = normalizeBoard(result.board);
+        lastSavedState = normalizeBoard(result.board);
+      } else {
+        lastSavedState = normalizeBoard(remoteBoard);
+      }
+      render();
+      setBoardEnabled(true);
+      updateSyncControls();
+      elements.saveStatus.textContent = "Načteno z Google Sheets v " + currentTime();
+      if (syncPollTimer) clearInterval(syncPollTimer);
+      syncPollTimer = setInterval(() => refreshFromSheet(false), 30000);
+    } catch (error) {
+      setBoardEnabled(false);
+      updateSyncControls();
+      elements.saveStatus.textContent = "Google Sheets se nepodařilo připojit";
+      showToast(error.message || "Google Sheets se nepodařilo připojit.");
+    } finally {
+      elements.syncConnectButton.disabled = false;
+      updateSyncControls();
+    }
+  }
+
+  async function refreshFromSheet(manual) {
+    if (!sheetSync?.isConnected() || pendingSaves || editingItem) return;
+    if (hasUnsavedChanges()) {
+      if (manual) saveBoard();
+      return;
+    }
+    try {
+      const remoteBoard = await sheetSync.refresh();
+      state = normalizeBoard(remoteBoard);
+      lastSavedState = normalizeBoard(remoteBoard);
+      hasLoadedBoard = true;
+      render();
+      setBoardEnabled(true);
+      updateSyncControls();
+      elements.saveStatus.textContent = "Načteno z Google Sheets v " + currentTime();
+    } catch (error) {
+      elements.saveStatus.textContent = "Načtení změn se nezdařilo";
+      if (!sheetSync?.isConnected()) setBoardEnabled(false);
+      if (manual) showToast(error.message || "Google Sheets se nepodařilo načíst.");
+      updateSyncControls();
     }
   }
 
@@ -157,6 +316,8 @@
     elements.priorityEmpty.hidden = state.priorities.length > 0;
     elements.ideaEmpty.hidden = state.ideas.length > 0;
     elements.summaryText.textContent = `${state.priorities.length} ${czechCount(state.priorities.length, ["priorita", "priority", "priorit"])} · ${state.ideas.length} ${czechCount(state.ideas.length, ["nápad", "nápady", "nápadů"])}`;
+    setBoardEnabled(Boolean(sheetSync?.isConnected() && pendingSaves === 0));
+    updateSyncControls();
   }
 
   function renderTask(item, listName, index) {
@@ -210,9 +371,9 @@
     const trimmed = text.trim();
     if (!trimmed) return;
     if (listName === "priorities") {
-      state.priorities.push({ id: makeId(), text: trimmed, importance: "medium" });
+      state.priorities.push({ id: makeId(), text: trimmed, importance: "medium", project: "VinMat", source: "Webová aplikace" });
     } else {
-      state.ideas.push({ id: makeId(), text: trimmed });
+      state.ideas.push({ id: makeId(), text: trimmed, project: "VinMat", source: "Webová aplikace" });
     }
     saveBoard();
     render();
@@ -223,6 +384,7 @@
   }
 
   function handleAction(event) {
+    if (!sheetSync?.isConnected() || pendingSaves > 0) return;
     const actionButton = event.target.closest("[data-action]");
     const card = event.target.closest("[data-task-card]");
     if (!actionButton || !card) return;
@@ -263,7 +425,7 @@
       }
       case "promote":
         state.ideas.splice(index, 1);
-        state.priorities.push({ id: item.id, text: item.text, importance: "medium" });
+        state.priorities.push({ ...item, importance: "medium" });
         editingItem = null;
         saveBoard();
         render();
@@ -372,7 +534,7 @@
 
   elements.board.addEventListener("submit", event => {
     const form = event.target.closest("[data-edit-form]");
-    if (!form) return;
+    if (!form || !sheetSync?.isConnected() || pendingSaves > 0) return;
     event.preventDefault();
     const item = findItem(form.dataset.list, form.dataset.id);
     const text = new FormData(form).get("task")?.toString().trim();
@@ -403,6 +565,7 @@
   });
 
   elements.board.addEventListener("dragstart", event => {
+    if (!sheetSync?.isConnected() || pendingSaves > 0) return;
     const handle = event.target.closest(".drag-handle");
     const card = handle?.closest("[data-task-card]");
     if (!card) return;
@@ -428,6 +591,7 @@
   });
 
   elements.board.addEventListener("drop", event => {
+    if (!sheetSync?.isConnected() || pendingSaves > 0) return;
     const list = event.target.closest("[data-list]");
     if (!draggedItem || !list) return;
     event.preventDefault();
@@ -445,7 +609,19 @@
   });
 
   elements.exportButton.addEventListener("click", () => {
-    const backup = { ...state, exportedAt: new Date().toISOString() };
+    const exportItems = list => state[list].map(item => ({
+      id: item.id,
+      text: item.text,
+      project: item.project || "",
+      source: item.source || "",
+      ...(list === "priorities" ? { importance: item.importance || "medium" } : {})
+    }));
+    const backup = {
+      version: DATA_VERSION,
+      priorities: exportItems("priorities"),
+      ideas: exportItems("ideas"),
+      exportedAt: new Date().toISOString()
+    };
     const blob = new Blob([JSON.stringify(backup, null, 2)], { type: "application/json" });
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
@@ -463,6 +639,10 @@
     try {
       const parsed = JSON.parse(await file.text());
       const restored = normalizeBoard(parsed);
+      if (!sheetSync?.isConnected()) {
+        showToast("Nejdřív připoj Google Sheets, potom obnov zálohu.");
+        return;
+      }
       if (!window.confirm("Nahradit současnou tabuli obsahem této zálohy?")) return;
       state = restored;
       editingItem = null;
