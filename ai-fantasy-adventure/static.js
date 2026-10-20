@@ -319,3 +319,5 @@
   const ogLocale = document.querySelector('meta[property="og:locale"]');
   if (ogLocale) ogLocale.content = isEnglish ? 'en_US' : 'cs_CZ';
 })();
+/* Shared privacy-friendly pageview analytics for vinmat.eu. */
+(function(){if(window.__vinmatGoatCounterLoaded)return;window.__vinmatGoatCounterLoaded=true;var s=document.createElement('script');s.async=true;s.src='https://gc.zgo.at/count.js';s.dataset.goatcounter='https://vinmat.goatcounter.com/count';document.head.appendChild(s);}());
