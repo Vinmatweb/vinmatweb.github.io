@@ -4,7 +4,7 @@ export const BASE=document.querySelector('base').getAttribute('href');
 const factionIDs=Object.fromEntries(Object.entries(FACTION_ROUTES).map(([id,slug])=>[slug,id]));
 export function routeURL(legacy){
  const [type,id]=legacy.replace(/^#\/?/,'').split('/');
- if(type==='frakce')return BASE+FACTION_ROUTES[id]+'/';
+ if(type==='frakce')return id?BASE+FACTION_ROUTES[id]+'/':BASE+'frakce/';
  if(type==='set')return BASE+'sety/'+id+'/';
  if(type==='minifigurka')return BASE+'minifigurky/'+id+'/';
  const section={bdp:'bricklink-designer-program',dostupne:'dostupnost'}[type]||type;
@@ -18,7 +18,7 @@ export function parseRoute(){
  if(factionIDs[slug]&&parts.length===1)return ['frakce',factionIDs[slug]];
  if(slug==='sety')return id?['set',id]:['sety'];
  if(slug==='minifigurky')return id?['minifigurka',id]:['minifigurky'];
- return [{ 'bricklink-designer-program':'bdp','dostupnost':'dostupne','zdroje':'zdroje'}[slug]||'missing'];
+ return [{ 'bricklink-designer-program':'bdp','dostupnost':'dostupne','zdroje':'zdroje','frakce':'frakce','mapa':'mapa','casova-osa':'casova-osa','stazeni':'stazeni','hledani':'hledani'}[slug]||'missing'];
 }
 export function normalizeLinks(){
  document.querySelectorAll('a[href^="#/"]').forEach(a=>a.setAttribute('href',routeURL(a.getAttribute('href'))));
