@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://vinmat.eu/sitemap.xml
+Sitemap: https://vinmat.eu/edugames/ollie/sitemap.xml
