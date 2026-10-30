@@ -3,3 +3,4 @@ Allow: /
 
 Sitemap: https://vinmat.eu/sitemap.xml
 Sitemap: https://vinmat.eu/edugames/ollie/sitemap.xml
+Sitemap: https://vinmat.eu/bricks/castle-sitemap.xml
