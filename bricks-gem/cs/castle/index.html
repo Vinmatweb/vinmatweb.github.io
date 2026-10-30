@@ -1,0 +1,1684 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://vinmat.eu/bricks-gem/cs/castle/">
+    <meta name="description" content="LEGO Castle Codex: český fanouškovský průvodce frakcemi, historií, sety a minifigurkami LEGO Castle.">
+    <title>LEGO Castle Codex - Kompletní Archív Frakcí a Setů</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@300;400;500;600;700&family=MedievalSharp&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        cinzel: ['Cinzel', 'serif'],
+                        medieval: ['MedievalSharp', 'cursive'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        castle: {
+                            gold: '#d4af37',
+                            goldLight: '#f3e5ab',
+                            goldDark: '#997a15',
+                            crimson: '#8b0000',
+                            crimsonDark: '#580000',
+                            stoneDark: '#0f1115',
+                            stoneMid: '#1a1d24',
+                            stoneLight: '#282c37',
+                            parchment: '#f4ebd0',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #0d0e11;
+            color: #e2e8f0;
+            background-image: radial-gradient(#222630 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fff2ac 0%, #d4af37 50%, #997a15 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%);
+        }
+
+        .stone-card {
+            background: linear-gradient(145deg, #1e2026 0%, #131519 100%);
+            border: 1px solid rgba(212, 175, 55, 0.25);
+        }
+
+        .stone-card:hover {
+            border-color: rgba(212, 175, 55, 0.6);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #121316;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3a3f4d;
+            border-radius: 4px;
+            border: 1px solid #d4af37;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d4af37;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased min-h-screen flex flex-col selection:bg-amber-600 selection:text-white">
+
+    <!-- HEADER & NAVIGATION -->
+    <header class="sticky top-0 z-40 bg-castle-stoneDark/95 backdrop-blur border-b border-castle-gold/30 shadow-2xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between py-3 gap-4">
+                
+                <!-- Logo & Title -->
+                <div class="flex items-center gap-3 cursor-pointer" onclick="window.app.switchTab('overview')">
+                    <div class="w-12 h-12 rounded-lg gold-gradient-bg p-0.5 shadow-lg flex items-center justify-center">
+                        <div class="w-full h-full bg-castle-stoneDark rounded flex items-center justify-center text-castle-gold">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 4h-2V2h-2v2h-2V2h-2v2H9V2H7v2H5v18h14V4zm-2 16H7V6h2v2h2V6h2v2h2V6h2v14zm-6-4h2v2h-2v-2zm0-4h2v2h-2v-2z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="font-cinzel text-xl sm:text-2xl font-bold gold-gradient-text tracking-wider">
+                            LEGO CASTLE CODEX
+                        </h1>
+                        <p class="text-xs text-amber-200/70 font-serif tracking-widest uppercase">Oficiální Archív Hradních Frakcí a Setů</p>
+                    </div>
+                </div>
+
+                <!-- Global Search -->
+                <div class="relative w-full md:w-64">
+                    <input 
+                        type="text" 
+                        id="global-search-input"
+                        placeholder="Hledat frakci, set nebo CMF..."
+                        class="w-full bg-castle-stoneMid text-sm text-gray-200 placeholder-gray-400 rounded-lg pl-9 pr-4 py-2 border border-castle-gold/30 focus:outline-none focus:border-castle-gold transition"
+                        onkeyup="if(event.key==='Enter') window.app.handleGlobalSearch()"
+                    />
+                    <svg class="w-4 h-4 text-castle-gold absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                </div>
+
+                <!-- Navigation Tabs -->
+                <nav class="flex items-center space-x-1 sm:space-x-2 overflow-x-auto w-full md:w-auto pb-2 md:pb-0">
+                    <button id="nav-overview" onclick="window.app.switchTab('overview')" class="px-3 py-2 rounded-md text-xs sm:text-sm font-cinzel font-semibold transition border flex items-center gap-1.5 whitespace-nowrap">
+                        📜 Přehled & Historie
+                    </button>
+                    <button id="nav-factions" onclick="window.app.switchTab('factions')" class="px-3 py-2 rounded-md text-xs sm:text-sm font-cinzel font-semibold transition border flex items-center gap-1.5 whitespace-nowrap">
+                        🛡️ Frakce (13)
+                    </button>
+                    <button id="nav-cmf" onclick="window.app.switchTab('cmf')" class="px-3 py-2 rounded-md text-xs sm:text-sm font-cinzel font-semibold transition border flex items-center gap-1.5 whitespace-nowrap">
+                        🧩 CMF Minifigurky
+                    </button>
+                    <button id="nav-diagram" onclick="window.app.switchTab('diagram')" class="px-3 py-2 rounded-md text-xs sm:text-sm font-cinzel font-semibold transition border flex items-center gap-1.5 whitespace-nowrap">
+                        🕸️ Diagram Vztahů
+                    </button>
+                    <button id="nav-sets" onclick="window.app.switchTab('sets')" class="px-3 py-2 rounded-md text-xs sm:text-sm font-cinzel font-semibold transition border flex items-center gap-1.5 whitespace-nowrap">
+                        🏰 Katalog Setů
+                    </button>
+                    <button onclick="window.app.openExportModal()" class="px-3 py-2 rounded-md text-xs sm:text-sm font-cinzel font-bold bg-amber-600/30 text-amber-300 hover:bg-amber-600/50 border border-castle-gold/50 transition flex items-center gap-1.5 whitespace-nowrap">
+                        📥 Ke Stažení
+                    </button>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN VIEW CONTAINER -->
+    <main id="main-content" class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Content dynamically injected here by Vanilla JS -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="mt-auto bg-castle-stoneDark border-t border-castle-gold/30 text-gray-400 text-xs py-8 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <span class="text-lg">🛡️</span>
+                <span class="font-cinzel font-bold text-amber-200">LEGO Castle Codex</span>
+                <span class="text-gray-500">| Neoficiální kompletní archív fanoušků LEGO® Castle</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <button onclick="window.app.openExportModal()" class="text-amber-300 hover:underline flex items-center gap-1">
+                    📥 Stažení Katalogu
+                </button>
+                <p class="text-gray-500 max-w-xs text-right">
+                    LEGO® je ochranná známka skupiny LEGO Group.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL CONTAINER -->
+    <div id="modal-backdrop" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+        <div id="modal-content" class="stone-card max-w-2xl w-full rounded-2xl border-2 border-castle-gold shadow-2xl p-6 sm:p-8 relative max-h-[90vh] overflow-y-auto">
+            <!-- Modal injected dynamically -->
+        </div>
+    </div>
+
+    <!-- APPLICATION LOGIC & DATA (VANILLA JS) -->
+    <script>
+        // DATA DEFINITIONS
+        const ERAS = [
+            {
+                id: 'classic_1978_1991',
+                title: 'Klasická Éra Šedých Hradů',
+                years: '1978 – 1991',
+                description: 'Zrod legendy od Žlutého hradu 375 k uvedení ikonických Černých sokolů, Lvích rytířů a Lesních mužů.',
+                factions: ['Žlutý Hrad', 'Crusaders / Lion Knights', 'Black Falcons', 'Forestmen']
+            },
+            {
+                id: 'magic_1992_1998',
+                title: 'Éra Magie, Draků a Netopýrů',
+                years: '1992 – 1998',
+                description: 'Nástup fantasy prvků, první pojmenovaný čaroděj Majisto, zelení drakové, Černí rytíři, Vlčí smečka a Fright Knights.',
+                factions: ['Black Knights', 'Wolfpack', 'Dragon Knights', 'Royal Knights', 'Fright Knights']
+            },
+            {
+                id: 'kk_2000_2006',
+                title: 'Éra Rytířských Království',
+                years: '2000 – 2006',
+                description: 'Příběhové linie Knights\' Kingdom I (King Leo vs Cedric) a KK II v království Morcia (Jayko vs Vladek).',
+                factions: ['Knights\' Kingdom I', 'Knights\' Kingdom II (Morcia)']
+            },
+            {
+                id: 'fantasy_2007_2012',
+                title: 'Éra Fantasy & Kingdoms',
+                years: '2007 – 2012',
+                description: 'Boj Korunních rytířů proti armádám nemrtvých a trollů následovaný vysoce ceněným tématem Kingdoms.',
+                factions: ['Fantasy Era (Crown Knights)', 'Kingdoms (Lvi vs Draci)']
+            },
+            {
+                id: 'modern_2021',
+                title: 'Moderní Renesance Icons & BDP',
+                years: '2021 – Přítomnost',
+                description: 'Návrat k poctivé architektuře v podobě 10305 Hradu Lvího krále, 10332 Středověkého náměstí a limitovaných hradů v BrickLink BDP.',
+                factions: ['Icons 10305 & 10332', 'Ideas 21325 Kovář', 'BrickLink BDP Series']
+            }
+        ];
+
+        const FACTIONS = [
+            {
+                id: 'lion_knights',
+                name: 'Crusaders / Lion Knights',
+                czechName: 'Lví rytíři (1984–1992, 2022+)',
+                years: '1984–1992 / 2022+',
+                alignment: 'Good',
+                alignmentCzech: 'Dobro & Království',
+                icon: '🦁',
+                colorBg: '#8b0000',
+                lore: 'Definitivní symbol celého tématu LEGO Castle. Od roku 1984 s modro-červenou heraldikou a stříbrným lvem, obnoveni v roce 2022 ve vlajkovém setu 10305 Hrad Lvího krále pod vládou Královny Lionne.',
+                characters: [
+                    { name: 'Královna Lionne', role: 'Vládkyně Lvího hradu (Set 10305)', icon: '👑' },
+                    { name: 'Sirotek Sir Richard', role: 'Legenda Lví gardy', icon: '⚔️' }
+                ]
+            },
+            {
+                id: 'black_falcons',
+                name: 'Black Falcons',
+                czechName: 'Černí sokoli (1984–1992, 2021+)',
+                years: '1984–1992 / 2021+',
+                alignment: 'Good',
+                alignmentCzech: 'Dobro & Severní Stráž',
+                icon: '🦅',
+                colorBg: '#1e3a8a',
+                lore: 'Rytíři se černo-stříbrným sokolem na modrém poli. Tradiční strážci severních pevností, slavně vráceni v setech 21325 Kovář, 31120 Středověký hrad a 910029 Mountain Fortress.',
+                characters: [
+                    { name: 'Baron von Falcon', role: 'Pán Sokolního hradu', icon: '🦅' },
+                    { name: 'Sokolnice CMF S24', role: 'Mistryně lovu', icon: '🏹' }
+                ]
+            },
+            {
+                id: 'forestmen',
+                name: 'Forestmen',
+                czechName: 'Lesní muži (1987–1990, 2022+)',
+                years: '1987–1990 / 2022+',
+                alignment: 'Outlaw',
+                alignmentCzech: 'Šlechetní Psanci',
+                icon: '🌲',
+                colorBg: '#14532d',
+                lore: 'Ochránci hvozdů po vzoru Robina Hooda. Skrývají se v dutých stromech a bojují proti chamtivým šlechticům.',
+                characters: [
+                    { name: 'Forestman Leader', role: 'Šéf lesní družiny', icon: '🏹' }
+                ]
+            },
+            {
+                id: 'black_knights',
+                name: 'Black Knights',
+                czechName: 'Černí rytíři (1992–1996)',
+                years: '1992–1996',
+                alignment: 'Good',
+                alignmentCzech: 'Mocná Šlechta',
+                icon: '🛡️',
+                colorBg: '#27272a',
+                lore: 'Vládci tmavých pevností se symbolem modro-žlutého drakonoše. Prosluli setem 6086 Black Knight\'s Castle.',
+                characters: [
+                    { name: 'Lord Černý Rytíř', role: 'Pán pevnosti 6086', icon: '⚔️' }
+                ]
+            },
+            {
+                id: 'wolfpack',
+                name: 'Wolfpack',
+                czechName: 'Vlčí smečka (1992–1993, 2024+)',
+                years: '1992–1993 / 2024+',
+                alignment: 'Outlaw',
+                alignmentCzech: 'Obávaní Nájezdníci',
+                icon: '🐺',
+                colorBg: '#3f3f46',
+                lore: 'Nebezpeční renegáti s motivem vytí vlka na roztrhaných pláštích. Vráceni v roce 2024 v setu 10332 a CMF S27.',
+                characters: [
+                    { name: 'Pán šelem CMF S27', role: 'Krotitel vlků', icon: '🐺' }
+                ]
+            },
+            {
+                id: 'dragon_knights',
+                name: 'Dragon Knights',
+                czechName: 'Dračí páni / Dragon Masters (1993–1995)',
+                years: '1993–1995',
+                alignment: 'Evil',
+                alignmentCzech: 'Krotitelé Draků & Magie',
+                icon: '🔥',
+                colorBg: '#15803d',
+                lore: 'První frakce, která přinesla do LEGO Castle živé draky a čaroděje Majisto s hůlkou svítící ve tmě.',
+                characters: [
+                    { name: 'Čaroděj Majisto', role: 'Hlavní Magik Království', icon: '🧙‍♂️' }
+                ]
+            },
+            {
+                id: 'royal_knights',
+                name: 'Royal Knights',
+                czechName: 'Královští rytíři (1995–1996)',
+                years: '1995–1996',
+                alignment: 'Good',
+                alignmentCzech: 'Královská Koruna',
+                icon: '👑',
+                colorBg: '#1e40af',
+                lore: 'Královská dynastie zavedla první minifigurku Krále s chromovanou korunou a žezlem.',
+                characters: [
+                    { name: 'Královský Panovník', role: 'Nositeľ Zlaté Koruny', icon: '👑' }
+                ]
+            },
+            {
+                id: 'fright_knights',
+                name: 'Fright Knights',
+                czechName: 'Strašidelní rytíři (1997–1998)',
+                years: '1997–1998',
+                alignment: 'Evil',
+                alignmentCzech: 'Temná Netopýří Magie',
+                icon: '🦇',
+                colorBg: '#701a75',
+                lore: 'Temní vládci noční oblohy s černými draky, netopýří helmicí Lorda Basila a čarodějnicí Willou.',
+                characters: [
+                    { name: 'Basil the Bat Lord', role: 'Pán Netopýrů', icon: '🦇' },
+                    { name: 'Čarodějnice Willa', role: 'Alchymistka', icon: '🧹' }
+                ]
+            },
+            {
+                id: 'knights_kingdom_1',
+                name: 'Knights\' Kingdom I',
+                czechName: 'Knights\' Kingdom I (2000)',
+                years: '2000',
+                alignment: 'Good',
+                alignmentCzech: 'Král Leo vs Cedric',
+                icon: '🦁',
+                colorBg: '#b91c1c',
+                lore: 'Souboj mezi Králem Leem a Býčími dobyvateli vedenými Cedricem the Bull.',
+                characters: [
+                    { name: 'Král Leo', role: 'Ušlechtilý Král', icon: '👑' },
+                    { name: 'Cedric the Bull', role: 'Býčí Nájezdník', icon: '🐂' }
+                ]
+            },
+            {
+                id: 'knights_kingdom_2',
+                name: 'Knights\' Kingdom II',
+                czechName: 'Knights\' Kingdom II (2004–2006, Morcia)',
+                years: '2004–2006',
+                alignment: 'Good',
+                alignmentCzech: 'Barevní Rytíři Morcie',
+                icon: '🛡️',
+                colorBg: '#0369a1',
+                lore: 'Příběh hrdinných rytířů (Jayko, Danju, Santis, Rascus) bránících království Morcia před zrádným Lordem Vladekem.',
+                characters: [
+                    { name: 'Jayko', role: 'Modrý Rytíř / Pozdější Král', icon: '🦅' },
+                    { name: 'Lord Vladek', role: 'Černý Zrádce', icon: '🗡️' }
+                ]
+            },
+            {
+                id: 'fantasy_era',
+                name: 'Fantasy Era / Crown Knights',
+                czechName: 'Fantasy Era (2007–2009)',
+                years: '2007–2009',
+                alignment: 'Good',
+                alignmentCzech: 'Lidé vs Nemrtví & Trollové',
+                icon: '⚔️',
+                colorBg: '#1e3a8a',
+                lore: 'Nesmírně populární éra. Korunní rytíři bránící lidské království před armádami nemrtvých kostlivců a obřími trollími válečníky.',
+                characters: [
+                    { name: 'Crown King', role: 'Vládce Lidského Království', icon: '👑' },
+                    { name: 'Skeleton King', role: 'Pán Nemrtvých', icon: '💀' }
+                ]
+            },
+            {
+                id: 'kingdoms',
+                name: 'LEGO Kingdoms',
+                czechName: 'Kingdoms (2010–2012)',
+                years: '2010–2012',
+                alignment: 'Good',
+                alignmentCzech: 'Červení Lvi vs Zelení Draci',
+                icon: '🏰',
+                colorBg: '#991b1b',
+                lore: 'Vysoce ceněný realistický návrat ke středověké architektuře. Velkolepá válka mezi Královstvím Červených Lvů a Královstvím Zelených Draků.',
+                characters: [
+                    { name: 'King Leo II', role: 'Vládce Lvích Rytířů', icon: '👑' },
+                    { name: 'Dragon General', role: 'Velitel Dračí Armády', icon: '🐉' }
+                ]
+            },
+            {
+                id: 'modern_icons_bdp',
+                name: 'BrickLink Designer Program & Modern Icons',
+                czechName: 'Moderní Éra (Icons, Ideas & BDP)',
+                years: '2021–přítomnost',
+                alignment: 'Good',
+                alignmentCzech: 'Zlatý Věk Sběratelství',
+                icon: '🏆',
+                colorBg: '#b45309',
+                lore: 'Současný zlatý věk pro dospělé stavitele (AFOL). Zahrnuje masivní oficiální sety 10305 Lion Knights\' Castle, 10332 Středověké náměstí, 21325 Kováře a limitované autorské hrady v BrickLink Designer Programu (Mountain Fortress 910029, Forest Stronghold, Castle in the Forest 910001).',
+                characters: [
+                    { name: 'Master Builder', role: 'Moderní Stavitel LEGO Castle', icon: '🔨' }
+                ]
+            }
+        ];
+
+        const CMF_MINIFIGS = [
+            {
+                id: 'cmf_s27_wolf',
+                name: 'Wolfpack Beastmaster',
+                czechName: 'Pán šelem / Vlčí nájezdník',
+                series: 'Série 27',
+                year: 2025,
+                factionId: 'wolfpack',
+                imageUrl: 'https://images.brickset.com/sets/images/71048-1.jpg',
+                accessories: 'Trhané pláště, ochočený vlčí společník, dýka a erb Vlčí smečky',
+                description: 'Návrat obávané Vlčí smečky v Série 27 CMF. Válečník se svým věrným vlkem a potisky klasického vlčího znaku.'
+            },
+            {
+                id: 'cmf_s25_vampire_knight',
+                name: 'Vampire Knight (Basil the Bat Lord)',
+                czechName: 'Upíří Rytíř (Lord Basil)',
+                series: 'Série 25',
+                year: 2024,
+                factionId: 'fright_knights',
+                imageUrl: 'https://images.brickset.com/sets/images/71045-1.jpg',
+                accessories: 'Netopýří helma, červený průsvitný meč, štít s netopýrem a plášť',
+                description: 'Moderní předělávka kultovního Lorda Basila (Basil the Bat Lord) z frakce Fright Knights v Série 25.'
+            },
+            {
+                id: 'cmf_s24_falconer',
+                name: 'Falconer',
+                czechName: 'Sokolnice Černých sokolů',
+                series: 'Série 24',
+                year: 2023,
+                factionId: 'black_falcons',
+                imageUrl: 'https://images.brickset.com/sets/images/71037-1.jpg',
+                accessories: 'Ochočený sokol, sokolnická rukavice, bow a erb Černého sokola',
+                description: 'Sokolnice se štítem Černých sokolů, tištěným torzem a detailním dravcem na rukavici.'
+            },
+            {
+                id: 'cmf_s24_forest_maiden',
+                name: 'Forest Maiden',
+                czechName: 'Lesní žínka / Střelkyně',
+                series: 'Série 24',
+                year: 2023,
+                factionId: 'forestmen',
+                imageUrl: 'https://images.brickset.com/sets/images/71037-2.jpg',
+                accessories: 'Zelený plášť s pírkem, luk, toulec a zelené tělo',
+                description: 'Ochránkyně lesa patřící k tradici Lesních mužů z Sherwoodu.'
+            },
+            {
+                id: 'cmf_s23_yellow_castle_knight',
+                name: 'Knight of the Yellow Castle',
+                czechName: 'Rytíř Žlutého Hradu',
+                series: 'Série 23',
+                year: 2022,
+                factionId: 'lion_knights',
+                imageUrl: 'https://images.brickset.com/sets/images/71034-1.jpg',
+                accessories: 'Koník na tyči, žlutý štít se srdcem/korunou, helma s pírkem',
+                description: 'Sběratelská pocta vůbec prvnímu hradnímu setu 375 Žlutý Hrad z roku 1978.'
+            },
+            {
+                id: 'cmf_s22_troubadour',
+                name: 'Troubadour',
+                czechName: 'Středověký Trubadúr',
+                series: 'Série 22',
+                year: 2022,
+                factionId: 'lion_knights',
+                imageUrl: 'https://images.brickset.com/sets/images/71032-1.jpg',
+                accessories: 'Loutna s motivem mince, mincovní tašvice a zdobená kápě',
+                description: 'Středověký pěvec a hudebník těšící rytíře a krále na hradech.'
+            },
+            {
+                id: 'cmf_s20_tournament_knight',
+                name: 'Tournament Knight',
+                czechName: 'Turnajový Rytíř',
+                series: 'Série 20',
+                year: 2020,
+                factionId: 'black_falcons',
+                imageUrl: 'https://images.brickset.com/sets/images/71027-1.jpg',
+                accessories: 'Dřevcové kopí, štít s mečem a vranou, zdobené brnění',
+                description: 'Šampion kolbišť připravený na rytířský klanový turnaj.'
+            },
+            {
+                id: 'cmf_s7_evil_knight',
+                name: 'Evil Knight',
+                czechName: 'Zlý Rytíř',
+                series: 'Série 7',
+                year: 2012,
+                factionId: 'black_knights',
+                imageUrl: 'https://images.brickset.com/sets/images/8831-1.jpg',
+                accessories: 'Černý obouruční meč, štít s červenými lebkami',
+                description: 'Nemilosrdný válečník v temném brnění sloužící temným pánům.'
+            }
+        ];
+
+        const SETS = [
+            {
+                id: 'set_10305',
+                number: '10305',
+                name: 'Lion Knights\' Castle',
+                czechName: 'Hrad Lvího krále (Icons 90. Výročí)',
+                year: 2022,
+                pieces: 4514,
+                factionId: 'lion_knights',
+                category: 'lego_cz',
+                priceCzech: '10 299 Kč',
+                description: 'Monumentální vlajková loď LEGO Castle k 90. výročí založení značky LEGO. Obsahuje kompletní otevírací hrad, funkční padací most, padací mříž, tajné únikové chodby, mlýn a 22 minifigurek.',
+                minifigs: '22 minifigurek: Queen Lionne, Lví rytíři, Černí sokoli, Forestmen, Čaroděj Majisto, Hradní pekař.'
+            },
+            {
+                id: 'set_10332',
+                number: '10332',
+                name: 'Medieval Town Square',
+                czechName: 'Středověké náměstí (Icons)',
+                year: 2024,
+                pieces: 3269,
+                factionId: 'modern_icons_bdp',
+                category: 'lego_cz',
+                priceCzech: '5 799 Kč',
+                description: 'Detailní středověká vesnice nadvazující na legendární set 10193. Obsahuje starobylou věž, dílnu na tkaní, hospodu U Stromu, kozy, malíře štítů Černých sokolů a zbojníka Vlčí smečky.',
+                minifigs: '8 minifigurek včetně malíře štítů Černých sokolů, tkalce, hostinského a zbojníka Vlčí smečky.'
+            },
+            {
+                id: 'set_31120',
+                number: '31120',
+                name: 'Medieval Castle (Creator 3in1)',
+                czechName: 'Středověký hrad (Creator 3v1)',
+                year: 2021,
+                pieces: 1426,
+                factionId: 'black_falcons',
+                category: 'lego_cz',
+                priceCzech: '2 499 Kč',
+                description: 'Populární modulární set 3v1, ze kterého lze postavit hrad Černých sokolů, vysokou hradní věž s katapultem nebo rušné středověké tržiště s vodním mlýnem.',
+                minifigs: '3 minifigurky Černých sokolů + sestavitelný drak a vězeňská kostra.'
+            },
+            {
+                id: 'set_910029',
+                number: '910029',
+                name: 'Mountain Fortress',
+                czechName: 'Horská pevnost (BrickLink BDP Series 1)',
+                year: 2024,
+                pieces: 3995,
+                factionId: 'black_falcons',
+                category: 'bdp',
+                priceCzech: 'Sběratelská edice BDP',
+                description: 'Masivní zasněžená horská pevnost Černých sokolů od autora SleeplessNight v rámci BrickLink Designer Programu. Obsahuje otevírací nádvoří, padací most a detailní zbrojnici.',
+                minifigs: '9 minifigurek Černých sokolů a zimních vesničanů.'
+            },
+            {
+                id: 'set_910001',
+                number: '910001',
+                name: 'Castle in the Forest',
+                czechName: 'Hrad v lese (BrickLink BDP ADP)',
+                year: 2021,
+                pieces: 3178,
+                factionId: 'forestmen',
+                category: 'bdp',
+                priceCzech: 'Sběratelská edice BDP',
+                description: 'Exkluzivní set představující zarostlou lesní pevnost Lesních mužů napadenou Černými sokoly.',
+                minifigs: '6 minifigurek (Lesní muži a Černí sokoli).'
+            },
+            {
+                id: 'set_910043',
+                number: '910043',
+                name: 'Forest Stronghold',
+                czechName: 'Lesní pevnost (BrickLink BDP Series 3)',
+                year: 2025,
+                pieces: 3395,
+                factionId: 'forestmen',
+                category: 'bdp',
+                priceCzech: 'Sběratelská edice BDP',
+                description: 'Nádherný moderní lesní komplex postavený kolem gigantického dubu pro Lesní muže.',
+                minifigs: '12 minifigurek Lesních mužů a vesničanů.'
+            },
+            {
+                id: 'set_21325',
+                number: '21325',
+                name: 'Medieval Blacksmith',
+                czechName: 'Středověká kovářská dílna (LEGO Ideas)',
+                year: 2021,
+                pieces: 2164,
+                factionId: 'black_falcons',
+                category: 'ideas_icons',
+                priceCzech: 'Vyřazeno z výroby (2023)',
+                description: 'Nádherně zpracovaný 3-patrový dům kováře s rozsvěcující se výhní, koňským povozem a dvěma rytíři Černých sokolů.',
+                minifigs: '4 minifigurky: Kovář, Střelkyně z luku a 2 rytíři Černých sokolů.'
+            },
+            {
+                id: 'set_6080',
+                number: '6080',
+                name: 'King\'s Castle',
+                czechName: 'Královský hrad (Crusaders 1984)',
+                year: 1984,
+                pieces: 664,
+                factionId: 'lion_knights',
+                category: 'retired',
+                priceCzech: 'Historická klasika',
+                description: 'Definitivní šedý hrad 80. let s funkčním padacím mostem, mříží, 4 koni a velkou armádou Lvích rytířů.',
+                minifigs: '12 minifigurek (4 jezdci, 8 pěšáků).'
+            },
+            {
+                id: 'set_6073',
+                number: '6073',
+                name: 'Knight\'s Castle',
+                czechName: 'Hrad Černého sokola (1984)',
+                year: 1984,
+                pieces: 408,
+                factionId: 'black_falcons',
+                category: 'retired',
+                priceCzech: 'Historická klasika',
+                description: 'První samostatný domovský hrad frakce Černých sokolů s rozevíracími panty pro snadný přístup na nádvoří.',
+                minifigs: '6 minifigurek Černých sokolů.'
+            },
+            {
+                id: 'set_6054',
+                number: '6054',
+                name: 'Forestmen\'s Hideout',
+                czechName: 'Lesní skrýš v stromě (1988)',
+                year: 1988,
+                pieces: 198,
+                factionId: 'forestmen',
+                category: 'retired',
+                priceCzech: 'Historická klasika',
+                description: 'Ikonický otevírací stromový úkryt Lesních mužů s terčem na střelbu z luku.',
+                minifigs: '2 minifigurky Lesních mužů.'
+            },
+            {
+                id: 'set_6086',
+                number: '6086',
+                name: 'Black Knight\'s Castle',
+                czechName: 'Hrad Černých rytířů (1992)',
+                year: 1992,
+                pieces: 569,
+                factionId: 'black_knights',
+                category: 'retired',
+                priceCzech: 'Historická klasika',
+                description: 'Pevnost Černých rytířů postavená na plastikové plastické podložce (raised baseplate) s padacím mostem a vězením.',
+                minifigs: '12 minifigurek včetně Lorda Černého rytíře.'
+            },
+            {
+                id: 'set_6075_wolf',
+                number: '6075',
+                name: 'Wolfpack Tower',
+                czechName: 'Věž Vlčí smečky (1992)',
+                year: 1992,
+                pieces: 236,
+                factionId: 'wolfpack',
+                category: 'retired',
+                priceCzech: 'Historická klasika',
+                description: 'Hlavní úkryt psanců Vlčí smečky na skalním útesu s tajným pokladem a katapultem.',
+                minifigs: '3 minifigurky Vlčí smečky + duch.'
+            },
+            {
+                id: 'set_6082',
+                number: '6082',
+                name: 'Fire Breathing Fortress',
+                czechName: 'Pevnost Dračích pánů (1993)',
+                year: 1993,
+                pieces: 397,
+                factionId: 'dragon_knights',
+                category: 'retired',
+                priceCzech: 'Historická klasika',
+                description: 'Základna Dračích pánů s dračí bránou a poprvé v historii se zeleným drakem a čarodějem Majisted.',
+                minifigs: '6 minifigurek včetně Majista a zeleného draka.'
+            },
+            {
+                id: 'set_6090',
+                number: '6090',
+                name: 'Royal King\'s Castle',
+                czechName: 'Hrad Královských rytířů (1995)',
+                year: 1995,
+                pieces: 738,
+                factionId: 'royal_knights',
+                category: 'retired',
+                priceCzech: 'Historická klasika',
+                description: 'Trůnní hrad s tajnými propadly, duchy svítícími ve tmě a Králem s chromovanou korunkou.',
+                minifigs: '11 minifigurek včetně Krále a Ducha.'
+            },
+            {
+                id: 'set_6097',
+                number: '6097',
+                name: 'Night Lord\'s Castle',
+                czechName: 'Strašidelný hrad Lorda Basila (1997)',
+                year: 1997,
+                pieces: 591,
+                factionId: 'fright_knights',
+                category: 'retired',
+                priceCzech: 'Historická klasika',
+                description: 'Vysoká temná věž s netopýřími křídly pro Lorda Basila a čarodějnici Willu.',
+                minifigs: '8 minifigurek včetně Basil the Bat Lord, Willa a černého draka.'
+            },
+            {
+                id: 'set_6098',
+                number: '6098',
+                name: 'King Leo\'s Castle',
+                czechName: 'Hrad Krále Lea (Knights\' Kingdom I 2000)',
+                year: 2000,
+                pieces: 529,
+                factionId: 'knights_kingdom_1',
+                category: 'retired',
+                priceCzech: 'Historická klasika',
+                description: 'Sídlo Krále Lea s červeno-zlatou věží, velkou bránou a katapulty Býčích dobyvatelů.',
+                minifigs: '8 minifigurek: King Leo, Queen Leonora, Princess Storm, Cedric the Bull a rytíři.'
+            },
+            {
+                id: 'set_8781',
+                number: '8781',
+                name: 'Castle of Morcia',
+                czechName: 'Hrad Morcia (Knights\' Kingdom II 2004)',
+                year: 2004,
+                pieces: 632,
+                factionId: 'knights_kingdom_2',
+                category: 'retired',
+                priceCzech: 'Historická klasika',
+                description: 'Modulární hrad s měnitelnými barevnými vlajkami podle toho, zda vládne Král Mathias nebo zrádný Lord Vladek.',
+                minifigs: '8 minifigurek: Jayko, Vladek, Danju, Santis, Rascus, King Mathias.'
+            },
+            {
+                id: 'set_7094',
+                number: '7094',
+                name: 'King\'s Castle Siege',
+                czechName: 'Obléhání Královského Hradu (Fantasy Era 2007)',
+                year: 2007,
+                pieces: 973,
+                factionId: 'fantasy_era',
+                category: 'retired',
+                priceCzech: 'Historická klasika',
+                description: 'Majestátní hrad Korunních rytířů napadený dračí věží nemrtvých kostlivců.',
+                minifigs: '10 minifigurek včetně Korunního krále, kostlivého draka a Skeleton Kinga.'
+            },
+            {
+                id: 'set_7946',
+                number: '7946',
+                name: 'King\'s Castle',
+                czechName: 'Královský Hrad (Kingdoms 2010)',
+                year: 2010,
+                pieces: 933,
+                factionId: 'kingdoms',
+                category: 'retired',
+                priceCzech: 'Historická klasika',
+                description: 'Detailní hrad Červených Lvů napadený obléhacím beranidlem Dračích rytířů.',
+                minifigs: '8 minifigurek: Král Leo II, 4 Lví rytíři, 3 Dračí rytíři.'
+            }
+        ];
+
+        const DIAGRAM_NODES = [
+            { id: 'lion_knights', name: 'Lion Knights', shortName: 'Lví Rytíři', icon: '🦁', colorBg: '#8b0000', x: 280, y: 160, loreSummary: 'Hlavní království s velkou armádou a královnou Lionne.' },
+            { id: 'black_falcons', name: 'Black Falcons', shortName: 'Černí Sokoli', icon: '🦅', colorBg: '#1e3a8a', x: 520, y: 160, loreSummary: 'Mocní páni severních pevností. Historičtí rivalové Lvích rytířů.' },
+            { id: 'forestmen', name: 'Forestmen', shortName: 'Lesní Muži', icon: '🌲', colorBg: '#14532d', x: 180, y: 340, loreSummary: 'Zbojníci žijící v Sherwoodu. Přepadávají zkorumpované šlechtice.' },
+            { id: 'wolfpack', name: 'Wolfpack', shortName: 'Vlčí Smečka', icon: '🐺', colorBg: '#3f3f46', x: 380, y: 460, loreSummary: 'Nebezpeční bandité a žoldáci soupeřící s Lesními muži.' },
+            { id: 'dragon_knights', name: 'Dragon Knights', shortName: 'Dračí Páni', icon: '🔥', colorBg: '#15803d', x: 620, y: 340, loreSummary: 'Magická frakce krotitelů draků s čarodějem Majisted.' },
+            { id: 'fright_knights', name: 'Fright Knights', shortName: 'Strašidelní', icon: '🦇', colorBg: '#701a75', x: 680, y: 50, loreSummary: 'Temní netopýří rytíři pod vedením Basil the Bat Lorda.' },
+            { id: 'royal_knights', name: 'Royal Knights', shortName: 'Královští', icon: '👑', colorBg: '#1e40af', x: 130, y: 180, loreSummary: 'Spojenecká královská větev panovníků.' },
+            { id: 'knights_kingdom_2', name: 'KK II (Morcia)', shortName: 'Rytíři Morcie', icon: '🛡️', colorBg: '#0369a1', x: 420, y: 280, loreSummary: 'Barevní rytíři Morcie (Jayko, Danju) bojující proti Vladekovi.' }
+        ];
+
+        const DIAGRAM_LINKS = [
+            { id: 'l1', source: 'lion_knights', target: 'black_falcons', type: 'rivalry', shortLabel: 'Rivalita', description: 'Historická rivalita o pohraniční hvozd a pevnosti. V moderní éře udržují diplomacii a mírovou smlouvu.' },
+            { id: 'l2', source: 'lion_knights', target: 'royal_knights', type: 'alliance', shortLabel: 'Aliance', description: 'Tradiční královská aliance sdílející rodovou linii a lví symboliku v boji proti temným silám.' },
+            { id: 'l3', source: 'lion_knights', target: 'forestmen', type: 'outlaw', shortLabel: 'Psanci', description: 'Lesní muži neuznávají královské daně, ale pomáhají chudým poddaným.' },
+            { id: 'l4', source: 'forestmen', target: 'wolfpack', type: 'rivalry', shortLabel: 'Válka Gangů', description: 'Ostrý konflikt mezi šlechetnými zbojníky (Lesní muži) a bezohlednými nájezdníky (Vlčí smečka).' },
+            { id: 'l5', source: 'black_falcons', target: 'dragon_knights', type: 'rivalry', shortLabel: 'Konflikt', description: 'Černí sokoli se snaží bránit své věže před útoky ohnivých draků vedených Dračími páni.' },
+            { id: 'l6', source: 'dragon_knights', target: 'fright_knights', type: 'magic', shortLabel: 'Temná Magie', description: 'Souboj dvou magických mocností: Majistova dračí kouzla proti temné netopýří magii Basil the Bat Lorda.' },
+            { id: 'l7', source: 'lion_knights', target: 'fright_knights', type: 'rivalry', shortLabel: 'Hrozba', description: 'Strašidelní rytíři pravidelně podnikají noční nájezdy na Lví království z oblohy.' },
+            { id: 'l8', source: 'black_falcons', target: 'knights_kingdom_2', type: 'alliance', shortLabel: 'Aliance', description: 'Vojenská výpomoc sokolích stráží pro hrdiny Morcie v boji proti Vladekově armádě.' }
+        ];
+
+        // VANILLA JS APPLICATION STATE & RENDER ENGINE
+        window.app = {
+            state: {
+                activeTab: 'overview',
+                selectedFactionId: 'lion_knights',
+                factionAlignmentFilter: 'ALL',
+                setSearchQuery: '',
+                setCategoryFilter: 'ALL',
+                setFactionFilter: 'ALL',
+                setSortBy: 'year_desc',
+                cmfSearchQuery: '',
+                cmfFactionFilter: 'ALL',
+                cmfSortBy: 'series_desc',
+                selectedDiagramNodeId: 'lion_knights',
+                selectedDiagramLinkId: null,
+            },
+
+            init() {
+                this.renderApp();
+            },
+
+            switchTab(tab) {
+                this.state.activeTab = tab;
+                this.renderApp();
+            },
+
+            handleGlobalSearch() {
+                const val = document.getElementById('global-search-input').value.trim();
+                if (val) {
+                    this.state.setSearchQuery = val;
+                    this.state.activeTab = 'sets';
+                    this.renderApp();
+                }
+            },
+
+            selectFaction(id) {
+                this.state.selectedFactionId = id;
+                this.renderApp();
+            },
+
+            setFactionAlignment(alignment) {
+                this.state.factionAlignmentFilter = alignment;
+                this.renderApp();
+            },
+
+            getFaction(id) {
+                return FACTIONS.find(f => f.id === id) || FACTIONS[0];
+            },
+
+            getCategoryBadgeClass(cat) {
+                switch(cat) {
+                    case 'lego_cz': return 'bg-emerald-950 text-emerald-300 border border-emerald-600';
+                    case 'bdp': return 'bg-amber-950 text-amber-300 border border-amber-600';
+                    case 'ideas_icons': return 'bg-blue-950 text-blue-300 border border-blue-600';
+                    case 'retired': return 'bg-gray-800 text-gray-300 border border-gray-600';
+                    default: return 'bg-black text-gray-300';
+                }
+            },
+
+            getCategoryLabel(cat) {
+                switch(cat) {
+                    case 'lego_cz': return '🛒 Na LEGO.cz';
+                    case 'bdp': return '🧱 BrickLink BDP';
+                    case 'ideas_icons': return '💡 Ideas / Icons';
+                    case 'retired': return '🏛️ Klasika (Vyřazeno)';
+                    default: return cat;
+                }
+            },
+
+            renderApp() {
+                // Update Nav Tab Classes
+                const tabs = ['overview', 'factions', 'cmf', 'diagram', 'sets'];
+                tabs.forEach(t => {
+                    const btn = document.getElementById(`nav-${t}`);
+                    if (btn) {
+                        if (this.state.activeTab === t) {
+                            btn.className = 'px-3 py-2 rounded-md text-xs sm:text-sm font-cinzel font-semibold transition border flex items-center gap-1.5 whitespace-nowrap bg-castle-crimson text-amber-200 border-castle-gold shadow-md';
+                        } else {
+                            btn.className = 'px-3 py-2 rounded-md text-xs sm:text-sm font-cinzel font-semibold transition border flex items-center gap-1.5 whitespace-nowrap text-gray-300 hover:bg-castle-stoneMid hover:text-amber-300 border-transparent';
+                        }
+                    }
+                });
+
+                // Render Active Content
+                const main = document.getElementById('main-content');
+                if (this.state.activeTab === 'overview') {
+                    main.innerHTML = this.renderOverviewTab();
+                } else if (this.state.activeTab === 'factions') {
+                    main.innerHTML = this.renderFactionsTab();
+                } else if (this.state.activeTab === 'cmf') {
+                    main.innerHTML = this.renderCmfTab();
+                } else if (this.state.activeTab === 'diagram') {
+                    main.innerHTML = this.renderDiagramTab();
+                } else if (this.state.activeTab === 'sets') {
+                    main.innerHTML = this.renderSetsTab();
+                }
+            },
+
+            renderOverviewTab() {
+                return `
+                    <section class="space-y-12">
+                        <!-- Hero Banner -->
+                        <div class="relative rounded-2xl overflow-hidden stone-card p-8 sm:p-12 border-2 border-castle-gold/40 shadow-2xl">
+                            <div class="relative z-10 max-w-3xl space-y-4">
+                                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/20 text-amber-300 border border-amber-500/40">
+                                    1978 – 2026+ Nová Zlatá Éra
+                                </span>
+                                <h2 class="text-3xl sm:text-5xl font-cinzel font-bold text-white tracking-wide leading-tight">
+                                    Legenda jménem <span class="gold-gradient-text">LEGO Castle</span>
+                                </h2>
+                                <p class="text-gray-300 text-base sm:text-lg leading-relaxed">
+                                    Již od roku 1978 přivádí svět LEGO Castle na život rytíře, království, tajemná kouzla a odvážná obléhání. Objevte oficiální historii, ikonické frakce od Žlutého Hradu po Lví Rytíře a moderní sběratelské skvosty z LEGO.cz, LEGO Ideas a BrickLink Designer Programu (BDP).
+                                </p>
+                                <div class="flex flex-wrap gap-4 pt-2">
+                                    <button onclick="window.app.switchTab('factions')" class="px-5 py-3 rounded-lg gold-gradient-bg text-black font-cinzel font-bold text-sm shadow-lg hover:brightness-110 transition flex items-center gap-2">
+                                        🛡️ Prozkoumat Všech 13 Frakcí
+                                    </button>
+                                    <button onclick="window.app.switchTab('sets')" class="px-5 py-3 rounded-lg bg-castle-stoneMid text-amber-300 border border-castle-gold/40 font-cinzel font-bold text-sm hover:bg-castle-stoneLight transition flex items-center gap-2">
+                                        🏰 Prohlížet Databázi Setů
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Key Verified Facts -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                            <div class="stone-card p-5 rounded-xl border border-castle-gold/20 flex flex-col justify-between">
+                                <div>
+                                    <div class="text-amber-400 font-cinzel font-bold text-2xl mb-1">1978</div>
+                                    <div class="text-white font-semibold text-base mb-2">První Žlutý Hrad (Set 375)</div>
+                                    <p class="text-xs text-gray-400 leading-relaxed">
+                                        Zrod hradního tématu. Vydáno ve žluté barvě, protože LEGO tehdy nechtělo vyrábět šedé kostky z obavy ze stavění vojenských tanků.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="stone-card p-5 rounded-xl border border-castle-gold/20 flex flex-col justify-between">
+                                <div>
+                                    <div class="text-amber-400 font-cinzel font-bold text-2xl mb-1">1984</div>
+                                    <div class="text-white font-semibold text-base mb-2">Šedé Hrady & Sokolové</div>
+                                    <p class="text-xs text-gray-400 leading-relaxed">
+                                        Uvedení Černých sokolů (Black Falcons) a Lvích rytířů (Crusaders). Nová éra s šedými zdmi, padacími mosty a koni.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="stone-card p-5 rounded-xl border border-castle-gold/20 flex flex-col justify-between">
+                                <div>
+                                    <div class="text-amber-400 font-cinzel font-bold text-2xl mb-1">1993</div>
+                                    <div class="text-white font-semibold text-base mb-2">První Magie & Majisto</div>
+                                    <p class="text-xs text-gray-400 leading-relaxed">
+                                        Uvedení Dračích pánů (Dragon Knights) s čarodějem Majisted – první pojmenovaná minifigurka se svítícími prvky.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="stone-card p-5 rounded-xl border border-castle-gold/20 flex flex-col justify-between">
+                                <div>
+                                    <div class="text-amber-400 font-cinzel font-bold text-2xl mb-1">2021+</div>
+                                    <div class="text-white font-semibold text-base mb-2">Icons & BrickLink BDP</div>
+                                    <p class="text-xs text-gray-400 leading-relaxed">
+                                        Renesance Castle s ikonami 10305 Hrad Lvího krále, 10332 Středověké náměstí a limitovanými hrady z BrickLink BDP.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Timeline -->
+                        <div class="space-y-6">
+                            <h3 class="text-2xl font-cinzel font-bold gold-gradient-text border-b border-castle-gold/30 pb-3 flex items-center gap-2">
+                                ⏳ Chronologická Osa Ér LEGO Castle
+                            </h3>
+
+                            <div class="space-y-6">
+                                ${ERAS.map((era, idx) => `
+                                    <div class="stone-card p-6 rounded-xl border border-castle-gold/30 shadow-lg">
+                                        <div class="flex items-center justify-between gap-2 mb-2">
+                                            <span class="text-xs font-semibold px-2.5 py-1 rounded bg-castle-crimson text-amber-200 border border-castle-gold/30">
+                                                ${era.years}
+                                            </span>
+                                            <span class="text-xs font-mono text-gray-400">Éra #${idx+1}</span>
+                                        </div>
+                                        <h4 class="text-xl font-cinzel font-bold text-amber-300 mb-2">${era.title}</h4>
+                                        <p class="text-sm text-gray-300 leading-relaxed mb-3">${era.description}</p>
+                                        <div class="flex flex-wrap gap-1.5">
+                                            ${era.factions.map(f => `<span class="text-[11px] px-2 py-0.5 rounded bg-castle-stoneLight text-gray-300 border border-gray-600">🛡️ ${f}</span>`).join('')}
+                                        </div>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                    </section>
+                `;
+            },
+
+            renderFactionsTab() {
+                const filteredFactions = FACTIONS.filter(f => {
+                    return this.state.factionAlignmentFilter === 'ALL' || f.alignment === this.state.factionAlignmentFilter;
+                });
+
+                const cur = this.getFaction(this.state.selectedFactionId);
+                const activeSets = SETS.filter(s => s.factionId === cur.id && s.category === 'lego_cz');
+                const retiredSets = SETS.filter(s => s.factionId === cur.id && s.category !== 'lego_cz');
+                const cmfs = CMF_MINIFIGS.filter(f => f.factionId === cur.id);
+
+                return `
+                    <section class="space-y-8">
+                        <!-- Alignment Filter Buttons -->
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-castle-gold/30 pb-4">
+                            <div>
+                                <h2 class="text-2xl sm:text-3xl font-cinzel font-bold gold-gradient-text">
+                                    🛡️ Přehled Všech 13 Hradních Frakcí
+                                </h2>
+                                <p class="text-xs sm:text-sm text-gray-400">Vyberte frakci pro zobrazení její samostatné podstránky, historie, postav a setů</p>
+                            </div>
+
+                            <div class="flex flex-wrap gap-2">
+                                <button onclick="window.app.setFactionAlignment('ALL')" class="px-3 py-1.5 rounded-lg text-xs font-cinzel border ${this.state.factionAlignmentFilter==='ALL'?'bg-castle-gold text-black font-bold':'bg-castle-stoneMid text-gray-300'}">
+                                    Všechny (13)
+                                </button>
+                                <button onclick="window.app.setFactionAlignment('Good')" class="px-3 py-1.5 rounded-lg text-xs font-cinzel border ${this.state.factionAlignmentFilter==='Good'?'bg-blue-700 text-white font-bold':'bg-castle-stoneMid text-gray-300'}">
+                                    ⚔️ Dobro & Království
+                                </button>
+                                <button onclick="window.app.setFactionAlignment('Outlaw')" class="px-3 py-1.5 rounded-lg text-xs font-cinzel border ${this.state.factionAlignmentFilter==='Outlaw'?'bg-emerald-800 text-white font-bold':'bg-castle-stoneMid text-gray-300'}">
+                                    🌲 Psanci & Zbojníci
+                                </button>
+                                <button onclick="window.app.setFactionAlignment('Evil')" class="px-3 py-1.5 rounded-lg text-xs font-cinzel border ${this.state.factionAlignmentFilter==='Evil'?'bg-red-900 text-white font-bold':'bg-castle-stoneMid text-gray-300'}">
+                                    🐉 Temné Síly
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Factions Layout -->
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                            <!-- Left Sidebar List -->
+                            <div class="lg:col-span-4 space-y-3 max-h-[750px] overflow-y-auto pr-2">
+                                ${filteredFactions.map(f => `
+                                    <div onclick="window.app.selectFaction('${f.id}')" 
+                                         class="stone-card p-4 rounded-xl border transition cursor-pointer flex items-center gap-3 ${this.state.selectedFactionId === f.id ? 'border-castle-gold bg-castle-crimson/30 ring-2 ring-castle-gold/50' : 'border-castle-gold/20 hover:border-castle-gold/50 bg-castle-stoneMid'}">
+                                        <div class="w-12 h-12 rounded-lg flex items-center justify-center p-1 flex-shrink-0 border border-castle-gold/30" style="background-color: ${f.colorBg}">
+                                            <span class="text-2xl">${f.icon}</span>
+                                        </div>
+                                        <div class="flex-grow min-w-0">
+                                            <div class="flex items-center justify-between">
+                                                <h4 class="font-cinzel font-bold text-sm text-amber-200 truncate">${f.name}</h4>
+                                                <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-black/40 text-gray-400">${f.years}</span>
+                                            </div>
+                                            <p class="text-xs text-gray-400 truncate mt-0.5">${f.czechName}</p>
+                                        </div>
+                                    </div>
+                                `).join('')}
+                            </div>
+
+                            <!-- Right Column: Subpage -->
+                            <div class="lg:col-span-8 stone-card p-6 sm:p-8 rounded-2xl border-2 border-castle-gold/40 shadow-2xl space-y-8">
+                                <!-- Subpage Header -->
+                                <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-castle-gold/30 pb-6">
+                                    <div class="flex items-center gap-4">
+                                        <div class="w-20 h-20 rounded-2xl p-2 flex items-center justify-center shadow-2xl border-2 border-castle-gold/50" style="background-color: ${cur.colorBg}">
+                                            <span class="text-5xl">${cur.icon}</span>
+                                        </div>
+                                        <div>
+                                            <div class="flex items-center gap-2">
+                                                <span class="text-xs px-2.5 py-0.5 rounded font-semibold bg-castle-gold/20 text-castle-gold border border-castle-gold/40">${cur.years}</span>
+                                                <span class="text-xs px-2.5 py-0.5 rounded font-semibold bg-black/40 text-gray-300 border border-gray-700">${cur.alignmentCzech}</span>
+                                            </div>
+                                            <h3 class="text-2xl sm:text-3xl font-cinzel font-bold text-white mt-1">${cur.name}</h3>
+                                            <p class="text-sm text-amber-300 font-serif italic">${cur.czechName}</p>
+                                        </div>
+                                    </div>
+
+                                    <button onclick="window.app.openDiagramNode('${cur.id}')" class="px-3.5 py-2 rounded-lg bg-castle-stoneLight hover:bg-castle-stoneMid text-amber-300 border border-castle-gold/40 text-xs font-cinzel font-bold transition flex items-center gap-1.5">
+                                        <span>🕸️</span> Diagram Vztahů
+                                    </button>
+                                </div>
+
+                                <!-- History & Lore -->
+                                <div class="space-y-2">
+                                    <h4 class="text-lg font-cinzel font-bold text-castle-gold">📜 Příběh & Oficiální Lore</h4>
+                                    <p class="text-sm text-gray-300 leading-relaxed bg-black/40 p-4 rounded-xl border border-castle-gold/15">
+                                        ${cur.lore}
+                                    </p>
+                                </div>
+
+                                <!-- Key Characters -->
+                                ${cur.characters && cur.characters.length ? `
+                                    <div class="space-y-3">
+                                        <h4 class="text-lg font-cinzel font-bold text-castle-gold">👑 Klíčové Postavy Frakce</h4>
+                                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                            ${cur.characters.map(c => `
+                                                <div class="p-3 bg-castle-stoneMid rounded-lg border border-castle-gold/20 flex items-start gap-3">
+                                                    <span class="text-2xl">${c.icon}</span>
+                                                    <div>
+                                                        <div class="text-sm font-bold text-amber-200">${c.name}</div>
+                                                        <div class="text-xs text-gray-400">${c.role}</div>
+                                                    </div>
+                                                </div>
+                                            `).join('')}
+                                        </div>
+                                    </div>
+                                ` : ''}
+
+                                <!-- CMF Minifigures for this Faction -->
+                                <div class="space-y-3">
+                                    <h4 class="text-lg font-cinzel font-bold text-purple-400 border-b border-purple-500/30 pb-2 flex justify-between items-center">
+                                        <span>🧩 Sběratelské CMF Minifigurky</span>
+                                        <button onclick="window.app.switchTab('cmf')" class="text-xs text-purple-300 hover:underline">Všechny CMF &rarr;</button>
+                                    </h4>
+                                    ${cmfs.length > 0 ? `
+                                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                            ${cmfs.map(fig => `
+                                                <div class="p-4 rounded-xl bg-castle-stoneMid border border-purple-500/30 flex gap-3 items-center">
+                                                    <div class="w-14 h-14 rounded-lg bg-black/60 border border-purple-500/40 p-1 flex-shrink-0 flex items-center justify-center">
+                                                        <img src="${fig.imageUrl}" alt="${fig.name}" class="max-h-full max-w-full object-contain" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"/>
+                                                        <span class="hidden text-2xl">🧩</span>
+                                                    </div>
+                                                    <div class="min-w-0">
+                                                        <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-purple-950 text-purple-300 border border-purple-700">${fig.series} (${fig.year})</span>
+                                                        <h5 class="font-cinzel font-bold text-amber-200 text-sm truncate mt-1">${fig.czechName}</h5>
+                                                        <p class="text-xs text-gray-400 line-clamp-1">${fig.description}</p>
+                                                    </div>
+                                                </div>
+                                            `).join('')}
+                                        </div>
+                                    ` : `
+                                        <p class="text-sm text-gray-400 italic bg-black/20 p-3 rounded-lg text-center">Pro tuto frakci nebyly v archívu zjištěny samostatné CMF figurky ze slepých sáčků.</p>
+                                    `}
+                                </div>
+
+                                <!-- Active Sets on LEGO.cz -->
+                                <div class="space-y-3">
+                                    <h4 class="text-lg font-cinzel font-bold text-emerald-400 border-b border-emerald-500/30 pb-2">🛒 Sety v Nabídce na LEGO.cz</h4>
+                                    ${activeSets.length > 0 ? `
+                                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                            ${activeSets.map(s => `
+                                                <div onclick="window.app.openSetModal('${s.id}')" class="p-4 rounded-xl bg-castle-stoneMid border border-emerald-500/30 hover:border-emerald-400 transition cursor-pointer flex flex-col justify-between">
+                                                    <div>
+                                                        <div class="flex items-center justify-between text-xs mb-1">
+                                                            <span class="font-mono text-amber-300 font-bold">#${s.number}</span>
+                                                            <span class="text-emerald-400 font-bold">${s.priceCzech}</span>
+                                                        </div>
+                                                        <h5 class="font-cinzel font-bold text-white text-sm mb-1">${s.czechName}</h5>
+                                                        <p class="text-xs text-gray-400 line-clamp-2">${s.description}</p>
+                                                    </div>
+                                                    <div class="mt-3 text-[11px] text-gray-400 flex justify-between items-center pt-2 border-t border-gray-700/50">
+                                                        <span>${s.year} • ${s.pieces} pcs</span>
+                                                        <span class="text-emerald-300 font-bold">Detail &rarr;</span>
+                                                    </div>
+                                                </div>
+                                            `).join('')}
+                                        </div>
+                                    ` : `
+                                        <p class="text-sm text-gray-400 italic bg-black/20 p-3 rounded-lg text-center">Tato frakce momentálně nemá přímý aktivní set v nabídce LEGO.cz.</p>
+                                    `}
+                                </div>
+
+                                <!-- Retired / BDP Sets -->
+                                <div class="space-y-3">
+                                    <h4 class="text-lg font-cinzel font-bold text-amber-400 border-b border-castle-gold/30 pb-2">🏛️ Vyřazené Sety, Ideas & BrickLink BDP</h4>
+                                    ${retiredSets.length > 0 ? `
+                                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                            ${retiredSets.map(s => `
+                                                <div onclick="window.app.openSetModal('${s.id}')" class="p-4 rounded-xl bg-castle-stoneMid border border-castle-gold/20 hover:border-castle-gold transition cursor-pointer flex flex-col justify-between">
+                                                    <div>
+                                                        <div class="flex items-center justify-between text-xs mb-1">
+                                                            <span class="font-mono text-amber-300 font-bold">#${s.number}</span>
+                                                            <span class="text-xs font-semibold px-2 py-0.5 rounded ${this.getCategoryBadgeClass(s.category)}">${this.getCategoryLabel(s.category)}</span>
+                                                        </div>
+                                                        <h5 class="font-cinzel font-bold text-white text-sm mb-1">${s.czechName}</h5>
+                                                        <p class="text-xs text-gray-400 line-clamp-2">${s.description}</p>
+                                                    </div>
+                                                    <div class="mt-3 text-[11px] text-gray-400 flex justify-between items-center pt-2 border-t border-gray-700/50">
+                                                        <span>${s.year} • ${s.pieces} pcs</span>
+                                                        <span class="text-amber-400 font-bold">Detail &rarr;</span>
+                                                    </div>
+                                                </div>
+                                            `).join('')}
+                                        </div>
+                                    ` : `
+                                        <p class="text-sm text-gray-400 italic bg-black/20 p-3 rounded-lg text-center">Žádné vyřazené sety nebyly nalezeny.</p>
+                                    `}
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                `;
+            },
+
+            renderCmfTab() {
+                const filtered = CMF_MINIFIGS.filter(fig => {
+                    const matchFaction = this.state.cmfFactionFilter === 'ALL' || fig.factionId === this.state.cmfFactionFilter;
+                    const q = this.state.cmfSearchQuery.toLowerCase();
+                    const matchQ = !q || fig.name.toLowerCase().includes(q) || fig.czechName.toLowerCase().includes(q) || fig.series.toLowerCase().includes(q);
+                    return matchFaction && matchQ;
+                });
+
+                return `
+                    <section class="space-y-8">
+                        <div class="stone-card p-6 rounded-2xl border-2 border-castle-gold/30 shadow-xl space-y-6">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-castle-gold/20 pb-4">
+                                <div>
+                                    <h2 class="text-2xl sm:text-3xl font-cinzel font-bold gold-gradient-text">
+                                        🧩 Sběratelské Minifigurky (CMF Série)
+                                    </h2>
+                                    <p class="text-xs sm:text-sm text-gray-400">
+                                        Kompletní přehled hradních minifigurek vydaných v oficiálních Slepých Sáčcích LEGO Collectible Minifigures.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-cinzel text-amber-300 mb-1">Vyhledat minifigurku</label>
+                                    <input type="text" value="${this.state.cmfSearchQuery}" oninput="window.app.state.cmfSearchQuery=this.value; window.app.renderApp()" placeholder="např. Sokolnice, Upíří rytíř..." class="w-full bg-castle-stoneMid text-sm text-gray-200 rounded-lg px-3 py-2 border border-castle-gold/30 focus:outline-none"/>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-cinzel text-amber-300 mb-1">Frakce</label>
+                                    <select onchange="window.app.state.cmfFactionFilter=this.value; window.app.renderApp()" class="w-full bg-castle-stoneMid text-sm text-gray-200 rounded-lg px-3 py-2 border border-castle-gold/30 focus:outline-none">
+                                        <option value="ALL" ${this.state.cmfFactionFilter==='ALL'?'selected':''}>Všechny frakce</option>
+                                        ${FACTIONS.map(f => `<option value="${f.id}" ${this.state.cmfFactionFilter===f.id?'selected':''}>${f.name}</option>`).join('')}
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CMF Grid -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                            ${filtered.map(fig => `
+                                <div class="stone-card rounded-2xl border border-purple-500/30 hover:border-purple-400 p-5 flex flex-col justify-between transition shadow-xl">
+                                    <div>
+                                        <div class="w-full h-44 rounded-xl bg-black/60 border border-purple-500/20 p-3 mb-4 flex items-center justify-center relative">
+                                            <img src="${fig.imageUrl}" alt="${fig.name}" class="max-h-full max-w-full object-contain" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"/>
+                                            <span class="hidden text-5xl">🧩</span>
+                                            <span class="absolute top-2 right-2 text-[10px] font-bold px-2 py-0.5 rounded bg-purple-950/90 text-purple-300 border border-purple-700">
+                                                ${fig.series}
+                                            </span>
+                                        </div>
+
+                                        <div class="flex items-center gap-1.5 mb-1.5">
+                                            <span class="text-base">${this.getFaction(fig.factionId).icon}</span>
+                                            <span class="text-xs font-semibold text-amber-300/90">${this.getFaction(fig.factionId).name}</span>
+                                        </div>
+
+                                        <h3 class="font-cinzel font-bold text-lg text-white mb-1">${fig.czechName}</h3>
+                                        <p class="text-xs font-serif italic text-gray-400 mb-3">${fig.name} (${fig.year})</p>
+                                        <p class="text-xs text-gray-300 leading-relaxed mb-3">${fig.description}</p>
+                                        
+                                        <div class="p-2.5 rounded-lg bg-black/40 border border-castle-gold/15 text-[11px] text-gray-300 mb-3">
+                                            <span class="font-bold text-castle-gold">Doplňky:</span> ${fig.accessories}
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-3 border-t border-gray-700/60 flex items-center justify-between text-xs text-gray-400">
+                                        <span>LEGO Minifigures ${fig.series}</span>
+                                        <button onclick="window.app.selectFaction('${fig.factionId}'); window.app.switchTab('factions');" class="text-purple-300 hover:underline">
+                                            Detail frakce &rarr;
+                                        </button>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </section>
+                `;
+            },
+
+            renderDiagramTab() {
+                const currentNode = DIAGRAM_NODES.find(n => n.id === this.state.selectedDiagramNodeId) || DIAGRAM_NODES[0];
+                const currentLink = DIAGRAM_LINKS.find(l => l.id === this.state.selectedDiagramLinkId);
+
+                const getNodeX = id => (DIAGRAM_NODES.find(n => n.id === id) || {x:0}).x;
+                const getNodeY = id => (DIAGRAM_NODES.find(n => n.id === id) || {y:0}).y;
+                const getLinkColor = type => {
+                    switch(type) {
+                        case 'alliance': return '#10b981';
+                        case 'rivalry': return '#ef4444';
+                        case 'outlaw': return '#f59e0b';
+                        case 'magic': return '#a855f7';
+                        default: return '#d4af37';
+                    }
+                };
+
+                // Compute node relations for detail sidebar (only show non-empty categories)
+                const nodeRelations = DIAGRAM_LINKS.filter(l => l.source === currentNode.id || l.target === currentNode.id);
+                const relTypes = [
+                    { type: 'alliance', label: '🤝 Spojenci', color: 'text-emerald-400' },
+                    { type: 'rivalry', label: '⚔️ Rivalové & Protivníci', color: 'text-red-400' },
+                    { type: 'outlaw', label: '🌲 Psanci & Zbojníci', color: 'text-amber-400' },
+                    { type: 'magic', label: '🔮 Magické Síly', color: 'text-purple-400' }
+                ];
+
+                const renderedRelationsHtml = relTypes.map(rt => {
+                    const matchingLinks = nodeRelations.filter(l => l.type === rt.type);
+                    if (matchingLinks.length === 0) return '';
+
+                    const itemsHtml = matchingLinks.map(l => {
+                        const otherId = l.source === currentNode.id ? l.target : l.source;
+                        const otherFac = window.app.getFaction(otherId);
+                        return `
+                            <div onclick="window.app.selectDiagramLink('${l.id}')" class="flex items-center justify-between p-2 rounded bg-black/40 border border-castle-gold/10 hover:border-castle-gold/40 cursor-pointer transition text-xs">
+                                <div class="flex items-center gap-2">
+                                    <span>${otherFac.icon}</span>
+                                    <span class="font-semibold text-gray-200">${otherFac.name}</span>
+                                </div>
+                                <span class="text-[10px] text-amber-300 font-mono hover:underline">${l.shortLabel} &rarr;</span>
+                            </div>
+                        `;
+                    }).join('');
+
+                    return `
+                        <div class="space-y-1.5">
+                            <h4 class="text-xs font-cinzel font-bold ${rt.color}">${rt.label}</h4>
+                            <div class="space-y-1">${itemsHtml}</div>
+                        </div>
+                    `;
+                }).filter(html => html !== '').join('');
+
+                return `
+                    <section class="space-y-8">
+                        <div class="stone-card p-6 rounded-2xl border-2 border-castle-gold/30 shadow-xl space-y-6">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-castle-gold/20 pb-4">
+                                <div>
+                                    <h2 class="text-2xl sm:text-3xl font-cinzel font-bold gold-gradient-text">
+                                        🕸️ Interaktivní Diagram Vztahů Frakcí
+                                    </h2>
+                                    <p class="text-xs sm:text-sm text-gray-400">
+                                        Prozkoumejte historická spojenectví, rivality, psance a magické konflikty mezi hlavními hradními frakcemi.
+                                    </p>
+                                </div>
+
+                                <div class="flex flex-wrap gap-3 text-xs">
+                                    <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-emerald-500"></span> Spojenectví</span>
+                                    <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-red-500"></span> Rivalita</span>
+                                    <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-amber-500"></span> Psanci</span>
+                                    <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-purple-500"></span> Magie</span>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                                <!-- SVG Canvas -->
+                                <div class="lg:col-span-8 bg-castle-stoneDark rounded-xl p-4 border border-castle-gold/20 shadow-inner relative overflow-hidden min-h-[480px]">
+                                    <svg class="w-full h-[480px]" viewBox="0 0 800 550">
+                                        <!-- Lines -->
+                                        <g>
+                                            ${DIAGRAM_LINKS.map(l => `
+                                                <line 
+                                                    x1="${getNodeX(l.source)}" y1="${getNodeY(l.source)}" 
+                                                    x2="${getNodeX(l.target)}" y2="${getNodeY(l.target)}"
+                                                    stroke="${getLinkColor(l.type)}"
+                                                    stroke-width="${this.state.selectedDiagramLinkId === l.id ? 5 : 2.5}"
+                                                    stroke-dasharray="${l.type === 'outlaw' ? '6,6' : 'none'}"
+                                                    class="cursor-pointer hover:stroke-amber-200 transition"
+                                                    onclick="window.app.selectDiagramLink('${l.id}')"
+                                                />
+                                            `).join('')}
+                                        </g>
+
+                                        <!-- Nodes -->
+                                        <g>
+                                            ${DIAGRAM_NODES.map(n => `
+                                                <g class="cursor-pointer" onclick="window.app.selectDiagramNode('${n.id}')">
+                                                    <circle 
+                                                        cx="${n.x}" cy="${n.y}" r="30" 
+                                                        fill="${n.colorBg}"
+                                                        stroke="${this.state.selectedDiagramNodeId === n.id ? '#d4af37' : '#4b5563'}"
+                                                        stroke-width="${this.state.selectedDiagramNodeId === n.id ? 4 : 2}"
+                                                    />
+                                                    <text x="${n.x}" y="${n.y + 6}" text-anchor="middle" font-size="22" pointer-events="none">${n.icon}</text>
+                                                    <text x="${n.x}" y="${n.y + 45}" text-anchor="middle" fill="#f3e5ab" font-family="Cinzel" font-size="12" font-weight="bold" pointer-events="none">${n.shortName}</text>
+                                                </g>
+                                            `).join('')}
+                                        </g>
+                                    </svg>
+                                </div>
+
+                                <!-- Detail Sidebar -->
+                                <div class="lg:col-span-4 stone-card p-6 rounded-xl border border-castle-gold/30 space-y-4">
+                                    ${currentLink ? `
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-xs font-bold px-2.5 py-1 rounded bg-black/60 text-amber-300 border border-castle-gold/30">
+                                                ${currentLink.shortLabel}
+                                            </span>
+                                            <button onclick="window.app.selectDiagramNode('${currentLink.source}')" class="text-xs text-gray-400 hover:text-white">&larr; Zpět na frakci</button>
+                                        </div>
+                                        <h3 class="text-lg font-cinzel font-bold text-white mt-1">
+                                            ${this.getFaction(currentLink.source).name} & ${this.getFaction(currentLink.target).name}
+                                        </h3>
+                                        <p class="text-xs text-gray-300 leading-relaxed bg-black/40 p-3 rounded-lg border border-castle-gold/15">
+                                            ${currentLink.description}
+                                        </p>
+                                        <button onclick="window.app.selectFaction('${currentLink.source}'); window.app.switchTab('factions');" class="w-full py-2 bg-castle-stoneMid hover:bg-castle-stoneLight text-amber-300 text-xs font-cinzel font-bold rounded border border-castle-gold/30 transition">
+                                            Přejít na ${this.getFaction(currentLink.source).name} &rarr;
+                                        </button>
+                                    ` : `
+                                        <div class="flex items-center gap-3">
+                                            <div class="w-12 h-12 rounded-lg flex items-center justify-center text-2xl border border-castle-gold/40 shadow" style="background-color: ${currentNode.colorBg}">
+                                                ${currentNode.icon}
+                                            </div>
+                                            <div>
+                                                <h3 class="font-cinzel font-bold text-lg text-white">${currentNode.name}</h3>
+                                                <span class="text-xs text-amber-300 font-serif italic">${currentNode.shortName}</span>
+                                            </div>
+                                        </div>
+                                        <p class="text-xs text-gray-300 leading-relaxed bg-black/40 p-3 rounded-lg border border-castle-gold/15">
+                                            ${currentNode.loreSummary}
+                                        </p>
+
+                                        ${renderedRelationsHtml ? `
+                                            <div class="space-y-3 pt-2 border-t border-castle-gold/20">
+                                                ${renderedRelationsHtml}
+                                            </div>
+                                        ` : ''}
+
+                                        <button onclick="window.app.selectFaction('${currentNode.id}'); window.app.switchTab('factions');" class="w-full py-2.5 gold-gradient-bg text-black font-cinzel font-bold text-xs rounded shadow hover:brightness-110 transition mt-2">
+                                            Otevřít Podstránku Frakce &rarr;
+                                        </button>
+                                    `}
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                `;
+            },
+
+            renderSetsTab() {
+                const filtered = SETS.filter(s => {
+                    const matchCat = this.state.setCategoryFilter === 'ALL' || s.category === this.state.setCategoryFilter;
+                    const matchFac = this.state.setFactionFilter === 'ALL' || s.factionId === this.state.setFactionFilter;
+                    const q = this.state.setSearchQuery.toLowerCase();
+                    const matchQ = !q || s.name.toLowerCase().includes(q) || s.czechName.toLowerCase().includes(q) || s.number.toLowerCase().includes(q) || s.description.toLowerCase().includes(q);
+                    return matchCat && matchFac && matchQ;
+                }).sort((a, b) => {
+                    if (this.state.setSortBy === 'year_desc') return b.year - a.year;
+                    if (this.state.setSortBy === 'year_asc') return a.year - b.year;
+                    if (this.state.setSortBy === 'pieces_desc') return b.pieces - a.pieces;
+                    if (this.state.setSortBy === 'number_asc') return parseInt(a.number) - parseInt(b.number);
+                    return 0;
+                });
+
+                return `
+                    <section class="space-y-8">
+                        <div class="stone-card p-6 rounded-2xl border-2 border-castle-gold/30 shadow-xl space-y-6">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-castle-gold/20 pb-4">
+                                <div>
+                                    <h2 class="text-2xl sm:text-3xl font-cinzel font-bold gold-gradient-text">
+                                        🏰 Kompletní Databáze Hradních Setů
+                                    </h2>
+                                    <p class="text-xs sm:text-sm text-gray-400">
+                                        Prohlížejte aktivní sety z LEGO.cz, vyřazené historické klasiky, LEGO Ideas, Icons a BrickLink Designer Program (BDP).
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Filter Controls -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                                <div>
+                                    <label class="block text-xs font-cinzel text-amber-300 mb-1">Vyhledat set / číslo</label>
+                                    <input type="text" value="${this.state.setSearchQuery}" oninput="window.app.state.setSearchQuery=this.value; window.app.renderApp()" placeholder="např. 10305, Kovář..." class="w-full bg-castle-stoneMid text-sm text-gray-200 rounded-lg px-3 py-2 border border-castle-gold/30 focus:outline-none"/>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-cinzel text-amber-300 mb-1">Dostupnost & Řada</label>
+                                    <select onchange="window.app.state.setCategoryFilter=this.value; window.app.renderApp()" class="w-full bg-castle-stoneMid text-sm text-gray-200 rounded-lg px-3 py-2 border border-castle-gold/30 focus:outline-none">
+                                        <option value="ALL" ${this.state.setCategoryFilter==='ALL'?'selected':''}>Všechny kategorie</option>
+                                        <option value="lego_cz" ${this.state.setCategoryFilter==='lego_cz'?'selected':''}>🛒 V prodeji na LEGO.cz</option>
+                                        <option value="bdp" ${this.state.setCategoryFilter==='bdp'?'selected':''}>🧱 BrickLink BDP</option>
+                                        <option value="ideas_icons" ${this.state.setCategoryFilter==='ideas_icons'?'selected':''}>💡 LEGO Ideas & Icons</option>
+                                        <option value="retired" ${this.state.setCategoryFilter==='retired'?'selected':''}>🏛️ Vyřazené Klasiky</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-cinzel text-amber-300 mb-1">Frakce (13)</label>
+                                    <select onchange="window.app.state.setFactionFilter=this.value; window.app.renderApp()" class="w-full bg-castle-stoneMid text-sm text-gray-200 rounded-lg px-3 py-2 border border-castle-gold/30 focus:outline-none">
+                                        <option value="ALL" ${this.state.setFactionFilter==='ALL'?'selected':''}>Všechny frakce</option>
+                                        ${FACTIONS.map(f => `<option value="${f.id}" ${this.state.setFactionFilter===f.id?'selected':''}>${f.name}</option>`).join('')}
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-cinzel text-amber-300 mb-1">Řadit podle</label>
+                                    <select onchange="window.app.state.setSortBy=this.value; window.app.renderApp()" class="w-full bg-castle-stoneMid text-sm text-gray-200 rounded-lg px-3 py-2 border border-castle-gold/30 focus:outline-none">
+                                        <option value="year_desc" ${this.state.setSortBy==='year_desc'?'selected':''}>Nejnovější (podle roku)</option>
+                                        <option value="year_asc" ${this.state.setSortBy==='year_asc'?'selected':''}>Nejstarší (podle roku)</option>
+                                        <option value="pieces_desc" ${this.state.setSortBy==='pieces_desc'?'selected':''}>Největší (podle dílků)</option>
+                                        <option value="number_asc" ${this.state.setSortBy==='number_asc'?'selected':''}>Čísla setu</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Set Cards Grid -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                            ${filtered.map(s => `
+                                <div onclick="window.app.openSetModal('${s.id}')" class="stone-card rounded-2xl border border-castle-gold/30 hover:border-castle-gold p-5 flex flex-col justify-between transition cursor-pointer group shadow-xl">
+                                    <div>
+                                        <div class="flex items-center justify-between gap-2 mb-3">
+                                            <span class="text-xs font-mono font-bold px-2 py-0.5 rounded bg-black/60 text-amber-300 border border-castle-gold/30">
+                                                #${s.number}
+                                            </span>
+                                            <span class="text-[11px] font-semibold px-2 py-0.5 rounded ${this.getCategoryBadgeClass(s.category)}">
+                                                ${this.getCategoryLabel(s.category)}
+                                            </span>
+                                        </div>
+
+                                        <h3 class="font-cinzel font-bold text-lg text-white group-hover:text-amber-300 transition line-clamp-2 mb-1">
+                                            ${s.czechName}
+                                        </h3>
+                                        <p class="text-xs font-serif italic text-gray-400 mb-3">${s.name}</p>
+
+                                        <div class="flex items-center gap-1.5 mb-3">
+                                            <span class="text-base">${this.getFaction(s.factionId).icon}</span>
+                                            <span class="text-xs font-semibold text-amber-200/90">${this.getFaction(s.factionId).name}</span>
+                                        </div>
+
+                                        <p class="text-xs text-gray-300 line-clamp-3 leading-relaxed mb-4">
+                                            ${s.description}
+                                        </p>
+                                    </div>
+
+                                    <div class="pt-3 border-t border-gray-700/60 flex items-center justify-between text-xs text-gray-400">
+                                        <div>
+                                            <span class="font-semibold text-gray-200">${s.year}</span> • <span>${s.pieces} pcs</span>
+                                        </div>
+                                        <span class="text-amber-400 font-bold flex items-center gap-0.5">
+                                            Detail &rarr;
+                                        </span>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </section>
+                `;
+            },
+
+            openDiagramNode(id) {
+                this.state.selectedDiagramNodeId = id;
+                this.state.selectedDiagramLinkId = null;
+                this.switchTab('diagram');
+            },
+
+            selectDiagramNode(id) {
+                this.state.selectedDiagramNodeId = id;
+                this.state.selectedDiagramLinkId = null;
+                this.renderApp();
+            },
+
+            selectDiagramLink(id) {
+                this.state.selectedDiagramLinkId = id;
+                this.renderApp();
+            },
+
+            openSetModal(setId) {
+                const s = SETS.find(item => item.id === setId);
+                if (!s) return;
+
+                const fac = this.getFaction(s.factionId);
+                const modal = document.getElementById('modal-content');
+                
+                modal.innerHTML = `
+                    <button onclick="window.app.closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold bg-castle-stoneMid w-8 h-8 rounded-full border border-castle-gold/30 flex items-center justify-center">✕</button>
+
+                    <div class="space-y-2 border-b border-castle-gold/30 pb-4">
+                        <div class="flex flex-wrap items-center gap-2">
+                            <span class="text-xs font-mono font-bold px-2.5 py-1 rounded bg-black/80 text-amber-300 border border-castle-gold/40">#${s.number}</span>
+                            <span class="text-xs font-semibold px-2.5 py-1 rounded ${this.getCategoryBadgeClass(s.category)}">${this.getCategoryLabel(s.category)}</span>
+                            <span class="text-xs px-2.5 py-1 rounded bg-castle-stoneLight text-gray-300 border border-gray-600">Rok ${s.year}</span>
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-cinzel font-bold text-white mt-1">${s.czechName}</h3>
+                        <p class="text-sm text-amber-300 font-serif italic">${s.name}</p>
+                    </div>
+
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 my-4">
+                        <div class="p-3 bg-black/40 rounded-lg border border-castle-gold/20">
+                            <div class="text-[10px] text-gray-400 font-cinzel uppercase">Frakce</div>
+                            <div class="text-xs font-bold text-amber-200 flex items-center gap-1 mt-0.5">
+                                <span>${fac.icon}</span> <span>${fac.name}</span>
+                            </div>
+                        </div>
+                        <div class="p-3 bg-black/40 rounded-lg border border-castle-gold/20">
+                            <div class="text-[10px] text-gray-400 font-cinzel uppercase">Počet dílků</div>
+                            <div class="text-xs font-bold text-amber-200 mt-0.5">${s.pieces} pcs</div>
+                        </div>
+                        <div class="p-3 bg-black/40 rounded-lg border border-castle-gold/20 col-span-2 sm:col-span-1">
+                            <div class="text-[10px] text-gray-400 font-cinzel uppercase">Cena / Stav</div>
+                            <div class="text-xs font-bold text-emerald-400 mt-0.5">${s.priceCzech || 'Vyřazeno / Sběratelské'}</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2 my-4">
+                        <h4 class="text-sm font-cinzel font-bold text-castle-gold">Popis setu a historie</h4>
+                        <p class="text-sm text-gray-300 leading-relaxed bg-castle-stoneDark/80 p-4 rounded-xl border border-castle-gold/10">${s.description}</p>
+                    </div>
+
+                    ${s.minifigs ? `
+                        <div class="space-y-2 my-4">
+                            <h4 class="text-sm font-cinzel font-bold text-castle-gold">Obsažené Minifigurky & Prvky</h4>
+                            <p class="text-xs text-gray-300 bg-black/30 p-3 rounded-lg border border-castle-gold/10">${s.minifigs}</p>
+                        </div>
+                    ` : ''}
+
+                    <div class="pt-4 border-t border-castle-gold/30 flex flex-wrap items-center justify-between gap-3">
+                        ${s.category === 'lego_cz' ? `
+                            <a href="https://www.lego.com/cs-cz" target="_blank" class="px-4 py-2 bg-emerald-700 hover:bg-emerald-600 text-white rounded-lg text-xs font-cinzel font-bold transition">
+                                🛒 Zobrazit na LEGO.cz
+                            </a>
+                        ` : ''}
+                        <a href="https://www.bricklink.com" target="_blank" class="px-4 py-2 bg-castle-stoneMid hover:bg-castle-stoneLight text-amber-300 rounded-lg text-xs font-cinzel font-bold border border-castle-gold/30 transition">
+                            🧱 Hledat na BrickLink.com
+                        </a>
+                    </div>
+                `;
+
+                document.getElementById('modal-backdrop').classList.remove('hidden');
+                document.getElementById('modal-backdrop').classList.add('flex');
+            },
+
+            openExportModal() {
+                const modal = document.getElementById('modal-content');
+                modal.innerHTML = `
+                    <button onclick="window.app.closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold bg-castle-stoneMid w-8 h-8 rounded-full border border-castle-gold/30 flex items-center justify-center">✕</button>
+
+                    <div class="space-y-2 border-b border-castle-gold/30 pb-3">
+                        <h3 class="text-2xl font-cinzel font-bold text-white flex items-center gap-2">
+                            📥 Možnosti Stažení a Exportu
+                        </h3>
+                        <p class="text-xs text-gray-400">
+                            Vyberte požadovaný formát pro export kompletní databáze frakcí, setů nebo CMF minifigurek.
+                        </p>
+                    </div>
+
+                    <div class="space-y-3 my-6">
+                        <button onclick="window.app.downloadSetsCSV()" class="w-full p-4 rounded-xl bg-castle-stoneMid border border-castle-gold/30 hover:border-castle-gold transition flex items-center justify-between">
+                            <div class="text-left">
+                                <div class="font-cinzel font-bold text-amber-200 text-sm">📊 Stáhnout Databázi Setů (CSV)</div>
+                                <div class="text-xs text-gray-400">Tabulka všech setů (číslo, název, rok, dílky, cena, frakce)</div>
+                            </div>
+                            <span class="text-xl">📄</span>
+                        </button>
+
+                        <button onclick="window.app.downloadCMFCatalog()" class="w-full p-4 rounded-xl bg-castle-stoneMid border border-purple-500/30 hover:border-purple-400 transition flex items-center justify-between">
+                            <div class="text-left">
+                                <div class="font-cinzel font-bold text-purple-300 text-sm">🧩 Stáhnout CMF Minifigurky (CSV)</div>
+                                <div class="text-xs text-gray-400">Přehled všech CMF sérií, doplňků a příslušných frakcí</div>
+                            </div>
+                            <span class="text-xl">🧩</span>
+                        </button>
+
+                        <button onclick="window.app.downloadFullJSON()" class="w-full p-4 rounded-xl bg-castle-stoneMid border border-emerald-500/30 hover:border-emerald-400 transition flex items-center justify-between">
+                            <div class="text-left">
+                                <div class="font-cinzel font-bold text-emerald-300 text-sm">⚙️ Kompletní JSON Archív</div>
+                                <div class="text-xs text-gray-400">Kompletní strukturovaný JSON (Frakce, Sety, CMF, Diagram)</div>
+                            </div>
+                            <span class="text-xl">💾</span>
+                        </button>
+                    </div>
+                `;
+
+                document.getElementById('modal-backdrop').classList.remove('hidden');
+                document.getElementById('modal-backdrop').classList.add('flex');
+            },
+
+            closeModal() {
+                document.getElementById('modal-backdrop').classList.add('hidden');
+                document.getElementById('modal-backdrop').classList.remove('flex');
+            },
+
+            downloadSetsCSV() {
+                let csv = 'Cislo,Nazev,CeskyNazev,Rok,Dilky,Frakce,Kategorie,Cena\n';
+                SETS.forEach(s => {
+                    csv += `"${s.number}","${s.name}","${s.czechName}",${s.year},${s.pieces},"${this.getFaction(s.factionId).name}","${this.getCategoryLabel(s.category)}","${s.priceCzech || ''}"\n`;
+                });
+                this.triggerDownload(csv, 'lego_castle_sets.csv', 'text/csv');
+            },
+
+            downloadCMFCatalog() {
+                let csv = 'Serie,Nazev,CeskyNazev,Rok,Frakce,Doplnky,Popis\n';
+                CMF_MINIFIGS.forEach(f => {
+                    csv += `"${f.series}","${f.name}","${f.czechName}",${f.year},"${this.getFaction(f.factionId).name}","${f.accessories}","${f.description}"\n`;
+                });
+                this.triggerDownload(csv, 'lego_castle_cmf_catalog.csv', 'text/csv');
+            },
+
+            downloadFullJSON() {
+                const data = { FACTIONS, SETS, CMF_MINIFIGS, DIAGRAM_NODES, DIAGRAM_LINKS };
+                this.triggerDownload(JSON.stringify(data, null, 2), 'lego_castle_codex.json', 'application/json');
+            },
+
+            triggerDownload(content, filename, type) {
+                const blob = new Blob([content], { type: type + ';charset=utf-8;' });
+                const link = document.createElement('a');
+                link.href = URL.createObjectURL(blob);
+                link.download = filename;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                this.closeModal();
+            }
+        };
+
+        // Initialize App on DOM Load
+        window.addEventListener('DOMContentLoaded', () => {
+            window.app.init();
+        });
+    </script>
+</body>
+</html>
