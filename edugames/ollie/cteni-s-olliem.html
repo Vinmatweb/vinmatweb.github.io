@@ -74,7 +74,15 @@ const BRAND = {
   color-scheme:light;
 }
 *{box-sizing:border-box}
-html,body{height:100%;margin:0}
+/* tenký posuvník v barvách aplikace (jen když je obsah delší než okno) */
+html,dialog{scrollbar-width:thin;scrollbar-color:var(--border) transparent}
+::-webkit-scrollbar{width:8px;height:8px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:8px}
+::-webkit-scrollbar-thumb:hover{background:var(--wood)}
+::-webkit-scrollbar-button{display:none;width:0;height:0}
+html,body{min-height:100%;margin:0}
+html{height:100%}
 body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);font-size:17px;
   background-image:linear-gradient(var(--paper) 0 0);
   -webkit-tap-highlight-color:transparent;overflow-x:hidden}
@@ -82,12 +90,12 @@ button{font-family:inherit;cursor:pointer;color:inherit}
 button:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--sky);outline-offset:2px}
 [hidden]{display:none!important}
 
-.app{height:100%;display:flex;flex-direction:column;
+.app{min-height:100%;display:flex;flex-direction:column;
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
   padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 
 /* ---------- HOME ---------- */
-.home{max-width:880px;width:100%;margin:0 auto;padding-block:28px 40px;overflow-y:auto}
+.home{max-width:880px;width:100%;margin:0 auto;padding-block:28px 40px}
 .brand{display:flex;align-items:center;gap:18px;margin-bottom:22px}
 .brand svg{width:96px;flex:none}
 .brand h1{font-size:clamp(28px,6vw,44px);font-weight:900;margin:0;line-height:1.05;text-wrap:balance}
@@ -108,7 +116,7 @@ button:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-vis
 .count-pick .lbl{font-weight:800;font-size:18px}
 .count-pick .seg button{font-size:18px;font-weight:700;min-width:56px}
 .count-pick .help{font-size:14px;color:var(--ink-soft);flex-basis:100%}
-.stats{max-width:820px;width:100%;margin:0 auto;padding-block:20px 40px;overflow-y:auto}
+.stats{max-width:820px;width:100%;margin:0 auto;padding-block:20px 40px}
 .stats-head{display:flex;align-items:center;gap:12px;margin-bottom:16px;flex-wrap:wrap}
 .stats-head h2{margin:0;font-size:clamp(24px,5vw,32px);font-weight:900;flex:1;min-width:0}
 .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:18px}
@@ -137,7 +145,7 @@ table.sess td{padding:7px 8px;border-bottom:1px solid var(--border)}
 .note b{color:var(--ink)}
 
 /* ---------- READER ---------- */
-.reader{flex:1;display:flex;flex-direction:column;min-height:0}
+.reader{height:100vh;height:100dvh;display:flex;flex-direction:column;min-height:0;overflow:hidden}
 .topbar{display:flex;align-items:center;gap:12px;padding-block:12px}
 .icon-btn{width:44px;height:44px;border-radius:14px;border:2px solid var(--border);background:var(--card);display:grid;place-items:center;flex:none}
 .icon-btn svg{width:22px;height:22px}
@@ -221,7 +229,7 @@ table.sess td{padding:7px 8px;border-bottom:1px solid var(--border)}
 @keyframes fall{to{transform:translateY(110vh) rotate(540deg)}}
 
 /* summary + dialogs */
-.summary{max-width:720px;width:100%;margin:0 auto;padding-block:30px;overflow-y:auto;text-align:center}
+.summary{max-width:720px;width:100%;margin:0 auto;padding-block:30px;text-align:center}
 .summary h2{font-size:clamp(30px,6vw,42px);margin:10px 0 6px}
 .summary .big-stars{display:flex;justify-content:center;gap:28px;margin:16px 0;font-size:18px;flex-wrap:wrap}
 .summary .big-stars div{display:flex;align-items:center;gap:8px}
@@ -234,7 +242,10 @@ table.sess td{padding:7px 8px;border-bottom:1px solid var(--border)}
 .primary{background:var(--sky);color:#fff;border:none;border-radius:16px;padding:14px 24px;font-size:18px;font-weight:600;box-shadow:0 5px 0 var(--sky-dark)}
 .primary:active{transform:translateY(3px);box-shadow:0 2px 0 var(--sky-dark)}
 
-dialog{border:2px solid var(--border);border-radius:22px;padding:22px;max-width:min(560px,calc(100vw - 32px));width:100%;background:var(--card);color:var(--ink)}
+dialog{border:2px solid var(--border);border-radius:22px;padding:20px 22px;max-width:min(760px,calc(100vw - 32px));width:100%;max-height:calc(100dvh - 32px);background:var(--card);color:var(--ink)}
+#dlgCustom{max-width:min(560px,calc(100vw - 32px))}
+.set-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:4px 24px}
+.set-grid .field{margin-bottom:12px}
 dialog::backdrop{background:rgba(36,73,59,.4)}
 dialog h3{margin:0 0 14px;font-size:22px}
 .field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
@@ -244,7 +255,7 @@ dialog h3{margin:0 0 14px;font-size:22px}
 .seg button{border:2px solid var(--border);background:var(--card);border-radius:12px;padding:8px 12px;font-size:15px}
 .seg button[aria-pressed="true"]{border-color:var(--sky);background:var(--sun-soft);font-weight:600}
 textarea{width:100%;min-height:120px;border:2px solid var(--line);border-radius:14px;padding:10px;font-family:var(--f-read);font-size:18px;color:var(--ink)}
-input[type=range]{width:100%}
+input[type=range]{width:100%;accent-color:var(--sky)}
 .status{font-size:14px;padding:10px 12px;border-radius:12px;background:var(--sun-soft);line-height:1.4}
 .status.ok{background:var(--leaf-soft)}
 
@@ -336,6 +347,7 @@ input[type=range]{width:100%}
 
 <dialog id="dlgSettings">
   <h3>Nastavení</h3>
+  <div class="set-grid">
   <div class="field">
     <span class="lbl">Kdo hodnotí čtení</span>
     <div class="seg" data-key="mode">
@@ -376,6 +388,7 @@ input[type=range]{width:100%}
   <div class="field">
     <span class="lbl">Ukazovat, co mikrofon slyšel</span>
     <div class="seg" data-key="showHeard"><button data-val="on">Ano</button><button data-val="off">Ne</button></div>
+  </div>
   </div>
   <div class="row" style="justify-content:flex-end"><button class="primary" id="closeSettings">Hotovo</button></div>
 </dialog>
