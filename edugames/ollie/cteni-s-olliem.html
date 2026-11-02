@@ -100,6 +100,10 @@ button:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-vis
 .brand svg{width:96px;flex:none}
 .brand h1{font-size:clamp(28px,6vw,44px);font-weight:900;margin:0;line-height:1.05;text-wrap:balance}
 .brand p{margin:6px 0 0;color:var(--ink-soft);font-size:17px}
+.group-head{display:flex;align-items:center;gap:12px;margin:26px 0 4px}
+.lesson.komplet{border-color:var(--sky);background:var(--sun-soft)}
+.lesson-head{margin:26px 0 4px;font-size:20px;font-weight:900}
+.lesson-sub{margin:0 0 12px;font-size:14px;color:var(--ink-soft)}
 .lessons{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
 .lesson{background:var(--card);border:2px solid var(--border);border-radius:22px;padding:18px 20px;text-align:left;
   display:flex;flex-direction:column;gap:8px;transition:transform .15s,border-color .15s;min-width:0}
@@ -187,11 +191,8 @@ table.sess td{padding:7px 8px;border-bottom:1px solid var(--border)}
 
 /* the ruled sheet */
 .sheet{flex:1;display:flex;align-items:center;justify-content:center;position:relative;min-height:200px;margin-block:8px;
-  border-radius:24px;background:
-   linear-gradient(90deg,transparent 46px,var(--margin) 46px 48px,transparent 48px),
-   repeating-linear-gradient(to bottom,transparent 0 46px,var(--line) 46px 48px);
-  background-color:#fff;border:2px solid var(--line);overflow:hidden}
-.word{display:flex;align-items:flex-end;justify-content:center;font-family:var(--f-read);font-weight:700;line-height:1;
+  border-radius:28px;background:var(--card);border:2px solid var(--border);box-shadow:0 6px 0 rgba(139,90,43,.10);overflow:hidden;padding-inline:12px}
+.word{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:center;row-gap:.25em;font-family:var(--f-read);font-weight:700;line-height:1;
   padding:.1em .2em .35em;gap:0;user-select:none}
 .grp{display:flex;position:relative;padding-bottom:.16em}
 .grp + .grp{margin-left:.32em}
@@ -209,6 +210,11 @@ table.sess td{padding:7px 8px;border-bottom:1px solid var(--border)}
 .grp.on .tile{color:var(--ink)}
 .tile.done{color:var(--leaf)}
 .tile.dim{color:#C9D3E6}
+.tile.wrong{color:var(--clay);background:var(--clay-soft);box-shadow:0 .07em 0 var(--clay)}
+.tile.model{background:var(--sun-soft);box-shadow:0 .06em 0 var(--sun)}
+.word.sent .grp + .grp{margin-left:.42em}
+.word.item .grp::after{display:none}
+.tile.punct{padding:0}
 .tile.err{animation:shake .45s;color:var(--clay)}
 @keyframes shake{20%,60%{transform:translateX(-.05em)}40%,80%{transform:translateX(.05em)}}
 .tile .longbar{position:absolute;left:10%;right:10%;bottom:-.08em;height:.07em;border-radius:.04em;background:var(--clay)}
@@ -249,7 +255,7 @@ table.sess td{padding:7px 8px;border-bottom:1px solid var(--border)}
 .summary .big-stars{display:flex;justify-content:center;gap:28px;margin:16px 0;font-size:18px;flex-wrap:wrap}
 .summary .big-stars div{display:flex;align-items:center;gap:8px}
 .summary .big-stars svg{width:34px}
-.wordlist{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:18px 0;font-family:var(--f-read);font-size:22px;font-weight:700}
+.wordlist{display:flex;max-width:100%;flex-wrap:wrap;gap:8px;justify-content:center;margin:18px 0;font-family:var(--f-read);font-size:22px;font-weight:700}
 .wordlist span{padding:4px 12px;border-radius:12px;background:var(--sun-soft)}
 .wordlist span.help{background:#DDEBE3}
 .wordlist span.skip{background:#eceef3;color:var(--ink-soft)}
@@ -276,9 +282,7 @@ input[type=range]{width:100%;accent-color:var(--sky)}
 
 @media (max-width:520px){
   .coach{min-height:84px;border-width:6px;padding:8px 12px}.mascot{width:68px}
-  .sheet{background:
-   linear-gradient(90deg,transparent 22px,var(--margin) 22px 24px,transparent 24px),
-   repeating-linear-gradient(to bottom,transparent 0 38px,var(--line) 38px 40px);background-color:#fff}
+
   .tiles{gap:8px}.tile-stat{padding:10px 12px}.tile-stat b{font-size:24px}.tile-stat span{font-size:13px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
@@ -303,7 +307,19 @@ input[type=range]{width:100%;accent-color:var(--sky)}
       </div>
       <span class="help">Čte se po kolech o 10 slovech, slova se vybírají náhodně. Častěji přijdou na řadu slova s tím, co dělalo potíže.</span>
     </div>
+    <div id="homeGroup" hidden>
+      <div class="group-head"><button class="icon-btn" id="groupBack" aria-label="Všechny lekce"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button><h2 class="lesson-head" id="groupTitle" style="margin:0"></h2></div>
+      <p class="lesson-sub">Vyberte část, nebo „komplet“ – slova ze všech částí dohromady.</p>
+      <div class="lessons" id="groupLessons"></div>
+    </div>
+    <div id="homeMain">
+    <h2 class="lesson-head">Lekce</h2>
+    <p class="lesson-sub">Dítě si slovo přečte po písmenkách samo a Ollie pak zkontroluje celé slovo.</p>
     <div class="lessons" id="lessons"></div>
+    <h2 class="lesson-head">Po písmenkách</h2>
+    <p class="lesson-sub">Ollie kontroluje každé písmenko zvlášť, pak slabiky a celé slovo.</p>
+    <div class="lessons" id="lessonsOld"></div>
+    </div>
     <div class="home-tools">
       <button class="chip-btn" id="btnVoice">Naučit Ollieho hlas</button>
       <button class="chip-btn" id="btnStats">Pro rodiče: statistika</button>
@@ -432,12 +448,38 @@ input[type=range]{width:100%;accent-color:var(--sky)}
 
 <script>
 /* =================== DATA =================== */
+const W_L1='SÝR MYŠ MEČ PUK BIČ ESO MÍČ TYČ ČÁP PES OKO ŠÍP ČAJ NOS RAK KOŠ ERB DAR BÝK ZIP UŠI LES ČIP GÓL IND SPI RYS SYN BYT LEN SEN VAK PÁN EMA ZUB';
+const W_L2A='SÝR MYŠ MEČ NOS BÝK ZUB MÍČ ČAJ ŠÍP PES GÓL DAR ČÁP DŮM HŮL OKO PUK RAK DUCH KOŠ HÁJ LÉK BIČ UŠI SŮL';
+const W_L2B='TÁTA TETA OTA TÁTO TETU TÁTU OTU PEPA TOPÍ LÉTO BOTA POLE PATA TUBA PILA PIHA LUPA BOTY PASE LOTA PERE TAJE TELE KUPA';
+const W_L2C='LAMPA PUMPA PILOT STOPA PÁSEK PÁTEK KOPEC POŽÁR PYSK PALEC PLES PETR PLYN OKNO VOSA KAPR KOST MŮRA TYGR OHEŇ OSEL ROBOT TŘÍDA TUŽKA TOPOL BUCHTA POTOK TUNEL TOMÁŠ TVÁŘ TRÁM ŽÁBA SUDY VRBA NŮŠE ŘEPA ZELÍ JELEN KOLEJ POKOJ STROJ JEŽEK JÍDLO OLEJ BAJKA VOJÁK JÍZDA SLON JETEL';
+const W_L31='ŽÁBA SUDY KUŘE VRBA VANA ZELÍ OHEŇ PERO TYGR PILA BOTY OSEL SLON KOST ŘEPA OKNO VOSA KAPR HUSA PIHA LÍPA LUPA POLE PETR PLYN KUPA PLES PALEC PEPA LAMPA PUMPA PILOT STOPA PÁSEK PÁTEK KOPEC POŽÁR JANA JARO OLEJ PIJE MOJE JÁMA MAJÁK JELEN JÍDLO STROJ POKOJ BAJKA JAKUB VOJÁK JETEL JÍZDA KOLEJ JEŽEK';
+const S_L32=['TÁTA JE PEPA.','JÁJA JE TETA.','OTA A JÁJA PIJÍ.','OTA A TETA JE TU.','OTA A PEPA TOPÍ.','PEPA TU PIJE.','TO TU PIJÍ.','TETA JÁJA JÍ.','OTA TO TAJÍ.','JE TU TÁTA.'];
+const uniq = str => [...new Set(str.split(/\s+/))];
+// mode 'whole' = dítě si přečte po písmenkách samo a Ollie kontroluje celé slovo; 'letters' = Ollie kontroluje každé písmenko
 const LESSONS = [
-  {id:'l1', tag:'Lekce 1', name:'Čtení na týden', words:'SÝR MYŠ MEČ PUK BIČ ESO MÍČ TYČ ČÁP PES OKO ŠÍP ČAJ NOS RAK KOŠ ERB DAR BÝK ZIP UŠI LES ČIP GÓL IND SPI RYS SYN BYT LEN SEN VAK PÁN EMA ZUB'},
-  {id:'l2a', tag:'Lekce 2 · část A', name:'Dlouze a krátce: krátká slova', words:'SÝR MYŠ MEČ NOS BÝK ZUB MÍČ ČAJ ŠÍP PES GÓL DAR ČÁP DŮM HŮL OKO PUK RAK DUCH KOŠ HÁJ LÉK BIČ UŠI SŮL'},
-  {id:'l2b', tag:'Lekce 2 · část B', name:'Slova ze 4 písmen', words:'TÁTA TETA OTA TÁTO TETU TÁTU OTU PEPA TOPÍ LÉTO BOTA POLE PATA TUBA PILA PIHA LUPA BOTY PASE LOTA PERE TAJE TELE KUPA'},
-  {id:'l2c', tag:'Lekce 2 · část C', name:'Těžší slova pro zdatné čtenáře', words:'LAMPA PUMPA PILOT STOPA PÁSEK PÁTEK KOPEC POŽÁR PYSK PALEC PLES PETR PLYN OKNO VOSA KAPR KOST MŮRA TYGR OHEŇ OSEL ROBOT TŘÍDA TUŽKA TOPOL BUCHTA POTOK TUNEL TOMÁŠ TVÁŘ TRÁM ŽÁBA SUDY VRBA NŮŠE ŘEPA ZELÍ JELEN KOLEJ POKOJ STROJ JEŽEK JÍDLO OLEJ BAJKA VOJÁK JÍZDA SLON JETEL'}
+  {id:'w1',  tag:'Lekce 1',   name:'Čtení na týden',                 mode:'whole', items:uniq(W_L1)},
+  {id:'w2a', tag:'Lekce 2.1',  name:'Dlouze a krátce: krátká slova',  mode:'whole', items:uniq(W_L2A)},
+  {id:'w2b', tag:'Lekce 2.2',  name:'Slova ze 4 písmen',              mode:'whole', items:uniq(W_L2B)},
+  {id:'w2c', tag:'Lekce 2.3',  name:'Těžší slova pro zdatné čtenáře', mode:'whole', items:uniq(W_L2C)},
+  {id:'w31', tag:'Lekce 3.1', name:'Nová slova',                     mode:'whole', items:uniq(W_L31)},
+  {id:'w32', tag:'Lekce 3.2', name:'Věty',                           mode:'whole', items:S_L32, sentences:true},
+  {id:'l1',  tag:'Lekce 1 · po písmenkách',  name:'Čtení na týden',                 mode:'letters', items:uniq(W_L1)},
+  {id:'l2a', tag:'Lekce 2.1 · po písmenkách', name:'Dlouze a krátce: krátká slova',  mode:'letters', items:uniq(W_L2A)},
+  {id:'l2b', tag:'Lekce 2.2 · po písmenkách', name:'Slova ze 4 písmen',              mode:'letters', items:uniq(W_L2B)},
+  {id:'l2c', tag:'Lekce 2.3 · po písmenkách', name:'Těžší slova pro zdatné čtenáře', mode:'letters', items:uniq(W_L2C)}
 ];
+const plural=(n,a,b,c)=>`${n} ${n===1?a:(n>=2&&n<=4)?b:c}`;
+const unitOf=l=>!l?['slovo','slova','slov'] : l.mixed?['slovo nebo větu','slova nebo věty','slov a vět'] : l.sentences?['větu','věty','vět']:['slovo','slova','slov'];
+// skupiny lekcí: na úvodní stránce je jen Lekce 1, 2, 3…; podlekce a „komplet“ se ukážou po kliknutí
+LESSONS.forEach(l=>l.g=l.tag.match(/Lekce (\d+)/)[1]);
+const GROUP_NAMES={'1':'Čtení na týden','2':'Dlouze a krátce','3':'Nová slova a věty'};
+function groupsOf(mode){ const m=new Map(); LESSONS.filter(l=>l.mode===mode).forEach(l=>{ if(!m.has(l.g)) m.set(l.g,[]); m.get(l.g).push(l); }); return m; }
+function kompletOf(mode,g){
+  const subs=groupsOf(mode).get(g); const items=[...new Set(subs.flatMap(l=>l.items))];
+  const sent=subs.some(l=>l.sentences), words=subs.some(l=>!l.sentences);
+  return {id:(mode==='whole'?'w':'l')+g+'all', tag:`Lekce ${g} komplet`+(mode==='letters'?' · po písmenkách':''), name:'Vše z lekce '+g+' dohromady', mode, g, items, sentences:sent&&!words, mixed:sent&&words, komplet:true};
+}
+let homeGroup=null;   // {mode, g} = otevřená skupina
 const SYLL_OVERRIDE = {'JÍDLO':'JÍ-DLO','OKNO':'O-KNO'};
 
 /* =================== CZECH HELPERS =================== */
@@ -600,6 +642,18 @@ let gen=0, pendingFinish=null, pressResolve=null, curRec=null;
 /* =================== RENDER =================== */
 function renderWord(){
   const el=$('word'); const step=queue[0]||{};
+  if(mode==='whole'){
+    el.className='word item'+(W.sentence?' sent':' joined');
+    el.innerHTML='';
+    W.words.forEach((g,k)=>{
+      const ge=document.createElement('div'); ge.className='grp';
+      g.forEach(i=>{ const t=document.createElement('span'); t.className='tile'; t.dataset.i=i; t.textContent=W.G[i];
+        if(wrongSet.has(i)) t.classList.add('wrong'); if(modelIdx===i) t.classList.add('model'); ge.appendChild(t); });
+      if(k===W.words.length-1 && W.punct){ const p=document.createElement('span'); p.className='tile punct'; p.textContent=W.punct; ge.appendChild(p); }
+      el.appendChild(ge);
+    });
+    fitWord(); return;
+  }
   const showSyll = mode==='syll' && W.S.length>1;
   el.className='word'+(showSyll?' syll':' joined');
   if(step.t==='W') el.classList.add('whole');
@@ -625,9 +679,11 @@ function renderWord(){
 let longHint=new Set();
 function fitWord(){
   if(!W) return; const el=$('word'); const sheet=el.parentElement;
-  const units = W.G.reduce((a,g)=>a+(g==='CH'?1.35:(/[MW]/.test(g)?.95:.72)),0) + (mode==='syll'?(W.S.length-1)*.32:0) + .5;
-  const byW = ((sheet.clientWidth-56)*.9)/units, byH = sheet.clientHeight*.6;
-  el.style.fontSize=Math.max(36,Math.min(170,byW,byH))+'px';
+  const units = W.G.reduce((a,g)=>a+(g==='CH'?1.35:(/[MW]/.test(g)?.95:.72)),0) + (mode==='syll'?(W.S.length-1)*.32:0) + (W.words?(W.words.length-1)*.42:0) + .5;
+  const avail=(sheet.clientWidth-40)*.92;
+  let fs=Math.min(170, avail/units, sheet.clientHeight*.6);
+  if(W.sentence){ const fs2=Math.min(avail/(units*0.55), sheet.clientHeight*.3); if(fs2>fs*1.15) fs=fs2; }
+  el.style.fontSize=Math.max(30,fs)+'px';
 }
 addEventListener('resize',fitWord);
 function renderDots(){
@@ -654,7 +710,7 @@ function confetti(){
 
 /* =================== LISTEN =================== */
 function stopAll(){ gen++; sayGen++; if(pendingFinish) pendingFinish({type:'cancel'}); try{curRec&&curRec.abort()}catch(e){} if('speechSynthesis' in window) speechSynthesis.cancel(); pressResolve=null; }
-function waitPress(){ setMic('idle'); return new Promise(r=>pressResolve=r); }
+function waitPress(){ setMic('idle'); if(mode==='whole') $('micLabel').textContent = W&&W.sentence?'Stiskni a přečti celou větu':'Stiskni a řekni celé slovo'; return new Promise(r=>pressResolve=r); }
 
 // =================== MIKROFON + HLAS DÍTĚTE ===================
 // Záznam z mikrofonu (Web Audio), detekce řeči podle hlasitosti a vlastní malé rozpoznávání hlásek
@@ -813,6 +869,7 @@ function voiceJudge(g, rec){
 }
 
 function listen(step){
+  if(step.t==='X') return (settings.mode==='parent'||!SR) ? listenParent() : listenSR(step);
   if(step.t==='L' && settings.letters==='voice' && HAS_GUM && settings.mode!=='parent') return listenVoice();
   if(settings.mode==='parent' || !SR) return listenParent();
   return listenSR(step);
@@ -835,7 +892,7 @@ function listenVoice(){
 // Slabiky a slova: rozpoznávání řeči. Neukončujeme ho natvrdo – necháme ho dopsat výsledek.
 function listenSR(step){
   const idxs = step.t==='L'?null : step.t==='S'?W.S[step.s] : W.G.map((_,i)=>i);
-  const isOk = alts => step.t==='L' ? analyzeLetter(alts,step.i).kind==='ok' : analyze(alts,idxs,step.lenient).kind==='ok';
+  const isOk = alts => step.t==='X' ? analyzeWhole(alts,step.lenient).kind==='ok' : step.t==='L' ? analyzeLetter(alts,step.i).kind==='ok' : analyze(alts,idxs,step.lenient).kind==='ok';
   return new Promise(resolve=>{
     let fin=false, rec=null, ht=null, ft=null, heard=false, armed=false, last=[];
     const finish=r=>{ if(fin) return; fin=true; clearTimeout(ht); clearTimeout(ft); pendingFinish=null; try{rec&&rec.abort()}catch(e){} resolve(r); };
@@ -845,7 +902,7 @@ function listenSR(step){
     rec.lang='cs-CZ'; rec.interimResults=true; rec.maxAlternatives=5; rec.continuous=true;
     const settle=()=>{ try{rec.stop()}catch(e){} setTimeout(()=>finish(last.length?{type:'result',alts:last}:{type:heard?'unclear':'silence'}),1200); };
     const arm=()=>{ if(armed) return; armed=true; setMic('listen');
-      ht=setTimeout(()=>{ if(!heard) settle(); }, settings.hintDelay*1000 + (IS_APPLE?1500:0)); };
+      ht=setTimeout(()=>{ if(!heard) settle(); }, settings.hintDelay*1000 + (IS_APPLE?1500:0) + (step.t==='X'?1500:0)); };
     rec.onstart=arm; rec.onaudiostart=arm;
     rec.onspeechstart=()=>{ heard=true; clearTimeout(ht); setMic('voice'); };
     rec.onresult=e=>{
@@ -855,7 +912,8 @@ function listenSR(step){
       last=[...new Set([joined, ...[...lastR].map(a=>a.transcript.trim())].filter(Boolean))];
       setHeard(last[0]||'');
       if(isOk(last)){ finish({type:'result',alts:last}); return; }
-      clearTimeout(ft); ft=setTimeout(()=>{ try{rec.stop()}catch(e){} finish({type:'result',alts:last}); }, lastR.isFinal?700:1400);
+      const wait = (step.t==='X' && looksSpelled(last[0])) ? 3500 : (lastR.isFinal?700:1400);   // dítě ještě hláskuje – počkáme na celé slovo
+      clearTimeout(ft); ft=setTimeout(()=>{ try{rec.stop()}catch(e){} finish({type:'result',alts:last}); }, wait);
     };
     rec.onerror=e=>{
       if(e.error==='not-allowed'||e.error==='service-not-allowed'||e.error==='audio-capture'){ finish({type:'nomic',err:e.error}); return; }
@@ -958,6 +1016,71 @@ function pickWords(pool,n){
   return out;
 }
 
+/* ---- celé slovo / věta: porovnání a vyznačení chybných písmen ---- */
+function tokSnd(str){ const s=snd(str); const o=[]; for(let i=0;i<s.length;i++){ if(s[i]==='c'&&s[i+1]==='h'){o.push('ch');i++} else o.push(s[i]); } return o; }
+function looksSpelled(t){ const tk=(t||'').trim().split(/\s+/).filter(Boolean); return tk.length>=2 && tk.every(x=>snd(x).length<=2); }
+function alignItem(T,H,wordEnd){
+  const n=T.length,m=H.length; const D=[...Array(n+1)].map(()=>new Array(m+1).fill(0));
+  const eq=(i,b)=>T[i]===b || (wordEnd.has(i) && VOICE_PAIR[T[i]]===b);
+  for(let i=1;i<=n;i++) D[i][0]=i;          // D[0][j]=0: začátek promluvy (hláskování) se přeskočí zdarma
+  for(let i=1;i<=n;i++) for(let j=1;j<=m;j++) D[i][j]=Math.min(D[i-1][j-1]+(eq(i-1,H[j-1])?0:1), D[i-1][j]+1, D[i][j-1]+1);
+  let jb=0; for(let j=1;j<=m;j++) if(D[n][j]<=D[n][jb]) jb=j;   // konec promluvy navíc se taky nepočítá
+  const wrong=new Set(), lenIdx=new Set(); let i=n, j=jb;
+  while(i>0){
+    if(j>0 && D[i][j]===D[i-1][j-1]+(eq(i-1,H[j-1])?0:1)){ if(!eq(i-1,H[j-1])){ wrong.add(i-1); if(stripLen(T[i-1])===stripLen(H[j-1])) lenIdx.add(i-1); } i--; j--; }
+    else if(D[i][j]===D[i-1][j]+1){ wrong.add(i-1); i--; }
+    else { if(i<n) wrong.add(i); else wrong.add(i-1); j--; }
+  }
+  return {cost:D[n][jb], wrong, lenIdx};
+}
+function analyzeWhole(alts, lenient){
+  const T=W.G.map(g=>snd(g)); const wordEnd=new Set(W.words.map(w=>w[w.length-1]));
+  const hs=alts.map(tokSnd).filter(h=>h.length);
+  if(!hs.length) return {kind:'unclear'};
+  let best=null; for(const h of hs){ const r=alignItem(T,h,wordEnd); if(!best||r.cost<best.cost) best=r; }
+  if(best.cost===0) return {kind:'ok'};
+  if(lenient && best.cost<=Math.max(1,Math.floor(T.length*0.15))) return {kind:'ok'};
+  if(best.wrong.size > Math.max(2,T.length*0.7)) return {kind:'unclear'};
+  const lenOnly=[...best.wrong].every(i=>best.lenIdx.has(i));
+  return {kind:lenOnly?'len':'bad', wrong:best.wrong, lenIdx:best.lenIdx};
+}
+async function modelItem(onlyWrong){
+  // Ollie přečte (chybná) slova po hláskách a celá, nakonec celé slovo / větu
+  const ws = W.sentence && onlyWrong && wrongSet.size ? W.words.filter(g=>g.some(i=>wrongSet.has(i))) : W.words;
+  bubble.textContent='Poslouchej: '+ws.map(g=>g.map(i=>W.G[i]).join(' – ')+' … '+g.map(i=>W.G[i]).join('')).join(', ')+(W.sentence?' … '+W.text+W.punct:'')+' Teď ty.';
+  bubble.className='bubble fix'; mascot.classList.add('talk'); const my=++sayGen; if(IS_APPLE) releaseMic();
+  if(settings.voice==='on'){
+    await speakTTS('poslouchej');
+    for(const g of ws){ for(const i of g){ if(my!==sayGen) return; modelIdx=i; renderWord(); await playSound(W.G[i]); }
+      modelIdx=-1; renderWord(); await speakTTS(g.map(i=>W.G[i]).join('').toLowerCase()); }
+    if(W.sentence && my===sayGen) await speakTTS(W.text.toLowerCase());
+    if(my===sayGen) await speakTTS('teď ty.');
+  } else await new Promise(r=>setTimeout(r,2500));
+  modelIdx=-1; renderWord(); mascot.classList.remove('talk');
+}
+async function onWhole(step, v){
+  const what = W.sentence?'větu':'slovo';
+  if(v.kind==='spelled'){ await say(W.sentence?'Výborně, a teď celou větu.':'Výborně, a teď celé slovo.'); return; }
+  if(v.kind==='unclear'){
+    step.unc=(step.unc||0)+1;
+    await say(step.unc>=2?`Neslyšel jsem tě. Stiskni tlačítko a řekni ${what} pěkně nahlas.`:`Neslyšel jsem tě dobře. Řekni ${what} ještě jednou, nahlas.`); return;
+  }
+  if(v.kind==='ok'){ wrongSet=new Set(); queue.shift(); return; }
+  // chyba
+  helped=true; softNo(); wordFails++;
+  wrongSet=v.wrong&&v.wrong.size?v.wrong:wrongSet;
+  if(wst && v.wrong) for(const i of v.wrong){ if(v.lenIdx&&v.lenIdx.has(i)) bump(wst.ve,W.G[i]); else bump(wst.le,W.G[i]); }
+  renderWord(); wrongSet.forEach(i=>flashTile(i,'err'));
+  const lenHint = v.kind==='len' && wrongSet.size===1 ? (()=>{ const i=[...wrongSet][0], g=W.G[i]; return isLong(g)?` Pozor na délku.`:` Pozor na délku.`; })() : '';
+  if(wordFails===1){
+    await say(`${pick(TRY)} Barevná písmenka si přečti ještě jednou a pak mi řekni ${W.sentence?'celou větu':'celé slovo'}.${lenHint}`, null, 'fix');
+  } else if(wordFails===2){
+    await modelItem(true); step.lenient=true;
+  } else {
+    queue.shift(); await say(`Nevadí, ${W.sentence?'tahle věta je':'tohle slovo je'} ${W.text}${W.punct}. Příště to půjde. Jdeme dál.`, `nevadí, příště to půjde. jdeme dál.`, 'fix');
+  }
+}
+
 /* =================== FLOW =================== */
 const up = s => s.toUpperCase();
 const sylText = k => W.S[k].map(i=>W.G[i]).join('');
@@ -978,9 +1101,22 @@ function syllRoute(){
 }
 function pickVowel(scope){ return scope.find(i=>isLong(W.G[i])) ?? scope.find(i=>isV(W.G[i])) ?? scope[0]; }
 
+function makeItem(text){
+  const ws=text.replace(/[.,!?]/g,'').trim().split(/\s+/).map(makeWord);
+  const G=[], groups=[]; ws.forEach(w=>{ const g=[]; w.G.forEach(x=>{ g.push(G.length); G.push(x); }); groups.push(g); });
+  return {text:ws.map(w=>w.text).join(' '), G, S:ws.length===1?ws[0].S:[G.map((_,i)=>i)], words:groups, punct:(text.match(/[.!?]$/)||[''])[0], sentence:ws.length>1};
+}
+let wrongSet=new Set(), modelIdx=-1;
 async function startWord(){
+  wrongSet=new Set(); modelIdx=-1;
+  if(session.lesson.mode==='whole'){
+    W=makeItem(words[wIdx]); wst=newWst(); mode='whole'; done=new Set(); longHint=new Set(); helped=false; wordFails=0; fails={};
+    const first = wIdx===0 ? session.intro + (W.sentence?'Přečti si větu po písmenkách, pak mi ji přečti celou.':'Přečti si slovo po písmenkách, pak mi ho přečti celé.') : (W.sentence?'Další věta.':pick(['Další slovo.','A teď tohle.','Další.']));
+    queue=[{t:'X',prompt:first}];
+    renderDots(); setHeard(''); $('word').classList.remove('pop'); runQueue(); return;
+  }
   W=makeWord(words[wIdx]); wst=newWst(); mode='letters'; done=new Set(); longHint=new Set(); helped=false; wordFails=0; fails={};
-  queue=[...lettersSteps(wIdx===0?(session.intro||'Přečti slovo po písmenkách.'):'Další slovo. Po písmenkách.'), {t:'W',prompt:'Teď celé slovo.'}];
+  queue=[...lettersSteps(wIdx===0?(session.intro+'Přečti slovo po písmenkách.'):'Další slovo. Po písmenkách.'), {t:'W',prompt:'Teď celé slovo.'}];
   renderDots(); setHeard('');
   const el=$('word'); el.classList.remove('pop');
   runQueue();
@@ -992,7 +1128,7 @@ async function runQueue(){
     if(my!==gen) return;
     const step=queue[0]; renderWord();
     if(step.prompt){ setMic('busy'); await say(step.prompt); step.prompt=null; if(my!==gen) return; }
-    if(settings.auto!=='on' || step.paused){ step.paused=false; await waitPress(); if(my!==gen) return; }
+    if((settings.auto!=='on' || step.paused || step.t==='X') && settings.mode!=='parent'){ step.paused=false; await waitPress(); if(my!==gen) return; }
     setMic(settings.mode==='parent'?'parent':'busy');
     const r=await listen(step);
     if(my!==gen || r.type==='cancel') return;
@@ -1010,7 +1146,7 @@ async function handle(step, r, my){
     await say(r.err==='network' ? 'Rozpoznávání řeči teď nefunguje (chybí internet). Hodnotit bude dospělý tlačítky.' : 'Mikrofon není povolený. Hodnotit bude dospělý tlačítky.');
     return;
   }
-  if(r.type==='manual'){
+  if(r.type==='manual' && !(step.t==='X' && r.v!=='skip')){
     if(r.v==='skip'){ results[wIdx]='skip'; recordWord('skip'); queue=[]; gen++; nextWord(); return; }
     if(r.v==='hint') r={type:'silence', manual:true};
     else {
@@ -1018,6 +1154,13 @@ async function handle(step, r, my){
       const v = r.v==='ok'?{kind:'ok'} : r.v==='len'?{kind:'len',g:pickVowel(scope)} : {kind:'bad'};
       return onVerdict(step, v);
     }
+  }
+  if(step.t==='X'){
+    if(r.type==='manual'){ const v = r.v==='ok'?{kind:'ok'} : r.v==='len'?{kind:'len',wrong:new Set([pickVowel(W.G.map((_,i)=>i))]),lenIdx:new Set([pickVowel(W.G.map((_,i)=>i))])} : r.v==='hint'?null : {kind:'bad',wrong:new Set()};
+      if(!v){ await modelItem(false); step.lenient=true; helped=true; return; } return onWhole(step,v); }
+    if(r.type==='silence'){ step.paused=true; await say(W.sentence?'Až budeš mít větu přečtenou, stiskni tlačítko a přečti mi ji.':'Až budeš mít slovo přečtené, stiskni tlačítko a řekni ho nahlas.'); return; }
+    if(r.type==='unclear') return onWhole(step,{kind:'unclear'});
+    if(r.type==='result'){ const v=analyzeWhole(r.alts, step.lenient); if(v.kind!=='ok' && r.alts.every(looksSpelled)) return onWhole(step,{kind:'spelled'}); return onWhole(step,v); }
   }
   if(r.type==='voice'){
     const v=voiceJudge(W.G[step.i], r);
@@ -1120,7 +1263,7 @@ async function onVerdict(step, v){
 async function finishWord(my){
   results[wIdx]= helped?'help':'solo'; recordWord(results[wIdx]);
   renderDots(); setMic('busy'); setHeard('');
-  const el=$('word'); el.className='word joined'; el.querySelectorAll('.tile').forEach(t=>{t.className='tile done'});
+  const el=$('word'); el.className= mode==='whole' ? ('word item'+(W.sentence?' sent':' joined')) : 'word joined'; el.querySelectorAll('.tile').forEach(t=>{t.className='tile done'});
   el.classList.add('pop'); mascot.classList.add('happy'); setTimeout(()=>mascot.classList.remove('happy'),1100);
   fanfare(); if(!helped) confetti();
   await say(`${pick(PRAISE)} ${W.text}.`, `${pick(PRAISE)} ${W.text.toLowerCase()}.`, 'good');
@@ -1140,13 +1283,36 @@ function show(id){ ['home','reader','summary','stats','voice'].forEach(s=>$(s).h
 const fmtPct=(a,b)=>b?Math.round(100*a/b)+' %':'–';
 function renderHome(){
   const recent=aggregate(stats.w.slice(-400));
-  $('lessons').innerHTML=LESSONS.map(l=>{
-    const ws=[...new Set(l.words.split(/\s+/))];
-    const mine=stats.w.filter(x=>x.l===l.id); const solo=mine.filter(x=>x.r==='solo').length;
-    return `<button class="lesson" data-id="${l.id}"><span class="tag">${l.tag}</span><h2>${l.name}</h2>
-      <span class="sample">${ws.slice(0,6).join(' · ')} …</span>
-      <span class="meta">${ws.length} slov v lekci</span>${mine.length?`<span class="best">Zatím přečteno ${mine.length}×, samostatně ${fmtPct(solo,mine.length)}</span>`:''}</button>`}).join('');
-  $('lessons').querySelectorAll('.lesson').forEach(b=>b.onclick=()=>{ const l=LESSONS.find(x=>x.id===b.dataset.id); startLesson(l, [...new Set(l.words.split(/\s+/))]); });
+  const statLine=ids=>{ const mine=stats.w.filter(x=>ids.includes(x.l)); const solo=mine.filter(x=>x.r==='solo').length;
+    return mine.length?`<span class="best">Zatím přečteno ${mine.length}×, samostatně ${fmtPct(solo,mine.length)}</span>`:''; };
+  const card=l=>{
+    const u=unitOf(l);
+    return `<button class="lesson ${l.komplet?'komplet':''}" data-id="${l.id}"><span class="tag">${l.tag}</span><h2>${l.name}</h2>
+      <span class="sample">${l.items.slice(0,l.sentences?2:6).join(l.sentences?' ':' · ')} …</span>
+      <span class="meta">${plural(l.items.length,...u)}</span>${statLine([l.id])}</button>`; };
+  const gcard=(mode,g,subs)=>{
+    if(subs.length===1) return card(subs[0]);
+    const k=kompletOf(mode,g);
+    return `<button class="lesson" data-group="${mode}:${g}"><span class="tag">Lekce ${g}${mode==='letters'?' · po písmenkách':''}</span><h2>${GROUP_NAMES[g]||'Lekce '+g}</h2>
+      <span class="sample">${subs.map(l=>l.tag.split(' ·')[0].replace('Lekce ','')).join(' · ')} · komplet</span>
+      <span class="meta">${plural(subs.length,'část','části','částí')} · ${plural(k.items.length,...unitOf(k))}</span>${statLine([...subs.map(l=>l.id),k.id])}</button>`; };
+  const sec=(mode)=>[...groupsOf(mode)].map(([g,subs])=>gcard(mode,g,subs)).join('');
+  if(homeGroup){
+    const {mode,g}=homeGroup; const subs=groupsOf(mode).get(g); const k=kompletOf(mode,g);
+    $('homeMain').hidden=true; $('homeGroup').hidden=false;
+    $('groupTitle').textContent=`Lekce ${g}${mode==='letters'?' · po písmenkách':''} · ${GROUP_NAMES[g]||''}`;
+    $('groupLessons').innerHTML=subs.map(card).join('')+card(k);
+  } else {
+    $('homeMain').hidden=false; $('homeGroup').hidden=true;
+    $('lessons').innerHTML=sec('whole');
+    $('lessonsOld').innerHTML=sec('letters');
+  }
+  document.querySelectorAll('#home .lesson').forEach(b=>b.onclick=()=>{
+    if(b.dataset.group){ const [mode,g]=b.dataset.group.split(':'); homeGroup={mode,g}; renderHome(); scrollTo(0,0); return; }
+    let l=LESSONS.find(x=>x.id===b.dataset.id);
+    if(!l && homeGroup) l=kompletOf(homeGroup.mode,homeGroup.g);
+    startLesson(l, l.items);
+  });
   const voiceOk = 'speechSynthesis' in window;
   $('envNote').innerHTML = SR
     ? `<b>Mikrofon:</b> tento prohlížeč umí rozpoznávat češtinu (potřebuje internet). Při prvním čtení povolte mikrofon. Kdykoli můžete hodnotit i tlačítky dole.`
@@ -1172,7 +1338,7 @@ function startRound(){
     const {graphs}=focusInfo();
     if(graphs.length) intro+=`Dnes si dáme pozor na ${graphs.join(', ')}. `;
   }
-  session.intro = intro + 'Přečti slovo po písmenkách.';
+  session.intro = intro;
   show('reader'); requestAnimationFrame(()=>startWord());
 }
 function roundEnd(){
@@ -1184,11 +1350,11 @@ function roundEnd(){
   $('summary').innerHTML=`
     <svg viewBox="0 0 120 100" style="width:120px" aria-hidden="true">${MASCOT}</svg>
     <h2>Kolo ${session.round} hotovo!</h2>
-    <p style="color:var(--ink-soft);margin:0">Ještě ${session.rounds-session.round===1?'jedno kolo':(session.rounds-session.round)+' kola'} a máš ${session.total} slov.</p>
+    <p style="color:var(--ink-soft);margin:0">Ještě ${session.rounds-session.round===1?'jedno kolo':(session.rounds-session.round)+' kola'} a máš ${plural(session.total,...unitOf(session.lesson))}.</p>
     <div class="big-stars"><div>${STAR('#FFC23C')} samostatně: <b>${solo}</b></div><div>${STAR('#7FB89A')} s pomocí: <b>${help}</b></div></div>
     <div class="wordlist">${words.map((w,i)=>`<span class="${results[i]==='solo'?'':results[i]||'skip'}">${w}</span>`).join('')}</div>
     <div class="row">
-      <button class="primary" id="nextRound">Další kolo (${nextN} slov)</button>
+      <button class="primary" id="nextRound">Další kolo (${plural(nextN,...unitOf(session.lesson))})</button>
       <button class="chip-btn" id="stopHere">Pro dnešek stačí</button>
     </div>`;
   fanfare();
@@ -1197,24 +1363,26 @@ function roundEnd(){
   $('stopHere').onclick=()=>showSummary();
 }
 function showSummary(){
-  stopAll(); recordSession(); show('summary');
+  stopAll(); recordSession();
   const log=session.log;
+  if(!log.length){ show('home'); renderHome(); return; }
+  show('summary'); const U=unitOf(session.lesson);
   const solo=log.filter(x=>x.r==='solo').length, help=log.filter(x=>x.r==='help').length;
   const tricky=[...new Set(log.filter(x=>x.r!=='solo').map(x=>x.w))];
   $('summary').innerHTML=`
     <svg viewBox="0 0 120 100" style="width:130px" aria-hidden="true">${MASCOT}</svg>
     <h2>Hotovo, ty jsi ale ${C('čtenář','čtenářka')}!</h2>
-    <p style="color:var(--ink-soft);margin:0">${session.lesson.tag} · přečteno ${log.length} slov</p>
+    <p style="color:var(--ink-soft);margin:0">${session.lesson.tag} · přečteno ${plural(log.length,...U)}</p>
     <div class="big-stars"><div>${STAR('#FFC23C')} samostatně: <b>${solo}</b></div><div>${STAR('#7FB89A')} s pomocí: <b>${help}</b></div></div>
     <div class="wordlist">${log.map(x=>`<span class="${x.r==='solo'?'':x.r}">${x.w}</span>`).join('')}</div>
     <div class="row">
-      ${tricky.length?`<button class="primary" id="sumTricky">Procvičit ${tricky.length} těžší slova</button>`:''}
+      ${tricky.length?`<button class="primary" id="sumTricky">Procvičit těžší (${tricky.length})</button>`:''}
       <button class="primary" id="sumAgain">Číst znovu</button>
       <button class="chip-btn" id="sumStats">Statistika pro rodiče</button>
       <button class="chip-btn" id="sumHome">Zpět na lekce</button>
     </div>`;
   confetti(); fanfare();
-  say(`Hotovo! ${C('Přečetl','Přečetla')} jsi ${log.length} slov.`, null, 'good');
+  say(`Hotovo! ${C('Přečetl','Přečetla')} jsi ${plural(log.length,...U)}.`, null, 'good');
   const L=session.lesson, P=session.pool;
   $('sumAgain').onclick=()=>startLesson(L, P);
   $('sumHome').onclick=()=>{show('home');renderHome()};
@@ -1404,6 +1572,7 @@ addEventListener('keydown',e=>{
 });
 $('btnBack').onclick=()=>{ stopAll(); if(session) recordSession(); show('home'); renderHome(); };
 $('btnStats').onclick=()=>showStats();
+$('groupBack').onclick=()=>{ homeGroup=null; renderHome(); };
 $('btnVoice').onclick=()=>{ if(!HAS_GUM){ showVoice('Tento prohlížeč nepovoluje mikrofon.'); return; } showVoice(); };
 
 // settings dialog
@@ -1433,7 +1602,7 @@ $('startCustom').onclick=()=>{
   const list=txt.split(/[\s,;]+/).map(w=>w.trim().toUpperCase()).filter(w=>graphemes(w.replace(/-/g,'')).length);
   if(!list.length) return;
   $('dlgCustom').close();
-  startLesson({id:'custom',tag:'Vlastní slova',name:'Moje slova',custom:true}, list);
+  startLesson({id:'custom',tag:'Vlastní slova',name:'Moje slova',custom:true,mode:'whole'}, list);
 };
 
 $('brandTitle').textContent=BRAND.appTitle;
